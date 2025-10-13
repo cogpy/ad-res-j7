@@ -1,6 +1,7 @@
 # AD Response J7 - Case 2025-137857 Analysis
 
-This repository contains a comprehensive analysis of Case 2025-137857, involving Peter Andrew Faucitt (Applicant) vs. Jacqueline Faucitt and Daniel James Faucitt (Respondents). It is structured to mirror the analytical framework of the `EchoCog/analysss` and `rzonedevops/analysis` repositories, providing a clear and organized view of the case materials.
+This repository contains a comprehensive analysis of Case 2025-137857, involving Peter Andrew Faucitt (Applicant) vs. Jacqueline Faucitt and Daniel James Faucitt (Respondents).
+It is structured to mirror the analytical framework while providing a clear and organized view of the case materials.
 
 ## Case Overview
 
@@ -9,7 +10,8 @@ This repository contains a comprehensive analysis of Case 2025-137857, involving
 - **Applicant:** Peter Andrew Faucitt
 - **Respondents:** Jacqueline Faucitt, Daniel James Faucitt, and associated corporate entities.
 
-This case involves a dispute between the applicant and the respondents concerning the management and financial affairs of several interconnected companies. The applicant has made numerous allegations of financial misconduct, which the respondents refute. This repository contains the evidence and analysis to support the respondents' case.
+This case involves a dispute between the applicant and the respondents concerning the management and financial affairs of several interconnected companies.
+The applicant has made numerous allegations of financial misconduct, which the respondents refute. This repository contains the evidence and analysis to support the respondents' case.
 
 ## Repository Structure
 
