@@ -1,0 +1,11 @@
+{
+  "title": "Case 2025-137857",
+  "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/case_2025_137857/README.md",
+  "sections": [
+    {
+      "heading": "Subdirectories",
+      "level": 2,
+      "content": "# Case 2025-137857\n\nThis directory contains all documents directly related to the High Court case 2025-137857.\n\n\n- **`01_court_documents/`**: Official court filings, including the main application and any subsequent motions or orders.\n- **`02_evidence/`**: Evidence submitted to the court.\n- **`03_analysis/`**: Analysis of the case, evidence, and legal arguments.\n- **`04_financial_records/`**: Financial records relevant to the case.\n- **`05_affidavits/`**: Affidavits from all parties.\n- **`06_legal_research/`**: Legal research and precedents related to the case."
+    }
+  ]
+}
