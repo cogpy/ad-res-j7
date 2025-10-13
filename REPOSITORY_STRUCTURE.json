@@ -1,0 +1,88 @@
+{
+  "title": "Repository Structure Guide",
+  "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/REPOSITORY_STRUCTURE.md",
+  "sections": [
+    {
+      "heading": "Directory Organization",
+      "level": 2,
+      "content": "# Repository Structure Guide\n\nThis document provides a comprehensive overview of the repository structure for the AD Response J7 project (Case 2025-137857).\n\n\nThe repository is organized into several main directories, each serving a specific purpose in the case management and analysis workflow.",
+      "subsections": [
+        {
+          "heading": "Root Directory",
+          "level": 3,
+          "content": "The root directory contains the main README.md file, which provides an overview of the case and the repository structure. It also contains configuration files and utility scripts."
+        },
+        {
+          "heading": "`affidavit_work/`",
+          "level": 3,
+          "content": "This directory contains all work related to the drafting and analysis of affidavits for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`analysis/`**: Contains in-depth analysis of the applicant's affidavit and supporting documents. This includes a three-part classification of the evidence (Irrefutable Proof, Strong Evidence, and Circumstantial/Inferred).\n- **`corrections/`**: Contains critical corrections to the information presented in the applicant's affidavit.\n- **`recommendations/`**: Contains recommendations for the responding affidavit.\n- **`versions/`**: Contains different versions of the responding affidavit."
+        },
+        {
+          "heading": "`analysis_outputs/`",
+          "level": 3,
+          "content": "This directory is reserved for the output of automated analysis tools and scripts."
+        },
+        {
+          "heading": "`backups/`",
+          "level": 3,
+          "content": "This directory contains backups of important documents, particularly affidavits.\n\n- **`affidavits/`**: Contains backup copies of all affidavit versions."
+        },
+        {
+          "heading": "`case_2025_137857/`",
+          "level": 3,
+          "content": "This directory contains all documents directly related to the High Court case 2025-137857. It is organized into the following subdirectories:\n\n- **`01_court_documents/`**: Contains official court filings, including the main application and any subsequent motions or orders.\n- **`02_evidence/`**: Contains evidence submitted to the court.\n- **`03_analysis/`**: Contains analysis of the case, evidence, and legal arguments.\n- **`04_financial_records/`**: Contains financial records relevant to the case.\n- **`05_affidavits/`**: Contains affidavits from all parties.\n- **`06_legal_research/`**: Contains legal research and precedents related to the case."
+        },
+        {
+          "heading": "`config/`",
+          "level": 3,
+          "content": "This directory contains configuration files for tools and scripts used in the analysis."
+        },
+        {
+          "heading": "`docs/`",
+          "level": 3,
+          "content": "This directory contains additional documentation, including technical and legal analysis. It is organized into the following subdirectories:\n\n- **`analysis/`**: Contains analytical documents and reports.\n- **`evidence/`**: Contains documentation related to evidence.\n- **`legal/`**: Contains legal documentation and research.\n- **`technical/`**: Contains technical documentation."
+        },
+        {
+          "heading": "`evidence/`",
+          "level": 3,
+          "content": "This directory contains raw evidence collected for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`bank_records/`**: Contains personal and business bank records.\n- **`shopify_reports/`**: Contains sales and financial reports from Shopify.\n- **`invoices/`**: Contains invoices for various business expenses.\n- **`correspondence/`**: Contains email and other correspondence relevant to the case."
+        },
+        {
+          "heading": "`jax-dan-response/`",
+          "level": 3,
+          "content": "This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:\n\n- **`AD/`**: Contains documents related to the \"AD Response J7\" project.\n- **`analysis-output/`**: Contains output from the analysis of the case.\n- **`evidence-attachments/`**: Contains evidence attached to the responding affidavit.\n- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit.\n- **`financial-analysis/`**: Contains detailed financial analysis to refute the applicant's claims."
+        },
+        {
+          "heading": "`tools/`",
+          "level": 3,
+          "content": "This directory contains scripts and tools used for analysis and document processing."
+        },
+        {
+          "heading": "File Naming Conventions",
+          "level": 2,
+          "content": "Files in this repository follow consistent naming conventions to ensure clarity and organization:\n\n- **Court Documents**: Use the official case reference number and date (e.g., `KF0019-SecondApplication-03.10.2025.pdf`).\n- **Evidence Files**: Use descriptive names that indicate the content and date (e.g., `D_FAUCITT_PERSONAL_BANK_RECORDS_20250604.pdf`).\n- **Analysis Documents**: Use descriptive names that indicate the type of analysis and classification (e.g., `Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx`).\n- **README Files**: Each major directory contains a `README.md` file that explains the purpose and contents of that directory."
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "content": "The typical workflow for working with this repository is as follows:\n\n1. **Evidence Collection**: Collect raw evidence and place it in the appropriate subdirectory within the `evidence/` directory.\n2. **Document Organization**: Organize court documents and other official filings in the `case_2025_137857/` directory.\n3. **Analysis**: Conduct analysis of the evidence and documents, and place the results in the `affidavit_work/analysis/` or `docs/analysis/` directories.\n4. **Affidavit Drafting**: Draft the responding affidavit based on the analysis, and place different versions in the `affidavit_work/versions/` directory.\n5. **Review and Correction**: Review the affidavit for accuracy and completeness, and place any corrections in the `affidavit_work/corrections/` directory.\n6. **Finalization**: Finalize the affidavit and prepare it for submission to the court."
+        },
+        {
+          "heading": "Version Control",
+          "level": 2,
+          "content": "This repository uses Git for version control. All changes should be committed with clear and descriptive commit messages that explain the nature of the changes. The repository is hosted on GitHub at `https://github.com/cogpy/ad-res-j7`."
+        },
+        {
+          "heading": "Collaboration",
+          "level": 2,
+          "content": "This repository is designed to facilitate collaboration between legal professionals, analysts, and other stakeholders involved in Case 2025-137857. All contributors should follow the established directory structure and file naming conventions to ensure consistency and clarity."
+        },
+        {
+          "heading": "Maintenance",
+          "level": 2,
+          "content": "The repository should be regularly updated with new evidence, analysis, and documents as they become available. Backups should be created regularly to prevent data loss. The repository structure should be reviewed periodically to ensure that it continues to meet the needs of the project."
+        }
+      ]
+    }
+  ]
+}

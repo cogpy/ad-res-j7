@@ -1,0 +1,11 @@
+{
+  "title": "Affidavit Work",
+  "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/affidavit_work/README.md",
+  "sections": [
+    {
+      "heading": "Subdirectories",
+      "level": 2,
+      "content": "# Affidavit Work\n\nThis directory contains all work related to the drafting and analysis of affidavits for Case 2025-137857.\n\n\n- **`analysis/`**: In-depth analysis of the applicant's affidavit and supporting documents. This includes a three-part classification of the evidence.\n- **`corrections/`**: Critical corrections to the information presented in the applicant's affidavit.\n- **`recommendations/`**: Recommendations for the responding affidavit.\n- **`versions/`**: Different versions of the responding affidavit."
+    }
+  ]
+}

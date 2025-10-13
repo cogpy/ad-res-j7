@@ -1,0 +1,11 @@
+{
+  "title": "Evidence",
+  "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/evidence/README.md",
+  "sections": [
+    {
+      "heading": "Subdirectories",
+      "level": 2,
+      "content": "# Evidence\n\nThis directory contains raw evidence collected for Case 2025-137857.\n\n\n- **`bank_records/`**: Personal and business bank records.\n- **`shopify_reports/`**: Sales and financial reports from Shopify.\n- **`invoices/`**: Invoices for various business expenses.\n- **`correspondence/`**: Email and other correspondence relevant to the case."
+    }
+  ]
+}
