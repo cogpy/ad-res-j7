@@ -1,14 +1,11 @@
 {
-  "title": "",
-  "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/todo/README.md",
-  "created_at": "2025-10-14T08:25:19.237Z",
-  "file_type": "markdown",
-  "sections": [
-    {
-      "heading": "Document Content",
-      "level": 2,
-      "content": "this folder includes changes and/or updates that need to be implemented",
-      "subsections": []
-    }
-  ]
+  "title": "Todo Folder",
+  "purpose": "Central location for tracking improvements, recommendations, and action items for Case 2025-137857",
+  "last_updated": "2025-10-13",
+  "workflow": "Automatic issue generation via GitHub Actions",
+  "repository_status": {
+    "overall_readiness": "78%",
+    "documented_losses": "R10.227M+",
+    "affidavit_versions": 5
+  }
 }
