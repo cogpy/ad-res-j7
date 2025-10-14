@@ -689,29 +689,7 @@ jobs:
             exit 1
           fi
           
-          # Function to create issue with retry logic
-          create_issue_with_retry() {
-            local title="$1"
-            local body="$2" 
-            local label_flags="$3"
-            local max_retries=3
-            local retry_count=0
-            
-            while [ $retry_count -lt $max_retries ]; do
-              if eval "gh issue create --title \"$title\" --body \"$body\" $label_flags" > /dev/null 2>&1; then
-                return 0
-              else
-                retry_count=$((retry_count + 1))
-                if [ $retry_count -lt $max_retries ]; then
-                  echo "  ⚠️ Attempt $retry_count failed, retrying in 2 seconds..."
-                  sleep 2
-                else
-                  echo "  ❌ Failed after $max_retries attempts"
-                  return 1
-                fi
-              fi
-            done
-          }
+
           
           # Function to safely extract JSON field with error handling
           safe_jq_extract() {
@@ -807,33 +785,25 @@ jobs:
             
             echo "  ✅ Creating: $(echo "$title" | cut -c1-50)..."
             
-            # Parse labels with error handling
-            label_flags=""
-            if [ "$labels_json" != "[]" ] && [ "$labels_json" != "null" ]; then
-              while IFS= read -r label; do
-                if [ -n "$label" ] && [ "$label" != "null" ]; then
-                  label_flags+=" --label \"$label\""
-                fi
-              done < <(echo "$labels_json" | jq -r '.[]?' 2>/dev/null || echo "")
-            fi
             # Parse labels array and create individual --label flags
             # Note: GitHub CLI expects individual --label arguments, not a JSON array
             # This safely converts the JSON array ["label1","label2"] to individual --label arguments
-            # avoiding eval and properly handling labels with spaces and special characters
+            # using secure array-based approach instead of eval for better security
             gh_args=("issue" "create" "--title" "$title" "--body" "$body")
-            while IFS= read -r label; do
-              gh_args+=("--label" "$label")
-            done < <(echo "$labels" | jq -r '.[]')
+            if [ "$labels_json" != "[]" ] && [ "$labels_json" != "null" ]; then
+              while IFS= read -r label; do
+                if [ -n "$label" ] && [ "$label" != "null" ]; then
+                  gh_args+=("--label" "$label")
+                fi
+              done < <(echo "$labels_json" | jq -r '.[]' 2>/dev/null || echo "")
+            fi
             
             # Create the issue using gh with proper argument array (no eval needed)
-            gh "${gh_args[@]}" > /dev/null
-            
-            # Create the issue with retry logic
-            if create_issue_with_retry "$title" "$body" "$label_flags"; then
+            if gh "${gh_args[@]}" > /dev/null 2>&1; then
               echo "    ✅ Successfully created issue"
               created_count=$((created_count + 1))
             else
-              echo "    ❌ Failed to create issue after retries"
+              echo "    ❌ Failed to create issue"
               failed_count=$((failed_count + 1))
               failed_issues+=("$title")
             fi
