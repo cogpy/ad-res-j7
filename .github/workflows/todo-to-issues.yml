@@ -1,0 +1,510 @@
+# Todo to Issues Generator
+# Automatically generates GitHub issues with actionable tasks from files in the todo/ folder
+
+name: Todo to Issues Generator
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ "todo/**" ]
+  pull_request:
+    branches: [ "main" ]
+    paths: [ "todo/**" ]
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'Force regeneration of all issues (will close existing todo-related issues)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  generate-issues:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read       # Required to read repository files
+      issues: write        # Required to create and manage issues
+      actions: read        # Required to read workflow files
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install glob
+
+      - name: Scan todo folder
+        id: scan
+        run: |
+          echo "=== Todo Folder Analysis ===" >> $GITHUB_STEP_SUMMARY
+          
+          todo_count=$(find todo -name "*.md" | wc -l)
+          echo "📂 Found $todo_count todo files" >> $GITHUB_STEP_SUMMARY
+          
+          if [ $todo_count -eq 0 ]; then
+            echo "⚠️ No todo files found - nothing to process" >> $GITHUB_STEP_SUMMARY
+            echo "has_todos=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_todos=true" >> $GITHUB_OUTPUT
+            echo "todo_count=$todo_count" >> $GITHUB_OUTPUT
+            
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "📋 **Todo Files Found:**" >> $GITHUB_STEP_SUMMARY
+            for file in todo/*.md; do
+              if [ -f "$file" ]; then
+                echo "- \`$file\`" >> $GITHUB_STEP_SUMMARY
+              fi
+            done
+          fi
+
+      - name: Create issue generator script
+        if: steps.scan.outputs.has_todos == 'true'
+        run: |
+          cat > issue-generator.js << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const glob = require('glob');
+
+          class TodoIssueGenerator {
+            constructor() {
+              this.issues = [];
+              this.existingIssues = new Set();
+            }
+
+            // Parse markdown content to extract actionable items
+            parseMarkdownForTasks(content, filename) {
+              const lines = content.split('\n');
+              const tasks = [];
+              let currentSection = '';
+              let currentPriority = 'medium';
+              let inPrioritySection = false;
+              
+              for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                
+                // Track current section for context
+                if (line.match(/^#{1,4}\s+/)) {
+                  currentSection = line.replace(/^#+\s+/, '');
+                  
+                  // Extract priority from section headers
+                  if (line.toLowerCase().includes('critical') || line.toLowerCase().includes('priority 1')) {
+                    currentPriority = 'critical';
+                  } else if (line.toLowerCase().includes('high') || line.toLowerCase().includes('priority 2')) {
+                    currentPriority = 'high';
+                  } else if (line.toLowerCase().includes('medium') || line.toLowerCase().includes('priority 3')) {
+                    currentPriority = 'medium';
+                  } else if (line.toLowerCase().includes('low') || line.toLowerCase().includes('priority 4')) {
+                    currentPriority = 'low';
+                  }
+                  
+                  // Check if we're in a priority recommendation section
+                  inPrioritySection = line.toLowerCase().includes('priority recommendations') ||
+                                    line.toLowerCase().includes('must-do') ||
+                                    line.toLowerCase().includes('should-do') ||
+                                    line.toLowerCase().includes('nice-to-have') ||
+                                    line.toLowerCase().includes('phase 1') ||
+                                    line.toLowerCase().includes('phase 2') ||
+                                    line.toLowerCase().includes('phase 3') ||
+                                    line.toLowerCase().includes('phase 4');
+                }
+                
+                // Look for numbered tasks in priority sections
+                if (inPrioritySection) {
+                  const numberedTask = line.match(/^\d+\.\s*(.+)$/);
+                  if (numberedTask) {
+                    const task = numberedTask[1].trim();
+                    if (task.length > 10) {
+                      tasks.push({
+                        task: task,
+                        section: currentSection,
+                        priority: this.determinePriorityFromSection(currentSection),
+                        file: filename,
+                        lineNumber: i + 1,
+                        type: 'priority_task'
+                      });
+                    }
+                  }
+                }
+                
+                // Look for specific actionable patterns
+                const actionablePatterns = [
+                  /^-\s*(.*(?:implement|add|create|fix|update|improve|enhance|develop|build|establish|provide|include|demonstrate|expand|complete|review).*)/i,
+                  /^\*\s*(.*(?:implement|add|create|fix|update|improve|enhance|develop|build|establish|provide|include|demonstrate|expand|complete|review).*)/i
+                ];
+                
+                for (const pattern of actionablePatterns) {
+                  const match = line.match(pattern);
+                  if (match) {
+                    const task = match[1].trim();
+                    
+                    if (this.isHighQualityTask(task)) {
+                      tasks.push({
+                        task: task,
+                        section: currentSection,
+                        priority: currentPriority,
+                        file: filename,
+                        lineNumber: i + 1,
+                        type: 'actionable_item'
+                      });
+                    }
+                    break;
+                  }
+                }
+                
+                // Look for specific recommendation sections
+                if (line.includes('**Improvements Needed**:') || 
+                    line.includes('**Action Required**:') ||
+                    line.includes('**Recommended Actions**:')) {
+                  
+                  // Next lines likely contain tasks
+                  for (let j = i + 1; j < Math.min(i + 10, lines.length); j++) {
+                    const nextLine = lines[j].trim();
+                    
+                    if (nextLine.startsWith('-')) {
+                      const taskMatch = nextLine.match(/^-\s*(.+)$/);
+                      if (taskMatch) {
+                        const taskText = taskMatch[1].trim();
+                        if (this.isHighQualityTask(taskText)) {
+                          tasks.push({
+                            task: taskText,
+                            section: currentSection,
+                            priority: currentPriority,
+                            file: filename,
+                            lineNumber: j + 1,
+                            type: 'improvement_item'
+                          });
+                        }
+                      }
+                    } else if (nextLine.length === 0) {
+                      continue;
+                    } else if (nextLine.match(/^#{1,6}\s+/) || nextLine.includes('**')) {
+                      break;
+                    }
+                  }
+                }
+              }
+              
+              return tasks;
+            }
+
+            // Determine priority from section name
+            determinePriorityFromSection(section) {
+              const sectionLower = section.toLowerCase();
+              
+              if (sectionLower.includes('must-do') || sectionLower.includes('phase 1') || sectionLower.includes('critical')) {
+                return 'critical';
+              } else if (sectionLower.includes('should-do') || sectionLower.includes('phase 2') || sectionLower.includes('high')) {
+                return 'high';
+              } else if (sectionLower.includes('nice-to-have') || sectionLower.includes('phase 3') || sectionLower.includes('phase 4')) {
+                return 'medium';
+              }
+              
+              return 'medium';
+            }
+
+            // Determine if a task is high quality and actionable
+            isHighQualityTask(task) {
+              // Skip if too short
+              if (task.length < 15) {
+                return false;
+              }
+              
+              // Skip formatting artifacts and non-actionable text
+              const skipPatterns = [
+                /^\*\*.*\*\*$/,  // Just bold text
+                /^Current Coverage:/i,
+                /^Legal Significance:/i,
+                /^Framework Phase:/i,
+                /^Impact:/i,
+                /^Estimated effort:/i,
+                /^Total.*effort:/i,
+                /^When compared against/i,
+                /^The (current|existing|draft)/i,
+                /^This (document|analysis|section)/i,
+                /hours?$/i  // Ends with "hours" - likely effort estimate
+              ];
+              
+              for (const pattern of skipPatterns) {
+                if (pattern.test(task)) {
+                  return false;
+                }
+              }
+              
+              // Look for explicit action words or clear implementation items
+              const actionWords = [
+                'implement', 'add', 'create', 'fix', 'update', 'improve', 
+                'enhance', 'develop', 'build', 'establish', 'provide',
+                'include', 'demonstrate', 'expand', 'complete', 'review',
+                'contextualize', 'breakdown', 'analysis'
+              ];
+              
+              const hasAction = actionWords.some(word => 
+                task.toLowerCase().includes(word.toLowerCase())
+              );
+              
+              // Also accept clear task descriptions without action words
+              const isTaskDescription = task.includes('section') ||
+                                      task.includes('response') ||
+                                      task.includes('affidavit') ||
+                                      task.includes('timeline') ||
+                                      task.includes('evidence');
+              
+              return hasAction || isTaskDescription;
+            }
+
+            // Generate GitHub issue content
+            generateIssueContent(task) {
+              const labels = ['todo', 'enhancement'];
+              
+              // Add priority labels
+              if (task.priority === 'critical') {
+                labels.push('priority: critical', 'bug');
+              } else if (task.priority === 'high') {
+                labels.push('priority: high');
+              } else if (task.priority === 'medium') {
+                labels.push('priority: medium');
+              } else if (task.priority === 'low') {
+                labels.push('priority: low');
+              }
+
+              // Generate a clean title
+              let title = task.task;
+              
+              // Remove markdown formatting
+              title = title.replace(/\*\*(.+?)\*\*/g, '$1');
+              title = title.replace(/\*(.+?)\*/g, '$1');
+              title = title.replace(/`(.+?)`/g, '$1');
+              
+              // Trim and clean
+              title = title.replace(/^[-*\d.\s]+/, '').trim();
+              
+              // Limit length
+              if (title.length > 80) {
+                title = title.substring(0, 77) + '...';
+              }
+
+              const body = `## Task Description
+
+${task.task}
+
+## Context
+
+**Source File:** \`${task.file}\`  
+**Section:** ${task.section}  
+**Priority:** ${task.priority}  
+**Line:** ${task.lineNumber}
+
+## Implementation Notes
+
+This task was automatically generated from the todo folder. Please review the source file for additional context and requirements.
+
+## Acceptance Criteria
+
+- [ ] Review the task requirements in the source file
+- [ ] Implement the necessary changes
+- [ ] Test the implementation
+- [ ] Update documentation if needed
+- [ ] Close this issue when complete
+
+---
+
+*Generated automatically from todo files by GitHub Actions*`;
+
+              return {
+                title: title,
+                body: body,
+                labels: labels,
+                source: task
+              };
+            }
+
+            // Process all todo files
+            processFiles() {
+              console.log('🔄 Processing todo files for actionable tasks...');
+              
+              const todoFiles = glob.sync('todo/**/*.md');
+              console.log(`Found ${todoFiles.length} todo files to process`);
+
+              let totalTasks = 0;
+
+              for (const file of todoFiles) {
+                console.log(`📋 Processing: ${file}`);
+                
+                try {
+                  const content = fs.readFileSync(file, 'utf8');
+                  const tasks = this.parseMarkdownForTasks(content, file);
+                  
+                  console.log(`  Found ${tasks.length} potential tasks`);
+                  
+                  for (const task of tasks) {
+                    const issue = this.generateIssueContent(task);
+                    this.issues.push(issue);
+                    totalTasks++;
+                  }
+                  
+                } catch (error) {
+                  console.error(`❌ Error processing ${file}:`, error.message);
+                }
+              }
+
+              console.log(`\n✅ Processing complete! Found ${totalTasks} actionable tasks across ${todoFiles.length} files.`);
+              return this.issues;
+            }
+
+            // Generate output for GitHub Actions
+            generateOutput() {
+              const output = {
+                summary: {
+                  total_issues: this.issues.length,
+                  priorities: {
+                    critical: this.issues.filter(i => i.source.priority === 'critical').length,
+                    high: this.issues.filter(i => i.source.priority === 'high').length,
+                    medium: this.issues.filter(i => i.source.priority === 'medium').length,
+                    low: this.issues.filter(i => i.source.priority === 'low').length
+                  },
+                  files_processed: [...new Set(this.issues.map(i => i.source.file))].length
+                },
+                issues: this.issues
+              };
+
+              // Write to file for GitHub Actions to use
+              fs.writeFileSync('todo-issues.json', JSON.stringify(output, null, 2));
+              
+              return output;
+            }
+          }
+
+          // Run the generator
+          const generator = new TodoIssueGenerator();
+          const issues = generator.processFiles();
+          const output = generator.generateOutput();
+
+          console.log(`\n📊 Summary:`);
+          console.log(`- Total actionable tasks: ${output.summary.total_issues}`);
+          console.log(`- Critical priority: ${output.summary.priorities.critical}`);
+          console.log(`- High priority: ${output.summary.priorities.high}`);
+          console.log(`- Medium priority: ${output.summary.priorities.medium}`);
+          console.log(`- Low priority: ${output.summary.priorities.low}`);
+          console.log(`- Files processed: ${output.summary.files_processed}`);
+
+          process.exit(0);
+          EOF
+
+      - name: Parse todo files for actionable tasks
+        if: steps.scan.outputs.has_todos == 'true'
+        run: |
+          echo "🚀 Parsing todo files for actionable tasks..."
+          node issue-generator.js
+
+      - name: Load generated issues
+        if: steps.scan.outputs.has_todos == 'true'
+        id: load_issues
+        run: |
+          if [ -f "todo-issues.json" ]; then
+            issue_count=$(jq '.summary.total_issues' todo-issues.json)
+            echo "issue_count=$issue_count" >> $GITHUB_OUTPUT
+            echo "has_issues=true" >> $GITHUB_OUTPUT
+            
+            # Add summary to GitHub Actions summary
+            echo "=== Issue Generation Results ===" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "📊 **Generated Issues Summary:**" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Issues:** $issue_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **Critical Priority:** $(jq '.summary.priorities.critical' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **High Priority:** $(jq '.summary.priorities.high' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Medium Priority:** $(jq '.summary.priorities.medium' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Low Priority:** $(jq '.summary.priorities.low' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Files Processed:** $(jq '.summary.files_processed' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "has_issues=false" >> $GITHUB_OUTPUT
+            echo "⚠️ No actionable tasks found in todo files" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Create GitHub issues
+        if: steps.load_issues.outputs.has_issues == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "📝 Creating GitHub issues from actionable tasks..."
+          
+          # Check if force regeneration is requested
+          force_regenerate="${{ github.event.inputs.force_regenerate }}"
+          
+          if [ "$force_regenerate" = "true" ]; then
+            echo "🔄 Force regeneration requested - closing existing todo-related issues..."
+            
+            # Get existing issues with todo label
+            existing_issues=$(gh api repos/${{ github.repository }}/issues?labels=todo --paginate | jq -r '.[].number')
+            
+            for issue_number in $existing_issues; do
+              echo "🔒 Closing existing issue #$issue_number"
+              gh api repos/${{ github.repository }}/issues/$issue_number \
+                --method PATCH \
+                --field state='closed' \
+                --field state_reason='completed'
+            done
+          fi
+          
+          # Create new issues
+          created_count=0
+          skipped_count=0
+          
+          # Read the generated issues
+          issues=$(jq -c '.issues[]' todo-issues.json)
+          
+          while IFS= read -r issue; do
+            title=$(echo "$issue" | jq -r '.title')
+            body=$(echo "$issue" | jq -r '.body')
+            labels=$(echo "$issue" | jq -r '.labels | join(",")')
+            
+            # Check if issue with similar title already exists (unless force regenerate)
+            if [ "$force_regenerate" != "true" ]; then
+              existing=$(gh api repos/${{ github.repository }}/issues?state=open --paginate | jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
+              
+              if [ -n "$existing" ]; then
+                echo "⚠️ Skipping duplicate issue: $title (exists as #$existing)"
+                skipped_count=$((skipped_count + 1))
+                continue
+              fi
+            fi
+            
+            echo "✅ Creating issue: $title"
+            
+            # Create the issue
+            gh api repos/${{ github.repository }}/issues \
+              --method POST \
+              --field title="$title" \
+              --field body="$body" \
+              --field labels="[$labels]" \
+              > /dev/null
+            
+            created_count=$((created_count + 1))
+            
+          done <<< "$issues"
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📝 **Issue Creation Results:**" >> $GITHUB_STEP_SUMMARY
+          echo "- **Created:** $created_count issues" >> $GITHUB_STEP_SUMMARY
+          echo "- **Skipped:** $skipped_count duplicates" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ $created_count -gt 0 ]; then
+            echo "🎉 Successfully created $created_count GitHub issues from todo files!" >> $GITHUB_STEP_SUMMARY
+            echo "📋 Check the Issues tab to view and manage the generated tasks." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No new issues created (all tasks may already have corresponding issues)" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Cleanup temporary files
+        if: always()
+        run: |
+          rm -f issue-generator.js todo-issues.json
