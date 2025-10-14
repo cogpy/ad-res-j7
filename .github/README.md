@@ -67,6 +67,91 @@ For JSON files, generates readable markdown with proper heading levels and conte
 - **Structured Data**: JSON format enables programmatic analysis and processing
 - **Documentation Consistency**: Ensures all documentation follows the same structural patterns
 
+### Todo to Issues Generator (`todo-to-issues.yml`)
+
+**Purpose**: Automatically creates GitHub issues from actionable tasks found in markdown files within the `todo/` folder.
+
+**When it runs**:
+- On push to `main` branch (when `todo/` folder files change)
+- On pull requests to `main` branch (when `todo/` folder files change)
+- Manually via workflow dispatch (with optional force regeneration)
+
+**What it does**:
+
+1. **Task Detection Phase**:
+   - Scans markdown files in `todo/` directory
+   - Identifies actionable tasks using multiple patterns:
+     - Priority section tasks (Must-Do, Should-Do, Nice-to-Have)
+     - Bullet points with action words (implement, add, create, fix, etc.)
+     - Improvement sections (Improvements Needed, Action Required, etc.)
+   - Applies quality filtering to exclude non-actionable content
+
+2. **Issue Generation Phase**:
+   - Creates GitHub issues with structured content
+   - Assigns appropriate labels based on priority
+   - Includes context (source file, section, priority, line number)
+   - Prevents duplicates (unless force regeneration is enabled)
+
+3. **Label Assignment**:
+   - Base labels: `todo`, `enhancement` (all tasks)
+   - Priority labels: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
+   - Special handling: Critical tasks also get `bug` label
+
+#### Label Format Requirements
+
+The workflow supports multiple label formats and handles special characters correctly:
+
+**Supported Label Formats:**
+
+- **Single word labels**: `todo`, `enhancement`, `bug`
+- **Multi-word labels with spaces**: `priority: critical`, `priority: high`
+- **Colon-separated namespaced labels**: `priority: [level]`
+- **Labels with special characters**: Automatically quoted and escaped
+
+**Label Naming Conventions:**
+
+Priority Labels:
+- Format: `priority: [level]` where level is: `critical`, `high`, `medium`, `low`
+- Examples: `priority: critical`, `priority: high`
+
+Category Labels:
+- Format: Single words or colon-separated namespaced labels
+- Examples: `todo`, `enhancement`, `bug`, `documentation`
+
+Custom Labels:
+- Must follow GitHub's label naming requirements
+- Can contain letters, numbers, spaces, hyphens, and underscores
+- Maximum 50 characters in length
+- Cannot start or end with spaces
+
+**Technical Implementation:**
+
+Labels are converted from JSON arrays to GitHub CLI arguments:
+
+```javascript
+// Internal JSON format
+labels = ["todo", "enhancement", "priority: critical", "bug"]
+
+// Converted to CLI arguments
+--label "todo" --label "enhancement" --label "priority: critical" --label "bug"
+```
+
+**Important Notes:**
+- Labels with spaces are automatically quoted for shell safety
+- Special characters are preserved during conversion
+- The workflow validates label format before issue creation
+- Invalid labels are logged but do not prevent issue creation
+
+**Label Assignment Rules:**
+
+- **All tasks**: Receive `todo` and `enhancement` labels
+- **Critical priority tasks**: Additionally receive `priority: critical` and `bug` labels
+- **High priority tasks**: Additionally receive `priority: high` label
+- **Medium priority tasks**: Additionally receive `priority: medium` label
+- **Low priority tasks**: Additionally receive `priority: low` label
+
+For complete documentation, see: [`docs/todo-to-issues-workflow.md`](../docs/todo-to-issues-workflow.md)
+
 ### Legacy Workflow (`blank.yml`)
 
 The original CI workflow has been updated to use the same file representation validation logic. This ensures backward compatibility while providing the new functionality.

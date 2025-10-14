@@ -22,8 +22,18 @@ The repository is organized into the following key directories:
 - **`evidence/`**: Contains raw evidence, such as bank records, Shopify reports, and invoices.
 - **`jax-dan-response/`**: Contains the specific response of Jacqueline and Daniel Faucitt, including their analysis and evidence.
 - **`docs/`**: Contains additional documentation, including technical and legal analysis.
+- **`todo/`**: Contains actionable tasks that are automatically converted to GitHub issues via the todo-to-issues workflow.
 - **`tools/`**: Contains scripts and tools used for analysis.
 - **`config/`**: Contains configuration files for the tools.
+
+## Automated Workflows
+
+This repository uses GitHub Actions workflows to maintain consistency and automate task management:
+
+- **Todo to Issues Generator**: Automatically creates GitHub issues from tasks in the `todo/` folder. See [workflow documentation](docs/todo-to-issues-workflow.md) for details on label format requirements and usage.
+- **File Representation Validator**: Ensures all documentation has both markdown and JSON representations.
+
+For complete workflow documentation, see [`.github/README.md`](.github/README.md).
 
 ## Getting Started
 
