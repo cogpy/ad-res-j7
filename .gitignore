@@ -37,3 +37,7 @@ test-*.json
 dist/
 build/
 *.log
+
+# Auto-generated workflow scripts (temporary exclusion)
+file-converter.js
+ocr-file-converter.js
