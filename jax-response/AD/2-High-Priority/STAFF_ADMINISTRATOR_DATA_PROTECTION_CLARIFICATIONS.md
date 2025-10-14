@@ -29,6 +29,20 @@ All references in Peter's affidavit to "staff" refer to employees of **RegimA Sk
 - **Data Ownership:** Owns customer data and platform access rights
 - **Service Provider:** Uses platforms owned by RegimA Zone Ltd (Daniel's UK entity)
 
+#### Daniel's Role and Entity Ownership
+
+**Daniel's Position:**
+- **Chief Information Officer (CIO) of RegimA Skin Treatments**
+- Part owner and co-director of several RegimA entities
+- Sole owner and director of several other independent entities, including:
+  - RegimA Zone Ltd (UK)
+  - Other independent technology and distribution entities
+
+**Significance:**
+- Daniel's UK entities provide platform and technology services to various RegimA businesses
+- Platform ownership and administrative roles create legitimate technical oversight responsibilities
+- Multi-entity structure reflects complex international operations across 37 jurisdictions
+
 ### Legal Significance:
 
 **RST Staff Are Unauthorized Third Parties to RWD Customer Data**
