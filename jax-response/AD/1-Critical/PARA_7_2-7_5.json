@@ -41,12 +41,12 @@
         {
           "heading": "Recommended Approach:",
           "level": 3,
-          "content": "*[To be completed based on strategic analysis]*"
+          "content": "**Contextualize IT Expenses Within International Operations:**\n- Detail RegimA's operations across 37 international jurisdictions requiring substantial IT infrastructure\n- Provide itemized breakdown of IT expenses by category (Shopify Plus, AWS, Microsoft 365, Adobe, Sage, payment gateways)\n- **Include comparative analysis showing IT spend as percentage of revenue is industry-standard for e-commerce (typically 5-10% of revenue)**\n- Demonstrate how Peter's card cancellations created the documentation gap\n- Add Dan's technical affidavit explaining infrastructure requirements and technical justification\n\n**Strategic Points:**\n- Expose Peter's restriction of access to documentation, then claiming it doesn't exist\n- Show IT expenses are legitimate business expenses for international operations\n- Demonstrate expenses are proportionate to revenue and consistent with industry benchmarks\n- Highlight that international payments are normal for global business operations"
         },
         {
           "heading": "Evidence Required:",
           "level": 3,
-          "content": "- [ ] *[List specific annexures needed]*"
+          "content": "- [ ] Itemized IT expense breakdown by category (JF5)\n- [ ] Shopify Plus subscription invoices and usage reports (JF5A)\n- [ ] AWS/cloud hosting invoices and infrastructure diagrams (JF5B)\n- [ ] Microsoft 365 Business licenses for all staff (JF5C)\n- [ ] Adobe Creative Cloud for marketing materials (JF5D)\n- [ ] Sage accounting software invoices (JF5E)\n- [ ] Domain registrations and SSL certificates (JF5F)\n- [ ] Payment gateway fees - Stripe, PayPal, Peach Payments (JF5G)\n- [ ] **Comparative industry analysis showing IT spend as % of revenue (JF5H)**\n- [ ] Technical architecture documentation justifying expenses (JF5I)\n- [ ] Dan's technical affidavit on infrastructure requirements\n- [ ] Evidence of Peter's card cancellations causing documentation gaps\n- [ ] Multi-year revenue growth analysis (2M→12M→19M) for context"
         },
         {
           "heading": "Cross-References:",
