@@ -291,32 +291,23 @@ jobs:
                 title = title.substring(0, 77) + '...';
               }
 
-              const body = `## Task Description
-
-${task.task}
-
-## Context
-
-**Source File:** \`${task.file}\`  
-**Section:** ${task.section}  
-**Priority:** ${task.priority}  
-**Line:** ${task.lineNumber}
-
-## Implementation Notes
-
-This task was automatically generated from the todo folder. Please review the source file for additional context and requirements.
-
-## Acceptance Criteria
-
-- [ ] Review the task requirements in the source file
-- [ ] Implement the necessary changes
-- [ ] Test the implementation
-- [ ] Update documentation if needed
-- [ ] Close this issue when complete
-
----
-
-*Generated automatically from todo files by GitHub Actions*`;
+              const body = '## Task Description\\n\\n' +
+                task.task + '\\n\\n' +
+                '## Context\\n\\n' +
+                '**Source File:** `' + task.file + '`\\n' +
+                '**Section:** ' + task.section + '\\n' +
+                '**Priority:** ' + task.priority + '\\n' +
+                '**Line:** ' + task.lineNumber + '\\n\\n' +
+                '## Implementation Notes\\n\\n' +
+                'This task was automatically generated from the todo folder. Please review the source file for additional context and requirements.\\n\\n' +
+                '## Acceptance Criteria\\n\\n' +
+                '- [ ] Review the task requirements in the source file\\n' +
+                '- [ ] Implement the necessary changes\\n' +
+                '- [ ] Test the implementation\\n' +
+                '- [ ] Update documentation if needed\\n' +
+                '- [ ] Close this issue when complete\\n\\n' +
+                '---\\n\\n' +
+                '*Generated automatically from todo files by GitHub Actions*';
 
               return {
                 title: title,
