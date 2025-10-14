@@ -74,7 +74,8 @@ The workflow specifically filters out common section headers to prevent generic 
 - `**Improvements Needed**:` and variations (with/without bold, with/without colon)
 - `**Action Required**:` and `**Actions Required**:`
 - `**Recommended Action**:` and `**Recommended Actions**:`
-- Any bold text ending with a colon (e.g., `**Current Coverage**:`)
+- `**Current Coverage**:` and variations (e.g., `**Current Coverage**: Partially addressed in Section 4`)
+- Any bold text ending with a colon (e.g., `**Legal Significance**:`)
 
 This ensures that only the actual actionable items listed under these headers become issues, not the headers themselves.
 

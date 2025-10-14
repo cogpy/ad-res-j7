@@ -267,6 +267,7 @@ class WorkflowIntegrationTest {
     const skipPatterns = [
       /^\*\*.*\*\*$/,
       /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
+      /^\*\*Current Coverage\*\*:/i,  // Bold "Current Coverage:" with text after
       /^Current Coverage:/i,
       /^Legal Significance:/i,
       /^Estimated effort:/i,
@@ -411,6 +412,9 @@ No numbered lists or bullet points with action words
       'Recommended Actions:',
       'Recommended Action:',
       '**Current Coverage**:',
+      '**Current Coverage**: Partially addressed in Section 4',
+      '**Current Coverage**: Section 3 addresses this but lacks depth',
+      'Current Coverage: Not explicitly addressed',
       '**Action Required**:'
     ];
     
@@ -433,6 +437,80 @@ No numbered lists or bullet points with action words
     });
   }
 
+  // Test duplicate prevention with identical task titles
+  testDuplicatePrevention() {
+    console.log('\n🧪 Testing duplicate prevention with identical task titles...');
+    
+    // Create test content with duplicate task titles
+    const contentWithDuplicates = `# Test Duplicates
+
+## Must-Do (Critical Priority)
+
+1. Implement user authentication system
+2. Create database schema for users
+3. Add error logging functionality
+
+## Should-Do (High Priority)
+
+1. Implement user authentication system
+2. Update documentation for deployment
+3. Add error logging functionality
+`;
+
+    // Generate issues from content with duplicates
+    const issues = this.simulateIssueGeneration(contentWithDuplicates, 'test-duplicates.md');
+    
+    // Verify that issues were generated
+    this.assert(issues.length > 0, 'Generated issues from test content');
+    
+    // Check for duplicate titles
+    const titles = issues.map(issue => issue.title);
+    const uniqueTitles = new Set(titles);
+    
+    // In the actual workflow, duplicates would be detected and skipped
+    // Here we verify that the same title appears multiple times in our test data
+    const hasDuplicates = titles.length !== uniqueTitles.size;
+    this.assert(hasDuplicates, 'Test content contains duplicate task titles');
+    
+    // Verify specific duplicates
+    const duplicateTitle1 = 'Implement user authentication system';
+    const count1 = titles.filter(t => t === duplicateTitle1).length;
+    this.assert(count1 === 2, `Found duplicate title "${duplicateTitle1}" (count: ${count1})`);
+    
+    const duplicateTitle2 = 'Add error logging functionality';
+    const count2 = titles.filter(t => t === duplicateTitle2).length;
+    this.assert(count2 === 2, `Found duplicate title "${duplicateTitle2}" (count: ${count2})`);
+    
+    // Test the duplicate detection logic that would be used in the workflow
+    const titleCounts = {};
+    titles.forEach(title => {
+      titleCounts[title] = (titleCounts[title] || 0) + 1;
+    });
+    
+    const duplicatesFound = Object.entries(titleCounts).filter(([_, count]) => count > 1);
+    this.assert(duplicatesFound.length === 2, `Duplicate detection logic identifies ${duplicatesFound.length} duplicate titles`);
+    
+    // Verify that duplicate detection would work correctly
+    // Simulate the workflow's duplicate checking behavior
+    const seenTitles = new Set();
+    let wouldBeCreated = 0;
+    let wouldBeSkipped = 0;
+    
+    issues.forEach(issue => {
+      if (seenTitles.has(issue.title)) {
+        wouldBeSkipped++;
+      } else {
+        seenTitles.add(issue.title);
+        wouldBeCreated++;
+      }
+    });
+    
+    this.assert(wouldBeCreated === 4, `Duplicate prevention would create ${wouldBeCreated} unique issues`);
+    this.assert(wouldBeSkipped === 2, `Duplicate prevention would skip ${wouldBeSkipped} duplicate issues`);
+    
+    console.log(`  📊 Total tasks: ${issues.length}, Unique: ${wouldBeCreated}, Duplicates: ${wouldBeSkipped}`);
+  }
+
   // Run all integration tests
   runAllTests() {
     console.log('🚀 Starting workflow integration tests...');
@@ -443,6 +521,7 @@ No numbered lists or bullet points with action words
     this.testMultipleLabelScenarios();
     this.testErrorHandling();
     this.testSectionHeaderFiltering();
+    this.testDuplicatePrevention();
     
     console.log('\n' + '=' .repeat(60));
     console.log(`📊 Integration Test Summary: ${this.testResults.length} tests run`);

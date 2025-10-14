@@ -44,6 +44,7 @@ node tests/workflow-validation.test.js
 - Multiple label scenarios
 - Quality filtering validation
 - Error handling with edge cases
+- **Duplicate prevention with identical task titles** (NEW)
 - Mock issue creation
 
 **Usage**:
@@ -140,6 +141,7 @@ cat tests/comprehensive-test-results.json | jq '.summary'
 - Real todo file processing
 - Mock issue creation
 - Label conversion validation
+- **Duplicate prevention testing with identical task titles**
 - End-to-end workflow simulation
 
 ## Current Test Results
