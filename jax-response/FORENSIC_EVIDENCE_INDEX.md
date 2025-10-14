@@ -75,6 +75,46 @@ DOCUMENTED LOSS: R 3,141,647.70 (3 months)
 
 ---
 
+#### **CATEGORY 2B: EMAIL IMPERSONATION PATTERN (JF3A)**
+**Folder:** `email-impersonation-pattern-jf3a/`  
+**Timeline:** June 20 - August 29, 2025  
+**Evidence Quality:** Grade A (Primary criminal evidence - documented pattern)
+
+**Key Evidence Files:**
+- `README.md` - Comprehensive email impersonation forensic analysis
+- Cross-referenced with JF1, JF2, JF3 (Sage Account control evidence)
+- Email system control pattern documentation
+- Identity theft and business impersonation analysis
+
+**Criminal Elements:**
+- Systematic email hijacking (pete@regima.com controlled by Rynette Farrar)
+- Pattern of identity theft and impersonation over 3+ months
+- Business impersonation enabling revenue theft conspiracy
+- Information manipulation through controlled communications
+- Attorney communications via compromised account
+
+**Pattern Timeline:**
+```
+June 20, 2025:  Sage Account control confirmed (JF1)
+June 20, 2025:  Instructions to Gayane via impersonated email
+August 25, 2025: Control structure validation (JF2)
+August 29, 2025: Attorney communications (JF3)
+Pattern Duration: 3+ months of sustained impersonation
+```
+
+**Legal Significance:**
+- Identity theft and fraud charges
+- Computer-related fraud (ECTA violations)
+- Conspiracy and racketeering support
+- R3.1M+ financial losses enabled by email control
+
+**Cross-References:**
+- Category 4 (Instruction Coordination) - Gayane Williams directives
+- Category 3 (Family Conspiracy) - Coordinated impersonation infrastructure
+- Category 5 (Business Destruction) - Operational directives via compromised email
+
+---
+
 #### **CATEGORY 3: FAMILY CONSPIRACY**
 **Folder:** `29-may-domain-registration/`  
 **Timeline:** May 29, 2025  

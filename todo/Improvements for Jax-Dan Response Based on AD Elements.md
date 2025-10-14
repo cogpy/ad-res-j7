@@ -253,7 +253,7 @@ This differentiation helps counter Peter's attempt to conflate their roles and r
 - JF1: Sage Account screenshot (20 June 2025) - Pete@regima.com controlled by Rynette Farrar ✓
 - JF2: Sage Account screenshot (25 August 2025) - Confirmation of control structure ✓
 - JF3: Email communication (29 August 2025) - Attorney knowledge of criminal matters ✓
-- **JF3A**: Additional email forensics showing pattern of impersonation
+- JF3A: Additional email forensics showing pattern of impersonation ✓
 - **JF3B**: System access logs demonstrating Rynette's control timeline
 - **JF3C**: Evidence of identity theft and email hijacking
 
