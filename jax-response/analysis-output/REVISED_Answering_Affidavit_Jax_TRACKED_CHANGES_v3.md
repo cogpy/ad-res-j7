@@ -948,6 +948,8 @@ The final agreement contains **two separate clauses** stating that parties "will
 
 15.3 The Applicant's own conduct demonstrates that he is the party acting contrary to the interests of the businesses.
 
+15.4 Recent developments further underscore the need for an independent forensic audit: the Fourth Respondent (RegimA Skin Treatments CC) and Sixth Respondent (Strategic Logistics CC) have recently produced invoices dating back to 2015, including invoices previously thought to be settled, together with demands for payment totaling approximately ZAR 20 million from the UK entity RegimA Dr H Ltd. The timing of these demands, following the data extraction from UK e-commerce platforms during March-June 2025, raises serious concerns about coordinated efforts to apply financial pressure and prevent legitimate legal action regarding GDPR and POPIA violations. The broadly defined orders of the interdict prevent the Respondents from accessing the company records necessary to respond to these demands, which further demonstrates why an independent forensic audit covering the full period and scope of operations is essential.
+
 ---
 
 ## 16. PRAYER
@@ -960,7 +962,12 @@ The final agreement contains **two separate clauses** stating that parties "will
 
 16.1.2 Dismiss the Applicant's application with costs on the scale as between attorney and client;
 
-16.1.3 Grant such further and/or alternative relief as this Honourable Court deems fit.
+16.1.3 Order that an independent forensic audit be conducted into all entities by an independent auditor appointed by the Court, with such audit to:
+   - Cover the period from 2015 to 2025, including all cross-border flows and foreign exchange transactions for all companies in the group;
+   - Be transparent to all parties and not inappropriately privilege any party;
+   - Address recent invoice demands totaling approximately ZAR 20 million from the Fourth and Sixth Respondents to RegimA Dr H Ltd, which the Respondents are currently unable to properly investigate due to the broadly defined orders of the interdict that frustrate the ability to gather complete evidence required to substantiate certain facts;
+
+16.1.4 Grant such further and/or alternative relief as this Honourable Court deems fit.
 
 ---
 
