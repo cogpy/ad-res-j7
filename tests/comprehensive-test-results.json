@@ -1,0 +1,36 @@
+{
+  "validation": {
+    "success": false,
+    "total": 85,
+    "passed": 80,
+    "failed": 5,
+    "errors": [
+      "Properly quotes label values",
+      "Recognizes Must-Do sections",
+      "Recognizes Should-Do sections",
+      "Recognizes Nice-to-Have sections",
+      "workflow-test.md contains the target task"
+    ]
+  },
+  "integration": {
+    "success": false,
+    "total": 33,
+    "passed": 29,
+    "failed": 4,
+    "errors": [
+      "Long titles are properly truncated",
+      "Uses jq to extract array elements",
+      "Builds label flags correctly",
+      "Uses eval for dynamic command execution"
+    ],
+    "mock_issues": 15
+  },
+  "overall": {
+    "total_tests": 118,
+    "passed_tests": 109,
+    "failed_tests": 9,
+    "success_rate": 92
+  },
+  "generated_at": "2025-10-14T11:05:09.806Z",
+  "test_runner_version": "1.0.0"
+}
