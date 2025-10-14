@@ -482,16 +482,29 @@ This international scope requires substantial IT infrastructure, including:
 
 7.8.7.2 The Applicant first consulted attorneys on or about **5 August 2025** (20 days after the payment).
 
-7.8.7.3 The Applicant filed this ex parte interdict application on **13 August 2025** (28 days after the payment).
+7.8.7.3 The Applicant and I signed a settlement agreement on or about **11 August 2025** (26 days after the payment).
 
-7.8.7.4 This timeline demonstrates that **the R500,000 payment was used as a pretext** for the interdict application, rather than representing genuine concern about unauthorized transactions.
+7.8.7.4 The Applicant filed this ex parte interdict application on **13 August 2025** (28 days after the payment, and merely 2 days after the settlement agreement).
+
+7.8.7.5 **This timeline demonstrates strategic coordination rather than genuine urgency:**
+
+(a) The Applicant waited 26 days after the R500,000 payment before securing a settlement agreement;
+
+(b) The Applicant then filed the interdict application a mere 2 days after the settlement agreement was signed;
+
+(c) This pattern reveals that **the R500,000 payment was used as leverage in settlement negotiations** and subsequently as a pretext for the interdict application;
+
+(d) If the Applicant genuinely believed the R500,000 payment constituted urgent financial misconduct requiring immediate intervention, he would not have waited 26 days and prioritized settlement negotiations before seeking urgent relief;
+
+(e) The coordinated timing of settlement agreement → 2 days → interdict filing demonstrates this is **strategic litigation for control**, not a genuine response to financial misconduct.
 
 ⚠️ **STRATEGIC NOTE:** This is a CRITICAL section. Ensure you have:
 - Director loan account statements for all three directors (Annexures JF-DLA1, JF-DLA2, JF-DLA3)
 - Bank statement for 16 July 2025 with clear reference (Annexure JF-BS1)
 - Accounting records showing allocation (Annexure JF-AR1)
 - MINIMUM 4 examples of Peter's own similar withdrawals (Annexures JF-PA1 through JF-PA4)
-- Timeline documentation
+- Timeline documentation showing: R500K payment (16 July) → settlement agreement (11 August) → interdict filing (13 August)
+- Settlement agreement copies (Annexures JF-4, JF-5) with dates
 
 ---
 
@@ -1072,7 +1085,7 @@ COMMISSIONER OF OATHS
 1. **Section 2 (Purpose):** Added comprehensive material non-disclosure framework
 2. **Section 3 (Responsible Person):** Extensively detailed regulatory role and compliance crisis
 3. **Section 7.2 (IT Expenses):** Added international operations context and Peter's restriction of access
-4. **Section 7.8 (R500K Payment):** Added director loan account structure and Peter's inconsistency
+4. **Section 7.8 (R500K Payment):** Added director loan account structure, Peter's inconsistency, and timing correlation with settlement negotiations demonstrating strategic litigation for control
 5. **Section 12 (Breakdown):** Added historical collaborative model and Rynette's expanding access
 
 ### Strategic Focus:
