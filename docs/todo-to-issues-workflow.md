@@ -187,8 +187,8 @@ The workflow supports various label formats and handles label processing accordi
 #### Label Generation Process
 
 1. **Internal Processing**: Labels are initially stored as JSON arrays in the workflow
-2. **CLI Conversion**: JSON arrays are converted to individual `--label` arguments for GitHub CLI compatibility
-3. **Escaping**: Labels containing spaces or special characters are automatically quoted
+2. **CLI Conversion**: JSON arrays are converted to individual `--label` arguments for GitHub CLI compatibility using `jq -r '.[]'`
+3. **Escaping**: Labels containing spaces or special characters are automatically quoted for shell safety
 
 #### Label Naming Conventions
 
@@ -205,6 +205,27 @@ The workflow supports various label formats and handles label processing accordi
 - Can contain letters, numbers, spaces, hyphens, and underscores
 - Maximum 50 characters in length
 - Cannot start or end with spaces
+- Special characters like colons (`:`) are supported for namespaced labels
+
+#### Label Format Validation
+
+The workflow performs the following validation checks:
+
+**Supported Characters:**
+- Alphanumeric characters: `a-z`, `A-Z`, `0-9`
+- Spaces: Fully supported (e.g., `"priority: critical"`)
+- Colons: Used for namespacing (e.g., `"type: bug"`)
+- Hyphens: Standard separator (e.g., `"high-priority"`)
+- Underscores: Alternative separator (e.g., `"action_required"`)
+
+**Unsupported/Problematic Characters:**
+- Leading or trailing spaces are automatically trimmed
+- Empty strings are filtered out
+- `null` values are ignored during processing
+
+**Length Limits:**
+- Individual labels: Maximum 50 characters
+- Total labels per issue: No GitHub limit, but practical limit ~20-30 labels
 
 #### Technical Implementation
 
@@ -214,15 +235,25 @@ The workflow handles label conversion as follows:
 // Internal JSON format
 labels = ["todo", "enhancement", "priority: critical", "bug"]
 
-// Converted to CLI arguments
+// Converted to CLI arguments using jq and bash array
 --label "todo" --label "enhancement" --label "priority: critical" --label "bug"
+```
+
+**Label Conversion Details:**
+```bash
+# Parse labels array and create individual --label flags
+# Uses jq to safely extract array elements and quote them properly
+while IFS= read -r label; do
+  gh_args+=("--label" "$label")
+done < <(echo "$labels" | jq -r '.[]')
 ```
 
 **Important Notes:**
 - Labels with spaces are automatically quoted for shell safety
-- Special characters are preserved during conversion
-- The workflow validates label format before issue creation
+- Special characters are preserved during conversion using proper `jq` parsing
+- The workflow uses secure array-based argument passing (avoids `eval`)
 - Invalid labels are logged but do not prevent issue creation
+- Supports all GitHub-compatible label characters including colons, spaces, and hyphens
 
 ### Label Assignment Rules
 
@@ -233,6 +264,108 @@ Labels are automatically assigned based on task characteristics:
 - **High priority tasks**: Additionally receive `priority: high` label
 - **Medium priority tasks**: Additionally receive `priority: medium` label
 - **Low priority tasks**: Additionally receive `priority: low` label
+
+#### Priority Section Detection
+
+The workflow recognizes the following priority section formats:
+
+**Critical Priority Sections:**
+- `Must-Do (Critical Priority)`
+- `Must-Do (Phase 1)`
+- Any section containing "must-do", "phase 1", or "critical" (case-insensitive)
+
+**High Priority Sections:**
+- `Should-Do (High Priority)`
+- `Should-Do (Phase 2)`
+- Any section containing "should-do", "phase 2", or "high" (case-insensitive)
+
+**Medium Priority Sections:**
+- `Nice-to-Have (Medium Priority)`
+- `Priority Recommendations`
+- Any section containing "medium" (case-insensitive)
+
+**Low Priority Sections:**
+- `Nice-to-Have (Low Priority)`
+- `Phase 3-4` sections
+- Any section containing "nice-to-have", "phase 3", "phase 4", or "low" (case-insensitive)
+
+### Label Troubleshooting
+
+#### Common Issues and Solutions
+
+**Labels with Spaces Not Working:**
+- ✅ **Correct**: Labels like `"priority: critical"` are fully supported
+- ❌ **Issue**: Ensure the workflow uses proper quoting in the GitHub CLI command
+- 🔧 **Solution**: The workflow automatically quotes labels containing spaces
+
+**Special Characters in Labels:**
+- ✅ **Supported**: Colons (`:`), hyphens (`-`), underscores (`_`)
+- ❌ **Avoid**: Emoji, quotes, backslashes, or other shell-special characters
+- 🔧 **Solution**: Use standard alphanumeric characters and supported separators
+
+**Label Not Appearing on Issues:**
+- Check that the repository has permission to create/assign labels
+- Verify the label doesn't exceed GitHub's 50-character limit
+- Ensure the label text is not empty after trimming
+
+**Duplicate Labels:**
+- The workflow automatically deduplicates labels in the JSON array
+- Multiple labels with different cases are treated as separate labels
+
+### Label Format Examples
+
+#### Valid Label Examples
+
+```json
+{
+  "valid_labels": [
+    "todo",
+    "enhancement", 
+    "priority: critical",
+    "priority: high",
+    "priority: medium", 
+    "priority: low",
+    "bug",
+    "documentation",
+    "feature-request",
+    "help_wanted",
+    "good-first-issue",
+    "type: improvement",
+    "area: frontend"
+  ]
+}
+```
+
+#### Generated GitHub CLI Commands
+
+For a critical priority task, the workflow generates:
+```bash
+gh issue create \
+  --title "Fix critical security vulnerability" \
+  --body "Detailed description here..." \
+  --label "todo" \
+  --label "enhancement" \
+  --label "priority: critical" \
+  --label "bug"
+```
+
+For a high priority task:
+```bash
+gh issue create \
+  --title "Implement new user dashboard" \
+  --body "Detailed description here..." \
+  --label "todo" \
+  --label "enhancement" \
+  --label "priority: high"
+```
+
+#### Label Processing Flow
+
+1. **Task Detection**: Workflow identifies actionable tasks in markdown files
+2. **Priority Assignment**: Determines priority based on section headers
+3. **Label Array Creation**: Builds JSON array: `["todo", "enhancement", "priority: high"]`
+4. **CLI Conversion**: Uses `jq -r '.[]'` to extract individual labels
+5. **Issue Creation**: Passes each label as separate `--label "value"` argument to GitHub CLI
 
 ## Permissions
 

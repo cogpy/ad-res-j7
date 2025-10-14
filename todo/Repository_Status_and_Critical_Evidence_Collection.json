@@ -1,0 +1,134 @@
+{
+  "title": "Repository Status and Critical Evidence Collection",
+  "date": "2025-10-13",
+  "type": "todo",
+  "status": "active",
+  "overall_readiness": "78%",
+  "priority_sections": [
+    {
+      "name": "Must-Do (Phase 1) - Critical Evidence Collection",
+      "priority": "critical",
+      "task_count": 12,
+      "estimated_completion": "Week 1"
+    },
+    {
+      "name": "Should-Do (Phase 2) - High Priority Evidence",
+      "priority": "high",
+      "task_count": 6,
+      "estimated_completion": "Week 2"
+    },
+    {
+      "name": "Nice-to-Have (Phase 3) - Supporting Evidence",
+      "priority": "medium",
+      "task_count": 4,
+      "estimated_completion": "Week 3"
+    },
+    {
+      "name": "Must-Do (Phase 1) - Critical Maintenance",
+      "priority": "critical",
+      "task_count": 5,
+      "estimated_completion": "Week 1"
+    },
+    {
+      "name": "Should-Do (Phase 2) - Documentation Updates",
+      "priority": "high",
+      "task_count": 5,
+      "estimated_completion": "Week 2"
+    },
+    {
+      "name": "Nice-to-Have (Phase 3) - Optimization",
+      "priority": "medium",
+      "task_count": 5,
+      "estimated_completion": "Week 3-4"
+    },
+    {
+      "name": "Must-Do (Phase 1) - Before Legal Review",
+      "priority": "critical",
+      "task_count": 5,
+      "estimated_completion": "Week 1"
+    },
+    {
+      "name": "Should-Do (Phase 2) - Legal Review Preparation",
+      "priority": "high",
+      "task_count": 5,
+      "estimated_completion": "Week 2"
+    },
+    {
+      "name": "Nice-to-Have (Phase 3) - Enhancement",
+      "priority": "medium",
+      "task_count": 5,
+      "estimated_completion": "Week 3"
+    },
+    {
+      "name": "Must-Do (Phase 1) - Critical Analysis",
+      "priority": "critical",
+      "task_count": 5,
+      "estimated_completion": "Week 1"
+    },
+    {
+      "name": "Should-Do (Phase 2) - Analysis Expansion",
+      "priority": "high",
+      "task_count": 5,
+      "estimated_completion": "Week 2"
+    },
+    {
+      "name": "Nice-to-Have (Phase 3) - Advanced Analysis",
+      "priority": "medium",
+      "task_count": 5,
+      "estimated_completion": "Week 3-4"
+    },
+    {
+      "name": "Must-Do (Phase 1) - Critical Testing",
+      "priority": "critical",
+      "task_count": 5,
+      "estimated_completion": "Week 1"
+    },
+    {
+      "name": "Should-Do (Phase 2) - Quality Checks",
+      "priority": "high",
+      "task_count": 5,
+      "estimated_completion": "Week 2"
+    },
+    {
+      "name": "Nice-to-Have (Phase 3) - Advanced QA",
+      "priority": "medium",
+      "task_count": 5,
+      "estimated_completion": "Week 3-4"
+    }
+  ],
+  "total_tasks": 77,
+  "critical_tasks": 32,
+  "high_priority_tasks": 26,
+  "medium_priority_tasks": 19,
+  "key_metrics": {
+    "repository_growth": {
+      "directories": "72+ (from 33)",
+      "files": "275+ (from 30)",
+      "growth_rate": "+817%"
+    },
+    "documented_losses": {
+      "revenue_theft": "R3.1M+",
+      "family_trust": "R2.851M+",
+      "financial_flows": "R4.276M+",
+      "total": "R10.227M+"
+    },
+    "affidavit_status": {
+      "current_version": "v3",
+      "total_versions": 5,
+      "strategic_arguments": 7
+    }
+  },
+  "timeline": {
+    "week_1": "Critical evidence collection and maintenance",
+    "week_2": "High-priority evidence and affidavit preparation",
+    "week_3": "Legal review preparation and QA",
+    "week_4": "Final review and court submission preparation"
+  },
+  "references": {
+    "status_assessment": "docs/REPOSITORY_STATUS_ASSESSMENT.md",
+    "current_affidavit": "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md",
+    "evidence_requirements": "jax-response/README.md",
+    "workflow_documentation": "docs/todo-to-issues-workflow.md"
+  }
+}
+
