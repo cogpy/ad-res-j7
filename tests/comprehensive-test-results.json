@@ -17,8 +17,8 @@
   },
   "integration": {
     "success": false,
-    "total": 28,
-    "passed": 26,
+    "total": 35,
+    "passed": 33,
     "failed": 2,
     "errors": [
       "Long titles are properly truncated",
@@ -27,11 +27,11 @@
     "mock_issues": 15
   },
   "overall": {
-    "total_tests": 113,
-    "passed_tests": 103,
+    "total_tests": 120,
+    "passed_tests": 110,
     "failed_tests": 10,
-    "success_rate": 91
+    "success_rate": 92
   },
-  "generated_at": "2025-10-14T16:16:09.826Z",
+  "generated_at": "2025-10-14T18:23:37.952Z",
   "test_runner_version": "1.0.0"
 }
