@@ -1,0 +1,152 @@
+# Workflow Validation Tests
+# Validates the todo-to-issues and file-representations workflows
+
+name: Workflow Validation Tests
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: 
+      - '.github/workflows/**'
+      - 'tests/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - '.github/workflows/**'
+      - 'tests/**'
+  workflow_dispatch:
+
+jobs:
+  validate-workflows:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read       # Required to read repository files
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run workflow validation tests
+        run: |
+          echo "🚀 Running workflow validation tests..."
+          npm test
+          
+      - name: Check test results
+        run: |
+          if [ -f "tests/comprehensive-test-results.json" ]; then
+            echo "=== Test Results Summary ===" >> $GITHUB_STEP_SUMMARY
+            
+            # Extract key metrics using jq
+            total_tests=$(jq -r '.overall.total_tests' tests/comprehensive-test-results.json)
+            passed_tests=$(jq -r '.overall.passed_tests' tests/comprehensive-test-results.json)
+            failed_tests=$(jq -r '.overall.failed_tests' tests/comprehensive-test-results.json)
+            success_rate=$(jq -r '.overall.success_rate' tests/comprehensive-test-results.json)
+            
+            echo "📊 **Test Metrics:**" >> $GITHUB_STEP_SUMMARY
+            echo "- Total Tests: $total_tests" >> $GITHUB_STEP_SUMMARY
+            echo "- Passed: $passed_tests" >> $GITHUB_STEP_SUMMARY
+            echo "- Failed: $failed_tests" >> $GITHUB_STEP_SUMMARY
+            echo "- Success Rate: ${success_rate}%" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            # Check individual test suite results
+            validation_passed=$(jq -r '.validation.passed' tests/comprehensive-test-results.json)
+            validation_total=$(jq -r '.validation.total' tests/comprehensive-test-results.json)
+            integration_passed=$(jq -r '.integration.passed' tests/comprehensive-test-results.json)
+            integration_total=$(jq -r '.integration.total' tests/comprehensive-test-results.json)
+            
+            echo "📋 **Validation Tests:** $validation_passed/$validation_total passed" >> $GITHUB_STEP_SUMMARY
+            echo "🧪 **Integration Tests:** $integration_passed/$integration_total passed" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            # Show any failures
+            validation_errors=$(jq -r '.validation.errors | length' tests/comprehensive-test-results.json)
+            integration_errors=$(jq -r '.integration.errors | length' tests/comprehensive-test-results.json)
+            
+            if [ "$validation_errors" -gt 0 ] || [ "$integration_errors" -gt 0 ]; then
+              echo "⚠️ **Failed Tests:**" >> $GITHUB_STEP_SUMMARY
+              
+              if [ "$validation_errors" -gt 0 ]; then
+                echo "Validation failures:" >> $GITHUB_STEP_SUMMARY
+                jq -r '.validation.errors[]' tests/comprehensive-test-results.json | while read error; do
+                  echo "- $error" >> $GITHUB_STEP_SUMMARY
+                done
+              fi
+              
+              if [ "$integration_errors" -gt 0 ]; then
+                echo "Integration failures:" >> $GITHUB_STEP_SUMMARY
+                jq -r '.integration.errors[]' tests/comprehensive-test-results.json | while read error; do
+                  echo "- $error" >> $GITHUB_STEP_SUMMARY
+                done
+              fi
+            else
+              echo "🎉 **All tests passed!**" >> $GITHUB_STEP_SUMMARY
+            fi
+            
+            # Determine overall status
+            if [ "$success_rate" -ge 90 ]; then
+              echo "✅ Workflow validation successful (${success_rate}% pass rate)" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ Workflow validation needs attention (${success_rate}% pass rate)" >> $GITHUB_STEP_SUMMARY
+              exit 1
+            fi
+          else
+            echo "❌ Test results file not found" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: workflow-test-results
+          path: |
+            tests/workflow-validation-results.json
+            tests/integration-test-results.json
+            tests/comprehensive-test-results.json
+          retention-days: 30
+
+      - name: Validate specific workflow requirements
+        run: |
+          echo "🔍 Checking specific workflow requirements..."
+          
+          # Check if todo-to-issues workflow exists and has required components
+          if [ -f ".github/workflows/todo-to-issues.yml" ]; then
+            echo "✅ todo-to-issues.yml exists"
+            
+            # Check for label handling fix (from todo requirements)
+            if grep -q "jq -r '\\.\\[\\]'" .github/workflows/todo-to-issues.yml; then
+              echo "✅ Label array handling implemented correctly"
+            else
+              echo "❌ Label array handling needs review"
+            fi
+            
+            # Check for comprehensive logging
+            if grep -q "echo.*Creating issue:" .github/workflows/todo-to-issues.yml; then
+              echo "✅ Comprehensive logging implemented"
+            else
+              echo "⚠️ Consider adding more detailed logging"
+            fi
+          else
+            echo "❌ todo-to-issues.yml not found"
+            exit 1
+          fi
+          
+          # Check if file-representations workflow exists
+          if [ -f ".github/workflows/file-representations.yml" ]; then
+            echo "✅ file-representations.yml exists"
+          else
+            echo "❌ file-representations.yml not found"
+            exit 1
+          fi
+          
+          echo "🎯 Workflow requirement validation complete"

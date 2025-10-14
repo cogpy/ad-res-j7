@@ -88,6 +88,20 @@ Automatically applied labels:
 - Priority labels: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
 - `bug` - Added for critical priority items
 
+**Label Format Requirements:**
+- Labels are generated as JSON arrays internally and converted to individual CLI arguments
+- Label names can contain spaces (e.g., "priority: critical")
+- Special characters in labels are automatically escaped for GitHub CLI compatibility
+- Multiple labels are applied using separate `--label` flags in the CLI command
+- Label conversion process: `["label1", "label2"]` → `--label "label1" --label "label2"`
+##### Label Format Requirements
+The workflow supports labels with various formats and special characters:
+- **Spaces**: Labels like `priority: critical` are fully supported
+- **Colons**: Used in priority labels (e.g., `priority: high`)
+- **Hyphens**: Standard in GitHub labels (e.g., `high-priority`)
+- **Special characters**: Most GitHub-compatible label characters are supported
+- **Security**: Uses secure array-based argument passing to prevent shell injection vulnerabilities
+
 ### Duplicate Prevention
 
 The workflow includes intelligent duplicate prevention:
@@ -148,6 +162,67 @@ For best results, structure todo files with clear sections:
 - Specific actionable item 1
 - Specific actionable item 2
 ```
+
+## Label Format Requirements
+
+### Supported Label Formats
+
+The workflow supports various label formats and handles label processing according to GitHub CLI requirements:
+
+#### Standard Label Names
+- **Single word labels**: `todo`, `enhancement`, `bug`
+- **Multi-word labels with spaces**: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
+- **Custom labels**: Any valid GitHub label name following standard conventions
+
+#### Label Generation Process
+
+1. **Internal Processing**: Labels are initially stored as JSON arrays in the workflow
+2. **CLI Conversion**: JSON arrays are converted to individual `--label` arguments for GitHub CLI compatibility
+3. **Escaping**: Labels containing spaces or special characters are automatically quoted
+
+#### Label Naming Conventions
+
+**Priority Labels:**
+- Format: `priority: [level]` where level is: `critical`, `high`, `medium`, `low`
+- Example: `priority: critical`, `priority: high`
+
+**Category Labels:**
+- Format: Single words or colon-separated namespaced labels
+- Examples: `todo`, `enhancement`, `bug`, `documentation`
+
+**Custom Labels:**
+- Must follow GitHub's label naming requirements
+- Can contain letters, numbers, spaces, hyphens, and underscores
+- Maximum 50 characters in length
+- Cannot start or end with spaces
+
+#### Technical Implementation
+
+The workflow handles label conversion as follows:
+
+```javascript
+// Internal JSON format
+labels = ["todo", "enhancement", "priority: critical", "bug"]
+
+// Converted to CLI arguments
+--label "todo" --label "enhancement" --label "priority: critical" --label "bug"
+```
+
+**Important Notes:**
+- Labels with spaces are automatically quoted for shell safety
+- Special characters are preserved during conversion
+- The workflow validates label format before issue creation
+- Invalid labels are logged but do not prevent issue creation
+
+### Label Assignment Rules
+
+Labels are automatically assigned based on task characteristics:
+
+- **All tasks**: Receive `todo` and `enhancement` labels
+- **Critical priority tasks**: Additionally receive `priority: critical` and `bug` labels
+- **High priority tasks**: Additionally receive `priority: high` label
+- **Medium priority tasks**: Additionally receive `priority: medium` label
+- **Low priority tasks**: Additionally receive `priority: low` label
 
 ## Permissions
 
@@ -265,6 +340,13 @@ If issues aren't being created:
 - **"Duplicate issues skipped"**: Expected behavior unless force regeneration is enabled
 
 **Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow handles labels with spaces correctly (e.g., "priority: critical").
+**Label Handling Notes:**
+- Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility
+- The workflow handles labels with spaces correctly (e.g., "priority: critical")
+- Labels containing special characters are automatically escaped and quoted
+- If label creation fails, check the Actions logs for specific GitHub API error messages
+- Ensure repository labels exist or have proper permissions to create new labels
+**Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow uses secure array-based argument passing (not `eval`) to properly handle labels with special characters, spaces, and colons (e.g., "priority: critical", "bug: high-priority").
 
 ### Customization
 The workflow can be customized by modifying:
