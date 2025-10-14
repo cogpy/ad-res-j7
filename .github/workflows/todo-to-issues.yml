@@ -472,15 +472,15 @@ jobs:
             
             # Parse labels array and create individual --label flags
             # Note: GitHub CLI expects individual --label arguments, not a JSON array
-            # This converts the JSON array ["label1","label2"] to --label "label1" --label "label2"
-            # Use a while loop with jq to properly handle labels containing spaces
-            label_flags=""
+            # This safely converts the JSON array ["label1","label2"] to individual --label arguments
+            # avoiding eval and properly handling labels with spaces and special characters
+            gh_args=("issue" "create" "--title" "$title" "--body" "$body")
             while IFS= read -r label; do
-              label_flags+=" --label \"$label\""
+              gh_args+=("--label" "$label")
             done < <(echo "$labels" | jq -r '.[]')
             
-            # Create the issue using gh issue create with individual label flags
-            eval "gh issue create --title \"$title\" --body \"$body\" $label_flags" > /dev/null
+            # Create the issue using gh with proper argument array (no eval needed)
+            gh "${gh_args[@]}" > /dev/null
             
             created_count=$((created_count + 1))
             
