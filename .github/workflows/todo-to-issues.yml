@@ -245,6 +245,7 @@ jobs:
               const skipPatterns = [
                 /^\*\*.*\*\*$/,  // Just bold text
                 /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
+                /^\*\*Current Coverage\*\*:/i,  // Bold "Current Coverage:" with text after
                 /^Current Coverage:/i,
                 /^Legal Significance:/i,
                 /^Framework Phase:/i,
