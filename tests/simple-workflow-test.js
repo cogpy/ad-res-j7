@@ -119,13 +119,14 @@ class SimpleWorkflowTest {
     let foundNumberedTask = false;
     
     for (const line of lines) {
-      if (line.match(/^\d+\.\s+Test basic workflow functionality/)) {
+      // Match either original format or completed format with strikethrough
+      if (line.match(/^\d+\.\s+.*Test basic workflow functionality/)) {
         foundNumberedTask = true;
         break;
       }
     }
     
-    this.assert(foundNumberedTask, 'Task is in numbered list format (1. Task description)');
+    this.assert(foundNumberedTask, 'Task is in numbered list format (1. Task description) or marked complete');
     return foundNumberedTask;
   }
 

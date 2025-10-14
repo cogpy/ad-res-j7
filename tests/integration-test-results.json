@@ -9,192 +9,192 @@
     {
       "test": "Created high priority tasks sample file",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.402Z"
+      "timestamp": "2025-10-14T21:26:52.702Z"
     },
     {
       "test": "Created edge cases sample file",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.402Z"
+      "timestamp": "2025-10-14T21:26:52.703Z"
     },
     {
       "test": "Generated 15 issues from sample files",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Found 3 critical priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Found 1 high priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Long titles are properly truncated",
       "passed": false,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Critical issues include bug label",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Critical issues have priority label",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.404Z"
+      "timestamp": "2025-10-14T21:26:52.704Z"
     },
     {
       "test": "Found label parsing section in workflow",
       "passed": false,
-      "timestamp": "2025-10-14T21:25:11.405Z"
+      "timestamp": "2025-10-14T21:26:52.705Z"
     },
     {
       "test": "critical priority generates correct labels: [todo, enhancement, priority: critical, bug]",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.405Z"
+      "timestamp": "2025-10-14T21:26:52.706Z"
     },
     {
       "test": "high priority generates correct labels: [todo, enhancement, priority: high]",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.405Z"
+      "timestamp": "2025-10-14T21:26:52.706Z"
     },
     {
       "test": "medium priority generates correct labels: [todo, enhancement, priority: medium]",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.405Z"
+      "timestamp": "2025-10-14T21:26:52.706Z"
     },
     {
       "test": "low priority generates correct labels: [todo, enhancement, priority: low]",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.405Z"
+      "timestamp": "2025-10-14T21:26:52.706Z"
     },
     {
       "test": "Empty todo directory contains no files",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Malformed todo file generates no issues",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"**Improvements Needed**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Improvements Needed:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Improvements Needed\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Action Required:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Actions Required:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Recommended Actions:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Recommended Action:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"**Current Coverage**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"**Current Coverage**: Partially addressed in Section 4\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"**Current Coverage**: Section 3 addresses this but lacks depth\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"Current Coverage: Not explicitly addressed\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Section header \"**Action Required**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Valid task \"Contextualize international operations across 37 j...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Valid task \"Create comprehensive timeline analysis...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Valid task \"Implement priority-based response architecture...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Valid task \"Add Dan's technical affidavit explaining infrastru...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Generated issues from test content",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.707Z"
     },
     {
       "test": "Test content contains duplicate task titles",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     },
     {
       "test": "Found duplicate title \"Implement user authentication system\" (count: 2)",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.406Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     },
     {
       "test": "Found duplicate title \"Add error logging functionality\" (count: 2)",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.407Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     },
     {
       "test": "Duplicate detection logic identifies 2 duplicate titles",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.407Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     },
     {
       "test": "Duplicate prevention would create 4 unique issues",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.407Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     },
     {
       "test": "Duplicate prevention would skip 2 duplicate issues",
       "passed": true,
-      "timestamp": "2025-10-14T21:25:11.407Z"
+      "timestamp": "2025-10-14T21:26:52.708Z"
     }
   ],
   "errors": [
@@ -246,5 +246,5 @@
       "lineNumber": 7
     }
   ],
-  "generated_at": "2025-10-14T21:25:11.407Z"
+  "generated_at": "2025-10-14T21:26:52.708Z"
 }
