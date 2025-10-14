@@ -1,44 +1,67 @@
-# Workflow Validation Tests
-# Validates the todo-to-issues and file-representations workflows
+# Automated Testing Pipeline for Continuous Validation
+# Validates the todo-to-issues and file-representations workflows continuously
 
-name: Workflow Validation Tests
+name: Automated Testing Pipeline
 
 on:
+  # Run on all pushes to main for continuous validation
   push:
-    branches: [ "main" ]
-    paths: 
-      - '.github/workflows/**'
-      - 'tests/**'
+    branches: [ "main", "develop" ]
+  
+  # Run on all pull requests for validation before merge
   pull_request:
-    branches: [ "main" ]
-    paths:
-      - '.github/workflows/**'
-      - 'tests/**'
+    branches: [ "main", "develop" ]
+  
+  # Run on schedule for continuous monitoring (daily at 2 AM UTC)
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger for on-demand validation
   workflow_dispatch:
+    inputs:
+      verbose:
+        description: 'Enable verbose test output'
+        required: false
+        default: 'false'
+        type: boolean
 
 jobs:
   validate-workflows:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     
     permissions:
       contents: read       # Required to read repository files
+      issues: write        # Required to create issues on test failures
+      checks: write        # Required to create check runs
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for better analysis
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
       - name: Run workflow validation tests
+        id: run_tests
         run: |
-          echo "🚀 Running workflow validation tests..."
-          npm test
+          echo "🚀 Running automated testing pipeline..."
+          echo "trigger=${{ github.event_name }}" >> $GITHUB_OUTPUT
+          echo "verbose=${{ inputs.verbose || 'false' }}" >> $GITHUB_OUTPUT
+          
+          if [ "${{ inputs.verbose }}" == "true" ]; then
+            npm run test:verbose || echo "test_failed=true" >> $GITHUB_OUTPUT
+          else
+            npm test || echo "test_failed=true" >> $GITHUB_OUTPUT
+          fi
           
       - name: Check test results
         run: |
@@ -150,3 +173,81 @@ jobs:
           fi
           
           echo "🎯 Workflow requirement validation complete"
+      
+      - name: Create test status badge data
+        if: github.ref == 'refs/heads/main'
+        run: |
+          # Create a simple badge data file for status tracking
+          mkdir -p .github/badges
+          
+          if [ -f "tests/comprehensive-test-results.json" ]; then
+            success_rate=$(jq -r '.overall.success_rate' tests/comprehensive-test-results.json)
+            
+            if [ "$success_rate" -ge 95 ]; then
+              echo "passing" > .github/badges/test-status.txt
+            elif [ "$success_rate" -ge 90 ]; then
+              echo "mostly-passing" > .github/badges/test-status.txt
+            else
+              echo "failing" > .github/badges/test-status.txt
+            fi
+            
+            echo "$success_rate" > .github/badges/test-rate.txt
+            date -u +"%Y-%m-%d %H:%M:%S UTC" > .github/badges/test-date.txt
+          fi
+      
+      - name: Report test failures on schedule
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read test results
+            let testResults = {};
+            try {
+              testResults = JSON.parse(fs.readFileSync('tests/comprehensive-test-results.json', 'utf8'));
+            } catch (error) {
+              console.log('Could not read test results');
+              return;
+            }
+            
+            // Create issue for scheduled test failure
+            const issueTitle = `Automated Test Pipeline Failure - ${new Date().toISOString().split('T')[0]}`;
+            const issueBody = `## 🚨 Scheduled Test Run Failed
+            
+            The automated testing pipeline detected failures during scheduled validation.
+            
+            ### Test Results
+            - **Total Tests**: ${testResults.overall?.total_tests || 'N/A'}
+            - **Passed**: ${testResults.overall?.passed_tests || 'N/A'}
+            - **Failed**: ${testResults.overall?.failed_tests || 'N/A'}
+            - **Success Rate**: ${testResults.overall?.success_rate || 'N/A'}%
+            
+            ### Failed Tests
+            ${testResults.validation?.errors?.map(e => `- ${e}`).join('\n') || 'No validation errors'}
+            ${testResults.integration?.errors?.map(e => `- ${e}`).join('\n') || 'No integration errors'}
+            
+            ### Action Required
+            Please investigate these test failures and fix any issues.
+            
+            **Workflow Run**: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            **Triggered**: Scheduled (daily validation)
+            `;
+            
+            // Check if similar issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['automated-test-failure']
+            });
+            
+            if (issues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['automated-test-failure', 'bug', 'priority: high']
+              });
+            }
