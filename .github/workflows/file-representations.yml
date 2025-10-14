@@ -33,54 +33,83 @@ jobs:
       - name: Install dependencies
         run: npm install glob
 
+      - name: Create analysis script
+        run: |
+          cat > analyze-files.js << 'EOF'
+          const fs = require('fs');
+          const glob = require('glob');
+          
+          console.log('=== Repository File Analysis ===');
+          
+          // Find all files
+          const mdFiles = glob.sync('**/*.md', { 
+            ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
+          });
+          const jsonFiles = glob.sync('**/*.json', { 
+            ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] 
+          });
+          
+          console.log(`📊 **File Statistics**`);
+          console.log(`- Markdown files: ${mdFiles.length}`);
+          console.log(`- JSON files: ${jsonFiles.length}`);
+          console.log('');
+          
+          // Check for missing pairs
+          let missing_json = 0;
+          let missing_md = 0;
+          let missingJsonList = [];
+          let missingMdList = [];
+          
+          console.log('🔍 **Missing JSON representations:**');
+          for (const mdFile of mdFiles) {
+            const jsonFile = mdFile.replace(/\.md$/, '.json');
+            if (!fs.existsSync(jsonFile)) {
+              console.log(`- \`${jsonFile}\` (for \`${mdFile}\`)`);
+              missingJsonList.push({md: mdFile, json: jsonFile});
+              missing_json++;
+            }
+          }
+          
+          if (missing_json === 0) {
+            console.log('- ✅ All markdown files have JSON representations');
+          }
+          
+          console.log('');
+          console.log('🔍 **Missing Markdown representations:**');
+          for (const jsonFile of jsonFiles) {
+            const mdFile = jsonFile.replace(/\.json$/, '.md');
+            if (!fs.existsSync(mdFile)) {
+              console.log(`- \`${mdFile}\` (for \`${jsonFile}\`)`);
+              missingMdList.push({json: jsonFile, md: mdFile});
+              missing_md++;
+            }
+          }
+          
+          if (missing_md === 0) {
+            console.log('- ✅ All JSON files have markdown representations');
+          }
+          
+          console.log('');
+          console.log('📈 **Summary:**');
+          console.log(`- Missing JSON files: ${missing_json}`);
+          console.log(`- Missing MD files: ${missing_md}`);
+          
+          // Write outputs for GitHub Actions
+          fs.writeFileSync('missing_json_count.txt', missing_json.toString());
+          fs.writeFileSync('missing_md_count.txt', missing_md.toString());
+          
+          console.log(`\nAnalysis complete. Missing pairs: JSON=${missing_json}, MD=${missing_md}`);
+          EOF
+
       - name: Analyze existing file representations
         id: analyze
         run: |
           echo "=== Repository File Analysis ===" >> $GITHUB_STEP_SUMMARY
+          node analyze-files.js >> $GITHUB_STEP_SUMMARY
           
-          md_count=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
-          json_count=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
-          
-          echo "📊 **File Statistics**" >> $GITHUB_STEP_SUMMARY
-          echo "- Markdown files: $md_count" >> $GITHUB_STEP_SUMMARY
-          echo "- JSON files: $json_count" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          # Check for missing pairs
-          missing_json=0
-          missing_md=0
-          
-          echo "🔍 **Missing JSON representations:**" >> $GITHUB_STEP_SUMMARY
-          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
-            json_file="${md_file%.md}.json"
-            if [ ! -f "$json_file" ]; then
-              echo "- \`$json_file\` (for \`$md_file\`)" >> $GITHUB_STEP_SUMMARY
-              missing_json=$((missing_json + 1))
-            fi
-          done
-          
-          if [ $missing_json -eq 0 ]; then
-            echo "- ✅ All markdown files have JSON representations" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🔍 **Missing Markdown representations:**" >> $GITHUB_STEP_SUMMARY
-          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
-            md_file="${json_file%.json}.md"
-            if [ ! -f "$md_file" ]; then
-              echo "- \`$md_file\` (for \`$json_file\`)" >> $GITHUB_STEP_SUMMARY
-              missing_md=$((missing_md + 1))
-            fi
-          done
-          
-          if [ $missing_md -eq 0 ]; then
-            echo "- ✅ All JSON files have markdown representations" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📈 **Summary:**" >> $GITHUB_STEP_SUMMARY
-          echo "- Missing JSON files: $missing_json" >> $GITHUB_STEP_SUMMARY
-          echo "- Missing MD files: $missing_md" >> $GITHUB_STEP_SUMMARY
+          # Read the counts from files created by Node.js script  
+          missing_json=$(cat missing_json_count.txt)
+          missing_md=$(cat missing_md_count.txt)
           
           echo "missing_json=$missing_json" >> $GITHUB_OUTPUT
           echo "missing_md=$missing_md" >> $GITHUB_OUTPUT
@@ -356,46 +385,60 @@ jobs:
 
       - name: Final validation and summary
         run: |
+          cat > final-validation.js << 'EOF'
+          const fs = require('fs');
+          const glob = require('glob');
+          
+          console.log('=== Final Repository Analysis ===');
+          
+          // Find all files
+          const mdFiles = glob.sync('**/*.md', { 
+            ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
+          });
+          const jsonFiles = glob.sync('**/*.json', { 
+            ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] 
+          });
+          
+          console.log('');
+          console.log('📊 **Final Statistics**');
+          console.log(`- Total Markdown files: ${mdFiles.length}`);
+          console.log(`- Total JSON files: ${jsonFiles.length}`);
+          console.log('');
+          
+          // Final validation check
+          let missing_pairs = 0;
+          
+          for (const mdFile of mdFiles) {
+            const jsonFile = mdFile.replace(/\.md$/, '.json');
+            if (!fs.existsSync(jsonFile)) {
+              console.log(`❌ Still missing JSON: ${jsonFile}`);
+              missing_pairs++;
+            }
+          }
+          
+          for (const jsonFile of jsonFiles) {
+            const mdFile = jsonFile.replace(/\.json$/, '.md');
+            if (!fs.existsSync(mdFile)) {
+              console.log(`❌ Still missing MD: ${mdFile}`);
+              missing_pairs++;
+            }
+          }
+          
+          if (missing_pairs === 0) {
+            console.log('✅ **SUCCESS**: All files have both markdown and JSON representations!');
+            console.log('');
+            console.log('🎯 **Repository Compliance**: 100%');
+            process.exit(0);
+          } else {
+            console.log(`❌ **WARNING**: ${missing_pairs} files still missing their counterpart`);
+            console.log('');
+            console.log('This may indicate an issue with the conversion process.');
+            process.exit(1);
+          }
+          EOF
+          
           echo "=== Final Repository Analysis ===" >> $GITHUB_STEP_SUMMARY
-          
-          final_md=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
-          final_json=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📊 **Final Statistics**" >> $GITHUB_STEP_SUMMARY
-          echo "- Total Markdown files: $final_md" >> $GITHUB_STEP_SUMMARY
-          echo "- Total JSON files: $final_json" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          # Final validation check
-          missing_pairs=0
-          
-          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
-            json_file="${md_file%.md}.json"
-            if [ ! -f "$json_file" ]; then
-              echo "❌ Still missing JSON: $json_file" >> $GITHUB_STEP_SUMMARY
-              missing_pairs=$((missing_pairs + 1))
-            fi
-          done
-          
-          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
-            md_file="${json_file%.json}.md"
-            if [ ! -f "$md_file" ]; then
-              echo "❌ Still missing MD: $md_file" >> $GITHUB_STEP_SUMMARY
-              missing_pairs=$((missing_pairs + 1))
-            fi
-          done
-          
-          if [ $missing_pairs -eq 0 ]; then
-            echo "✅ **SUCCESS**: All files have both markdown and JSON representations!" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "🎯 **Repository Compliance**: 100%" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ **WARNING**: $missing_pairs files still missing their counterpart" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "This may indicate an issue with the conversion process." >> $GITHUB_STEP_SUMMARY
-            exit 1
-          fi
+          node final-validation.js >> $GITHUB_STEP_SUMMARY
 
   ocr-and-generate-missing-representations:
     needs: validate-and-generate
