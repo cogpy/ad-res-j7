@@ -58,7 +58,18 @@ The respondents assert that the entire application and the interdict obtained th
 
 ### Refutation of Alleged Unexplained IT Expenses
 
-The respondents assert that all IT expenses were legitimate business expenses necessary for the operation of an international distribution company. They provide detailed explanations for each category of expense, including Shopify Plus subscriptions, web services, Microsoft 365 licenses, Adobe Creative Cloud, Sage accounting software, domain registrations, and payment gateway fees. They further assert that the applicant's claim that "we have almost no invoices for these items" is false, as all invoices were available but the applicant cancelled access cards and obtained a court order that prevented proper record retrieval.
+The respondents assert that all IT expenses were legitimate business expenses necessary for the operation of an international distribution company. They provide detailed explanations for each category of expense, including Shopify Plus subscriptions, web services, Microsoft 365 licenses, Adobe Creative Cloud, Sage accounting software, domain registrations, and payment gateway fees. 
+
+**Itemized Breakdown:** The respondents have prepared a comprehensive breakdown showing IT expenses of 10-11% of revenue, which is within the industry standard of 8-15% for international e-commerce operations. See [evidence/IT_EXPENSES_BREAKDOWN.md](../evidence/IT_EXPENSES_BREAKDOWN.md) for detailed analysis covering:
+- Shopify Plus (R300K-600K annually): Enterprise platform for 37 jurisdictions
+- AWS Cloud (R400K-800K annually): Global hosting and GDPR compliance
+- Microsoft 365 (R60K-120K annually): Business productivity for 10-20 staff
+- Adobe Creative (R40K-80K annually): Product photography and marketing
+- Sage Accounting (R30K-60K annually): Financial management for 6 entities
+- Domains & SSL (R10K-30K annually): Website infrastructure and security
+- Payment Gateways (R150K-400K annually): Stripe, PayPal, Peach Payments
+
+They further assert that the applicant's claim that "we have almost no invoices for these items" is false, as all invoices were available but the applicant cancelled access cards and obtained a court order that prevented proper record retrieval.
 
 ### Refutation of Alleged Unauthorized Birthday Gift
 
