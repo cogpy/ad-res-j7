@@ -189,12 +189,56 @@ For a todo file containing:
 
 The workflow would create 4 GitHub issues with appropriate priorities and full context.
 
-## Maintenance
+## Error Handling & Monitoring
+
+### Enhanced Error Handling (v2.0)
+
+The workflow includes comprehensive error handling designed to provide detailed diagnostics and graceful failure recovery:
+
+#### File Processing Errors
+- **File Access Issues**: Automatically handles missing files, permission errors, and encoding problems
+- **Empty Files**: Gracefully skips empty or invalid files with appropriate logging
+- **Malformed Content**: Continues processing other files when individual files contain errors
+- **Summary Reporting**: Provides detailed counts of successfully processed vs failed files
+
+#### GitHub API Error Handling  
+- **Authentication Verification**: Automatically checks GitHub CLI authentication before operations
+- **Retry Logic**: Implements 3-attempt retry mechanism with exponential backoff for transient failures
+- **Rate Limiting Protection**: Built-in delays between API calls to prevent rate limit errors
+- **Graceful Degradation**: Falls back to basic operations when advanced features fail
+
+#### Data Processing Errors
+- **JSON Validation**: Comprehensive validation of generated data structures
+- **Safe Parsing**: Error-resistant parsing with fallback to default values
+- **Partial Results**: Continues with partial data when some processing steps fail
+- **Error Recovery**: Creates minimal valid output even when major errors occur
+
+#### Issue Creation Robustness
+- **Duplicate Detection**: Robust duplicate checking with fallback when API calls fail
+- **Validation**: Pre-validates issue data before attempting creation
+- **Batch Processing**: Handles large numbers of issues with progress tracking
+- **Failure Tracking**: Maintains detailed logs of which specific issues failed and why
 
 ### Monitoring
+
+#### GitHub Actions Dashboard
 - Check the Actions tab for workflow execution results
 - Review the workflow summary for statistics and any issues
 - Monitor the Issues tab for generated tasks
+
+#### Enhanced Logging Features
+- **Step-by-Step Progress**: Detailed logging of each processing step
+- **Error Classification**: Categorizes errors by type for easier debugging  
+- **Performance Metrics**: Reports processing times and success rates
+- **Failure Details**: Specific information about failed operations including retry attempts
+
+#### Workflow Summary Report
+Each workflow run now provides:
+- **File Processing Summary**: Successfully processed vs failed files
+- **Issue Creation Results**: Created, skipped, and failed issue counts
+- **Error Details**: Specific errors with context and suggested fixes
+- **Performance Data**: Processing times and operation counts
+- **Recovery Actions**: Automatic recovery steps taken during execution
 
 ### Troubleshooting
 If issues aren't being created:
@@ -203,6 +247,22 @@ If issues aren't being created:
 3. Verify file changes are in the `todo/` folder
 4. Review Actions logs for parsing errors
 5. Check GitHub Actions permissions if getting API errors
+
+**Enhanced Error Handling** (v2.0):
+- **File Processing**: The workflow now handles malformed files, encoding issues, and permission problems gracefully
+- **API Failures**: Includes retry logic (3 attempts) for transient GitHub API failures
+- **JSON Validation**: Comprehensive validation of generated data with fallback mechanisms
+- **Authentication**: Automatic verification of GitHub CLI authentication before operations
+- **Rate Limiting**: Built-in delays to prevent API rate limiting issues
+- **Error Recovery**: Continues processing other files/tasks when individual items fail
+- **Detailed Logging**: Enhanced logging with error classification and debugging information
+
+**Common Error Scenarios**:
+- **"No todo files found"**: Check that files exist in `todo/` directory with `.md` extension
+- **"Failed to create issue"**: Usually indicates GitHub token permission issues or API limits
+- **"Invalid JSON output"**: Indicates file parsing errors - check file encoding and content
+- **"Authentication failed"**: Verify `GITHUB_TOKEN` has `issues: write` permission
+- **"Duplicate issues skipped"**: Expected behavior unless force regeneration is enabled
 
 **Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow handles labels with spaces correctly (e.g., "priority: critical").
 
