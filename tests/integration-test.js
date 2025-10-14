@@ -266,9 +266,13 @@ class WorkflowIntegrationTest {
     
     const skipPatterns = [
       /^\*\*.*\*\*$/,
+      /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
       /^Current Coverage:/i,
       /^Legal Significance:/i,
       /^Estimated effort:/i,
+      /^Improvements? Needed:?$/i,  // Section header pattern
+      /^Actions? Required:?$/i,     // Section header pattern
+      /^Recommended Actions?:?$/i,  // Section header pattern
       /hours?$/i
     ];
     
@@ -279,7 +283,8 @@ class WorkflowIntegrationTest {
     const actionWords = [
       'implement', 'add', 'create', 'fix', 'update', 'improve',
       'enhance', 'develop', 'build', 'establish', 'provide',
-      'include', 'demonstrate', 'expand', 'complete', 'review'
+      'include', 'demonstrate', 'expand', 'complete', 'review',
+      'contextualize', 'breakdown', 'analysis'
     ];
     
     return actionWords.some(word => task.toLowerCase().includes(word));
@@ -392,6 +397,42 @@ No numbered lists or bullet points with action words
     fs.rmSync(emptyDir, { recursive: true, force: true });
   }
 
+  // Test section header filtering
+  testSectionHeaderFiltering() {
+    console.log('\n🧪 Testing section header filtering...');
+    
+    // Test that section headers are properly filtered out
+    const sectionHeaders = [
+      '**Improvements Needed**:',
+      'Improvements Needed:',
+      'Improvements Needed',
+      'Action Required:',
+      'Actions Required:',
+      'Recommended Actions:',
+      'Recommended Action:',
+      '**Current Coverage**:',
+      '**Action Required**:'
+    ];
+    
+    sectionHeaders.forEach(header => {
+      const result = this.isHighQualityTask(header);
+      this.assert(!result, `Section header "${header}" is properly filtered out`);
+    });
+    
+    // Test that valid tasks still pass
+    const validTasks = [
+      'Contextualize international operations across 37 jurisdictions',
+      'Create comprehensive timeline analysis',
+      'Implement priority-based response architecture',
+      'Add Dan\'s technical affidavit explaining infrastructure requirements'
+    ];
+    
+    validTasks.forEach(task => {
+      const result = this.isHighQualityTask(task);
+      this.assert(result, `Valid task "${task.substring(0, 50)}..." passes filter`);
+    });
+  }
+
   // Run all integration tests
   runAllTests() {
     console.log('🚀 Starting workflow integration tests...');
@@ -401,6 +442,7 @@ No numbered lists or bullet points with action words
     this.testLabelArrayConversion();
     this.testMultipleLabelScenarios();
     this.testErrorHandling();
+    this.testSectionHeaderFiltering();
     
     console.log('\n' + '=' .repeat(60));
     console.log(`📊 Integration Test Summary: ${this.testResults.length} tests run`);

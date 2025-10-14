@@ -503,6 +503,41 @@ This international scope requires substantial IT infrastructure, including:
 
 8.2 These expenses were duly authorized, properly recorded, and paid for operational requirements of an international business operating across 37 jurisdictions.
 
+8.2.1 **Critical Context - International Regulatory Compliance Requirements:**
+
+The IT expenses cited by the Applicant must be understood in the context of my role as Responsible Person under EU Regulation 1223/2009 across 37 international jurisdictions (as detailed in Section 3.3 above). The IT infrastructure is **not optional** but is **legally mandated** to fulfill non-delegable regulatory compliance obligations, including:
+
+**(a) CPNP Registration and Product Information Systems:**
+- Secure database systems to maintain Product Information Files (PIFs) for all cosmetic products across 37 jurisdictions;
+- Cloud-based storage with redundancy to ensure 24/7 access to safety data, formulation records, and regulatory documentation;
+- Backup and disaster recovery systems to prevent compliance failures.
+
+**(b) Multi-Jurisdiction Regulatory Tracking Systems:**
+- Software platforms to track regulatory submission deadlines, renewal dates, and compliance requirements across 37 different regulatory frameworks;
+- Communication systems to correspond with regulatory authorities in multiple languages and time zones;
+- Document management systems to organize and retrieve regulatory correspondence and approvals.
+
+**(c) International E-Commerce Platform Requirements:**
+- Shopify Plus subscription and customizations to handle multi-currency transactions, international shipping, and jurisdiction-specific product labeling requirements;
+- Payment gateway integrations (Stripe, PayPal, Peach Payments) to process transactions in multiple currencies and comply with international payment regulations;
+- Content Delivery Network (CDN) services to serve product information and comply with data localization requirements in different jurisdictions.
+
+**(d) Data Protection and Cybersecurity Compliance:**
+- IT security infrastructure to comply with GDPR (EU), POPIA (South Africa), and equivalent data protection regulations in 37 jurisdictions;
+- Encryption systems, secure access controls, and audit trails required by international data protection laws;
+- Regular security updates, patches, and monitoring to protect customer data across international markets.
+
+**(e) Financial and Accounting Systems:**
+- Sage accounting software to manage financial records across multiple entities and comply with tax requirements in multiple jurisdictions;
+- Integration systems to reconcile transactions, track foreign exchange, and generate reports for international tax compliance;
+- Microsoft 365 Business licenses for secure email, document collaboration, and financial communication.
+
+**(f) Marketing and Design Tools:**
+- Adobe Creative Cloud subscriptions for creating compliant product labels, marketing materials, and safety information in multiple languages as required by regulatory authorities in different jurisdictions;
+- Design tools to ensure product packaging meets specific labeling requirements of each jurisdiction.
+
+8.2.2 The Applicant's characterization of these expenses as "questionable" or "unexplained" demonstrates a fundamental misunderstanding of the legal and operational requirements of an international cosmetics business operating in 37 jurisdictions with a designated Responsible Person role.
+
 ### AD PARAGRAPH 8.4
 
 8.3 The contents hereof are admitted only to the extent that the total amount of R6,738,007.47 for the 2024 tax year reflects legitimate business expenses incurred under this category.
@@ -523,11 +558,22 @@ This international scope requires substantial IT infrastructure, including:
 
 8.8 The contents hereof are denied. While it is correct that some of the expenses were paid to international suppliers, these were all legitimate business expenditures incurred for the company's operational needs, including software subscriptions, IT infrastructure, and technical services required for international regulatory compliance.
 
+8.8.1 The payment of IT expenses to international suppliers (such as Shopify in Canada, Microsoft in the United States, Adobe in the United States, AWS in the United States, and various EU-based service providers) is **necessary and unavoidable** when operating a cosmetics business across 37 jurisdictions. These are the industry-standard platforms used by international e-commerce businesses and are specifically chosen for their ability to support multi-jurisdiction compliance requirements.
+
 ### AD PARAGRAPH 8.8 TO 8.10
 
 8.9 The contents hereof are denied. The alleged message from the bank (annexure PF11) merely indicates that approximately 80% of the permissible annual foreign quota had been utilized - which is entirely consistent with normal international business operations.
 
-8.10 The Applicant's characterization of this as evidence of misconduct is misleading and unsupported.
+8.9.1 Operating across 37 international jurisdictions **necessarily requires significant foreign payments** for:
+- International software subscriptions and cloud services;
+- Payment gateway fees for processing customer transactions in foreign currencies;
+- International domain registrations and hosting services;
+- Regulatory compliance services and consulting fees in foreign jurisdictions;
+- Marketing and advertising in international markets.
+
+8.9.2 The utilization of 80% of the foreign payment quota is not evidence of misconduct but rather **evidence of legitimate international business activity** supporting sales and regulatory compliance in 37 jurisdictions.
+
+8.10 The Applicant's characterization of this as evidence of misconduct is misleading and unsupported. An international cosmetics business with regulatory obligations in 37 jurisdictions cannot operate without substantial foreign payments, and these payments are entirely normal, necessary, and properly documented.
 
 ---
 

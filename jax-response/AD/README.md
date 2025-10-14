@@ -50,9 +50,10 @@ AD/
 
 ## Critical Paragraphs (Priority 1)
 
-### PARA_7_2-7_5 - IT Expense Discrepancies
-**Claim:** Unexplained IT expenses  
-**Strategy:** Contextualize international operations (37 jurisdictions), expose Peter's restriction of access, demonstrate Peter created the problem
+### PARA_7_2-7_5 - IT Expense Discrepancies ✓ COMPLETED
+**Claim:** Unexplained IT expenses (R8.85M over 2 years)  
+**Strategy:** Contextualize international operations (37 jurisdictions), expose Peter's restriction of access, demonstrate Peter created the problem  
+**Status:** Comprehensive itemized breakdown by category provided (Shopify Plus, AWS, Microsoft 365, Adobe, Sage, payment gateways) - see IT_EXPENSE_BREAKDOWN.md
 
 ### PARA_7_6 - R500K Payment
 **Claim:** Unauthorized R500,000 payment to Jax  
