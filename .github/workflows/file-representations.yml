@@ -14,6 +14,11 @@ jobs:
   validate-and-generate:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write      # Required to commit and push generated files
+      actions: read        # Required to read workflow files
+      checks: read         # Required to read check results
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -19,6 +19,10 @@ jobs:
   validate-file-representations:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write      # Required to commit and push generated files
+      actions: read        # Required to read workflow files
+    
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
