@@ -1,0 +1,398 @@
+# File Representation Validator
+# Ensures every file has both markdown and JSON representations
+
+name: File Representation Validator
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-generate:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write      # Required to commit and push generated files
+      actions: read        # Required to read workflow files
+      checks: read         # Required to read check results
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install glob
+
+      - name: Analyze existing file representations
+        id: analyze
+        run: |
+          echo "=== Repository File Analysis ===" >> $GITHUB_STEP_SUMMARY
+          
+          md_count=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          json_count=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          
+          echo "📊 **File Statistics**" >> $GITHUB_STEP_SUMMARY
+          echo "- Markdown files: $md_count" >> $GITHUB_STEP_SUMMARY
+          echo "- JSON files: $json_count" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Check for missing pairs
+          missing_json=0
+          missing_md=0
+          
+          echo "🔍 **Missing JSON representations:**" >> $GITHUB_STEP_SUMMARY
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"); do
+            json_file="${md_file%.md}.json"
+            if [ ! -f "$json_file" ]; then
+              echo "- \`$json_file\` (for \`$md_file\`)" >> $GITHUB_STEP_SUMMARY
+              missing_json=$((missing_json + 1))
+            fi
+          done
+          
+          if [ $missing_json -eq 0 ]; then
+            echo "- ✅ All markdown files have JSON representations" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔍 **Missing Markdown representations:**" >> $GITHUB_STEP_SUMMARY
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"); do
+            md_file="${json_file%.json}.md"
+            if [ ! -f "$md_file" ]; then
+              echo "- \`$md_file\` (for \`$json_file\`)" >> $GITHUB_STEP_SUMMARY
+              missing_md=$((missing_md + 1))
+            fi
+          done
+          
+          if [ $missing_md -eq 0 ]; then
+            echo "- ✅ All JSON files have markdown representations" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📈 **Summary:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Missing JSON files: $missing_json" >> $GITHUB_STEP_SUMMARY
+          echo "- Missing MD files: $missing_md" >> $GITHUB_STEP_SUMMARY
+          
+          echo "missing_json=$missing_json" >> $GITHUB_OUTPUT
+          echo "missing_md=$missing_md" >> $GITHUB_OUTPUT
+
+      - name: Create file converter script
+        run: |
+          cat > file-converter.js << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const glob = require('glob');
+
+          class FileConverter {
+            constructor() {
+              this.conversions = 0;
+            }
+
+            // Convert markdown content to structured JSON
+            markdownToJson(mdContent, filePath) {
+              const lines = mdContent.split('\n');
+              const result = {
+                title: '',
+                source_file: path.resolve(filePath),
+                created_at: new Date().toISOString(),
+                file_type: 'markdown',
+                sections: []
+              };
+
+              let currentSection = null;
+              let currentSubsection = null;
+              let currentContent = [];
+
+              for (const line of lines) {
+                // Extract title from first heading
+                if (line.match(/^#\s+/) && !result.title) {
+                  result.title = line.substring(1).trim();
+                  continue;
+                }
+
+                // Handle headings
+                const headingMatch = line.match(/^(#{1,6})\s+(.*)$/);
+                if (headingMatch) {
+                  const level = headingMatch[1].length;
+                  const heading = headingMatch[2].trim();
+
+                  // Save previous content
+                  if (currentSubsection) {
+                    currentSubsection.content = currentContent.join('\n').trim();
+                  } else if (currentSection) {
+                    currentSection.content = currentContent.join('\n').trim();
+                  }
+                  currentContent = [];
+
+                  if (level === 2) {
+                    // New main section
+                    if (currentSection) {
+                      result.sections.push(currentSection);
+                    }
+                    currentSection = {
+                      heading: heading,
+                      level: level,
+                      content: '',
+                      subsections: []
+                    };
+                    currentSubsection = null;
+                  } else if (level >= 3 && currentSection) {
+                    // New subsection
+                    if (currentSubsection) {
+                      currentSection.subsections.push(currentSubsection);
+                    }
+                    currentSubsection = {
+                      heading: heading,
+                      level: level,
+                      content: ''
+                    };
+                  }
+                } else {
+                  // Regular content line
+                  currentContent.push(line);
+                }
+              }
+
+              // Save final content
+              if (currentSubsection) {
+                currentSubsection.content = currentContent.join('\n').trim();
+                if (currentSection) currentSection.subsections.push(currentSubsection);
+              } else if (currentSection) {
+                currentSection.content = currentContent.join('\n').trim();
+              }
+
+              if (currentSection) {
+                result.sections.push(currentSection);
+              }
+
+              // If no structured sections found, put all content in a single section
+              if (result.sections.length === 0 && lines.length > 0) {
+                result.sections.push({
+                  heading: result.title || 'Document Content',
+                  level: 2,
+                  content: lines.join('\n').trim(),
+                  subsections: []
+                });
+              }
+
+              return result;
+            }
+
+            // Convert JSON content to markdown
+            jsonToMarkdown(jsonContent) {
+              let markdown = '';
+              
+              try {
+                const data = typeof jsonContent === 'string' ? JSON.parse(jsonContent) : jsonContent;
+                
+                // Add title
+                if (data.title) {
+                  markdown += `# ${data.title}\n\n`;
+                }
+
+                // Add metadata if it's a converted file
+                if (data.source_file || data.created_at) {
+                  markdown += `<!-- Generated from JSON representation -->\n`;
+                  if (data.source_file) markdown += `<!-- Source: ${data.source_file} -->\n`;
+                  if (data.created_at) markdown += `<!-- Created: ${data.created_at} -->\n`;
+                  markdown += `\n`;
+                }
+
+                // Add sections
+                if (data.sections && Array.isArray(data.sections)) {
+                  for (const section of data.sections) {
+                    if (section.heading) {
+                      const level = section.level || 2;
+                      markdown += `${'#'.repeat(level)} ${section.heading}\n\n`;
+                    }
+                    
+                    if (section.content) {
+                      markdown += `${section.content}\n\n`;
+                    }
+
+                    // Add subsections
+                    if (section.subsections && Array.isArray(section.subsections)) {
+                      for (const subsection of section.subsections) {
+                        if (subsection.heading) {
+                          const level = subsection.level || 3;
+                          markdown += `${'#'.repeat(level)} ${subsection.heading}\n\n`;
+                        }
+                        if (subsection.content) {
+                          markdown += `${subsection.content}\n\n`;
+                        }
+                      }
+                    }
+                  }
+                } else {
+                  // Fallback: show JSON as code block
+                  markdown += `## Data\n\n\`\`\`json\n${JSON.stringify(data, null, 2)}\n\`\`\`\n\n`;
+                }
+
+                return markdown;
+              } catch (error) {
+                console.error('JSON parsing error:', error);
+                // Fallback for invalid JSON
+                return `# JSON Document\n\n\`\`\`json\n${jsonContent}\n\`\`\`\n`;
+              }
+            }
+
+            // Process all files and generate missing representations
+            processFiles() {
+              console.log('🔄 Starting file conversion process...');
+              
+              // Find all files
+              const mdFiles = glob.sync('**/*.md', { 
+                ignore: ['node_modules/**', '.git/**', 'README.md'] 
+              });
+              const jsonFiles = glob.sync('**/*.json', { 
+                ignore: ['node_modules/**', '.git/**', 'package*.json'] 
+              });
+
+              console.log(`Found ${mdFiles.length} markdown files and ${jsonFiles.length} JSON files`);
+
+              // Convert MD to JSON for missing JSON files
+              for (const mdFile of mdFiles) {
+                const jsonFile = mdFile.replace(/\.md$/, '.json');
+                if (!fs.existsSync(jsonFile)) {
+                  try {
+                    const mdContent = fs.readFileSync(mdFile, 'utf8');
+                    const jsonData = this.markdownToJson(mdContent, mdFile);
+                    
+                    // Ensure directory exists
+                    const dir = path.dirname(jsonFile);
+                    if (!fs.existsSync(dir)) {
+                      fs.mkdirSync(dir, { recursive: true });
+                    }
+                    
+                    fs.writeFileSync(jsonFile, JSON.stringify(jsonData, null, 2));
+                    console.log(`✅ Generated JSON: ${jsonFile}`);
+                    this.conversions++;
+                  } catch (error) {
+                    console.error(`❌ Error converting ${mdFile}:`, error.message);
+                  }
+                }
+              }
+
+              // Convert JSON to MD for missing MD files
+              for (const jsonFile of jsonFiles) {
+                const mdFile = jsonFile.replace(/\.json$/, '.md');
+                if (!fs.existsSync(mdFile)) {
+                  try {
+                    const jsonContent = fs.readFileSync(jsonFile, 'utf8');
+                    const mdData = this.jsonToMarkdown(jsonContent);
+                    
+                    // Ensure directory exists
+                    const dir = path.dirname(mdFile);
+                    if (!fs.existsSync(dir)) {
+                      fs.mkdirSync(dir, { recursive: true });
+                    }
+                    
+                    fs.writeFileSync(mdFile, mdData);
+                    console.log(`✅ Generated MD: ${mdFile}`);
+                    this.conversions++;
+                  } catch (error) {
+                    console.error(`❌ Error converting ${jsonFile}:`, error.message);
+                  }
+                }
+              }
+
+              return this.conversions;
+            }
+          }
+
+          // Run the conversion
+          const converter = new FileConverter();
+          const totalConversions = converter.processFiles();
+          console.log(`\n🎉 Conversion complete! Generated ${totalConversions} files.`);
+
+          // Exit with appropriate code
+          process.exit(0);
+          EOF
+
+      - name: Generate missing file representations
+        run: |
+          echo "🚀 Generating missing file representations..."
+          node file-converter.js
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit and push changes
+        run: |
+          # Check if there are any changes
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "✅ No new files needed - all representations already exist!"
+            echo "status=no-changes" >> $GITHUB_ENV
+          else
+            git add -A
+            git status
+            
+            # Count the changes
+            added_files=$(git diff --staged --name-only | wc -l)
+            
+            echo "📝 Committing $added_files new file representations..."
+            git commit -m "Auto-generate missing file representations
+            
+            - Generated JSON representations for markdown files
+            - Generated markdown representations for JSON files
+            - Ensures every file has both MD and JSON formats
+            - Files processed: $added_files
+            - Automated by GitHub Actions"
+            
+            echo "status=committed" >> $GITHUB_ENV
+            echo "files_added=$added_files" >> $GITHUB_ENV
+          fi
+
+      - name: Final validation and summary
+        run: |
+          echo "=== Final Repository Analysis ===" >> $GITHUB_STEP_SUMMARY
+          
+          final_md=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          final_json=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 **Final Statistics**" >> $GITHUB_STEP_SUMMARY
+          echo "- Total Markdown files: $final_md" >> $GITHUB_STEP_SUMMARY
+          echo "- Total JSON files: $final_json" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Final validation check
+          missing_pairs=0
+          
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"); do
+            json_file="${md_file%.md}.json"
+            if [ ! -f "$json_file" ]; then
+              echo "❌ Still missing JSON: $json_file" >> $GITHUB_STEP_SUMMARY
+              missing_pairs=$((missing_pairs + 1))
+            fi
+          done
+          
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"); do
+            md_file="${json_file%.json}.md"
+            if [ ! -f "$md_file" ]; then
+              echo "❌ Still missing MD: $md_file" >> $GITHUB_STEP_SUMMARY
+              missing_pairs=$((missing_pairs + 1))
+            fi
+          done
+          
+          if [ $missing_pairs -eq 0 ]; then
+            echo "✅ **SUCCESS**: All files have both markdown and JSON representations!" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "🎯 **Repository Compliance**: 100%" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **WARNING**: $missing_pairs files still missing their counterpart" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "This may indicate an issue with the conversion process." >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
