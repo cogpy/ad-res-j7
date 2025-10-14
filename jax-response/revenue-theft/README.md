@@ -35,6 +35,15 @@ This directory contains forensic evidence and analysis for the systematic revenu
 **Impact:** Customer base theft and revenue diversion infrastructure  
 **Legal Significance:** Family conspiracy escalation and digital impersonation
 
+### 📁 [email-impersonation-pattern-jf3a/](email-impersonation-pattern-jf3a/)
+**Event:** Email Impersonation Pattern (JF3A Evidence)  
+**Date:** June 20 - August 29, 2025  
+**Perpetrator:** Rynette Farrar (via pete@regima.com control)  
+**Evidence Type:** Email forensics, identity theft, systematic impersonation  
+**Crime Type:** Email hijacking, identity theft, business impersonation, computer fraud  
+**Impact:** R3.1M+ losses enabled by email control, business destruction facilitation  
+**Legal Significance:** Pattern of impersonation supporting criminal conspiracy charges
+
 ### 📁 [20-june-gee-gayane-email/](20-june-gee-gayane-email/)
 **Event:** Gayane Email to Jax About Pete's Instructions  
 **Date:** June 20, 2025  
@@ -68,10 +77,18 @@ This directory contains forensic evidence and analysis for the systematic revenu
 - **Digital impersonation infrastructure** for continued fraud
 - **Customer hijacking platform** establishment
 
+### Phase 3B: Email Impersonation Pattern (June 20 - August 29, 2025)
+- **Systematic email hijacking** via pete@regima.com control by Rynette Farrar
+- **Identity theft and business impersonation** over 3+ month period
+- **Email control enabling criminal directives** to administrative personnel
+- **Pattern of impersonation** documented through JF1, JF2, JF3 evidence
+- **Information manipulation** during criminal conspiracy and legal proceedings
+
 ### Phase 4: Instruction Coordination (June 20, 2025)
-- **Administrative personnel involvement** through Gayane
+- **Administrative personnel involvement** through Gayane (via impersonated email)
 - **Instruction chain documentation** linking Pete to criminal acts
 - **Witness testimony** of coordinated criminal instructions
+- **Email impersonation facilitating fraudulent directives**
 
 ### Phase 5: Complete Business Destruction (July 8, 2025)
 - **POPI violations** through unauthorized data processing
@@ -114,11 +131,13 @@ This directory contains forensic evidence and analysis for the systematic revenu
 - **July 8 compliance directive** - Direct documentation of illegal instructions
 - **Shopify historical reports** - Quantified business destruction evidence
 - **Timeline correlation** - Multiple independent source validation
+- **Email impersonation pattern (JF3A)** - Systematic identity theft documentation with Sage Account evidence
 
 ### Grade B Evidence (Strong Supporting)
 - **Bank statement correlation** - Financial impact validation
 - **Family conspiracy documentation** - Network analysis evidence
 - **Administrative witness testimony** - Instruction chain evidence
+- **Email system access patterns** - Technical evidence requiring subpoena
 
 ### Grade C Evidence (Circumstantial/Inferred)
 - **Domain registration timing** - Inference of coordination
@@ -136,8 +155,9 @@ This directory contains forensic evidence and analysis for the systematic revenu
 ### Priority 2 (High/Near-term)
 1. **Employee witness statements** - Direct recipients of illegal instructions
 2. **Customer complaint collection** - Evidence of hijacking communications
-3. **IT forensics** - System access logs and technical evidence
-4. **Financial forensics** - Complete revenue diversion analysis
+3. **IT forensics (JF3B)** - Email system access logs and authentication records
+4. **Email archive subpoena (JF3C)** - Complete pete@regima.com communication history
+5. **Financial forensics** - Complete revenue diversion analysis
 
 ### Priority 3 (Medium/Supporting)
 1. **Family financial analysis** - Son's financial capacity and control
@@ -166,8 +186,11 @@ This directory contains forensic evidence and analysis for the systematic revenu
 - ✅ **Shopify historical reports** - Performance data secured
 - ✅ **Timeline analysis documents** - Multiple source validation
 - ✅ **Financial correlation evidence** - Bank statement integration
+- ✅ **Email impersonation pattern (JF3A)** - Sage Account screenshots and timeline documentation
 
 ### Evidence Requiring Preservation
+- ⚠️ **Email system access logs (JF3B)** - Microsoft 365 tenant logs requiring subpoena
+- ⚠️ **Complete email archive (JF3C)** - Pete@regima.com communications requiring preservation order
 - ⚠️ **Domain registration records** - Subpoena required for complete records
 - ⚠️ **Employee communications** - Witness statement collection needed
 - ⚠️ **Customer hijacking emails** - Direct fraud evidence collection

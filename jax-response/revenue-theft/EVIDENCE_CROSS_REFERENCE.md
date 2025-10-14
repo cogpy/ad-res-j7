@@ -15,7 +15,8 @@
 |---------|---------|------------------|-------------------|-------------------|
 | 14-Apr Bank Letter | 22-May Shopify Audit | **Sequential Setup→Destruction** | Grade A | Consciousness of guilt |
 | 22-May Shopify Audit | 29-May Domain Registration | **Destruction→Cover-up** | Grade A | Coordinated conspiracy |
-| 29-May Domain Registration | 20-Jun Gayane Email | **Infrastructure→Instruction** | Grade B | Operational coordination |
+| 29-May Domain Registration | JF3A Email Impersonation | **Infrastructure→Identity Theft** | Grade A | Systematic impersonation pattern |
+| JF3A Email Impersonation | 20-Jun Gayane Email | **Impersonation→Instruction** | Grade A | Email control enabling fraud |
 | 20-Jun Gayane Email | 08-Jul POPI Violations | **Instruction→Implementation** | Grade A | Criminal instruction chain |
 
 ### Timeline Interconnection Analysis
@@ -32,7 +33,16 @@ Revenue Diversion       Evidence Destruction      Identity Fraud
     │                         │                         │
     │                         │                         │
     ▼                         ▼                         ▼
-June 20     ──Coordination──►  July 8
+                                             Jun 20 - Aug 29
+                                         JF3A Email Impersonation
+                                                    │
+                                                    │
+                                                    ▼
+                                            Systematic Identity Theft
+                                                    │
+                                                    │
+                                                    ▼
+June 20     ──Email Control──►  July 8
 Gayane Email              POPI Violations
     │                         │
     │                         │
@@ -87,6 +97,42 @@ Primary: Network analysis documentation showing son's centrality increase
 Secondary: Domain registration timing analysis
 Tertiary: Customer hijacking communications using son's domain
 ```
+
+### **CORRELATION 2B: Email Impersonation Pattern (JF3A)**
+**Events:** Domain Registration → Email Impersonation → Attorney Communications  
+**Timeline:** May 29 - August 29, 2025 (92 days)  
+**Relationship:** Systematic identity theft through email control enabling broader conspiracy
+
+**Evidence Links:**
+- **May 29:** Domain registration for digital impersonation infrastructure
+- **June 20:** Sage Account control confirmed - pete@regima.com controlled by Rynette Farrar (JF1)
+- **June 20:** Instructions to Gayane via impersonated email
+- **August 25:** Control structure validation (JF2)
+- **August 29:** Attorney communications via compromised account (JF3)
+- **Pattern:** 3+ months of sustained email impersonation
+
+**Legal Significance:**
+- Establishes **systematic identity theft** (criminal impersonation pattern)
+- Demonstrates **email hijacking** (computer fraud and ECTA violations)
+- Shows **business impersonation** enabling R3.1M+ losses
+- Proves **information manipulation** during legal proceedings
+- Links **instruction coordination** to fraudulent communications
+
+**Supporting Evidence:**
+```
+Primary: Sage Account screenshots (JF1, JF2) - Documentary proof
+Primary: Email communications (JF3) - Pattern of impersonated communications
+Secondary: Instruction chain evidence (Gayane Williams coordination)
+Required: System access logs (JF3B) - Technical forensic validation
+Required: Complete email archive (JF3C) - Full impersonation documentation
+```
+
+**Cross-References:**
+- Category 3: Family conspiracy and coordinated impersonation
+- Category 4: Instruction coordination via compromised email
+- Category 5: Business destruction directives through email control
+
+---
 
 ### **CORRELATION 3: Infrastructure to Instructions**  
 **Events:** 29-May Domain Registration → 20-Jun Gayane Email  
