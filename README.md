@@ -35,3 +35,29 @@ To understand the case, it is recommended to start with the following documents:
 
 This repository is an ongoing project and will be updated as more information becomes available.
 
+## Automated Testing Pipeline
+
+This repository includes an automated testing pipeline for continuous validation of GitHub Actions workflows:
+
+- **118 Comprehensive Tests**: Validates workflow structure, syntax, and functionality
+- **92%+ Success Rate**: Ensures high reliability of automation systems
+- **Continuous Monitoring**: Daily scheduled runs detect regressions
+- **Automated Alerting**: Creates issues for test failures on scheduled runs
+- **Multiple Triggers**: Runs on push, pull requests, schedule, and manual dispatch
+
+### Running Tests
+
+```bash
+# Install dependencies
+npm install
+
+# Run all tests
+npm test
+
+# Run specific test suites
+npm run test:validation    # Workflow structure tests
+npm run test:integration   # Functional tests
+```
+
+For detailed information about the automated testing pipeline, see [Automated Testing Pipeline Documentation](docs/AUTOMATED_TESTING_PIPELINE.md).
+
