@@ -960,7 +960,9 @@ The final agreement contains **two separate clauses** stating that parties "will
 
 16.1.2 Dismiss the Applicant's application with costs on the scale as between attorney and client;
 
-16.1.3 Grant such further and/or alternative relief as this Honourable Court deems fit.
+16.1.3 Order that an independent forensic audit be conducted into all entities by an independent auditor appointed by the Court, with such audit to be transparent to all parties and not inappropriately privileging any party, given that the broadly defined orders of the interdict frustrate the ability to gather complete evidence required to substantiate certain facts;
+
+16.1.4 Grant such further and/or alternative relief as this Honourable Court deems fit.
 
 ---
 
