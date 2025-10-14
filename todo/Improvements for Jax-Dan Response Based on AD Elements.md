@@ -67,10 +67,10 @@ These require the most detailed, evidence-rich responses:
 **PARA_7_7-7_8: R500K Payment Details**
 - **Current Coverage**: Partially addressed in Section 4
 - **Improvements Needed**:
-  - Document historical practice of informal director loans over decades
-  - Show absence of board resolution requirements in company practice
-  - Demonstrate Peter's participation in this informal model
-  - Highlight sudden objection as inconsistent with established practice
+  - [x] Document historical practice of informal director loans over decades
+  - [x] Show absence of board resolution requirements in company practice
+  - [x] Demonstrate Peter's participation in this informal model
+  - [x] Highlight sudden objection as inconsistent with established practice
 
 **PARA_7_9-7_11: Payment Justification**
 - **Current Coverage**: Partially addressed in Section 4
