@@ -455,7 +455,7 @@ jobs:
           while IFS= read -r issue; do
             title=$(echo "$issue" | jq -r '.title')
             body=$(echo "$issue" | jq -r '.body')
-            labels=$(echo "$issue" | jq -r '.labels | join(",")')
+            labels=$(echo "$issue" | jq -c '.labels')
             
             # Check if issue with similar title already exists (unless force regenerate)
             if [ "$force_regenerate" != "true" ]; then
@@ -475,7 +475,7 @@ jobs:
               --method POST \
               --field title="$title" \
               --field body="$body" \
-              --field labels="[$labels]" \
+              --raw-field labels="$labels" \
               > /dev/null
             
             created_count=$((created_count + 1))
