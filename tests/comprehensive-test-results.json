@@ -2,10 +2,13 @@
   "validation": {
     "success": false,
     "total": 85,
-    "passed": 80,
-    "failed": 5,
+    "passed": 77,
+    "failed": 8,
     "errors": [
+      "Uses GitHub CLI for issue creation",
+      "Initializes label flags variable",
       "Properly quotes label values",
+      "Uses eval for dynamic label flags",
       "Recognizes Must-Do sections",
       "Recognizes Should-Do sections",
       "Recognizes Nice-to-Have sections",
@@ -14,23 +17,21 @@
   },
   "integration": {
     "success": false,
-    "total": 35,
-    "passed": 33,
+    "total": 38,
+    "passed": 36,
     "failed": 2,
     "errors": [
       "Long titles are properly truncated",
-      "Uses jq to extract array elements",
-      "Builds label flags correctly",
-      "Uses eval for dynamic command execution"
+      "Found label parsing section in workflow"
     ],
     "mock_issues": 15
   },
   "overall": {
-    "total_tests": 120,
-    "passed_tests": 110,
+    "total_tests": 123,
+    "passed_tests": 113,
     "failed_tests": 10,
     "success_rate": 92
   },
-  "generated_at": "2025-10-14T18:23:37.952Z",
+  "generated_at": "2025-10-14T21:20:02.762Z",
   "test_runner_version": "1.0.0"
 }
