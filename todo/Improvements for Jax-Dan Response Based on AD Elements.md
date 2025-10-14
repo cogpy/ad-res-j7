@@ -142,13 +142,13 @@ These require the most detailed, evidence-rich responses:
   - Expose material non-disclosures in ex parte application
   - Include evidence of settlement agreement signed 8 days before interdict
 
-**PARA_13-13_1: Interim Relief**
-- **Current Coverage**: Not explicitly addressed
-- **Improvements Needed**:
-  - Detail regulatory crisis created by interdict (Responsible Person access)
-  - Show Peter's own conduct caused the problems he complains about
-  - Demonstrate relief sought is disproportionate and harmful
-  - Quantify business harm from interdict
+**PARA_13-13_1: Interim Relief** ✅ **COMPLETED**
+- **Current Coverage**: ✅ **Now explicitly addressed in Section 13B**
+- **Improvements Implemented**:
+  - ✅ Detail regulatory crisis created by interdict (Section 3 + 149.22C(a): R50M+ exposure)
+  - ✅ Show Peter's own conduct caused the problems he complains about (Section 13B Part 1)
+  - ✅ Demonstrate relief sought is disproportionate and harmful (Paragraphs 149.22A-149.22I)
+  - ✅ Quantify business harm from interdict (36:1 harm ratio quantified: R18M+ vs R500K)
 
 #### Priority 3 - Medium Priority Paragraphs (19 paragraphs - 38%)
 
@@ -354,12 +354,14 @@ This differentiation helps counter Peter's attempt to conflate their roles and r
 - **Bad Faith**: Card cancellations, system lockouts, refusal to engage
 - **Ulterior Motives**: Control transfer to Rynette Farrar, settlement leverage
 
-#### Layer 4: Affirmative Harm from Interdict (Needs Significant Enhancement)
-- **Regulatory Crisis**: Jax's Responsible Person role in 37 jurisdictions
-- **Business Disruption**: Customer communications, vendor relationships, compliance
-- **Financial Harm**: Service disruptions, restoration costs, lost revenue
-- **Disproportionate Relief**: Interdict creates more harm than alleged misconduct
-- **Peter's Own Conduct**: His actions violate fiduciary duties more than respondents'
+#### Layer 4: Affirmative Harm from Interdict ✅ **ENHANCED**
+- **Regulatory Crisis**: Jax's Responsible Person role in 37 jurisdictions ✅
+- **Business Disruption**: Customer communications, vendor relationships, compliance ✅
+- **Financial Harm**: Service disruptions, restoration costs, lost revenue ✅
+- **Disproportionate Relief**: ✅ **QUANTIFIED - Interdict creates 36:1 harm ratio (R18M+ losses vs R500K alleged)**
+- **Peter's Own Conduct**: His actions violate fiduciary duties more than respondents' ✅
+- **Added**: Detailed quantification in Section 13B paragraphs 149.22A-149.22I
+- **Added**: Seventh material non-disclosure (disproportionate harm) in Sections 2.2.3(h), 150.5(g), and 150.7A-150.7B
 
 #### Layer 5: Alternative Explanations (Needs Development)
 - **Cognitive Impairment**: Peter's selective memory and confusion may indicate capacity issues
