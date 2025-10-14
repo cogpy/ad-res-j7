@@ -244,6 +244,7 @@ jobs:
               // Skip formatting artifacts and non-actionable text
               const skipPatterns = [
                 /^\*\*.*\*\*$/,  // Just bold text
+                /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
                 /^Current Coverage:/i,
                 /^Legal Significance:/i,
                 /^Framework Phase:/i,
@@ -253,6 +254,9 @@ jobs:
                 /^When compared against/i,
                 /^The (current|existing|draft)/i,
                 /^This (document|analysis|section)/i,
+                /^Improvements? Needed:?$/i,  // Section header pattern
+                /^Actions? Required:?$/i,     // Section header pattern
+                /^Recommended Actions?:?$/i,  // Section header pattern
                 /hours?$/i  // Ends with "hours" - likely effort estimate
               ];
               
