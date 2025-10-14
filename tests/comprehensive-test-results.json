@@ -2,13 +2,10 @@
   "validation": {
     "success": false,
     "total": 85,
-    "passed": 77,
-    "failed": 8,
+    "passed": 80,
+    "failed": 5,
     "errors": [
-      "Uses GitHub CLI for issue creation",
-      "Initializes label flags variable",
       "Properly quotes label values",
-      "Uses eval for dynamic label flags",
       "Recognizes Must-Do sections",
       "Recognizes Should-Do sections",
       "Recognizes Nice-to-Have sections",
@@ -22,7 +19,9 @@
     "failed": 2,
     "errors": [
       "Long titles are properly truncated",
-      "Found label parsing section in workflow"
+      "Uses jq to extract array elements",
+      "Builds label flags correctly",
+      "Uses eval for dynamic command execution"
     ],
     "mock_issues": 15
   },

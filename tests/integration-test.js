@@ -267,6 +267,7 @@ class WorkflowIntegrationTest {
     const skipPatterns = [
       /^\*\*.*\*\*$/,
       /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
+      /^\*\*Current Coverage\*\*:/i,  // Bold "Current Coverage:" with text after
       /^Current Coverage:/i,
       /^Legal Significance:/i,
       /^Estimated effort:/i,
@@ -411,6 +412,9 @@ No numbered lists or bullet points with action words
       'Recommended Actions:',
       'Recommended Action:',
       '**Current Coverage**:',
+      '**Current Coverage**: Partially addressed in Section 4',
+      '**Current Coverage**: Section 3 addresses this but lacks depth',
+      'Current Coverage: Not explicitly addressed',
       '**Action Required**:'
     ];
     

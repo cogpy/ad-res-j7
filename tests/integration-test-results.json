@@ -48,6 +48,16 @@
     },
     {
       "test": "Found label parsing section in workflow",
+      "passed": true,
+      "timestamp": "2025-10-14T11:05:09.804Z"
+    },
+    {
+      "test": "Uses proper loop for label iteration",
+      "passed": true,
+      "timestamp": "2025-10-14T11:05:09.804Z"
+    },
+    {
+      "test": "Uses jq to extract array elements",
       "passed": false,
       "timestamp": "2025-10-14T18:23:37.950Z"
     },
@@ -184,7 +194,9 @@
   ],
   "errors": [
     "Long titles are properly truncated",
-    "Found label parsing section in workflow"
+    "Uses jq to extract array elements",
+    "Builds label flags correctly",
+    "Uses eval for dynamic command execution"
   ],
   "mock_issues_generated": 15,
   "sample_issues": [
