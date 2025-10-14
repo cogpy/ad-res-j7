@@ -58,6 +58,7 @@ The workflow applies intelligent filtering to ensure only high-quality, actionab
 **Excludes:**
 - Short text snippets (less than 15 characters)
 - Formatting artifacts (bold text only)
+- Section headers (e.g., `**Improvements Needed**:`, `**Action Required**:`, `**Recommended Actions**:`)
 - Non-actionable descriptions (Current Coverage, Legal Significance, etc.)
 - Effort estimates (text ending with "hours")
 - Generic descriptive text
@@ -67,6 +68,15 @@ The workflow applies intelligent filtering to ensure only high-quality, actionab
 - Clear task descriptions mentioning sections, responses, affidavits, etc.
 - Items from priority sections
 - Implementation-focused content
+
+**Section Header Filtering:**
+The workflow specifically filters out common section headers to prevent generic issues:
+- `**Improvements Needed**:` and variations (with/without bold, with/without colon)
+- `**Action Required**:` and `**Actions Required**:`
+- `**Recommended Action**:` and `**Recommended Actions**:`
+- Any bold text ending with a colon (e.g., `**Current Coverage**:`)
+
+This ensures that only the actual actionable items listed under these headers become issues, not the headers themselves.
 
 ### Issue Generation
 
