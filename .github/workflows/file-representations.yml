@@ -38,8 +38,8 @@ jobs:
         run: |
           echo "=== Repository File Analysis ===" >> $GITHUB_STEP_SUMMARY
           
-          md_count=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
-          json_count=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          md_count=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
+          json_count=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
           
           echo "📊 **File Statistics**" >> $GITHUB_STEP_SUMMARY
           echo "- Markdown files: $md_count" >> $GITHUB_STEP_SUMMARY
@@ -51,7 +51,7 @@ jobs:
           missing_md=0
           
           echo "🔍 **Missing JSON representations:**" >> $GITHUB_STEP_SUMMARY
-          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"); do
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             json_file="${md_file%.md}.json"
             if [ ! -f "$json_file" ]; then
               echo "- \`$json_file\` (for \`$md_file\`)" >> $GITHUB_STEP_SUMMARY
@@ -65,7 +65,7 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔍 **Missing Markdown representations:**" >> $GITHUB_STEP_SUMMARY
-          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"); do
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             md_file="${json_file%.json}.md"
             if [ ! -f "$md_file" ]; then
               echo "- \`$md_file\` (for \`$json_file\`)" >> $GITHUB_STEP_SUMMARY
@@ -251,10 +251,10 @@ jobs:
               
               // Find all files
               const mdFiles = glob.sync('**/*.md', { 
-                ignore: ['node_modules/**', '.git/**', 'README.md'] 
+                ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
               });
               const jsonFiles = glob.sync('**/*.json', { 
-                ignore: ['node_modules/**', '.git/**', 'package*.json'] 
+                ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] 
               });
 
               console.log(`Found ${mdFiles.length} markdown files and ${jsonFiles.length} JSON files`);
@@ -358,8 +358,8 @@ jobs:
         run: |
           echo "=== Final Repository Analysis ===" >> $GITHUB_STEP_SUMMARY
           
-          final_md=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
-          final_json=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          final_md=$(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
+          final_json=$(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📊 **Final Statistics**" >> $GITHUB_STEP_SUMMARY
@@ -370,7 +370,7 @@ jobs:
           # Final validation check
           missing_pairs=0
           
-          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"); do
+          for md_file in $(find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             json_file="${md_file%.md}.json"
             if [ ! -f "$json_file" ]; then
               echo "❌ Still missing JSON: $json_file" >> $GITHUB_STEP_SUMMARY
@@ -378,7 +378,7 @@ jobs:
             fi
           done
           
-          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"); do
+          for json_file in $(find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*"); do
             md_file="${json_file%.json}.md"
             if [ ! -f "$md_file" ]; then
               echo "❌ Still missing MD: $md_file" >> $GITHUB_STEP_SUMMARY
@@ -560,7 +560,7 @@ jobs:
               
               // Find all image files
               const imageFiles = glob.sync('**/*.{png,jpg,jpeg,gif,bmp}', { 
-                ignore: ['node_modules/**', '.git/**'] 
+                ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**'] 
               });
 
               console.log(`Found ${imageFiles.length} image files`);
@@ -683,7 +683,7 @@ jobs:
           echo "=== OCR Processing Summary ===" >> $GITHUB_STEP_SUMMARY
           
           # Count image files and their representations
-          image_count=$(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.bmp" \) -not -path "./.git/*" -not -path "./node_modules/*" | wc -l)
+          image_count=$(find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.bmp" \) -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./jspm_packages/*" -not -path "./.bundle/*" -not -path "./target/*" -not -path "./build/*" -not -path "./dist/*" | wc -l)
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📊 **OCR Processing Results**" >> $GITHUB_STEP_SUMMARY

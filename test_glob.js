@@ -1,15 +1,15 @@
 const glob = require('glob');
 
-console.log("Current glob patterns:");
+console.log("Updated glob patterns:");
 console.log("MD files found by glob:");
 const mdFiles = glob.sync('**/*.md', { 
-  ignore: ['node_modules/**', '.git/**', 'README.md'] 
+  ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
 });
 mdFiles.forEach(f => console.log("  ", f));
 
 console.log("\nJSON files found by glob:");
 const jsonFiles = glob.sync('**/*.json', { 
-  ignore: ['node_modules/**', '.git/**', 'package*.json'] 
+  ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'jspm_packages/**', '.bundle/**', 'target/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] 
 });
 jsonFiles.forEach(f => console.log("  ", f));
 
