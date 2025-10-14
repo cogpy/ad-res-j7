@@ -22,9 +22,9 @@ The workflow runs on:
 ### 2. Analysis Phase
 
 ```bash
-# Scans for all markdown and JSON files (EXCLUDING node_modules & .git)
-find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"
-find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"
+# Scans for all markdown and JSON files (EXCLUDING dependencies & .git)
+find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./build/*" -not -path "./dist/*"
+find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./build/*" -not -path "./dist/*"
 
 # Identifies missing pairs (only in project files, not dependencies)
 for md_file in $(md_files); do
@@ -35,7 +35,7 @@ for md_file in $(md_files); do
 done
 ```
 
-**🎯 Cognitive Exclusion Logic**: The validator implements adaptive attention allocation by excluding `node_modules` from all validation processes, ensuring focus remains on project-owned files rather than dependency artifacts.
+**🎯 Cognitive Exclusion Logic**: The validator implements adaptive attention allocation by excluding `node_modules`, `vendor/`, `build/`, `dist/`, and other dependency directories from all validation processes, ensuring focus remains on project-owned files rather than dependency artifacts.
 
 ### 3. Conversion Process
 
@@ -142,19 +142,19 @@ The validator implements **adaptive exclusion** to focus only on project files:
 
 **Bash Layer Exclusions:**
 ```bash
-# All find commands exclude node_modules and .git
-find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"
-find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"
+# All find commands exclude dependencies and .git
+find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./build/*" -not -path "./dist/*"
+find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -path "./vendor/*" -not -path "./bower_components/*" -not -path "./build/*" -not -path "./dist/*"
 ```
 
 **Node.js Layer Exclusions:**
 ```javascript
 // Glob patterns automatically exclude dependencies
 const mdFiles = glob.sync('**/*.md', { 
-  ignore: ['node_modules/**', '.git/**', 'README.md'] 
+  ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
 });
 const jsonFiles = glob.sync('**/*.json', { 
-  ignore: ['node_modules/**', '.git/**', 'package*.json'] 
+  ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'build/**', 'dist/**', '.git/**', 'package*.json'] 
 });
 ```
 
@@ -172,7 +172,7 @@ const jsonFiles = glob.sync('**/*.json', {
 
 ### Performance Optimization
 - **Efficient Scanning**: Uses native `find` commands for file discovery
-- **Cognitive Exclusion**: Automatically excludes `node_modules` and `.git` directories
+- **Comprehensive Exclusion**: Automatically excludes `node_modules`, `vendor`, `bower_components`, `build`, `dist`, and `.git` directories
 - **Parallel Processing**: Processes multiple files simultaneously where possible
 - **Selective Updates**: Only generates missing files, not existing ones
 - **Smart Commit Logic**: Only commits when changes are actually made
