@@ -13,8 +13,12 @@
   "dependencies": {
     "glob": "^11.0.3"
   },
-  "devDependencies": {},
-  "keywords": ["github-actions", "workflow", "validation", "tests"],
+  "keywords": [
+    "github-actions",
+    "workflow",
+    "validation",
+    "tests"
+  ],
   "author": "GitHub Actions Workflow Validator",
   "license": "MIT"
 }
