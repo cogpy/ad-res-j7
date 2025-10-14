@@ -14,9 +14,9 @@
   },
   "integration": {
     "success": false,
-    "total": 33,
-    "passed": 29,
-    "failed": 4,
+    "total": 35,
+    "passed": 33,
+    "failed": 2,
     "errors": [
       "Long titles are properly truncated",
       "Uses jq to extract array elements",
@@ -26,11 +26,11 @@
     "mock_issues": 15
   },
   "overall": {
-    "total_tests": 118,
-    "passed_tests": 109,
-    "failed_tests": 9,
+    "total_tests": 120,
+    "passed_tests": 110,
+    "failed_tests": 10,
     "success_rate": 92
   },
-  "generated_at": "2025-10-14T11:05:09.806Z",
+  "generated_at": "2025-10-14T18:23:37.952Z",
   "test_runner_version": "1.0.0"
 }

@@ -9,427 +9,427 @@
     {
       "test": "GitHub workflows directory exists",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.804Z"
+      "timestamp": "2025-10-14T18:23:37.933Z"
     },
     {
       "test": "Todo-to-issues workflow file exists",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.804Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "File-representations workflow file exists",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.805Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "Todo workflow has correct name",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.805Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "Todo workflow has trigger configuration",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.805Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "File-rep workflow has correct name",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.805Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "File-rep workflow has trigger configuration",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.805Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "Has push trigger",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "Has pull request trigger",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.934Z"
     },
     {
       "test": "Has manual trigger",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Correctly filtered to todo folder",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has contents read permission",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has issues write permission",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has actions read permission",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has checkout step",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has Node.js setup",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Installs required dependencies",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.806Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has todo scanning step",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Has issue creation step",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Supports force regeneration",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Uses GitHub CLI for issue creation",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Initializes label flags variable",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Iterates through labels array",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Uses jq to parse JSON label array",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.935Z"
     },
     {
       "test": "Properly quotes label values",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Uses eval for dynamic label flags",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Supports priority critical label",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Supports priority high label",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Includes todo label",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.807Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Includes enhancement label",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Contains embedded JavaScript code",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "JavaScript code is properly terminated",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Defines TodoIssueGenerator class",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Has parseMarkdownForTasks method",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Has quality filtering method",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Has issue content generation method",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Has priority determination logic",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Recognizes Must-Do sections",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Recognizes Should-Do sections",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Recognizes Nice-to-Have sections",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Recognizes Improvements Needed sections",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Detects implement action word",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Detects create action word",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Detects fix action word",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Detects enhance action word",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Filters out short tasks",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Filters out effort estimates",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Filters out descriptive text",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.808Z"
+      "timestamp": "2025-10-14T18:23:37.936Z"
     },
     {
       "test": "Has validate-and-generate job",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Has OCR job",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "OCR job depends on main job",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Creates file analysis script",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Creates file converter script",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Creates OCR converter script",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Excludes node_modules",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Excludes vendor directory",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Excludes git directory",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Has MD to JSON conversion",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Has JSON to MD conversion",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Has OCR processing",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.809Z"
+      "timestamp": "2025-10-14T18:23:37.937Z"
     },
     {
       "test": "Todo folder contains markdown files",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.815Z"
+      "timestamp": "2025-10-14T18:23:37.942Z"
     },
     {
       "test": "todo/workflow-validation-tests.md is not empty",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.815Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "todo/workflow-validation-tests.md has structured content",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.815Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "todo/workflow-test.md is not empty",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.815Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "todo/workflow-test.md has structured content",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.815Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "workflow-test.md contains the target task",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "workflow-test.md has Improvements Needed section",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "todo/simple-workflow-test.md is not empty",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "todo/simple-workflow-test.md has structured content",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "workflow-test.md contains the target task",
       "passed": false,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "workflow-test.md has Improvements Needed section",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.816Z"
+      "timestamp": "2025-10-14T18:23:37.943Z"
     },
     {
       "test": "Handles empty todo folder",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Has JavaScript error handling",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Has cleanup step that always runs",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Cleans up temporary files",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Conditionally executes based on todo presence",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Conditionally creates issues",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Checks for changes before committing",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Has explicit exit codes",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Logs errors appropriately",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Found 5 tasks in sample content (expected >= 5)",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "Critical priority generates correct labels",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.944Z"
     },
     {
       "test": "High priority generates correct labels",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.817Z"
+      "timestamp": "2025-10-14T18:23:37.945Z"
     },
     {
       "test": "Critical priority includes bug label",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.818Z"
+      "timestamp": "2025-10-14T18:23:37.945Z"
     },
     {
       "test": "Long titles are properly truncated",
       "passed": true,
-      "timestamp": "2025-10-14T16:16:09.818Z"
+      "timestamp": "2025-10-14T18:23:37.945Z"
     }
   ],
   "errors": [
@@ -442,5 +442,5 @@
     "Recognizes Nice-to-Have sections",
     "workflow-test.md contains the target task"
   ],
-  "generated_at": "2025-10-14T16:16:09.818Z"
+  "generated_at": "2025-10-14T18:23:37.945Z"
 }
