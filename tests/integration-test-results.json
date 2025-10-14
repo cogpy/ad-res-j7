@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "total": 20,
+    "passed": 17,
+    "failed": 3,
+    "success_rate": 85
+  },
+  "tests": [
+    {
+      "test": "Created high priority tasks sample file",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.369Z"
+    },
+    {
+      "test": "Created edge cases sample file",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.370Z"
+    },
+    {
+      "test": "Generated 15 issues from sample files",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Found 3 critical priority issues",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Found 1 high priority issues",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Long titles are properly truncated",
+      "passed": false,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Critical issues include bug label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Critical issues have priority label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.371Z"
+    },
+    {
+      "test": "Found label parsing section in workflow",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.372Z"
+    },
+    {
+      "test": "Uses proper loop for label iteration",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.372Z"
+    },
+    {
+      "test": "Uses jq to extract array elements",
+      "passed": false,
+      "timestamp": "2025-10-14T10:01:26.372Z"
+    },
+    {
+      "test": "Builds label flags correctly",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.372Z"
+    },
+    {
+      "test": "Uses eval for dynamic command execution",
+      "passed": false,
+      "timestamp": "2025-10-14T10:01:26.372Z"
+    },
+    {
+      "test": "Label array conversion produces correct flags",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.373Z"
+    },
+    {
+      "test": "critical priority generates correct labels: [todo, enhancement, priority: critical, bug]",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.373Z"
+    },
+    {
+      "test": "high priority generates correct labels: [todo, enhancement, priority: high]",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.373Z"
+    },
+    {
+      "test": "medium priority generates correct labels: [todo, enhancement, priority: medium]",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.373Z"
+    },
+    {
+      "test": "low priority generates correct labels: [todo, enhancement, priority: low]",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.373Z"
+    },
+    {
+      "test": "Empty todo directory contains no files",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.374Z"
+    },
+    {
+      "test": "Malformed todo file generates no issues",
+      "passed": true,
+      "timestamp": "2025-10-14T10:01:26.374Z"
+    }
+  ],
+  "errors": [
+    "Long titles are properly truncated",
+    "Uses jq to extract array elements",
+    "Uses eval for dynamic command execution"
+  ],
+  "mock_issues_generated": 15,
+  "sample_issues": [
+    {
+      "title": "Fix label array handling in GitHub Actions workflow",
+      "task": "Fix label array handling in GitHub Actions workflow",
+      "section": "Must-Do (Critical Priority)",
+      "priority": "critical",
+      "labels": [
+        "todo",
+        "enhancement",
+        "priority: critical",
+        "bug"
+      ],
+      "file": "tests/sample-todos/high-priority-tasks.md",
+      "lineNumber": 5
+    },
+    {
+      "title": "Add documentation for label format requirements",
+      "task": "Add documentation for label format requirements",
+      "section": "Must-Do (Critical Priority)",
+      "priority": "critical",
+      "labels": [
+        "todo",
+        "enhancement",
+        "priority: critical",
+        "bug"
+      ],
+      "file": "tests/sample-todos/high-priority-tasks.md",
+      "lineNumber": 6
+    },
+    {
+      "title": "Implement proper error handling for API failures",
+      "task": "Implement proper error handling for API failures",
+      "section": "Must-Do (Critical Priority)",
+      "priority": "critical",
+      "labels": [
+        "todo",
+        "enhancement",
+        "priority: critical",
+        "bug"
+      ],
+      "file": "tests/sample-todos/high-priority-tasks.md",
+      "lineNumber": 7
+    }
+  ],
+  "generated_at": "2025-10-14T10:01:26.374Z"
+}
