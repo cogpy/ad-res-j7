@@ -9,3 +9,9 @@ This directory contains raw evidence collected for Case 2025-137857.
 - **`invoices/`**: Invoices for various business expenses.
 - **`correspondence/`**: Email and other correspondence relevant to the case.
 
+## Key Documents
+
+- **`IT_EXPENSES_SUMMARY.md`**: Quick reference summary of IT expenses with key facts and industry comparisons.
+- **`IT_EXPENSES_BREAKDOWN.md`**: Comprehensive itemized breakdown of IT expenses by category (Shopify Plus, AWS, Microsoft 365, Adobe, Sage, payment gateways) for Response to AD Paragraphs 7.2-7.5.
+- **`IT_EXPENSES_BREAKDOWN.json`**: Structured data version of the IT expenses breakdown for programmatic access.
+
