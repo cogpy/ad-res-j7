@@ -46,23 +46,47 @@ jobs:
         run: |
           echo "=== Todo Folder Analysis ===" >> $GITHUB_STEP_SUMMARY
           
-          todo_count=$(find todo -name "*.md" | wc -l)
-          echo "📂 Found $todo_count todo files" >> $GITHUB_STEP_SUMMARY
+          # Check if todo directory exists
+          if [ ! -d "todo" ]; then
+            echo "❌ Todo directory not found" >> $GITHUB_STEP_SUMMARY
+            echo "has_todos=false" >> $GITHUB_OUTPUT
+            echo "error=no_todo_directory" >> $GITHUB_OUTPUT
+            echo "::warning::Todo directory does not exist"
+            exit 0
+          fi
+          
+          # Count todo files with error handling
+          if todo_count=$(find todo -name "*.md" 2>/dev/null | wc -l); then
+            echo "📂 Found $todo_count todo files" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Failed to scan todo directory" >> $GITHUB_STEP_SUMMARY
+            echo "has_todos=false" >> $GITHUB_OUTPUT
+            echo "error=scan_failed" >> $GITHUB_OUTPUT
+            echo "::error::Failed to scan todo directory"
+            exit 1
+          fi
           
           if [ $todo_count -eq 0 ]; then
             echo "⚠️ No todo files found - nothing to process" >> $GITHUB_STEP_SUMMARY
             echo "has_todos=false" >> $GITHUB_OUTPUT
+            echo "todo_count=0" >> $GITHUB_OUTPUT
           else
             echo "has_todos=true" >> $GITHUB_OUTPUT
             echo "todo_count=$todo_count" >> $GITHUB_OUTPUT
             
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "📋 **Todo Files Found:**" >> $GITHUB_STEP_SUMMARY
-            for file in todo/*.md; do
+            
+            # List files with error handling
+            find todo -name "*.md" 2>/dev/null | while read -r file; do
               if [ -f "$file" ]; then
-                echo "- \`$file\`" >> $GITHUB_STEP_SUMMARY
+                file_size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null || echo "unknown")
+                echo "- \`$file\` (${file_size} bytes)" >> $GITHUB_STEP_SUMMARY
               fi
             done
+            
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✅ Ready to process $todo_count todo files" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Create issue generator script
@@ -321,103 +345,325 @@ jobs:
             processFiles() {
               console.log('🔄 Processing todo files for actionable tasks...');
               
-              const todoFiles = glob.sync('todo/**/*.md');
-              console.log(`Found ${todoFiles.length} todo files to process`);
+              let todoFiles;
+              try {
+                todoFiles = glob.sync('todo/**/*.md');
+                console.log(`Found ${todoFiles.length} todo files to process`);
+              } catch (error) {
+                console.error('❌ Error scanning todo directory:', error.message);
+                console.error('Ensure the todo/ directory exists and is accessible');
+                process.exit(1);
+              }
+
+              if (todoFiles.length === 0) {
+                console.log('ℹ️ No todo files found to process');
+                return this.issues;
+              }
 
               let totalTasks = 0;
+              let processedFiles = 0;
+              let failedFiles = [];
 
               for (const file of todoFiles) {
                 console.log(`📋 Processing: ${file}`);
                 
                 try {
+                  // Check file accessibility
+                  if (!fs.existsSync(file)) {
+                    throw new Error(`File not found: ${file}`);
+                  }
+
+                  const stats = fs.statSync(file);
+                  if (!stats.isFile()) {
+                    throw new Error(`Not a regular file: ${file}`);
+                  }
+
+                  // Read file with encoding validation
                   const content = fs.readFileSync(file, 'utf8');
-                  const tasks = this.parseMarkdownForTasks(content, file);
                   
+                  if (!content || content.trim() === '') {
+                    console.log(`  ⚠️ Skipping empty file: ${file}`);
+                    continue;
+                  }
+
+                  const tasks = this.parseMarkdownForTasks(content, file);
                   console.log(`  Found ${tasks.length} potential tasks`);
                   
                   for (const task of tasks) {
-                    const issue = this.generateIssueContent(task);
-                    this.issues.push(issue);
-                    totalTasks++;
+                    try {
+                      const issue = this.generateIssueContent(task);
+                      this.issues.push(issue);
+                      totalTasks++;
+                    } catch (issueError) {
+                      console.error(`  ❌ Error generating issue for task in ${file}:`, issueError.message);
+                      console.error(`  Task content: ${task.task ? task.task.substring(0, 100) : 'N/A'}...`);
+                    }
                   }
                   
+                  processedFiles++;
+                  
                 } catch (error) {
-                  console.error(`❌ Error processing ${file}:`, error.message);
+                  console.error(`❌ Error processing ${file}:`);
+                  console.error(`  Error type: ${error.name || 'Unknown'}`);
+                  console.error(`  Error message: ${error.message}`);
+                  console.error(`  File: ${file}`);
+                  
+                  failedFiles.push({
+                    file: file,
+                    error: error.message,
+                    type: error.name || 'Unknown'
+                  });
+                  
+                  // Continue processing other files instead of failing completely
+                  continue;
                 }
               }
 
-              console.log(`\n✅ Processing complete! Found ${totalTasks} actionable tasks across ${todoFiles.length} files.`);
+              // Report processing results
+              console.log(`\n📊 Processing Summary:`);
+              console.log(`  ✅ Successfully processed: ${processedFiles} files`);
+              console.log(`  ❌ Failed to process: ${failedFiles.length} files`);
+              console.log(`  📋 Total actionable tasks found: ${totalTasks}`);
+
+              if (failedFiles.length > 0) {
+                console.log(`\n⚠️ Files that failed processing:`);
+                failedFiles.forEach(failure => {
+                  console.log(`  - ${failure.file}: ${failure.error} (${failure.type})`);
+                });
+              }
+
+              if (processedFiles === 0) {
+                console.error('❌ No files were successfully processed');
+                process.exit(1);
+              }
+
+              console.log(`\n✅ Processing complete! Found ${totalTasks} actionable tasks across ${processedFiles} successfully processed files.`);
               return this.issues;
             }
 
             // Generate output for GitHub Actions
             generateOutput() {
-              const output = {
-                summary: {
-                  total_issues: this.issues.length,
-                  priorities: {
-                    critical: this.issues.filter(i => i.source.priority === 'critical').length,
-                    high: this.issues.filter(i => i.source.priority === 'high').length,
-                    medium: this.issues.filter(i => i.source.priority === 'medium').length,
-                    low: this.issues.filter(i => i.source.priority === 'low').length
+              try {
+                const output = {
+                  summary: {
+                    total_issues: this.issues.length,
+                    priorities: {
+                      critical: this.issues.filter(i => i.source && i.source.priority === 'critical').length,
+                      high: this.issues.filter(i => i.source && i.source.priority === 'high').length,
+                      medium: this.issues.filter(i => i.source && i.source.priority === 'medium').length,
+                      low: this.issues.filter(i => i.source && i.source.priority === 'low').length
+                    },
+                    files_processed: [...new Set(this.issues.map(i => i.source ? i.source.file : 'unknown').filter(f => f !== 'unknown'))].length
                   },
-                  files_processed: [...new Set(this.issues.map(i => i.source.file))].length
-                },
-                issues: this.issues
-              };
+                  issues: this.issues,
+                  generated_at: new Date().toISOString(),
+                  generator_version: '2.0'
+                };
 
-              // Write to file for GitHub Actions to use
-              fs.writeFileSync('todo-issues.json', JSON.stringify(output, null, 2));
-              
-              return output;
+                // Validate output before writing
+                if (!output.issues || !Array.isArray(output.issues)) {
+                  throw new Error('Invalid issues array in output');
+                }
+
+                // Write to file for GitHub Actions to use
+                const outputJSON = JSON.stringify(output, null, 2);
+                
+                try {
+                  fs.writeFileSync('todo-issues.json', outputJSON);
+                  console.log('✅ Successfully wrote output to todo-issues.json');
+                } catch (writeError) {
+                  console.error('❌ Failed to write output file:', writeError.message);
+                  throw writeError;
+                }
+                
+                return output;
+                
+              } catch (error) {
+                console.error('❌ Error generating output:', error.message);
+                console.error('Stack trace:', error.stack);
+                
+                // Create minimal fallback output
+                const fallbackOutput = {
+                  summary: {
+                    total_issues: 0,
+                    priorities: { critical: 0, high: 0, medium: 0, low: 0 },
+                    files_processed: 0
+                  },
+                  issues: [],
+                  generated_at: new Date().toISOString(),
+                  error: error.message
+                };
+                
+                fs.writeFileSync('todo-issues.json', JSON.stringify(fallbackOutput, null, 2));
+                throw error;
+              }
             }
           }
 
-          // Run the generator
-          const generator = new TodoIssueGenerator();
-          const issues = generator.processFiles();
-          const output = generator.generateOutput();
+          // Run the generator with comprehensive error handling
+          try {
+            console.log('🚀 Starting Todo Issue Generator...');
+            
+            const generator = new TodoIssueGenerator();
+            const issues = generator.processFiles();
+            const output = generator.generateOutput();
 
-          console.log(`\n📊 Summary:`);
-          console.log(`- Total actionable tasks: ${output.summary.total_issues}`);
-          console.log(`- Critical priority: ${output.summary.priorities.critical}`);
-          console.log(`- High priority: ${output.summary.priorities.high}`);
-          console.log(`- Medium priority: ${output.summary.priorities.medium}`);
-          console.log(`- Low priority: ${output.summary.priorities.low}`);
-          console.log(`- Files processed: ${output.summary.files_processed}`);
+            console.log(`\n📊 Final Summary:`);
+            console.log(`- Total actionable tasks: ${output.summary.total_issues}`);
+            console.log(`- Critical priority: ${output.summary.priorities.critical}`);
+            console.log(`- High priority: ${output.summary.priorities.high}`);
+            console.log(`- Medium priority: ${output.summary.priorities.medium}`);
+            console.log(`- Low priority: ${output.summary.priorities.low}`);
+            console.log(`- Files processed: ${output.summary.files_processed}`);
+            console.log(`- Generated at: ${output.generated_at}`);
 
-          process.exit(0);
+            if (output.summary.total_issues === 0) {
+              console.log('\n⚠️ No actionable tasks found. This could indicate:');
+              console.log('  - Todo files don\'t contain recognizable task patterns');
+              console.log('  - Tasks don\'t meet quality filtering criteria');
+              console.log('  - Files are empty or contain only non-actionable content');
+              process.exit(0);
+            }
+
+            console.log('\n🎉 Todo Issue Generator completed successfully!');
+            process.exit(0);
+            
+          } catch (error) {
+            console.error('\n💥 Fatal Error in Todo Issue Generator:');
+            console.error(`Error type: ${error.name || 'Unknown'}`);
+            console.error(`Error message: ${error.message}`);
+            console.error(`Stack trace: ${error.stack}`);
+            
+            // Ensure we have some output file for GitHub Actions
+            const errorOutput = {
+              summary: {
+                total_issues: 0,
+                priorities: { critical: 0, high: 0, medium: 0, low: 0 },
+                files_processed: 0
+              },
+              issues: [],
+              generated_at: new Date().toISOString(),
+              error: {
+                type: error.name || 'Unknown',
+                message: error.message,
+                stack: error.stack
+              }
+            };
+            
+            try {
+              fs.writeFileSync('todo-issues.json', JSON.stringify(errorOutput, null, 2));
+            } catch (writeError) {
+              console.error('❌ Failed to write error output:', writeError.message);
+            }
+            
+            process.exit(1);
+          }
           EOF
 
       - name: Parse todo files for actionable tasks
         if: steps.scan.outputs.has_todos == 'true'
         run: |
           echo "🚀 Parsing todo files for actionable tasks..."
-          node issue-generator.js
+          
+          # Run the generator with error handling
+          if ! node issue-generator.js; then
+            echo "❌ Issue generator failed with exit code: $?"
+            echo "📋 Checking for partial results..."
+            
+            if [ -f "todo-issues.json" ]; then
+              echo "⚠️ Partial results found - attempting to continue with available data"
+              
+              # Check if the file contains valid JSON
+              if ! jq empty todo-issues.json 2>/dev/null; then
+                echo "❌ Generated JSON is invalid - creating empty result"
+                echo '{"summary":{"total_issues":0,"priorities":{"critical":0,"high":0,"medium":0,"low":0},"files_processed":0},"issues":[],"error":"Generator failed with invalid JSON output"}' > todo-issues.json
+              fi
+            else
+              echo "❌ No output file generated - creating empty result"
+              echo '{"summary":{"total_issues":0,"priorities":{"critical":0,"high":0,"medium":0,"low":0},"files_processed":0},"issues":[],"error":"Generator failed to produce output"}' > todo-issues.json
+            fi
+            
+            echo "::warning::Issue generator encountered errors but workflow will continue"
+          else
+            echo "✅ Issue generator completed successfully"
+          fi
 
       - name: Load generated issues
         if: steps.scan.outputs.has_todos == 'true'
         id: load_issues
         run: |
-          if [ -f "todo-issues.json" ]; then
-            issue_count=$(jq '.summary.total_issues' todo-issues.json)
-            echo "issue_count=$issue_count" >> $GITHUB_OUTPUT
+          echo "📄 Loading and validating generated issues..."
+          
+          if [ ! -f "todo-issues.json" ]; then
+            echo "❌ Output file todo-issues.json not found"
+            echo "has_issues=false" >> $GITHUB_OUTPUT
+            echo "error=output_file_missing" >> $GITHUB_OUTPUT
+            echo "⚠️ No output file generated - check previous step for errors" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+          
+          # Validate JSON structure
+          if ! jq empty todo-issues.json 2>/dev/null; then
+            echo "❌ Invalid JSON in todo-issues.json"
+            echo "has_issues=false" >> $GITHUB_OUTPUT
+            echo "error=invalid_json" >> $GITHUB_OUTPUT
+            echo "⚠️ Generated file contains invalid JSON" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+          
+          # Extract data with error checking
+          if ! issue_count=$(jq -r '.summary.total_issues // 0' todo-issues.json 2>/dev/null); then
+            echo "❌ Failed to extract issue count from JSON"
+            echo "has_issues=false" >> $GITHUB_OUTPUT
+            echo "error=json_parsing_failed" >> $GITHUB_OUTPUT
+            echo "⚠️ Failed to parse issue count from generated data" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+          
+          # Check for errors in the generated data
+          if error_msg=$(jq -r '.error // empty' todo-issues.json 2>/dev/null) && [ -n "$error_msg" ]; then
+            echo "⚠️ Generator reported error: $error_msg"
+            echo "generator_error=$error_msg" >> $GITHUB_OUTPUT
+          fi
+          
+          echo "issue_count=$issue_count" >> $GITHUB_OUTPUT
+          
+          if [ "$issue_count" -gt 0 ]; then
             echo "has_issues=true" >> $GITHUB_OUTPUT
+            
+            # Extract priority counts with error handling
+            critical_count=$(jq -r '.summary.priorities.critical // 0' todo-issues.json 2>/dev/null || echo 0)
+            high_count=$(jq -r '.summary.priorities.high // 0' todo-issues.json 2>/dev/null || echo 0)
+            medium_count=$(jq -r '.summary.priorities.medium // 0' todo-issues.json 2>/dev/null || echo 0)
+            low_count=$(jq -r '.summary.priorities.low // 0' todo-issues.json 2>/dev/null || echo 0)
+            files_processed=$(jq -r '.summary.files_processed // 0' todo-issues.json 2>/dev/null || echo 0)
+            generated_at=$(jq -r '.generated_at // "unknown"' todo-issues.json 2>/dev/null || echo "unknown")
             
             # Add summary to GitHub Actions summary
             echo "=== Issue Generation Results ===" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "📊 **Generated Issues Summary:**" >> $GITHUB_STEP_SUMMARY
             echo "- **Total Issues:** $issue_count" >> $GITHUB_STEP_SUMMARY
-            echo "- **Critical Priority:** $(jq '.summary.priorities.critical' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
-            echo "- **High Priority:** $(jq '.summary.priorities.high' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
-            echo "- **Medium Priority:** $(jq '.summary.priorities.medium' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
-            echo "- **Low Priority:** $(jq '.summary.priorities.low' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
-            echo "- **Files Processed:** $(jq '.summary.files_processed' todo-issues.json)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Critical Priority:** $critical_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **High Priority:** $high_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **Medium Priority:** $medium_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **Low Priority:** $low_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **Files Processed:** $files_processed" >> $GITHUB_STEP_SUMMARY
+            echo "- **Generated At:** $generated_at" >> $GITHUB_STEP_SUMMARY
+            
+            if [ -n "$error_msg" ]; then
+              echo "- **⚠️ Generator Warning:** $error_msg" >> $GITHUB_STEP_SUMMARY
+            fi
+            
             echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✅ Ready to create GitHub issues" >> $GITHUB_STEP_SUMMARY
           else
             echo "has_issues=false" >> $GITHUB_OUTPUT
             echo "⚠️ No actionable tasks found in todo files" >> $GITHUB_STEP_SUMMARY
+            
+            if [ -n "$error_msg" ]; then
+              echo "Error reported by generator: $error_msg" >> $GITHUB_STEP_SUMMARY
+            fi
           fi
 
       - name: Create GitHub issues
@@ -427,49 +673,145 @@ jobs:
         run: |
           echo "📝 Creating GitHub issues from actionable tasks..."
           
+          # Verify GitHub CLI and authentication
+          if ! command -v gh &> /dev/null; then
+            echo "❌ GitHub CLI not found"
+            exit 1
+          fi
+          
+          if ! gh auth status &> /dev/null; then
+            echo "❌ GitHub CLI authentication failed"
+            echo "Please check GITHUB_TOKEN permissions"
+            exit 1
+          fi
+          
+          # Function to create issue with retry logic
+          create_issue_with_retry() {
+            local title="$1"
+            local body="$2" 
+            local label_flags="$3"
+            local max_retries=3
+            local retry_count=0
+            
+            while [ $retry_count -lt $max_retries ]; do
+              if eval "gh issue create --title \"$title\" --body \"$body\" $label_flags" > /dev/null 2>&1; then
+                return 0
+              else
+                retry_count=$((retry_count + 1))
+                if [ $retry_count -lt $max_retries ]; then
+                  echo "  ⚠️ Attempt $retry_count failed, retrying in 2 seconds..."
+                  sleep 2
+                else
+                  echo "  ❌ Failed after $max_retries attempts"
+                  return 1
+                fi
+              fi
+            done
+          }
+          
+          # Function to safely extract JSON field with error handling
+          safe_jq_extract() {
+            local json="$1"
+            local field="$2"
+            local default="$3"
+            
+            if result=$(echo "$json" | jq -r "$field" 2>/dev/null) && [ "$result" != "null" ] && [ -n "$result" ]; then
+              echo "$result"
+            else
+              echo "$default"
+            fi
+          }
+          
           # Check if force regeneration is requested
           force_regenerate="${{ github.event.inputs.force_regenerate }}"
           
           if [ "$force_regenerate" = "true" ]; then
             echo "🔄 Force regeneration requested - closing existing todo-related issues..."
             
-            # Get existing issues with todo label
-            existing_issues=$(gh api repos/${{ github.repository }}/issues?labels=todo --paginate | jq -r '.[].number')
-            
-            for issue_number in $existing_issues; do
-              echo "🔒 Closing existing issue #$issue_number"
-              gh api repos/${{ github.repository }}/issues/$issue_number \
-                --method PATCH \
-                --field state='closed' \
-                --field state_reason='completed'
-            done
+            # Get existing issues with todo label with error handling
+            if existing_issues=$(gh api repos/${{ github.repository }}/issues?labels=todo --paginate 2>/dev/null | jq -r '.[].number' 2>/dev/null); then
+              issue_count=$(echo "$existing_issues" | wc -w)
+              echo "Found $issue_count existing todo issues to close"
+              
+              for issue_number in $existing_issues; do
+                if [ -n "$issue_number" ] && [ "$issue_number" != "null" ]; then
+                  echo "🔒 Closing existing issue #$issue_number"
+                  if ! gh api repos/${{ github.repository }}/issues/$issue_number \
+                    --method PATCH \
+                    --field state='closed' \
+                    --field state_reason='completed' > /dev/null 2>&1; then
+                    echo "  ⚠️ Failed to close issue #$issue_number"
+                  fi
+                fi
+              done
+            else
+              echo "⚠️ Failed to retrieve existing issues - continuing with creation"
+            fi
           fi
           
-          # Create new issues
+          # Validate issues JSON structure
+          if ! jq -e '.issues | type == "array"' todo-issues.json > /dev/null 2>&1; then
+            echo "❌ Invalid issues array in todo-issues.json"
+            exit 1
+          fi
+          
+          issue_array_length=$(jq -r '.issues | length' todo-issues.json 2>/dev/null || echo 0)
+          echo "Processing $issue_array_length issues..."
+          
+          # Initialize counters
           created_count=0
           skipped_count=0
+          failed_count=0
+          failed_issues=()
           
-          # Read the generated issues
-          issues=$(jq -c '.issues[]' todo-issues.json)
-          
-          while IFS= read -r issue; do
-            title=$(echo "$issue" | jq -r '.title')
-            body=$(echo "$issue" | jq -r '.body')
-            labels=$(echo "$issue" | jq -c '.labels')
+          # Read and process issues one by one
+          for i in $(seq 0 $((issue_array_length - 1))); do
+            echo "Processing issue $((i + 1))/$issue_array_length..."
             
-            # Check if issue with similar title already exists (unless force regenerate)
+            # Extract issue data with error handling
+            issue=$(jq -c ".issues[$i]" todo-issues.json 2>/dev/null)
+            
+            if [ -z "$issue" ] || [ "$issue" = "null" ]; then
+              echo "  ❌ Failed to extract issue $i"
+              failed_count=$((failed_count + 1))
+              continue
+            fi
+            
+            title=$(safe_jq_extract "$issue" '.title' 'Untitled Task')
+            body=$(safe_jq_extract "$issue" '.body' 'No description available')
+            labels_json=$(safe_jq_extract "$issue" '.labels' '[]')
+            
+            # Validate extracted data
+            if [ -z "$title" ] || [ "$title" = "Untitled Task" ]; then
+              echo "  ❌ Issue $i has no valid title"
+              failed_count=$((failed_count + 1))
+              continue
+            fi
+            
+            # Check for duplicate issues (unless force regenerate)
             if [ "$force_regenerate" != "true" ]; then
-              existing=$(gh api repos/${{ github.repository }}/issues?state=open --paginate | jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
-              
-              if [ -n "$existing" ]; then
-                echo "⚠️ Skipping duplicate issue: $title (exists as #$existing)"
-                skipped_count=$((skipped_count + 1))
-                continue
+              if existing=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=100" --paginate 2>/dev/null | jq -r --arg title "$title" '.[] | select(.title == $title) | .number' 2>/dev/null | head -1); then
+                if [ -n "$existing" ] && [ "$existing" != "null" ]; then
+                  echo "  ⚠️ Skipping duplicate: $title (exists as #$existing)"
+                  skipped_count=$((skipped_count + 1))
+                  continue
+                fi
+              else
+                echo "  ⚠️ Failed to check for duplicates, proceeding with creation"
               fi
             fi
             
-            echo "✅ Creating issue: $title"
+            echo "  ✅ Creating: $(echo "$title" | cut -c1-50)..."
             
+            # Parse labels with error handling
+            label_flags=""
+            if [ "$labels_json" != "[]" ] && [ "$labels_json" != "null" ]; then
+              while IFS= read -r label; do
+                if [ -n "$label" ] && [ "$label" != "null" ]; then
+                  label_flags+=" --label \"$label\""
+                fi
+              done < <(echo "$labels_json" | jq -r '.[]?' 2>/dev/null || echo "")
+            fi
             # Parse labels array and create individual --label flags
             # Note: GitHub CLI expects individual --label arguments, not a JSON array
             # This safely converts the JSON array ["label1","label2"] to individual --label arguments
@@ -482,24 +824,69 @@ jobs:
             # Create the issue using gh with proper argument array (no eval needed)
             gh "${gh_args[@]}" > /dev/null
             
-            created_count=$((created_count + 1))
+            # Create the issue with retry logic
+            if create_issue_with_retry "$title" "$body" "$label_flags"; then
+              echo "    ✅ Successfully created issue"
+              created_count=$((created_count + 1))
+            else
+              echo "    ❌ Failed to create issue after retries"
+              failed_count=$((failed_count + 1))
+              failed_issues+=("$title")
+            fi
             
-          done <<< "$issues"
+            # Add small delay to avoid rate limiting
+            sleep 1
+          done
           
+          # Generate comprehensive summary
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📝 **Issue Creation Results:**" >> $GITHUB_STEP_SUMMARY
-          echo "- **Created:** $created_count issues" >> $GITHUB_STEP_SUMMARY
-          echo "- **Skipped:** $skipped_count duplicates" >> $GITHUB_STEP_SUMMARY
+          echo "- **✅ Created:** $created_count issues" >> $GITHUB_STEP_SUMMARY
+          echo "- **⚠️ Skipped:** $skipped_count duplicates" >> $GITHUB_STEP_SUMMARY
+          echo "- **❌ Failed:** $failed_count issues" >> $GITHUB_STEP_SUMMARY
+          echo "- **📊 Total Processed:** $((created_count + skipped_count + failed_count)) issues" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
+          # Report failed issues if any
+          if [ $failed_count -gt 0 ]; then
+            echo "❌ **Failed Issues:**" >> $GITHUB_STEP_SUMMARY
+            for failed_title in "${failed_issues[@]}"; do
+              echo "- $failed_title" >> $GITHUB_STEP_SUMMARY
+            done
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          # Final status message
           if [ $created_count -gt 0 ]; then
             echo "🎉 Successfully created $created_count GitHub issues from todo files!" >> $GITHUB_STEP_SUMMARY
             echo "📋 Check the Issues tab to view and manage the generated tasks." >> $GITHUB_STEP_SUMMARY
+          elif [ $skipped_count -gt 0 ]; then
+            echo "ℹ️ No new issues created - all tasks already have corresponding issues" >> $GITHUB_STEP_SUMMARY
           else
-            echo "ℹ️ No new issues created (all tasks may already have corresponding issues)" >> $GITHUB_STEP_SUMMARY
+            echo "⚠️ No issues were created - check the logs above for errors" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          # Set appropriate exit code
+          if [ $failed_count -gt 0 ] && [ $created_count -eq 0 ]; then
+            echo "::warning::Some issues failed to create but workflow completed"
           fi
 
       - name: Cleanup temporary files
         if: always()
         run: |
-          rm -f issue-generator.js todo-issues.json
+          echo "🧹 Cleaning up temporary files..."
+          
+          # Remove temporary files with error handling
+          for file in issue-generator.js todo-issues.json; do
+            if [ -f "$file" ]; then
+              if rm -f "$file" 2>/dev/null; then
+                echo "  ✅ Removed $file"
+              else
+                echo "  ⚠️ Failed to remove $file"
+              fi
+            else
+              echo "  ℹ️ $file not found (already cleaned up)"
+            fi
+          done
+          
+          echo "🧹 Cleanup completed"
