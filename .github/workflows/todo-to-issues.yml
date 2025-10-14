@@ -470,13 +470,17 @@ jobs:
             
             echo "✅ Creating issue: $title"
             
-            # Create the issue
-            gh api repos/${{ github.repository }}/issues \
-              --method POST \
-              --field title="$title" \
-              --field body="$body" \
-              --raw-field labels="$labels" \
-              > /dev/null
+            # Parse labels array and create individual --label flags
+            # Note: GitHub CLI expects individual --label arguments, not a JSON array
+            # This converts the JSON array ["label1","label2"] to --label "label1" --label "label2"
+            # Use a while loop with jq to properly handle labels containing spaces
+            label_flags=""
+            while IFS= read -r label; do
+              label_flags+=" --label \"$label\""
+            done < <(echo "$labels" | jq -r '.[]')
+            
+            # Create the issue using gh issue create with individual label flags
+            eval "gh issue create --title \"$title\" --body \"$body\" $label_flags" > /dev/null
             
             created_count=$((created_count + 1))
             

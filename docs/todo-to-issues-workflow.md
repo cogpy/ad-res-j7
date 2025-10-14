@@ -202,9 +202,9 @@ If issues aren't being created:
 2. Check that tasks are in recognizable sections (Must-Do, Should-Do, etc.)
 3. Verify file changes are in the `todo/` folder
 4. Review Actions logs for parsing errors
-5. If you see HTTP 422 errors, ensure labels are properly formatted as JSON arrays
+5. Check GitHub Actions permissions if getting API errors
 
-**Note**: Labels are automatically formatted as JSON arrays (e.g., `["todo", "enhancement"]`) for GitHub API compatibility.
+**Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow handles labels with spaces correctly (e.g., "priority: critical").
 
 ### Customization
 The workflow can be customized by modifying:
