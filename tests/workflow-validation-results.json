@@ -1,0 +1,432 @@
+{
+  "summary": {
+    "total": 83,
+    "passed": 79,
+    "failed": 4,
+    "success_rate": 95
+  },
+  "tests": [
+    {
+      "test": "GitHub workflows directory exists",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.878Z"
+    },
+    {
+      "test": "Todo-to-issues workflow file exists",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.878Z"
+    },
+    {
+      "test": "File-representations workflow file exists",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.878Z"
+    },
+    {
+      "test": "Todo workflow has correct name",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.878Z"
+    },
+    {
+      "test": "Todo workflow has trigger configuration",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.878Z"
+    },
+    {
+      "test": "File-rep workflow has correct name",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.879Z"
+    },
+    {
+      "test": "File-rep workflow has trigger configuration",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.879Z"
+    },
+    {
+      "test": "Has push trigger",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.879Z"
+    },
+    {
+      "test": "Has pull request trigger",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.879Z"
+    },
+    {
+      "test": "Has manual trigger",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Correctly filtered to todo folder",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has contents read permission",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has issues write permission",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has actions read permission",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has checkout step",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has Node.js setup",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Installs required dependencies",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has todo scanning step",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Has issue creation step",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Supports force regeneration",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Uses GitHub CLI for issue creation",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.880Z"
+    },
+    {
+      "test": "Initializes label flags variable",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Iterates through labels array",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Uses jq to parse JSON label array",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Properly quotes label values",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Uses eval for dynamic label flags",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Supports priority critical label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Supports priority high label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Includes todo label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Includes enhancement label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.881Z"
+    },
+    {
+      "test": "Contains embedded JavaScript code",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "JavaScript code is properly terminated",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Defines TodoIssueGenerator class",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Has parseMarkdownForTasks method",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Has quality filtering method",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Has issue content generation method",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Has priority determination logic",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Recognizes Must-Do sections",
+      "passed": false,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Recognizes Should-Do sections",
+      "passed": false,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Recognizes Nice-to-Have sections",
+      "passed": false,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Recognizes Improvements Needed sections",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Detects implement action word",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Detects create action word",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Detects fix action word",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Detects enhance action word",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Filters out short tasks",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Filters out effort estimates",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Filters out descriptive text",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.882Z"
+    },
+    {
+      "test": "Has validate-and-generate job",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Has OCR job",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "OCR job depends on main job",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Creates file analysis script",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Creates file converter script",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Creates OCR converter script",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Excludes node_modules",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Excludes vendor directory",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Excludes git directory",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Has MD to JSON conversion",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Has JSON to MD conversion",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Has OCR processing",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.883Z"
+    },
+    {
+      "test": "Todo folder contains markdown files",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/workflow-test.md is not empty",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/workflow-test.md has structured content",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "workflow-test.md contains the target task",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "workflow-test.md has Improvements Needed section",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/README.md is not empty",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/README.md has structured content",
+      "passed": false,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/Improvements for Jax-Dan Response Based on AD Elements.md is not empty",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "todo/Improvements for Jax-Dan Response Based on AD Elements.md has structured content",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.889Z"
+    },
+    {
+      "test": "Handles empty todo folder",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Has JavaScript error handling",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Has cleanup step that always runs",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Cleans up temporary files",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Conditionally executes based on todo presence",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Conditionally creates issues",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Checks for changes before committing",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Has explicit exit codes",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Logs errors appropriately",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Found 5 tasks in sample content (expected >= 5)",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.890Z"
+    },
+    {
+      "test": "Critical priority generates correct labels",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.891Z"
+    },
+    {
+      "test": "High priority generates correct labels",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.891Z"
+    },
+    {
+      "test": "Critical priority includes bug label",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.891Z"
+    },
+    {
+      "test": "Long titles are properly truncated",
+      "passed": true,
+      "timestamp": "2025-10-14T10:00:40.891Z"
+    }
+  ],
+  "errors": [
+    "Recognizes Must-Do sections",
+    "Recognizes Should-Do sections",
+    "Recognizes Nice-to-Have sections",
+    "todo/README.md has structured content"
+  ],
+  "generated_at": "2025-10-14T10:00:40.891Z"
+}
