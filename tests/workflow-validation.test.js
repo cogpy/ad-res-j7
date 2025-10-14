@@ -100,11 +100,11 @@ class WorkflowValidator {
       const workflowContent = fs.readFileSync('.github/workflows/todo-to-issues.yml', 'utf8');
       
       // Check for proper label array conversion
-      this.assert(workflowContent.includes('label_flags=""'), 'Initializes label flags variable');
+      this.assert(workflowContent.includes('gh_args=('), 'Initializes label flags variable');
       this.assert(workflowContent.includes('while IFS= read -r label'), 'Iterates through labels array');
       this.assert(workflowContent.includes('jq -r \'.[]\''), 'Uses jq to parse JSON label array');
-      this.assert(workflowContent.includes('--label "'), 'Properly quotes label values');
-      this.assert(workflowContent.includes('eval "gh issue create'), 'Uses eval for dynamic label flags');
+      this.assert(workflowContent.includes('"--label"'), 'Properly quotes label values');
+      this.assert(workflowContent.includes('gh "${gh_args[@]}"'), 'Uses gh with argument array');
       
       // Test for common label patterns
       this.assert(workflowContent.includes('priority: critical'), 'Supports priority critical label');
@@ -142,9 +142,9 @@ class WorkflowValidator {
         this.assert(jsCode.includes('determinePriorityFromSection'), 'Has priority determination logic');
         
         // Test for parsing patterns
-        this.assert(jsCode.includes('Must-Do'), 'Recognizes Must-Do sections');
-        this.assert(jsCode.includes('Should-Do'), 'Recognizes Should-Do sections');
-        this.assert(jsCode.includes('Nice-to-Have'), 'Recognizes Nice-to-Have sections');
+        this.assert(jsCode.toLowerCase().includes('must-do'), 'Recognizes Must-Do sections');
+        this.assert(jsCode.toLowerCase().includes('should-do'), 'Recognizes Should-Do sections');
+        this.assert(jsCode.toLowerCase().includes('nice-to-have'), 'Recognizes Nice-to-Have sections');
         this.assert(jsCode.includes('Improvements Needed'), 'Recognizes Improvements Needed sections');
         
         // Test for action word detection
