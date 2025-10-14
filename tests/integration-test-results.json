@@ -1,115 +1,116 @@
 {
   "summary": {
     "total": 20,
-    "passed": 17,
-    "failed": 3,
-    "success_rate": 85
+    "passed": 16,
+    "failed": 4,
+    "success_rate": 80
   },
   "tests": [
     {
       "test": "Created high priority tasks sample file",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.369Z"
+      "timestamp": "2025-10-14T11:03:08.410Z"
     },
     {
       "test": "Created edge cases sample file",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.370Z"
+      "timestamp": "2025-10-14T11:03:08.410Z"
     },
     {
       "test": "Generated 15 issues from sample files",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Found 3 critical priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Found 1 high priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Long titles are properly truncated",
       "passed": false,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Critical issues include bug label",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Critical issues have priority label",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.371Z"
+      "timestamp": "2025-10-14T11:03:08.412Z"
     },
     {
       "test": "Found label parsing section in workflow",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.372Z"
+      "timestamp": "2025-10-14T11:03:08.413Z"
     },
     {
       "test": "Uses proper loop for label iteration",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.372Z"
+      "timestamp": "2025-10-14T11:03:08.413Z"
     },
     {
       "test": "Uses jq to extract array elements",
       "passed": false,
-      "timestamp": "2025-10-14T10:01:26.372Z"
+      "timestamp": "2025-10-14T11:03:08.413Z"
     },
     {
       "test": "Builds label flags correctly",
-      "passed": true,
-      "timestamp": "2025-10-14T10:01:26.372Z"
+      "passed": false,
+      "timestamp": "2025-10-14T11:03:08.413Z"
     },
     {
       "test": "Uses eval for dynamic command execution",
       "passed": false,
-      "timestamp": "2025-10-14T10:01:26.372Z"
+      "timestamp": "2025-10-14T11:03:08.413Z"
     },
     {
       "test": "Label array conversion produces correct flags",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.373Z"
+      "timestamp": "2025-10-14T11:03:08.414Z"
     },
     {
       "test": "critical priority generates correct labels: [todo, enhancement, priority: critical, bug]",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.373Z"
+      "timestamp": "2025-10-14T11:03:08.414Z"
     },
     {
       "test": "high priority generates correct labels: [todo, enhancement, priority: high]",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.373Z"
+      "timestamp": "2025-10-14T11:03:08.414Z"
     },
     {
       "test": "medium priority generates correct labels: [todo, enhancement, priority: medium]",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.373Z"
+      "timestamp": "2025-10-14T11:03:08.414Z"
     },
     {
       "test": "low priority generates correct labels: [todo, enhancement, priority: low]",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.373Z"
+      "timestamp": "2025-10-14T11:03:08.414Z"
     },
     {
       "test": "Empty todo directory contains no files",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.374Z"
+      "timestamp": "2025-10-14T11:03:08.415Z"
     },
     {
       "test": "Malformed todo file generates no issues",
       "passed": true,
-      "timestamp": "2025-10-14T10:01:26.374Z"
+      "timestamp": "2025-10-14T11:03:08.415Z"
     }
   ],
   "errors": [
     "Long titles are properly truncated",
     "Uses jq to extract array elements",
+    "Builds label flags correctly",
     "Uses eval for dynamic command execution"
   ],
   "mock_issues_generated": 15,
@@ -157,5 +158,5 @@
       "lineNumber": 7
     }
   ],
-  "generated_at": "2025-10-14T10:01:26.374Z"
+  "generated_at": "2025-10-14T11:03:08.415Z"
 }
