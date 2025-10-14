@@ -56,6 +56,8 @@ Comprehensive analysis and revised affidavit versions:
 #### Strategic Recommendations:
 - **Affidavit_Amendment_Recommendations.md** - Paragraph-by-paragraph recommendations
 - **amendment_recommendations.json** - Structured recommendations data
+- **strategic_contradictions_analysis.md** - Analysis of Peter's contradictory conduct (3 critical questions)
+- **bantjies_trustee_contradictions_analysis.md** - Comprehensive analysis of Bantjies' trustee role contradictions
 
 #### Revised Affidavit Versions:
 - **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md** (v1) - Initial strategic amendments
