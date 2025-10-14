@@ -22,11 +22,11 @@ The workflow runs on:
 ### 2. Analysis Phase
 
 ```bash
-# Scans for all markdown and JSON files
+# Scans for all markdown and JSON files (EXCLUDING node_modules & .git)
 find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"
 find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"
 
-# Identifies missing pairs
+# Identifies missing pairs (only in project files, not dependencies)
 for md_file in $(md_files); do
   json_file="${md_file%.md}.json"
   if [ ! -f "$json_file" ]; then
@@ -34,6 +34,8 @@ for md_file in $(md_files); do
   fi
 done
 ```
+
+**🎯 Cognitive Exclusion Logic**: The validator implements adaptive attention allocation by excluding `node_modules` from all validation processes, ensuring focus remains on project-owned files rather than dependency artifacts.
 
 ### 3. Conversion Process
 
@@ -134,6 +136,34 @@ ls README.md README.json
 
 ## Technical Implementation
 
+### Exclusion Mechanism (Cognitive Flowchart Implementation)
+
+The validator implements **adaptive exclusion** to focus only on project files:
+
+**Bash Layer Exclusions:**
+```bash
+# All find commands exclude node_modules and .git
+find . -name "*.md" -not -path "./.git/*" -not -path "./node_modules/*"
+find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*"
+```
+
+**Node.js Layer Exclusions:**
+```javascript
+// Glob patterns automatically exclude dependencies
+const mdFiles = glob.sync('**/*.md', { 
+  ignore: ['node_modules/**', '.git/**', 'README.md'] 
+});
+const jsonFiles = glob.sync('**/*.json', { 
+  ignore: ['node_modules/**', '.git/**', 'package*.json'] 
+});
+```
+
+**Benefits of Exclusion:**
+- ✅ **Cognitive Resource Allocation**: Focus on project code, not dependencies
+- ✅ **Performance Optimization**: Faster execution by skipping irrelevant files
+- ✅ **Security**: Prevents unintended modifications to dependency files
+- ✅ **Accuracy**: Validation results reflect only project compliance
+
 ### Security Features
 - **Minimal Permissions**: Only `contents: write`, `actions: read`, `checks: read`
 - **No External Dependencies**: Uses only GitHub-provided actions
@@ -142,9 +172,11 @@ ls README.md README.json
 
 ### Performance Optimization
 - **Efficient Scanning**: Uses native `find` commands for file discovery
+- **Cognitive Exclusion**: Automatically excludes `node_modules` and `.git` directories
 - **Parallel Processing**: Processes multiple files simultaneously where possible
 - **Selective Updates**: Only generates missing files, not existing ones
 - **Smart Commit Logic**: Only commits when changes are actually made
+- **Adaptive Focus**: Allocates processing resources only to project-owned files
 
 ### Error Handling
 - **Graceful Degradation**: Continues processing even if individual files fail
