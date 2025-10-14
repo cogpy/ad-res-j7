@@ -246,6 +246,7 @@ jobs:
                 /^\*\*.*\*\*$/,  // Just bold text
                 /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
                 /^Current Coverage:/i,
+                /^\*\*Current Coverage\*\*:/i,  // Bold Current Coverage with text after
                 /^Legal Significance:/i,
                 /^Framework Phase:/i,
                 /^Impact:/i,

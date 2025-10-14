@@ -268,6 +268,7 @@ class WorkflowIntegrationTest {
       /^\*\*.*\*\*$/,
       /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
       /^Current Coverage:/i,
+      /^\*\*Current Coverage\*\*:/i,  // Bold Current Coverage with text after
       /^Legal Significance:/i,
       /^Estimated effort:/i,
       /^Improvements? Needed:?$/i,  // Section header pattern
@@ -411,6 +412,8 @@ No numbered lists or bullet points with action words
       'Recommended Actions:',
       'Recommended Action:',
       '**Current Coverage**:',
+      '**Current Coverage**: Partially addressed in Section 4',
+      '**Current Coverage**: Not explicitly addressed',
       '**Action Required**:'
     ];
     
