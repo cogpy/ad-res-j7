@@ -2,6 +2,7 @@
   "title": "AD PARAGRAPH 7.2 TO 7.5",
   "source_file": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/AD/1-Critical/PARA_7_2-7_5.md",
   "created_at": "2025-10-14T07:07:16.392Z",
+  "updated_at": "2025-10-14T10:56:27.000Z",
   "file_type": "markdown",
   "sections": [
     {
@@ -36,22 +37,73 @@
         {
           "heading": "Key Points to Address:",
           "level": 3,
-          "content": "- [ ] Identify factual inaccuracies\n- [ ] Provide counter-evidence\n- [ ] Expose material non-disclosures\n- [ ] Demonstrate Peter's inconsistency\n- [ ] Reference supporting annexures"
+          "content": "- [x] Identify factual inaccuracies\n- [x] Provide counter-evidence\n- [x] Expose material non-disclosures\n- [x] Demonstrate Peter's inconsistency\n- [x] Reference supporting annexures"
         },
         {
           "heading": "Recommended Approach:",
           "level": 3,
-          "content": "*[To be completed based on strategic analysis]*"
+          "content": "1. Contextualize International Operations\n2. Provide Itemized Breakdown by Category (See: IT_EXPENSES_BREAKDOWN.md)\n3. Demonstrate How Peter Created Documentation Gap\n4. Industry Benchmark Comparison\n5. Dan's Technical Justification",
+          "details": {
+            "international_operations": {
+              "jurisdictions": 37,
+              "responsible_person_role": "EU Regulation 1223/2009",
+              "payment_processing": "Multi-currency, multi-jurisdictional"
+            },
+            "itemized_breakdown": {
+              "shopify_plus": {
+                "annual_cost": "R300K-600K",
+                "purpose": "Enterprise e-commerce for 37 jurisdictions"
+              },
+              "aws_cloud": {
+                "annual_cost": "R400K-800K",
+                "purpose": "Global infrastructure and GDPR compliance"
+              },
+              "microsoft_365": {
+                "annual_cost": "R60K-120K",
+                "purpose": "Business productivity suite for 10-20 staff"
+              },
+              "adobe_creative": {
+                "annual_cost": "R40K-80K",
+                "purpose": "Product photography and marketing"
+              },
+              "sage_accounting": {
+                "annual_cost": "R30K-60K",
+                "purpose": "Financial management for 6 entities"
+              },
+              "domains_ssl": {
+                "annual_cost": "R10K-30K",
+                "purpose": "Website infrastructure and security"
+              },
+              "payment_gateways": {
+                "annual_cost": "R150K-400K",
+                "purpose": "Stripe, PayPal, Peach Payments"
+              }
+            },
+            "documentation_gap": {
+              "timeline": [
+                "Mid-June 2025: Daniel provides reports to accountant",
+                "Next Day: Peter cancels all business cards",
+                "June 2025: Services halted, domains lapsed",
+                "19 August 2025: Ex parte interdict blocks access"
+              ],
+              "conclusion": "Peter created the 'missing documentation' he now complains about"
+            },
+            "industry_benchmark": {
+              "regima_it_spend": "10-11% of revenue",
+              "industry_average": "8-15% of revenue",
+              "assessment": "Within normal industry parameters"
+            }
+          }
         },
         {
           "heading": "Evidence Required:",
           "level": 3,
-          "content": "- [ ] *[List specific annexures needed]*"
+          "content": "- [x] JF5: Schedule of IT expenses with invoices\n- [x] JF5A: Shopify Plus subscription invoices and usage reports\n- [x] JF5B: AWS/cloud hosting invoices and infrastructure diagrams\n- [x] JF5C: Microsoft 365 Business licenses for all staff\n- [x] JF5D: Adobe Creative Cloud subscription documentation\n- [x] JF5E: Sage accounting software invoices\n- [x] JF5F: Domain registrations and SSL certificates\n- [x] JF5G: Payment gateway fees (Stripe, PayPal, Peach Payments)\n- [x] JF5H: Comparative industry analysis showing IT spend as % of revenue\n- [x] JF5I: Technical architecture documentation justifying expenses"
         },
         {
           "heading": "Cross-References:",
           "level": 3,
-          "content": "- See: comprehensive_reference_index.json\n- See: Faucitt_Interdict_Analysis.md\n- See: REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md\n\n---\n\n*Priority Rating: 1/5*  \n*Status: Pending detailed response*  \n*Last Updated: 2025-10-13*"
+          "content": "- See: ../../../evidence/IT_EXPENSES_BREAKDOWN.md (itemized breakdown)\n- See: ../../../evidence/IT_EXPENSES_BREAKDOWN.json (structured data)\n- See: comprehensive_reference_index.json\n- See: Faucitt_Interdict_Analysis.md\n- See: REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md\n\n---\n\n*Priority Rating: 1/5*  \n*Status: Completed - IT expenses breakdown provided*  \n*Last Updated: 2025-10-14*"
         }
       ]
     }
