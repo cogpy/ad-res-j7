@@ -88,6 +88,14 @@ Automatically applied labels:
 - Priority labels: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
 - `bug` - Added for critical priority items
 
+##### Label Format Requirements
+The workflow supports labels with various formats and special characters:
+- **Spaces**: Labels like `priority: critical` are fully supported
+- **Colons**: Used in priority labels (e.g., `priority: high`)
+- **Hyphens**: Standard in GitHub labels (e.g., `high-priority`)
+- **Special characters**: Most GitHub-compatible label characters are supported
+- **Security**: Uses secure array-based argument passing to prevent shell injection vulnerabilities
+
 ### Duplicate Prevention
 
 The workflow includes intelligent duplicate prevention:
@@ -204,7 +212,7 @@ If issues aren't being created:
 4. Review Actions logs for parsing errors
 5. Check GitHub Actions permissions if getting API errors
 
-**Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow handles labels with spaces correctly (e.g., "priority: critical").
+**Note**: Labels are automatically converted from JSON arrays to individual `--label` arguments for GitHub CLI compatibility. The workflow uses secure array-based argument passing (not `eval`) to properly handle labels with special characters, spaces, and colons (e.g., "priority: critical", "bug: high-priority").
 
 ### Customization
 The workflow can be customized by modifying:
