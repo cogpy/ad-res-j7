@@ -289,9 +289,15 @@ class DuplicateIssueCleaner {
    */
   async run(options = {}) {
     this.dryRun = options.dryRun !== false; // Default to true
+    const includesClosed = options.includesClosed || false;
     
     console.log('🧹 GitHub Issue Duplicate Cleanup Tool');
     console.log('=====================================\n');
+    
+    console.log(`🔧 Configuration:`);
+    console.log(`  - Dry Run: ${this.dryRun ? 'Yes' : 'No'}`);
+    console.log(`  - Include Closed Issues: ${includesClosed ? 'Yes' : 'No'}`);
+    console.log(`  - Repository: ${process.env.GITHUB_REPOSITORY || 'cogpy/ad-res-j7'}\n`);
     
     // Check GitHub CLI
     try {
@@ -310,7 +316,7 @@ class DuplicateIssueCleaner {
     }
 
     // Load issues
-    await this.loadIssues();
+    await this.loadIssues(includesClosed);
 
     // Find duplicates
     this.findDuplicates();
@@ -329,7 +335,8 @@ class DuplicateIssueCleaner {
 if (require.main === module) {
   const args = process.argv.slice(2);
   const options = {
-    dryRun: !args.includes('--execute')
+    dryRun: !args.includes('--execute'),
+    includesClosed: args.includes('--include-closed')
   };
 
   if (args.includes('--help') || args.includes('-h')) {
@@ -340,15 +347,23 @@ Usage:
   cleanup-duplicate-issues.js [options]
 
 Options:
-  --execute     Actually close issues (default is dry run)
-  --help, -h    Show this help message
+  --execute         Actually close issues (default is dry run)
+  --include-closed  Include closed issues in analysis (default is open only)
+  --dry-run         Explicitly enable dry run mode (default when --execute not specified)
+  --help, -h        Show this help message
 
 Examples:
   # Dry run (preview what would be closed)
   node cleanup-duplicate-issues.js
   
-  # Execute cleanup
+  # Execute cleanup (open issues only)
   node cleanup-duplicate-issues.js --execute
+  
+  # Analyze all issues including closed ones
+  node cleanup-duplicate-issues.js --include-closed
+  
+  # Execute cleanup on all issues
+  node cleanup-duplicate-issues.js --execute --include-closed
 
 Safety:
   - By default, runs in dry run mode
