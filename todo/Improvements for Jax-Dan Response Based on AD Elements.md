@@ -65,8 +65,8 @@ These require the most detailed, evidence-rich responses:
   - Reference Close Corporations Act provisions on member drawings
 
 **PARA_7_7-7_8: R500K Payment Details**
-- **Current Coverage**: Partially addressed in Section 4
-- **Improvements Needed**:
+- **Current Coverage**: ✅ COMPLETED - Comprehensive analysis in `jax-dan-response/evidence-attachments/DIRECTOR_LOAN_PRACTICE_ANALYSIS.md`
+- **Improvements Completed**:
   - [x] Document historical practice of informal director loans over decades
   - [x] Show absence of board resolution requirements in company practice
   - [x] Demonstrate Peter's participation in this informal model
