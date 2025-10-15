@@ -6,7 +6,7 @@ This file contains sample tasks designed to test all aspects of the todo-to-issu
 
 1. Fix label array handling in GitHub Actions workflow
 2. Validate issue creation with complex multi-word labels like "priority: critical"
-3. Test duplicate prevention with identical task titles
+3. ~~Test duplicate prevention with identical task titles~~ ✅ COMPLETED - Comprehensive tests added in `tests/integration-test.js` with edge cases for case sensitivity, whitespace handling, and title truncation
 4. Ensure proper JSON parsing for workflow output
 
 ## Should-Do (High Priority)
