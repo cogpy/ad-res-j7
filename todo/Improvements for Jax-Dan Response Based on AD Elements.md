@@ -61,7 +61,7 @@ These require the most detailed, evidence-rich responses:
   - Emphasize director loan account structure with historical context
   - Show Peter's own similar withdrawals without board resolutions
   - Demonstrate timing correlation with settlement negotiations (pretext evidence)
-  - Include accounting records showing proper allocation to director loan account
+  - [x] Include accounting records showing proper allocation to director loan account
   - Reference Close Corporations Act provisions on member drawings
 
 **PARA_7_7-7_8: R500K Payment Details**
