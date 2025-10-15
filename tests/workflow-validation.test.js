@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
+const TestResultArchiver = require('./test-result-archiver');
 
 class WorkflowValidator {
   constructor() {
@@ -377,8 +378,15 @@ class WorkflowValidator {
       generated_at: new Date().toISOString()
     };
     
-    fs.writeFileSync('tests/workflow-validation-results.json', JSON.stringify(detailedResults, null, 2));
-    console.log('\n📝 Detailed results written to tests/workflow-validation-results.json');
+    // Archive test results to prevent merge conflicts
+    const archiver = new TestResultArchiver();
+    archiver.archiveTestResult('workflow-validation-results.json', detailedResults, {
+      testType: 'workflow-validation',
+      metadata: {
+        workflow_files_tested: ['todo-to-issues.yml', 'file-representations.yml']
+      },
+      summary: detailedResults.summary
+    });
     
     return failedTests === 0;
   }
