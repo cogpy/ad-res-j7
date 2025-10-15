@@ -8,7 +8,7 @@
 
 ## Critical Questions That Expose Peter's Bad Faith
 
-These three strategic questions expose the premeditation, bad faith, and conspiracy underlying Peter's interdict application:
+These three strategic questions expose the planning, inconsistent conduct, and coordination underlying Peter's interdict application:
 
 1. **Why did Peter cancel the cards immediately after Daniel provided reports?** (Manufacturing crisis)
 2. **Why did Peter need the interdict when he already had absolute trust powers?** (Avoiding accountability)
@@ -27,11 +27,11 @@ These three strategic questions expose the premeditation, bad faith, and conspir
 
 **Strategic Significance:**
 
-This timeline proves **premeditation and bad faith**:
+This timeline demonstrates **planning and inconsistent conduct**:
 
 1. **Peter had the reports** - Daniel provided all documentation to the accountant
 2. **Peter created the crisis** - Cancelled cards immediately after receiving reports
-3. **Peter manufactured the pretext** - Then demanded documentation he knew Daniel couldn't provide
+3. **Peter created the pretext** - Then demanded documentation he knew Daniel couldn't provide
 4. **Peter set the trap** - Created operational chaos, then blamed Daniel for it
 
 **Key Inference:**

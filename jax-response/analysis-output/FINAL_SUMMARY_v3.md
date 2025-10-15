@@ -115,7 +115,7 @@ Establishes that Peter failed to disclose:
 - Chesno committed £500K+ fraud
 - Daniel rescued insolvent company
 - 8-year restoration to break-even
-- Peter's deliberate mischaracterization exposes bad faith
+- Peter's factual mischaracterization reveals inconsistent conduct
 - Demonstrates pattern of misrepresentation
 
 ---

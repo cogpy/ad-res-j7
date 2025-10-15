@@ -1,13 +1,13 @@
 # Recommendations to Strengthen Section 13B: The Manufactured Crisis
 
 **Date:** 2025-10-13  
-**Purpose:** Identify additional evidence and arguments to strengthen the narrative of Peter's manufactured crisis
+**Purpose:** Identify additional evidence and arguments to strengthen the narrative of Peter's created crisis
 
 ---
 
 ## Executive Summary
 
-**Current Strength:** Section 13B presents a strong narrative with clear timeline and logical inferences that expose Peter's bad faith.
+**Current Strength:** Section 13B presents a strong narrative with clear timeline and logical inferences that reveal Peter's inconsistent conduct.
 
 **Opportunities:** The section can be significantly strengthened with additional documentary evidence, witness testimony, and comparative analysis that transform logical inferences into proven facts.
 
@@ -118,7 +118,7 @@
 
 **Purpose:** Proves Peter was planning legal action before alleged 'discovery' of misconduct
 
-**Strengthens:** Establishes premeditation - Peter planned this attack in advance
+**Strengthens:** Establishes planning - Peter planned these actions in advance
 
 **How to Obtain:** Attorney billing records, correspondence (discovery, may be privileged)
 
@@ -130,7 +130,7 @@
 
 **Purpose:** Shows settlement was being negotiated before alleged crisis
 
-**Strengthens:** Proves coordinated strategy: settlement + manufactured crisis + interdict
+**Strengthens:** Demonstrates coordinated strategy: settlement + created crisis + interdict
 
 **How to Obtain:** Email records showing draft circulation dates
 
@@ -231,7 +231,7 @@
 
 **Purpose:** Demonstrates operational impact of Peter's actions
 
-**Strengthens:** Shows real-world consequences of manufactured crisis
+**Strengthens:** Shows real-world consequences of created crisis
 
 **Content Should Include:**
 - Inability to perform duties due to service disruptions
