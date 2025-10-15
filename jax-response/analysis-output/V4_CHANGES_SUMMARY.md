@@ -7,7 +7,7 @@
 
 ## Major Addition: Section 13B - The Applicant's Contradictory Conduct
 
-This new section (paragraphs 148.1-150.3) exposes the fundamental contradictions in Peter's conduct and proves he manufactured the crisis to justify an unnecessary interdict.
+This new section (paragraphs 148.1-150.3) exposes the fundamental contradictions in Peter's conduct and demonstrates he created the crisis to justify an unnecessary interdict.
 
 ### Subsection 1: The Suspicious Timeline (Paragraphs 148.1-148.10)
 
@@ -25,10 +25,10 @@ This new section (paragraphs 148.1-150.3) exposes the fundamental contradictions
 | **13 August 2025** | **Peter files urgent ex parte interdict** | **2 days after settlement—coordinated attack** |
 
 **Strategic Value:**
-- Proves premeditation
-- Shows Peter manufactured the crisis
+- Demonstrates planning
+- Shows Peter created the crisis
 - Demonstrates Peter set a trap
-- Exposes bad faith
+- Reveals inconsistent conduct
 
 **Evidence Required:**
 - JF-BANTJES-DATE: Date Daniel provided reports
@@ -94,7 +94,7 @@ Peter's failure to disclose his absolute trust powers is itself a material non-d
 
 ### Subsection 3: The Pattern of Bad Faith (Paragraphs 150.1-150.3)
 
-**Key Point:** Peter's conduct reveals a systematic pattern of bad faith.
+**Key Point:** Peter's conduct reveals a systematic pattern of inconsistent behavior.
 
 **Six Elements of the Pattern:**
 
@@ -110,7 +110,7 @@ Peter's failure to disclose his absolute trust powers is itself a material non-d
 "This is not the conduct of a director genuinely concerned about financial misconduct. This is the conduct of someone orchestrating a crisis to justify seizing control."
 
 **Strategic Value:**
-- Synthesizes all evidence of bad faith
+- Synthesizes all evidence of inconsistent conduct
 - Transforms narrative from defensive to offensive
 - Exposes Peter's true motive
 - Provides compelling argument for setting aside interim order
@@ -127,9 +127,9 @@ Peter's failure to disclose his absolute trust powers is itself a material non-d
 - Fragmented: Individual rebuttals without overarching narrative
 
 **After v4:**
-- Offensive: "Peter orchestrated this entire crisis"
-- Proactive: Exposing Peter's manufactured pretext
-- Cohesive: Clear pattern of bad faith with timeline and evidence
+- Direct: "Peter created this entire crisis"
+- Proactive: Exposing Peter's created pretext
+- Cohesive: Clear pattern of inconsistent conduct with timeline and evidence
 
 ### Strategic Advantages
 
@@ -145,7 +145,7 @@ Peter's failure to disclose his absolute trust powers is itself a material non-d
 1. **Setting Aside Interim Order** - Multiple material non-disclosures proven
 2. **Abuse of Process** - Unnecessary interdict given existing trust powers
 3. **Lack of Urgency** - Manufactured crisis, not genuine emergency
-4. **Lack of Good Faith** - Pattern of bad faith conduct established
+4. **Inconsistent Conduct** - Pattern of inconsistent conduct established
 5. **Ulterior Motive** - Financial control ahead of major payout
 
 ---

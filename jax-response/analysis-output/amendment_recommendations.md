@@ -10,7 +10,7 @@
         "Use Peter's own inconsistent conduct against him",
         "Emphasize breakdown of collaborative model (not absence of formal governance)",
         "Highlight immediate regulatory compliance crisis",
-        "Demonstrate timing and coordination suggesting ulterior motives",
+        "Demonstrate timing patterns requiring explanation",
         "Focus on fact-based evidence, avoid speculation"
       ]
     },
@@ -29,7 +29,7 @@
       },
       {
         "weakness": "Peter's Inconsistent Conduct",
-        "exploitation_strategy": "Show Peter accepted informal practices for years, then weaponized same practices. Demonstrate he received similar payments without authorization.",
+        "exploitation_strategy": "Show Peter accepted informal practices for years, then applied different standards to same practices. Demonstrate he received similar payments without authorization.",
         "priority": "CRITICAL",
         "evidence_required": [
           "Peter's own director loan account withdrawals",
@@ -40,7 +40,7 @@
       },
       {
         "weakness": "Lack of Genuine Urgency",
-        "exploitation_strategy": "Demonstrate alleged issues existed for months, Peter waited strategically, timing suggests ulterior motive (post-settlement, pre-payout)",
+        "exploitation_strategy": "Demonstrate alleged issues existed for months, Peter waited until strategic timing (post-settlement, pre-payout)",
         "priority": "HIGH",
         "evidence_required": [
           "Timeline of events (June card cancellation, August interdict)",
@@ -119,7 +119,7 @@
         "☐ Timeline documentation (payment date, attorney consultation date, filing date)"
       ],
       "priority": "CRITICAL",
-      "impact": "Directly undermines Peter's primary allegation of financial misconduct and demonstrates his bad faith"
+      "impact": "Directly undermines Peter's primary allegation of financial misconduct and demonstrates his inconsistent conduct"
     },
     {
       "ad_paragraph": "AD PARAGRAPH 3 TO 3.10",
@@ -196,7 +196,7 @@
         "☐ Timeline of Rynette's expanding access vs director exclusion"
       ],
       "priority": "HIGH",
-      "impact": "Demonstrates Peter caused the breakdown he now complains about, shows ulterior motive"
+      "impact": "Demonstrates Peter caused the breakdown he now complains about, raises questions about timing"
     }
   ],
   "strategic_guidance": {
@@ -204,7 +204,7 @@
     "overarching_principles": [
       {
         "principle": "Use Peter's Own Conduct Against Him",
-        "explanation": "Peter accepted informal practices for years, then weaponized them. Show his inconsistency systematically.",
+        "explanation": "Peter accepted informal practices for years, then applied different standards to them. Show his inconsistency systematically.",
         "application": "Every allegation of \"unauthorized\" transactions should be met with evidence of Peter doing the same thing."
       },
       {
@@ -259,7 +259,7 @@
         "\"Lack of board approval\" (use \"routine director loan account transaction\")",
         "\"Missing dual signatures\" (never part of established practice)",
         "\"Violation of Companies Act\" (for routine transactions)",
-        "Speculation about Peter's motives (stick to observable facts and timing)"
+        "Speculation about intentions (stick to observable facts and timing)"
       ],
       "use": [
         "\"Established practice accepted by Applicant for [X] years\"",

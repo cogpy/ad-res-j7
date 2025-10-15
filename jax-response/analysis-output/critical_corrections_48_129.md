@@ -104,7 +104,7 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 129.4 **The Applicant's Misleading Characterization:**
 
-129.4.1 The Applicant's suggestion that the Second Respondent's appointment "arose from alleged wrongdoing" is **deliberately misleading** and inverts the truth.
+129.4.1 The Applicant's suggestion that the Second Respondent's appointment "arose from alleged wrongdoing" is **factually incorrect** and inverts the truth.
 
 129.4.2 The Second Respondent's appointment arose **because of someone else's wrongdoing** (Chesno's fraud), not from any wrongdoing by the Second Respondent.
 
@@ -140,7 +140,7 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 ⚠️ **STRATEGIC NOTE:** This correction is critical because it:
 1. Exposes the Applicant's willingness to deliberately misrepresent facts
 2. Demonstrates Daniel's competence and integrity through 8 years of crisis management
-3. Shows the Applicant's bad faith in characterizing rescue efforts as "arising from wrongdoing"
+3. Shows the Applicant's mischaracterization of rescue efforts as "arising from wrongdoing"
 4. Provides concrete evidence of Daniel's business acumen (£500K+ fraud recovery)
 
 ---

@@ -30,17 +30,17 @@ Section 13B has been significantly enhanced from ~4,000 characters (v4) to ~20,0
 **New Arguments Added:**
 1. **The "Reasonable Director" Test (148.11-148.13)**
    - What reasonable director would do vs. what Peter did
-   - Proves bad faith through comparison
+   - Demonstrates inconsistent conduct through comparison
 
 2. **Historical Pattern Evidence (148.14-148.16)**
    - **JF-NO-PRIOR-CANCELLATIONS:** Peter NEVER cancelled cards before
    - **JF-BANTJES-HISTORY:** Accountant visits were routine, not crisis-triggered
-   - Proves unprecedented action = manufactured crisis
+   - Demonstrates unprecedented action = created crisis
 
 3. **Evidence of Knowledge and Intent (148.17-148.19)**
    - **JF-PETER-REVIEWED-REPORTS:** Peter had information BEFORE cancelling cards
    - **JF-PETER-ATTORNEY-PRE:** Peter consulted attorneys before alleged crisis
-   - Destroys Peter's narrative and proves premeditation
+   - Challenges Peter's narrative and demonstrates planning
 
 ---
 
@@ -65,7 +65,7 @@ Section 13B has been significantly enhanced from ~4,000 characters (v4) to ~20,0
 2. **The "Alternative Explanation" Challenge (149.16-149.18)**
    - Peter must explain suspicious timing
    - Five questions Peter cannot answer
-   - If no alternative explanation, manufactured crisis is proven
+   - If no alternative explanation, created crisis is demonstrated
 
 3. **The "Proportionality" Argument (149.19-149.22)**
    - Peter's response grossly disproportionate to alleged misconduct
