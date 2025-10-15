@@ -1,0 +1,267 @@
+# Create Issues from Repository Items
+# Workflow to create GitHub issues from repository item lists
+
+name: Create Issues from Repository Items
+
+on:
+  workflow_dispatch:
+    inputs:
+      items_source:
+        description: 'Source of repository items'
+        required: true
+        default: 'file'
+        type: choice
+        options:
+          - file
+          - manual
+          - issue_comment
+      items_file:
+        description: 'Path to file containing items (if source is file)'
+        required: false
+        default: 'repository-items.txt'
+      items_text:
+        description: 'Repository items text (if source is manual)'
+        required: false
+      dry_run:
+        description: 'Perform dry run without creating issues'
+        required: false
+        default: false
+        type: boolean
+      batch_size:
+        description: 'Number of issues to create per batch'
+        required: false
+        default: '5'
+        type: string
+
+  issue_comment:
+    types: [created]
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    
+    # Only run on issue comments that contain the trigger phrase
+    if: |
+      github.event_name == 'workflow_dispatch' || 
+      (github.event_name == 'issue_comment' && 
+       contains(github.event.comment.body, '/create-issues-from-items'))
+    
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Extract items from issue comment
+        if: github.event_name == 'issue_comment'
+        id: extract_comment
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          echo "📝 Extracting repository items from issue comment..."
+          
+          # Remove the trigger phrase and extract items
+          ITEMS=$(echo "$COMMENT_BODY" | sed '1,/\/create-issues-from-items/d')
+          
+          # Save to temporary file
+          echo "$ITEMS" > temp-items.txt
+          
+          echo "has_items=true" >> $GITHUB_OUTPUT
+          echo "items_file=temp-items.txt" >> $GITHUB_OUTPUT
+          
+          # Count items (rough estimate)
+          ITEM_COUNT=$(echo "$ITEMS" | grep -c '#[0-9]\+\|^\s*[0-9]\+\.' || echo 0)
+          echo "Estimated items found: $ITEM_COUNT"
+      
+      - name: Prepare items source
+        id: prepare_items
+        run: |
+          echo "🔍 Preparing repository items..."
+          
+          # Determine source
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            ITEMS_FILE="${{ steps.extract_comment.outputs.items_file }}"
+          elif [ "${{ github.event.inputs.items_source }}" = "file" ]; then
+            ITEMS_FILE="${{ github.event.inputs.items_file }}"
+          elif [ "${{ github.event.inputs.items_source }}" = "manual" ]; then
+            # Create file from manual input
+            cat > manual-items.txt << 'EOF'
+          ${{ github.event.inputs.items_text }}
+          EOF
+            ITEMS_FILE="manual-items.txt"
+          fi
+          
+          # Validate file exists
+          if [ ! -f "$ITEMS_FILE" ]; then
+            echo "❌ Items file not found: $ITEMS_FILE"
+            echo "has_valid_source=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          
+          echo "items_file=$ITEMS_FILE" >> $GITHUB_OUTPUT
+          echo "has_valid_source=true" >> $GITHUB_OUTPUT
+          
+          # Preview items
+          echo "📋 Preview of items:"
+          head -20 "$ITEMS_FILE"
+          
+          if [ $(wc -l < "$ITEMS_FILE") -gt 20 ]; then
+            echo "... ($(wc -l < "$ITEMS_FILE") total lines)"
+          fi
+      
+      - name: Run batch issue creator
+        if: steps.prepare_items.outputs.has_valid_source == 'true'
+        id: create_issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "🚀 Starting batch issue creation..."
+          
+          # Set options
+          OPTIONS=""
+          
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            OPTIONS="$OPTIONS --dry-run"
+          fi
+          
+          if [ -n "${{ github.event.inputs.batch_size }}" ]; then
+            OPTIONS="$OPTIONS --batch-size ${{ github.event.inputs.batch_size }}"
+          fi
+          
+          # Run the batch creator
+          node scripts/batch-create-issues.js --file "${{ steps.prepare_items.outputs.items_file }}" $OPTIONS
+          
+          # Check if summary was created
+          if [ -f "batch-issue-creation-summary.json" ]; then
+            echo "summary_created=true" >> $GITHUB_OUTPUT
+            
+            # Extract stats
+            CREATED=$(jq -r '.stats.created' batch-issue-creation-summary.json)
+            SKIPPED=$(jq -r '.stats.skipped' batch-issue-creation-summary.json)
+            FAILED=$(jq -r '.stats.failed' batch-issue-creation-summary.json)
+            TOTAL=$(jq -r '.stats.total' batch-issue-creation-summary.json)
+            
+            echo "created_count=$CREATED" >> $GITHUB_OUTPUT
+            echo "skipped_count=$SKIPPED" >> $GITHUB_OUTPUT
+            echo "failed_count=$FAILED" >> $GITHUB_OUTPUT
+            echo "total_count=$TOTAL" >> $GITHUB_OUTPUT
+          else
+            echo "summary_created=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "# 📋 Repository Items to Issues - Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Source information
+          echo "## Source Information" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            echo "- **Trigger**: Issue comment by @${{ github.event.comment.user.login }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Issue**: #${{ github.event.issue.number }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Trigger**: Manual workflow dispatch" >> $GITHUB_STEP_SUMMARY
+            echo "- **Source**: ${{ github.event.inputs.items_source }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            echo "- **Mode**: 🔍 DRY RUN (no issues created)" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Results
+          if [ "${{ steps.create_issues.outputs.summary_created }}" = "true" ]; then
+            echo "## 📊 Results" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Total Items | ${{ steps.create_issues.outputs.total_count }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| ✅ Created | ${{ steps.create_issues.outputs.created_count }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| ⚠️ Skipped | ${{ steps.create_issues.outputs.skipped_count }} |" >> $GITHUB_STEP_SUMMARY
+            echo "| ❌ Failed | ${{ steps.create_issues.outputs.failed_count }} |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            # Show created issues if not dry run
+            if [ "${{ github.event.inputs.dry_run }}" != "true" ] && [ -f "batch-issue-creation-summary.json" ]; then
+              CREATED_COUNT=$(jq -r '.stats.created' batch-issue-creation-summary.json)
+              if [ "$CREATED_COUNT" -gt 0 ]; then
+                echo "### ✅ Created Issues" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+                jq -r '.created[] | "- [\(.title)](\(.url))"' batch-issue-creation-summary.json >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+              fi
+              
+              # Show failed items if any
+              FAILED_COUNT=$(jq -r '.stats.failed' batch-issue-creation-summary.json)
+              if [ "$FAILED_COUNT" -gt 0 ]; then
+                echo "### ❌ Failed Items" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+                jq -r '.failed[] | "- \(.title): \(.error)"' batch-issue-creation-summary.json >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          else
+            echo "## ❌ No Results" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The workflow did not produce a summary. Check the logs for errors." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "*Generated at: $(date -u +"%Y-%m-%d %H:%M:%S UTC")*" >> $GITHUB_STEP_SUMMARY
+      
+      - name: Upload summary artifact
+        if: steps.create_issues.outputs.summary_created == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-issue-creation-summary
+          path: batch-issue-creation-summary.json
+          retention-days: 30
+      
+      - name: Comment on issue (if triggered by comment)
+        if: github.event_name == 'issue_comment' && steps.create_issues.outputs.summary_created == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const summary = JSON.parse(fs.readFileSync('batch-issue-creation-summary.json', 'utf8'));
+            
+            let comment = '## 🤖 Issue Creation Results\n\n';
+            comment += `I've processed your repository items with the following results:\n\n`;
+            comment += `- ✅ **Created**: ${summary.stats.created} issues\n`;
+            comment += `- ⚠️ **Skipped**: ${summary.stats.skipped} (duplicates)\n`;
+            comment += `- ❌ **Failed**: ${summary.stats.failed}\n`;
+            comment += `- 📊 **Total**: ${summary.stats.total} items\n\n`;
+            
+            if (summary.stats.created > 0) {
+              comment += '### Created Issues:\n\n';
+              summary.created.forEach(issue => {
+                comment += `- [${issue.title}](${issue.url})\n`;
+              });
+            }
+            
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
+      
+      - name: Cleanup
+        if: always()
+        run: |
+          echo "🧹 Cleaning up temporary files..."
+          rm -f temp-items.txt manual-items.txt batch-issue-creation-summary.json
