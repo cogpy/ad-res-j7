@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "generated": "2025-10-15T17:18:19.085395",
+    "analysis_type": "hypergraph_attention_analysis",
+    "resolution_enhancement": "parallel_narrative_discovery"
+  },
+  "centrality_scores": {
+    "bantjies": 1.0,
+    "peter": 0.14705882352941177,
+    "rynette": 0.45882352941176474,
+    "daniel": -0.1470588235294118,
+    "jacqui": 0.36470588235294116
+  },
+  "attention_weights": {
+    "financial_control": {
+      "type": "financial_information_control",
+      "weight": 0.95,
+      "nodes": [
+        "bantjies",
+        "trustee_appointment",
+        "authority_appointment",
+        "r18m_payout"
+      ],
+      "evidence_support": 0.92
+    },
+    "trust_governance": {
+      "type": "trust_governance_manipulation",
+      "weight": 0.92,
+      "nodes": [
+        "bantjies",
+        "trustee_appointment",
+        "main_trustee_appointment"
+      ],
+      "evidence_support": 0.89
+    },
+    "oversight_abuse": {
+      "type": "oversight_authority_abuse",
+      "weight": 0.89,
+      "nodes": [
+        "bantjies",
+        "authority_appointment",
+        "holiday_dismissal"
+      ],
+      "evidence_support": 0.87
+    },
+    "whistleblower_neutralization": {
+      "type": "whistleblower_neutralization",
+      "weight": 0.87,
+      "nodes": [
+        "daniel",
+        "daniel_reports",
+        "bantjies",
+        "holiday_dismissal",
+        "ex_parte_interdict"
+      ],
+      "evidence_support": 0.84
+    },
+    "puppet_orchestration": {
+      "type": "puppet_orchestration",
+      "weight": 0.85,
+      "nodes": [
+        "bantjies",
+        "peter",
+        "card_cancellations",
+        "ex_parte_interdict"
+      ],
+      "evidence_support": 0.82
+    },
+    "timeline_coordination": {
+      "type": "timeline_coordination",
+      "weight": 0.83,
+      "nodes": [
+        "main_trustee_appointment",
+        "ex_parte_interdict",
+        "supporting_affidavit"
+      ],
+      "evidence_support": 0.88
+    },
+    "payout_motivation": {
+      "type": "payout_motivation",
+      "weight": 1.0,
+      "nodes": [
+        "bantjies",
+        "r18m_payout",
+        "trustee_appointment",
+        "authority_appointment",
+        "daniel_reports",
+        "card_cancellations",
+        "r10m_identification",
+        "holiday_dismissal",
+        "main_trustee_appointment",
+        "ex_parte_interdict",
+        "supporting_affidavit",
+        "r18m_payout"
+      ],
+      "evidence_support": 0.91
+    }
+  },
+  "parallel_narratives": [
+    {
+      "id": "bantjies_financial_control",
+      "name": "Bantjies Financial Control Architecture",
+      "description": "Hidden narrative: Bantjies systematically positions himself to control financial oversight and extraction mechanisms",
+      "timeline_events": 5,
+      "hidden_connections": [
+        "trustee_powers",
+        "extraction_preparation",
+        "oversight_suppression"
+      ],
+      "centrality_impacts": {
+        "bantjies": 0.3,
+        "daniel": -0.2
+      }
+    },
+    {
+      "id": "whistleblower_neutralization",
+      "name": "Systematic Whistleblower Neutralization",
+      "description": "Hidden narrative: Daniel's proper fraud reporting triggers coordinated legal punishment rather than investigation",
+      "timeline_events": 4,
+      "hidden_connections": [
+        "coordination_signals",
+        "process_weaponization",
+        "threat_elimination"
+      ],
+      "centrality_impacts": {
+        "daniel": -0.4,
+        "peter": -0.1,
+        "bantjies": 0.2
+      }
+    },
+    {
+      "id": "dual_layer_operation",
+      "name": "Dual-Layer Operation Architecture",
+      "description": "Hidden narrative: Public performance layer conceals private orchestration layer",
+      "timeline_events": 5,
+      "hidden_connections": [
+        "dual_operation",
+        "concealment_architecture",
+        "public_private_split"
+      ],
+      "centrality_impacts": {
+        "bantjies": 0.25,
+        "peter": -0.15
+      }
+    }
+  ],
+  "system_dynamics": {
+    "primary_orchestrator": "bantjies",
+    "orchestrator_centrality": 1.0,
+    "manipulation_target": "peter",
+    "target_centrality": 0.14705882352941177,
+    "marginalized_whistleblower": "daniel",
+    "whistleblower_centrality": -0.1470588235294118,
+    "extraction_objective": "r18m_payout",
+    "extraction_timeline": "May 2026"
+  },
+  "network_effects": {
+    "total_agents": 5,
+    "total_events": 10,
+    "total_hyperedges": 7,
+    "parallel_narratives_discovered": 3,
+    "attention_matrix_dimension": 15
+  }
+}
