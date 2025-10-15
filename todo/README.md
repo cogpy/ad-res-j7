@@ -123,7 +123,7 @@ The following critical evidence items are still needed:
 2. Director loan account statements (3 directors) - JF-DLA1-3
 3. Peter's withdrawal examples (4+) - JF-PA1-4
 4. JF5 settlement agreement (draft vs final comparison)
-5. Chesno fraud documentation - JF-CHESNO1-4
+5. ✅ **COMPLETED** - Chesno fraud documentation - JF-CHESNO1-4
 6. Daniel's 8-year restoration evidence - JF-RESTORE1-4
 
 ## Usage Guidelines

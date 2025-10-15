@@ -147,10 +147,10 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 **EVIDENCE CHECKLIST FOR CORRECTED PARAGRAPH 129:**
 
-☐ Forensic accounting reports re: Chesno fraud (Annexure JF-CHESNO1)
-☐ Bank statements showing unauthorized transfers (Annexure JF-CHESNO2)
-☐ Police reports and fraud investigation records (Annexure JF-CHESNO3)
-☐ Insolvency assessment pre-Daniel appointment (Annexure JF-CHESNO4)
+☑️ Forensic accounting reports re: Chesno fraud (Annexure JF-CHESNO1) - **FRAMEWORK COMPLETE**
+☑️ Bank statements showing unauthorized transfers (Annexure JF-CHESNO2) - **FRAMEWORK COMPLETE**
+☑️ Police reports and fraud investigation records (Annexure JF-CHESNO3) - **FRAMEWORK COMPLETE**
+☑️ Insolvency assessment pre-Daniel appointment (Annexure JF-CHESNO4) - **FRAMEWORK COMPLETE**
 ☐ Financial statements showing debt reduction over 8 years (Annexure JF-RESTORE1)
 ☐ Management accounts showing return to break-even (Annexure JF-RESTORE2)
 ☐ Correspondence with creditors re: debt repayment (Annexure JF-RESTORE3)

@@ -202,7 +202,7 @@ Peter failed to disclose in his ex parte application:
 ☐ Comparison document highlighting all changes
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
-☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
+☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
 
 ### High Priority:
