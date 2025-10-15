@@ -289,7 +289,7 @@ class HypergraphQLTest {
     this.assert(events.length === 5, 'Case has 5 event entities');
     
     const evidence = hg.queryEntitiesByType('Evidence');
-    this.assert(evidence.length === 3, 'Case has 3 evidence entities');
+    this.assert(evidence.length === 7, 'Case has 7 evidence entities');
     
     // Test specific entities exist
     this.assert(hg.entities.has('peter-faucitt'), 'Peter Faucitt entity exists');

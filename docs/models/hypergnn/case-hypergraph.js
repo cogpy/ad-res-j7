@@ -59,6 +59,48 @@ function buildCase2025137857Hypergraph() {
     description: 'Business operations targeted in revenue hijacking'
   });
 
+  hg.addEntity('regima-worldwide-distribution', 'Company', {
+    name: 'RegimA Worldwide Distribution (Pty) Ltd',
+    description: 'International e-commerce entity (37 jurisdictions)',
+    region: 'South Africa',
+    shopifyPortal: true,
+    currencies: ['ZAR', 'USD', 'EUR', 'GBP']
+  });
+
+  hg.addEntity('regima-zone-sa', 'Company', {
+    name: 'RegimA Zone (Pty) Ltd',
+    description: 'South African domestic market entity',
+    region: 'South Africa',
+    shopifyPortal: true,
+    currencies: ['ZAR']
+  });
+
+  hg.addEntity('regima-sa', 'Company', {
+    name: 'RegimA SA (Pty) Ltd',
+    description: 'Specialized South African market segment entity',
+    region: 'South Africa',
+    shopifyPortal: true,
+    currencies: ['ZAR']
+  });
+
+  hg.addEntity('regima-zone-ltd-uk', 'Company', {
+    name: 'RegimA Zone Ltd (United Kingdom)',
+    description: 'UK entity owned by Daniel Faucitt - owns and pays for ALL Shopify platforms',
+    region: 'United Kingdom',
+    owner: 'daniel-faucitt',
+    role: 'Shopify infrastructure owner',
+    paidForShopify: true,
+    didNotPayOwnBills: true
+  });
+
+  hg.addEntity('rsa-trust-account', 'FinancialAccount', {
+    name: 'RSA Trust Account',
+    description: 'Trust account with multiple entities and Shopify portals',
+    accountType: 'trust',
+    linkedEntities: ['regima-worldwide-distribution', 'regima-zone-sa', 'regima-sa'],
+    linkedShopifyPortals: true
+  });
+
   // Add Event Entities
   hg.addEntity('event-2025-04-14-bank-letter', 'Event', {
     name: 'Bank Account Change Fraud',
@@ -101,6 +143,17 @@ function buildCase2025137857Hypergraph() {
     severity: 'High'
   });
 
+  // Add Financial Account Entities
+  hg.addEntity('daniel-bank-account', 'FinancialAccount', {
+    name: 'Daniel Faucitt Personal Bank Account',
+    accountHolder: 'MR DANIEL J FAUCITT',
+    accountType: 'FNB Fusion Private Wealth',
+    accountNumber: '62471764946',
+    branch: 'FNB Private Wealth Sandton (250655)',
+    description: 'Personal bank account showing NO R500K gift to Jacqueline',
+    analysisDocumentPath: '1-CIVIL-RESPONSE/annexures/JF-DANIEL-BANK-ANALYSIS.md'
+  });
+
   // Add Evidence Entities
   hg.addEntity('evidence-jf8a', 'Evidence', {
     name: 'JF8A Documentation Log',
@@ -108,6 +161,43 @@ function buildCase2025137857Hypergraph() {
     reference: 'JF8A',
     priority: 'Critical',
     description: 'IT expenses and R500K payment documentation'
+  });
+
+  hg.addEntity('evidence-daniel-bank-analysis', 'Evidence', {
+    name: 'Daniel Faucitt Bank Statement Analysis',
+    evidenceType: 'financial',
+    reference: 'JF-DANIEL-BANK-ANALYSIS',
+    priority: 'Critical',
+    description: 'Comprehensive refutation of R500,000 gift allegation',
+    documentPath: '1-CIVIL-RESPONSE/annexures/JF-DANIEL-BANK-ANALYSIS.md',
+    keyFindings: [
+      'NO R500K gift exists',
+      'Business expense funding (R310,820.25 IT/software)',
+      'Net increase only R22,956.96 over 5 months',
+      'Account operates as conduit for business expenses'
+    ]
+  });
+
+  hg.addEntity('evidence-shopify-infrastructure', 'Evidence', {
+    name: 'Shopify Multi-Portal Infrastructure Documentation',
+    evidenceType: 'technical',
+    reference: 'JF-SHOPIFY-INFRASTRUCTURE',
+    priority: 'Critical',
+    description: 'Evidence of multiple regional Shopify platforms',
+    documentPath: '1-CIVIL-RESPONSE/annexures/JF-SHOPIFY-INFRASTRUCTURE.md',
+    shopifyExpenseTotal: 453394.12,
+    numberOfPortals: 4,
+    geographicCoverage: '37 jurisdictions'
+  });
+
+  hg.addEntity('evidence-it-expenses-breakdown', 'Evidence', {
+    name: 'IT Expenses Breakdown Documentation',
+    evidenceType: 'financial',
+    reference: 'IT_EXPENSES_BREAKDOWN',
+    priority: 'Critical',
+    description: 'Detailed breakdown of IT expenses with Shopify Plus subscriptions',
+    documentPath: 'evidence/IT_EXPENSES_BREAKDOWN.md',
+    shopifyAnnualCostRange: 'R300,000 - R600,000'
   });
 
   hg.addEntity('evidence-forensic-index', 'Evidence', {
@@ -124,6 +214,16 @@ function buildCase2025137857Hypergraph() {
     reference: 'shopify_reports',
     priority: 'Critical',
     description: 'Pre and post-hijacking revenue data'
+  });
+
+  hg.addEntity('evidence-regima-zone-invoices', 'Evidence', {
+    name: 'RegimA Zone Ltd UK Shopify Invoices',
+    evidenceType: 'financial',
+    reference: 'REGIMA_ZONE_INVOICES',
+    priority: 'High',
+    description: 'Invoices showing RegimA Zone Ltd (UK) paid for Shopify platforms but did not pay its own bills - revenue stream paid by Dans UK company',
+    paidBy: 'regima-zone-ltd-uk',
+    revenueStreamPaidBy: 'regima-zone-ltd-uk'
   });
 
   // Add Date Entities for Timeline
@@ -205,6 +305,104 @@ function buildCase2025137857Hypergraph() {
   hg.addLinkTuple('daniel-faucitt', 'owns', 'regima', {
     role: 'business-owner',
     with: 'jacqueline-faucitt'
+  });
+
+  hg.addLinkTuple('daniel-faucitt', 'owns', 'regima-zone-ltd-uk', {
+    role: 'sole-owner',
+    description: 'UK company that owns and pays for all Shopify platforms'
+  });
+
+  // Add Link Tuples - Person to Financial Accounts
+  hg.addLinkTuple('daniel-faucitt', 'holds-account', 'daniel-bank-account', {
+    accountType: 'personal',
+    relationship: 'account-holder',
+    refutesAllegation: 'R500K gift claim'
+  });
+
+  // Add Link Tuples - Financial Account to Evidence
+  hg.addLinkTuple('daniel-bank-account', 'documented-in', 'evidence-daniel-bank-analysis', {
+    analysisType: 'comprehensive',
+    period: 'May 3, 2025 to October 4, 2025',
+    keyFinding: 'NO R500K gift exists'
+  });
+
+  // Add Link Tuples - Company to Company (Shopify Portal Relationships)
+  hg.addLinkTuple('regima-zone-ltd-uk', 'owns-shopify-for', 'regima-worldwide-distribution', {
+    relationship: 'platform-owner',
+    paysFor: 'Shopify subscription',
+    description: 'UK company pays for SA entity Shopify platform'
+  });
+
+  hg.addLinkTuple('regima-zone-ltd-uk', 'owns-shopify-for', 'regima-zone-sa', {
+    relationship: 'platform-owner',
+    paysFor: 'Shopify subscription',
+    description: 'UK company pays for SA entity Shopify platform'
+  });
+
+  hg.addLinkTuple('regima-zone-ltd-uk', 'owns-shopify-for', 'regima-sa', {
+    relationship: 'platform-owner',
+    paysFor: 'Shopify subscription',
+    description: 'UK company pays for SA entity Shopify platform'
+  });
+
+  // Add Link Tuples - RSA Trust Account to Companies
+  hg.addLinkTuple('rsa-trust-account', 'linked-to', 'regima-worldwide-distribution', {
+    relationship: 'trust-entity',
+    description: 'Trust account links multiple entities and Shopify portals'
+  });
+
+  hg.addLinkTuple('rsa-trust-account', 'linked-to', 'regima-zone-sa', {
+    relationship: 'trust-entity',
+    description: 'Trust account links multiple entities and Shopify portals'
+  });
+
+  hg.addLinkTuple('rsa-trust-account', 'linked-to', 'regima-sa', {
+    relationship: 'trust-entity',
+    description: 'Trust account links multiple entities and Shopify portals'
+  });
+
+  // Add Link Tuples - Companies under Worldwide Distribution
+  hg.addLinkTuple('regima-worldwide-distribution', 'operates-portal', 'regima-zone-sa', {
+    relationship: 'parent-subsidiary',
+    description: 'Worldwide Distribution operates multiple regional portals'
+  });
+
+  hg.addLinkTuple('regima-worldwide-distribution', 'operates-portal', 'regima-sa', {
+    relationship: 'parent-subsidiary',
+    description: 'Worldwide Distribution operates multiple regional portals'
+  });
+
+  // Add Link Tuples - Evidence to Companies (Shopify Infrastructure)
+  hg.addLinkTuple('evidence-shopify-infrastructure', 'documents', 'regima-worldwide-distribution', {
+    documentationType: 'platform-evidence',
+    description: 'Evidence of international e-commerce platform (37 jurisdictions)'
+  });
+
+  hg.addLinkTuple('evidence-shopify-infrastructure', 'documents', 'regima-zone-sa', {
+    documentationType: 'platform-evidence',
+    description: 'Evidence of South African domestic market platform'
+  });
+
+  hg.addLinkTuple('evidence-shopify-infrastructure', 'documents', 'regima-sa', {
+    documentationType: 'platform-evidence',
+    description: 'Evidence of specialized SA market segment platform'
+  });
+
+  hg.addLinkTuple('evidence-shopify-infrastructure', 'documents', 'regima-zone-ltd-uk', {
+    documentationType: 'ownership-evidence',
+    description: 'Evidence UK company owns and pays for all Shopify platforms'
+  });
+
+  // Add Link Tuples - RegimA Zone Ltd UK Invoice Evidence
+  hg.addLinkTuple('evidence-regima-zone-invoices', 'shows-payment-by', 'regima-zone-ltd-uk', {
+    paymentType: 'Shopify subscriptions',
+    description: 'Invoices show UK company paid for Shopify but did not pay own bills',
+    contradiction: 'Revenue stream paid by Dans UK company, not by itself'
+  });
+
+  hg.addLinkTuple('evidence-regima-zone-invoices', 'linked-to', 'daniel-faucitt', {
+    relationship: 'ultimate-beneficial-owner',
+    description: 'Dans UK company (RegimA Zone Ltd) paid for infrastructure'
   });
 
   // Add Link Tuples - Event to Evidence
@@ -770,6 +968,32 @@ function buildCase2025137857Hypergraph() {
   hg.addLinkTuple('ad-para-7_2-7_5', 'supported-by', 'evidence-jf8a', {
     evidenceType: 'documentary',
     description: 'IT expense documentation'
+  });
+
+  hg.addLinkTuple('ad-para-7_2-7_5', 'refuted-by', 'evidence-shopify-infrastructure', {
+    evidenceType: 'technical',
+    description: 'Multiple regional Shopify platforms justify IT expenses'
+  });
+
+  hg.addLinkTuple('ad-para-7_2-7_5', 'refuted-by', 'evidence-it-expenses-breakdown', {
+    evidenceType: 'financial',
+    description: 'Detailed itemization of IT expenses with Shopify costs'
+  });
+
+  hg.addLinkTuple('ad-para-7_6', 'refuted-by', 'evidence-daniel-bank-analysis', {
+    evidenceType: 'financial',
+    description: 'Bank statement analysis proves NO R500K gift exists',
+    keyRefutation: 'No single transaction or series totaling R500K to Jacqueline'
+  });
+
+  hg.addLinkTuple('ad-para-7_7-7_8', 'refuted-by', 'evidence-daniel-bank-analysis', {
+    evidenceType: 'financial',
+    description: 'R500K payment details refuted by bank records'
+  });
+
+  hg.addLinkTuple('ad-para-7_9-7_11', 'refuted-by', 'evidence-daniel-bank-analysis', {
+    evidenceType: 'financial',
+    description: 'Payment justification proven - business expense funding'
   });
 
   hg.addLinkTuple('ad-para-10_5-10_10_23', 'supported-by', 'evidence-forensic-index', {
