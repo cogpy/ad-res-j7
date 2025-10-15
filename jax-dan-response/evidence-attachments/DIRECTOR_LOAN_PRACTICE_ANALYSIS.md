@@ -80,6 +80,10 @@
 
 ## 4. THE APPLICANT'S SUDDEN AND INCONSISTENT OBJECTION
 
+**KEY FINDING: SUDDEN OBJECTION INCONSISTENT WITH ESTABLISHED PRACTICE**
+
+The Applicant's objection to the R500,000 payment represents a fundamental inconsistency with decades of established practice that he himself accepted and utilized without objection. This sudden reversal of position—objecting to a practice he routinely benefited from—reveals the pretextual nature of this allegation and undermines the credibility of his claims.
+
 ### 4.1 Fundamental Inconsistency
 
 4.1.1 The Applicant's current objection to the R500,000 payment is fundamentally inconsistent with his decades-long participation in the same practice.
@@ -185,7 +189,7 @@
 
 7.1.2 The Applicant himself actively participated in and benefited from this identical practice for decades without objection.
 
-7.1.3 The Applicant's sudden objection to this established practice is fundamentally inconsistent with his historical conduct and reveals the pretextual nature of this allegation.
+7.1.3 **The Applicant's sudden objection to this established practice is fundamentally inconsistent with his historical conduct and reveals the pretextual nature of this allegation.** The Applicant cannot credibly characterize as "unauthorized" a practice that he himself used for decades without objection. This inconsistency—accepting the practice when he benefits, condemning it when others use it—demonstrates material non-disclosure and bad faith.
 
 7.1.4 The Applicant's inconsistent application of standards - accepting the practice when he benefits, condemning it when others use it - demonstrates material non-disclosure and undermines his credibility.
 
