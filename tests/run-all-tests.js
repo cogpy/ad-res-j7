@@ -5,6 +5,9 @@
 
 const WorkflowValidator = require('./workflow-validation.test.js');
 const WorkflowIntegrationTest = require('./integration-test.js');
+const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
+const SecurityValidationTest = require('./security-validation-test.js');
+const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -13,6 +16,9 @@ class TestRunner {
     this.results = {
       validation: null,
       integration: null,
+      comprehensive: null,
+      security: null,
+      endToEnd: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -57,10 +63,81 @@ class TestRunner {
     return success;
   }
 
+  async runComprehensiveTests() {
+    console.log('\n📋 Running Comprehensive Workflow Tests...\n');
+    
+    const comprehensiveTest = new ComprehensiveWorkflowTest();
+    const success = comprehensiveTest.runAllTests();
+    
+    this.results.comprehensive = {
+      success: success,
+      total: comprehensiveTest.testResults.length,
+      passed: comprehensiveTest.testResults.filter(t => t.passed).length,
+      failed: comprehensiveTest.testResults.filter(t => !t.passed).length,
+      errors: comprehensiveTest.errors,
+      performance_metrics: comprehensiveTest.performanceMetrics
+    };
+    
+    return success;
+  }
+
+  async runSecurityTests() {
+    console.log('\n📋 Running Security Validation Tests...\n');
+    
+    const securityTest = new SecurityValidationTest();
+    const success = securityTest.runAllTests();
+    
+    this.results.security = {
+      success: success,
+      total: securityTest.testResults.length,
+      passed: securityTest.testResults.filter(t => t.passed).length,
+      failed: securityTest.testResults.filter(t => !t.passed).length,
+      errors: securityTest.errors,
+      security_findings: securityTest.securityFindings.length,
+      critical_findings: securityTest.securityFindings.filter(f => f.severity === 'critical').length
+    };
+    
+    return success;
+  }
+
+  async runEndToEndTests() {
+    console.log('\n📋 Running End-to-End Workflow Tests...\n');
+    
+    const endToEndTest = new EndToEndWorkflowTest();
+    const success = endToEndTest.runAllTests();
+    
+    this.results.endToEnd = {
+      success: success,
+      total: endToEndTest.testResults.length,
+      passed: endToEndTest.testResults.filter(t => t.passed).length,
+      failed: endToEndTest.testResults.filter(t => !t.passed).length,
+      errors: endToEndTest.errors,
+      simulated_issues: endToEndTest.simulatedIssues.length,
+      workflow_steps: endToEndTest.workflowSteps.length
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
-    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total;
-    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed;
-    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed;
+    this.results.overall.total_tests = this.results.validation.total + 
+                                       this.results.integration.total + 
+                                       this.results.comprehensive.total + 
+                                       this.results.security.total + 
+                                       this.results.endToEnd.total;
+    
+    this.results.overall.passed_tests = this.results.validation.passed + 
+                                        this.results.integration.passed + 
+                                        this.results.comprehensive.passed + 
+                                        this.results.security.passed + 
+                                        this.results.endToEnd.passed;
+    
+    this.results.overall.failed_tests = this.results.validation.failed + 
+                                        this.results.integration.failed + 
+                                        this.results.comprehensive.failed + 
+                                        this.results.security.failed + 
+                                        this.results.endToEnd.failed;
+    
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
 
@@ -79,6 +156,23 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.integration.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.integration.passed / this.results.integration.total) * 100)}%`);
     console.log(`   🎯 Mock Issues Generated: ${this.results.integration.mock_issues}`);
+    
+    console.log('\n📋 Comprehensive Tests:');
+    console.log(`   ✅ Passed: ${this.results.comprehensive.passed}/${this.results.comprehensive.total}`);
+    console.log(`   ❌ Failed: ${this.results.comprehensive.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.comprehensive.passed / this.results.comprehensive.total) * 100)}%`);
+    
+    console.log('\n🔒 Security Tests:');
+    console.log(`   ✅ Passed: ${this.results.security.passed}/${this.results.security.total}`);
+    console.log(`   ❌ Failed: ${this.results.security.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.security.passed / this.results.security.total) * 100)}%`);
+    console.log(`   🚨 Security Findings: ${this.results.security.security_findings}`);
+    
+    console.log('\n🎯 End-to-End Tests:');
+    console.log(`   ✅ Passed: ${this.results.endToEnd.passed}/${this.results.endToEnd.total}`);
+    console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
+    console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -109,6 +203,30 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.comprehensive.errors.length > 0) {
+        console.log('   Comprehensive Test Failures:');
+        this.results.comprehensive.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.security.errors.length > 0) {
+        console.log('   Security Test Failures:');
+        this.results.security.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.endToEnd.errors.length > 0) {
+        console.log('   End-to-End Test Failures:');
+        this.results.endToEnd.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -129,7 +247,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
       },
       summary: this.results.overall
     });
@@ -145,6 +263,9 @@ class TestRunner {
     try {
       const validationSuccess = await this.runValidationTests();
       const integrationSuccess = await this.runIntegrationTests();
+      const comprehensiveSuccess = await this.runComprehensiveTests();
+      const securitySuccess = await this.runSecurityTests();
+      const endToEndSuccess = await this.runEndToEndTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -156,7 +277,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
