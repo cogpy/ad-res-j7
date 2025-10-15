@@ -5,6 +5,7 @@
 
 const WorkflowValidator = require('./workflow-validation.test.js');
 const WorkflowIntegrationTest = require('./integration-test.js');
+const APIIntegrationTests = require('./api-integration-tests.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -13,6 +14,7 @@ class TestRunner {
     this.results = {
       validation: null,
       integration: null,
+      api: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -57,10 +59,27 @@ class TestRunner {
     return success;
   }
 
+  async runAPITests() {
+    console.log('\n📋 Running API Integration Tests...\n');
+    
+    const apiTest = new APIIntegrationTests();
+    const success = await apiTest.runAllTests();
+    
+    this.results.api = {
+      success: success,
+      total: apiTest.testResults.length,
+      passed: apiTest.testResults.filter(t => t.passed).length,
+      failed: apiTest.testResults.filter(t => !t.passed).length,
+      errors: apiTest.errors
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
-    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total;
-    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed;
-    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed;
+    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
+    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
+    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed + this.results.api.failed;
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
 
@@ -79,6 +98,11 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.integration.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.integration.passed / this.results.integration.total) * 100)}%`);
     console.log(`   🎯 Mock Issues Generated: ${this.results.integration.mock_issues}`);
+    
+    console.log('\n🔌 API Integration Tests:');
+    console.log(`   ✅ Passed: ${this.results.api.passed}/${this.results.api.total}`);
+    console.log(`   ❌ Failed: ${this.results.api.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.api.passed / this.results.api.total) * 100)}%`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -105,6 +129,14 @@ class TestRunner {
       if (this.results.integration.errors.length > 0) {
         console.log('   Integration Test Failures:');
         this.results.integration.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.api.errors.length > 0) {
+        console.log('   API Integration Test Failures:');
+        this.results.api.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
@@ -145,6 +177,7 @@ class TestRunner {
     try {
       const validationSuccess = await this.runValidationTests();
       const integrationSuccess = await this.runIntegrationTests();
+      const apiSuccess = await this.runAPITests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -156,7 +189,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
