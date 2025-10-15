@@ -12,7 +12,7 @@ This section outlines the core strategy for amending the answering affidavit, fo
 - **Use Peter's own inconsistent conduct against him**
 - **Emphasize breakdown of collaborative model (not absence of formal governance)**
 - **Highlight immediate regulatory compliance crisis**
-- **Demonstrate timing and coordination suggesting ulterior motives**
+- **Demonstrate timing patterns requiring explanation**
 - **Focus on fact-based evidence, avoid speculation**
 
 ### Key Weaknesses to Exploit
@@ -20,8 +20,8 @@ This section outlines the core strategy for amending the answering affidavit, fo
 | Weakness | Exploitation Strategy | Priority |
 |---|---|---|
 | Material Non-Disclosure in Ex Parte Application | Systematically demonstrate each material fact Peter failed to disclose, showing court would have refused or modified relief if properly informed | **CRITICAL** |
-| Peter's Inconsistent Conduct | Show Peter accepted informal practices for years, then weaponized same practices. Demonstrate he received similar payments without authorization. | **CRITICAL** |
-| Lack of Genuine Urgency | Demonstrate alleged issues existed for months, Peter waited strategically, timing suggests ulterior motive (post-settlement, pre-payout) | **HIGH** |
+| Peter's Inconsistent Conduct | Show Peter accepted informal practices for years, then applied different standards to same practices. Demonstrate he received similar payments without authorization. | **CRITICAL** |
+| Lack of Genuine Urgency | Demonstrate alleged issues existed for months, Peter waited until strategic timing (post-settlement, pre-payout) | **HIGH** |
 | Peter's Own Unilateral Actions Caused Disruption | Show Peter's actions (card cancellations, system lockouts, Rynette empowerment) caused the very disruptions he now attributes to respondents | **HIGH** |
 | Characterization of Legitimate Expenses as "Unexplained" | Demonstrate IT expenses are legitimate for international business, Peter restricted access to documentation then claimed it doesn't exist | **MEDIUM-HIGH** |
 
@@ -42,7 +42,7 @@ This section provides specific, paragraph-by-paragraph recommendations for amend
 - **Responds To:** Peter's allegations regarding R500,000 "birthday gift"
 - **Recommended Approach:** EXPLOIT PETER'S INCONSISTENCY
 - **Priority:** CRITICAL
-- **Impact:** Directly undermines Peter's primary allegation of financial misconduct and demonstrates his bad faith
+- **Impact:** Directly undermines Peter's primary allegation of financial misconduct and demonstrates his inconsistent conduct
 
 #### Background Context
 ```markdown
@@ -318,7 +318,7 @@ Without access to these systems and documentation, I cannot legally perform my d
 - **Responds To:** Peter's allegations of relationship breakdown and deadlock
 - **Recommended Approach:** SHOW PETER CAUSED BREAKDOWN THROUGH RYNETTE EMPOWERMENT
 - **Priority:** HIGH
-- **Impact:** Demonstrates Peter caused the breakdown he now complains about, shows ulterior motive
+- **Impact:** Demonstrates Peter caused the breakdown he now complains about, raises questions about timing
 
 #### Historical Collaborative Model
 ```markdown
@@ -426,7 +426,7 @@ This section provides overarching principles, evidence priorities, and language 
 
 ### Overarching Principles
 
-- **Use Peter's Own Conduct Against Him:** Peter accepted informal practices for years, then weaponized them. Show his inconsistency systematically.
+- **Use Peter's Own Conduct Against Him:** Peter accepted informal practices for years, then applied different standards to them. Show his inconsistency systematically.
   - *Application:* Every allegation of "unauthorized" transactions should be met with evidence of Peter doing the same thing.
 - **Material Non-Disclosure Undermines Ex Parte Interdict:** Ex parte relief requires utmost good faith. Peter failed to disclose critical facts.
   - *Application:* Systematically identify each material fact not disclosed, explain why it's material, show court would have decided differently.

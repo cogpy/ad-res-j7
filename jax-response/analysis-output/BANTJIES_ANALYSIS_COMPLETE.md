@@ -237,7 +237,7 @@ The problem statement raised critical questions about:
 5. His dismissal of urgent audit requests
 6. His failure to investigate as required by fiduciary duties
 
-**Combined Effect:** Court was deceived about the true nature of the dispute (whistleblower being punished rather than protected) and the availability of proper trust remedies (which were deliberately bypassed).
+**Combined Effect:** Court was not informed about the true nature of the dispute (whistleblower being punished rather than protected) and the availability of proper trust remedies (which were bypassed).
 
 ---
 
@@ -318,7 +318,7 @@ Based on this analysis, the following relief should be requested:
 - Bantjies is compromised witness (breach of duty makes affidavit unreliable)
 - Trust processes were available (interdict was unnecessary)
 - Daniel sought proper oversight (was punished for reporting fraud)
-- Coordination proves bad faith ("main trustee" appointment 2 days before interdict)
+- Coordination demonstrates pattern ("main trustee" appointment 2 days before interdict)
 
 ### For Narrative
 - Whistleblower protection (Daniel reported fraud, was punished not protected)

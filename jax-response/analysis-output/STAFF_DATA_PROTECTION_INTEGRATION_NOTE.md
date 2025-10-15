@@ -65,7 +65,7 @@ Use this to demonstrate that Peter's demands were technically and legally imposs
 ### 4. Bad Faith Intent Evidence
 
 **Key Point:**
-Peter's demands were made in bad faith, as demonstrated by subsequent actions:
+Peter's demands are contradicted by subsequent actions:
 
 **June 20, 2025:** Gayane email (customer diversion scheme)  
 **July 8, 2025:** Warehouse POPI violations (data theft attempt)  
@@ -73,7 +73,7 @@ Peter's demands were made in bad faith, as demonstrated by subsequent actions:
 **Documented Losses:** >R3.1 million
 
 **Integration Point:**
-Use this timeline to expose ulterior motive (data theft for commercial advantage).
+Use this timeline to demonstrate pattern of conduct (data extraction for commercial purposes).
 
 ---
 
@@ -97,7 +97,7 @@ Use this timeline to expose ulterior motive (data theft for commercial advantage
 >
 > (c) **Regional Data Authorization Requirements:** Even if all credentials were available, authorization would be required from respective data owners and processors in each of 37 international jurisdictions before provisioning access. This process requires 6-12 months and R500,000-R1,500,000 in legal and compliance costs to comply with GDPR and POPIA requirements.
 >
-> (d) **Bad Faith Intent:** The Applicant's demands were made in bad faith, as evidenced by subsequent events in June/July 2025 where coordinated attempts were made to extract distributor customer records and bypass distribution agents to capture direct sales. These actions constitute data theft under the Cybercrimes Act and violations of POPIA and GDPR, with documented financial losses exceeding R3.1 million."
+> (d) **Pattern of Conduct:** The Applicant's demands are contradicted by subsequent events in June/July 2025 where coordinated attempts were made to extract distributor customer records and bypass distribution agents to capture direct sales. These actions constitute data misuse under the Cybercrimes Act and violations of POPIA and GDPR, with documented financial losses exceeding R3.1 million."
 
 #### Section 2: Response to IT Expense Allegations
 
@@ -184,7 +184,7 @@ Use this timeline to expose ulterior motive (data theft for commercial advantage
 - ✅ "Daniel properly complied with POPIA and GDPR by refusing unauthorized access"
 - ✅ "Granting such access would constitute criminal violations"
 - ✅ "The Applicant's demands were technically impossible and legally prohibited"
-- ✅ "Subsequent events reveal the Applicant's bad faith intent (data theft)"
+- ✅ "Subsequent events demonstrate the Applicant's pattern of conduct (data misuse)"
 
 ### Frame as Proper Compliance, Not Obstruction
 
@@ -243,9 +243,9 @@ Use this timeline to expose ulterior motive (data theft for commercial advantage
 - [ ] Integrate staff reference clarifications into relevant AD paragraphs
 - [ ] Add administrator role limitations explanation where appropriate
 - [ ] Include regional authorization requirements in response
-- [ ] Reference bad faith intent evidence (June/July events)
+- [ ] Reference pattern of conduct evidence (June/July events)
 - [ ] Obtain JF-DATA-PROTECTION evidence series
-- [ ] Obtain JF-BAD-FAITH evidence series
+- [ ] Obtain JF-CONDUCT evidence series
 - [ ] Consider expert affidavit on technical/security architecture
 - [ ] Consider legal opinion on POPIA/GDPR authorization requirements
 
