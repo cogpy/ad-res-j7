@@ -52,7 +52,7 @@ These require the most detailed, evidence-rich responses:
   - Contextualize international operations across 37 jurisdictions (Responsible Person role)
   - Provide itemized breakdown of IT expenses by category (Shopify Plus, AWS, Microsoft 365, Adobe, Sage, payment gateways)
   - Demonstrate how Peter's card cancellations created the documentation gap
-  - Include comparative analysis showing IT spend as percentage of revenue is industry-standard for e-commerce
+  - [x] Include comparative analysis showing IT spend as percentage of revenue is industry-standard for e-commerce (See: `jax-dan-response/evidence-attachments/IT_SPEND_INDUSTRY_COMPARATIVE_ANALYSIS.md`)
   - Add Dan's technical affidavit explaining infrastructure requirements
 
 **PARA_7_6: R500K Payment**
@@ -266,7 +266,7 @@ This differentiation helps counter Peter's attempt to conflate their roles and r
 - **JF5E**: Sage accounting software invoices
 - **JF5F**: Domain registrations and SSL certificates
 - **JF5G**: Payment gateway fees (Stripe, PayPal, Peach Payments)
-- **JF5H**: Comparative industry analysis showing IT spend as % of revenue
+- **JF5H**: Comparative industry analysis showing IT spend as % of revenue ✓ (See: `jax-dan-response/evidence-attachments/IT_SPEND_INDUSTRY_COMPARATIVE_ANALYSIS.md`)
 - **JF5I**: Technical architecture documentation justifying expenses
 
 **Category 3: Business Operations and Revenue**
