@@ -1,0 +1,315 @@
+name: Dependabot Auto-Merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+
+jobs:
+  dependabot-auto-merge:
+    runs-on: ubuntu-latest
+    
+    # Only run for Dependabot PRs
+    if: github.actor == 'dependabot[bot]'
+    
+    steps:
+      - name: Check PR details
+        id: pr-details
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            
+            // Get PR details
+            const title = pr.title;
+            const body = pr.body || '';
+            const isDraft = pr.draft;
+            
+            console.log(`PR Title: ${title}`);
+            console.log(`Is Draft: ${isDraft}`);
+            
+            // Check if this is a security update (higher priority)
+            const isSecurityUpdate = title.toLowerCase().includes('security') || 
+                                   body.toLowerCase().includes('security') ||
+                                   title.toLowerCase().includes('vulnerability');
+            
+            // Check update type (patch, minor, major)
+            const isPatchUpdate = title.match(/bump .+ from .+\.\d+\.\d+ to .+\.\d+\.\d+$/i);
+            const isMinorUpdate = title.match(/bump .+ from .+\.\d+\.\d+ to .+\.\d+\.\d+$/i) === null && 
+                                 title.match(/bump .+ from .+\.\d+ to .+\.\d+/i);
+            const isMajorUpdate = title.match(/bump .+ from .+\.\d+ to .+\.\d+/i) === null &&
+                                 title.match(/bump .+ from .+ to .+/i);
+            
+            console.log(`Security Update: ${isSecurityUpdate}`);
+            console.log(`Patch Update: ${isPatchUpdate !== null}`);
+            console.log(`Minor Update: ${isMinorUpdate}`);
+            console.log(`Major Update: ${isMajorUpdate}`);
+            
+            // Set outputs
+            core.setOutput('is-security', isSecurityUpdate);
+            core.setOutput('is-patch', isPatchUpdate !== null);
+            core.setOutput('is-minor', isMinorUpdate);
+            core.setOutput('is-major', isMajorUpdate);
+            core.setOutput('is-draft', isDraft);
+            core.setOutput('pr-number', pr.number);
+            core.setOutput('pr-title', title);
+
+      - name: Wait for checks to complete
+        if: steps.pr-details.outputs.is-draft == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = ${{ steps.pr-details.outputs.pr-number }};
+            const maxWaitTime = 10 * 60 * 1000; // 10 minutes
+            const pollInterval = 30 * 1000; // 30 seconds
+            const startTime = Date.now();
+            
+            console.log(`Waiting for checks to complete on PR #${prNumber}...`);
+            
+            while (Date.now() - startTime < maxWaitTime) {
+              // Get the latest commit SHA
+              const { data: pr } = await github.rest.pulls.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber
+              });
+              
+              const headSha = pr.head.sha;
+              
+              // Get check runs for the latest commit
+              const { data: checkRuns } = await github.rest.checks.listForRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: headSha
+              });
+              
+              // Get status checks for the latest commit
+              const { data: statusChecks } = await github.rest.repos.getCombinedStatusForRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: headSha
+              }).catch(() => ({ data: { statuses: [] } }));
+              
+              const allChecks = [
+                ...checkRuns.check_runs.map(check => ({
+                  name: check.name,
+                  status: check.status,
+                  conclusion: check.conclusion
+                })),
+                ...statusChecks.data.statuses.map(status => ({
+                  name: status.context,
+                  status: status.state === 'pending' ? 'in_progress' : 'completed',
+                  conclusion: status.state
+                }))
+              ];
+              
+              console.log(`Found ${allChecks.length} checks/statuses`);
+              
+              if (allChecks.length === 0) {
+                console.log('No checks found, assuming tests are not required');
+                break;
+              }
+              
+              const pendingChecks = allChecks.filter(check => 
+                check.status === 'in_progress' || 
+                check.status === 'queued' || 
+                check.status === 'pending'
+              );
+              
+              const failedChecks = allChecks.filter(check => 
+                check.conclusion === 'failure' || 
+                check.conclusion === 'error' ||
+                check.conclusion === 'cancelled' ||
+                check.conclusion === 'timed_out'
+              );
+              
+              const successfulChecks = allChecks.filter(check => 
+                check.conclusion === 'success'
+              );
+              
+              console.log(`Pending: ${pendingChecks.length}, Failed: ${failedChecks.length}, Successful: ${successfulChecks.length}`);
+              
+              if (failedChecks.length > 0) {
+                console.log('❌ Some checks failed:');
+                failedChecks.forEach(check => console.log(`  - ${check.name}: ${check.conclusion}`));
+                core.setFailed('Some checks failed. Will not auto-merge.');
+                return;
+              }
+              
+              if (pendingChecks.length === 0) {
+                console.log('✅ All checks completed successfully');
+                break;
+              }
+              
+              console.log(`⏳ Waiting for ${pendingChecks.length} checks to complete...`);
+              pendingChecks.forEach(check => console.log(`  - ${check.name}: ${check.status}`));
+              
+              await new Promise(resolve => setTimeout(resolve, pollInterval));
+            }
+            
+            if (Date.now() - startTime >= maxWaitTime) {
+              core.setFailed('Timeout waiting for checks to complete');
+            }
+
+      - name: Auto-merge PR
+        if: |
+          steps.pr-details.outputs.is-draft == 'false' && (
+            steps.pr-details.outputs.is-security == 'true' ||
+            steps.pr-details.outputs.is-patch == 'true'
+          )
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = ${{ steps.pr-details.outputs.pr-number }};
+            const isSecurityUpdate = ${{ steps.pr-details.outputs.is-security }};
+            const isPatchUpdate = ${{ steps.pr-details.outputs.is-patch }};
+            
+            console.log(`Auto-merging PR #${prNumber}`);
+            console.log(`Security update: ${isSecurityUpdate}`);
+            console.log(`Patch update: ${isPatchUpdate}`);
+            
+            try {
+              // Enable auto-merge with squash merge
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                merge_method: 'squash',
+                commit_title: `${{ steps.pr-details.outputs.pr-title }}`,
+                commit_message: `Auto-merged Dependabot PR after successful tests.
+                
+${isSecurityUpdate ? '🔒 Security update' : '🔧 Patch update'} - automatically merged after all checks passed.
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>`
+              });
+              
+              console.log('✅ PR successfully merged');
+              
+              // Add a comment explaining the auto-merge
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: `🤖 **Auto-merged by Dependabot workflow**
+
+This ${isSecurityUpdate ? 'security update' : 'patch update'} was automatically merged after all tests passed.
+
+**Merge criteria met:**
+- ✅ Created by Dependabot
+- ✅ All tests passing
+- ✅ ${isSecurityUpdate ? 'Security update (high priority)' : 'Patch-level update (safe)'}
+- ✅ Not a draft PR
+
+*This automation helps keep dependencies up-to-date while maintaining code quality.*`
+              });
+              
+            } catch (error) {
+              console.error('Failed to merge PR:', error);
+              
+              // Try to add a comment about the failure
+              try {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: `⚠️ **Auto-merge failed**
+                  
+Failed to automatically merge this Dependabot PR. This might be due to:
+- Merge conflicts
+- Branch protection rules requiring manual review
+- Other repository settings
+
+Please review and merge manually if appropriate.
+
+Error: \`${error.message}\``
+                });
+              } catch (commentError) {
+                console.error('Failed to add comment:', commentError);
+              }
+              
+              core.setFailed(`Failed to merge PR: ${error.message}`);
+            }
+
+      - name: Skip auto-merge (with comment)
+        if: |
+          steps.pr-details.outputs.is-draft == 'false' && 
+          steps.pr-details.outputs.is-security == 'false' &&
+          steps.pr-details.outputs.is-patch == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = ${{ steps.pr-details.outputs.pr-number }};
+            const isMinorUpdate = ${{ steps.pr-details.outputs.is-minor }};
+            const isMajorUpdate = ${{ steps.pr-details.outputs.is-major }};
+            
+            let updateType = 'unknown';
+            if (isMinorUpdate) updateType = 'minor';
+            if (isMajorUpdate) updateType = 'major';
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: `🔍 **Auto-merge skipped**
+
+This Dependabot PR was not automatically merged because it's a **${updateType} update**.
+
+**Auto-merge criteria:**
+- ✅ Created by Dependabot
+- ✅ All tests passing
+- ❌ ${updateType.charAt(0).toUpperCase() + updateType.slice(1)} update (requires manual review)
+
+**Manual review recommended for ${updateType} updates** as they may introduce breaking changes or new features that need evaluation.
+
+*Only patch updates and security updates are automatically merged.*`
+            });
+            
+            console.log(`Skipped auto-merge for ${updateType} update`);
+
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "# 🤖 Dependabot Auto-Merge Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**PR:** #${{ steps.pr-details.outputs.pr-number }} - ${{ steps.pr-details.outputs.pr-title }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Analysis Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Criteria | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Dependabot PR | ✅ Yes |" >> $GITHUB_STEP_SUMMARY
+          echo "| Draft PR | ${{ steps.pr-details.outputs.is-draft == 'true' && '❌ Yes (skipped)' || '✅ No' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Security Update | ${{ steps.pr-details.outputs.is-security == 'true' && '✅ Yes (auto-merge)' || '❌ No' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Patch Update | ${{ steps.pr-details.outputs.is-patch == 'true' && '✅ Yes (auto-merge)' || '❌ No' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Minor Update | ${{ steps.pr-details.outputs.is-minor == 'true' && '⚠️ Yes (manual review)' || '❌ No' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Major Update | ${{ steps.pr-details.outputs.is-major == 'true' && '⚠️ Yes (manual review)' || '❌ No' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Determine action taken
+          if [ "${{ steps.pr-details.outputs.is-draft }}" = "true" ]; then
+            echo "## 🚫 Action: Skipped (Draft PR)" >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.pr-details.outputs.is-security }}" = "true" ] || [ "${{ steps.pr-details.outputs.is-patch }}" = "true" ]; then
+            echo "## ✅ Action: Auto-merged" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "This PR was automatically merged because:" >> $GITHUB_STEP_SUMMARY
+            if [ "${{ steps.pr-details.outputs.is-security }}" = "true" ]; then
+              echo "- 🔒 Security update (high priority)" >> $GITHUB_STEP_SUMMARY
+            fi
+            if [ "${{ steps.pr-details.outputs.is-patch }}" = "true" ]; then
+              echo "- 🔧 Patch-level update (safe)" >> $GITHUB_STEP_SUMMARY
+            fi
+            echo "- ✅ All tests passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ⚠️ Action: Manual Review Required" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "This PR requires manual review because it's a minor or major update." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "*Workflow completed at: $(date -u +"%Y-%m-%d %H:%M:%S UTC")*" >> $GITHUB_STEP_SUMMARY

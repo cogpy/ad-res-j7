@@ -1,0 +1,194 @@
+name: GitHub CLI Authentication Fix Reference
+
+# This workflow demonstrates the correct way to authenticate GitHub CLI in CI/CD environments
+# It addresses the common error: "The value of the GITHUB_TOKEN environment variable is being used for authentication"
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_auth:
+        description: 'Test GitHub CLI authentication'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  demonstrate-correct-auth:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # ❌ INCORRECT - This causes the authentication error
+      # - name: Authenticate GitHub CLI (WRONG WAY)
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     echo "$GITHUB_TOKEN" | gh auth login --with-token
+      #     gh auth status
+      
+      # ✅ CORRECT - Server-side authentication for CI/CD
+      - name: Authenticate GitHub CLI (server-side)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔐 Setting up GitHub CLI authentication (server-side)..."
+          
+          # Check current auth status (may show as unauthenticated initially)
+          echo "Current auth status:"
+          gh auth status || true
+          
+          # Set up git authentication (this is the key step)
+          gh auth setup-git
+          
+          echo "✅ GitHub CLI ready for server-side operations"
+      
+      - name: Test GitHub CLI operations
+        if: github.event.inputs.test_auth == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🧪 Testing GitHub CLI operations..."
+          
+          # Test basic repository info
+          echo "Repository info:"
+          gh repo view --json name,description,url
+          
+          # Test issue listing (limited to avoid spam)
+          echo "Recent issues:"
+          gh issue list --limit 3 --json number,title,state
+          
+          # Test PR listing (limited to avoid spam)
+          echo "Recent PRs:"
+          gh pr list --limit 3 --json number,title,state
+          
+          echo "✅ All GitHub CLI operations successful"
+      
+      - name: Demonstrate environment variable usage
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "📋 Environment variable best practices:"
+          echo ""
+          echo "✅ Use GH_TOKEN instead of GITHUB_TOKEN for CLI commands"
+          echo "✅ Use gh auth setup-git for server-side authentication"
+          echo "✅ Avoid interactive login commands in CI/CD"
+          echo ""
+          echo "❌ Don't use: echo \$GITHUB_TOKEN | gh auth login --with-token"
+          echo "❌ Don't use: gh auth login (interactive mode)"
+          echo "❌ Don't mix GITHUB_TOKEN env var with gh auth login"
+      
+      - name: Generate authentication guide
+        run: |
+          echo "# 🔐 GitHub CLI Authentication Guide for CI/CD" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## ✅ Correct Server-Side Authentication" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```yaml' >> $GITHUB_STEP_SUMMARY
+          echo '- name: Authenticate GitHub CLI (server-side)' >> $GITHUB_STEP_SUMMARY
+          echo '  env:' >> $GITHUB_STEP_SUMMARY
+          echo '    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}' >> $GITHUB_STEP_SUMMARY
+          echo '  run: |' >> $GITHUB_STEP_SUMMARY
+          echo '    gh auth setup-git' >> $GITHUB_STEP_SUMMARY
+          echo '    # Now you can use gh commands' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## ❌ Common Mistakes to Avoid" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```yaml' >> $GITHUB_STEP_SUMMARY
+          echo '# This causes the authentication error:' >> $GITHUB_STEP_SUMMARY
+          echo '- name: Wrong authentication' >> $GITHUB_STEP_SUMMARY
+          echo '  env:' >> $GITHUB_STEP_SUMMARY
+          echo '    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}' >> $GITHUB_STEP_SUMMARY
+          echo '  run: |' >> $GITHUB_STEP_SUMMARY
+          echo '    echo "$GITHUB_TOKEN" | gh auth login --with-token' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 🔑 Key Points" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Use **GH_TOKEN** environment variable instead of GITHUB_TOKEN" >> $GITHUB_STEP_SUMMARY
+          echo "- Use **gh auth setup-git** for server-side authentication" >> $GITHUB_STEP_SUMMARY
+          echo "- Avoid interactive login commands in CI/CD environments" >> $GITHUB_STEP_SUMMARY
+          echo "- The GitHub CLI automatically uses GH_TOKEN when available" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 📚 References" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- [GitHub CLI Manual - Authentication](https://cli.github.com/manual/gh_auth_login)" >> $GITHUB_STEP_SUMMARY
+          echo "- [GitHub Actions - Using GitHub CLI](https://docs.github.com/en/actions/using-workflows/using-github-cli-in-workflows)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "*Generated at: $(date -u +"%Y-%m-%d %H:%M:%S UTC")*" >> $GITHUB_STEP_SUMMARY
+
+  fix-existing-workflows:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.test_auth == 'true'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Scan for authentication issues
+        run: |
+          echo "🔍 Scanning workflows for potential authentication issues..."
+          
+          # Look for problematic patterns
+          echo "Checking for 'gh auth login --with-token' usage:"
+          if grep -r "gh auth login --with-token" .github/workflows/ 2>/dev/null; then
+            echo "⚠️ Found problematic authentication pattern"
+          else
+            echo "✅ No problematic 'gh auth login --with-token' found"
+          fi
+          
+          echo ""
+          echo "Checking for GITHUB_TOKEN with gh commands:"
+          if grep -A 5 -B 5 "GITHUB_TOKEN.*gh " .github/workflows/ 2>/dev/null; then
+            echo "⚠️ Found potential GITHUB_TOKEN + gh command conflicts"
+          else
+            echo "✅ No obvious GITHUB_TOKEN + gh conflicts found"
+          fi
+          
+          echo ""
+          echo "Checking for interactive gh auth commands:"
+          if grep -r "gh auth login" .github/workflows/ 2>/dev/null | grep -v "with-token"; then
+            echo "⚠️ Found potential interactive auth commands"
+          else
+            echo "✅ No interactive auth commands found"
+          fi
+      
+      - name: Provide fix recommendations
+        run: |
+          echo "# 🔧 Workflow Authentication Fix Recommendations" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Based on the scan of your workflows:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Quick Fix Template" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Replace any problematic authentication steps with:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```yaml' >> $GITHUB_STEP_SUMMARY
+          echo 'steps:' >> $GITHUB_STEP_SUMMARY
+          echo '  - name: Setup GitHub CLI' >> $GITHUB_STEP_SUMMARY
+          echo '    env:' >> $GITHUB_STEP_SUMMARY
+          echo '      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}' >> $GITHUB_STEP_SUMMARY
+          echo '    run: |' >> $GITHUB_STEP_SUMMARY
+          echo '      gh auth setup-git' >> $GITHUB_STEP_SUMMARY
+          echo '      # Your gh commands here' >> $GITHUB_STEP_SUMMARY
+          echo '      gh repo view' >> $GITHUB_STEP_SUMMARY
+          echo '      gh issue list' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "This approach:" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Works in server-side CI/CD environments" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Avoids the GITHUB_TOKEN conflict error" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Requires no interactive input" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Is the recommended approach by GitHub" >> $GITHUB_STEP_SUMMARY
