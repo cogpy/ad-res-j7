@@ -65,14 +65,10 @@ jobs:
       - name: Extract items from issue comment
         if: github.event_name == 'issue_comment'
         id: extract_comment
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
           echo "📝 Extracting repository items from issue comment..."
-          
-          # Extract the comment body
-          COMMENT_BODY=$(cat << 'EOF'
-          ${{ github.event.comment.body }}
-          EOF
-          )
           
           # Remove the trigger phrase and extract items
           ITEMS=$(echo "$COMMENT_BODY" | sed '1,/\/create-issues-from-items/d')
