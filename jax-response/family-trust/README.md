@@ -4,7 +4,7 @@
 This directory contains forensic evidence and analysis for the systematic family trust manipulation and breach scheme targeting the Faucitt family trust structures from March through August 2025. The evidence demonstrates coordinated violations of trust obligations and fiduciary duties involving multiple family members and associated entities.
 
 ## Trust Violations Summary
-**Total Criminal Timeline:** March 15 - August 10, 2025 (148 days)  
+**Total Criminal Timeline:** March 15 - 2025-08-10 (148 days)  
 **Primary Perpetrators:** Peter Faucitt, Rynette Farrar, Associated Family Members  
 **Primary Victims:** Daniel Faucitt, Legitimate Trust Beneficiaries  
 **Financial Impact:** R2,851,247.35+ in documented trust asset misappropriation  
@@ -13,7 +13,7 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ### 📁 [15-mar-trust-establishment/](15-mar-trust-establishment/)
 **Event:** Trust Structure Establishment Documentation  
-**Date:** March 15, 2025  
+**Date:** 2025-03-15  
 **Perpetrator:** Peter Faucitt (as Trustee)  
 **Crime Type:** Fraudulent trust establishment, fiduciary duty violations  
 **Impact:** Foundation for systematic trust asset misappropriation  
@@ -21,7 +21,7 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ### 📁 [02-may-beneficiary-changes/](02-may-beneficiary-changes/)  
 **Event:** Unauthorized Beneficiary Modifications  
-**Date:** May 2, 2025  
+**Date:** 2025-05-02  
 **Perpetrator:** Peter Faucitt, Rynette Farrar (coordination)  
 **Crime Type:** Trust deed violations, unauthorized beneficiary amendments  
 **Impact:** Exclusion of legitimate beneficiaries from trust benefits  
@@ -29,7 +29,7 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ### 📁 [18-june-trust-violation/](18-june-trust-violation/)
 **Event:** Systematic Trust Obligation Breaches  
-**Date:** June 18, 2025  
+**Date:** 2025-06-18  
 **Perpetrator:** Peter Faucitt (as Trustee)  
 **Crime Type:** Fiduciary duty breach, trust asset mismanagement  
 **Impact:** Unauthorized use of trust assets for personal benefit  
@@ -37,7 +37,7 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ### 📁 [25-july-asset-misappropriation/](25-july-asset-misappropriation/)
 **Event:** Trust Asset Misappropriation Scheme  
-**Date:** July 25, 2025  
+**Date:** 2025-07-25  
 **Source:** Trust Asset Documentation  
 **Evidence Type:** Financial records, asset transfer documentation  
 **Impact:** Systematic removal of trust assets from legitimate control  
@@ -45,7 +45,7 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ### 📁 [10-aug-trust-breach-evidence/](10-aug-trust-breach-evidence/)
 **Event:** Comprehensive Trust Breach Documentation  
-**Date:** August 10, 2025  
+**Date:** 2025-08-10  
 **Documented by:** Legal Analysis Team  
 **Crime Type:** Continuing trust violations, evidence concealment  
 **Impact:** Complete compromise of trust integrity and beneficiary rights  
@@ -53,27 +53,27 @@ This directory contains forensic evidence and analysis for the systematic family
 
 ## Criminal Timeline Analysis
 
-### Phase 1: Trust Structure Manipulation (March 15, 2025)
+### Phase 1: Trust Structure Manipulation (2025-03-15)
 - **Fraudulent trust establishment** with intentional structural flaws
 - **Trustee appointment irregularities** creating conflict of interest
 - **Foundation for systematic asset misappropriation**
 
-### Phase 2: Beneficiary Rights Violation (May 2, 2025) 
+### Phase 2: Beneficiary Rights Violation (2025-05-02) 
 - **Unauthorized beneficiary exclusions** violating trust deed terms
 - **Family member coordination** in trust manipulation scheme
 - **Legal rights denial** to legitimate trust beneficiaries
 
-### Phase 3: Fiduciary Duty Breaches (June 18, 2025)
+### Phase 3: Fiduciary Duty Breaches (2025-06-18)
 - **Systematic trustee misconduct** violating fiduciary obligations
 - **Self-dealing transactions** using trust assets for personal benefit
 - **Trust asset mismanagement** causing financial harm to beneficiaries
 
-### Phase 4: Asset Misappropriation (July 25, 2025)
+### Phase 4: Asset Misappropriation (2025-07-25)
 - **Coordinated asset removal** from legitimate trust control
 - **Financial documentation manipulation** concealing asset transfers
 - **Trust property theft** violating beneficiary property rights
 
-### Phase 5: Evidence Concealment (August 10, 2025)
+### Phase 5: Evidence Concealment (2025-08-10)
 - **Trust violation cover-up** through document manipulation
 - **Continuing fiduciary breaches** despite legal challenges
 - **Systematic trust law violations** with consciousness of guilt

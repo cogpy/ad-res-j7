@@ -4,7 +4,7 @@
 This directory contains forensic evidence and analysis for the systematic revenue hijacking scheme targeting Daniel Faucitt's RegimA business operations from April through July 2025. The evidence demonstrates a coordinated criminal conspiracy involving multiple parties to appropriate legitimate business revenue streams.
 
 ## Criminal Scheme Summary
-**Total Criminal Timeline:** April 14 - July 8, 2025 (85 days)  
+**Total Criminal Timeline:** April 14 - 2025-07-08 (85 days)  
 **Primary Perpetrators:** Rynette Farrar, Peter Faucitt, Rynette's son (Addarory)  
 **Primary Victim:** Daniel Faucitt (RegimA companies)  
 **Financial Impact:** R3,141,647.70+ in documented losses  
@@ -13,7 +13,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [14-apr-bank-letter/](14-apr-bank-letter/)
 **Event:** Bank Account Change Letter  
-**Date:** April 14, 2025  
+**Date:** 2025-04-14  
 **Perpetrator:** Rynette Farrar  
 **Crime Type:** Fraudulent redirection of funds, theft by conversion  
 **Impact:** Setup for systematic revenue diversion  
@@ -21,7 +21,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [22-may-shopify-audit/](22-may-shopify-audit/)  
 **Event:** Shopify Audit Trail Hijacking  
-**Date:** May 22, 2025  
+**Date:** 2025-05-22  
 **Perpetrator:** Coordinated action (unknown specific actors)  
 **Crime Type:** Evidence destruction, computer fraud, business sabotage  
 **Impact:** 100% business shutdown (R1M+ monthly revenue → R0)  
@@ -29,7 +29,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [29-may-domain-registration/](29-may-domain-registration/)
 **Event:** Domain Registration by Rynette's Son  
-**Date:** May 29, 2025  
+**Date:** 2025-05-29  
 **Perpetrator:** Rynette Farrar (via son Addarory)  
 **Crime Type:** Identity fraud, family criminal conspiracy  
 **Impact:** Customer base theft and revenue diversion infrastructure  
@@ -37,7 +37,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [email-impersonation-pattern-jf3a/](email-impersonation-pattern-jf3a/)
 **Event:** Email Impersonation Pattern (JF3A Evidence)  
-**Date:** June 20 - August 29, 2025  
+**Date:** June 20 - 2025-08-29  
 **Perpetrator:** Rynette Farrar (via pete@regima.com control)  
 **Evidence Type:** Email forensics, identity theft, systematic impersonation  
 **Crime Type:** Email hijacking, identity theft, business impersonation, computer fraud  
@@ -46,7 +46,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [20-june-gee-gayane-email/](20-june-gee-gayane-email/)
 **Event:** Gayane Email to Jax About Pete's Instructions  
-**Date:** June 20, 2025  
+**Date:** 2025-06-20  
 **Source:** Gayane Williams  
 **Evidence Type:** Witness testimony, instruction chain documentation  
 **Impact:** Evidence of coordinated instructions in criminal conspiracy  
@@ -54,7 +54,7 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ### 📁 [08-july-warehouse-popi/](08-july-warehouse-popi/)
 **Event:** Pete Stopping Warehouse Shopify & POPI Letters  
-**Date:** July 8, 2025  
+**Date:** 2025-07-08  
 **Documented by:** Daniel Faucitt  
 **Crime Type:** Business sabotage, POPI violations, employee endangerment  
 **Impact:** Complete operational shutdown and regulatory violations  
@@ -62,35 +62,35 @@ This directory contains forensic evidence and analysis for the systematic revenu
 
 ## Criminal Timeline Analysis
 
-### Phase 1: Setup (April 14, 2025)
+### Phase 1: Setup (2025-04-14)
 - **Revenue diversion preparation** via bank account change letter
 - **Client payment redirection** to unauthorized accounts
 - **Foundation for systematic theft**
 
-### Phase 2: Evidence Destruction (May 22, 2025) 
+### Phase 2: Evidence Destruction (2025-05-22) 
 - **Shopify audit trail elimination** 7 days after Jax confrontation
 - **Business operations evidence destruction** 
 - **Consciousness of guilt** demonstrated through timing
 
-### Phase 3: Cover-up Infrastructure (May 29, 2025)
+### Phase 3: Cover-up Infrastructure (2025-05-29)
 - **Family conspiracy involvement** via son's domain registration
 - **Digital impersonation infrastructure** for continued fraud
 - **Customer hijacking platform** establishment
 
-### Phase 3B: Email Impersonation Pattern (June 20 - August 29, 2025)
+### Phase 3B: Email Impersonation Pattern (June 20 - 2025-08-29)
 - **Systematic email hijacking** via pete@regima.com control by Rynette Farrar
 - **Identity theft and business impersonation** over 3+ month period
 - **Email control enabling criminal directives** to administrative personnel
 - **Pattern of impersonation** documented through JF1, JF2, JF3 evidence
 - **Information manipulation** during criminal conspiracy and legal proceedings
 
-### Phase 4: Instruction Coordination (June 20, 2025)
+### Phase 4: Instruction Coordination (2025-06-20)
 - **Administrative personnel involvement** through Gayane (via impersonated email)
 - **Instruction chain documentation** linking Pete to criminal acts
 - **Witness testimony** of coordinated criminal instructions
 - **Email impersonation facilitating fraudulent directives**
 
-### Phase 5: Complete Business Destruction (July 8, 2025)
+### Phase 5: Complete Business Destruction (2025-07-08)
 - **POPI violations** through unauthorized data processing
 - **Employee endangerment** via illegal instruction compliance
 - **Complete operational shutdown** of legitimate business channels
@@ -267,6 +267,6 @@ This directory contains forensic evidence and analysis for the systematic revenu
 **Legal Counsel:** [Prosecution team]  
 **Case Number:** 2025-137857  
 
-**Last Updated:** October 13, 2025  
+**Last Updated:** 2025-10-13  
 **Evidence Status:** Under active investigation  
 **Classification:** Law Enforcement Sensitive

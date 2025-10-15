@@ -4,7 +4,7 @@
 This directory contains forensic evidence and analysis for the systematic financial manipulation and fund diversion scheme targeting legitimate business and trust financial flows from April through August 2025. The evidence demonstrates coordinated financial fraud involving unauthorized transfers, payment redirections, and systematic concealment of financial assets.
 
 ## Financial Crime Summary
-**Total Criminal Timeline:** April 1 - August 20, 2025 (141 days)  
+**Total Criminal Timeline:** April 1 - 2025-08-20 (141 days)  
 **Primary Perpetrators:** Peter Faucitt, Rynette Farrar, Associated Financial Entities  
 **Primary Victims:** Daniel Faucitt, RegimA Companies, Trust Beneficiaries  
 **Financial Impact:** R4,276,832.85+ in documented financial diversions and losses  
@@ -13,7 +13,7 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ### 📁 [01-apr-payment-redirection/](01-apr-payment-redirection/)
 **Event:** Systematic Payment Redirection Scheme  
-**Date:** April 1, 2025  
+**Date:** 2025-04-01  
 **Perpetrator:** Rynette Farrar, Peter Faucitt (coordination)  
 **Crime Type:** Payment fraud, unauthorized fund redirection  
 **Impact:** Diversion of legitimate business payments to unauthorized accounts  
@@ -21,7 +21,7 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ### 📁 [15-may-unauthorized-transfers/](15-may-unauthorized-transfers/)  
 **Event:** Large-Scale Unauthorized Financial Transfers  
-**Date:** May 15, 2025  
+**Date:** 2025-05-15  
 **Perpetrator:** Peter Faucitt (as authorized signatory)  
 **Crime Type:** Unauthorized fund transfers, breach of fiduciary duty  
 **Impact:** R850,000+ in unauthorized transfers from business accounts  
@@ -29,7 +29,7 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ### 📁 [30-june-fund-diversions/](30-june-fund-diversions/)
 **Event:** Coordinated Fund Diversion Operations  
-**Date:** June 30, 2025  
+**Date:** 2025-06-30  
 **Perpetrator:** Coordinated network (Peter Faucitt, Rynette Farrar, Associates)  
 **Crime Type:** Systematic fund diversion, money laundering indicators  
 **Impact:** Complex financial flow manipulation affecting multiple entities  
@@ -37,7 +37,7 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ### 📁 [12-july-account-manipulations/](12-july-account-manipulations/)
 **Event:** Bank Account Manipulation and Control Seizure  
-**Date:** July 12, 2025  
+**Date:** 2025-07-12  
 **Source:** Banking Transaction Records  
 **Evidence Type:** Financial statements, unauthorized account access logs  
 **Impact:** Complete control seizure of legitimate business banking operations  
@@ -45,7 +45,7 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ### 📁 [20-aug-financial-concealment/](20-aug-financial-concealment/)
 **Event:** Financial Evidence Concealment and Destruction  
-**Date:** August 20, 2025  
+**Date:** 2025-08-20  
 **Documented by:** Financial Investigation Team  
 **Crime Type:** Evidence destruction, financial record manipulation  
 **Impact:** Systematic concealment of financial crime evidence  
@@ -53,27 +53,27 @@ This directory contains forensic evidence and analysis for the systematic financ
 
 ## Financial Crime Timeline Analysis
 
-### Phase 1: Payment System Infiltration (April 1, 2025)
+### Phase 1: Payment System Infiltration (2025-04-01)
 - **Customer payment redirection** to unauthorized recipient accounts
 - **Business revenue diversion** affecting legitimate operations
 - **Financial system exploitation** using insider access and authority
 
-### Phase 2: Large-Scale Asset Movement (May 15, 2025) 
+### Phase 2: Large-Scale Asset Movement (2025-05-15) 
 - **Unauthorized transfer authorization** exceeding legitimate authority limits
 - **Cross-entity fund movements** creating complex financial trails
 - **Fiduciary duty violations** in asset management and control
 
-### Phase 3: Systematic Fund Diversion (June 30, 2025)
+### Phase 3: Systematic Fund Diversion (2025-06-30)
 - **Multi-account coordination** involving multiple financial institutions
 - **Complex transaction structuring** designed to obscure criminal activity
 - **Network coordination** involving multiple perpetrators and entities
 
-### Phase 4: Financial Control Seizure (July 12, 2025)
+### Phase 4: Financial Control Seizure (2025-07-12)
 - **Banking system manipulation** through unauthorized access and control
 - **Legitimate operation disruption** affecting business continuity
 - **Financial authority abuse** violating banking agreements and regulations
 
-### Phase 5: Evidence Concealment (August 20, 2025)
+### Phase 5: Evidence Concealment (2025-08-20)
 - **Financial record destruction** attempting to eliminate crime evidence
 - **Transaction history manipulation** concealing unauthorized activities
 - **Systematic cover-up operations** demonstrating consciousness of guilt

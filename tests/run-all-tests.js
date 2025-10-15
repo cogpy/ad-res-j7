@@ -8,6 +8,7 @@ const WorkflowIntegrationTest = require('./integration-test.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const DateValidationTest = require('./date-validation.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -19,6 +20,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      dateValidation: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -119,24 +121,44 @@ class TestRunner {
     return success;
   }
 
+  async runDateValidationTests() {
+    console.log('\n📋 Running Date Validation Tests...\n');
+    
+    const dateValidationTest = new DateValidationTest();
+    const success = dateValidationTest.runAllTests();
+    
+    this.results.dateValidation = {
+      success: success,
+      total: dateValidationTest.testResults.length,
+      passed: dateValidationTest.testResults.filter(t => t.passed).length,
+      failed: dateValidationTest.testResults.filter(t => !t.passed).length,
+      errors: dateValidationTest.errors
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total;
+                                       this.results.endToEnd.total + 
+                                       this.results.dateValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed;
+                                        this.results.endToEnd.passed + 
+                                        this.results.dateValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed;
+                                        this.results.endToEnd.failed + 
+                                        this.results.dateValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -227,6 +249,14 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.dateValidation.errors.length > 0) {
+        console.log('   Date Validation Test Failures:');
+        this.results.dateValidation.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -247,7 +277,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'date-validation']
       },
       summary: this.results.overall
     });
@@ -266,6 +296,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const dateValidationSuccess = await this.runDateValidationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -277,7 +308,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && dateValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
