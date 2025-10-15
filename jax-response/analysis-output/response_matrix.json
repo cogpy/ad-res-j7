@@ -1,0 +1,132 @@
+[
+  {
+    "ad_para": "7.2-7.5",
+    "priority": "Critical",
+    "topic": "IT Expenses",
+    "draft_section": "Section 3",
+    "annexures": ["JF5", "JF5A-I"],
+    "cross_refs": [
+      {
+        "document": "Faucitt_Interdict_Analysis.md",
+        "pages": "p.9-29",
+        "description": "Strengths/weaknesses analysis with counter-evidence"
+      },
+      {
+        "document": "comprehensive_reference_index.json",
+        "reference": "AD PARA 7.2-7.5",
+        "description": "Complete AD paragraph mapping with action items"
+      }
+    ],
+    "evidence_trail": {
+      "peters_claim": "R8.8M+ in questionable IT expenses",
+      "factual_rebuttal": "Legitimate business expenses for 37-jurisdiction regulatory compliance",
+      "counter_evidence": ["JF5: IT infrastructure documentation", "JF5A-I: Invoice substantiation"],
+      "strategic_implications": "Undermines Peter's characterization of legitimate expenses as misconduct",
+      "supporting_analysis": "REVISED_Answering_Affidavit_Jax_v5.md §7.2-7.5"
+    }
+  },
+  {
+    "ad_para": "7.6",
+    "priority": "Critical", 
+    "topic": "R500K Payment",
+    "draft_section": "Section 4",
+    "annexures": ["JF7", "JF7A-E"],
+    "cross_refs": [
+      {
+        "document": "comprehensive_reference_index.json",
+        "reference": "AD PARA 7.6",
+        "description": "Complete AD paragraph mapping with action items"
+      },
+      {
+        "document": "RWD_REVENUE_INTEGRITY_ANALYSIS.md",
+        "pages": "full document",
+        "description": "Revenue integrity and trust distribution analysis"
+      }
+    ],
+    "evidence_trail": {
+      "peters_claim": "Unauthorized R500,000 payment to Jax",
+      "factual_rebuttal": "Trust distribution in context of RWD revenue integrity questions",
+      "counter_evidence": ["JF7: Trust documentation", "JF7A-E: Revenue integrity analysis"],
+      "strategic_implications": "Exposes Peter's failure to address systematic non-payment to distributor",
+      "supporting_analysis": "REVISED_Answering_Affidavit_Jax_v5.md §7.6"
+    }
+  },
+  {
+    "ad_para": "3-3.10",
+    "priority": "High",
+    "topic": "Jax's Role",
+    "draft_section": "NEW SECTION",
+    "annexures": ["JF9", "JF9A-E"],
+    "cross_refs": [
+      {
+        "document": "REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "reference": "§13B",
+        "description": "Most current affidavit version with role clarification"
+      },
+      {
+        "document": "comprehensive_reference_index.json",
+        "reference": "AD PARA 3-3.10", 
+        "description": "Complete AD paragraph mapping with action items"
+      }
+    ],
+    "evidence_trail": {
+      "peters_claim": "Jax exceeded authorized role in business operations",
+      "factual_rebuttal": "Legally designated Responsible Person role requires system access",
+      "counter_evidence": ["JF9: EU Regulation 1223/2009 designation", "JF9A-E: Compliance requirements"],
+      "strategic_implications": "Demonstrates Peter's interdict creates immediate compliance crisis",
+      "supporting_analysis": "REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md §13B"
+    }
+  },
+  {
+    "ad_para": "7.12-7.13",
+    "priority": "High",
+    "topic": "Accountant Concerns", 
+    "draft_section": "Section 5",
+    "annexures": ["JF10", "JF10A-C"],
+    "cross_refs": [
+      {
+        "document": "Affidavit_Amendment_Recommendations.md",
+        "pages": "Amendment 2",
+        "description": "Strategic guidance on accountant role characterization"
+      },
+      {
+        "document": "comprehensive_reference_index.json",
+        "reference": "AD PARA 7.12-7.13",
+        "description": "Complete AD paragraph mapping with action items"
+      }
+    ],
+    "evidence_trail": {
+      "peters_claim": "Accountant identified suspicious discrepancies",
+      "factual_rebuttal": "Routine tax preparation documentation requests, not forensic findings",
+      "counter_evidence": ["JF10: Accountant correspondence", "JF10A-C: Tax preparation context"],
+      "strategic_implications": "Undermines Peter's characterization of routine requests as evidence of misconduct",
+      "supporting_analysis": "REVISED_Answering_Affidavit_Jax_v5.md §7.12-7.13"
+    }
+  },
+  {
+    "ad_para": "8-8.3",
+    "priority": "High",
+    "topic": "Peter's Discovery and Timing",
+    "draft_section": "Section 6",
+    "annexures": ["JF11", "JF11A-D"],
+    "cross_refs": [
+      {
+        "document": "Faucitt_Interdict_Analysis.md", 
+        "pages": "p.30-45",
+        "description": "Timing analysis and urgency assessment"
+      },
+      {
+        "document": "comprehensive_reference_index.json",
+        "reference": "AD PARA 8-8.3",
+        "description": "Complete AD paragraph mapping with action items"
+      }
+    ],
+    "evidence_trail": {
+      "peters_claim": "Recent discovery of financial irregularities requiring urgent relief",
+      "factual_rebuttal": "Strategic timing post-settlement, pre-payout with no genuine urgency",
+      "counter_evidence": ["JF11: Timeline documentation", "JF11A-D: Settlement timing analysis"],
+      "strategic_implications": "Demonstrates lack of genuine urgency and strategic manipulation",
+      "supporting_analysis": "REVISED_Answering_Affidavit_Jax_v5.md §8-8.3"
+    }
+  }
+]

@@ -1,0 +1,350 @@
+# Comprehensive Workflow Monitoring and Alerting System
+# Monitors all workflows for failures and provides centralized alerting
+
+name: Workflow Monitoring and Alerting
+
+on:
+  # Run after any workflow completes to monitor for failures
+  workflow_run:
+    workflows: ["Todo to Issues Generator", "File Representations and Conversions", "Automated Testing Pipeline"]
+    types: [completed]
+  
+  # Run on schedule for periodic health checks
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  
+  # Allow manual trigger for on-demand monitoring
+  workflow_dispatch:
+    inputs:
+      analysis_period_hours:
+        description: 'Hours to analyze for failure patterns (default: 24)'
+        required: false
+        default: '24'
+        type: string
+
+jobs:
+  monitor-workflows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+      checks: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Analyze workflow health
+        id: analyze
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const analysisPeriodHours = parseInt('${{ github.event.inputs.analysis_period_hours }}') || 24;
+            const cutoffTime = new Date(Date.now() - analysisPeriodHours * 60 * 60 * 1000);
+            
+            console.log(`Analyzing workflow health for the last ${analysisPeriodHours} hours (since ${cutoffTime.toISOString()})`);
+            
+            // Define workflows to monitor
+            const monitoredWorkflows = [
+              'todo-to-issues.yml',
+              'file-representations.yml', 
+              'test-workflows.yml'
+            ];
+            
+            const workflowHealth = {};
+            const criticalFailures = [];
+            
+            for (const workflowFile of monitoredWorkflows) {
+              try {
+                console.log(`\nAnalyzing ${workflowFile}...`);
+                
+                const runs = await github.rest.actions.listWorkflowRuns({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  workflow_id: workflowFile,
+                  per_page: 50,
+                  created: `>=${cutoffTime.toISOString()}`
+                });
+                
+                const recentRuns = runs.data.workflow_runs;
+                const totalRuns = recentRuns.length;
+                const failedRuns = recentRuns.filter(run => 
+                  run.conclusion === 'failure' || run.conclusion === 'cancelled'
+                );
+                const successfulRuns = recentRuns.filter(run => run.conclusion === 'success');
+                
+                const failureRate = totalRuns > 0 ? (failedRuns.length / totalRuns) * 100 : 0;
+                
+                workflowHealth[workflowFile] = {
+                  totalRuns,
+                  successfulRuns: successfulRuns.length,
+                  failedRuns: failedRuns.length,
+                  failureRate: parseFloat(failureRate.toFixed(1)),
+                  status: failureRate > 50 ? 'critical' : failureRate > 20 ? 'warning' : 'healthy',
+                  lastRun: recentRuns.length > 0 ? recentRuns[0] : null,
+                  recentFailures: failedRuns.slice(0, 3)
+                };
+                
+                console.log(`  Results: ${successfulRuns.length}/${totalRuns} successful (${(100-failureRate).toFixed(1)}% success rate)`);
+                
+                // Identify critical failures (>50% failure rate and at least 2 failures)
+                if (failureRate > 50 && failedRuns.length >= 2) {
+                  criticalFailures.push({
+                    workflow: workflowFile,
+                    failureRate,
+                    failedRuns: failedRuns.length,
+                    totalRuns,
+                    recentFailures: failedRuns.slice(0, 3)
+                  });
+                }
+                
+              } catch (error) {
+                console.error(`Error analyzing ${workflowFile}: ${error.message}`);
+                workflowHealth[workflowFile] = {
+                  error: error.message,
+                  status: 'error'
+                };
+              }
+            }
+            
+            // Store results for next step
+            core.setOutput('workflow_health', JSON.stringify(workflowHealth));
+            core.setOutput('critical_failures', JSON.stringify(criticalFailures));
+            core.setOutput('analysis_period', analysisPeriodHours.toString());
+            
+            console.log('\n=== Workflow Health Summary ===');
+            for (const [workflow, health] of Object.entries(workflowHealth)) {
+              console.log(`${workflow}: ${health.status} (${health.failureRate || 'N/A'}% failure rate)`);
+            }
+            
+            return workflowHealth;
+
+      - name: Generate monitoring report
+        run: |
+          echo "=== Workflow Monitoring Report ===" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 **Analysis Period**: Last ${{ steps.analyze.outputs.analysis_period }} hours" >> $GITHUB_STEP_SUMMARY
+          echo "🕐 **Generated**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Parse workflow health JSON and create summary
+          echo '${{ steps.analyze.outputs.workflow_health }}' | jq -r '
+            to_entries[] | 
+            "### " + (.key | gsub("\\.yml"; "")) + "\n" +
+            "- **Status**: " + (.value.status // "unknown") + "\n" +
+            "- **Runs**: " + (.value.totalRuns // 0 | tostring) + "\n" +
+            "- **Success Rate**: " + ((100 - (.value.failureRate // 0)) | tostring) + "%\n" +
+            "- **Failures**: " + (.value.failedRuns // 0 | tostring) + "\n" +
+            ""
+          ' >> $GITHUB_STEP_SUMMARY
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🎯 **Overall System Health**: " >> $GITHUB_STEP_SUMMARY
+          
+          # Determine overall health status
+          critical_count=$(echo '${{ steps.analyze.outputs.critical_failures }}' | jq '. | length')
+          
+          if [ "$critical_count" -gt 0 ]; then
+            echo "🚨 **CRITICAL** - $critical_count workflow(s) in critical state" >> $GITHUB_STEP_SUMMARY
+          else
+            warning_count=$(echo '${{ steps.analyze.outputs.workflow_health }}' | jq '[.[] | select(.status == "warning")] | length')
+            if [ "$warning_count" -gt 0 ]; then
+              echo "⚠️ **WARNING** - $warning_count workflow(s) showing elevated failure rates" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "✅ **HEALTHY** - All workflows operating normally" >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+
+      - name: Alert on critical failures
+        if: steps.analyze.outputs.critical_failures != '[]'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const criticalFailures = JSON.parse('${{ steps.analyze.outputs.critical_failures }}');
+            const analysisPeriod = '${{ steps.analyze.outputs.analysis_period }}';
+            
+            if (criticalFailures.length === 0) {
+              console.log('No critical failures detected');
+              return;
+            }
+            
+            console.log(`Found ${criticalFailures.length} workflows in critical state`);
+            
+            // Generate comprehensive alert issue
+            const issueTitle = `🚨 Critical Workflow Failures Detected - ${new Date().toISOString().split('T')[0]}`;
+            
+            let failureDetails = '';
+            for (const failure of criticalFailures) {
+              const workflowName = failure.workflow.replace('.yml', '').replace(/-/g, ' ');
+              failureDetails += `
+            ### ${workflowName}
+            - **Failure Rate**: ${failure.failureRate}%
+            - **Failed Runs**: ${failure.failedRuns}/${failure.totalRuns}
+            - **Status**: CRITICAL
+            
+            **Recent Failures**:
+            ${failure.recentFailures.map(run => 
+              `- [Run ${run.run_number}](${run.html_url}) - ${run.conclusion} (${new Date(run.created_at).toLocaleString()})`
+            ).join('\n')}
+            `;
+            }
+            
+            const issueBody = `## 🚨 Multiple Workflow Critical Failures
+            
+            **${criticalFailures.length} workflow(s)** have exceeded the critical failure threshold (>50% failure rate) in the last ${analysisPeriod} hours.
+            
+            ${failureDetails}
+            
+            ## Impact Assessment
+            
+            ### System-Wide Impact
+            - 🚨 **Severity**: CRITICAL
+            - 🔄 **Affected Workflows**: ${criticalFailures.length}/${Object.keys(JSON.parse('${{ steps.analyze.outputs.workflow_health }}')).length}
+            - ⚠️ **Risk Level**: HIGH - Core repository automation is compromised
+            
+            ### Immediate Consequences
+            - **Todo Processing**: May fail to convert tasks to issues
+            - **File Management**: Automated file conversions may not work  
+            - **Quality Assurance**: Testing pipeline may be unreliable
+            - **Repository Health**: Overall automation system integrity is at risk
+            
+            ## Urgent Action Plan
+            
+            ### Immediate (Next 2 Hours)
+            1. 🔍 **Triage**: Identify if failures share common root causes
+            2. 🚨 **Emergency Fix**: Address any obvious infrastructure issues
+            3. 📞 **Escalate**: Notify repository maintainers immediately
+            4. 🛑 **Consider**: Temporary manual processes for critical functions
+            
+            ### Short Term (Next 24 Hours)  
+            1. 🔧 **Root Cause**: Deep dive analysis of failure patterns
+            2. 🧪 **Testing**: Comprehensive validation of fixes
+            3. 📊 **Monitoring**: Enhanced monitoring during recovery
+            4. 📋 **Documentation**: Update incident response procedures
+            
+            ### Recovery Validation
+            - [ ] All workflows show <20% failure rate for 24 hours
+            - [ ] Manual testing confirms functionality restoration
+            - [ ] Monitoring systems show stable operation
+            - [ ] Root cause analysis completed and documented
+            
+            ## Monitoring Information
+            - **Detection Time**: ${new Date().toISOString()}
+            - **Analysis Period**: Last ${analysisPeriod} hours
+            - **Alert Severity**: CRITICAL
+            - **Auto-Generated**: Yes
+            
+            ---
+            
+            **⚡ This is an automatically generated CRITICAL alert. Immediate attention required.**
+            `;
+            
+            // Check for existing critical alerts
+            const existingAlerts = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-critical-failure'],
+              per_page: 3
+            });
+            
+            const recentAlert = existingAlerts.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 12; // Only check last 12 hours for critical alerts
+            });
+            
+            if (!recentAlert) {
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['workflow-critical-failure', 'infrastructure', 'priority: critical', 'bug']
+              });
+              
+              console.log(`🚨 Created critical failure alert: ${newIssue.data.html_url}`);
+              
+              // Also add to project or assign if configured
+              // This could be extended to send Slack notifications, etc.
+              
+            } else {
+              console.log(`Critical alert already exists (${recentAlert.html_url}), adding update comment`);
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentAlert.number,
+                body: `## 🔄 Critical Failure Pattern Continues
+                
+                **Update**: ${new Date().toISOString()}
+                
+                The critical failure pattern persists with **${criticalFailures.length} workflows** still in critical state:
+                
+                ${criticalFailures.map(f => `- **${f.workflow}**: ${f.failureRate}% failure rate`).join('\n')}
+                
+                **This indicates the issue has not been resolved and requires continued urgent attention.**`
+              });
+            }
+
+      - name: Update workflow health metrics
+        if: always()
+        run: |
+          # Create/update workflow health tracking
+          mkdir -p .github/workflow-health
+          
+          # Store detailed health metrics
+          echo '${{ steps.analyze.outputs.workflow_health }}' | jq '.' > .github/workflow-health/current-health.json
+          
+          # Store historical data point
+          echo '{
+            "timestamp": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",
+            "analysis_period_hours": ${{ steps.analyze.outputs.analysis_period }},
+            "health": ${{ steps.analyze.outputs.workflow_health }},
+            "critical_failures": ${{ steps.analyze.outputs.critical_failures }}
+          }' > .github/workflow-health/latest-analysis.json
+          
+          # Update simple status indicators
+          critical_count=$(echo '${{ steps.analyze.outputs.critical_failures }}' | jq '. | length')
+          
+          if [ "$critical_count" -gt 0 ]; then
+            echo "critical" > .github/workflow-health/overall-status.txt
+          else
+            warning_count=$(echo '${{ steps.analyze.outputs.workflow_health }}' | jq '[.[] | select(.status == "warning")] | length')
+            if [ "$warning_count" -gt 0 ]; then
+              echo "warning" > .github/workflow-health/overall-status.txt
+            else
+              echo "healthy" > .github/workflow-health/overall-status.txt
+            fi
+          fi
+          
+          echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC")" > .github/workflow-health/last-check.txt
+          
+          echo "📊 Workflow health metrics updated:"
+          echo "  Overall Status: $(cat .github/workflow-health/overall-status.txt)"
+          echo "  Critical Failures: $critical_count"
+          echo "  Last Check: $(cat .github/workflow-health/last-check.txt)"
+
+      - name: Cleanup and summary
+        if: always()
+        run: |
+          echo "🎯 Workflow monitoring cycle completed"
+          echo "📊 Health data stored in .github/workflow-health/"
+          echo "⚡ Next scheduled check in 6 hours"
+          
+          # Log summary statistics
+          if [ -f ".github/workflow-health/current-health.json" ]; then
+            echo ""
+            echo "=== Quick Health Summary ==="
+            
+            for workflow in "todo-to-issues.yml" "file-representations.yml" "test-workflows.yml"; do
+              status=$(jq -r --arg w "$workflow" '.[$w].status // "unknown"' .github/workflow-health/current-health.json)
+              rate=$(jq -r --arg w "$workflow" '.[$w].failureRate // 0' .github/workflow-health/current-health.json)
+              echo "  ${workflow}: ${status} (${rate}% failure rate)"
+            done
+          fi

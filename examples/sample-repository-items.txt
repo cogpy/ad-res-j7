@@ -1,0 +1,38 @@
+# Sample Repository Items for Testing
+
+## Legal and Case-Related Items
+
+[Disproportionate Relief: Interdict creates more harm than alleged misconduct](https://github.com/cogpy/ad-res-j7/issues/278) #278
+[Peter's Causation: His unilateral actions created the problems he complains about](https://github.com/cogpy/ad-res-j7/issues/272) #272
+[JF8A: Detailed log of all documentation provided to Peter](https://github.com/cogpy/ad-res-j7/issues/268) #268
+
+## Financial Analysis Items
+
+Include comprehensive financial analysis showing profitable operations #80
+Provide detailed director loan account balances showing companies owe directors #59
+Show payment was entirely within established business norms #67
+
+## Evidence and Documentation
+
+[JF3A: Additional email forensics showing pattern of impersonation](https://github.com/cogpy/ad-res-j7/issues/261) #261
+Demonstrate legitimacy of payment against loan account credit #63
+Add external validation (accountant letters, SARS compliance, bank relationships) #85
+
+## Technical and Testing Items  
+
+[Test basic workflow functionality with this simple task](https://github.com/cogpy/ad-res-j7/issues/276) #276
+[Add monitoring and alerting for workflow failures](https://github.com/cogpy/ad-res-j7/issues/249) #249
+[Implement automated testing pipeline for continuous validation](https://github.com/cogpy/ad-res-j7/issues/242) #242
+[Create comprehensive test suite for all workflow functionality](https://github.com/cogpy/ad-res-j7/issues/237) #237
+
+## Analysis and Timeline Items
+
+81 Demonstrate Peter's bad faith through timeline analysis #81
+77 Create point-by-point rebuttal matrix for each sub-allegation #76
+45 Demonstrate timing correlation with settlement negotiations (pretext evidence) #45
+
+## Mixed Format Examples
+
+1. Highlight sudden objection as inconsistent with established practice
+2. Demonstrate Peter's participation in this informal model  
+3. Include accounting records showing proper allocation to director loan account

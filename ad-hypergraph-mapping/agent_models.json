@@ -1,0 +1,102 @@
+{
+  "bantjies": {
+    "name": "Daniel Jacobus Bantjies",
+    "type": "CentralOrchestrator",
+    "centrality": 1.0,
+    "roles": [
+      "trustee",
+      "authority",
+      "accountant"
+    ],
+    "motivations": [
+      "r18m_extraction",
+      "oversight_suppression",
+      "whistleblower_neutralization"
+    ],
+    "behavioral_patterns": {
+      "coordination_signals": 0.95,
+      "strategic_abandonment": 0.89,
+      "material_concealment": 0.92,
+      "process_manipulation": 0.87
+    },
+    "attention_weights": {
+      "financial_control": 0.95,
+      "trust_governance": 0.92,
+      "peter_manipulation": 0.89,
+      "daniel_suppression": 0.87,
+      "r18m_motivation": 1.0
+    }
+  },
+  "peter": {
+    "name": "Peter Andrew Faucitt",
+    "type": "ManipulatedPuppet",
+    "centrality": 0.14705882352941177,
+    "roles": [
+      "applicant",
+      "public_face"
+    ],
+    "motivations": [
+      "external_control",
+      "crisis_response"
+    ],
+    "behavioral_patterns": {
+      "uncertainty_indicators": 0.75,
+      "immediate_response": 0.84,
+      "process_bypassing": 0.78,
+      "public_performance": 0.82
+    },
+    "attention_weights": {
+      "bantjies_signals": 0.89,
+      "legal_actions": 0.75,
+      "crisis_manufacturing": 0.72,
+      "accountability_avoidance": 0.68
+    }
+  },
+  "rynette": {
+    "name": "Rynette Farrar",
+    "type": "RevenueCoordinator",
+    "centrality": 0.45882352941176474,
+    "roles": [
+      "coordinator",
+      "revenue_hijacker"
+    ],
+    "motivations": [
+      "revenue_extraction",
+      "family_conspiracy"
+    ],
+    "behavioral_patterns": {},
+    "attention_weights": {}
+  },
+  "daniel": {
+    "name": "Daniel James Faucitt",
+    "type": "MarginalizedWhistleblower",
+    "centrality": -0.1470588235294118,
+    "roles": [
+      "beneficiary",
+      "whistleblower"
+    ],
+    "motivations": [
+      "fraud_reporting",
+      "proper_oversight"
+    ],
+    "behavioral_patterns": {
+      "systematic_marginalization": 0.82,
+      "proper_process_following": 0.89
+    },
+    "attention_weights": {}
+  },
+  "jacqui": {
+    "name": "Jacqueline Faucitt",
+    "type": "SignatureAuthority",
+    "centrality": 0.36470588235294116,
+    "roles": [
+      "respondent",
+      "bypass_facilitator"
+    ],
+    "motivations": [
+      "coordination_compliance"
+    ],
+    "behavioral_patterns": {},
+    "attention_weights": {}
+  }
+}

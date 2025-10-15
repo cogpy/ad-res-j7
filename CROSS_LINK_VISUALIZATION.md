@@ -106,6 +106,12 @@ gantt
 | **Documentation** |
 | Doc Hub | ✅ New | ✅ Existing | ✅ New | ✅ New |
 | Feature Index | ✅ New | ✅ Existing | ✅ New | ✅ New |
+| **Case Organization (NEW)** |
+| Civil/Criminal Separation | ✅ New | ✅ Existing (Oct 2025) | ✅ New | ✅ New |
+| Forensic Analysis | ✅ New | ✅ Existing (Oct 2025) | ✅ New | ✅ New |
+| **Legal Frameworks (NEW)** |
+| SA Law Library | ✅ New | ✅ New | ✅ Existing (Oct 2025) | ✅ New |
+| Legal Reasoning | ✅ New | ✅ New | ✅ Existing (Oct 2025) | ✅ New |
 
 ## Improvement Impact Analysis
 

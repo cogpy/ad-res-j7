@@ -61,17 +61,45 @@ Peter's allegations about a R500,000 payment ignore fundamental questions about 
 - [x] Payment obligations analysis - See: RWD_REVENUE_INTEGRITY_ANALYSIS.md (Section 5)
 - [x] Trust structure comparison - See: RWD_REVENUE_INTEGRITY_ANALYSIS.md (Section 1)
 
-### Cross-References:
+### Evidence Required
+- Trust documentation and correspondence (JF7)
+- RWD revenue flow analysis (JF7A)
+- Bank records showing payment context (JF7B)
+- Legal opinions on trust distributions (JF7C)
+- Comparative analysis of Peter's own receipts (JF7D)
+- Platform funding documentation (JF7E)
+
+### Systematic Cross-References
+
+#### Primary Analysis Documents
+- **comprehensive_reference_index.json** → "AD PARAGRAPH 7.6" → Action items and current response gaps
+- **RWD_REVENUE_INTEGRITY_ANALYSIS.md** → Full document → Revenue legitimacy questions
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md** → Section 7.6 → Current response framework
+
+#### Evidence Trail Documentation
+1. **Peter's Claim:** Unauthorized R500,000 payment to Jax constitutes financial misconduct
+2. **Factual Rebuttal:** Payment must be evaluated as potential trust distribution in context of RWD revenue integrity questions
+3. **Counter-Evidence:** 
+   - JF7: Trust documentation showing distribution authority
+   - JF7A-E: RWD revenue integrity analysis and platform funding
+4. **Strategic Implications:** 
+   - Exposes Peter's failure to address systematic non-payment to distributor
+   - Questions legitimacy of RWD revenue before characterizing distributions as unauthorized
+   - Demonstrates Peter applies different standards to similar payments
+5. **Supporting Analysis:** 
+   - Affidavit_Amendment_Recommendations.md Amendment 1
+   - Faucitt_Interdict_Analysis.md (Peter's inconsistent conduct analysis)
+
+#### Traditional Cross-References
 - See: **RWD_REVENUE_INTEGRITY_ANALYSIS.md** (comprehensive revenue integrity analysis)
 - See: **PARA_10_5-10_10_23.md** (systematic financial allegations)
 - See: PARA_7_7-7_8.md (payment details)
 - See: PARA_7_9-7_11.md (payment justification)
-- See: comprehensive_reference_index.json
-- See: Faucitt_Interdict_Analysis.md
-- See: REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md
 
 ---
 
-*Priority Rating: 1/5*  
-*Status: Response framework completed with revenue integrity context*  
-*Last Updated: 2025-10-14*
+*Priority Rating: 1/5 - Critical*  
+*Response Matrix: Section 4 (R500K Payment)*  
+*Annexures: JF7, JF7A-E*  
+*Status: Enhanced with systematic cross-referencing*  
+*Last Updated: 2025-10-15*

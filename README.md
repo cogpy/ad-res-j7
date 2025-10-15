@@ -32,6 +32,29 @@ To understand the case, it is recommended to start with the following documents:
 1.  **Court Application:** `case_2025_137857/01_court_documents/KF0019-SecondApplication-03.10.2025.pdf`
 2.  **Draft Response:** `jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`
 3.  **Affidavit Analysis Summary:** `affidavit_work/analysis/Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx`
+4.  **NEW: Comprehensive Timeline Analysis:** `affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Demonstrates Peter's bad faith through strategic coordination
+
+## Recent Updates
+
+### Comprehensive Timeline Analysis (October 15, 2025)
+
+A complete timeline analysis package demonstrating Peter Faucitt's bad faith through strategic coordination:
+
+- **25+ key timeline events** showing months-long planning and coordination
+- **Visual diagrams** using Mermaid for court presentations
+- **Six critical insights** including:
+  - 2-month delay contradicting urgency claims
+  - 8-day gap between settlement and interdict (strategic timing)
+  - Self-created crisis (cards cancelled day after reports provided)
+  - Information manipulation through Rynette's email control
+  - 65-day Bantjies perjury timeline
+  - 9-month financial target (investment payout)
+
+**Location:** `affidavit_work/analysis/` directory contains:
+- `COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Main analysis
+- `TIMELINE_VISUAL_DIAGRAM.md` - Mermaid diagrams for exhibits
+- `TIMELINE_QUICK_REFERENCE.md` - Quick reference for court preparation
+- `README.md` - Complete documentation
 
 This repository is an ongoing project and will be updated as more information becomes available.
 
@@ -60,4 +83,25 @@ npm run test:integration   # Functional tests
 ```
 
 For detailed information about the automated testing pipeline, see [Automated Testing Pipeline Documentation](docs/AUTOMATED_TESTING_PIPELINE.md).
+
+## Cross-Repository Integration
+
+This repository is part of a suite of related legal analysis repositories. We maintain cross-link analysis to share improvements and features:
+
+### Related Repositories
+- **[analysss](https://github.com/EchoCog/analysss)** - Criminal case timeline & evidence analysis with HyperGNN framework
+- **[analyticase](https://github.com/rzonedevops/analyticase)** - Legal case analysis with GGMLEX ML framework and ZA judiciary integration
+- **[avtomaatoctory](https://github.com/rzonedevops/avtomaatoctory)** - Analysis repository with evidence automation
+
+### Cross-Link Documentation
+- **[Cross-Link Summary](CROSS_LINK_SUMMARY.md)** - Quick overview of cross-repository opportunities and priorities
+- **[Detailed Cross-Link Analysis](REPOSITORY_CROSS_LINK_ANALYSIS.md)** - Comprehensive analysis of features and improvements
+- **[Cross-Link Visualization](CROSS_LINK_VISUALIZATION.md)** - Visual feature flow and implementation timeline
+
+### Recent Updates (October 2025)
+- ✅ **Civil/Criminal Case Separation**: New framework from analysss for proper legal forum handling
+- ✅ **Legal Framework Library**: South African law frameworks in machine-readable format from analyticase
+- ✅ **Implementation Guides**: Added guides for workflow testing, documentation hubs, Docker deployment, and more
+
+See [CROSS_LINK_SUMMARY.md](CROSS_LINK_SUMMARY.md) for actionable next steps and priority features.
 

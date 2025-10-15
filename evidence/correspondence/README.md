@@ -4,7 +4,14 @@ This directory contains correspondence and documentation logs related to Case 20
 
 ## Key Documents
 
-### JF8A_DOCUMENTATION_LOG.md
+### JF8 Primary Evidence Package
+- **JF8_CORRESPONDENCE_EVIDENCE.md** - Primary correspondence proving cooperation and obstruction
+- **JF8B_EMAIL_COOPERATION_CHAINS.md** - Supplementary email evidence showing cooperation attempts  
+- **JF8C_PETER_REFUSAL_TO_ENGAGE.md** - Evidence of Peter's systematic refusal to engage
+- **JF8D_SYSTEM_ACCESS_RESTRICTIONS.md** - Technical evidence of Peter's deliberate access restrictions
+
+### JF8A Supporting Documentation
+**JF8A_DOCUMENTATION_LOG.md**
 **Purpose:** Comprehensive log of all documentation provided to Peter Faucitt (the Applicant)  
 **Annexure Reference:** JF8A (also referenced as JF-CORR1)  
 **Priority:** CRITICAL - Must Include in Answering Affidavit  
@@ -77,7 +84,11 @@ This directory contains correspondence and documentation logs related to Case 20
 - [ ] JF-CANCEL-DATE (Card cancellation date)
 - [ ] JF-SAL1, JF-EAL1, JF-FSL1 (System access logs)
 
-### Priority 2: HIGH
+### Priority 2: HIGH  
+- [x] **JF8** (Primary correspondence evidence) - ✅ **COMPLETE**
+- [x] **JF8B** (Supplementary email cooperation chains) - ✅ **COMPLETE** 
+- [x] **JF8C** (Evidence of Peter's refusal to engage) - ✅ **COMPLETE**
+- [x] **JF8D** (System access restriction evidence) - ✅ **COMPLETE**
 - [ ] JF-CORR1 (Complete email chain)
 - [ ] JF-NO-WARN (No warning before cancellations)
 - [ ] JF-DISRUPT (Operational disruption evidence)
