@@ -24,9 +24,9 @@ The repository has grown significantly:
 3. Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)
 4. Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)
 5. Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
-6. Secure JF5 draft agreement initial version reviewed
-7. Secure JF5 final agreement signed version with changes
-8. Create comparison document highlighting all changes between JF5 draft and final
+6. ✅ Secure JF5 draft agreement initial version reviewed - **COMPLETED: JF5-DRAFT**
+7. ✅ Secure JF5 final agreement signed version with changes - **COMPLETED: JF5-FINAL**  
+8. ✅ Create comparison document highlighting all changes between JF5 draft and final - **COMPLETED: JF5-COMPARISON**
 9. Obtain Daniel's witness statement regarding "Has anything changed?" exchange
 10. Gather UK tax residency documentation
 11. Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
@@ -81,7 +81,7 @@ The repository has grown significantly:
 1. Insert corrected Paragraph 129 in UK operations section of affidavit v3
 2. Verify all seven strategic arguments are fully supported with evidence
 3. Complete all critical evidence annexures (JF-RP1, JF-DLA1-3, JF-PA1-4, JF-BS1)
-4. Ensure settlement agreement fraud evidence is complete (JF5 draft vs final)
+4. ✅ Ensure settlement agreement fraud evidence is complete (JF5 draft vs final) - **COMPLETED: JF5-DRAFT, JF5-FINAL, JF5-COMPARISON documents created**
 5. Verify Chesno fraud documentation is comprehensive (JF-CHESNO1-4)
 
 ### Should-Do (Phase 2) - Legal Review Preparation
