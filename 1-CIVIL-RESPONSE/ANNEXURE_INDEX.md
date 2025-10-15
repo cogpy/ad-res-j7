@@ -33,6 +33,7 @@
 | **JF-IT-COMP** | IT Spend Industry Comparative Analysis | 18 | Proves IT spend (14.7% of revenue) is BELOW industry average (20-30%) for international e-commerce |
 | **JF-SHOPIFY-INFRASTRUCTURE** | Shopify Multi-Portal E-Commerce Infrastructure | 28 | Documents multiple Shopify portals for 37 jurisdictions, R453K expense (Mar-Apr 2025), 7:1 ROI |
 | **JF-DANIEL-BANK** | Daniel's Personal Bank Statement Analysis (May-Oct 2025) | 22 | Refutes R500,000 "gift" allegation - proves direction reversed, business expense funding |
+| **JF-STRATEGIC-LOGISTICS** | Strategic Logistics Transfer Source Analysis | 18 | Clarifies R585K came FROM Strategic Logistics TO Daniel (not gift to Jacqui); refutes Peter's false incorporation claim |
 
 **Legal Impact:** Rebuts Peter's financial mismanagement allegations, demonstrates proper business management
 
@@ -73,9 +74,9 @@
 
 ## SUMMARY STATISTICS
 
-**Total Annexures:** 12 documents  
-**Total Pages:** ~250 pages  
-**Documents Ready:** 10 (83%)  
+**Total Annexures:** 13 documents  
+**Total Pages:** ~268 pages  
+**Documents Ready:** 11 (85%)  
 **Documents Requiring Action:** 2 (20%)
 
 **Actions Required:**
@@ -140,7 +141,8 @@
 10. **JF3A** - Email Forensics Pattern Analysis
 11. **JF-SHOPIFY-INFRASTRUCTURE** - Shopify Multi-Portal Infrastructure
 12. **JF-DANIEL-BANK** - Daniel's Personal Bank Statement Analysis
-13. **JF-REBUTTAL-MATRIX** - Point-by-Point Rebuttal Matrix
+13. **JF-STRATEGIC-LOGISTICS** - Strategic Logistics Transfer Source Analysis
+14. **JF-REBUTTAL-MATRIX** - Point-by-Point Rebuttal Matrix
 
 **Rationale:** Main affidavits first, then supporting evidence organized by legal ground (bad faith, disproportionality, financial management, cooperation, comprehensive rebuttal)
 
