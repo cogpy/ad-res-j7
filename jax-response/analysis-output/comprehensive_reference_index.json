@@ -2,10 +2,33 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 1 TO 1.3",
     "responds_to_founding_paras": "1 TO 1.3",
-    "current_response_preview": "The contents herein are admitted in so far as it relates to the Applicant\u2019s identity number and address.\nI however deny that the facts set out by the Applicant are both true and correct.",
+    "current_response_preview": "The contents herein are admitted in so far as it relates to the Applicant’s identity number and address.\nI however deny that the facts set out by the Applicant are both true and correct.",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788539",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 2 TO 2.4",
@@ -26,7 +49,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788555",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 3 TO 3.10",
@@ -47,7 +95,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788561",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 3.11 TO 3.13",
@@ -55,7 +128,30 @@
     "current_response_preview": "The contents herein are admitted.",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788566",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 4",
@@ -76,7 +172,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788579",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 5",
@@ -97,7 +218,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788588",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 6 TO 6.5",
@@ -118,20 +264,68 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788595",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7 TO 7.1",
     "responds_to_founding_paras": "7 TO 7.1",
-    "current_response_preview": "The contents herein are admitted in so far that Daniel Bantjies (\u201cDaniel\u201d) attended the corporations office for various tax-related admin. Save for the remainder and his confirmatory, I deny its truthfulness thereto.",
+    "current_response_preview": "The contents herein are admitted in so far that Daniel Bantjies (“Daniel”) attended the corporations office for various tax-related admin. Save for the remainder and his confirmatory, I deny its truthfulness thereto.",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788606",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.2 TO 7.5",
     "responds_to_founding_paras": "7.2 TO 7.5",
-    "current_response_preview": "The contents of these paragraphs are denied. The alleged discrepancies and irregular payments referred to by the Applicant are entirely misconstrued and misleading \u2013 same will be discussed below when the Second Respondent\u2019s bank statements. All payments made through the companies\u2019 banking accounts were legitimate business expenses, duly authorised in the ordinary course of operations, and supported by proper documentation and accounting records.\nThe Applicant\u2019s suggestion that these payments wer",
+    "current_response_preview": "The contents of these paragraphs are denied. The alleged discrepancies and irregular payments referred to by the Applicant are entirely misconstrued and misleading – same will be discussed below when the Second Respondent’s bank statements. All payments made through the companies’ banking accounts were legitimate business expenses, duly authorised in the ordinary course of operations, and supported by proper documentation and accounting records.\nThe Applicant’s suggestion that these payments wer",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -161,7 +355,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/1-Critical/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788612",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/1-Critical/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.6",
@@ -184,20 +403,67 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "COUNTER_FARRAR_EXPANSION_CLAIMS",
+      "description": "Challenge systematic expansion of non-director bookkeeper authority",
+      "specific_tasks": [
+        "Document unprecedented access granted to Rynette",
+        "Contrast with exclusion of actual directors",
+        "Show signatory authority without board approval",
+        "Demonstrate risk of unauthorized commitments"
+      ],
+      "evidence_required": [
+        "Rynette's system access logs",
+        "Email signatures and customer communications",
+        "Comparison with director access restrictions",
+        "Bank signatory authority documentation"
+      ],
+      "cross_references": [
+        "jax-response/AD/1-Critical/",
+        "ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788617",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/1-Critical/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.7 TO 7.8",
     "responds_to_founding_paras": "7.7 TO 7.8",
-    "current_response_preview": "it is admitted that certain subscriptions were halted as a result of the Applicant\u2019s unilateral cancellation of the relevant company bank cards. The Second Respondent did not, in any way, shape, or form, adopt a \u201csuperior\u201d position as alleged. On the contrary, he at all times acted cooperatively and in good faith to resolve the operational disruptions caused by the Applicant\u2019s actions, as will be discussed more fully below.",
+    "current_response_preview": "it is admitted that certain subscriptions were halted as a result of the Applicant’s unilateral cancellation of the relevant company bank cards. The Second Respondent did not, in any way, shape, or form, adopt a “superior” position as alleged. On the contrary, he at all times acted cooperatively and in good faith to resolve the operational disruptions caused by the Applicant’s actions, as will be discussed more fully below.",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/1-Critical/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788622",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/1-Critical/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.9 TO 7.11",
     "responds_to_founding_paras": "7.9 TO 7.11",
-    "current_response_preview": "The contents hereof are denied. The annexure referred to as PF7 does not, as alleged, confirm \u201call of the above.\u201d On the contrary, the communications contained therein demonstrate that the Second Respondent and his assistant repeatedly provided the Applicant and his representatives with the necessary information, documentation, and explanations regarding the company\u2019s subscriptions and financial transactions. The Second Respondent further made available his login details and administrative crede",
+    "current_response_preview": "The contents hereof are denied. The annexure referred to as PF7 does not, as alleged, confirm “all of the above.” On the contrary, the communications contained therein demonstrate that the Second Respondent and his assistant repeatedly provided the Applicant and his representatives with the necessary information, documentation, and explanations regarding the company’s subscriptions and financial transactions. The Second Respondent further made available his login details and administrative crede",
     "relevant_updated_content": [
       {
         "theme": "rynette_farrar_expansion",
@@ -215,20 +481,67 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "COUNTER_FARRAR_EXPANSION_CLAIMS",
+      "description": "Challenge systematic expansion of non-director bookkeeper authority",
+      "specific_tasks": [
+        "Document unprecedented access granted to Rynette",
+        "Contrast with exclusion of actual directors",
+        "Show signatory authority without board approval",
+        "Demonstrate risk of unauthorized commitments"
+      ],
+      "evidence_required": [
+        "Rynette's system access logs",
+        "Email signatures and customer communications",
+        "Comparison with director access restrictions",
+        "Bank signatory authority documentation"
+      ],
+      "cross_references": [
+        "jax-response/AD/1-Critical/",
+        "ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788631",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/1-Critical/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.12 TO 7.13",
     "responds_to_founding_paras": "7.12 TO 7.13",
-    "current_response_preview": "The contents hereof are denied. It is evident from PF7 that the Second Respondent engaged appropriately and transparently with staff members and did nothing improper. The Applicant\u2019s own version, when read together with the annexure, undermines his allegations. The Second Respondent provided the relevant documents, spreadsheets, and login credentials to ensure that the Applicant and his representatives had full access to the company\u2019s accounts and records.\nIt is false and misleading to allege th",
+    "current_response_preview": "The contents hereof are denied. It is evident from PF7 that the Second Respondent engaged appropriately and transparently with staff members and did nothing improper. The Applicant’s own version, when read together with the annexure, undermines his allegations. The Second Respondent provided the relevant documents, spreadsheets, and login credentials to ensure that the Applicant and his representatives had full access to the company’s accounts and records.\nIt is false and misleading to allege th",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788637",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.14 TO 7.15",
     "responds_to_founding_paras": "7.14 TO 7.15",
-    "current_response_preview": "The contents herein are denied. The alleged \u201cinterference\u201d did not continue as the Second Respondent fully complied with all requests made of him. Any suggestion that his transparency was not in the interests of the corporations is both illogical and ironic, as the Second Respondent provided all information, documents, and access credentials when requested. His conduct was consistent, cooperative, and entirely aligned with the proper administration of the entities.",
+    "current_response_preview": "The contents herein are denied. The alleged “interference” did not continue as the Second Respondent fully complied with all requests made of him. Any suggestion that his transparency was not in the interests of the corporations is both illogical and ironic, as the Second Respondent provided all information, documents, and access credentials when requested. His conduct was consistent, cooperative, and entirely aligned with the proper administration of the entities.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -244,7 +557,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788642",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.16 TO 7.17",
@@ -252,12 +590,35 @@
     "current_response_preview": "It is admitted that I approached the Seventh and Eighth Respondents to obtain replacement bank cards, as I had no knowledge or understanding of the reasons why the existing cards had been cancelled. It appeared to me to be a routine administrative step to request new cards once the previous ones were deactivated, and at no point was I made aware that any issue or allegation existed regarding the said accounts or their operation.\nIt is, however, categorically denied that any transactions or relat",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788648",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 7.18 TO 7.20",
     "responds_to_founding_paras": "7.18 TO 7.20",
-    "current_response_preview": "The contents herein are vehemently denied. I did not adopt any \u201cI will show you\u201d approach as alleged by the Applicant. The Applicant was in fact approached jointly by myself and the Second Respondent regarding a director\u2019s loan which the Second Respondent had requested. The payment of R500 000 was accordingly made as part of this director\u2019s loan, not as a personal \u201cbirthday gift.\u201d\nThe reference to a \u201cbirthday gift\u201d in the transaction description was merely a convenient label for ease of referenc",
+    "current_response_preview": "The contents herein are vehemently denied. I did not adopt any “I will show you” approach as alleged by the Applicant. The Applicant was in fact approached jointly by myself and the Second Respondent regarding a director’s loan which the Second Respondent had requested. The payment of R500 000 was accordingly made as part of this director’s loan, not as a personal “birthday gift.”\nThe reference to a “birthday gift” in the transaction description was merely a convenient label for ease of referenc",
     "relevant_updated_content": [
       {
         "theme": "director_loan_accounts",
@@ -287,12 +648,36 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "STRENGTHEN_DIRECTOR_LOAN_DEFENSE",
+      "description": "Reinforce established practice of director loan accounts with historical context",
+      "specific_tasks": [
+        "Document multi-million rand credit balances",
+        "Demonstrate Peter's participation in same practice",
+        "Show bank statement allocations to corresponding accounts",
+        "Prove formal resolutions were never required historically"
+      ],
+      "evidence_required": [
+        "Historical loan account statements",
+        "Bank feeds showing allocations",
+        "Evidence of Peter's similar transactions",
+        "Documentation of informal governance model"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "Updated_Corrections_-_Reflecting_Actual_Business_Practices.docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788655",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8 TO 8.3",
     "responds_to_founding_paras": "8 TO 8.3",
-    "current_response_preview": "The contents hereof are denied. When examining annexures PF9 and PF10, it is clear that the payments reflected therein relate to legitimate and bona fide business expenses incurred in the ordinary and lawful course of business. These expenses were duly authorised, properly recorded, and paid for operational purposes directly linked to the running and maintenance of the company\u2019s systems and infrastructure.\nFurthermore, contrary to the insinuations made, none of these expenses were of a personal ",
+    "current_response_preview": "The contents hereof are denied. When examining annexures PF9 and PF10, it is clear that the payments reflected therein relate to legitimate and bona fide business expenses incurred in the ordinary and lawful course of business. These expenses were duly authorised, properly recorded, and paid for operational purposes directly linked to the running and maintenance of the company’s systems and infrastructure.\nFurthermore, contrary to the insinuations made, none of these expenses were of a personal ",
     "relevant_updated_content": [
       {
         "theme": "it_expenses_legitimate",
@@ -310,12 +695,36 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEFEND_IT_EXPENSE_LEGITIMACY",
+      "description": "Contextualize IT expenses within international operations framework",
+      "specific_tasks": [
+        "Detail 37 jurisdiction operational requirements",
+        "Itemize software subscriptions and cloud services",
+        "Demonstrate Peter's documentation restriction strategy",
+        "Show Daniel's cooperation vs Peter's obstruction"
+      ],
+      "evidence_required": [
+        "IT expense breakdown by category",
+        "International jurisdiction requirements",
+        "Documentation request/response timeline",
+        "Software subscription invoices"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/AD/1-Critical/IT_EXPENSE_BREAKDOWN.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788662",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8.4",
     "responds_to_founding_paras": "8.4",
-    "current_response_preview": "The contents hereof are admitted only to the extent that the total amount of R6 738 007.47 for the 2024 tax year reflects the legitimate business expenses incurred under this category. These expenses were properly recorded and accounted for in the company\u2019s financials, and there is nothing improper, irregular, or suspicious in relation thereto. Each expense was incurred in the ordinary course of business.",
+    "current_response_preview": "The contents hereof are admitted only to the extent that the total amount of R6 738 007.47 for the 2024 tax year reflects the legitimate business expenses incurred under this category. These expenses were properly recorded and accounted for in the company’s financials, and there is nothing improper, irregular, or suspicious in relation thereto. Each expense was incurred in the ordinary course of business.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -345,12 +754,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788671",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8.5",
     "responds_to_founding_paras": "8.5",
-    "current_response_preview": "The contents hereof are similarly admitted to the extent that the total sum of               R2 116 159.47 for the 2025 tax year is correct. However, it is denied that these amounts are questionable or unexplained. As stated above, the expenses are all legitimate, business-related disbursements that were necessary for the continuation of the company\u2019s operations and are substantiated by invoices and proof of payment.",
+    "current_response_preview": "The contents hereof are similarly admitted to the extent that the total sum of               R2 116 159.47 for the 2025 tax year is correct. However, it is denied that these amounts are questionable or unexplained. As stated above, the expenses are all legitimate, business-related disbursements that were necessary for the continuation of the company’s operations and are substantiated by invoices and proof of payment.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -380,12 +814,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788678",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8.6",
     "responds_to_founding_paras": "8.6",
-    "current_response_preview": "The contents hereof are denied. The reference to the \u201cbirthday gift\u201d is misplaced and misleading. The item in question was not a \u201cgift\u201d at all, but rather a director\u2019s loan advanced in accordance with standard accounting practice. Accordingly, there is nothing unexplainable about the said transaction or the related amounts.",
+    "current_response_preview": "The contents hereof are denied. The reference to the “birthday gift” is misplaced and misleading. The item in question was not a “gift” at all, but rather a director’s loan advanced in accordance with standard accounting practice. Accordingly, there is nothing unexplainable about the said transaction or the related amounts.",
     "relevant_updated_content": [
       {
         "theme": "director_loan_accounts",
@@ -402,12 +861,36 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "STRENGTHEN_DIRECTOR_LOAN_DEFENSE",
+      "description": "Reinforce established practice of director loan accounts with historical context",
+      "specific_tasks": [
+        "Document multi-million rand credit balances",
+        "Demonstrate Peter's participation in same practice",
+        "Show bank statement allocations to corresponding accounts",
+        "Prove formal resolutions were never required historically"
+      ],
+      "evidence_required": [
+        "Historical loan account statements",
+        "Bank feeds showing allocations",
+        "Evidence of Peter's similar transactions",
+        "Documentation of informal governance model"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "Updated_Corrections_-_Reflecting_Actual_Business_Practices.docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788686",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8.7",
     "responds_to_founding_paras": "8.7",
-    "current_response_preview": "The contents hereof are denied. While it is correct that some of the expenses were paid to international suppliers, these were all legitimate business expenditures incurred for the company\u2019s operational needs. These payments were including software subscriptions, IT infrastructure, and technical services not locally available. All such payments were made in the ordinary course of business, fully authorised, and properly recorded in the company\u2019s accounting records. There was nothing improper or ",
+    "current_response_preview": "The contents hereof are denied. While it is correct that some of the expenses were paid to international suppliers, these were all legitimate business expenditures incurred for the company’s operational needs. These payments were including software subscriptions, IT infrastructure, and technical services not locally available. All such payments were made in the ordinary course of business, fully authorised, and properly recorded in the company’s accounting records. There was nothing improper or ",
     "relevant_updated_content": [
       {
         "theme": "it_expenses_legitimate",
@@ -425,28 +908,98 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEFEND_IT_EXPENSE_LEGITIMACY",
+      "description": "Contextualize IT expenses within international operations framework",
+      "specific_tasks": [
+        "Detail 37 jurisdiction operational requirements",
+        "Itemize software subscriptions and cloud services",
+        "Demonstrate Peter's documentation restriction strategy",
+        "Show Daniel's cooperation vs Peter's obstruction"
+      ],
+      "evidence_required": [
+        "IT expense breakdown by category",
+        "International jurisdiction requirements",
+        "Documentation request/response timeline",
+        "Software subscription invoices"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/AD/1-Critical/IT_EXPENSE_BREAKDOWN.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788693",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 8.8 TO 8.10",
     "responds_to_founding_paras": "8.8 TO 8.10",
-    "current_response_preview": "The contents hereof are denied. In respect of the alleged message from the bank referred to as annexure PF11, it is noted that the correspondence merely indicates that approximately 80% of the permissible annual foreign quota had been utilised.\nI find it particularly interesting that this alleged message was never raised or produced in any prior financial year, including the previous year when the total expenses were almost R4\u00a0000 0000 higher, without any issue being raised by the bank or the re",
+    "current_response_preview": "The contents hereof are denied. In respect of the alleged message from the bank referred to as annexure PF11, it is noted that the correspondence merely indicates that approximately 80% of the permissible annual foreign quota had been utilised.\nI find it particularly interesting that this alleged message was never raised or produced in any prior financial year, including the previous year when the total expenses were almost R4 000 0000 higher, without any issue being raised by the bank or the re",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788700",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 9 TO 9.3",
     "responds_to_founding_paras": "9 TO 9.3",
-    "current_response_preview": "The contents hereof are denied. The allegation of \u201csubstantial financial misconduct\u201d is wholly unfounded, unsubstantiated, and devoid of any factual or evidentiary support. No act or omission on the part of any of the Respondents constitutes misconduct of any nature, whether financial or otherwise. The assertion that such conduct is \u201cneither sustainable nor acceptable\u201d is accordingly denied, as there is no evidence to suggest any irregularity or impropriety whatsoever.\nThe statement that none of",
+    "current_response_preview": "The contents hereof are denied. The allegation of “substantial financial misconduct” is wholly unfounded, unsubstantiated, and devoid of any factual or evidentiary support. No act or omission on the part of any of the Respondents constitutes misconduct of any nature, whether financial or otherwise. The assertion that such conduct is “neither sustainable nor acceptable” is accordingly denied, as there is no evidence to suggest any irregularity or impropriety whatsoever.\nThe statement that none of",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788704",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 9.4",
     "responds_to_founding_paras": "9.4",
-    "current_response_preview": "The contents hereof are denied completely. I do not, and have never, aided or abetted my son in any alleged misconduct whatsoever. The allegations of misappropriation of funds are false, unsubstantiated, and without any factual basis.\nMy son has at all times acted in the best interests of the company and has conducted himself with integrity, transparency, and accountability. All transactions undertaken by him were legitimate, properly authorised, and made in furtherance of the company\u2019s lawful b",
+    "current_response_preview": "The contents hereof are denied completely. I do not, and have never, aided or abetted my son in any alleged misconduct whatsoever. The allegations of misappropriation of funds are false, unsubstantiated, and without any factual basis.\nMy son has at all times acted in the best interests of the company and has conducted himself with integrity, transparency, and accountability. All transactions undertaken by him were legitimate, properly authorised, and made in furtherance of the company’s lawful b",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -488,7 +1041,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788710",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10 TO 10.3",
@@ -511,7 +1089,30 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEVELOP_COMPREHENSIVE_REBUTTAL",
+      "description": "Create detailed response addressing all aspects of Peter's allegations",
+      "specific_tasks": [
+        "Analyze Peter's specific claims for factual accuracy",
+        "Develop counter-narrative with supporting evidence",
+        "Identify and exploit inconsistencies",
+        "Reference applicable strategic themes"
+      ],
+      "evidence_required": [
+        "Supporting annexures as listed in AD paragraph files",
+        "Cross-referenced analysis documents",
+        "Factual documentation for rebuttals"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/Faucitt_Interdict_Analysis.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788716",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10.4",
@@ -559,7 +1160,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788721",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10.5 TO 10.10.23",
@@ -594,7 +1220,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/1-Critical/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788724",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/1-Critical/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10.11",
@@ -617,23 +1268,92 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEVELOP_COMPREHENSIVE_REBUTTAL",
+      "description": "Create detailed response addressing all aspects of Peter's allegations",
+      "specific_tasks": [
+        "Analyze Peter's specific claims for factual accuracy",
+        "Develop counter-narrative with supporting evidence",
+        "Identify and exploit inconsistencies",
+        "Reference applicable strategic themes"
+      ],
+      "evidence_required": [
+        "Supporting annexures as listed in AD paragraph files",
+        "Cross-referenced analysis documents",
+        "Factual documentation for rebuttals"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/Faucitt_Interdict_Analysis.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788729",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10.12",
     "responds_to_founding_paras": "10.12",
-    "current_response_preview": "The contents hereof are denied. There have been no transgressions or losses caused by either myself or the Second Respondent. To the contrary, all expenditures and financial decisions undertaken were legitimate business transactions, properly authorised and recorded. The Applicant\u2019s request to appoint necessary experts or to embark on yet another forensic investigation is unnecessary, redundant, and clearly intended to prolong litigation and inflate costs, as multiple audits and reviews have alr",
+    "current_response_preview": "The contents hereof are denied. There have been no transgressions or losses caused by either myself or the Second Respondent. To the contrary, all expenditures and financial decisions undertaken were legitimate business transactions, properly authorised and recorded. The Applicant’s request to appoint necessary experts or to embark on yet another forensic investigation is unnecessary, redundant, and clearly intended to prolong litigation and inflate costs, as multiple audits and reviews have alr",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788733",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 10.13",
     "responds_to_founding_paras": "10.13",
-    "current_response_preview": "The contents of hereof are likewise denied. It is false and misleading to allege that \u201csignificant sums of money cannot be accounted for.\u201d Every transaction can be verified through supporting documentation, including invoices, bank statements, and accounting entries. Any alleged discrepancies stem not from mismanagement or misconduct but from the Applicant\u2019s own failure or refusal to engage with the company\u2019s financial administration and documentation, despite having full access to the records.\n",
+    "current_response_preview": "The contents of hereof are likewise denied. It is false and misleading to allege that “significant sums of money cannot be accounted for.” Every transaction can be verified through supporting documentation, including invoices, bank statements, and accounting entries. Any alleged discrepancies stem not from mismanagement or misconduct but from the Applicant’s own failure or refusal to engage with the company’s financial administration and documentation, despite having full access to the records.\n",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788736",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 11 TO 11.5",
@@ -654,20 +1374,68 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788739",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 11.6 TO 11.9",
     "responds_to_founding_paras": "11.6 TO 11.9",
-    "current_response_preview": "The contents hereof are denied in their entirety. The Applicant provides no supporting proof or documentary evidence to substantiate any of the allegations made herein. These averments amount to nothing more than blanket statements, speculative in nature, and entirely devoid of factual foundation.\nIt is specifically denied that the Third to Sixth respondents \u201cdo not receive payment\u201d from the UK branch. All transactions between the South African entities and the UK branch have been properly docum",
+    "current_response_preview": "The contents hereof are denied in their entirety. The Applicant provides no supporting proof or documentary evidence to substantiate any of the allegations made herein. These averments amount to nothing more than blanket statements, speculative in nature, and entirely devoid of factual foundation.\nIt is specifically denied that the Third to Sixth respondents “do not receive payment” from the UK branch. All transactions between the South African entities and the UK branch have been properly docum",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788743",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 12 TO 12.1",
     "responds_to_founding_paras": "12 TO 12.1",
-    "current_response_preview": "The contents hereof are denied. The assertion that the relationship between the directors and members has \u201cdisintegrated and become deadlocked\u201d is inaccurate and exaggerated. While there may be differences in management style, the companies continue to operate effectively and remain financially stable under the stewardship of the First and Second Respondents. There has been no paralysis in decision-making nor any event warranting liquidation. The Applicant\u2019s allegations are clearly intended to c",
+    "current_response_preview": "The contents hereof are denied. The assertion that the relationship between the directors and members has “disintegrated and become deadlocked” is inaccurate and exaggerated. While there may be differences in management style, the companies continue to operate effectively and remain financially stable under the stewardship of the First and Second Respondents. There has been no paralysis in decision-making nor any event warranting liquidation. The Applicant’s allegations are clearly intended to c",
     "relevant_updated_content": [
       {
         "theme": "collaborative_business_model",
@@ -697,12 +1465,36 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "EXPOSE_SUSPICIOUS_TIMING_PATTERN",
+      "description": "Highlight strategic litigation timing related to settlement and investment payout",
+      "specific_tasks": [
+        "Document settlement agreement date vs interdict filing",
+        "Connect timing to upcoming investment payout",
+        "Show pattern of settlement as 'Trojan horse'",
+        "Demonstrate strategic litigation for control"
+      ],
+      "evidence_required": [
+        "Settlement agreement dated ~11 August 2025",
+        "Interdict filing date 13 August 2025",
+        "Investment payout schedule (May 2026)",
+        "Timeline analysis documentation"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788747",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 12.2",
     "responds_to_founding_paras": "12.2",
-    "current_response_preview": "The contents hereof are denied in their entirety. The Applicant provides no proof whatsoever of any alleged \u201cmisappropriation\u201d or irregular outflow of funds from the third to sixth respondents. This allegation is a blanket statement, speculative and devoid of factual or evidential support. All company funds are fully accounted for and managed in accordance with accepted accounting principles and the Companies Act. There is no evidence of irregularities, nor have any \u201ctaxation problems\u201d arisen as",
+    "current_response_preview": "The contents hereof are denied in their entirety. The Applicant provides no proof whatsoever of any alleged “misappropriation” or irregular outflow of funds from the third to sixth respondents. This allegation is a blanket statement, speculative and devoid of factual or evidential support. All company funds are fully accounted for and managed in accordance with accepted accounting principles and the Companies Act. There is no evidence of irregularities, nor have any “taxation problems” arisen as",
     "relevant_updated_content": [
       {
         "theme": "collaborative_business_model",
@@ -732,7 +1524,30 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEVELOP_COMPREHENSIVE_REBUTTAL",
+      "description": "Create detailed response addressing all aspects of Peter's allegations",
+      "specific_tasks": [
+        "Analyze Peter's specific claims for factual accuracy",
+        "Develop counter-narrative with supporting evidence",
+        "Identify and exploit inconsistencies",
+        "Reference applicable strategic themes"
+      ],
+      "evidence_required": [
+        "Supporting annexures as listed in AD paragraph files",
+        "Cross-referenced analysis documents",
+        "Factual documentation for rebuttals"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/Faucitt_Interdict_Analysis.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788751",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 12.3",
@@ -754,12 +1569,35 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "DEVELOP_COMPREHENSIVE_REBUTTAL",
+      "description": "Create detailed response addressing all aspects of Peter's allegations",
+      "specific_tasks": [
+        "Analyze Peter's specific claims for factual accuracy",
+        "Develop counter-narrative with supporting evidence",
+        "Identify and exploit inconsistencies",
+        "Reference applicable strategic themes"
+      ],
+      "evidence_required": [
+        "Supporting annexures as listed in AD paragraph files",
+        "Cross-referenced analysis documents",
+        "Factual documentation for rebuttals"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/Faucitt_Interdict_Analysis.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788755",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 12.4",
     "responds_to_founding_paras": "12.4",
-    "current_response_preview": "The contents hereof are denied. The Applicant\u2019s assertion that me and the Second Respondent \u201ccan serve those corporations in capacities other than as director or member\u201d is both illogical and impractical. Both myself and the Second Respondent have been validly appointed as directors and members in accordance with the relevant corporate governance procedures and play integral roles in the management and sustainability of the entities. Our continued involvement is essential to the operational succ",
+    "current_response_preview": "The contents hereof are denied. The Applicant’s assertion that me and the Second Respondent “can serve those corporations in capacities other than as director or member” is both illogical and impractical. Both myself and the Second Respondent have been validly appointed as directors and members in accordance with the relevant corporate governance procedures and play integral roles in the management and sustainability of the entities. Our continued involvement is essential to the operational succ",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -775,12 +1613,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788758",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13 TO 13.1",
     "responds_to_founding_paras": "13 TO 13.1",
-    "current_response_preview": "The contents hereof are denied in their entirety. There is no factual or legal basis for the assertion that the interdicts and other relief sought under Part A of the notice of motion are \u201cessential to the survival\u201d of the Third to Sixth respondents. The companies in question remain fully operational, solvent, and properly managed in accordance with corporate governance principles. There is no \u201crot\u201d to be \u201cstopped,\u201d as alleged \u2013 this is a sensational and unfounded statement aimed at creating the",
+    "current_response_preview": "The contents hereof are denied in their entirety. There is no factual or legal basis for the assertion that the interdicts and other relief sought under Part A of the notice of motion are “essential to the survival” of the Third to Sixth respondents. The companies in question remain fully operational, solvent, and properly managed in accordance with corporate governance principles. There is no “rot” to be “stopped,” as alleged – this is a sensational and unfounded statement aimed at creating the",
     "relevant_updated_content": [
       {
         "theme": "settlement_and_timing",
@@ -811,12 +1674,36 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "EXPOSE_SUSPICIOUS_TIMING_PATTERN",
+      "description": "Highlight strategic litigation timing related to settlement and investment payout",
+      "specific_tasks": [
+        "Document settlement agreement date vs interdict filing",
+        "Connect timing to upcoming investment payout",
+        "Show pattern of settlement as 'Trojan horse'",
+        "Demonstrate strategic litigation for control"
+      ],
+      "evidence_required": [
+        "Settlement agreement dated ~11 August 2025",
+        "Interdict filing date 13 August 2025",
+        "Investment payout schedule (May 2026)",
+        "Timeline analysis documentation"
+      ],
+      "cross_references": [
+        "jax-response/AD/2-High-Priority/",
+        "ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788763",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/2-High-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.2 TO 13.2.2",
     "responds_to_founding_paras": "13.2 TO 13.2.2",
-    "current_response_preview": "The contents hereof are denied. There has been no unlawful conduct on the part of either myself or Second Respondent. All actions undertaken by the Respondents have been legitimate, transparent, and in full compliance with applicable legal and corporate governance requirements. The Applicant fails to provide any factual or evidentiary basis to substantiate the alleged \u201cunlawful conduct\u201d or the supposed \u201charm\u201d caused to the third to sixth respondents. These allegations are speculative, unproven, ",
+    "current_response_preview": "The contents hereof are denied. There has been no unlawful conduct on the part of either myself or Second Respondent. All actions undertaken by the Respondents have been legitimate, transparent, and in full compliance with applicable legal and corporate governance requirements. The Applicant fails to provide any factual or evidentiary basis to substantiate the alleged “unlawful conduct” or the supposed “harm” caused to the third to sixth respondents. These allegations are speculative, unproven, ",
     "relevant_updated_content": [
       {
         "theme": "settlement_and_timing",
@@ -847,7 +1734,31 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "EXPOSE_SUSPICIOUS_TIMING_PATTERN",
+      "description": "Highlight strategic litigation timing related to settlement and investment payout",
+      "specific_tasks": [
+        "Document settlement agreement date vs interdict filing",
+        "Connect timing to upcoming investment payout",
+        "Show pattern of settlement as 'Trojan horse'",
+        "Demonstrate strategic litigation for control"
+      ],
+      "evidence_required": [
+        "Settlement agreement dated ~11 August 2025",
+        "Interdict filing date 13 August 2025",
+        "Investment payout schedule (May 2026)",
+        "Timeline analysis documentation"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788769",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.3",
@@ -855,12 +1766,35 @@
     "current_response_preview": "The contents hereof are denied. The Applicant has no reasonable or well-grounded apprehension of harm, let alone irreparable harm, should the relief sought not be granted. The allegations made are speculative and unsupported by any credible evidence. The Applicant has failed to demonstrate any actual, imminent, or ongoing harm caused by the conduct of myself or Second Respondent. On the contrary, the companies continue to operate effectively and profitably, and no factual basis exists to justify",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788776",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.4",
     "responds_to_founding_paras": "13.4",
-    "current_response_preview": "The contents hereof are denied. The Applicant is not \u201cwithout an alternative adequate remedy.\u201d He has full access to the corporate structures, financial information, and statutory mechanisms available under both the Companies Act and the Close Corporations Act to address any legitimate concerns. Moreover, the Applicant could have discussed same with me or the Second Respondent as his wife and son.\nThe decision to seek urgent or interim relief is therefore unnecessary, premature, and constitutes ",
+    "current_response_preview": "The contents hereof are denied. The Applicant is not “without an alternative adequate remedy.” He has full access to the corporate structures, financial information, and statutory mechanisms available under both the Companies Act and the Close Corporations Act to address any legitimate concerns. Moreover, the Applicant could have discussed same with me or the Second Respondent as his wife and son.\nThe decision to seek urgent or interim relief is therefore unnecessary, premature, and constitutes ",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -876,12 +1810,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788779",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.5",
     "responds_to_founding_paras": "13.5",
-    "current_response_preview": "The contents hereof are denied. The balance of convenience does not favour the granting of any interim or final interdictory relief. To the contrary, granting such relief would severely prejudice the ongoing operations of the companies, disrupt management, and interfere with the Respondents\u2019 ability to discharge their duties effectively.\nThe Applicant has failed to establish any prima facie right or harm that would justify the interference sought. The convenience overwhelmingly favours allowing ",
+    "current_response_preview": "The contents hereof are denied. The balance of convenience does not favour the granting of any interim or final interdictory relief. To the contrary, granting such relief would severely prejudice the ongoing operations of the companies, disrupt management, and interfere with the Respondents’ ability to discharge their duties effectively.\nThe Applicant has failed to establish any prima facie right or harm that would justify the interference sought. The convenience overwhelmingly favours allowing ",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -897,7 +1856,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788783",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.6 TO 13.7",
@@ -905,7 +1889,30 @@
     "current_response_preview": "The contents hereof are denied. The Applicant is not entitled to the relief sought under Part A of the notice of motion, whether on an interim or final basis. Be that as it may, the order that was granted, the Applicant has failed to satisfy any of the legal requirements for interdictory relief, namely (which will be discussed in further detail below):\nA clear right,\nIrreparable harm, and\nThe absence of an alternative remedy.\nThe application is therefore misconceived, devoid of merit, and should",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788786",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 14 TO 14.2",
@@ -940,7 +1947,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788790",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 14.3",
@@ -961,7 +1993,32 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788794",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 14.4",
@@ -982,12 +2039,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788797",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 14.5",
     "responds_to_founding_paras": "14.5",
-    "current_response_preview": "The contents of this paragraph are noted, insofar as it merely records the Applicant\u2019s prayer for relief. The Respondents reserve their rights to fully oppose the relief sought in both Part A and Part B of the Notice of Motion, particularly where such relief is unnecessary, prejudicial, or not supported by evidence.",
+    "current_response_preview": "The contents of this paragraph are noted, insofar as it merely records the Applicant’s prayer for relief. The Respondents reserve their rights to fully oppose the relief sought in both Part A and Part B of the Notice of Motion, particularly where such relief is unnecessary, prejudicial, or not supported by evidence.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -1003,12 +2085,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788801",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 15",
     "responds_to_founding_paras": "15",
-    "current_response_preview": "The contents of this paragraph are denied. The relief sought by the Applicant in terms of the Notice of Motion (seeking to have myself and Second Respondents declared delinquent directors, or alternatively placed under probation) is a blatant abuse of process and entirely without merit. The application is not motivated by any genuine concern for corporate governance or the survival of the companies, but rather by the Applicant\u2019s ongoing attempt to maliciously exclude myself and the Second Respon",
+    "current_response_preview": "The contents of this paragraph are denied. The relief sought by the Applicant in terms of the Notice of Motion (seeking to have myself and Second Respondents declared delinquent directors, or alternatively placed under probation) is a blatant abuse of process and entirely without merit. The application is not motivated by any genuine concern for corporate governance or the survival of the companies, but rather by the Applicant’s ongoing attempt to maliciously exclude myself and the Second Respon",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -1024,12 +2131,37 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/5-Meaningless/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788804",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/5-Meaningless/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16 TO 16.5",
     "responds_to_founding_paras": "16 TO 16.5",
-    "current_response_preview": "The contents of these paragraphs are denied in their entirety. The Applicant\u2019s version regarding urgency is patently false, misleading, and crafted purely to justify an unwarranted ex parte approach to this Honourable Court. As already explained above, the R500 000 payment relied upon so heavily by the Applicant was not an irregular or unauthorised withdrawal, but a lawful and transparent director\u2019s loan which was duly approved by both myself and the Applicant. The payment was properly accounted",
+    "current_response_preview": "The contents of these paragraphs are denied in their entirety. The Applicant’s version regarding urgency is patently false, misleading, and crafted purely to justify an unwarranted ex parte approach to this Honourable Court. As already explained above, the R500 000 payment relied upon so heavily by the Applicant was not an irregular or unauthorised withdrawal, but a lawful and transparent director’s loan which was duly approved by both myself and the Applicant. The payment was properly accounted",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -1045,39 +2177,156 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788809",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.6",
     "responds_to_founding_paras": "16.6",
-    "current_response_preview": "The contents of this paragraph are denied. The Applicant\u2019s suggestion that time was required to prepare, discuss, and settle papers with counsel is irrelevant to the question of urgency. The Applicant\u2019s own account confirms that he had ample opportunity, spanning several weeks, to obtain legal advice and prepare papers, which entirely undermines his assertion that the matter was so urgent as to justify ex parte relief. This further demonstrates that any alleged urgency was self-created and contr",
+    "current_response_preview": "The contents of this paragraph are denied. The Applicant’s suggestion that time was required to prepare, discuss, and settle papers with counsel is irrelevant to the question of urgency. The Applicant’s own account confirms that he had ample opportunity, spanning several weeks, to obtain legal advice and prepare papers, which entirely undermines his assertion that the matter was so urgent as to justify ex parte relief. This further demonstrates that any alleged urgency was self-created and contr",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788813",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.7",
     "responds_to_founding_paras": "16.7",
-    "current_response_preview": "The contents hereof are denied. It is false and misleading to allege that the Applicant was required to proceed \u201csecretly\u201d to avoid \u201cknee-jerk reactions\u201d or further alleged misappropriation.\nAs already stated, there was no misconduct or irregularity to conceal. The Applicant\u2019s suggestion of secrecy was in truth a pretext to exclude myself and the Second Respondent from the proceedings entirely, thereby denying us procedural fairness. The companies\u2019 financial affairs were transparent and lawfully",
+    "current_response_preview": "The contents hereof are denied. It is false and misleading to allege that the Applicant was required to proceed “secretly” to avoid “knee-jerk reactions” or further alleged misappropriation.\nAs already stated, there was no misconduct or irregularity to conceal. The Applicant’s suggestion of secrecy was in truth a pretext to exclude myself and the Second Respondent from the proceedings entirely, thereby denying us procedural fairness. The companies’ financial affairs were transparent and lawfully",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788818",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.8",
     "responds_to_founding_paras": "16.8",
-    "current_response_preview": "The contents of this paragraph are denied. The Applicant\u2019s claim that his \u201csecret\u201d manner of providing instructions was time-consuming is of no legal significance and, if anything, demonstrates the absence of genuine urgency. His decision to act covertly and delay proper engagement with myself and the Second Respondent was a deliberate tactic to manufacture a sense of urgency that did not exist. Had the Applicant followed proper corporate process and afforded us the opportunity to respond, there",
+    "current_response_preview": "The contents of this paragraph are denied. The Applicant’s claim that his “secret” manner of providing instructions was time-consuming is of no legal significance and, if anything, demonstrates the absence of genuine urgency. His decision to act covertly and delay proper engagement with myself and the Second Respondent was a deliberate tactic to manufacture a sense of urgency that did not exist. Had the Applicant followed proper corporate process and afforded us the opportunity to respond, there",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788822",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.9",
     "responds_to_founding_paras": "16.9",
-    "current_response_preview": "The contents of this paragraph are denied. There was no reckless or delinquent conduct by either myself or the Second Respondent, nor was there any ongoing transgression.\nAll company transactions were lawful, authorised, and supported by verifiable documentation. The Applicant\u2019s allegations are baseless and appear designed to inflame and mislead the Court.\nEvery passing day did not create new urgency. Rather, every passing day highlighted the Applicant\u2019s ongoing inaction and lack of bona fides. ",
+    "current_response_preview": "The contents of this paragraph are denied. There was no reckless or delinquent conduct by either myself or the Second Respondent, nor was there any ongoing transgression.\nAll company transactions were lawful, authorised, and supported by verifiable documentation. The Applicant’s allegations are baseless and appear designed to inflame and mislead the Court.\nEvery passing day did not create new urgency. Rather, every passing day highlighted the Applicant’s ongoing inaction and lack of bona fides. ",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788826",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.10",
@@ -1085,7 +2334,30 @@
     "current_response_preview": "The contents of this paragraph are denied. There is no probability, or even possibility, of any irreparable harm to the Third to Sixth Respondents, as alleged. To the contrary, if there had been any genuine concern of such harm, the Applicant would not have permitted me to continue performing operational duties on behalf of the companies. By way of example, the Applicant expressly allowed me to conduct training sessions for staff on 6 and 7 October 2025, focusing on product knowledge and brand d",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788829",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.11",
@@ -1093,20 +2365,66 @@
     "current_response_preview": "CRITICAL CORRECTION: JF5 AGREEMENT MANIPULATION\nI must bring to this Honourable Court's urgent attention a critical matter regarding the JF5 settlement agreement referenced in paragraph 48 of my affidavit. Upon further investigation, I have discovered that material changes were made to this agreement after our final review and immediately before signing, without disclosure to myself and the Second Respondent.\n\nThe agreement initially reviewed by myself and the Second Respondent stated that asses",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788833",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.12",
     "responds_to_founding_paras": "16.12",
-    "current_response_preview": "The contents of this paragraph are denied. The Applicant\u2019s allegation that the Third to Sixth Respondents (and by implication the Applicant himself) would be unable to obtain substantial or any redress in due course is entirely unfounded. There was no urgency warranting the invocation of the Court\u2019s ex parte jurisdiction.\nOn the contrary, the Applicant\u2019s true motive in bringing the application on this basis was to engineer a hostile takeover of the companies and to unilaterally wrest control of ",
+    "current_response_preview": "The contents of this paragraph are denied. The Applicant’s allegation that the Third to Sixth Respondents (and by implication the Applicant himself) would be unable to obtain substantial or any redress in due course is entirely unfounded. There was no urgency warranting the invocation of the Court’s ex parte jurisdiction.\nOn the contrary, the Applicant’s true motive in bringing the application on this basis was to engineer a hostile takeover of the companies and to unilaterally wrest control of ",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788836",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 17 TO 17.4",
     "responds_to_founding_paras": "17 TO 17.4",
-    "current_response_preview": "The contents of these paragraphs are denied. The allegation that the myself or the Second Respondent would have misappropriated funds or reacted in a knee-jerk manner is entirely unfounded and without factual basis.\nAs explained above, the amount of R500 000 referred to by the Applicant was not an irregular or unauthorised withdrawal, but a legitimate director\u2019s loan that was properly discussed and approved between myself and the Applicant, in the ordinary course of business. The transaction was",
+    "current_response_preview": "The contents of these paragraphs are denied. The allegation that the myself or the Second Respondent would have misappropriated funds or reacted in a knee-jerk manner is entirely unfounded and without factual basis.\nAs explained above, the amount of R500 000 referred to by the Applicant was not an irregular or unauthorised withdrawal, but a legitimate director’s loan that was properly discussed and approved between myself and the Applicant, in the ordinary course of business. The transaction was",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -1122,14 +2440,62 @@
       }
     ],
     "action_required": "REVIEW AND UPDATE",
-    "priority": "HIGH"
+    "priority": "HIGH",
+    "enhanced_action_item": {
+      "action_type": "ENHANCE_RESPONSIBLE_PERSON_CONTEXT",
+      "description": "Strengthen response with Jacqueline's legal Responsible Person role across 37 jurisdictions",
+      "specific_tasks": [
+        "Emphasize legal designation under EU Regulation 1223/2009",
+        "Detail personal liability for product safety and compliance",
+        "Highlight compliance crisis created by interdict",
+        "Reference potential penalties and market access loss"
+      ],
+      "evidence_required": [
+        "EU Regulation 1223/2009 documentation",
+        "Responsible Person appointment certificates",
+        "Jurisdiction compliance requirements (37 territories)",
+        "Impact assessment of interdict on compliance"
+      ],
+      "cross_references": [
+        "jax-response/AD/3-Medium-Priority/",
+        "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md",
+        "jax-response/analysis-output/Affidavit_Amendment_Recommendations.md"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788842",
+    "enhancement_version": "v2.0",
+    "urgency_level": "IMMEDIATE",
+    "ad_file_reference": "jax-response/AD/3-Medium-Priority/"
   },
   {
     "ad_paragraph_ref": "AD PARAGRAPH 18",
     "responds_to_founding_paras": "18",
-    "current_response_preview": "The contents herein are noted in so far as Part A of the Applicant\u2019s Notice of Motion say that there will be no order to costs as same is not opposed.\nEVIDENCE ANALYSIS AND CLASSIFICATION\nIn addressing this matter comprehensively, I have categorised the available evidence into three classifications based on evidentiary strength:\n\nIRREFUTABLE PROOF (Documentary Evidence):\n- Trust creation documentation (December 5, 2013)\n- Asset transfer records (June 18, 2014) \n- Trustee appointment timeline dem",
+    "current_response_preview": "The contents herein are noted in so far as Part A of the Applicant’s Notice of Motion say that there will be no order to costs as same is not opposed.\nEVIDENCE ANALYSIS AND CLASSIFICATION\nIn addressing this matter comprehensively, I have categorised the available evidence into three classifications based on evidentiary strength:\n\nIRREFUTABLE PROOF (Documentary Evidence):\n- Trust creation documentation (December 5, 2013)\n- Asset transfer records (June 18, 2014) \n- Trustee appointment timeline dem",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
-    "priority": "MEDIUM"
+    "priority": "MEDIUM",
+    "enhanced_action_item": {
+      "action_type": "ADD_STRATEGIC_THEMES_AND_REVIEW",
+      "description": "Enhance existing response with strategic themes and supporting evidence",
+      "specific_tasks": [
+        "Identify applicable strategic themes from case analysis",
+        "Integrate relevant updated content themes",
+        "Add cross-references to supporting analysis",
+        "Strengthen factual rebuttals with evidence"
+      ],
+      "evidence_required": [
+        "Review supporting annexures referenced",
+        "Verify factual accuracy of current response",
+        "Identify additional evidence needs"
+      ],
+      "cross_references": [
+        "jax-response/AD/4-Low-Priority/",
+        "jax-response/analysis-output/comprehensive_legal_analysis.json"
+      ]
+    },
+    "last_updated": "2025-10-15T09:16:53.788848",
+    "enhancement_version": "v2.0",
+    "urgency_level": "NORMAL",
+    "ad_file_reference": "jax-response/AD/4-Low-Priority/"
   }
 ]
