@@ -75,14 +75,14 @@ jobs:
           gh --version
           echo "✅ GitHub CLI installed and ready"
 
-      - name: Authenticate GitHub CLI
+      - name: Authenticate GitHub CLI (server-side)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔐 Configuring GitHub CLI authentication..."
-          echo "$GITHUB_TOKEN" | gh auth login --with-token
-          gh auth status
-          echo "✅ GitHub CLI authenticated"
+          echo "🔐 Setting up GitHub CLI authentication (server-side)..."
+          gh auth status || true
+          gh auth setup-git
+          echo "✅ GitHub CLI ready for server-side operations"
 
       - name: Determine execution parameters
         id: params
