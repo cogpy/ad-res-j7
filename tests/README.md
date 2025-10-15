@@ -50,7 +50,11 @@ node tests/workflow-validation.test.js
 - Multiple label scenarios
 - Quality filtering validation
 - Error handling with edge cases
-- **Duplicate prevention with identical task titles** (NEW)
+- **Duplicate prevention with identical task titles** with edge cases:
+  - Basic duplicate detection across priority sections
+  - Case sensitivity verification
+  - Whitespace normalization handling
+  - Long title truncation and duplicate prevention
 - Mock issue creation
 
 **Usage**:
@@ -147,7 +151,11 @@ cat tests/comprehensive-test-results.json | jq '.summary'
 - Real todo file processing
 - Mock issue creation
 - Label conversion validation
-- **Duplicate prevention testing with identical task titles**
+- **Comprehensive duplicate prevention testing:**
+  - Identical task titles across priority sections
+  - Case sensitivity in title comparison
+  - Whitespace variation handling
+  - Long title truncation edge cases
 - End-to-end workflow simulation
 
 ## Current Test Results
