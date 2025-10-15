@@ -602,7 +602,9 @@ This international scope requires substantial IT infrastructure, including:
 
 ### AD PARAGRAPH 11 TO 11.5
 
-11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd.
+11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are currently registered as directors of RegimA UK Ltd.
+
+11.1.1 However, the characterization of Daniel's directorship as a formal "appointment" requires clarification: Daniel's directorship arose from his **rescue of the UK business** following the Chesno fraud and the Applicant's abandonment of the failing entity, not from a traditional appointment process. (See detailed explanation at paragraph 129 below.)
 
 11.2 It is further admitted that the said entity operates as the United Kingdom head office and oversees subsidiary and associated companies.
 
