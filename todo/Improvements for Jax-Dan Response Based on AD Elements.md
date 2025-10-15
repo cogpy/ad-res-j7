@@ -361,7 +361,7 @@ This differentiation helps counter Peter's attempt to conflate their roles and r
 - **Disproportionate Relief**: ✅ **QUANTIFIED - Interdict creates 36:1 harm ratio (R18M+ losses vs R500K alleged)**
 - **Peter's Own Conduct**: His actions violate fiduciary duties more than respondents' ✅
 - **Added**: Detailed quantification in Section 13B paragraphs 149.22A-149.22I
-- **Added**: Seventh material non-disclosure (disproportionate harm) in Sections 2.2.3(h), 150.5(g), and 150.7A-150.7B
+- [x] **Added**: Seventh material non-disclosure (disproportionate harm) in Sections 2.2.3(h), 150.5(g), and 150.7A-150.7B
 
 #### Layer 5: Alternative Explanations (Needs Development)
 - **Cognitive Impairment**: Peter's selective memory and confusion may indicate capacity issues
