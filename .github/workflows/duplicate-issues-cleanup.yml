@@ -1,0 +1,408 @@
+# Duplicate Issues Cleanup Workflow
+# Automatically groups and merges duplicate GitHub issues
+
+name: Duplicate Issues Cleanup
+
+on:
+  # Run on a schedule (daily at 3 AM UTC)
+  schedule:
+    - cron: '0 3 * * *'
+  
+  # Manual trigger with options
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run mode - preview changes without actually closing issues'
+        required: false
+        default: 'true'
+        type: boolean
+      include_closed:
+        description: 'Include closed issues in analysis (helps identify patterns)'
+        required: false
+        default: 'false'
+        type: boolean
+      execution_mode:
+        description: 'Execution mode for cleanup'
+        required: false
+        default: 'preview'
+        type: choice
+        options:
+          - preview
+          - execute
+          - report-only
+
+  # Run when issues are created/updated to catch duplicates early
+  issues:
+    types: [opened, edited, reopened]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  duplicate-cleanup:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read       # Required to read repository files
+      issues: write        # Required to close and comment on issues
+      actions: read        # Required to read workflow files
+      pull-requests: write # Required to create summary reports
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          echo "📦 Installing required dependencies..."
+          # Install GitHub CLI if not available
+          if ! command -v gh &> /dev/null; then
+            echo "Installing GitHub CLI..."
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt update
+            sudo apt install gh -y
+          fi
+          
+          # Verify GitHub CLI
+          gh --version
+          echo "✅ GitHub CLI installed and ready"
+
+      - name: Authenticate GitHub CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔐 Configuring GitHub CLI authentication..."
+          echo "$GITHUB_TOKEN" | gh auth login --with-token
+          gh auth status
+          echo "✅ GitHub CLI authenticated"
+
+      - name: Determine execution parameters
+        id: params
+        run: |
+          echo "🔧 Determining execution parameters..."
+          
+          # Set dry_run based on inputs or event type
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            dry_run="${{ github.event.inputs.dry_run }}"
+            include_closed="${{ github.event.inputs.include_closed }}"
+            execution_mode="${{ github.event.inputs.execution_mode }}"
+          elif [ "${{ github.event_name }}" = "issues" ]; then
+            # For issue events, always dry run initially
+            dry_run="true"
+            include_closed="false"
+            execution_mode="preview"
+          else
+            # For scheduled runs, use safe defaults
+            dry_run="true"
+            include_closed="false"
+            execution_mode="preview"
+          fi
+          
+          echo "dry_run=$dry_run" >> $GITHUB_OUTPUT
+          echo "include_closed=$include_closed" >> $GITHUB_OUTPUT
+          echo "execution_mode=$execution_mode" >> $GITHUB_OUTPUT
+          
+          # Determine if we should actually execute based on mode
+          execute_cleanup="false"
+          if [ "$execution_mode" = "execute" ] && [ "$dry_run" = "false" ]; then
+            execute_cleanup="true"
+          fi
+          echo "execute_cleanup=$execute_cleanup" >> $GITHUB_OUTPUT
+          
+          echo "📋 Execution Parameters:"
+          echo "  - Dry Run: $dry_run"
+          echo "  - Include Closed: $include_closed"
+          echo "  - Execution Mode: $execution_mode"
+          echo "  - Will Execute Cleanup: $execute_cleanup"
+          echo "  - Event: ${{ github.event_name }}"
+
+      - name: Run duplicate analysis
+        id: analysis
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "🔍 Running duplicate issue analysis..."
+          
+          # Create analysis parameters
+          analysis_params=""
+          if [ "${{ steps.params.outputs.dry_run }}" = "true" ]; then
+            analysis_params="$analysis_params --dry-run"
+          else
+            analysis_params="$analysis_params --execute"
+          fi
+          
+          if [ "${{ steps.params.outputs.include_closed }}" = "true" ]; then
+            analysis_params="$analysis_params --include-closed"
+          fi
+          
+          echo "Running: node scripts/cleanup-duplicate-issues.js $analysis_params"
+          
+          # Run the duplicate cleanup script
+          if node scripts/cleanup-duplicate-issues.js $analysis_params; then
+            echo "analysis_success=true" >> $GITHUB_OUTPUT
+            echo "✅ Duplicate analysis completed successfully"
+          else
+            echo "analysis_success=false" >> $GITHUB_OUTPUT
+            echo "❌ Duplicate analysis failed"
+            exit 1
+          fi
+
+      - name: Load analysis results
+        id: results
+        if: steps.analysis.outputs.analysis_success == 'true'
+        run: |
+          echo "📊 Loading and processing analysis results..."
+          
+          if [ ! -f "duplicate-cleanup-report.json" ]; then
+            echo "❌ Report file not found"
+            echo "has_results=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Validate JSON structure
+          if ! jq empty duplicate-cleanup-report.json 2>/dev/null; then
+            echo "❌ Invalid JSON in report file"
+            echo "has_results=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Extract key metrics
+          total_issues=$(jq -r '.totalIssues // 0' duplicate-cleanup-report.json)
+          duplicate_groups=$(jq -r '.duplicateGroups // 0' duplicate-cleanup-report.json)
+          duplicates_to_close=$(jq -r '.duplicatesToClose // 0' duplicate-cleanup-report.json)
+          descriptive_issues=$(jq -r '.descriptiveIssues // 0' duplicate-cleanup-report.json)
+          closed_count=$(jq -r '.closedCount // 0' duplicate-cleanup-report.json)
+          dry_run=$(jq -r '.dryRun // true' duplicate-cleanup-report.json)
+          
+          echo "has_results=true" >> $GITHUB_OUTPUT
+          echo "total_issues=$total_issues" >> $GITHUB_OUTPUT
+          echo "duplicate_groups=$duplicate_groups" >> $GITHUB_OUTPUT
+          echo "duplicates_to_close=$duplicates_to_close" >> $GITHUB_OUTPUT
+          echo "descriptive_issues=$descriptive_issues" >> $GITHUB_OUTPUT
+          echo "closed_count=$closed_count" >> $GITHUB_OUTPUT
+          echo "was_dry_run=$dry_run" >> $GITHUB_OUTPUT
+          
+          echo "📈 Analysis Results Summary:"
+          echo "  - Total Issues Analyzed: $total_issues"
+          echo "  - Duplicate Groups Found: $duplicate_groups"
+          echo "  - Issues to Close: $duplicates_to_close"
+          echo "  - Descriptive Issues: $descriptive_issues"
+          echo "  - Issues Closed: $closed_count"
+          echo "  - Was Dry Run: $dry_run"
+
+      - name: Generate workflow summary
+        if: always()
+        run: |
+          echo "📝 Generating workflow execution summary..."
+          
+          # Create comprehensive summary for GitHub Actions Summary
+          cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          # 🧹 Duplicate Issues Cleanup Report
+          
+          ## Execution Details
+          - **Trigger**: ${{ github.event_name }}
+          - **Execution Mode**: ${{ steps.params.outputs.execution_mode }}
+          - **Dry Run**: ${{ steps.params.outputs.dry_run }}
+          - **Include Closed Issues**: ${{ steps.params.outputs.include_closed }}
+          - **Timestamp**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          
+          ## Analysis Results
+          EOF
+          
+          if [ "${{ steps.results.outputs.has_results }}" = "true" ]; then
+            cat >> $GITHUB_STEP_SUMMARY << EOF
+          - **📊 Total Issues Analyzed**: ${{ steps.results.outputs.total_issues }}
+          - **🔍 Duplicate Groups Found**: ${{ steps.results.outputs.duplicate_groups }}
+          - **📋 Issues to Close**: ${{ steps.results.outputs.duplicates_to_close }}
+          - **📄 Descriptive Issues**: ${{ steps.results.outputs.descriptive_issues }}
+          - **✅ Issues Closed**: ${{ steps.results.outputs.closed_count }}
+          
+          ## Summary
+          EOF
+            
+            if [ "${{ steps.results.outputs.duplicate_groups }}" -gt 0 ]; then
+              if [ "${{ steps.results.outputs.was_dry_run }}" = "true" ]; then
+                echo "⚠️ **Preview Mode**: Found ${{ steps.results.outputs.duplicates_to_close }} duplicate issues that would be closed. Run with 'execute' mode to apply changes." >> $GITHUB_STEP_SUMMARY
+              else
+                echo "✅ **Executed**: Successfully closed ${{ steps.results.outputs.closed_count }} duplicate issues across ${{ steps.results.outputs.duplicate_groups }} groups." >> $GITHUB_STEP_SUMMARY
+              fi
+            else
+              echo "🎉 **No Action Needed**: No duplicate issues found! Your repository is well-organized." >> $GITHUB_STEP_SUMMARY
+            fi
+            
+            # Add detailed breakdown if report exists
+            if [ -f "duplicate-cleanup-report.json" ] && [ "${{ steps.results.outputs.duplicate_groups }}" -gt 0 ]; then
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "## Detailed Findings" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              
+              # Extract duplicate groups for display
+              if jq -e '.duplicates | length > 0' duplicate-cleanup-report.json > /dev/null 2>&1; then
+                echo "### 📦 Duplicate Groups" >> $GITHUB_STEP_SUMMARY
+                jq -r '.duplicates | to_entries[] | "- **Issue #" + .key + "**: " + .value.title + " (duplicates: #" + (.value.duplicates | map(tostring) | join(", #")) + ")"' duplicate-cleanup-report.json >> $GITHUB_STEP_SUMMARY
+              fi
+              
+              # Extract descriptive issues for display  
+              if jq -e '.descriptive | length > 0' duplicate-cleanup-report.json > /dev/null 2>&1; then
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "### 📄 Descriptive Issues" >> $GITHUB_STEP_SUMMARY
+                jq -r '.descriptive[] | "- **Issue #" + (.number | tostring) + "**: " + .title' duplicate-cleanup-report.json >> $GITHUB_STEP_SUMMARY
+              fi
+            fi
+          else
+            cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          ❌ **Analysis Failed**: Could not complete duplicate analysis. Check the workflow logs for details.
+          
+          ## Troubleshooting
+          - Verify GitHub CLI authentication
+          - Check if duplicate cleanup script exists
+          - Ensure proper permissions for issue management
+          EOF
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Next Steps" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.results.outputs.has_results }}" = "true" ] && [ "${{ steps.results.outputs.duplicate_groups }}" -gt 0 ]; then
+            if [ "${{ steps.results.outputs.was_dry_run }}" = "true" ]; then
+              echo "- Review the duplicate groups identified above" >> $GITHUB_STEP_SUMMARY
+              echo "- Run workflow manually with 'execute' mode to close duplicates" >> $GITHUB_STEP_SUMMARY
+              echo "- Consider adjusting duplicate detection logic if needed" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- ✅ Cleanup completed successfully" >> $GITHUB_STEP_SUMMARY
+              echo "- Monitor for new duplicates in future runs" >> $GITHUB_STEP_SUMMARY
+              echo "- Review closed issues to ensure accuracy" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "- ✅ No duplicates found - repository is well-maintained" >> $GITHUB_STEP_SUMMARY
+            echo "- Continue regular monitoring with scheduled runs" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload analysis report
+        if: steps.results.outputs.has_results == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: duplicate-cleanup-report-${{ github.run_number }}
+          path: duplicate-cleanup-report.json
+          retention-days: 30
+
+      - name: Handle analysis failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Create failure report
+            const failureContext = {
+              workflow: 'duplicate-issues-cleanup',
+              trigger: context.eventName,
+              runId: context.runId,
+              runUrl: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              timestamp: new Date().toISOString(),
+              repository: `${context.repo.owner}/${context.repo.repo}`,
+              parameters: {
+                dry_run: '${{ steps.params.outputs.dry_run }}',
+                include_closed: '${{ steps.params.outputs.include_closed }}',
+                execution_mode: '${{ steps.params.outputs.execution_mode }}'
+              }
+            };
+            
+            // Check for existing failure issues to prevent spam
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'duplicate-cleanup'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24; // Only check last 24 hours
+            });
+            
+            const issueBody = `## 🚨 Duplicate Cleanup Workflow Failure
+            
+            The duplicate issues cleanup workflow has failed and requires attention.
+            
+            ### Failure Details
+            - **Workflow**: ${failureContext.workflow}
+            - **Trigger**: ${failureContext.trigger}
+            - **Run ID**: [${failureContext.runId}](${failureContext.runUrl})
+            - **Timestamp**: ${failureContext.timestamp}
+            - **Parameters**: 
+              - Dry Run: ${failureContext.parameters.dry_run}
+              - Include Closed: ${failureContext.parameters.include_closed}
+              - Execution Mode: ${failureContext.parameters.execution_mode}
+            
+            ### Impact Assessment
+            - ⚠️ **Issue Management**: Duplicate issues may not be automatically cleaned up
+            - ⚠️ **Repository Quality**: Duplicate issues may accumulate over time
+            - ⚠️ **User Experience**: Contributors may see confusing duplicate issues
+            
+            ### Immediate Actions Required
+            1. 🔍 **Investigate**: Check the [workflow run logs](${failureContext.runUrl})
+            2. 🔧 **Fix**: Address any authentication, permission, or script issues
+            3. 🧪 **Test**: Run workflow manually after fixes
+            4. 📋 **Verify**: Check that duplicate detection logic is working
+            
+            ---
+            
+            *This issue was created automatically by the workflow monitoring system.*`;
+            
+            if (!recentFailure) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Duplicate Cleanup Workflow Failure - ${failureContext.timestamp.split('T')[0]}`,
+                body: issueBody,
+                labels: ['workflow-failure', 'duplicate-cleanup', 'bug', 'priority: high']
+              });
+              
+              console.log('Created failure alert issue');
+            } else {
+              // Add comment to existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: `## 🔄 Additional Failure - ${failureContext.timestamp}
+                
+                Another failure occurred in the duplicate cleanup workflow.
+                
+                **Run**: [${failureContext.runId}](${failureContext.runUrl})
+                **Trigger**: ${failureContext.trigger}
+                **Parameters**: Dry Run: ${failureContext.parameters.dry_run}, Mode: ${failureContext.parameters.execution_mode}
+                
+                Please investigate this recurring failure pattern.`
+              });
+              
+              console.log('Added comment to existing failure issue');
+            }
+
+      - name: Cleanup temporary files
+        if: always()
+        run: |
+          echo "🧹 Cleaning up temporary files..."
+          
+          # Clean up any temporary files but keep reports for artifacts
+          files_to_clean=("temp-*.json" "*.tmp" ".gh-*")
+          
+          for pattern in "${files_to_clean[@]}"; do
+            if ls $pattern 1> /dev/null 2>&1; then
+              rm -f $pattern
+              echo "  ✅ Cleaned up $pattern files"
+            fi
+          done
+          
+          echo "🧹 Cleanup completed"
