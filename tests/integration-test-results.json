@@ -1,204 +1,229 @@
 {
   "summary": {
-    "total": 35,
-    "passed": 33,
-    "failed": 2,
-    "success_rate": 94
+    "total": 43,
+    "passed": 43,
+    "failed": 0,
+    "success_rate": 100
   },
   "tests": [
     {
       "test": "Created high priority tasks sample file",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.946Z"
+      "timestamp": "2025-10-15T04:56:42.934Z"
     },
     {
       "test": "Created edge cases sample file",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.947Z"
+      "timestamp": "2025-10-15T04:56:42.934Z"
     },
     {
-      "test": "Generated 15 issues from sample files",
+      "test": "Generated 16 issues from sample files",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Found 3 critical priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Found 1 high priority issues",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Long titles are properly truncated",
-      "passed": false,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Critical issues include bug label",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Critical issues have priority label",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.948Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Found label parsing section in workflow",
       "passed": true,
-      "timestamp": "2025-10-14T11:05:09.804Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Uses proper loop for label iteration",
       "passed": true,
-      "timestamp": "2025-10-14T11:05:09.804Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Uses jq to extract array elements",
-      "passed": false,
-      "timestamp": "2025-10-14T18:23:37.950Z"
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.936Z"
+    },
+    {
+      "test": "Builds label array correctly",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.936Z"
+    },
+    {
+      "test": "Uses array expansion for command execution",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.936Z"
+    },
+    {
+      "test": "Label array conversion produces correct flags",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "critical priority generates correct labels: [todo, enhancement, priority: critical, bug]",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.950Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "high priority generates correct labels: [todo, enhancement, priority: high]",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.950Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "medium priority generates correct labels: [todo, enhancement, priority: medium]",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.950Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "low priority generates correct labels: [todo, enhancement, priority: low]",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.950Z"
+      "timestamp": "2025-10-15T04:56:42.936Z"
     },
     {
       "test": "Empty todo directory contains no files",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Malformed todo file generates no issues",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"**Improvements Needed**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Improvements Needed:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Improvements Needed\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Action Required:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Actions Required:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Recommended Actions:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"Recommended Action:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"**Current Coverage**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
+    },
+    {
+      "test": "Section header \"**Current Coverage**: Partially addressed in Section 4\" is properly filtered out",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.937Z"
+    },
+    {
+      "test": "Section header \"**Current Coverage**: Section 3 addresses this but lacks depth\" is properly filtered out",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.937Z"
+    },
+    {
+      "test": "Section header \"Current Coverage: Not explicitly addressed\" is properly filtered out",
+      "passed": true,
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Section header \"**Action Required**:\" is properly filtered out",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Valid task \"Contextualize international operations across 37 j...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Valid task \"Create comprehensive timeline analysis...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Valid task \"Implement priority-based response architecture...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Valid task \"Add Dan's technical affidavit explaining infrastru...\" passes filter",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.937Z"
     },
     {
       "test": "Generated issues from test content",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Test content contains duplicate task titles",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Found duplicate title \"Implement user authentication system\" (count: 2)",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.951Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Found duplicate title \"Add error logging functionality\" (count: 2)",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.952Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Duplicate detection logic identifies 2 duplicate titles",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.952Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Duplicate prevention would create 4 unique issues",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.952Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     },
     {
       "test": "Duplicate prevention would skip 2 duplicate issues",
       "passed": true,
-      "timestamp": "2025-10-14T18:23:37.952Z"
+      "timestamp": "2025-10-15T04:56:42.938Z"
     }
   ],
-  "errors": [
-    "Long titles are properly truncated",
-    "Uses jq to extract array elements",
-    "Builds label flags correctly",
-    "Uses eval for dynamic command execution"
-  ],
-  "mock_issues_generated": 15,
+  "errors": [],
+  "mock_issues_generated": 16,
   "sample_issues": [
     {
       "title": "Fix label array handling in GitHub Actions workflow",
@@ -243,5 +268,5 @@
       "lineNumber": 7
     }
   ],
-  "generated_at": "2025-10-14T18:23:37.952Z"
+  "generated_at": "2025-10-15T04:56:42.938Z"
 }
