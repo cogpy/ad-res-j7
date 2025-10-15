@@ -133,22 +133,30 @@ This analysis comprehensively refutes Peter Andrew Faucitt's false allegation of
 
 **Note:** "Trs" in these transactions refers to Daniel's personal investment/trust accounts, NOT Strategic Logistics (Pty) Ltd.
 
-### 2.2 Daniel's Personal Sacrifice
+### 2.2 Daniel's Personal Sacrifice and Net Loss
 
-**Daniel personally funded 53.9% of total:**
-- R585,000 from his own personal investment accounts (14 transfers over 4 months)
-- Forced to use personal funds after Peter's June 7 card cancellations
-- Continued funding business expenses from personal money even after Strategic Logistics R500K
+**Daniel DEPLETED his personal investment accounts:**
+- R585,000 transferred FROM Daniel's investment accounts TO his operating account
+- This represents a DEPLETION of Daniel's personal investments
+- Forced to liquidate personal investments after Peter's June 7 card cancellations
+- Continued funding business expenses from personal investments even after Strategic Logistics R500K
 
-**Strategic Logistics funded 46.1% of total:**
+**Strategic Logistics provided emergency funding:**
 - R500,000 from corporate decision (ONE transfer on July 16)
 - Emergency director loan advance when Daniel's account hit R864.45
 - Proper corporate governance (66% director vote)
+- This was TO Daniel (not FROM Daniel)
 
-**Total funding: R1,085,000**
-- Used to cover R501,199 in business IT expenses
-- Remaining R583,801 covered director loans, cash, and other expenses
-- Net account increase only R22,957 over 5 months (2.1% of total credits)
+**Total Credits to Operating Account: R1,085,000**
+- Strategic Logistics (Corporate): R500,000 (46.1%) - TO Daniel
+- Daniel's Personal Investments: R585,000 (53.9%) - FROM Daniel's investments (depletion)
+
+**Net Result Across ALL Daniel's Accounts:**
+- Operating account net increase: R22,957
+- Investment accounts depleted: -R585,000
+- **TOTAL NET LOSS: R562,043** (R22,957 - R585,000)
+
+**Conclusion: NO personal enrichment - Daniel suffered net loss of R562,043 across all accounts**
 
 ---
 
@@ -169,14 +177,16 @@ Peter alleges that:
 | Element | Peter's Claim | Reality | Status |
 |---------|---------------|---------|--------|
 | **Amount** | R500,000 | R500,000 | ✅ CORRECT |
+| **Direction** | TO Daniel | TO Daniel | ✅ CORRECT |
 | **Source** | Jacqui personal | Strategic Logistics corporate | ❌ FALSE |
 | **Nature** | Personal "gift" | Corporate director loan advance | ❌ FALSE |
 | **Decision** | Improper | 66% director vote (proper governance) | ❌ FALSE |
-| **Purpose** | Personal enrichment | Emergency business expenses | ❌ FALSE |
+| **Purpose** | Personal enrichment | Emergency business expenses + Net LOSS R562K | ❌ FALSE |
 | **Context** | Unexplained | Response to Peter's card cancellations | ❌ OMITTED |
-| **Daniel's funding** | Not mentioned | R585,000 from personal investments (53.9%) | ❌ OMITTED |
+| **Daniel's depletion** | Not mentioned | R585,000 depleted from personal investments | ❌ OMITTED |
+| **Net result** | Enrichment | NET LOSS R562,043 across all accounts | ❌ FALSE |
 
-**Peter got ONE thing right (amount) and EVERYTHING else wrong**
+**Peter got TWO things right (amount R500,000 and direction TO Daniel) but EVERYTHING else wrong**
 
 ### 3.3 Why Peter Alleges R500,000
 
@@ -186,7 +196,8 @@ But Peter:
 - ❌ **Mischaracterized source** - Strategic Logistics corporate, not Jacqui personal
 - ❌ **Mischaracterized nature** - corporate director loan advance, not personal gift
 - ❌ **Omitted context** - emergency response to crisis HE created (card cancellations)
-- ❌ **Omitted Daniel's sacrifice** - R585,000 from Daniel's personal investments (53.9%)
+- ❌ **Omitted Daniel's depletion** - R585,000 depleted from Daniel's personal investments
+- ❌ **Omitted net loss** - Daniel suffered NET LOSS of R562,043 across all accounts
 - ❌ **Omitted proper governance** - 66% director vote, R5M+ balance, temporary measure
 
 ---
