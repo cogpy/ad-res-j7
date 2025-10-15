@@ -111,13 +111,48 @@ This directory contains forensic evidence and analysis for the systematic revenu
 ## Legal Framework Classification
 
 ### Criminal Charges Available
-1. **Organized Crime/Racketeering** - Pattern of coordinated criminal activity
-2. **Computer Fraud** - Shopify audit trail destruction 
-3. **Identity Fraud** - Domain registration using son's name
-4. **Theft by Conversion** - Bank account redirection
-5. **Business Sabotage** - Systematic operational destruction
-6. **POPI Violations** - Unauthorized customer data processing
-7. **Criminal Conspiracy** - Coordinated multi-party criminal scheme
+
+#### 1. **Organized Crime/Racketeering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 2**: Racketeering activities - Pattern of coordinated criminal activity
+  - **Section 3**: Criminal enterprise activities
+  - **Penalty**: Up to 30 years imprisonment
+
+#### 2. **Computer Fraud** 
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access to, interception of, or interference with data
+  - **Section 86(2)**: Unauthorized modification or impairment of data (Shopify audit trail destruction)
+  - **Section 87**: Unauthorized access to computer program or system
+  - **Penalty**: Up to 12 months imprisonment or fine
+
+#### 3. **Identity Fraud**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 87**: Identity-related computer crimes (Domain registration using son's name)
+- **Common Law Fraud**: Identity misrepresentation elements
+  - **Elements**: Misrepresentation, unlawfulness, intention, prejudice
+  - **Penalty**: Up to 15 years imprisonment
+
+#### 4. **Theft by Conversion**
+- **Common Law Crime**: Bank account redirection and revenue diversion
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+#### 5. **Business Sabotage**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director breach of fiduciary duty through systematic operational destruction
+- **Common Law**: Malicious damage to property
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### 6. **POPI Violations**
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Offenses related to unauthorized customer data processing
+  - **Section 108**: Penalties
+  - **Penalty**: Up to R10 million fine or 10 years imprisonment per violation
+
+#### 7. **Criminal Conspiracy**
+- **Common Law Crime**: Coordinated multi-party criminal scheme
+  - **Elements**: Agreement between parties, unlawful objective, intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
 
 ### Regulatory Violations
 1. **Protection of Personal Information Act (POPI)** - R10M+ fines per violation
