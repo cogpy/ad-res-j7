@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
+const TestResultArchiver = require('./test-result-archiver');
 
 class WorkflowIntegrationTest {
   constructor() {
@@ -30,6 +31,16 @@ class WorkflowIntegrationTest {
     }
     
     return condition;
+  }
+
+  // Get count of todo files in the repository
+  getTodoFileCount() {
+    try {
+      const todoFiles = glob.sync('todo/**/*.{md,json}', { ignore: ['**/node_modules/**'] });
+      return todoFiles.length;
+    } catch (e) {
+      return 0;
+    }
   }
 
   // Create sample todo files for testing
@@ -554,8 +565,16 @@ No numbered lists or bullet points with action words
       generated_at: new Date().toISOString()
     };
     
-    fs.writeFileSync('tests/integration-test-results.json', JSON.stringify(results, null, 2));
-    console.log('\n📝 Integration test results written to tests/integration-test-results.json');
+    // Archive test results to prevent merge conflicts
+    const archiver = new TestResultArchiver();
+    archiver.archiveTestResult('integration-test-results.json', results, {
+      testType: 'integration-test',
+      metadata: {
+        mock_issues_count: this.mockIssues.length,
+        todo_files_tested: this.getTodoFileCount()
+      },
+      summary: results.summary
+    });
     
     return failedTests === 0;
   }

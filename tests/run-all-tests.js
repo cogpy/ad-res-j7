@@ -6,6 +6,7 @@
 const WorkflowValidator = require('./workflow-validation.test.js');
 const WorkflowIntegrationTest = require('./integration-test.js');
 const fs = require('fs');
+const TestResultArchiver = require('./test-result-archiver');
 
 class TestRunner {
   constructor() {
@@ -110,10 +111,10 @@ class TestRunner {
       }
     }
     
-    console.log('\n📁 Test artifacts:');
-    console.log('   - tests/workflow-validation-results.json');
-    console.log('   - tests/integration-test-results.json');
-    console.log('   - tests/comprehensive-test-results.json');
+    console.log('\n📁 Test artifacts are archived in:');
+    console.log('   - test-data/latest/ (most recent results)');
+    console.log('   - test-data/archives/ (timestamped archives)');
+    console.log('   - tests/ (backward compatibility copies)');
     
     console.log('\n' + '=' .repeat(80));
   }
@@ -122,7 +123,16 @@ class TestRunner {
     this.results.generated_at = new Date().toISOString();
     this.results.test_runner_version = '1.0.0';
     
-    fs.writeFileSync('tests/comprehensive-test-results.json', JSON.stringify(this.results, null, 2));
+    // Archive comprehensive test results to prevent merge conflicts
+    const archiver = new TestResultArchiver();
+    archiver.archiveTestResult('comprehensive-test-results.json', this.results, {
+      testType: 'comprehensive-test',
+      metadata: {
+        runner_version: '1.0.0',
+        test_suites: ['validation', 'integration']
+      },
+      summary: this.results.overall
+    });
   }
 
   async run() {
