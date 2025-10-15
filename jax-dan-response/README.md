@@ -4,13 +4,40 @@ This directory contains the specific response of Jacqueline and Daniel Faucitt t
 
 ## Subdirectories
 
-- **`AD/`**: Documents related to the "AD Response J7" project.
+- **`AD/`**: **NEW** - Structured response framework mirroring jax-response/AD with Daniel's technical perspective on allegations. Includes critical Responsible Person regulatory crisis analysis.
 - **`analysis-output/`**: Output from the analysis of the case.
-- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit.
+- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit and **the critical Responsible Person Regulatory Crisis Section**.
 - **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
 - **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
 
 ## Key Evidence Documents
+
+### **🔥 CRITICAL: Responsible Person Regulatory Crisis Section**
+**Location**: `evidence-attachments/RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md`
+
+**⚠️ PRIORITY 1 (MUST-DO PHASE 1) - This is the most significant material non-disclosure in Peter's founding affidavit.**
+
+This critical section addresses the Applicant's failure to disclose that Jacqueline Faucitt holds the legally designated Responsible Person position under EU Regulation 1223/2009 for cosmetic products in **37 international jurisdictions**. This material non-disclosure may alone justify setting aside the interdict.
+
+**Key Components:**
+1. **Legal Framework** - EU Regulation 1223/2009 requirements across 37 jurisdictions
+2. **Non-Delegable Duties** - Personal legal liability and system access requirements
+3. **Immediate Crisis** - How interdict prevents fulfillment of regulatory obligations
+4. **Regulatory Consequences** - Potential penalties of R50M+ and business destruction
+5. **Material Non-Disclosure** - Evidence of Applicant's knowledge and failure to disclose
+
+**Critical Impact:**
+- Creates immediate regulatory compliance crisis across 37 jurisdictions
+- Exposes business to penalties of €10,000-€1,000,000 per jurisdiction per violation
+- Prevents response to regulatory inquiries within statutory timeframes (24-48 hours)
+- Blocks ability to implement safety recalls or corrective actions
+- May constitute fraud upon the Court through systematic material non-disclosure
+
+**Evidence Requirements:**
+- JF-RP1: Responsible Person designation documentation (37 jurisdictions)
+- JF-RP2: Regulatory risk analysis and penalty assessment
+- JF-RP3: System access requirements for compliance
+- JF-RP4: Evidence of immediate consequences post-interdict
 
 ### Dan's Technical Infrastructure Affidavit
 **Location**: `evidence-attachments/Dan_Technical_Infrastructure_Affidavit.md`
