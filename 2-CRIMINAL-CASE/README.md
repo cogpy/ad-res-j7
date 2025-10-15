@@ -33,7 +33,7 @@ This directory contains the framework for criminal prosecution of:
 - Money laundering
 - Tax evasion
 - Obstruction of justice
-- Possible involvement in Kayla Faucitt's death (2023)
+- Possible involvement in Kayla Pretorius's death (2023)
 
 ---
 
