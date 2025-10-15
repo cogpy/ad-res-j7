@@ -53,8 +53,9 @@ This FINAL affidavit combines the Jacqueline and Daniel Faucitt affidavits with 
 - ✅ Chesno disappeared after fraud - cannot be located
 - ✅ Company left in substantial debt and near insolvency
 - ✅ Documentary evidence requirements listed (Annexures JF-CHESNO1 through JF-CHESNO4)
-- ✅ Daniel's **8-year restoration effort** properly documented
-- ✅ Company restored to break-even operations
+- ✅ Daniel's **ongoing restoration effort** properly documented
+- ✅ Company established as **dormant holding company since 2015** preserving GBP 650,000+ tax losses
+- ✅ Daniel's strategy of gradual creditor repayment using profits from new ventures documented
 - ✅ Documentary evidence of restoration listed (Annexures JF-RESTORE1 through JF-RESTORE4)
 - ✅ Applicant's misleading characterization exposed
 - ✅ Relevance to current proceedings established
@@ -64,7 +65,8 @@ This FINAL affidavit combines the Jacqueline and Daniel Faucitt affidavits with 
 - Original version **incorrectly denied** Chesno fraud occurred
 - FINAL version **corrects the record** with full details of:
   - The massive fraud committed by Chesno
-  - Daniel's heroic 8-year restoration effort
+  - Daniel's strategic management: dormant company status preserving GBP 650,000+ tax losses
+  - Entrepreneurial approach: new ventures generating funds for gradual creditor repayment
   - Applicant's deliberate mischaracterization
   - Evidence of Daniel's competence and integrity
 
@@ -125,7 +127,10 @@ This follows the repository structure where Daniel's affidavit is in:
 1. **Legal Review** - Attorney review of corrections
 2. **Evidence Gathering** - Collect annexures referenced:
    - JF-CHESNO1 through JF-CHESNO4 (Chesno fraud evidence)
-   - JF-RESTORE1 through JF-RESTORE4 (Restoration evidence)
+   - JF-RESTORE1: Companies House dormant company filings from 2015
+   - JF-RESTORE2: Documentation of GBP 650,000+ tax losses
+   - JF-RESTORE3: Creditor correspondence showing periodic repayments
+   - JF-RESTORE4: Evidence of Daniel's new ventures funding repayments
    - All other annexures referenced in affidavit
 3. **Cross-Reference Check** - Verify all annexure references
 4. **Final Proofread** - Check dates, amounts, and factual accuracy

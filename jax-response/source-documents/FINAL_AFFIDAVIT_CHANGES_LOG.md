@@ -146,21 +146,21 @@ FINAL.docx (528 paragraphs)
   - JF-CHESNO3: Police reports and fraud investigations
   - JF-CHESNO4: Insolvency assessment
 
-**129.3:** Daniel's Eight-Year Restoration Effort
+**129.3:** Daniel's Ongoing Restoration Effort
 - 129.3.1: Appointed to **rescue company from insolvency**
 - 129.3.2: Appointment necessitated BY fraud, not "arising from wrongdoing"
-- 129.3.3: Eight-year effort included:
-  - Repaying Chesno's fraud debts
-  - Rebuilding customer/supplier relationships
-  - Restoring company reputation
+- 129.3.3: Ongoing restoration effort included:
+  - Managing transition to dormant company status
+  - Gradually repaying Chesno's fraud debts using profits from new ventures
+  - Preserving accumulated tax losses exceeding GBP 650,000
   - Implementing fraud controls
-  - Returning to break-even operations
-- 129.3.4: Successfully restored to **break-even** by [date]
+  - Maintaining company structure for eventual return to trading
+- 129.3.4: Established as **dormant holding company since 2015**, preserving GBP 650,000+ tax losses while Daniel generates funds through new ventures for gradual creditor repayment
 - 129.3.5: Documentary evidence requirements:
-  - JF-RESTORE1: Financial statements (debt reduction)
-  - JF-RESTORE2: Management accounts (break-even)
-  - JF-RESTORE3: Creditor correspondence
-  - JF-RESTORE4: Customer testimonials
+  - JF-RESTORE1: Companies House filings (dormant status from 2015)
+  - JF-RESTORE2: Documentation of tax losses exceeding GBP 650,000
+  - JF-RESTORE3: Creditor correspondence showing periodic repayments
+  - JF-RESTORE4: Evidence of Daniel's new ventures funding repayments
 
 **129.4:** The Applicant's Misleading Characterization
 - 129.4.1: Applicant's claim "deliberately misleading"
@@ -174,8 +174,8 @@ FINAL.docx (528 paragraphs)
 
 **129.5:** Relevance to Current Proceedings
 - 129.5.1: Demonstrates four key points:
-  - (a) Daniel's Competence (8 years crisis management)
-  - (b) Daniel's Integrity (commitment to restoration)
+  - (a) Daniel's Competence (strategic dormant company management, preserving tax losses, entrepreneurial creditor repayment)
+  - (b) Daniel's Integrity (long-term commitment to creditor repayment through new ventures)
   - (c) Applicant's Bad Faith (deliberate mischaracterization)
   - (d) Pattern of Misrepresentation (consistent with other claims)
 
@@ -190,9 +190,9 @@ FINAL.docx (528 paragraphs)
 
 1. **Corrects material misstatement** - original version implied no fraud
 2. **Exposes Applicant's bad faith** - deliberately inverted the truth
-3. **Demonstrates Daniel's competence** - 8 years of successful crisis management
+3. **Demonstrates Daniel's competence** - strategic dormant company management and entrepreneurial creditor repayment approach
 4. **Shows pattern of misrepresentation** - consistent with other allegations
-5. **Establishes Daniel's integrity** - could have walked away but restored company
+5. **Establishes Daniel's integrity** - maintains long-term commitment using new venture profits for creditor repayment
 6. **Documents Applicant's knowledge** - mischaracterization is deliberate, not mistake
 
 ---

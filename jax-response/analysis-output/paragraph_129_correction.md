@@ -28,20 +28,20 @@
 
 129.3.2 This appointment was **necessitated by the fraud**, not "arising from alleged wrongdoing" as the Applicant misleadingly suggests.
 
-129.3.3 The Second Respondent undertook an **eight-year restoration effort** to:
-- Repay the debts created by Chesno's fraud;
-- Rebuild customer and supplier relationships damaged by the fraud;
-- Restore the company's reputation in UK markets;
+129.3.3 The Second Respondent undertook an **ongoing restoration effort** to:
+- Manage the company's transition to dormant status while preserving its legal structure;
+- Gradually repay creditors of RegimA UK Ltd and its subsidiaries using profits from new business ventures;
+- Preserve the accumulated tax losses (exceeding GBP 650,000) which make restoration to trading status worthwhile in the long term;
 - Implement proper financial controls to prevent future fraud;
-- Return the company to break-even operations.
+- Maintain the company structure for eventual return to trading operations when financially viable.
 
-129.3.4 As of [date], the Second Respondent successfully restored RegimA UK Ltd to **break-even operations**, a remarkable achievement given the magnitude of the fraud and debt he inherited.
+129.3.4 The Second Respondent established RegimA UK Ltd as a **dormant holding company since 2015**, protecting the substantial accumulated tax losses (exceeding GBP 650,000) which provide significant value for future restoration to trading status. Daniel started several new companies and is **gradually using the profits from these new ventures to pay creditors** of RegimA UK Ltd and its subsidiaries as often as possible.
 
-129.3.5 Documentary evidence of this restoration includes:
-- Financial statements showing progressive debt reduction from [year] to [year] (Annexure **JF-RESTORE1**);
-- Management accounts demonstrating return to break-even (Annexure **JF-RESTORE2**);
-- Correspondence with creditors showing debt repayment (Annexure **JF-RESTORE3**);
-- Customer testimonials regarding restored service levels (Annexure **JF-RESTORE4**).
+129.3.5 Documentary evidence of this restoration effort includes:
+- Companies House filings showing dormant company status from 2015 onwards (Annexure **JF-RESTORE1**);
+- Documentation of accumulated tax losses exceeding GBP 650,000 (Annexure **JF-RESTORE2**);
+- Correspondence with creditors showing periodic debt repayment from Daniel's new venture profits (Annexure **JF-RESTORE3**);
+- Evidence of Daniel's new business ventures established to generate funds for creditor repayment (Annexure **JF-RESTORE4**).
 
 129.4 **The Applicant's Misleading Characterization:**
 
@@ -50,19 +50,19 @@
 129.4.2 The Second Respondent's appointment arose **because of someone else's wrongdoing** (Chesno's fraud), not from any wrongdoing by the Second Respondent.
 
 129.4.3 The Second Respondent's appointment was based on:
-- **Crisis management capability** - ability to rescue an insolvent company;
-- **Financial acumen** - ability to manage debt repayment over 8 years;
-- **Operational expertise** - ability to restore business operations;
+- **Crisis management capability** - ability to navigate a company through fraud-induced insolvency;
+- **Financial acumen** - ability to structure dormant status to preserve tax losses and manage gradual creditor repayment;
+- **Entrepreneurial skill** - ability to start new ventures generating profits for creditor repayment;
 - **Integrity and trustworthiness** - precisely the qualities lacking in his predecessor;
-- **Proven track record** - successfully achieving break-even after inheriting £500K+ fraud debt.
+- **Proven track record** - successfully preserving GBP 650,000+ tax losses while establishing new businesses to fund gradual debt recovery.
 
 129.5 **Relevance to Current Proceedings:**
 
 129.5.1 The Chesno fraud and Daniel's successful restoration are directly relevant to this matter because they demonstrate:
 
-**(a) Daniel's Competence:** Eight years of successful crisis management and debt recovery prove Daniel's business competence, contradicting the Applicant's allegations of financial mismanagement.
+**(a) Daniel's Competence:** The strategic management of RegimA UK Ltd as a dormant holding company to preserve substantial tax losses, combined with establishing new ventures to generate profits for gradual creditor repayment, demonstrates Daniel's business competence and contradicts the Applicant's allegations of financial mismanagement.
 
-**(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company; instead, he spent 8 years restoring it, demonstrating commitment to the RegimA businesses.
+**(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company; instead, he has maintained it as a dormant holding company since 2015, started new business ventures, and is gradually using profits from those ventures to repay creditors, demonstrating long-term commitment to the RegimA businesses and their stakeholders.
 
 **(c) Applicant's Bad Faith:** The Applicant's deliberate mischaracterization of Daniel's appointment as "arising from alleged wrongdoing" demonstrates the Applicant's willingness to distort facts to support his narrative.
 
@@ -72,7 +72,7 @@
 
 129.6.1 The Applicant was **fully aware** of the Chesno fraud at the time it occurred.
 
-129.6.2 The Applicant was **fully aware** of Daniel's eight-year restoration effort.
+129.6.2 The Applicant was **fully aware** of Daniel's strategy to maintain RegimA UK Ltd as a dormant holding company and gradually repay creditors using profits from new ventures.
 
 129.6.3 The Applicant **participated in decisions** regarding the UK company's recovery strategy.
 
@@ -80,9 +80,9 @@
 
 ⚠️ **STRATEGIC NOTE:** This correction is critical because it:
 1. Exposes the Applicant's willingness to deliberately misrepresent facts
-2. Demonstrates Daniel's competence and integrity through 8 years of crisis management
+2. Demonstrates Daniel's competence and integrity through strategic management of dormant company status and entrepreneurial creditor repayment approach
 3. Shows the Applicant's bad faith in characterizing rescue efforts as "arising from wrongdoing"
-4. Provides concrete evidence of Daniel's business acumen (£500K+ fraud recovery)
+4. Provides concrete evidence of Daniel's business acumen (preserving GBP 650,000+ tax losses while generating funds for gradual debt recovery)
 
 ---
 
@@ -92,10 +92,10 @@
 ☐ Bank statements showing unauthorized transfers (Annexure JF-CHESNO2)
 ☐ Police reports and fraud investigation records (Annexure JF-CHESNO3)
 ☐ Insolvency assessment pre-Daniel appointment (Annexure JF-CHESNO4)
-☐ Financial statements showing debt reduction over 8 years (Annexure JF-RESTORE1)
-☐ Management accounts showing return to break-even (Annexure JF-RESTORE2)
-☐ Correspondence with creditors re: debt repayment (Annexure JF-RESTORE3)
-☐ Customer testimonials re: restored service (Annexure JF-RESTORE4)
+☐ Companies House filings showing dormant company status from 2015 onwards (Annexure JF-RESTORE1)
+☐ Documentation of accumulated tax losses exceeding GBP 650,000 (Annexure JF-RESTORE2)
+☐ Correspondence with creditors showing periodic debt repayment from Daniel's new venture profits (Annexure JF-RESTORE3)
+☐ Evidence of Daniel's new business ventures established to generate funds for creditor repayment (Annexure JF-RESTORE4)
 ☐ Board minutes appointing Daniel as managing director (with context of fraud)
 ☐ Evidence of Applicant's knowledge and participation in recovery decisions
 

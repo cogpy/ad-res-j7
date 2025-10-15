@@ -604,7 +604,7 @@ This international scope requires substantial IT infrastructure, including:
 
 11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd.
 
-11.2 It is further admitted that the said entity operates as the United Kingdom head office and oversees subsidiary and associated companies.
+11.2 It is clarified that RegimA UK Ltd is **not currently operating as a Head Office**. The entity has been a **dormant holding company since 2015** following the fraud perpetrated by Isaac Chesno. The company and its subsidiaries hold accumulated tax losses exceeding **GBP 650,000**, making it worthwhile to maintain and eventually restore them to trading status in the long term.
 
 ### AD PARAGRAPH 11.6 TO 11.9
 
