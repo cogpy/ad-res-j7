@@ -2,6 +2,12 @@
 
 This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `todo-to-issues.yml` and `file-representations.yml` workflows.
 
+## 🛡️ Merge Conflict Prevention
+
+**Test results are automatically archived to prevent merge conflicts in PRs.**
+
+All test result files (`.json`) are gitignored and stored in the `test-data/` directory instead of being committed. This ensures that multiple PRs running tests simultaneously will never conflict. See [MERGE_CONFLICT_PREVENTION.md](MERGE_CONFLICT_PREVENTION.md) for details.
+
 ## Overview
 
 The test suite addresses the requirements from `todo/workflow-test.md`:

@@ -29,10 +29,11 @@ Thumbs.db
 *.swo
 *~
 
-# Test files
-test-*.js
-test-*.json
+# Test files (temporary test scripts, not the test framework itself)
+/test-*.js
+/test-*.json
 tests/*-results.json
+tests/sample-todos/
 
 # Test data archive directory (prevents merge conflicts)
 test-data/
