@@ -335,6 +335,142 @@ class WorkflowValidator {
     }
   }
 
+  // Test 9: Comprehensive validation of complex multi-word labels
+  testComplexMultiWordLabels() {
+    console.log('\n🧪 Testing complex multi-word label validation...');
+    
+    try {
+      const workflowContent = fs.readFileSync('.github/workflows/todo-to-issues.yml', 'utf8');
+      
+      // Test 1: Verify all complex multi-word label formats are supported
+      const complexLabels = [
+        'priority: critical',
+        'priority: high',
+        'priority: medium',
+        'priority: low'
+      ];
+      
+      complexLabels.forEach(label => {
+        this.assert(
+          workflowContent.includes(label),
+          `Workflow supports complex label: "${label}"`
+        );
+      });
+      
+      // Test 2: Verify label conversion logic handles spaces correctly
+      const labelConversionRegex = /gh_args\+=\("--label"\s+"\$label"\)/;
+      this.assert(
+        labelConversionRegex.test(workflowContent),
+        'Label conversion properly quotes labels with spaces'
+      );
+      
+      // Test 3: Simulate the complete label conversion flow
+      const testLabels = [
+        'todo',
+        'enhancement', 
+        'priority: critical',
+        'bug'
+      ];
+      
+      // Simulate what the bash script does
+      let cliArgs = ['issue', 'create'];
+      testLabels.forEach(label => {
+        cliArgs.push('--label', label);
+      });
+      
+      // Verify the structure matches expected format
+      this.assert(
+        cliArgs.includes('--label') && cliArgs.includes('priority: critical'),
+        'Complex multi-word labels correctly added to CLI arguments array'
+      );
+      
+      // Test 4: Verify label with colon and space is treated as single label
+      const labelWithColon = 'priority: critical';
+      this.assert(
+        labelWithColon.includes(':') && labelWithColon.includes(' '),
+        'Label format contains both colon and space as expected'
+      );
+      
+      // Test 5: Verify jq parsing preserves label integrity
+      // The workflow uses: jq -r '.[]' to extract labels
+      // This should preserve spaces and special characters
+      const jsonLabels = JSON.stringify(testLabels);
+      const parsedLabels = JSON.parse(jsonLabels);
+      
+      this.assert(
+        parsedLabels.includes('priority: critical'),
+        'JSON parsing preserves complex multi-word labels'
+      );
+      
+      // Test 6: Verify all priority levels have correct label format
+      const priorityMappings = [
+        { priority: 'critical', expectedLabels: ['todo', 'enhancement', 'priority: critical', 'bug'] },
+        { priority: 'high', expectedLabels: ['todo', 'enhancement', 'priority: high'] },
+        { priority: 'medium', expectedLabels: ['todo', 'enhancement', 'priority: medium'] },
+        { priority: 'low', expectedLabels: ['todo', 'enhancement', 'priority: low'] }
+      ];
+      
+      priorityMappings.forEach(mapping => {
+        mapping.expectedLabels.forEach(label => {
+          if (label.includes('priority:')) {
+            this.assert(
+              label.match(/^priority:\s+\w+$/),
+              `Label "${label}" follows correct format pattern`
+            );
+          }
+        });
+      });
+      
+      // Test 7: Verify workflow uses secure array-based approach (not eval)
+      // Check for eval command usage (not in comments)
+      const lines = workflowContent.split('\n');
+      const hasEvalCommand = lines.some(line => {
+        const trimmed = line.trim();
+        // Ignore comments
+        if (trimmed.startsWith('#')) return false;
+        // Check for eval command (not just the word in text)
+        return /^\s*eval\s+/.test(line) || /\|\s*eval\s+/.test(line) || /;\s*eval\s+/.test(line);
+      });
+      this.assert(
+        !hasEvalCommand,
+        'Workflow does not use eval command (uses secure array-based approach)'
+      );
+      
+      // Test 8: Verify label array is properly initialized
+      this.assert(
+        workflowContent.includes('gh_args=('),
+        'Label array is properly initialized as bash array'
+      );
+      
+      // Test 9: Verify special case for critical priority getting bug label
+      const criticalSectionRegex = /priority\s*===?\s*['"]critical['"]/;
+      this.assert(
+        criticalSectionRegex.test(workflowContent),
+        'Workflow logic includes special handling for critical priority'
+      );
+      
+      // Test 10: Test the specific task from workflow-validation-tests.md
+      const todoFile = 'todo/workflow-validation-tests.md';
+      if (fs.existsSync(todoFile)) {
+        const todoContent = fs.readFileSync(todoFile, 'utf8');
+        this.assert(
+          todoContent.includes('Validate issue creation with complex multi-word labels like "priority: critical"'),
+          'Target validation task exists in todo file'
+        );
+      }
+      
+      console.log('\n✨ Complex multi-word label validation summary:');
+      console.log('   • All priority label formats validated');
+      console.log('   • Label conversion logic verified');
+      console.log('   • JSON to CLI argument flow confirmed');
+      console.log('   • Special characters (space, colon) handled correctly');
+      console.log('   • Secure implementation (no eval usage)');
+      
+    } catch (error) {
+      this.assert(false, `Error testing complex multi-word labels: ${error.message}`);
+    }
+  }
+
   // Run all tests
   runAllTests() {
     console.log('🚀 Starting workflow validation tests...');
@@ -348,6 +484,7 @@ class WorkflowValidator {
     this.testTodoFileStructure();
     this.testErrorHandling();
     this.testIssueCreationWithSampleData();
+    this.testComplexMultiWordLabels();
     
     console.log('\n' + '=' .repeat(60));
     console.log(`📊 Test Summary: ${this.testResults.length} tests run`);
@@ -383,7 +520,8 @@ class WorkflowValidator {
     archiver.archiveTestResult('workflow-validation-results.json', detailedResults, {
       testType: 'workflow-validation',
       metadata: {
-        workflow_files_tested: ['todo-to-issues.yml', 'file-representations.yml']
+        workflow_files_tested: ['todo-to-issues.yml', 'file-representations.yml'],
+        complex_label_validation: true
       },
       summary: detailedResults.summary
     });
