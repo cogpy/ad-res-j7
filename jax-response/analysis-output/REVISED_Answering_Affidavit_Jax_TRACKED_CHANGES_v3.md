@@ -602,7 +602,9 @@ This international scope requires substantial IT infrastructure, including:
 
 ### AD PARAGRAPH 11 TO 11.5
 
-11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd.
+11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are currently registered as directors of RegimA UK Ltd.
+
+11.1.1 However, the characterization of Daniel's directorship as a formal "appointment" requires clarification: Daniel's directorship arose from his **rescue of the UK business** following the Chesno fraud and the Applicant's abandonment of the failing entity, not from a traditional appointment process. (See detailed explanation at paragraph 129 below.)
 
 11.2 It is further admitted that the said entity operates as the United Kingdom head office and oversees subsidiary and associated companies.
 
@@ -636,22 +638,48 @@ This international scope requires substantial IT infrastructure, including:
 - Police reports and fraud investigation records (Annexure **JF-CHESNO3**);
 - Insolvency assessment as of [date] (Annexure **JF-CHESNO4**).
 
-129.3 **Daniel's Eight-Year Restoration Effort:**
+129.3 **The Reality: Daniel's Rescue of an Abandoned Business:**
 
-129.3.1 Following the Chesno fraud, the Second Respondent (Daniel) was appointed as managing director of RegimA UK Ltd specifically to **rescue the company from insolvency** and restore it to financial viability.
+129.3.1 The characterization that Daniel was "appointed as managing director" fundamentally mischaracterises what actually occurred. The reality is:
 
-129.3.2 This appointment was **necessitated by the fraud**, not "arising from alleged wrongdoing" as the Applicant misleadingly suggests.
+129.3.2 **Peter's Pattern of Business Conduct:**
 
-129.3.3 The Second Respondent undertook an **eight-year restoration effort** to:
+129.3.2.1 The Applicant (Peter) had entered into an unconditional multi-decade contract with Isaac Chesno regarding the UK operations.
+
+129.3.2.2 When Chesno committed fraud and the business faced insolvency, the Applicant **abandoned the struggling UK business** at the first sign of serious trouble.
+
+129.3.2.3 The Applicant then sought to blame others for the crisis he had enabled through his initial decision to enter unconditional agreements with unsuitable parties.
+
+129.3.3 **Daniel's Business Rescue - Not a Traditional "Appointment":**
+
+129.3.3.1 Following the Chesno fraud and the Applicant's abandonment of the failing business, the Second Respondent (Daniel) **stepped in to rescue RegimA UK Ltd from insolvency** and restore it to financial viability.
+
+129.3.3.2 There was no traditional "authority to appoint" in the formal sense that the term "appointed" suggests. Rather, this was a **business rescue and acquisition situation** where Daniel took responsibility for a failing entity that others (including the Applicant) had abandoned.
+
+129.3.3.3 This was **not an isolated incident** but part of a broader pattern over the years: the Applicant would sign unconditional multi-decade contracts with strangers, and when problems inevitably arose, Daniel would rescue the failing operations while the Applicant blamed him for "letting it happen."
+
+129.3.4 **Daniel's Eight-Year Restoration Effort:**
+
+129.3.4.1 The Second Respondent undertook an **eight-year restoration effort** to:
 - Repay the debts created by Chesno's fraud;
 - Rebuild customer and supplier relationships damaged by the fraud;
 - Restore the company's reputation in UK markets;
 - Implement proper financial controls to prevent future fraud;
 - Return the company to break-even operations.
 
-129.3.4 As of [date], the Second Respondent successfully restored RegimA UK Ltd to **break-even operations**, a remarkable achievement given the magnitude of the fraud and debt he inherited.
+129.3.4.2 As of [date], the Second Respondent successfully restored RegimA UK Ltd to **break-even operations**, a remarkable achievement given the magnitude of the fraud and debt he inherited after the Applicant's abandonment.
 
-129.3.5 Documentary evidence of this restoration includes:
+129.3.5 **The Pattern Across Multiple Businesses:**
+
+129.3.5.1 The UK situation with Chesno is **not an isolated incident** but exemplifies a recurring pattern in the RegimA businesses:
+- The Applicant signs unconditional multi-decade contracts with individuals without adequate due diligence;
+- When those individuals prove unsuitable or problems arise, the Applicant abandons the struggling business;
+- Daniel steps in to rescue the failing operation;
+- The Applicant later blames Daniel for the problems that arose from the Applicant's own decisions.
+
+129.3.5.2 This pattern has repeated across **various businesses acquired over the years** when original parties "jumped ship" and Daniel rescued the operations. The characterization of these rescues as formal "appointments" fundamentally misrepresents the nature of Daniel's involvement.
+
+129.3.6 Documentary evidence of this restoration includes:
 - Financial statements showing progressive debt reduction from [year] to [year] (Annexure **JF-RESTORE1**);
 - Management accounts demonstrating return to break-even (Annexure **JF-RESTORE2**);
 - Correspondence with creditors showing debt repayment (Annexure **JF-RESTORE3**);
@@ -659,38 +687,46 @@ This international scope requires substantial IT infrastructure, including:
 
 129.4 **The Applicant's Misleading Characterization:**
 
-129.4.1 The Applicant's suggestion that the Second Respondent's appointment "arose from alleged wrongdoing" is **deliberately misleading** and inverts the truth.
+129.4.1 Every reference to "Daniel Faucitt was appointed as director of RegimA Ltd" is **misleading and fundamentally mischaracterises** the relationship between the companies and parties.
 
-129.4.2 The Second Respondent's appointment arose **because of someone else's wrongdoing** (Chesno's fraud), not from any wrongdoing by the Second Respondent.
+129.4.2 The Applicant's suggestion that Daniel's role "arose from alleged wrongdoing" is **deliberately misleading** and inverts the truth.
 
-129.4.3 The Second Respondent's appointment was based on:
+129.4.3 The reality is that Daniel's involvement arose **because of someone else's wrongdoing** (Chesno's fraud) **combined with the Applicant's abandonment** of the failing business, not from any wrongdoing by Daniel.
+
+129.4.4 The characterization as a formal "appointment" obscures the true nature of the situation:
 - **Crisis management capability** - ability to rescue an insolvent company;
 - **Financial acumen** - ability to manage debt repayment over 8 years;
 - **Operational expertise** - ability to restore business operations;
 - **Integrity and trustworthiness** - precisely the qualities lacking in his predecessor;
-- **Proven track record** - successfully achieving break-even after inheriting £500K+ fraud debt.
+- **Proven track record** - successfully achieving break-even after inheriting £500K+ fraud debt that resulted from the Applicant's abandoned business decisions.
 
 129.5 **Relevance to Current Proceedings:**
 
-129.5.1 The Chesno fraud and Daniel's successful restoration are directly relevant to this matter because they demonstrate:
+129.5.1 The Chesno fraud, the Applicant's abandonment, and Daniel's successful business rescue are directly relevant to this matter because they demonstrate:
 
 **(a) Daniel's Competence:** Eight years of successful crisis management and debt recovery prove Daniel's business competence, contradicting the Applicant's allegations of financial mismanagement.
 
-**(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company; instead, he spent 8 years restoring it, demonstrating commitment to the RegimA businesses.
+**(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company that the Applicant had abandoned; instead, he spent 8 years restoring it, demonstrating commitment to the RegimA businesses.
 
-**(c) Applicant's Bad Faith:** The Applicant's deliberate mischaracterization of Daniel's appointment as "arising from alleged wrongdoing" demonstrates the Applicant's willingness to distort facts to support his narrative.
+**(c) The Applicant's Pattern of Conduct:** The UK situation exemplifies the Applicant's recurring pattern - signing unconditional multi-decade contracts with unsuitable parties, abandoning businesses at the first sign of trouble, then blaming Daniel. **This is precisely what is happening in the current proceedings.**
 
-**(d) Pattern of Misrepresentation:** Just as the Applicant misrepresents Daniel's appointment, he misrepresents the R500,000 payment, the IT expenses, and the settlement agreement.
+**(d) Applicant's Bad Faith:** The Applicant's deliberate mischaracterization of Daniel's business rescue as a formal "appointment arising from alleged wrongdoing" demonstrates the Applicant's willingness to distort facts to support his narrative.
 
-129.6 **The Applicant's Knowledge:**
+**(e) Pattern of Misrepresentation:** Just as the Applicant misrepresents Daniel's rescue of abandoned businesses as formal "appointments," he misrepresents the R500,000 payment, the IT expenses, and the settlement agreement.
 
-129.6.1 The Applicant was **fully aware** of the Chesno fraud at the time it occurred.
+129.6 **The Applicant's Knowledge and Participation:**
 
-129.6.2 The Applicant was **fully aware** of Daniel's eight-year restoration effort.
+129.6.1 The Applicant was **fully aware** of the Chesno fraud at the time it occurred - it was a crisis in a business where he had signed the unconditional contract with Chesno.
 
-129.6.3 The Applicant **participated in decisions** regarding the UK company's recovery strategy.
+129.6.2 The Applicant was **fully aware** that he had abandoned the failing UK business and that Daniel stepped in to rescue it.
 
-129.6.4 The Applicant's current mischaracterization is therefore **deliberate and knowing**, not a mistake or misunderstanding.
+129.6.3 The Applicant was **fully aware** of Daniel's eight-year restoration effort and benefited from Daniel's rescue of the failing business.
+
+129.6.4 The Applicant **initially participated in decisions** regarding the UK company's recovery strategy before abandoning the troubled business to Daniel.
+
+129.6.5 The Applicant's current mischaracterization of Daniel's business rescue as a formal "appointment" is therefore **deliberate and knowing**, not a mistake or misunderstanding.
+
+129.6.6 The Applicant's attempt to now characterize Daniel's rescue efforts as "arising from wrongdoing" while concealing his own role in creating the crisis and abandoning the business demonstrates profound bad faith.
 
 ---
 
