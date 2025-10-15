@@ -31,7 +31,7 @@ This analysis comprehensively refutes Peter Andrew Faucitt's false allegation of
    - **Cause:** Peter's June 7 secret card cancellations → backup charges depleted account
    - **Emergency:** Daniel unable to cover ongoing business expenses
    - **Corporate response:** 66% director vote for R500,000 director loan advance
-   - **Context:** Strategic Logistics had R5+ million balance (no financial hardship)
+   - **Context:** RegimA Worldwide Distribution had R5+ million balance - assumed card failure was obvious mistake
 
 4. **DANIEL'S PERSONAL SACRIFICE:**
    - **Daniel funded R585,000** from his own personal investment accounts (14 transfers, May-Sep)
@@ -76,7 +76,7 @@ This analysis comprehensively refutes Peter Andrew Faucitt's false allegation of
 **Vote:** 66% approval  
 **Nature:** Temporary director loan advance (to be reconciled)  
 **Purpose:** Cover emergency business expenses until RegimA Worldwide card issue resolved  
-**Financial Position:** Strategic Logistics had R5+ million positive balance  
+**Financial Position:** RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake  
 **Assumption:** Peter's card cancellation likely a mistake (to be corrected)
 
 ### 1.3 July 16 Timeline - Hour by Hour
@@ -99,7 +99,7 @@ This analysis comprehensively refutes Peter Andrew Faucitt's false allegation of
 - Business expenses can be paid
 
 **Context:**
-- Strategic Logistics had R5+ million balance - no financial hardship
+- RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake
 - Structured as temporary director loan advance (to be reconciled when Worldwide access restored)
 - Assumed Peter's card cancellation was mistake (would be corrected)
 - Proper corporate governance in emergency situation
@@ -252,7 +252,7 @@ But Peter:
 **Corporate Decision Characteristics:**
 
 ✅ **66% Director Vote:** Jacqui & Daniel (2 of 3 directors) approved  
-✅ **Strong Financial Position:** Strategic Logistics had R5+ million balance  
+✅ **Worldwide Had Funds:** RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake  
 ✅ **No Financial Hardship:** Company could easily afford R500,000  
 ✅ **Temporary Measure:** Structured as director loan advance (to be reconciled)  
 ✅ **Reasonable Assumption:** Likely Peter's card cancellation was mistake (to be corrected)  
@@ -421,7 +421,7 @@ This analysis **completely refutes** Peter's R500,000 gift allegation:
 **Ground 4: Financial Management Quality**
 - R500,000 director loan advance was proper corporate governance
 - 66% director vote in emergency situation
-- Strategic Logistics had R5M+ balance (no hardship)
+- RegimA Worldwide Distribution had R5M+ balance - assumed card failure was mistake
 - Temporary measure (to be reconciled)
 - Daniel personally funded R585,000 (53.9%) from own investments
 
@@ -471,7 +471,7 @@ Daniel James Faucitt's personal bank statements, analyzed by transfer source, **
 
 4. **PROPER CORPORATE GOVERNANCE:**
    - 66% director vote (Jacqui & Daniel)
-   - Strategic Logistics had R5+ million balance (no hardship)
+   - RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake
    - Temporary director loan advance (to be reconciled)
    - Assumed Peter's cancellation was mistake (to be corrected)
 

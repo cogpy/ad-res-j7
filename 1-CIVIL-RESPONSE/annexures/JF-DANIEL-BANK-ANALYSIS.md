@@ -112,7 +112,7 @@ This comprehensive analysis of Daniel James Faucitt's personal FNB Fusion Privat
 - **Nature:** Corporate director loan advance (temporary, to be reconciled)
 - **Decision:** 66% director vote (Jacqui & Daniel)
 - **Context:** Emergency response when account depleted to R864.45
-- **Financial Position:** Strategic Logistics had R5+ million balance (no hardship)
+- **Financial Position:** RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake
 
 **This is the EXACT R500,000 Peter alleges, but:**
 - ✅ Amount correct: R500,000
@@ -207,7 +207,7 @@ This comprehensive analysis of Daniel James Faucitt's personal FNB Fusion Privat
 
 5. **Proper GOVERNANCE:**
    - 66% director vote (Jacqui & Daniel)
-   - Strategic Logistics had R5+ million balance (no hardship)
+   - RegimA Worldwide Distribution had R5+ million balance - assumed card failure was mistake
    - Temporary director loan advance (to be reconciled)
    - Assumed Peter's cancellation was mistake (to be corrected)
 
@@ -656,7 +656,7 @@ This bank account analysis **completely refutes** Peter's R500,000 gift allegati
 **Ground 4: Financial Management Quality**
 - R500,000 director loan advance was proper corporate governance
 - 66% director vote in emergency situation
-- Strategic Logistics had R5M+ balance (no hardship)
+- RegimA Worldwide Distribution had R5M+ balance - assumed card failure was mistake
 - Temporary measure (to be reconciled)
 - Daniel depleted R585,000 from personal investments (53.9% of funding)
 - Daniel paid R501,199 in business IT expenses
