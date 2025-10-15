@@ -10,6 +10,7 @@
     "test:security": "node tests/security-validation-test.js",
     "test:end-to-end": "node tests/end-to-end-workflow-test.js",
     "test:simple": "node tests/simple-workflow-test.js",
+    "test:monitoring": "node tests/monitoring-test.js",
     "test:verbose": "node tests/run-all-tests.js --verbose",
     "validate-workflows": "node tests/run-all-tests.js",
     "lint": "echo 'No linting configured - using workflow validation instead' && npm run test:validation"

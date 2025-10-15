@@ -742,3 +742,149 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🎯 **Adaptive Job Addition**: Successfully implemented OCR-based generation" >> $GITHUB_STEP_SUMMARY
           echo "📈 **Cognitive Flowchart Compliance**: Recursive implementation pathway completed" >> $GITHUB_STEP_SUMMARY
+
+      - name: Report workflow failures
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Gather failure information
+            const failureContext = {
+              workflow: 'file-representations',
+              job: context.job,
+              trigger: context.eventName,
+              branch: context.ref,
+              commit: context.sha,
+              actor: context.actor,
+              runId: context.runId,
+              runUrl: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              timestamp: new Date().toISOString(),
+              repository: `${context.repo.owner}/${context.repo.repo}`
+            };
+            
+            // Determine which job failed and gather relevant context
+            let jobSpecificInfo = '';
+            let impactAssessment = '';
+            
+            if (context.job === 'validate-and-generate') {
+              jobSpecificInfo = `
+              ### Validate-and-Generate Job Failure
+              This job handles:
+              - File analysis and validation
+              - Markdown to JSON conversion
+              - JSON to Markdown conversion
+              - File structure compliance checking
+              `;
+              impactAssessment = `
+              ### Impact Assessment
+              - ⚠️ **Critical**: File representations may be missing or outdated
+              - ⚠️ **Documentation**: Cross-format file consistency may be compromised  
+              - ⚠️ **Compliance**: Repository structure requirements may not be met
+              `;
+            } else if (context.job === 'ocr-missing-representations') {
+              jobSpecificInfo = `
+              ### OCR Job Failure
+              This job handles:
+              - OCR processing of image files
+              - Generation of text representations from images
+              - Automated conversion of visual content to accessible formats
+              `;
+              impactAssessment = `
+              ### Impact Assessment
+              - ⚠️ **Accessibility**: Image content may not have text representations
+              - ⚠️ **Content**: Visual information may not be searchable/accessible
+              - ⚠️ **OCR**: Automated text extraction from images is failing
+              `;
+            }
+            
+            // Create failure issue
+            const issueTitle = `File-Representations Workflow Failure - ${failureContext.timestamp.split('T')[0]}`;
+            const issueBody = `## 🚨 Workflow Failure Alert
+            
+            The **file-representations** workflow has failed and requires immediate attention.
+            
+            ### Failure Details
+            - **Workflow**: ${failureContext.workflow}
+            - **Failed Job**: ${failureContext.job}
+            - **Trigger**: ${failureContext.trigger}
+            - **Branch**: ${failureContext.branch}
+            - **Commit**: ${failureContext.commit}
+            - **Actor**: ${failureContext.actor}
+            - **Timestamp**: ${failureContext.timestamp}
+            
+            ${jobSpecificInfo}
+            
+            ${impactAssessment}
+            
+            ### Immediate Actions Required
+            1. 🔍 **Investigate**: Check the workflow run logs: [View Run](${failureContext.runUrl})
+            2. 🔧 **Diagnose**: 
+               - For validate-and-generate: Check file permissions and Node.js script errors
+               - For OCR job: Verify Tesseract installation and image file accessibility
+            3. 🧪 **Test**: Run workflow manually after fixes
+            4. 📋 **Verify**: Ensure file conversions are working properly
+            
+            ### Common Failure Scenarios
+            - **Permission Issues**: Git commit/push failures due to insufficient permissions
+            - **Script Errors**: JavaScript syntax or runtime errors in conversion scripts
+            - **OCR Failures**: Tesseract OCR installation or image processing issues
+            - **File Access**: Unable to read/write files due to path or permission issues
+            - **Network Issues**: Git operations failing due to connectivity
+            
+            ### Monitoring Information
+            - **Workflow Run**: [${failureContext.runId}](${failureContext.runUrl})
+            - **Repository**: ${failureContext.repository}
+            - **Triggered by**: ${failureContext.trigger}
+            
+            ---
+            
+            *This issue was created automatically by the workflow monitoring system. Please investigate and resolve the failure promptly.*
+            `;
+            
+            // Check for existing failure issues to prevent spam
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'file-representations'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24; // Only check last 24 hours
+            });
+            
+            if (!recentFailure) {
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['workflow-failure', 'file-representations', 'bug', 'priority: high']
+              });
+              
+              console.log(`Created failure alert issue: ${newIssue.data.html_url}`);
+            } else {
+              // Add comment to existing issue instead of creating new one
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: `## 🔄 Additional Failure Detected
+                
+                Another failure occurred in the file-representations workflow.
+                
+                **Time**: ${failureContext.timestamp}
+                **Job**: ${failureContext.job}
+                **Trigger**: ${failureContext.trigger}  
+                **Run**: [${failureContext.runId}](${failureContext.runUrl})
+                
+                Please investigate this recurring failure pattern.`
+              });
+              
+              console.log(`Added comment to existing failure issue: ${recentFailure.html_url}`);
+            }

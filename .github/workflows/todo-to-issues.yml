@@ -902,6 +902,132 @@ jobs:
             echo "::warning::Some issues failed to create but workflow completed"
           fi
 
+      - name: Report workflow failures
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Gather failure information
+            const failureContext = {
+              workflow: 'todo-to-issues',
+              trigger: context.eventName,
+              branch: context.ref,
+              commit: context.sha,
+              actor: context.actor,
+              runId: context.runId,
+              runUrl: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              timestamp: new Date().toISOString(),
+              repository: `${context.repo.owner}/${context.repo.repo}`
+            };
+            
+            // Read any available error logs or outputs
+            let errorDetails = 'Workflow failed during execution.';
+            let todoStats = {};
+            
+            try {
+              if (fs.existsSync('todo-issues.json')) {
+                const todoData = JSON.parse(fs.readFileSync('todo-issues.json', 'utf8'));
+                if (todoData.error) {
+                  errorDetails = `Generator Error: ${todoData.error}`;
+                }
+                todoStats = todoData.summary || {};
+              }
+            } catch (error) {
+              console.log('Could not read todo-issues.json for error details');
+            }
+            
+            // Create failure issue
+            const issueTitle = `Todo-to-Issues Workflow Failure - ${failureContext.timestamp.split('T')[0]}`;
+            const issueBody = `## 🚨 Workflow Failure Alert
+            
+            The **todo-to-issues** workflow has failed and requires immediate attention.
+            
+            ### Failure Details
+            - **Workflow**: ${failureContext.workflow}
+            - **Trigger**: ${failureContext.trigger}
+            - **Branch**: ${failureContext.branch}
+            - **Commit**: ${failureContext.commit}
+            - **Actor**: ${failureContext.actor}
+            - **Timestamp**: ${failureContext.timestamp}
+            
+            ### Error Information
+            ${errorDetails}
+            
+            ### Todo Processing Stats
+            ${todoStats.total_issues ? `- Total Issues to Create: ${todoStats.total_issues}` : '- Todo processing may have failed'}
+            ${todoStats.files_processed ? `- Files Processed: ${todoStats.files_processed}` : ''}
+            ${todoStats.priorities ? `- Critical Priority: ${todoStats.priorities.critical}` : ''}
+            ${todoStats.priorities ? `- High Priority: ${todoStats.priorities.high}` : ''}
+            
+            ### Impact Assessment
+            - ⚠️ **Critical**: Todo tasks may not be converted to GitHub issues
+            - ⚠️ **User Impact**: New todo items won't be tracked automatically
+            - ⚠️ **Process**: Manual issue creation may be required
+            
+            ### Immediate Actions Required
+            1. 🔍 **Investigate**: Check the workflow run logs: [View Run](${failureContext.runUrl})
+            2. 🔧 **Fix**: Address any syntax errors or permission issues
+            3. 🧪 **Test**: Run workflow manually after fixes
+            4. 📋 **Verify**: Ensure todo files are being processed correctly
+            
+            ### Monitoring Information
+            - **Workflow Run**: [${failureContext.runId}](${failureContext.runUrl})
+            - **Repository**: ${failureContext.repository}
+            - **Triggered by**: ${failureContext.trigger}
+            
+            ---
+            
+            *This issue was created automatically by the workflow monitoring system. Please investigate and resolve the failure promptly.*
+            `;
+            
+            // Check for existing failure issues to prevent spam
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'todo-to-issues'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24; // Only check last 24 hours
+            });
+            
+            if (!recentFailure) {
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['workflow-failure', 'todo-to-issues', 'bug', 'priority: high']
+              });
+              
+              console.log(`Created failure alert issue: ${newIssue.data.html_url}`);
+            } else {
+              // Add comment to existing issue instead of creating new one
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: `## 🔄 Additional Failure Detected
+                
+                Another failure occurred in the todo-to-issues workflow.
+                
+                **Time**: ${failureContext.timestamp}
+                **Trigger**: ${failureContext.trigger}
+                **Run**: [${failureContext.runId}](${failureContext.runUrl})
+                **Error**: ${errorDetails}
+                
+                Please investigate this recurring failure pattern.`
+              });
+              
+              console.log(`Added comment to existing failure issue: ${recentFailure.html_url}`);
+            }
+
       - name: Cleanup temporary files
         if: always()
         run: |
