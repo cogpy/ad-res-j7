@@ -246,7 +246,7 @@ jobs:
                 /^\*\*.*\*\*$/,  // Just bold text
                 /^\*\*.*\*\*:$/,  // Bold text ending with colon (section headers)
                 /^\*\*Current Coverage\*\*:/i,  // Bold "Current Coverage:" with text after
-                /^Current Coverage:/i,
+                /^Current Coverage/i,  // Any line starting with "Current Coverage"
                 /^Legal Significance:/i,
                 /^Framework Phase:/i,
                 /^Impact:/i,
@@ -258,7 +258,21 @@ jobs:
                 /^Improvements? Needed:?$/i,  // Section header pattern
                 /^Actions? Required:?$/i,     // Section header pattern
                 /^Recommended Actions?:?$/i,  // Section header pattern
-                /hours?$/i  // Ends with "hours" - likely effort estimate
+                /hours?$/i,  // Ends with "hours" - likely effort estimate
+                /^Show\s+/i,  // Lines starting with "Show" - usually examples
+                /^Demonstrate\s+/i,  // Lines starting with "Demonstrate" - usually descriptions
+                /^Provide\s+/i,  // Lines starting with "Provide" - often descriptive
+                /^Include\s+/i,  // Lines starting with "Include" - often descriptive
+                /^Emphasize\s+/i,  // Lines starting with "Emphasize" - descriptive
+                /^Highlight\s+/i,  // Lines starting with "Highlight" - descriptive
+                /^Reference\s+/i,  // Lines starting with "Reference" - descriptive
+                /^Expose\s+/i,  // Lines starting with "Expose" - descriptive
+                /\(.*\)$/,  // Lines ending with parentheses - often annotations
+                /^\[x\]/i,  // Completed checkbox items
+                /✅/,  // Lines with checkmark emoji
+                /COMPLETED/i,  // Lines marked as completed
+                /^-\s*\*\*/,  // Bullet points starting with bold text
+                /^\d+\.\s*\*\*/  // Numbered lists starting with bold text
               ];
               
               for (const pattern of skipPatterns) {
@@ -267,26 +281,57 @@ jobs:
                 }
               }
               
-              // Look for explicit action words or clear implementation items
-              const actionWords = [
-                'implement', 'add', 'create', 'fix', 'update', 'improve', 
-                'enhance', 'develop', 'build', 'establish', 'provide',
-                'include', 'demonstrate', 'expand', 'complete', 'review',
-                'contextualize', 'breakdown', 'analysis'
+              // Skip lines that are just descriptions or analysis statements
+              const descriptionPatterns = [
+                /^.*your .* role/i,
+                /^.*Peter's .*/i,
+                /^.*timing correlation/i,
+                /^.*director loan account/i,
+                /^.*historical context/i,
+                /^.*industry.?standard/i,
+                /^.*sudden objection/i,
+                /^.*established practice/i,
+                /^.*comprehensive analysis/i,
+                /^.*external validation/i,
+                /^.*bad faith/i,
+                /^.*point.?by.?point/i,
+                /^.*general refutation/i,
+                /^.*business norms/i,
+                /^.*loan account credit/i,
+                /^.*director.*owe/i,
+                /^.*inconsistent with/i,
+                /^.*participation in/i,
+                /^.*informal model/i,
+                /^.*partially addressed/i,
+                /^.*accounting records/i,
+                /^.*pretext evidence/i
               ];
               
-              const hasAction = actionWords.some(word => 
-                task.toLowerCase().includes(word.toLowerCase())
+              for (const pattern of descriptionPatterns) {
+                if (pattern.test(task)) {
+                  return false;
+                }
+              }
+              
+              // Only accept if it's clearly a TODO or action item
+              const actionPatterns = [
+                /^(TODO|FIXME|TASK|ACTION):/i,
+                /^(Implement|Create|Build|Fix|Add|Update|Develop)\s+a\s+/i,
+                /^(Write|Draft|Prepare|Design|Setup|Configure)\s+/i,
+                /^(Test|Validate|Verify|Check)\s+/i,
+                /monitoring and alerting/i,
+                /automated testing pipeline/i,
+                /comprehensive test suite/i,
+                /duplicate prevention/i,
+                /JSON parsing/i,
+                /workflow functionality/i
+              ];
+              
+              const hasExplicitAction = actionPatterns.some(pattern => 
+                pattern.test(task)
               );
               
-              // Also accept clear task descriptions without action words
-              const isTaskDescription = task.includes('section') ||
-                                      task.includes('response') ||
-                                      task.includes('affidavit') ||
-                                      task.includes('timeline') ||
-                                      task.includes('evidence');
-              
-              return hasAction || isTaskDescription;
+              return hasExplicitAction;
             }
 
             // Generate GitHub issue content
@@ -773,9 +818,20 @@ jobs:
             
             # Check for duplicate issues (unless force regenerate)
             if [ "$force_regenerate" != "true" ]; then
-              if existing=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=100" --paginate 2>/dev/null | jq -r --arg title "$title" '.[] | select(.title == $title) | .number' 2>/dev/null | head -1); then
+              # Normalize title for comparison (lowercase, remove punctuation)
+              normalized_title=$(echo "$title" | tr '[:upper:]' '[:lower:]' | sed 's/[[:punct:]]//g' | tr -s ' ')
+              
+              # Check for exact and similar matches
+              if existing=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=100" --paginate 2>/dev/null | \
+                jq -r --arg title "$title" --arg norm_title "$normalized_title" \
+                '.[] | select(
+                  .title == $title or 
+                  (.title | ascii_downcase | gsub("[[:punct:]]"; "") | gsub("\\s+"; " ")) == $norm_title or
+                  (.title | startswith($title[0:50])) or
+                  ($title | startswith(.title[0:50]))
+                ) | .number' 2>/dev/null | head -1); then
                 if [ -n "$existing" ] && [ "$existing" != "null" ]; then
-                  echo "  ⚠️ Skipping duplicate: $title (exists as #$existing)"
+                  echo "  ⚠️ Skipping duplicate/similar: $title (exists as #$existing)"
                   skipped_count=$((skipped_count + 1))
                   continue
                 fi
