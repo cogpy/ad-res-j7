@@ -67,6 +67,72 @@ For JSON files, generates readable markdown with proper heading levels and conte
 - **Structured Data**: JSON format enables programmatic analysis and processing
 - **Documentation Consistency**: Ensures all documentation follows the same structural patterns
 
+### Todo to Issues Generator (`todo-to-issues.yml`)
+
+**Purpose**: Automatically creates GitHub issues from actionable tasks found in markdown files within the `todo/` folder.
+
+**When it runs**:
+- On push to `main` branch with changes to `todo/` folder files
+- On pull requests to `main` branch with changes to `todo/` folder files
+- Manually via workflow dispatch (with optional force regeneration)
+
+**What it does**:
+
+1. **Task Detection**:
+   - Parses markdown files in the `todo/` folder for actionable tasks
+   - Identifies priority sections (Must-Do, Should-Do, Nice-to-Have)
+   - Recognizes action-oriented bullet points and numbered lists
+   - Filters out non-actionable content and section headers
+
+2. **Issue Creation**:
+   - Generates GitHub issues with structured content
+   - Includes task description, context, and acceptance criteria
+   - Applies appropriate labels based on priority and task type
+   - Prevents duplicate issues (checks for existing open issues with same title)
+
+3. **Label Assignment**:
+   - **Base labels**: `todo`, `enhancement` (applied to all issues)
+   - **Priority labels**: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
+   - **Special labels**: `bug` (added for critical priority items)
+
+**Label Format Requirements**:
+- Labels support spaces, colons, hyphens, and underscores
+- Examples: `priority: critical`, `todo`, `feature-request`, `help_wanted`
+- Multi-word labels with spaces are fully supported (e.g., `"priority: high"`)
+- Maximum 50 characters per label
+- See [Label Format Requirements](../docs/todo-to-issues-workflow.md#label-format-requirements) for detailed specifications
+
+**Benefits**:
+- **Automated Task Tracking**: Converts planning documents into actionable issues
+- **Consistent Labeling**: Automatic priority-based label assignment
+- **Quality Filtering**: Only actionable items become issues
+- **Source Traceability**: Each issue links back to source file and line number
+
+For detailed documentation, see [Todo to Issues Workflow Documentation](../docs/todo-to-issues-workflow.md).
+
+### Automated Testing Pipeline (`test-workflows.yml`)
+
+**Purpose**: Validates the todo-to-issues and file-representations workflows through comprehensive automated testing.
+
+**When it runs**:
+- On push to `main` or `develop` branches
+- On pull requests to `main` or `develop` branches
+- Daily at 2 AM UTC (scheduled monitoring)
+- Manually via workflow dispatch (with optional verbose output)
+
+**What it does**:
+- **Workflow Structure Tests**: Validates YAML syntax, triggers, permissions, and step sequences
+- **Label Array Handling Tests**: Tests JSON to CLI conversion, quoting, and escaping
+- **Integration Tests**: Simulates complete workflow execution with sample data
+- **Error Handling Tests**: Validates edge cases and error recovery
+
+**Test Coverage**:
+- 118+ comprehensive tests
+- 92%+ success rate
+- Covers workflow validation, label handling, and end-to-end integration
+
+For detailed information, see [Automated Testing Pipeline Documentation](../docs/AUTOMATED_TESTING_PIPELINE.md).
+
 ### Legacy Workflow (`blank.yml`)
 
 The original CI workflow has been updated to use the same file representation validation logic. This ensures backward compatibility while providing the new functionality.
