@@ -1,0 +1,597 @@
+# Example GraphQL Queries for Case 2025-137857 Hypergraph
+# These queries demonstrate how to access and analyze the case structure
+
+# ============================================================================
+# BASIC QUERIES
+# ============================================================================
+
+# Query 1: Get case metadata
+query GetCaseMetadata {
+  caseMetadata {
+    caseNumber
+    repository
+    totalParagraphs
+    analysisDate
+    version
+  }
+}
+
+# Query 2: Get all critical paragraphs
+query GetCriticalParagraphs {
+  paragraphsByPriority(level: 1) {
+    id
+    name
+    topic
+    claim
+    priority
+    completed
+    evidenceCount
+    categories {
+      name
+    }
+    evidence {
+      name
+      evidenceType
+    }
+  }
+}
+
+# Query 3: Get all paragraphs in Material Non-Disclosure category
+query GetMaterialNonDisclosureParagraphs {
+  paragraphsByCategory(category: "material_non_disclosure") {
+    name
+    priority
+    priorityLevel
+    topic
+    completed
+    evidenceCount
+  }
+}
+
+# Query 4: Get evidence for a specific paragraph
+query GetEvidenceForParagraph {
+  evidenceForParagraph(paragraphId: "paragraph_1") {
+    name
+    evidenceType
+    supportCount
+  }
+}
+
+# Query 5: Get all actors and their related paragraphs
+query GetActorsAndParagraphs {
+  nodes(type: ACTOR) {
+    ... on ActorNode {
+      name
+      role
+      relatedParagraphs {
+        name
+        topic
+        priority
+      }
+    }
+  }
+}
+
+# ============================================================================
+# STRATEGIC ANALYSIS QUERIES
+# ============================================================================
+
+# Query 6: Get strategic clusters
+query GetStrategicClusters {
+  strategicClusters {
+    name
+    weight
+    evidenceCoverage
+    completionRate
+    paragraphs {
+      name
+      priority
+      topic
+      completed
+    }
+    categories {
+      name
+      paragraphCount
+    }
+  }
+}
+
+# Query 7: Get network statistics
+query GetNetworkStats {
+  networkStats {
+    totalNodes
+    totalEdges
+    averageDegree
+    density
+    nodesByType {
+      actors
+      categories
+      paragraphs
+      evidence
+    }
+    edgesByType {
+      categorization
+      supports
+      strategicCluster
+    }
+  }
+}
+
+# Query 8: Get critical path analysis
+query GetCriticalPath {
+  criticalPath {
+    criticalParagraphs {
+      name
+      topic
+      completed
+      evidenceCount
+    }
+    highPriorityParagraphs {
+      name
+      topic
+      completed
+    }
+    completionBottlenecks {
+      name
+      priority
+      evidenceCount
+    }
+    evidenceGaps {
+      name
+      priority
+      topic
+    }
+    recommendedSequence {
+      name
+      priority
+      topic
+    }
+    estimatedEffort {
+      totalParagraphs
+      completedParagraphs
+      pendingParagraphs
+      estimatedHours
+      estimatedDays
+      priorityBreakdown {
+        critical
+        high
+        medium
+        low
+      }
+    }
+  }
+}
+
+# Query 9: Get evidence coverage analysis
+query GetEvidenceCoverage {
+  evidenceCoverage {
+    overallCoverage
+    coverageByPriority {
+      critical
+      high
+      medium
+      low
+    }
+    paragraphsWithEvidence
+    paragraphsWithoutEvidence
+    evidenceGaps {
+      paragraph {
+        name
+        priority
+        topic
+      }
+      requiredEvidence
+      urgency
+    }
+    recommendations
+  }
+}
+
+# ============================================================================
+# ADVANCED QUERIES
+# ============================================================================
+
+# Query 10: Get all financial misconduct paragraphs with evidence status
+query GetFinancialMisconductAnalysis {
+  paragraphsByCategory(category: "financial_misconduct") {
+    name
+    priority
+    priorityLevel
+    topic
+    claim
+    completed
+    evidenceCount
+    evidenceStatus
+    strategicImportance
+    evidence {
+      name
+      evidenceType
+    }
+    categories {
+      name
+      strategicImportance
+    }
+  }
+}
+
+# Query 11: Get disproportionate harm paragraphs
+query GetDisproportionateHarmAnalysis {
+  paragraphsByCategory(category: "disproportionate_harm") {
+    name
+    priority
+    topic
+    completed
+    evidenceCount
+    relatedParagraphs {
+      name
+      priority
+    }
+  }
+}
+
+# Query 12: Get all incomplete critical and high priority paragraphs
+query GetIncompleteHighPriorityParagraphs {
+  paragraphsByPriority(level: 1) {
+    name
+    topic
+    completed
+    evidenceCount
+  }
+  highPriority: paragraphsByPriority(level: 2) {
+    name
+    topic
+    completed
+    evidenceCount
+  }
+}
+
+# Query 13: Search for paragraphs related to "R500K"
+query SearchR500KParagraphs {
+  searchNodes(query: "R500K", type: PARAGRAPH) {
+    ... on ParagraphNode {
+      name
+      priority
+      topic
+      claim
+      completed
+      evidenceCount
+      categories {
+        name
+      }
+    }
+  }
+}
+
+# Query 14: Get connected nodes for Material Non-Disclosure category
+query GetMaterialNonDisclosureNetwork {
+  node(id: "category_0") {
+    ... on CategoryNode {
+      name
+      paragraphCount
+      strategicImportance
+      paragraphs {
+        name
+        priority
+        completed
+        evidenceCount
+      }
+    }
+  }
+}
+
+# Query 15: Get all evidence nodes and their support count
+query GetAllEvidence {
+  nodes(type: EVIDENCE) {
+    ... on EvidenceNode {
+      name
+      evidenceType
+      supportCount
+      supportedParagraphs {
+        name
+        priority
+        topic
+      }
+    }
+  }
+}
+
+# ============================================================================
+# CATEGORY ANALYSIS QUERIES
+# ============================================================================
+
+# Query 16: Get all strategic categories with paragraph counts
+query GetStrategicCategories {
+  nodes(type: CATEGORY) {
+    ... on CategoryNode {
+      name
+      themeType
+      paragraphCount
+      strategicImportance
+      paragraphs {
+        name
+        priority
+        priorityLevel
+        completed
+      }
+    }
+  }
+}
+
+# Query 17: Get Peter's Hypocrisy category analysis
+query GetPeterHypocrisyAnalysis {
+  paragraphsByCategory(category: "peter_hypocrisy") {
+    name
+    priority
+    topic
+    claim
+    completed
+    evidenceCount
+    categories {
+      name
+    }
+  }
+}
+
+# Query 18: Get Responsible Person category analysis
+query GetResponsiblePersonAnalysis {
+  paragraphsByCategory(category: "responsible_person") {
+    name
+    priority
+    topic
+    completed
+    evidenceCount
+    evidence {
+      name
+    }
+  }
+}
+
+# ============================================================================
+# COMPLETION TRACKING QUERIES
+# ============================================================================
+
+# Query 19: Get completion status overview
+query GetCompletionOverview {
+  paragraphsByPriority(level: 1) {
+    name
+    completed
+    completionStatus
+  }
+  high: paragraphsByPriority(level: 2) {
+    name
+    completed
+    completionStatus
+  }
+  medium: paragraphsByPriority(level: 3) {
+    name
+    completed
+    completionStatus
+  }
+}
+
+# Query 20: Get paragraphs by completion status
+query GetParagraphsByCompletion {
+  completed: nodes(type: PARAGRAPH) {
+    ... on ParagraphNode {
+      name
+      priority
+      topic
+      completed
+      evidenceCount
+    }
+  }
+}
+
+# ============================================================================
+# MUTATIONS
+# ============================================================================
+
+# Mutation 1: Mark paragraph as completed
+mutation MarkParagraphCompleted {
+  markParagraphCompleted(paragraphId: "paragraph_2") {
+    name
+    completed
+    completionStatus
+  }
+}
+
+# Mutation 2: Add evidence to paragraph
+mutation AddEvidence {
+  addEvidenceToParagraph(
+    paragraphId: "paragraph_2"
+    evidenceId: "evidence_5"
+  ) {
+    type
+    weight
+    nodes {
+      name
+    }
+  }
+}
+
+# Mutation 3: Update node properties
+mutation UpdateParagraphProperties {
+  updateNode(
+    id: "paragraph_2"
+    properties: {
+      completed: true
+      evidenceCount: 5
+    }
+  ) {
+    name
+    properties {
+      completed
+      evidenceCount
+    }
+  }
+}
+
+# Mutation 4: Add new evidence node
+mutation AddNewEvidence {
+  addNode(
+    type: EVIDENCE
+    name: "JF7"
+    properties: {
+      type: "annexure"
+    }
+  ) {
+    id
+    name
+    type
+  }
+}
+
+# Mutation 5: Update strategic cluster
+mutation UpdateStrategicCluster {
+  updateStrategicCluster(
+    name: "Critical Financial Misconduct Allegations"
+    paragraphIds: ["paragraph_0", "paragraph_1", "paragraph_2", "paragraph_3", "paragraph_4"]
+  ) {
+    name
+    weight
+    paragraphs {
+      name
+      priority
+    }
+    completionRate
+    evidenceCoverage
+  }
+}
+
+# ============================================================================
+# COMPLEX ANALYTICAL QUERIES
+# ============================================================================
+
+# Query 21: Get comprehensive paragraph analysis
+query GetComprehensiveParagraphAnalysis {
+  paragraphsByPriority(level: 1) {
+    name
+    priority
+    priorityLevel
+    priorityWeight
+    topic
+    claim
+    completed
+    evidenceCount
+    completionStatus
+    evidenceStatus
+    strategicImportance
+    
+    categories {
+      name
+      themeType
+      paragraphCount
+      strategicImportance
+    }
+    
+    evidence {
+      name
+      evidenceType
+      supportCount
+    }
+    
+    relatedParagraphs {
+      name
+      priority
+    }
+  }
+}
+
+# Query 22: Get evidence gaps for critical paragraphs
+query GetCriticalEvidenceGaps {
+  evidenceCoverage {
+    evidenceGaps {
+      paragraph {
+        name
+        priority
+        priorityLevel
+        topic
+        claim
+      }
+      requiredEvidence
+      urgency
+    }
+  }
+}
+
+# Query 23: Get strategic importance ranking
+query GetStrategicImportanceRanking {
+  nodes(type: PARAGRAPH) {
+    ... on ParagraphNode {
+      name
+      priority
+      priorityLevel
+      strategicImportance
+      evidenceCount
+      completed
+      categories {
+        name
+        strategicImportance
+      }
+    }
+  }
+}
+
+# Query 24: Get network connectivity analysis
+query GetNetworkConnectivity {
+  nodes(type: PARAGRAPH) {
+    ... on ParagraphNode {
+      name
+      degree
+      connections {
+        type
+        weight
+      }
+      categories {
+        name
+        degree
+      }
+    }
+  }
+}
+
+# Query 25: Get full hypergraph structure
+query GetFullHypergraph {
+  caseMetadata {
+    caseNumber
+    repository
+    totalParagraphs
+  }
+  
+  networkStats {
+    totalNodes
+    totalEdges
+    averageDegree
+    density
+  }
+  
+  strategicClusters {
+    name
+    weight
+    completionRate
+    evidenceCoverage
+    paragraphs {
+      name
+      priority
+      completed
+    }
+  }
+  
+  nodes {
+    id
+    type
+    name
+    degree
+  }
+  
+  hyperedges {
+    type
+    weight
+    name
+    nodes {
+      id
+      name
+    }
+  }
+}
+
