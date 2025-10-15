@@ -61,3 +61,24 @@ npm run test:integration   # Functional tests
 
 For detailed information about the automated testing pipeline, see [Automated Testing Pipeline Documentation](docs/AUTOMATED_TESTING_PIPELINE.md).
 
+## Cross-Repository Integration
+
+This repository is part of a suite of related legal analysis repositories. We maintain cross-link analysis to share improvements and features:
+
+### Related Repositories
+- **[analysss](https://github.com/EchoCog/analysss)** - Criminal case timeline & evidence analysis with HyperGNN framework
+- **[analyticase](https://github.com/rzonedevops/analyticase)** - Legal case analysis with GGMLEX ML framework and ZA judiciary integration
+- **[avtomaatoctory](https://github.com/rzonedevops/avtomaatoctory)** - Analysis repository with evidence automation
+
+### Cross-Link Documentation
+- **[Cross-Link Summary](CROSS_LINK_SUMMARY.md)** - Quick overview of cross-repository opportunities and priorities
+- **[Detailed Cross-Link Analysis](REPOSITORY_CROSS_LINK_ANALYSIS.md)** - Comprehensive analysis of features and improvements
+- **[Cross-Link Visualization](CROSS_LINK_VISUALIZATION.md)** - Visual feature flow and implementation timeline
+
+### Recent Updates (October 2025)
+- ✅ **Civil/Criminal Case Separation**: New framework from analysss for proper legal forum handling
+- ✅ **Legal Framework Library**: South African law frameworks in machine-readable format from analyticase
+- ✅ **Implementation Guides**: Added guides for workflow testing, documentation hubs, Docker deployment, and more
+
+See [CROSS_LINK_SUMMARY.md](CROSS_LINK_SUMMARY.md) for actionable next steps and priority features.
+
