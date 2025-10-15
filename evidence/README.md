@@ -9,6 +9,7 @@ This directory contains raw evidence collected for Case 2025-137857.
 - **`invoices/`**: Invoices for various business expenses.
 - **`correspondence/`**: Email and correspondence evidence, including JF8A comprehensive documentation log.
 - **`director_loan_accounts/`**: Accounting records and documentation for director loan accounts, including proper allocation of the R500,000 payment (JF-AR1/JF7D).
+- **`witness_statements/`**: Witness statements and declarations, including Daniel's critical witness statement regarding the "Has anything changed?" exchange related to JF5 settlement agreement (JF-DANIEL-WITNESS-1).
 
 ## Key Documents
 
@@ -17,4 +18,5 @@ This directory contains raw evidence collected for Case 2025-137857.
 - **`IT_EXPENSES_BREAKDOWN.json`**: Structured data version of the IT expenses breakdown for programmatic access.
 - **`correspondence/JF8A_DOCUMENTATION_LOG.md`**: Detailed log of all documentation provided to Peter Faucitt (Annexure JF8A/JF-CORR1). Critical evidence countering "unexplained transactions" allegations.
 - **`director_loan_accounts/ACCOUNTING_RECORDS_DIRECTOR_LOAN_ALLOCATION.md`**: Comprehensive accounting records showing proper allocation of transactions to director loan accounts, specifically the R500,000 payment dated 16 July 2025 (Annexure JF-AR1/JF7D).
+- **`witness_statements/DANIEL_WITNESS_STATEMENT_JF5_SETTLEMENT_EXCHANGE.md`**: Daniel's witness statement regarding the "Has anything changed?" exchange on 11 August 2025, documenting material misrepresentation by attorneys regarding changes to JF5 settlement agreement (Annexure JF-DANIEL-WITNESS-1). Critical evidence for Section 13A of answering affidavit.
 
