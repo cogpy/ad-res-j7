@@ -4,6 +4,7 @@ This directory contains raw evidence collected for Case 2025-137857.
 
 ## Subdirectories
 
+- **`annexures/`**: **CRITICAL** - Complete framework for all critical evidence annexures (JF-RP1, JF-DLA1-3, JF-PA1-4, JF-BS1) referenced in the affidavit. **PRIORITY: Template completion with actual evidence required.**
 - **`bank_records/`**: Personal and business bank records.
 - **`shopify_reports/`**: Sales and financial reports from Shopify.
 - **`invoices/`**: Invoices for various business expenses.
