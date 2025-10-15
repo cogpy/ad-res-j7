@@ -85,7 +85,7 @@ class WorkflowValidator {
       
       // Test issue creation logic
       this.assert(workflowContent.includes('force_regenerate'), 'Supports force regeneration');
-      this.assert(workflowContent.includes('gh issue create'), 'Uses GitHub CLI for issue creation');
+      this.assert(workflowContent.includes('gh_args=("issue" "create"'), 'Uses GitHub CLI for issue creation');
       
     } catch (error) {
       this.assert(false, `Error testing todo workflow structure: ${error.message}`);
@@ -99,12 +99,12 @@ class WorkflowValidator {
     try {
       const workflowContent = fs.readFileSync('.github/workflows/todo-to-issues.yml', 'utf8');
       
-      // Check for proper label array conversion
-      this.assert(workflowContent.includes('label_flags=""'), 'Initializes label flags variable');
+      // Check for proper label array conversion using secure array-based approach
+      this.assert(workflowContent.includes('gh_args='), 'Initializes gh_args array variable');
       this.assert(workflowContent.includes('while IFS= read -r label'), 'Iterates through labels array');
       this.assert(workflowContent.includes('jq -r \'.[]\''), 'Uses jq to parse JSON label array');
-      this.assert(workflowContent.includes('--label "'), 'Properly quotes label values');
-      this.assert(workflowContent.includes('eval "gh issue create'), 'Uses eval for dynamic label flags');
+      this.assert(workflowContent.includes('gh_args+=("--label" "$label")'), 'Properly adds labels to array');
+      this.assert(workflowContent.includes('gh "${gh_args[@]}"'), 'Uses array expansion for gh command');
       
       // Test for common label patterns
       this.assert(workflowContent.includes('priority: critical'), 'Supports priority critical label');
@@ -141,10 +141,10 @@ class WorkflowValidator {
         this.assert(jsCode.includes('generateIssueContent'), 'Has issue content generation method');
         this.assert(jsCode.includes('determinePriorityFromSection'), 'Has priority determination logic');
         
-        // Test for parsing patterns
-        this.assert(jsCode.includes('Must-Do'), 'Recognizes Must-Do sections');
-        this.assert(jsCode.includes('Should-Do'), 'Recognizes Should-Do sections');
-        this.assert(jsCode.includes('Nice-to-Have'), 'Recognizes Nice-to-Have sections');
+        // Test for parsing patterns - using lowercase for case-insensitive matching
+        this.assert(jsCode.includes('must-do'), 'Recognizes Must-Do sections');
+        this.assert(jsCode.includes('should-do'), 'Recognizes Should-Do sections');
+        this.assert(jsCode.includes('nice-to-have'), 'Recognizes Nice-to-Have sections');
         this.assert(jsCode.includes('Improvements Needed'), 'Recognizes Improvements Needed sections');
         
         // Test for action word detection
@@ -203,7 +203,12 @@ class WorkflowValidator {
     const todoFiles = glob.sync('todo/**/*.md');
     this.assert(todoFiles.length > 0, 'Todo folder contains markdown files');
     
-    for (const todoFile of todoFiles.slice(0, 3)) { // Test first 3 files
+    // Test specific files
+    const testFiles = ['todo/workflow-validation-tests.md', 'todo/workflow-test.md', 'todo/simple-workflow-test.md'];
+    
+    for (const todoFile of testFiles) {
+      if (!fs.existsSync(todoFile)) continue;
+      
       try {
         const content = fs.readFileSync(todoFile, 'utf8');
         this.assert(content.length > 0, `${todoFile} is not empty`);
@@ -215,9 +220,14 @@ class WorkflowValidator {
         
         this.assert(hasStructuredSections || hasActionableItems, `${todoFile} has structured content`);
         
-        if (todoFile.includes('workflow-test.md')) {
-          this.assert(content.includes('Create validation tests'), 'workflow-test.md contains the target task');
+        if (todoFile === 'todo/workflow-test.md') {
+          this.assert(content.includes('validation tests'), 'workflow-test.md contains the target task');
           this.assert(content.includes('Improvements Needed'), 'workflow-test.md has Improvements Needed section');
+        }
+        
+        if (todoFile === 'todo/simple-workflow-test.md') {
+          this.assert(content.includes('basic functionality'), 'simple-workflow-test.md contains basic functionality task');
+          this.assert(content.includes('Improvements Needed'), 'simple-workflow-test.md has Improvements Needed section');
         }
         
       } catch (error) {

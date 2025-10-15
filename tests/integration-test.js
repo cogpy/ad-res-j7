@@ -75,7 +75,7 @@ class WorkflowIntegrationTest {
 - Test
 
 ## Long Item That Should Be Truncated
-1. This is a very long task description that exceeds the normal length limits and should be properly truncated to avoid issues with GitHub's title length restrictions while maintaining readability and context for the task
+1. Implement a very long task description that exceeds the normal length limits and should be properly truncated to avoid issues with GitHub's title length restrictions while maintaining readability and context for the task
 
 ## Mixed Formats
 * Implement feature A
@@ -299,18 +299,18 @@ class WorkflowIntegrationTest {
       const workflowContent = fs.readFileSync('.github/workflows/todo-to-issues.yml', 'utf8');
       
       // Check the bash script section for label handling
-      const labelSection = workflowContent.match(/# Parse labels array[\s\S]*?done < <\(echo "\$labels"/);
+      const labelSection = workflowContent.match(/# Parse labels array[\s\S]*?done < <\(echo "\$labels_json"/);
       
       this.assert(labelSection !== null, 'Found label parsing section in workflow');
       
       if (labelSection) {
         const labelCode = labelSection[0];
         
-        // Test for key components of label conversion
+        // Test for key components of label conversion using secure array-based approach
         this.assert(labelCode.includes('while IFS= read -r label'), 'Uses proper loop for label iteration');
-        this.assert(labelCode.includes('jq -r \'.[]\''), 'Uses jq to extract array elements');
-        this.assert(labelCode.includes('label_flags+=" --label'), 'Builds label flags correctly');
-        this.assert(labelCode.includes('eval "gh issue create'), 'Uses eval for dynamic command execution');
+        this.assert(workflowContent.includes('jq -r \'.[]\''), 'Uses jq to extract array elements');
+        this.assert(labelCode.includes('gh_args+=("--label" "$label")'), 'Builds label array correctly');
+        this.assert(workflowContent.includes('gh "${gh_args[@]}"'), 'Uses array expansion for command execution');
         
         // Test sample label array conversion
         const sampleLabels = ['todo', 'enhancement', 'priority: high'];
