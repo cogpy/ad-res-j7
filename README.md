@@ -32,6 +32,29 @@ To understand the case, it is recommended to start with the following documents:
 1.  **Court Application:** `case_2025_137857/01_court_documents/KF0019-SecondApplication-03.10.2025.pdf`
 2.  **Draft Response:** `jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`
 3.  **Affidavit Analysis Summary:** `affidavit_work/analysis/Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx`
+4.  **NEW: Comprehensive Timeline Analysis:** `affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Demonstrates Peter's bad faith through strategic coordination
+
+## Recent Updates
+
+### Comprehensive Timeline Analysis (October 15, 2025)
+
+A complete timeline analysis package demonstrating Peter Faucitt's bad faith through strategic coordination:
+
+- **25+ key timeline events** showing months-long planning and coordination
+- **Visual diagrams** using Mermaid for court presentations
+- **Six critical insights** including:
+  - 2-month delay contradicting urgency claims
+  - 8-day gap between settlement and interdict (strategic timing)
+  - Self-created crisis (cards cancelled day after reports provided)
+  - Information manipulation through Rynette's email control
+  - 65-day Bantjies perjury timeline
+  - 9-month financial target (investment payout)
+
+**Location:** `affidavit_work/analysis/` directory contains:
+- `COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Main analysis
+- `TIMELINE_VISUAL_DIAGRAM.md` - Mermaid diagrams for exhibits
+- `TIMELINE_QUICK_REFERENCE.md` - Quick reference for court preparation
+- `README.md` - Complete documentation
 
 This repository is an ongoing project and will be updated as more information becomes available.
 
