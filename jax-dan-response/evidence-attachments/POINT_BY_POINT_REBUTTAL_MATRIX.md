@@ -254,11 +254,21 @@ This document provides a comprehensive, point-by-point rebuttal of all allegatio
 
 **Rebuttal:**
 
-**1. Jax's Responsible Person Role**
+**1. Jax's Responsible Person Role** ⚠️ **CRITICAL MATERIAL NON-DISCLOSURE**
+
+**📁 Comprehensive Section Added:** `evidence-attachments/RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md`
+
 - Jax holds Responsible Person designation under EU Regulation 1223/2009
-- Covers operations in 37 international jurisdictions
-- Non-delegable legal obligations with criminal liability
-- Personal liability up to €1M+ per jurisdiction for non-compliance
+- Covers operations in **37 international jurisdictions** (EU27 + UK + 9 others)
+- **Non-delegable legal obligations** with personal criminal liability
+- Personal liability up to €1,000,000+ per jurisdiction for non-compliance
+- **24-48 hour regulatory response requirements** cannot be met under interdict
+- Potential **R50M+ total penalty exposure** across all jurisdictions
+
+**🔧 Daniel's Technical Perspective:** `AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- Technical infrastructure requirements for regulatory compliance
+- System access dependencies and impossibilities under interdict
+- Operational impact analysis from CIO perspective
 
 **2. Material Non-Disclosure by Peter**
 - Peter omitted Jax's Responsible Person role from founding affidavit
