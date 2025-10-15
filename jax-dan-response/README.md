@@ -90,6 +90,15 @@ This analysis directly refutes the "unauthorized payment" allegation and demonst
   - Material non-disclosure analysis showing facts omitted from ex parte application
   - This directly refutes the "unauthorized payment" allegation by demonstrating the Applicant's sudden objection is inconsistent with his decades-long acceptance and use of the same practice
 
+- **`SECTION_4_SETTLEMENT_AND_TIMING.md`**: Section 4 of the new structured response addressing settlement agreement and strategic timing (NEW - High Priority). This section provides:
+  - Documentation that settlement agreement was signed 8 days before interdict filing
+  - Analysis of investment payout timeline (9 months) as ulterior motive
+  - Evidence of strategic litigation for settlement leverage rather than genuine urgency
+  - Demonstration of material non-disclosure in ex parte application regarding settlement context
+  - Timeline analysis showing 68+ day delay contradicting urgency claims
+  - Legal analysis of abuse of court process and ex parte procedure
+  - This directly refutes claims of urgency and exposes the strategic nature of the interdict application
+
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.
 
