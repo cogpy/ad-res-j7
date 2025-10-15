@@ -7,6 +7,7 @@
     "test:validation": "node tests/workflow-validation.test.js",
     "test:integration": "node tests/integration-test.js",
     "test:simple": "node tests/simple-workflow-test.js",
+    "test:monitoring": "node tests/monitoring-test.js",
     "test:verbose": "node tests/run-all-tests.js --verbose",
     "validate-workflows": "node tests/run-all-tests.js",
     "lint": "echo 'No linting configured - using workflow validation instead' && npm run test:validation"
