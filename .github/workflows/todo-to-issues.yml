@@ -110,9 +110,21 @@ jobs:
               let currentSection = '';
               let currentPriority = 'medium';
               let inPrioritySection = false;
+              let inCodeBlock = false;
               
               for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
+                
+                // Track code block state (skip parsing content inside code fences)
+                if (line.startsWith('```')) {
+                  inCodeBlock = !inCodeBlock;
+                  continue;
+                }
+                
+                // Skip parsing if we're inside a code block
+                if (inCodeBlock) {
+                  continue;
+                }
                 
                 // Track current section for context
                 if (line.match(/^#{1,4}\s+/)) {
