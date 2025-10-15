@@ -1,0 +1,388 @@
+{
+  "entities": [
+    {
+      "id": "peter-faucitt",
+      "type": "Person",
+      "name": "Peter Andrew Faucitt",
+      "role": "Applicant",
+      "description": "Applicant in Case 2025-137857"
+    },
+    {
+      "id": "jacqueline-faucitt",
+      "type": "Person",
+      "name": "Jacqueline Faucitt",
+      "role": "Respondent",
+      "description": "First Respondent in Case 2025-137857",
+      "alias": "Jax"
+    },
+    {
+      "id": "daniel-faucitt",
+      "type": "Person",
+      "name": "Daniel James Faucitt",
+      "role": "Respondent",
+      "description": "Second Respondent in Case 2025-137857"
+    },
+    {
+      "id": "rynette-farrar",
+      "type": "Person",
+      "name": "Rynette Farrar",
+      "role": "Coordinator",
+      "description": "Primary orchestrator in revenue hijacking scheme",
+      "centralityScore": 0.78
+    },
+    {
+      "id": "son-addarory",
+      "type": "Person",
+      "name": "Addarory (Son)",
+      "role": "Technical Facilitator",
+      "description": "Technical facilitator for domain registration",
+      "centralityScore": 0.65
+    },
+    {
+      "id": "gayane-williams",
+      "type": "Person",
+      "name": "Gayane Williams",
+      "role": "Witness",
+      "description": "Key witness with direct knowledge of instructions"
+    },
+    {
+      "id": "regima",
+      "type": "Company",
+      "name": "RegimA",
+      "description": "Business operations targeted in revenue hijacking"
+    },
+    {
+      "id": "event-2025-04-14-bank-letter",
+      "type": "Event",
+      "name": "Bank Account Change Fraud",
+      "date": "2025-04-14",
+      "description": "Fraudulent redirection of client payments",
+      "category": "Revenue Diversion Setup",
+      "severity": "Critical"
+    },
+    {
+      "id": "event-2025-05-22-shopify-audit",
+      "type": "Event",
+      "name": "Shopify Audit Trail Destruction",
+      "date": "2025-05-22",
+      "description": "Systematic audit trail destruction",
+      "category": "Evidence Destruction",
+      "severity": "Critical",
+      "financialImpact": 3141647.7
+    },
+    {
+      "id": "event-2025-05-29-domain-registration",
+      "type": "Event",
+      "name": "Domain Registration by Son",
+      "date": "2025-05-29",
+      "description": "Identity fraud using son's name for customer hijacking",
+      "category": "Family Conspiracy",
+      "severity": "High"
+    },
+    {
+      "id": "event-2025-06-20-gee-gayane-email",
+      "type": "Event",
+      "name": "Administrative Instruction Coordination",
+      "date": "2025-06-20",
+      "description": "Coordination evidence between Pete and administrative personnel",
+      "category": "Instruction Coordination",
+      "severity": "Medium"
+    },
+    {
+      "id": "event-2025-07-08-warehouse-popi",
+      "type": "Event",
+      "name": "Business Sabotage and POPI Violations",
+      "date": "2025-07-08",
+      "description": "Warehouse access issues and data protection violations",
+      "category": "Business Sabotage",
+      "severity": "High"
+    },
+    {
+      "id": "evidence-jf8a",
+      "type": "Evidence",
+      "name": "JF8A Documentation Log",
+      "evidenceType": "correspondence",
+      "reference": "JF8A",
+      "priority": "Critical",
+      "description": "IT expenses and R500K payment documentation"
+    },
+    {
+      "id": "evidence-forensic-index",
+      "type": "Evidence",
+      "name": "Forensic Evidence Index",
+      "evidenceType": "analysis",
+      "reference": "FORENSIC_EVIDENCE_INDEX",
+      "priority": "Critical",
+      "description": "Complete forensic analysis of revenue hijacking scheme"
+    },
+    {
+      "id": "evidence-shopify-reports",
+      "type": "Evidence",
+      "name": "Shopify Historical Performance Reports",
+      "evidenceType": "financial",
+      "reference": "shopify_reports",
+      "priority": "Critical",
+      "description": "Pre and post-hijacking revenue data"
+    },
+    {
+      "id": "date-2025-04-14",
+      "type": "Date",
+      "date": "2025-04-14",
+      "description": "Start of revenue hijacking scheme"
+    },
+    {
+      "id": "date-2025-07-08",
+      "type": "Date",
+      "date": "2025-07-08",
+      "description": "End of 85-day criminal scheme period"
+    }
+  ],
+  "linkTuples": [
+    {
+      "source": "peter-faucitt",
+      "relation": "involved-in",
+      "target": "event-2025-04-14-bank-letter",
+      "metadata": {
+        "role": "alleged-perpetrator",
+        "evidence": [
+          "timeline-documents",
+          "bank-statements"
+        ]
+      }
+    },
+    {
+      "source": "rynette-farrar",
+      "relation": "orchestrated",
+      "target": "event-2025-04-14-bank-letter",
+      "metadata": {
+        "role": "primary-orchestrator",
+        "centralityIncrease": 0.06
+      }
+    },
+    {
+      "source": "peter-faucitt",
+      "relation": "involved-in",
+      "target": "event-2025-05-22-shopify-audit",
+      "metadata": {
+        "role": "alleged-perpetrator",
+        "evidence": [
+          "audit-trail-analysis"
+        ],
+        "timing": "after-confrontation",
+        "consciousnessOfGuilt": true
+      }
+    },
+    {
+      "source": "son-addarory",
+      "relation": "facilitated",
+      "target": "event-2025-05-29-domain-registration",
+      "metadata": {
+        "role": "technical-facilitator",
+        "centralityIncrease": 0.3
+      }
+    },
+    {
+      "source": "rynette-farrar",
+      "relation": "coordinated",
+      "target": "event-2025-05-29-domain-registration",
+      "metadata": {
+        "role": "coordinator",
+        "familyConspiracy": true
+      }
+    },
+    {
+      "source": "gayane-williams",
+      "relation": "witnessed",
+      "target": "event-2025-06-20-gee-gayane-email",
+      "metadata": {
+        "role": "key-witness",
+        "testimony": "direct-knowledge"
+      }
+    },
+    {
+      "source": "peter-faucitt",
+      "relation": "coordinated-with",
+      "target": "gayane-williams",
+      "metadata": {
+        "via": "event-2025-06-20-gee-gayane-email",
+        "nature": "administrative-instructions"
+      }
+    },
+    {
+      "source": "jacqueline-faucitt",
+      "relation": "respondent-with",
+      "target": "daniel-faucitt",
+      "metadata": {
+        "relationship": "co-respondents",
+        "case": "2025-137857"
+      }
+    },
+    {
+      "source": "peter-faucitt",
+      "relation": "applicant-against",
+      "target": "jacqueline-faucitt",
+      "metadata": {
+        "relationship": "legal-dispute",
+        "case": "2025-137857"
+      }
+    },
+    {
+      "source": "peter-faucitt",
+      "relation": "applicant-against",
+      "target": "daniel-faucitt",
+      "metadata": {
+        "relationship": "legal-dispute",
+        "case": "2025-137857"
+      }
+    },
+    {
+      "source": "rynette-farrar",
+      "relation": "family-of",
+      "target": "son-addarory",
+      "metadata": {
+        "relationship": "mother-son",
+        "conspiracyRole": "coordinated"
+      }
+    },
+    {
+      "source": "jacqueline-faucitt",
+      "relation": "owns",
+      "target": "regima",
+      "metadata": {
+        "role": "business-owner",
+        "with": "daniel-faucitt"
+      }
+    },
+    {
+      "source": "daniel-faucitt",
+      "relation": "owns",
+      "target": "regima",
+      "metadata": {
+        "role": "business-owner",
+        "with": "jacqueline-faucitt"
+      }
+    },
+    {
+      "source": "event-2025-04-14-bank-letter",
+      "relation": "documented-in",
+      "target": "evidence-forensic-index",
+      "metadata": {
+        "category": "Revenue Diversion Setup",
+        "evidenceGrade": "A"
+      }
+    },
+    {
+      "source": "event-2025-05-22-shopify-audit",
+      "relation": "documented-in",
+      "target": "evidence-shopify-reports",
+      "metadata": {
+        "category": "Evidence Destruction",
+        "evidenceGrade": "A",
+        "financialImpact": 3141647.7
+      }
+    },
+    {
+      "source": "event-2025-05-22-shopify-audit",
+      "relation": "documented-in",
+      "target": "evidence-forensic-index",
+      "metadata": {
+        "category": "Evidence Destruction",
+        "evidenceGrade": "A"
+      }
+    },
+    {
+      "source": "event-2025-06-20-gee-gayane-email",
+      "relation": "referenced-in",
+      "target": "evidence-jf8a",
+      "metadata": {
+        "category": "Instruction Coordination",
+        "witnessEvidence": true
+      }
+    },
+    {
+      "source": "event-2025-04-14-bank-letter",
+      "relation": "occurred-on",
+      "target": "date-2025-04-14",
+      "metadata": {
+        "timeline": "scheme-start"
+      }
+    },
+    {
+      "source": "event-2025-07-08-warehouse-popi",
+      "relation": "occurred-on",
+      "target": "date-2025-07-08",
+      "metadata": {
+        "timeline": "scheme-end",
+        "duration": "85-days"
+      }
+    },
+    {
+      "source": "event-2025-04-14-bank-letter",
+      "relation": "precedes",
+      "target": "event-2025-05-22-shopify-audit",
+      "metadata": {
+        "daysBetween": 38,
+        "escalationPattern": true
+      }
+    },
+    {
+      "source": "event-2025-05-22-shopify-audit",
+      "relation": "precedes",
+      "target": "event-2025-05-29-domain-registration",
+      "metadata": {
+        "daysBetween": 7,
+        "escalationPattern": true
+      }
+    },
+    {
+      "source": "event-2025-05-29-domain-registration",
+      "relation": "precedes",
+      "target": "event-2025-06-20-gee-gayane-email",
+      "metadata": {
+        "daysBetween": 22
+      }
+    },
+    {
+      "source": "event-2025-06-20-gee-gayane-email",
+      "relation": "precedes",
+      "target": "event-2025-07-08-warehouse-popi",
+      "metadata": {
+        "daysBetween": 18
+      }
+    },
+    {
+      "source": "regima",
+      "relation": "targeted-by",
+      "target": "event-2025-04-14-bank-letter",
+      "metadata": {
+        "impact": "revenue-diversion"
+      }
+    },
+    {
+      "source": "regima",
+      "relation": "targeted-by",
+      "target": "event-2025-05-22-shopify-audit",
+      "metadata": {
+        "impact": "business-shutdown",
+        "financialLoss": 3141647.7
+      }
+    }
+  ],
+  "relations": [
+    "involved-in",
+    "orchestrated",
+    "facilitated",
+    "coordinated",
+    "witnessed",
+    "coordinated-with",
+    "respondent-with",
+    "applicant-against",
+    "family-of",
+    "owns",
+    "documented-in",
+    "referenced-in",
+    "occurred-on",
+    "precedes",
+    "targeted-by"
+  ]
+}
