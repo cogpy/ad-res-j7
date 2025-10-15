@@ -99,25 +99,40 @@ if (task.priority === 'critical') {
 
 ### GitHub CLI Conversion
 
-```bash
-# Convert JSON array to CLI arguments
-label_flags=""
-while IFS= read -r label; do
-  label_flags+=" --label \"$label\""
-done < <(echo "$labels" | jq -r '.[]')
+The workflow uses a **secure array-based approach** instead of `eval` for better security:
 
-# Execute with proper quoting
-eval "gh issue create --title \"$title\" --body \"$body\" $label_flags"
+```bash
+# Build command arguments array (secure, no eval needed)
+gh_args=("issue" "create" "--title" "$title" "--body" "$body")
+
+# Add labels from JSON array to argument array
+if [ "$labels_json" != "[]" ] && [ "$labels_json" != "null" ]; then
+  while IFS= read -r label; do
+    if [ -n "$label" ] && [ "$label" != "null" ]; then
+      gh_args+=("--label" "$label")
+    fi
+  done < <(echo "$labels_json" | jq -r '.[]' 2>/dev/null || echo "")
+fi
+
+# Execute with proper argument array (no eval, more secure)
+gh "${gh_args[@]}"
 ```
+
+**Security Note**: This approach avoids using `eval` which can introduce security vulnerabilities. The array-based method safely handles special characters and spaces in labels without requiring shell escaping.
 
 ## Conclusion
 
 The todo-to-issues workflow has been thoroughly verified to properly handle multiple label assignment:
 
 ✅ **Multiple Labels**: Each issue receives 2-4 labels as appropriate  
-✅ **Proper Formatting**: Labels are correctly formatted for GitHub CLI  
+✅ **Proper Formatting**: Labels are correctly formatted for GitHub CLI using secure array-based approach  
 ✅ **Priority Mapping**: Section priorities correctly map to label priorities  
 ✅ **Special Handling**: Critical items get additional bug label  
 ✅ **Edge Cases**: Special characters and spaces are handled properly  
+✅ **Security**: Uses array-based argument passing instead of `eval` for improved security
 
 The verification confirms that issue creation with multiple labels is working correctly as specified in the requirements.
+
+## Recent Updates
+
+**2025-10-15**: Updated documentation to reflect the secure array-based label handling implementation in the workflow (lines 789-800 of `.github/workflows/todo-to-issues.yml`). The workflow no longer uses `eval` for command construction, providing better security and reliability.
