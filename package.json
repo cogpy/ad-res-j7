@@ -19,6 +19,9 @@
     "test:verbose": "node tests/run-all-tests.js --verbose",
     "test:hypergraph": "node tests/hypergraphql.test.js",
     "test:ad-hypergraph": "node tests/ad-hypergraph-test.js",
+    "test:evidence-cross-reference": "bash tests/run-evidence-cross-reference-tests.sh",
+    "test:evidence-cross-reference-js": "node tests/evidence-cross-reference-accuracy.test.js",
+    "test:evidence-cross-reference-py": "python3 tests/test_evidence_cross_reference_accuracy.py",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
     "lint": "echo 'No linting configured - using workflow validation instead' && npm run test:validation"
