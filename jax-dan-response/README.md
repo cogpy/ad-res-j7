@@ -145,6 +145,6 @@ This analysis directly refutes the "unauthorized payment" allegation and demonst
   - Legal analysis of abuse of court process and ex parte procedure
   - This directly refutes claims of urgency and exposes the strategic nature of the interdict application
 
-- **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
-- **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.
+- **`jax-dan-response/evidence-attachments/AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
+- **`jax-dan-response/evidence-attachments/AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.
 

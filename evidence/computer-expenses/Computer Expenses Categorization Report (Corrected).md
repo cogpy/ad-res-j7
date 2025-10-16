@@ -173,7 +173,7 @@ The following data files are available for further analysis:
 1. Combined Transactions: `/home/ubuntu/transaction_analysis/combined_transactions.csv`
 2. Cleaned Transactions: `/home/ubuntu/transaction_analysis/cleaned_transactions.csv`
 3. Categorized Transactions: `/home/ubuntu/transaction_analysis/categorized_transactions.csv`
-4. Validated Transactions: `/home/ubuntu/transaction_analysis/validated_transactions.csv`
-5. Category Summary: `/home/ubuntu/transaction_analysis/summaries/category_summary.csv`
-6. Period Summary: `/home/ubuntu/transaction_analysis/summaries/period_summary.csv`
-7. Corrected Yearly Summary: `/home/ubuntu/transaction_analysis/summaries/corrected_yearly_summary.csv`
+4. Validated Transactions: `evidence/computer-expenses/validated_transactions.csv`
+5. Category Summary: `evidence/computer-expenses/category_summary.csv`
+6. Period Summary: `evidence/computer-expenses/period_summary.csv`
+7. Corrected Yearly Summary: `evidence/computer-expenses/corrected_yearly_summary.csv`

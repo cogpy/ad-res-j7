@@ -105,7 +105,7 @@ npm run validate-workflows
 
 ### Continuous Integration
 - Tests run automatically on workflow changes
-- GitHub Actions integration via `test-workflows.yml`
+- GitHub Actions integration via `.github/workflows/test-workflows.yml`
 - Test artifacts uploaded for review
 - 90%+ pass rate required for success
 

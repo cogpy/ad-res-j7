@@ -1,6 +1,6 @@
 # Workflow Validation Tests
 
-This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `todo-to-issues.yml` and `file-representations.yml` workflows.
+This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `.github/workflows/todo-to-issues.yml` and `.github/workflows/file-representations.yml` workflows.
 
 ## 🛡️ Merge Conflict Prevention
 
