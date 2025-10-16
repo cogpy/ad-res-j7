@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-16T15:42:43.958Z",
+  "summary": {
+    "total_checks": 446,
+    "passed": 445,
+    "failed": 1,
+    "success_rate": 100
+  },
+  "tests": {
+    "structure_validation": true,
+    "priority_handling": true,
+    "body_content": true,
+    "duplicate_detection": false,
+    "priority_distribution": true
+  },
+  "errors": [
+    "Duplicate title found: \"Prepare for legal review\" at index 122"
+  ],
+  "input_summary": {
+    "total_issues": 148,
+    "priorities": {
+      "critical": 56,
+      "high": 47,
+      "medium": 43,
+      "low": 2
+    },
+    "files_processed": 6
+  }
+}
