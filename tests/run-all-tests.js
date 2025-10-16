@@ -9,6 +9,7 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const EmptyTodoFileValidator = require('./empty-todo-file-validation.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -21,6 +22,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      emptyTodoValidation: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -136,6 +138,24 @@ class TestRunner {
     return success;
   }
 
+  async runEmptyTodoValidationTests() {
+    console.log('\n📋 Running Empty Todo File Validation Tests...\n');
+    
+    const emptyTodoValidator = new EmptyTodoFileValidator();
+    const success = emptyTodoValidator.runAllTests();
+    
+    this.results.emptyTodoValidation = {
+      success: success,
+      total: emptyTodoValidator.testResults.length,
+      passed: emptyTodoValidator.testResults.filter(t => t.passed).length,
+      failed: emptyTodoValidator.testResults.filter(t => !t.passed).length,
+      errors: emptyTodoValidator.errors,
+      requirement_source: 'todo/workflow-validation-tests.md line 71'
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
     this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
@@ -144,19 +164,22 @@ class TestRunner {
                                        this.results.integration.total + 
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total;
+                                       this.results.endToEnd.total + 
+                                       this.results.emptyTodoValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed;
+                                        this.results.endToEnd.passed + 
+                                        this.results.emptyTodoValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed;
+                                        this.results.endToEnd.failed + 
+                                        this.results.emptyTodoValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -197,6 +220,12 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
+
+    console.log('\n📂 Empty Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.emptyTodoValidation.passed}/${this.results.emptyTodoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.emptyTodoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.emptyTodoValidation.passed / this.results.emptyTodoValidation.total) * 100)}%`);
+    console.log(`   📋 Requirement: ${this.results.emptyTodoValidation.requirement_source}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -279,7 +308,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation']
       },
       summary: this.results.overall
     });
@@ -299,6 +328,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const emptyTodoSuccess = await this.runEmptyTodoValidationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -310,7 +340,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && emptyTodoSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
