@@ -48,14 +48,44 @@
           "content": "This directory contains raw evidence collected for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`bank_records/`**: Contains personal and business bank records.\n- **`shopify_reports/`**: Contains sales and financial reports from Shopify.\n- **`invoices/`**: Contains invoices for various business expenses.\n- **`correspondence/`**: Contains email and other correspondence relevant to the case."
         },
         {
-          "heading": "`jax-dan-response/`",
+          "heading": "`jax-response/`",
           "level": 3,
-          "content": "This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:\n\n- **`AD/`**: Contains documents related to the \"AD Response J7\" project.\n- **`analysis-output/`**: Contains output from the analysis of the case.\n- **`evidence-attachments/`**: Contains evidence attached to the responding affidavit.\n- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit.\n- **`financial-analysis/`**: Contains detailed financial analysis to refute the applicant's claims."
+          "content": "**NEW** - Complete forensic evidence analysis with three major components documenting over R10.227M in financial losses:\n\n- **`revenue-theft/`**: Forensic analysis of coordinated revenue hijacking scheme (5 events, R3.1M+ losses)\n- **`family-trust/`**: Analysis of systematic family trust manipulation (5 events, R2.851M+ losses)\n- **`financial-flows/`**: Analysis of financial manipulation and fund diversion (5 events, R4.276M+ losses)\n- **`source-documents/`**: Original affidavit drafts and source materials\n- **`evidence-attachments/`**: Supporting evidence and analysis documents\n- **`peter-interdict/`**: Peter Faucitt's interdict application and court order\n- **`analysis-output/`**: Comprehensive analysis including current affidavit v3"
         },
         {
-          "heading": "`tools/`",
+          "heading": "`jax-dan-response/`",
           "level": 3,
-          "content": "This directory contains scripts and tools used for analysis and document processing."
+          "content": "This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:\n\n- **`AD/`**: Contains documents related to the \"AD Response J7\" project.\n- **`evidence-attachments/`**: Contains 20+ comprehensive evidence documents including technical infrastructure analysis, regulatory crisis documentation, and timeline analysis.\n- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit."
+        },
+        {
+          "heading": "`1-CIVIL-RESPONSE/`",
+          "level": 3,
+          "content": "Civil case response materials and analysis framework."
+        },
+        {
+          "heading": "`2-CRIMINAL-CASE/`",
+          "level": 3,  
+          "content": "Criminal prosecution framework for Peter Faucitt, Rynette Farrar, and others. Currently blocked by interdict pending civil case resolution."
+        },
+        {
+          "heading": "`3-EXTERNAL-VALIDATION/`",
+          "level": 3,
+          "content": "External validation and cross-repository analysis integration."
+        },
+        {
+          "heading": "`todo/`",
+          "level": 3,
+          "content": "Automated task generation system for case management. Contains comprehensive action plans automatically processed by GitHub Actions to generate tracked issues."
+        },
+        {
+          "heading": "`tests/`",
+          "level": 3,
+          "content": "Comprehensive automated testing pipeline for workflow validation with 118 tests achieving 92%+ success rate."
+        },
+        {
+          "heading": "`scripts/`",
+          "level": 3,
+          "content": "Utility scripts and automation tools for repository management and case processing."
         },
         {
           "heading": "File Naming Conventions",

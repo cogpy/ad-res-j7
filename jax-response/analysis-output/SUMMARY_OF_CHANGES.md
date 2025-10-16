@@ -79,9 +79,9 @@ This new section has been inserted between Section 13 (Response to Urgency) and 
 ## Evidence Requirements for Section 13A:
 
 ### Critical Evidence Needed:
-☐ JF5 draft agreement (initial version reviewed)
-☐ JF5 final agreement (signed version with changes)
-☐ Comparison document highlighting all changes
+☑ JF5 draft agreement (initial version reviewed) - **COMPLETE: JF5-DRAFT**
+☑ JF5 final agreement (signed version with changes) - **COMPLETE: JF5-FINAL**
+☑ Comparison document highlighting all changes - **COMPLETE: JF5-COMPARISON**
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
 ☐ Legal opinion on jurisdictional limitations
