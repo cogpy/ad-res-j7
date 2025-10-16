@@ -1,0 +1,119 @@
+{
+  "name": "Optimal Strategy Implementation Workflow",
+  "version": "1.0",
+  "case": "Case 2025-137857",
+  "generated": "2025-10-16T13:03:10.632Z",
+  "phases": {
+    "phase1_critical": {
+      "name": "Critical Strategy Implementation",
+      "strategies": [
+        {
+          "id": "STRAT-006",
+          "category": "disproportionate_harm",
+          "name": "Quantified Harm Analysis",
+          "priority": 1,
+          "status": "pending",
+          "file": null,
+          "impact": "Demonstrate 36:1 harm ratio",
+          "estimatedHours": 12,
+          "dependencies": [
+            "STRAT-001",
+            "STRAT-004",
+            "STRAT-005"
+          ]
+        },
+        {
+          "id": "STRAT-007",
+          "category": "material_non_disclosure",
+          "name": "Comprehensive Material Non-Disclosure Summary",
+          "priority": 1,
+          "status": "pending",
+          "file": null,
+          "impact": "Consolidated evidence for setting aside interdict",
+          "estimatedHours": 16,
+          "dependencies": [
+            "STRAT-001",
+            "STRAT-002",
+            "STRAT-003",
+            "STRAT-006"
+          ]
+        }
+      ],
+      "estimatedHours": 28
+    },
+    "phase2_quick_wins": {
+      "name": "Quick Win Strategies",
+      "strategies": [
+        {
+          "id": "STRAT-010",
+          "category": "business_disruption",
+          "name": "System Access Restriction Timeline",
+          "priority": 2,
+          "status": "pending",
+          "file": null,
+          "impact": "Prove Peter's systematic exclusion of directors",
+          "estimatedHours": 6,
+          "dependencies": [
+            "STRAT-003"
+          ]
+        }
+      ],
+      "estimatedHours": 6
+    },
+    "phase3_complex": {
+      "name": "Complex Strategy Resolution",
+      "strategies": [
+        {
+          "id": "STRAT-006",
+          "category": "disproportionate_harm",
+          "name": "Quantified Harm Analysis",
+          "priority": 1,
+          "status": "pending",
+          "file": null,
+          "impact": "Demonstrate 36:1 harm ratio",
+          "estimatedHours": 12,
+          "dependencies": [
+            "STRAT-001",
+            "STRAT-004",
+            "STRAT-005"
+          ]
+        },
+        {
+          "id": "STRAT-007",
+          "category": "material_non_disclosure",
+          "name": "Comprehensive Material Non-Disclosure Summary",
+          "priority": 1,
+          "status": "pending",
+          "file": null,
+          "impact": "Consolidated evidence for setting aside interdict",
+          "estimatedHours": 16,
+          "dependencies": [
+            "STRAT-001",
+            "STRAT-002",
+            "STRAT-003",
+            "STRAT-006"
+          ]
+        },
+        {
+          "id": "STRAT-009",
+          "category": "responsible_person",
+          "name": "Multi-Jurisdiction Compliance Matrix",
+          "priority": 2,
+          "status": "pending",
+          "file": null,
+          "impact": "Detail regulatory requirements across 37 jurisdictions",
+          "estimatedHours": 20,
+          "dependencies": [
+            "STRAT-001"
+          ]
+        }
+      ],
+      "estimatedHours": 48
+    }
+  },
+  "integration": {
+    "evidence_collector": "./optimal-evidence-collector.js",
+    "hypergraph": "./hypergraph_resolver.py",
+    "strategic_analysis": "./STRATEGIC_ASSESSMENT_CONSOLIDATED.md"
+  }
+}
