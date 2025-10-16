@@ -1,114 +1,55 @@
 # AD Hypergraph Analysis Report
-Generated: 2025-10-15T15:38:16.263967
+Generated: 2025-10-16T04:24:21.135074
 
 ## Executive Summary
 
-- **Total AD Components Found**: 95295
-- **Hypergraph Nodes**: 29
-- **Hypergraph Edges**: 35429
-- **Repositories Analyzed**: 4
+- **Total AD Components Found**: 11855
+- **Hypergraph Nodes**: 8
+- **Hypergraph Edges**: 316
+- **Repositories Analyzed**: 1
 
 ## Component Distribution by Type
 
-- **Identity**: 40997 occurrences
-- **Security**: 37258 occurrences
-- **Authorization**: 8523 occurrences
-- **Authentication**: 4547 occurrences
-- **Directory**: 3246 occurrences
-- **Token**: 650 occurrences
-- **Api_Auth**: 70 occurrences
-- **Sso**: 4 occurrences
+- **Directory**: 3835 occurrences
+- **Authorization**: 3434 occurrences
+- **Identity**: 1930 occurrences
+- **Authentication**: 1720 occurrences
+- **Security**: 801 occurrences
+- **Token**: 81 occurrences
+- **Sso**: 36 occurrences
+- **Api_Auth**: 18 occurrences
 
 ## Repository Analysis
 
 ### cogpy/ad-res-j7
-- **Components Found**: 8644
-- **Node Types**: sso, identity, authentication, directory, security, token, authorization, api_auth
+- **Components Found**: 11855
+- **Node Types**: sso, identity, directory, security, api_auth, authentication, token, authorization
 
 **Top Files with AD Components:**
-- `ad-res-j7/jax-response/analysis-output/comprehensive_reference_index.json`: 386 components
-- `ad-res-j7/docs/models/hypergnn/case-hypergraph.js`: 222 components
-- `ad-res-j7/jax-response/AD/2-High-Priority/STAFF_ADMINISTRATOR_DATA_PROTECTION_CLARIFICATIONS.md`: 205 components
-- `ad-res-j7/jax-response/analysis-output/comprehensive_reference_index.md`: 185 components
-- `ad-res-j7/jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md`: 178 components
-
-### EchoCog/analysss
-- **Components Found**: 45191
-- **Node Types**: identity, authentication, directory, security, token, authorization, api_auth
-
-**Top Files with AD Components:**
-- `analysss/evidence_based_analysis.json`: 230 components
-- `analysss/processed_documents.json`: 211 components
-- `analysss/affidavit_work/analysis/comprehensive_reference_index.json`: 185 components
-- `analysss/jax-response/analysis-output/comprehensive_reference_index.json`: 185 components
-- `analysss/jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md`: 162 components
-
-### rzonedevops/avtomaatoctory
-- **Components Found**: 41308
-- **Node Types**: identity, authentication, directory, security, token, authorization, api_auth
-
-**Top Files with AD Components:**
-- `avtomaatoctory/processed_documents.json`: 211 components
-- `avtomaatoctory/evidence_based_analysis.json`: 156 components
-- `avtomaatoctory/docs/enhanced_affidavit.md`: 118 components
-- `avtomaatoctory/evidence_consolidated.md`: 79 components
-- `avtomaatoctory/evidence_ocr_formatted.md`: 71 components
-
-### rzonedevops/analyticase
-- **Components Found**: 152
-- **Node Types**: identity, authentication, directory, security, token, authorization, api_auth
-
-**Top Files with AD Components:**
-- `analyticase/DEPLOYMENT.md`: 28 components
-- `analyticase/models/case_llm/case_llm_model.py`: 17 components
-- `analyticase/za_judiciary_integration/docs/DATA_MAPPING_ZA_JUDICIARY.md`: 17 components
-- `analyticase/models/ggmlex/llm.py`: 12 components
-- `analyticase/za_judiciary_integration/docs/ZA_JUDICIARY_INTEGRATION.md`: 11 components
+- `ad-hypergraph-mapping/ad_hypergraph_visualization.md`: 1112 components
+- `ad-hypergraph-mapping/ad_hypergraph.json`: 662 components
+- `jax-response/analysis-output/comprehensive_reference_index.json`: 295 components
+- `docs/models/hypergnn/case-hypergraph.js`: 222 components
+- `jax-response/AD/2-High-Priority/STAFF_ADMINISTRATOR_DATA_PROTECTION_CLARIFICATIONS.md`: 205 components
 
 ## Hypergraph Structure
 
 ### Node Connectivity
 
-- **identity components in EchoCog/analysss**: 17506 connections
-- **identity components in rzonedevops/avtomaatoctory**: 17417 connections
-- **security components in EchoCog/analysss**: 17340 connections
-- **security components in rzonedevops/avtomaatoctory**: 17305 connections
-- **authorization components in EchoCog/analysss**: 539 connections
-- **authorization components in rzonedevops/avtomaatoctory**: 453 connections
-- **authentication components in EchoCog/analysss**: 415 connections
-- **authentication components in rzonedevops/avtomaatoctory**: 344 connections
-- **authorization components in cogpy/ad-res-j7**: 219 connections
-- **identity components in cogpy/ad-res-j7**: 188 connections
-- **authentication components in cogpy/ad-res-j7**: 183 connections
-- **directory components in cogpy/ad-res-j7**: 147 connections
-- **security components in cogpy/ad-res-j7**: 142 connections
-- **directory components in EchoCog/analysss**: 57 connections
-- **token components in rzonedevops/avtomaatoctory**: 54 connections
-- **token components in EchoCog/analysss**: 47 connections
-- **directory components in rzonedevops/avtomaatoctory**: 34 connections
-- **token components in cogpy/ad-res-j7**: 18 connections
-- **api_auth components in EchoCog/analysss**: 14 connections
-- **api_auth components in rzonedevops/avtomaatoctory**: 14 connections
-- **identity components in rzonedevops/analyticase**: 11 connections
-- **security components in rzonedevops/analyticase**: 10 connections
-- **authorization components in rzonedevops/analyticase**: 9 connections
-- **authentication components in rzonedevops/analyticase**: 7 connections
-- **token components in rzonedevops/analyticase**: 5 connections
-- **sso components in cogpy/ad-res-j7**: 4 connections
-- **api_auth components in rzonedevops/analyticase**: 4 connections
-- **api_auth components in cogpy/ad-res-j7**: 2 connections
-- **directory components in rzonedevops/analyticase**: 1 connections
+- **authorization components in cogpy/ad-res-j7**: 260 connections
+- **authentication components in cogpy/ad-res-j7**: 222 connections
+- **identity components in cogpy/ad-res-j7**: 218 connections
+- **directory components in cogpy/ad-res-j7**: 169 connections
+- **security components in cogpy/ad-res-j7**: 168 connections
+- **token components in cogpy/ad-res-j7**: 26 connections
+- **sso components in cogpy/ad-res-j7**: 10 connections
+- **api_auth components in cogpy/ad-res-j7**: 8 connections
 
 ## Key Insights
 
 ### Cross-Repository Relationships
-Found 7 edges connecting multiple repositories:
+Found 0 edges connecting multiple repositories:
 
-- authenticates: connects rzonedevops/analyticase, cogpy/ad-res-j7, EchoCog/analysss, rzonedevops/avtomaatoctory
-- generates: connects rzonedevops/analyticase, cogpy/ad-res-j7, EchoCog/analysss, rzonedevops/avtomaatoctory
-- stored_in: connects rzonedevops/analyticase, cogpy/ad-res-j7, EchoCog/analysss, rzonedevops/avtomaatoctory
-- provides: connects rzonedevops/analyticase, cogpy/ad-res-j7, EchoCog/analysss, rzonedevops/avtomaatoctory
-- used_for: connects rzonedevops/analyticase, cogpy/ad-res-j7, EchoCog/analysss, rzonedevops/avtomaatoctory
 
 ## Security Recommendations
 
@@ -123,105 +64,105 @@ Based on the AD component analysis:
 
 ### Authentication Examples
 
-**File**: `ad-res-j7/scripts/cleanup-duplicate-issues.js` (line 310)
+**File**: `ad-hypergraph-mapping/ad_hypergraph_mapper.py` (line 6)
 **Context**:
 ```
-    }
+============================================
 
-    // Check authentication
-    try {
-      execSync('gh auth status', { stdio: 'ignore' });
-    } catch (error) {
+Maps Active Directory and Authentication/Authorization components 
+across multiple repositories to create a unified hypergraph view.
+
+Repositories analyzed:
 ```
 
-**File**: `ad-res-j7/scripts/cleanup-duplicate-issues.js` (line 312)
+**File**: `ad-hypergraph-mapping/ad_hypergraph_mapper.py` (line 6)
 **Context**:
 ```
-    // Check authentication
-    try {
-      execSync('gh auth status', { stdio: 'ignore' });
-    } catch (error) {
-      console.error('❌ Not authenticated with GitHub CLI. Run: gh auth login');
-      process.exit(1);
+============================================
+
+Maps Active Directory and Authentication/Authorization components 
+across multiple repositories to create a unified hypergraph view.
+
+Repositories analyzed:
 ```
 
-**File**: `ad-res-j7/scripts/cleanup-duplicate-issues.js` (line 314)
+**File**: `ad-hypergraph-mapping/ad_hypergraph_mapper.py` (line 36)
 **Context**:
 ```
-      execSync('gh auth status', { stdio: 'ignore' });
-    } catch (error) {
-      console.error('❌ Not authenticated with GitHub CLI. Run: gh auth login');
-      process.exit(1);
-    }
-
+@dataclass
+class ADComponent:
+    """Represents an AD/Auth component found in repositories"""
+    component_type: str  # auth, identity, permission, role, token, etc.
+    name: str
+    description: str
 ```
 
 ### Authorization Examples
 
-**File**: `ad-res-j7/shared-hypergraphql-schema/schema.js` (line 181)
+**File**: `hypergraph_resolver.py` (line 178)
 **Context**:
 ```
-        username: { type: "string", required: true },
-        email: { type: "string" },
-        role: { type: "string" },
-        permissions: { type: "array", items: "string" },
-        department: { type: "string" },
-        created: { type: "datetime" },
+@dataclass
+class ActorNode(Node):
+    role: str = ""
+
+@dataclass
+class Hyperedge:
 ```
 
-**File**: `ad-res-j7/tests/duplicate-cleanup-test.js` (line 363)
+**File**: `hypergraph_resolver.py` (line 236)
 **Context**:
 ```
-    });
+                    name=node_data["name"],
+                    properties=node_data["properties"],
+                    role=node_data["properties"].get("role", "")
+                )
+    return None
 
-    this.test('Has proper permission validation', () => {
-      return workflowContent.includes('permissions:') &&
-             workflowContent.includes('issues: write');
-    });
 ```
 
-**File**: `ad-res-j7/tests/workflow-validation.test.js` (line 76)
+**File**: `hypergraph_resolver.py` (line 236)
 **Context**:
 ```
-      
-      // Test permissions
-      this.assert(workflowContent.includes('contents: read'), 'Has contents read permission');
-      this.assert(workflowContent.includes('issues: write'), 'Has issues write permission');
-      this.assert(workflowContent.includes('actions: read'), 'Has actions read permission');
-      
+                    name=node_data["name"],
+                    properties=node_data["properties"],
+                    role=node_data["properties"].get("role", "")
+                )
+    return None
+
 ```
 
 ### Identity Examples
 
-**File**: `ad-res-j7/scripts/cleanup-duplicate-issues.js` (line 107)
+**File**: `hypergraph_resolver.py` (line 356)
 **Context**:
 ```
-      /^add external validation/i,
-      /timing correlation/i,
-      /director loan account/i,
-      /established practice/i,
-      /bad faith/i,
-      /point.?by.?point/i,
+                "paragraph": para,
+                "priority": para.priority,
+                "required_evidence": ["Director loan account records", "Historical payment records", "Expert opinions"],
+                "urgency": "HIGH" if para.priority_level == 1 else "MEDIUM"
+            })
+    
 ```
 
-**File**: `ad-res-j7/scripts/cleanup-duplicate-issues.js` (line 113)
+**File**: `hypergraph_resolver.py` (line 375)
 **Context**:
 ```
-      /general refutation/i,
-      /business norms/i,
-      /loan account credit/i,
-      /informal model/i,
-      /accounting records/i,
-      /pretext evidence/i,
+            "Use PARA_7_2-7_5 as template for comprehensive evidence",
+            "Obtain expert opinions for Responsible Person duties",
+            "Compile director loan account statements"
+        ]
+    }
+
 ```
 
-**File**: `ad-res-j7/scripts/fix-specific-duplicates.js` (line 6)
+**File**: `ad-hypergraph-mapping/ad_hypergraph_mapper.py` (line 37)
 **Context**:
 ```
- * Fix Specific Duplicate Issues
- * 
- * This script targets the specific duplicate issues mentioned in the user's list
- */
-
-const { execSync } = require('child_process');
+class ADComponent:
+    """Represents an AD/Auth component found in repositories"""
+    component_type: str  # auth, identity, permission, role, token, etc.
+    name: str
+    description: str
+    repository: str
 ```

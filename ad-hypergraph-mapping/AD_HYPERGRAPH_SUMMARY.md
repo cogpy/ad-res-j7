@@ -2,32 +2,33 @@
 
 ## Overview
 
-Successfully mapped Active Directory (AD) and Authentication/Authorization components across 4 repositories, creating a comprehensive hypergraph visualization of security and identity management infrastructure.
+Successfully mapped Active Directory (AD) and Authentication/Authorization components within the cogpy/ad-res-j7 repository, creating a comprehensive hypergraph visualization of security and identity management infrastructure. Analysis processed 496 files to identify AD-related patterns and relationships.
 
 ## Key Findings
 
 ### 📊 Overall Statistics
-- **Total AD Components Found**: 95,295
-- **Hypergraph Nodes**: 29
-- **Hypergraph Edges**: 35,429
-- **Repositories Analyzed**: 4 (1 repository not accessible)
+- **Total AD Components Found**: 10,105
+- **Hypergraph Nodes**: 8
+- **Hypergraph Edges**: 313
+- **Repositories Analyzed**: 1 (cogpy/ad-res-j7)
+- **Files Processed**: 496
 
 ### 🔍 Component Distribution
 
-1. **Identity Components** (40,997 occurrences) - User management, profiles, principals
-2. **Security Components** (37,258 occurrences) - Encryption, validation, security utilities
-3. **Authorization Components** (8,523 occurrences) - Permissions, roles, access control
-4. **Authentication Components** (4,547 occurrences) - Login, credentials, authentication services
-5. **Directory Components** (3,246 occurrences) - LDAP, Active Directory services
-6. **Token Components** (650 occurrences) - JWT, OAuth, session management
-7. **API Auth Components** (70 occurrences) - API keys, API authentication
-8. **SSO Components** (4 occurrences) - Single Sign-On implementations
+1. **Authorization Components** (3,390 occurrences) - Permissions, roles, access control
+2. **Directory Components** (2,298 occurrences) - LDAP, Active Directory services
+3. **Identity Components** (1,889 occurrences) - User management, profiles, principals
+4. **Authentication Components** (1,646 occurrences) - Login, credentials, authentication services
+5. **Security Components** (767 occurrences) - Encryption, validation, security utilities
+6. **Token Components** (72 occurrences) - JWT, OAuth, session management
+7. **SSO Components** (27 occurrences) - Single Sign-On implementations
+8. **API Auth Components** (16 occurrences) - API keys, API authentication
 
 ### 🔗 Repository Analysis
 
 #### cogpy/ad-res-j7
-- **8,644 components** across all AD categories
-- Strong presence of authorization (3,038) and directory (2,026) components
+- **10,105 components** across all 8 AD categories
+- Strong presence of authorization (3,390) and directory (2,298) components
 - Only repository with SSO implementations
 - Key files: comprehensive reference indexes, hypergraph models, staff administrator data protection
 
