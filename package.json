@@ -22,6 +22,7 @@
     "test:date-validation": "node tests/date-validation-test.js",
     "test:quality-filter": "node tests/quality-filter-comprehensive-test.js",
     "test:error-scenarios": "node tests/error-scenarios-comprehensive-test.js",
+    "test:final-integration": "node tests/final-integration-comprehensive-test.js",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
