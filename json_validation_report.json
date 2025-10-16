@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-16T17:28:14.567213",
-  "total_files": 174,
-  "valid_files": 174,
+  "timestamp": "2025-10-16T17:30:21.396221",
+  "total_files": 175,
+  "valid_files": 175,
   "invalid_files": 0,
   "errors": [],
   "warnings": [],
@@ -1126,7 +1126,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 31121
+      "size_bytes": 31263
     },
     {
       "file": "legal-hypergraphql/evaluation-reports/case-2025-137857-evaluation.json",
@@ -1155,6 +1155,13 @@
       "error": null,
       "warnings": [],
       "size_bytes": 851
+    },
+    {
+      "file": "package-lock.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 17622
     },
     {
       "file": "package.json",
