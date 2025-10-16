@@ -1,53 +1,53 @@
 {
   "guilt_scores": {
-    "bantjies_breach_of_fiduciary_duty": 0.9844200877681634,
-    "bantjies_conspiracy_to_defraud": 0.9968524798603186,
-    "peter_abuse_of_process": 1.0,
-    "daniel_whistleblower_protection": 0.9903791521734963
+    "bantjies_breach_of_fiduciary_duty": 1.0,
+    "bantjies_conspiracy_to_defraud": 0.9979104998173453,
+    "peter_abuse_of_process": 0.981531035382453,
+    "daniel_whistleblower_protection": 0.9972248588132583
   },
   "attention_analysis": {
     "attention_hotspots": {
       "CAUSAL": {
-        "query": "bantjies_breach_of_fiduciary_duty",
+        "query": "peter_abuse_of_process",
         "element": "fiduciary_duty_norm",
-        "weight": 0.16171161501690176,
-        "interpretation": "Strong causal link between bantjies_breach_of_fiduciary_duty and fiduciary_duty_norm (weight: 0.162)"
+        "weight": 0.1525670737888324,
+        "interpretation": "Strong causal link between peter_abuse_of_process and fiduciary_duty_norm (weight: 0.153)"
       },
       "INTENTIONALITY": {
-        "query": "bantjies_conspiracy_to_defraud",
-        "element": "fraud_investigation_norm",
-        "weight": 0.16386138257396185,
-        "interpretation": "High intentionality focus on fraud_investigation_norm for bantjies_conspiracy_to_defraud (weight: 0.164)"
-      },
-      "TEMPORAL": {
         "query": "peter_abuse_of_process",
         "element": "fraud_investigation_norm",
-        "weight": 0.14347648999901688,
-        "interpretation": "Critical temporal relationship between peter_abuse_of_process and fraud_investigation_norm (weight: 0.143)"
+        "weight": 0.13966824842042982,
+        "interpretation": "High intentionality focus on fraud_investigation_norm for peter_abuse_of_process (weight: 0.140)"
+      },
+      "TEMPORAL": {
+        "query": "daniel_whistleblower_protection",
+        "element": "r18m_future_payout",
+        "weight": 0.1366900989505795,
+        "interpretation": "Critical temporal relationship between daniel_whistleblower_protection and r18m_future_payout (weight: 0.137)"
       },
       "NORMATIVE": {
-        "query": "daniel_whistleblower_protection",
-        "element": "daniel_fraud_report",
-        "weight": 0.1372886598876367,
-        "interpretation": "Significant rule violation connection: daniel_whistleblower_protection \u2192 daniel_fraud_report (weight: 0.137)"
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "fraud_investigation_norm",
+        "weight": 0.13901120566031688,
+        "interpretation": "Significant rule violation connection: bantjies_breach_of_fiduciary_duty \u2192 fraud_investigation_norm (weight: 0.139)"
       },
       "COUNTERFACTUAL": {
         "query": "bantjies_conspiracy_to_defraud",
         "element": "fraud_investigation_norm",
-        "weight": 0.14617670140418526,
-        "interpretation": "Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.146)"
+        "weight": 0.14999407129860162,
+        "interpretation": "Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.150)"
       },
       "NECESSITY": {
-        "query": "bantjies_breach_of_fiduciary_duty",
+        "query": "daniel_whistleblower_protection",
         "element": "peter_card_cancellation",
-        "weight": 0.14021642291945768,
-        "interpretation": "High necessity/sufficiency for bantjies_breach_of_fiduciary_duty through peter_card_cancellation (weight: 0.140)"
+        "weight": 0.1395528459594629,
+        "interpretation": "High necessity/sufficiency for daniel_whistleblower_protection through peter_card_cancellation (weight: 0.140)"
       },
       "PROPORTIONALITY": {
         "query": "bantjies_breach_of_fiduciary_duty",
-        "element": "bantjies_holiday_dismissal",
-        "weight": 0.1433323524215312,
-        "interpretation": "Proportionality concern: bantjies_breach_of_fiduciary_duty vs bantjies_holiday_dismissal (weight: 0.143)"
+        "element": "fiduciary_duty_norm",
+        "weight": 0.1477912397190557,
+        "interpretation": "Proportionality concern: bantjies_breach_of_fiduciary_duty vs fiduciary_duty_norm (weight: 0.148)"
       }
     },
     "causal_chains": [],
@@ -56,106 +56,106 @@
   },
   "self_attention_matrix": [
     [
-      0.008125327247786168,
-      0.007349603260306597,
-      0.013600147241793134,
-      0.0056334521248469676,
-      0.07481273665100417,
-      0.126454741384849,
-      0.37273694066021845,
-      0.3912870514291955
+      0.1052324016798219,
+      0.04495897749644763,
+      0.05412109642211982,
+      0.052575396366366114,
+      0.19488771061126145,
+      0.15187657111973266,
+      0.21018865418164034,
+      0.18615919212260995
     ],
     [
-      0.009462303121725068,
-      0.009757467323629953,
-      0.019074146207573063,
-      0.0069404618162122594,
-      0.09082307304922614,
-      0.14451605195613929,
-      0.3429167748811142,
-      0.37650972164437996
+      0.10132333678603775,
+      0.045927986758522346,
+      0.055168670337615584,
+      0.0529149728923026,
+      0.18879426790848175,
+      0.1344469358548307,
+      0.22567793636481834,
+      0.1957458930973909
     ],
     [
-      0.009747566990430693,
-      0.010935726340388184,
-      0.0183620192594737,
-      0.006670479494018239,
-      0.0805014837985892,
-      0.12175185249188257,
-      0.368163114018771,
-      0.3838677576064464
+      0.11353369440618848,
+      0.049763989882711294,
+      0.04898510308022097,
+      0.06675978167412581,
+      0.20137562298003442,
+      0.12659707480269483,
+      0.2181115362748459,
+      0.17487319689917835
     ],
     [
-      0.00734467337541176,
-      0.006948045472386304,
-      0.012968273879092752,
-      0.005228060060287976,
-      0.07060044061713436,
-      0.13131840898549335,
-      0.3705254412876715,
-      0.395066656322522
+      0.09524370603667691,
+      0.037457282863662275,
+      0.05146968444059636,
+      0.04678157019272849,
+      0.18809478420102527,
+      0.16476619869644044,
+      0.2185880353420882,
+      0.1975987382267822
     ],
     [
-      0.008334733705209749,
-      0.007982745246512551,
-      0.012492953927936958,
-      0.006087495872898652,
-      0.06392816059113805,
-      0.10195468599355392,
-      0.4160504632785155,
-      0.38316876138423456
+      0.09895996967387585,
+      0.03826885438331054,
+      0.036689087154979226,
+      0.05192203636233075,
+      0.16109085558711297,
+      0.13089411608522222,
+      0.2628786818177659,
+      0.21929639893540245
     ],
     [
-      0.00809086137776643,
-      0.007172702188387473,
-      0.010944081475259992,
-      0.004940289576117292,
-      0.0531403642651299,
-      0.09388985617475128,
-      0.44353287156725,
-      0.3782889733753376
+      0.11445360644537654,
+      0.049379673057582264,
+      0.05837104079688317,
+      0.052911523637724577,
+      0.19354457438595862,
+      0.14000999923001342,
+      0.21462016288917576,
+      0.17670941955728553
     ],
     [
-      0.010459073588256599,
-      0.009335723212199621,
-      0.016309875312103046,
-      0.00762758049713793,
-      0.080737810645862,
-      0.1413222842087117,
-      0.3560909899399907,
-      0.37811666259573845
+      0.09569169663274096,
+      0.05231415190780347,
+      0.08541097928717398,
+      0.0418230170154317,
+      0.17506853844370734,
+      0.19132897508438781,
+      0.17508954966620388,
+      0.18327309196255073
     ],
     [
-      0.009827711429816357,
-      0.009356032663456611,
-      0.01752334687970878,
-      0.0069526484852996066,
-      0.07898421341213963,
-      0.14596402878961917,
-      0.3437978413142323,
-      0.38759417702572757
+      0.09568472083689142,
+      0.051001113643425064,
+      0.08874533380158343,
+      0.043005595038337126,
+      0.19076202374309328,
+      0.21606534370509847,
+      0.15542496980747852,
+      0.15931089942409274
     ]
   ],
   "legal_reasoning": [
-    "STRONG EVIDENCE: peter_abuse_of_process (confidence: 1.000)",
-    "STRONG EVIDENCE: bantjies_conspiracy_to_defraud (confidence: 0.997)",
-    "STRONG EVIDENCE: daniel_whistleblower_protection (confidence: 0.990)",
-    "STRONG EVIDENCE: bantjies_breach_of_fiduciary_duty (confidence: 0.984)",
-    "ATTENTION INSIGHT [CAUSAL]: Strong causal link between bantjies_breach_of_fiduciary_duty and fiduciary_duty_norm (weight: 0.162)",
-    "ATTENTION INSIGHT [INTENTIONALITY]: High intentionality focus on fraud_investigation_norm for bantjies_conspiracy_to_defraud (weight: 0.164)",
-    "ATTENTION INSIGHT [TEMPORAL]: Critical temporal relationship between peter_abuse_of_process and fraud_investigation_norm (weight: 0.143)",
-    "ATTENTION INSIGHT [NORMATIVE]: Significant rule violation connection: daniel_whistleblower_protection \u2192 daniel_fraud_report (weight: 0.137)",
-    "ATTENTION INSIGHT [COUNTERFACTUAL]: Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.146)",
-    "ATTENTION INSIGHT [NECESSITY]: High necessity/sufficiency for bantjies_breach_of_fiduciary_duty through peter_card_cancellation (weight: 0.140)",
-    "ATTENTION INSIGHT [PROPORTIONALITY]: Proportionality concern: bantjies_breach_of_fiduciary_duty vs bantjies_holiday_dismissal (weight: 0.143)"
+    "STRONG EVIDENCE: bantjies_breach_of_fiduciary_duty (confidence: 1.000)",
+    "STRONG EVIDENCE: bantjies_conspiracy_to_defraud (confidence: 0.998)",
+    "STRONG EVIDENCE: daniel_whistleblower_protection (confidence: 0.997)",
+    "STRONG EVIDENCE: peter_abuse_of_process (confidence: 0.982)",
+    "ATTENTION INSIGHT [CAUSAL]: Strong causal link between peter_abuse_of_process and fiduciary_duty_norm (weight: 0.153)",
+    "ATTENTION INSIGHT [INTENTIONALITY]: High intentionality focus on fraud_investigation_norm for peter_abuse_of_process (weight: 0.140)",
+    "ATTENTION INSIGHT [TEMPORAL]: Critical temporal relationship between daniel_whistleblower_protection and r18m_future_payout (weight: 0.137)",
+    "ATTENTION INSIGHT [NORMATIVE]: Significant rule violation connection: bantjies_breach_of_fiduciary_duty \u2192 fraud_investigation_norm (weight: 0.139)",
+    "ATTENTION INSIGHT [COUNTERFACTUAL]: Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.150)",
+    "ATTENTION INSIGHT [NECESSITY]: High necessity/sufficiency for daniel_whistleblower_protection through peter_card_cancellation (weight: 0.140)",
+    "ATTENTION INSIGHT [PROPORTIONALITY]: Proportionality concern: bantjies_breach_of_fiduciary_duty vs fiduciary_duty_norm (weight: 0.148)"
   ],
   "confidence_metrics": {
-    "max_attention": 6.5210942788501045,
-    "mean_attention": 0.3611556652770729,
-    "std_attention": 2.8089308059196885,
-    "attention_concentration": 18.056186639867214
+    "max_attention": 7.165419955579494,
+    "mean_attention": 0.37183298501182993,
+    "std_attention": 3.2214637494005918,
+    "attention_concentration": 19.270532878211963
   },
   "invariant_patterns": [
-    "DOMINANT ATTRACTOR: bantjies_holiday_dismissal (element type: action)"
+    "DOMINANT ATTRACTOR: daniel_fraud_report (element type: action)"
   ]
 }
