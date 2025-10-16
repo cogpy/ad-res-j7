@@ -39,6 +39,15 @@ tests/sample-todos/
 test-data/
 !test-data/.gitkeep
 
+# Temporary summary and report files (should be generated dynamically)
+*SUMMARY*.md
+*REPORT*.md
+*_SUMMARY.md
+*_REPORT.md
+duplicate-cleanup-report.json
+specific-duplicates-summary.json
+repository_tree.txt
+
 # Build outputs
 dist/
 build/
