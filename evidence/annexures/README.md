@@ -19,6 +19,14 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Section 3.3.3, Strategic Note Line 256
 - **Status:** ⚠️ **Template** - Requires actual regulatory documents
 
+#### JF-RP2: Regulatory Risk Analysis
+- **File:** `JF-RP2_REGULATORY_RISK_ANALYSIS.md`
+- **Purpose:** Comprehensive regulatory risk analysis quantifying penalties, market access loss, criminal liability, and compliance restoration costs across 37 jurisdictions
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 3.6.4, Material Non-Disclosure Analysis
+- **Status:** ⚠️ **Template** - Requires completion with actual data and expert opinions
+- **Key Metrics:** R66M-R158M penalty exposure, 200:1 harm ratio, 12-24 month restoration timeline
+
 ### Director Loan Accounts
 
 #### JF-DLA1: Peter's Director Loan Account Statement
@@ -101,14 +109,16 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 4. **International Operations Legitimacy** (Section 3.3)
    - **JF-RP1:** Prove formal regulatory compliance across 37 jurisdictions
+   - **JF-RP2:** Quantify regulatory crisis and material non-disclosure impact
 
 ### Evidence Integration Pattern:
 
 **Primary Evidence Chain:**
-1. **JF-RP1** → Establishes international operations legitimacy
-2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
-3. **JF-BS1** → Shows 16 July 2025 transaction details
-4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+1. **JF-RP1** → Establishes international operations legitimacy and Responsible Person role
+2. **JF-RP2** → Quantifies regulatory penalties, harm analysis, and material non-disclosure
+3. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
+4. **JF-BS1** → Shows 16 July 2025 transaction details
+5. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
 
 **Cross-Reference Network:**
 - All annexures cross-reference each other for consistency
@@ -123,6 +133,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 1. **Obtain Actual Evidence:**
    - **Regulatory documents** for JF-RP1 (37 jurisdictions)
+   - **Regulatory risk analysis** for JF-RP2 (expert opinions, penalty research, financial impact data)
    - **Accounting records** for JF-DLA1, JF-DLA2, JF-DLA3
    - **Bank statements** for JF-BS1 and JF-PA1-PA4
    - **Professional certifications** and supporting documentation
