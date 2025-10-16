@@ -131,7 +131,7 @@ Establishes that Peter failed to disclose:
 ☐ Regulatory risk analysis - JF-RP2
 ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 ☐ Peter's own withdrawals (min 4 examples) - JF-PA1 through JF-PA4
-☐ R500K payment bank statement (16 July 2025) - JF-BS1
+☑ R500K payment bank statement (16 July 2025) - JF-BS1 ✅ OBTAINED
 ☐ JF5 draft agreement (if available)
 ☐ JF5 final agreement (signed version)
 ☐ Daniel's witness statement re: "Has anything changed?" exchange

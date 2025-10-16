@@ -65,7 +65,7 @@ From the todo file analysis, the following critical evidence items still need to
 2. Regulatory risk analysis documentation (JF-RP2)
 3. Director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)
 4. Peter's own withdrawals documentation (minimum 4 examples: JF-PA1-PA4)
-5. R500K payment bank statement dated 16 July 2025 (JF-BS1)
+5. ✅ **COMPLETED** - R500K payment bank statement dated 16 July 2025 (JF-BS1) - PDF obtained
 6. JF5 draft agreement initial version
 7. JF5 final agreement signed version with changes
 8. Comparison document highlighting JF5 changes
