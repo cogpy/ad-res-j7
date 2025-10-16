@@ -1165,7 +1165,7 @@
         "status": "completed",
         "estimated_hours": 4,
         "dependencies": [],
-        "completion_date": "2025-10-16T04:24:49.783Z",
+        "completion_date": "2025-10-16T04:29:11.727Z",
         "type": "documentary"
       }
     },
@@ -1180,7 +1180,7 @@
         "status": "completed",
         "estimated_hours": 4,
         "dependencies": [],
-        "completion_date": "2025-10-16T04:24:49.783Z",
+        "completion_date": "2025-10-16T04:29:11.727Z",
         "type": "documentary"
       }
     },
@@ -1195,7 +1195,7 @@
         "status": "completed",
         "estimated_hours": 4,
         "dependencies": [],
-        "completion_date": "2025-10-16T04:24:49.783Z",
+        "completion_date": "2025-10-16T04:29:11.727Z",
         "type": "documentary"
       }
     },
@@ -1210,7 +1210,7 @@
         "status": "completed",
         "estimated_hours": 4,
         "dependencies": [],
-        "completion_date": "2025-10-16T04:24:49.783Z",
+        "completion_date": "2025-10-16T04:29:11.727Z",
         "type": "documentary"
       }
     },
@@ -2113,7 +2113,7 @@
     "repository": "cogpy/ad-res-j7",
     "total_paragraphs": 50,
     "evidence_integration": {
-      "last_updated": "2025-10-16T04:24:49.782Z",
+      "last_updated": "2025-10-16T04:29:11.727Z",
       "evidence_completion_rate": 62.2,
       "total_evidence_items": 37,
       "completed_evidence_items": 23,
