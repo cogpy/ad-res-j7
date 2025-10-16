@@ -1,0 +1,139 @@
+{
+  "timestamp": "2025-10-16T17:41:48.811Z",
+  "summary": {
+    "totalClaimed": 10227000,
+    "totalVerified": 42275514.59,
+    "verificationRate": "413.37%",
+    "discrepancy": -32048514.590000004
+  },
+  "categoryBreakdown": {
+    "revenueTheft": {
+      "claimed": 3141647.7,
+      "verified": 14655514.59,
+      "evidence": [
+        {
+          "source": "Shopify Audit Trail Analysis",
+          "date": "2025-05-22",
+          "amount": 14655514.59,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/revenue-theft/22-may-shopify-audit"
+        },
+        {
+          "source": "Bank Letter Fraud Analysis",
+          "date": "2025-04-14",
+          "amount": 0,
+          "verified": false,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/revenue-theft/14-apr-bank-letter"
+        }
+      ]
+    },
+    "familyTrust": {
+      "claimed": 2851247.35,
+      "verified": 15135000,
+      "evidence": [
+        {
+          "source": "15 mar trust establishment",
+          "date": "2025-03-15",
+          "amount": 2500000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/family-trust/15-mar-trust-establishment"
+        },
+        {
+          "source": "02 may beneficiary changes",
+          "date": "2025-05-02",
+          "amount": 2875000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/family-trust/02-may-beneficiary-changes"
+        },
+        {
+          "source": "18 june trust violation",
+          "date": "2025-06-18",
+          "amount": 1925000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/family-trust/18-june-trust-violation"
+        },
+        {
+          "source": "25 july asset misappropriation",
+          "date": "2025-07-25",
+          "amount": 4325000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/family-trust/25-july-asset-misappropriation"
+        },
+        {
+          "source": "10 aug trust breach evidence",
+          "date": "2025-08-10",
+          "amount": 3510000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/family-trust/10-aug-trust-breach-evidence"
+        }
+      ]
+    },
+    "financialFlows": {
+      "claimed": 4276832.85,
+      "verified": 12485000,
+      "evidence": [
+        {
+          "source": "01 apr payment redirection",
+          "date": "2025-04-01",
+          "amount": 2060000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/financial-flows/01-apr-payment-redirection"
+        },
+        {
+          "source": "15 may unauthorized transfers",
+          "date": "2025-05-15",
+          "amount": 3740000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/financial-flows/15-may-unauthorized-transfers"
+        },
+        {
+          "source": "30 june fund diversions",
+          "date": "2025-06-30",
+          "amount": 2830000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/financial-flows/30-june-fund-diversions"
+        },
+        {
+          "source": "12 july account manipulations",
+          "date": "2025-07-12",
+          "amount": 2865000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/financial-flows/12-july-account-manipulations"
+        },
+        {
+          "source": "20 aug financial concealment",
+          "date": "2025-08-20",
+          "amount": 990000,
+          "verified": true,
+          "path": "/home/runner/work/ad-res-j7/ad-res-j7/jax-response/financial-flows/20-aug-financial-concealment"
+        }
+      ]
+    }
+  },
+  "discrepancies": [
+    {
+      "category": "Revenue Theft",
+      "claimed": 3141647.7,
+      "verified": 14655514.59,
+      "discrepancy": -11513866.89
+    },
+    {
+      "category": "Family Trust",
+      "claimed": 2851247.35,
+      "verified": 15135000,
+      "discrepancy": -12283752.65
+    },
+    {
+      "category": "Financial Flows",
+      "claimed": 4276832.85,
+      "verified": 12485000,
+      "discrepancy": -8208167.15
+    }
+  ],
+  "missingEvidence": [],
+  "recommendations": [
+    "MODERATE: Discrepancies in category totals need reconciliation.",
+    "STANDARD: All verified evidence should be cross-referenced with primary source documents.",
+    "STANDARD: Financial figures should be validated against bank statements and platform records."
+  ]
+}
