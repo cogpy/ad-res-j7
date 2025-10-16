@@ -2,12 +2,12 @@
 
 ## Document Evolution
 
-### Version 1 (REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md)
+### Version 1 (ARCHIVED - backups/affidavits/)
 - Original strategic amendments based on analysis
 - Enhanced sections on Responsible Person role, IT expenses, R500K payment, Rynette's expanding access
 - Material non-disclosure framework
 
-### Version 2 (REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.md)
+### Version 2 (ARCHIVED - backups/affidavits/)
 - **Added Section 13A:** Settlement Agreement Manipulation (JF5)
 - Exposed last-minute changes to agreement
 - Documented "Has anything changed?" exchange
@@ -16,6 +16,8 @@
 - **Corrected Paragraph 48:** Clarified that Gauteng Family Law Forum was NOT in original draft
 - **Added evidence of copy-paste:** Duplicate "bear costs" clauses
 - **Paragraph 129 correction prepared:** Isaac Chesno fraud details (for insertion)
+
+**Note:** Versions 1 and 2 have been archived to `backups/affidavits/` directory. Current active versions are v3, v4, and v5.
 
 ---
 
