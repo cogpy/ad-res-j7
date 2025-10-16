@@ -81,6 +81,15 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
+### Witness Statements
+
+#### JF-WS1: Daniel's Witness Statement - "Has Anything Changed?" Exchange
+- **File:** `JF-WS1_DANIEL_WITNESS_STATEMENT_HAS_ANYTHING_CHANGED.md`
+- **Purpose:** Direct witness testimony documenting the fraudulent "Has anything changed?" - "No, just details for attorneys" exchange
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, Section on Fraud in the Inducement
+- **Status:** ⚠️ **Template** - Requires completion of personal details and Commissioner of Oaths attestation
+
 ---
 
 ## Strategic Framework
@@ -102,6 +111,9 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 4. **International Operations Legitimacy** (Section 3.3)
    - **JF-RP1:** Prove formal regulatory compliance across 37 jurisdictions
 
+5. **Fraud in the Inducement** (Section 48)
+   - **JF-WS1:** Direct witness testimony of fraudulent misrepresentation during agreement signing
+
 ### Evidence Integration Pattern:
 
 **Primary Evidence Chain:**
@@ -109,6 +121,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
 3. **JF-BS1** → Shows 16 July 2025 transaction details
 4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+5. **JF-WS1** → Direct evidence of fraud in the inducement undermining interdict foundation
 
 **Cross-Reference Network:**
 - All annexures cross-reference each other for consistency

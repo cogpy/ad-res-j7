@@ -200,7 +200,7 @@ Peter failed to disclose in his ex parte application:
 ☐ JF5 draft agreement (initial version reviewed)
 ☐ JF5 final agreement (signed version with changes)
 ☐ Comparison document highlighting all changes
-☐ Daniel's witness statement re: "Has anything changed?" exchange
+✅ Daniel's witness statement re: "Has anything changed?" exchange - JF-WS1
 ☐ UK tax residency documentation
 ☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
