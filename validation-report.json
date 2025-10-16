@@ -1,21 +1,19 @@
 {
-  "timestamp": "2025-10-16T15:42:43.958Z",
+  "timestamp": "2025-10-16T15:47:50.246Z",
   "summary": {
     "total_checks": 446,
-    "passed": 445,
-    "failed": 1,
+    "passed": 446,
+    "failed": 0,
     "success_rate": 100
   },
   "tests": {
     "structure_validation": true,
     "priority_handling": true,
     "body_content": true,
-    "duplicate_detection": false,
+    "duplicate_detection": true,
     "priority_distribution": true
   },
-  "errors": [
-    "Duplicate title found: \"Prepare for legal review\" at index 122"
-  ],
+  "errors": [],
   "input_summary": {
     "total_issues": 148,
     "priorities": {
@@ -24,6 +22,11 @@
       "medium": 43,
       "low": 2
     },
-    "files_processed": 6
+    "files_processed": 6,
+    "validation_summary": {
+      "original_count": 148,
+      "validated_count": 148,
+      "skipped_count": 0
+    }
   }
 }

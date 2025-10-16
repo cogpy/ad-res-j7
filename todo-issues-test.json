@@ -7,7 +7,12 @@
       "medium": 43,
       "low": 2
     },
-    "files_processed": 6
+    "files_processed": 6,
+    "validation_summary": {
+      "original_count": 148,
+      "validated_count": 148,
+      "skipped_count": 0
+    }
   },
   "issues": [
     {
@@ -2133,7 +2138,7 @@
       }
     },
     {
-      "title": "Prepare for legal review",
+      "title": "Prepare for legal review (Week3Mediu)",
       "body": "## Task Description\\n\\nPrepare for legal review\\n\\n## Context\\n\\n**Source File:** `todo/README.md`\\n**Section:** Week 3 (Medium-term)\\n**Priority:** medium\\n**Line:** 180\\n\\n## Implementation Notes\\n\\nThis task was automatically generated from the todo folder. Please review the source file for additional context and requirements.\\n\\n## Acceptance Criteria\\n\\n- [ ] Review the task requirements in the source file\\n- [ ] Implement the necessary changes\\n- [ ] Test the implementation\\n- [ ] Update documentation if needed\\n- [ ] Close this issue when complete\\n\\n---\\n\\n*Generated automatically from todo files by GitHub Actions*",
       "labels": [
         "todo",
@@ -2583,6 +2588,7 @@
       }
     }
   ],
-  "generated_at": "2025-10-16T15:42:17.621Z",
-  "generator_version": "2.0"
+  "generated_at": "2025-10-16T15:47:37.789Z",
+  "generator_version": "2.1",
+  "schema_version": "1.0"
 }

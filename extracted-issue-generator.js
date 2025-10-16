@@ -239,7 +239,7 @@ const fs = require('fs');
               return hasExplicitAction;
             }
 
-            // Generate GitHub issue content
+            // Generate GitHub issue content with improved duplicate prevention
             generateIssueContent(task) {
               const labels = ['todo', 'enhancement'];
               
@@ -254,7 +254,7 @@ const fs = require('fs');
                 labels.push('priority: low');
               }
 
-              // Generate a clean title
+              // Generate a clean title with improved deduplication
               let title = task.task;
               
               // Remove markdown formatting
@@ -265,10 +265,23 @@ const fs = require('fs');
               // Trim and clean
               title = title.replace(/^[-*\d.\s]+/, '').trim();
               
+              // Add context for better uniqueness when titles are similar
+              if (this.titleExists(title)) {
+                const contextSuffix = ` (${task.section.replace(/[^a-zA-Z0-9]/g, '').substring(0, 10)})`;
+                if (title.length + contextSuffix.length <= 80) {
+                  title += contextSuffix;
+                } else {
+                  title = title.substring(0, 80 - contextSuffix.length) + contextSuffix;
+                }
+              }
+              
               // Limit length
               if (title.length > 80) {
                 title = title.substring(0, 77) + '...';
               }
+              
+              // Track this title for duplicate prevention
+              this.existingIssues.add(this.normalizeTitle(title));
 
               const body = '## Task Description\\n\\n' +
                 task.task + '\\n\\n' +
@@ -294,6 +307,19 @@ const fs = require('fs');
                 labels: labels,
                 source: task
               };
+            }
+
+            // Helper methods for duplicate prevention
+            normalizeTitle(title) {
+              return title.toLowerCase()
+                .replace(/[^\w\s]/g, '')  // Remove punctuation
+                .replace(/\s+/g, ' ')     // Normalize whitespace
+                .trim();
+            }
+            
+            titleExists(title) {
+              const normalized = this.normalizeTitle(title);
+              return this.existingIssues.has(normalized);
             }
 
             // Process all todo files
@@ -396,36 +422,119 @@ const fs = require('fs');
               return this.issues;
             }
 
-            // Generate output for GitHub Actions
+            // Generate output for GitHub Actions with comprehensive validation
             generateOutput() {
               try {
+                // Validate issues array before processing
+                if (!Array.isArray(this.issues)) {
+                  throw new Error('Issues is not an array');
+                }
+                
+                // Validate each issue structure
+                const validatedIssues = [];
+                for (let i = 0; i < this.issues.length; i++) {
+                  const issue = this.issues[i];
+                  
+                  // Validate required fields
+                  if (!issue.title || typeof issue.title !== 'string') {
+                    console.warn(`Issue ${i}: Invalid or missing title, skipping`);
+                    continue;
+                  }
+                  
+                  if (!issue.body || typeof issue.body !== 'string') {
+                    console.warn(`Issue ${i}: Invalid or missing body, skipping`);
+                    continue;
+                  }
+                  
+                  if (!Array.isArray(issue.labels)) {
+                    console.warn(`Issue ${i}: Invalid labels array, fixing`);
+                    issue.labels = ['todo', 'enhancement'];
+                  }
+                  
+                  if (!issue.source || typeof issue.source !== 'object') {
+                    console.warn(`Issue ${i}: Invalid source object, skipping`);
+                    continue;
+                  }
+                  
+                  // Sanitize and validate title
+                  issue.title = issue.title.trim();
+                  if (issue.title.length === 0) {
+                    console.warn(`Issue ${i}: Empty title after trimming, skipping`);
+                    continue;
+                  }
+                  
+                  // Validate and sanitize labels
+                  issue.labels = issue.labels.filter(label => 
+                    typeof label === 'string' && 
+                    label.trim().length > 0 && 
+                    label.length <= 50
+                  );
+                  
+                  if (issue.labels.length === 0) {
+                    issue.labels = ['todo', 'enhancement'];
+                  }
+                  
+                  validatedIssues.push(issue);
+                }
+                
+                console.log(`✅ Validated ${validatedIssues.length} of ${this.issues.length} issues`);
+                
                 const output = {
                   summary: {
-                    total_issues: this.issues.length,
+                    total_issues: validatedIssues.length,
                     priorities: {
-                      critical: this.issues.filter(i => i.source && i.source.priority === 'critical').length,
-                      high: this.issues.filter(i => i.source && i.source.priority === 'high').length,
-                      medium: this.issues.filter(i => i.source && i.source.priority === 'medium').length,
-                      low: this.issues.filter(i => i.source && i.source.priority === 'low').length
+                      critical: validatedIssues.filter(i => i.source && i.source.priority === 'critical').length,
+                      high: validatedIssues.filter(i => i.source && i.source.priority === 'high').length,
+                      medium: validatedIssues.filter(i => i.source && i.source.priority === 'medium').length,
+                      low: validatedIssues.filter(i => i.source && i.source.priority === 'low').length
                     },
-                    files_processed: [...new Set(this.issues.map(i => i.source ? i.source.file : 'unknown').filter(f => f !== 'unknown'))].length
+                    files_processed: [...new Set(validatedIssues.map(i => i.source ? i.source.file : 'unknown').filter(f => f !== 'unknown'))].length,
+                    validation_summary: {
+                      original_count: this.issues.length,
+                      validated_count: validatedIssues.length,
+                      skipped_count: this.issues.length - validatedIssues.length
+                    }
                   },
-                  issues: this.issues,
+                  issues: validatedIssues,
                   generated_at: new Date().toISOString(),
-                  generator_version: '2.0'
+                  generator_version: '2.1',
+                  schema_version: '1.0'
                 };
 
-                // Validate output before writing
+                // Final validation of output structure
                 if (!output.issues || !Array.isArray(output.issues)) {
-                  throw new Error('Invalid issues array in output');
+                  throw new Error('Invalid issues array in output after validation');
+                }
+                
+                if (!output.summary || typeof output.summary !== 'object') {
+                  throw new Error('Invalid summary object in output');
                 }
 
-                // Write to file for GitHub Actions to use
-                const outputJSON = JSON.stringify(output, null, 2);
+                // Validate JSON serializability
+                let outputJSON;
+                try {
+                  outputJSON = JSON.stringify(output, null, 2);
+                } catch (jsonError) {
+                  throw new Error(`JSON serialization failed: ${jsonError.message}`);
+                }
                 
+                // Validate JSON can be parsed back
+                try {
+                  JSON.parse(outputJSON);
+                } catch (parseError) {
+                  throw new Error(`JSON validation failed: ${parseError.message}`);
+                }
+                
+                // Write to file for GitHub Actions to use
                 try {
                   fs.writeFileSync('todo-issues.json', outputJSON);
                   console.log('✅ Successfully wrote output to todo-issues.json');
+                  
+                  // Verify file was written correctly
+                  const verification = fs.readFileSync('todo-issues.json', 'utf8');
+                  JSON.parse(verification); // This will throw if file is corrupted
+                  console.log('✅ Output file verification passed');
+                  
                 } catch (writeError) {
                   console.error('❌ Failed to write output file:', writeError.message);
                   throw writeError;

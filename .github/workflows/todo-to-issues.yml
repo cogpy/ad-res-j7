@@ -334,7 +334,7 @@ jobs:
               return hasExplicitAction;
             }
 
-            // Generate GitHub issue content
+            // Generate GitHub issue content with improved duplicate prevention
             generateIssueContent(task) {
               const labels = ['todo', 'enhancement'];
               
@@ -349,7 +349,7 @@ jobs:
                 labels.push('priority: low');
               }
 
-              // Generate a clean title
+              // Generate a clean title with improved deduplication
               let title = task.task;
               
               // Remove markdown formatting
@@ -360,10 +360,23 @@ jobs:
               // Trim and clean
               title = title.replace(/^[-*\d.\s]+/, '').trim();
               
+              // Add context for better uniqueness when titles are similar
+              if (this.titleExists(title)) {
+                const contextSuffix = ` (${task.section.replace(/[^a-zA-Z0-9]/g, '').substring(0, 10)})`;
+                if (title.length + contextSuffix.length <= 80) {
+                  title += contextSuffix;
+                } else {
+                  title = title.substring(0, 80 - contextSuffix.length) + contextSuffix;
+                }
+              }
+              
               // Limit length
               if (title.length > 80) {
                 title = title.substring(0, 77) + '...';
               }
+              
+              // Track this title for duplicate prevention
+              this.existingIssues.add(this.normalizeTitle(title));
 
               const body = '## Task Description\\n\\n' +
                 task.task + '\\n\\n' +
@@ -389,6 +402,19 @@ jobs:
                 labels: labels,
                 source: task
               };
+            }
+
+            // Helper methods for duplicate prevention
+            normalizeTitle(title) {
+              return title.toLowerCase()
+                .replace(/[^\w\s]/g, '')  // Remove punctuation
+                .replace(/\s+/g, ' ')     // Normalize whitespace
+                .trim();
+            }
+            
+            titleExists(title) {
+              const normalized = this.normalizeTitle(title);
+              return this.existingIssues.has(normalized);
             }
 
             // Process all todo files
@@ -491,36 +517,119 @@ jobs:
               return this.issues;
             }
 
-            // Generate output for GitHub Actions
+            // Generate output for GitHub Actions with comprehensive validation
             generateOutput() {
               try {
+                // Validate issues array before processing
+                if (!Array.isArray(this.issues)) {
+                  throw new Error('Issues is not an array');
+                }
+                
+                // Validate each issue structure
+                const validatedIssues = [];
+                for (let i = 0; i < this.issues.length; i++) {
+                  const issue = this.issues[i];
+                  
+                  // Validate required fields
+                  if (!issue.title || typeof issue.title !== 'string') {
+                    console.warn(`Issue ${i}: Invalid or missing title, skipping`);
+                    continue;
+                  }
+                  
+                  if (!issue.body || typeof issue.body !== 'string') {
+                    console.warn(`Issue ${i}: Invalid or missing body, skipping`);
+                    continue;
+                  }
+                  
+                  if (!Array.isArray(issue.labels)) {
+                    console.warn(`Issue ${i}: Invalid labels array, fixing`);
+                    issue.labels = ['todo', 'enhancement'];
+                  }
+                  
+                  if (!issue.source || typeof issue.source !== 'object') {
+                    console.warn(`Issue ${i}: Invalid source object, skipping`);
+                    continue;
+                  }
+                  
+                  // Sanitize and validate title
+                  issue.title = issue.title.trim();
+                  if (issue.title.length === 0) {
+                    console.warn(`Issue ${i}: Empty title after trimming, skipping`);
+                    continue;
+                  }
+                  
+                  // Validate and sanitize labels
+                  issue.labels = issue.labels.filter(label => 
+                    typeof label === 'string' && 
+                    label.trim().length > 0 && 
+                    label.length <= 50
+                  );
+                  
+                  if (issue.labels.length === 0) {
+                    issue.labels = ['todo', 'enhancement'];
+                  }
+                  
+                  validatedIssues.push(issue);
+                }
+                
+                console.log(`✅ Validated ${validatedIssues.length} of ${this.issues.length} issues`);
+                
                 const output = {
                   summary: {
-                    total_issues: this.issues.length,
+                    total_issues: validatedIssues.length,
                     priorities: {
-                      critical: this.issues.filter(i => i.source && i.source.priority === 'critical').length,
-                      high: this.issues.filter(i => i.source && i.source.priority === 'high').length,
-                      medium: this.issues.filter(i => i.source && i.source.priority === 'medium').length,
-                      low: this.issues.filter(i => i.source && i.source.priority === 'low').length
+                      critical: validatedIssues.filter(i => i.source && i.source.priority === 'critical').length,
+                      high: validatedIssues.filter(i => i.source && i.source.priority === 'high').length,
+                      medium: validatedIssues.filter(i => i.source && i.source.priority === 'medium').length,
+                      low: validatedIssues.filter(i => i.source && i.source.priority === 'low').length
                     },
-                    files_processed: [...new Set(this.issues.map(i => i.source ? i.source.file : 'unknown').filter(f => f !== 'unknown'))].length
+                    files_processed: [...new Set(validatedIssues.map(i => i.source ? i.source.file : 'unknown').filter(f => f !== 'unknown'))].length,
+                    validation_summary: {
+                      original_count: this.issues.length,
+                      validated_count: validatedIssues.length,
+                      skipped_count: this.issues.length - validatedIssues.length
+                    }
                   },
-                  issues: this.issues,
+                  issues: validatedIssues,
                   generated_at: new Date().toISOString(),
-                  generator_version: '2.0'
+                  generator_version: '2.1',
+                  schema_version: '1.0'
                 };
 
-                // Validate output before writing
+                // Final validation of output structure
                 if (!output.issues || !Array.isArray(output.issues)) {
-                  throw new Error('Invalid issues array in output');
+                  throw new Error('Invalid issues array in output after validation');
+                }
+                
+                if (!output.summary || typeof output.summary !== 'object') {
+                  throw new Error('Invalid summary object in output');
                 }
 
-                // Write to file for GitHub Actions to use
-                const outputJSON = JSON.stringify(output, null, 2);
+                // Validate JSON serializability
+                let outputJSON;
+                try {
+                  outputJSON = JSON.stringify(output, null, 2);
+                } catch (jsonError) {
+                  throw new Error(`JSON serialization failed: ${jsonError.message}`);
+                }
                 
+                // Validate JSON can be parsed back
+                try {
+                  JSON.parse(outputJSON);
+                } catch (parseError) {
+                  throw new Error(`JSON validation failed: ${parseError.message}`);
+                }
+                
+                // Write to file for GitHub Actions to use
                 try {
                   fs.writeFileSync('todo-issues.json', outputJSON);
                   console.log('✅ Successfully wrote output to todo-issues.json');
+                  
+                  // Verify file was written correctly
+                  const verification = fs.readFileSync('todo-issues.json', 'utf8');
+                  JSON.parse(verification); // This will throw if file is corrupted
+                  console.log('✅ Output file verification passed');
+                  
                 } catch (writeError) {
                   console.error('❌ Failed to write output file:', writeError.message);
                   throw writeError;
@@ -652,7 +761,7 @@ jobs:
             exit 0
           fi
           
-          # Validate JSON structure
+          # Validate JSON structure with comprehensive schema checking
           if ! jq empty todo-issues.json 2>/dev/null; then
             echo "❌ Invalid JSON in todo-issues.json"
             echo "has_issues=false" >> $GITHUB_OUTPUT
@@ -661,13 +770,62 @@ jobs:
             exit 0
           fi
           
-          # Extract data with error checking
-          if ! issue_count=$(jq -r '.summary.total_issues // 0' todo-issues.json 2>/dev/null); then
-            echo "❌ Failed to extract issue count from JSON"
+          # Validate required JSON schema structure
+          echo "🔍 Validating JSON schema structure..."
+          schema_errors=()
+          
+          # Check for required top-level fields
+          if ! jq -e '.summary' todo-issues.json >/dev/null 2>&1; then
+            schema_errors+=("Missing 'summary' field")
+          fi
+          
+          if ! jq -e '.issues' todo-issues.json >/dev/null 2>&1; then
+            schema_errors+=("Missing 'issues' field")
+          fi
+          
+          # Check if issues is an array
+          if ! jq -e '.issues | type == "array"' todo-issues.json >/dev/null 2>&1; then
+            schema_errors+=("'issues' field is not an array")
+          fi
+          
+          # Check summary structure
+          if ! jq -e '.summary.total_issues' todo-issues.json >/dev/null 2>&1; then
+            schema_errors+=("Missing 'summary.total_issues' field")
+          fi
+          
+          if ! jq -e '.summary.priorities' todo-issues.json >/dev/null 2>&1; then
+            schema_errors+=("Missing 'summary.priorities' field")
+          fi
+          
+          # Report schema validation results
+          if [ ${#schema_errors[@]} -gt 0 ]; then
+            echo "❌ JSON schema validation failed:"
+            for error in "${schema_errors[@]}"; do
+              echo "  - $error"
+            done
             echo "has_issues=false" >> $GITHUB_OUTPUT
-            echo "error=json_parsing_failed" >> $GITHUB_OUTPUT
-            echo "⚠️ Failed to parse issue count from generated data" >> $GITHUB_STEP_SUMMARY
+            echo "error=invalid_json_schema" >> $GITHUB_OUTPUT
+            echo "⚠️ Generated JSON does not match expected schema" >> $GITHUB_STEP_SUMMARY
             exit 0
+          else
+            echo "✅ JSON schema validation passed"
+          fi
+          
+          # Extract data with robust error checking and fallbacks
+          if ! issue_count=$(jq -r '.summary.total_issues // 0' todo-issues.json 2>/dev/null); then
+            echo "❌ Failed to extract issue count from JSON - attempting recovery"
+            # Try alternative parsing approaches
+            if issue_count=$(jq -r 'if .summary then .summary.total_issues else 0 end' todo-issues.json 2>/dev/null); then
+              echo "✅ Recovered issue count using alternative parsing: $issue_count"
+            elif issue_count=$(jq -r 'if .issues then (.issues | length) else 0 end' todo-issues.json 2>/dev/null); then
+              echo "✅ Recovered issue count by counting issues array: $issue_count"
+            else
+              echo "❌ All JSON parsing recovery attempts failed"
+              echo "has_issues=false" >> $GITHUB_OUTPUT
+              echo "error=json_parsing_failed" >> $GITHUB_OUTPUT
+              echo "⚠️ Failed to parse issue count from generated data after recovery attempts" >> $GITHUB_STEP_SUMMARY
+              exit 0
+            fi
           fi
           
           # Check for errors in the generated data
@@ -681,13 +839,48 @@ jobs:
           if [ "$issue_count" -gt 0 ]; then
             echo "has_issues=true" >> $GITHUB_OUTPUT
             
-            # Extract priority counts with error handling
-            critical_count=$(jq -r '.summary.priorities.critical // 0' todo-issues.json 2>/dev/null || echo 0)
-            high_count=$(jq -r '.summary.priorities.high // 0' todo-issues.json 2>/dev/null || echo 0)
-            medium_count=$(jq -r '.summary.priorities.medium // 0' todo-issues.json 2>/dev/null || echo 0)
-            low_count=$(jq -r '.summary.priorities.low // 0' todo-issues.json 2>/dev/null || echo 0)
-            files_processed=$(jq -r '.summary.files_processed // 0' todo-issues.json 2>/dev/null || echo 0)
-            generated_at=$(jq -r '.generated_at // "unknown"' todo-issues.json 2>/dev/null || echo "unknown")
+            # Extract priority counts with robust error handling
+            if critical_count=$(jq -r '.summary.priorities.critical // 0' todo-issues.json 2>/dev/null); then
+              echo "✅ Critical count extracted: $critical_count"
+            else
+              critical_count=0
+              echo "⚠️ Failed to extract critical count, defaulting to 0"
+            fi
+            
+            if high_count=$(jq -r '.summary.priorities.high // 0' todo-issues.json 2>/dev/null); then
+              echo "✅ High count extracted: $high_count"
+            else
+              high_count=0
+              echo "⚠️ Failed to extract high count, defaulting to 0"
+            fi
+            
+            if medium_count=$(jq -r '.summary.priorities.medium // 0' todo-issues.json 2>/dev/null); then
+              echo "✅ Medium count extracted: $medium_count"
+            else
+              medium_count=0
+              echo "⚠️ Failed to extract medium count, defaulting to 0"
+            fi
+            
+            if low_count=$(jq -r '.summary.priorities.low // 0' todo-issues.json 2>/dev/null); then
+              echo "✅ Low count extracted: $low_count"
+            else
+              low_count=0
+              echo "⚠️ Failed to extract low count, defaulting to 0"
+            fi
+            
+            if files_processed=$(jq -r '.summary.files_processed // 0' todo-issues.json 2>/dev/null); then
+              echo "✅ Files processed extracted: $files_processed"
+            else
+              files_processed=0
+              echo "⚠️ Failed to extract files processed, defaulting to 0"
+            fi
+            
+            if generated_at=$(jq -r '.generated_at // "unknown"' todo-issues.json 2>/dev/null); then
+              echo "✅ Generated timestamp extracted: $generated_at"
+            else
+              generated_at="unknown"
+              echo "⚠️ Failed to extract timestamp, using 'unknown'"
+            fi
             
             # Add summary to GitHub Actions summary
             echo "=== Issue Generation Results ===" >> $GITHUB_STEP_SUMMARY
@@ -796,11 +989,40 @@ jobs:
           for i in $(seq 0 $((issue_array_length - 1))); do
             echo "Processing issue $((i + 1))/$issue_array_length..."
             
-            # Extract issue data with error handling
+            # Extract issue data with comprehensive error handling and validation
             issue=$(jq -c ".issues[$i]" todo-issues.json 2>/dev/null)
             
             if [ -z "$issue" ] || [ "$issue" = "null" ]; then
               echo "  ❌ Failed to extract issue $i"
+              failed_count=$((failed_count + 1))
+              continue
+            fi
+            
+            # Validate individual issue structure
+            echo "  🔍 Validating issue structure..."
+            issue_errors=()
+            
+            if ! echo "$issue" | jq -e '.title' >/dev/null 2>&1; then
+              issue_errors+=("Missing title field")
+            fi
+            
+            if ! echo "$issue" | jq -e '.body' >/dev/null 2>&1; then
+              issue_errors+=("Missing body field")
+            fi
+            
+            if ! echo "$issue" | jq -e '.labels' >/dev/null 2>&1; then
+              issue_errors+=("Missing labels field")
+            fi
+            
+            if ! echo "$issue" | jq -e '.labels | type == "array"' >/dev/null 2>&1; then
+              issue_errors+=("Labels field is not an array")
+            fi
+            
+            if [ ${#issue_errors[@]} -gt 0 ]; then
+              echo "  ❌ Issue $i failed validation:"
+              for error in "${issue_errors[@]}"; do
+                echo "    - $error"
+              done
               failed_count=$((failed_count + 1))
               continue
             fi
@@ -840,20 +1062,57 @@ jobs:
               fi
             fi
             
-            echo "  ✅ Creating: $(echo "$title" | cut -c1-50)..."
-            
-            # Parse labels array and create individual --label flags
-            # Note: GitHub CLI expects individual --label arguments, not a JSON array
+            # Parse labels array with robust JSON handling and validation
+            # GitHub CLI expects individual --label arguments, not a JSON array
             # This safely converts the JSON array ["label1","label2"] to individual --label arguments
-            # using secure array-based approach instead of eval for better security
             gh_args=("issue" "create" "--title" "$title" "--body" "$body")
+            
+            echo "  🏷️ Processing labels: $labels_json"
+            
             if [ "$labels_json" != "[]" ] && [ "$labels_json" != "null" ]; then
+              # Validate labels JSON structure
+              if ! echo "$labels_json" | jq -e 'type == "array"' >/dev/null 2>&1; then
+                echo "  ⚠️ Labels field is not a valid JSON array, attempting to fix..."
+                # Try to extract labels from malformed JSON
+                if labels_fixed=$(echo "$labels_json" | jq -c 'if type == "string" then [.] else . end' 2>/dev/null); then
+                  labels_json="$labels_fixed"
+                  echo "  ✅ Fixed labels JSON structure"
+                else
+                  echo "  ❌ Could not fix labels JSON, using empty array"
+                  labels_json="[]"
+                fi
+              fi
+              
+              # Process each label with error handling
+              label_count=0
               while IFS= read -r label; do
                 if [ -n "$label" ] && [ "$label" != "null" ]; then
-                  gh_args+=("--label" "$label")
+                  # Validate label format (GitHub label requirements)
+                  if [[ "$label" =~ ^[a-zA-Z0-9:\ ._-]+$ ]] && [ ${#label} -le 50 ]; then
+                    gh_args+=("--label" "$label")
+                    label_count=$((label_count + 1))
+                    echo "    ✅ Added label: '$label'"
+                  else
+                    echo "    ⚠️ Skipped invalid label: '$label' (invalid format or too long)"
+                  fi
                 fi
               done < <(echo "$labels_json" | jq -r '.[]' 2>/dev/null || echo "")
+              
+              echo "  📊 Processed $label_count valid labels"
+              
+              # Ensure minimum required labels
+              if [ $label_count -eq 0 ]; then
+                echo "  ⚠️ No valid labels found, adding default labels"
+                gh_args+=("--label" "todo")
+                gh_args+=("--label" "enhancement")
+              fi
+            else
+              echo "  ⚠️ No labels provided, adding default labels"
+              gh_args+=("--label" "todo")
+              gh_args+=("--label" "enhancement")
             fi
+            
+            echo "  ✅ Creating: $(echo "$title" | cut -c1-50)..."
             
             # Create the issue using gh with proper argument array (no eval needed)
             if gh "${gh_args[@]}" > /dev/null 2>&1; then
