@@ -1,0 +1,161 @@
+{
+  "guilt_scores": {
+    "bantjies_breach_of_fiduciary_duty": 0.9844200877681634,
+    "bantjies_conspiracy_to_defraud": 0.9968524798603186,
+    "peter_abuse_of_process": 1.0,
+    "daniel_whistleblower_protection": 0.9903791521734963
+  },
+  "attention_analysis": {
+    "attention_hotspots": {
+      "CAUSAL": {
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "fiduciary_duty_norm",
+        "weight": 0.16171161501690176,
+        "interpretation": "Strong causal link between bantjies_breach_of_fiduciary_duty and fiduciary_duty_norm (weight: 0.162)"
+      },
+      "INTENTIONALITY": {
+        "query": "bantjies_conspiracy_to_defraud",
+        "element": "fraud_investigation_norm",
+        "weight": 0.16386138257396185,
+        "interpretation": "High intentionality focus on fraud_investigation_norm for bantjies_conspiracy_to_defraud (weight: 0.164)"
+      },
+      "TEMPORAL": {
+        "query": "peter_abuse_of_process",
+        "element": "fraud_investigation_norm",
+        "weight": 0.14347648999901688,
+        "interpretation": "Critical temporal relationship between peter_abuse_of_process and fraud_investigation_norm (weight: 0.143)"
+      },
+      "NORMATIVE": {
+        "query": "daniel_whistleblower_protection",
+        "element": "daniel_fraud_report",
+        "weight": 0.1372886598876367,
+        "interpretation": "Significant rule violation connection: daniel_whistleblower_protection \u2192 daniel_fraud_report (weight: 0.137)"
+      },
+      "COUNTERFACTUAL": {
+        "query": "bantjies_conspiracy_to_defraud",
+        "element": "fraud_investigation_norm",
+        "weight": 0.14617670140418526,
+        "interpretation": "Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.146)"
+      },
+      "NECESSITY": {
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "peter_card_cancellation",
+        "weight": 0.14021642291945768,
+        "interpretation": "High necessity/sufficiency for bantjies_breach_of_fiduciary_duty through peter_card_cancellation (weight: 0.140)"
+      },
+      "PROPORTIONALITY": {
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "bantjies_holiday_dismissal",
+        "weight": 0.1433323524215312,
+        "interpretation": "Proportionality concern: bantjies_breach_of_fiduciary_duty vs bantjies_holiday_dismissal (weight: 0.143)"
+      }
+    },
+    "causal_chains": [],
+    "evidence_importance": {},
+    "agent_focus": {}
+  },
+  "self_attention_matrix": [
+    [
+      0.008125327247786168,
+      0.007349603260306597,
+      0.013600147241793134,
+      0.0056334521248469676,
+      0.07481273665100417,
+      0.126454741384849,
+      0.37273694066021845,
+      0.3912870514291955
+    ],
+    [
+      0.009462303121725068,
+      0.009757467323629953,
+      0.019074146207573063,
+      0.0069404618162122594,
+      0.09082307304922614,
+      0.14451605195613929,
+      0.3429167748811142,
+      0.37650972164437996
+    ],
+    [
+      0.009747566990430693,
+      0.010935726340388184,
+      0.0183620192594737,
+      0.006670479494018239,
+      0.0805014837985892,
+      0.12175185249188257,
+      0.368163114018771,
+      0.3838677576064464
+    ],
+    [
+      0.00734467337541176,
+      0.006948045472386304,
+      0.012968273879092752,
+      0.005228060060287976,
+      0.07060044061713436,
+      0.13131840898549335,
+      0.3705254412876715,
+      0.395066656322522
+    ],
+    [
+      0.008334733705209749,
+      0.007982745246512551,
+      0.012492953927936958,
+      0.006087495872898652,
+      0.06392816059113805,
+      0.10195468599355392,
+      0.4160504632785155,
+      0.38316876138423456
+    ],
+    [
+      0.00809086137776643,
+      0.007172702188387473,
+      0.010944081475259992,
+      0.004940289576117292,
+      0.0531403642651299,
+      0.09388985617475128,
+      0.44353287156725,
+      0.3782889733753376
+    ],
+    [
+      0.010459073588256599,
+      0.009335723212199621,
+      0.016309875312103046,
+      0.00762758049713793,
+      0.080737810645862,
+      0.1413222842087117,
+      0.3560909899399907,
+      0.37811666259573845
+    ],
+    [
+      0.009827711429816357,
+      0.009356032663456611,
+      0.01752334687970878,
+      0.0069526484852996066,
+      0.07898421341213963,
+      0.14596402878961917,
+      0.3437978413142323,
+      0.38759417702572757
+    ]
+  ],
+  "legal_reasoning": [
+    "STRONG EVIDENCE: peter_abuse_of_process (confidence: 1.000)",
+    "STRONG EVIDENCE: bantjies_conspiracy_to_defraud (confidence: 0.997)",
+    "STRONG EVIDENCE: daniel_whistleblower_protection (confidence: 0.990)",
+    "STRONG EVIDENCE: bantjies_breach_of_fiduciary_duty (confidence: 0.984)",
+    "ATTENTION INSIGHT [CAUSAL]: Strong causal link between bantjies_breach_of_fiduciary_duty and fiduciary_duty_norm (weight: 0.162)",
+    "ATTENTION INSIGHT [INTENTIONALITY]: High intentionality focus on fraud_investigation_norm for bantjies_conspiracy_to_defraud (weight: 0.164)",
+    "ATTENTION INSIGHT [TEMPORAL]: Critical temporal relationship between peter_abuse_of_process and fraud_investigation_norm (weight: 0.143)",
+    "ATTENTION INSIGHT [NORMATIVE]: Significant rule violation connection: daniel_whistleblower_protection \u2192 daniel_fraud_report (weight: 0.137)",
+    "ATTENTION INSIGHT [COUNTERFACTUAL]: Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.146)",
+    "ATTENTION INSIGHT [NECESSITY]: High necessity/sufficiency for bantjies_breach_of_fiduciary_duty through peter_card_cancellation (weight: 0.140)",
+    "ATTENTION INSIGHT [PROPORTIONALITY]: Proportionality concern: bantjies_breach_of_fiduciary_duty vs bantjies_holiday_dismissal (weight: 0.143)"
+  ],
+  "confidence_metrics": {
+    "max_attention": 6.5210942788501045,
+    "mean_attention": 0.3611556652770729,
+    "std_attention": 2.8089308059196885,
+    "attention_concentration": 18.056186639867214
+  },
+  "invariant_patterns": [
+    "DOMINANT ATTRACTOR: bantjies_holiday_dismissal (element type: action)"
+  ]
+}
