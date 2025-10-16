@@ -94,7 +94,6 @@ This means:
 - **Every single claim** made by the Applicant failed in **every single iteration**
 - The evidence against these claims is **irrefutable**
 - The Shopify Email (JF1) alone demolishes the first three claims
-- Medical Records (JF11) demolish the dementia claim
 - Bank Records (JF4) and Financial Analysis (JF3) demolish the financial misconduct claim
 
 ---
@@ -155,33 +154,6 @@ This means:
 
 **Judicial Reasoning** (from simulation):
 > "The Shopify Plus email dated 26 July 2017 is contemporaneous third-party documentary evidence that conclusively proves the Respondents operated independent business operations. The email shows Kayla Pretorius managing the Shopify Plus onboarding directly, using personal email addresses, with no evidence of any centralized 'head office' control. This evidence is irrefutable and completely demolishes the Applicant's central claims."
-
----
-
-### JF11: Medical Records - REFUTING THE GASLIGHTING
-
-**Evidence Characteristics**:
-- **Type**: Medical documentary evidence
-- **Source**: Medical professionals
-- **Weight**: 0.900 (90% - very high)
-- **Credibility**: 0.950 (95% - very high)
-
-**Impact**: **Refutes dementia gaslighting claim**
-
-**What It Proves**:
-1. ✅ Jacqueline Faucitt does NOT have dementia
-2. ✅ Jacqueline is cognitively competent to testify
-3. ✅ Jacqueline's testimony is reliable and credible
-4. ✅ Applicant's dementia claim is false and defamatory
-
-**What It Exposes**:
-1. ❌ Gaslighting tactic - attempting to discredit key witness
-2. ❌ Elder abuse - false dementia claim is defamatory
-3. ❌ Bad faith - demonstrates consciousness of guilt
-4. ❌ Fear of testimony - Applicant fears Jacqui's truthful testimony
-
-**Judicial Reasoning** (from simulation):
-> "The medical records conclusively demonstrate that the First Respondent (Jacqueline Faucitt) does not suffer from dementia or any cognitive impairment. The Applicant's claim to the contrary is not only false but constitutes a particularly egregious form of elder abuse and witness intimidation. This tactic demonstrates the Applicant's consciousness of guilt - he fears the First Respondent's testimony because it will expose his false narrative."
 
 ---
 
@@ -382,10 +354,9 @@ The **100% success rate** for Respondents is due to:
    - Cross-corroboration between evidence sources
    - No gaps or weaknesses in evidence chain
 
-3. **Gaslighting Tactics Exposed**:
-   - Medical records (JF11) irrefutably refute dementia claim
-   - Shopify email (JF1) validates Daniel's account, refuting delusion claim
-   - Even judges with low gaslighting sensitivity (0.60) recognized these tactics
+3. **False Claims Exposed**:
+   - Shopify email (JF1) validates Daniel's account, refuting false claims
+   - Even judges with low sensitivity (0.60) recognized these tactics
 
 4. **Evidence Destruction**:
    - Timeline (JF9) demonstrates consciousness of guilt
@@ -444,9 +415,8 @@ The complete affidavits and organized annexures provide:
 **Strategy**:
 1. **File immediately** - evidence is overwhelming
 2. **Emphasize JF1** - lead with Shopify Email as irrefutable proof
-3. **Expose gaslighting** - use JF11 to refute dementia claim immediately
-4. **Highlight evidence destruction** - JF9 demonstrates consciousness of guilt
-5. **Demand criminal referral** - evidence supports criminal prosecution
+3. **Highlight evidence destruction** - JF9 demonstrates consciousness of guilt
+4. **Demand criminal referral** - evidence supports criminal prosecution
 
 **Expected Outcome**: **Application dismissed with costs, criminal referral granted**
 
@@ -586,7 +556,6 @@ The simulation results demonstrate **overwhelming success for the Respondents** 
 ### The Evidence is Irrefutable
 
 The **Shopify Plus email dated 26 July 2017** (JF1) is the game-changer that makes this case unwinnable for the Applicant. Combined with:
-- Medical records refuting dementia (JF11)
 - Timeline showing evidence destruction (JF9)
 - Bank records showing transparency (JF4)
 - Financial analysis showing independent operations (JF3)
