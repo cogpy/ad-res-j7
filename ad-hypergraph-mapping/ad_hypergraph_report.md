@@ -1,33 +1,33 @@
 # AD Hypergraph Analysis Report
-Generated: 2025-10-16T04:24:21.135074
+Generated: 2025-10-16T04:25:10.372955
 
 ## Executive Summary
 
-- **Total AD Components Found**: 11855
+- **Total AD Components Found**: 11903
 - **Hypergraph Nodes**: 8
 - **Hypergraph Edges**: 316
 - **Repositories Analyzed**: 1
 
 ## Component Distribution by Type
 
-- **Directory**: 3835 occurrences
-- **Authorization**: 3434 occurrences
-- **Identity**: 1930 occurrences
-- **Authentication**: 1720 occurrences
+- **Directory**: 3883 occurrences
+- **Authorization**: 3433 occurrences
+- **Identity**: 1929 occurrences
+- **Authentication**: 1716 occurrences
 - **Security**: 801 occurrences
-- **Token**: 81 occurrences
-- **Sso**: 36 occurrences
-- **Api_Auth**: 18 occurrences
+- **Token**: 83 occurrences
+- **Sso**: 38 occurrences
+- **Api_Auth**: 20 occurrences
 
 ## Repository Analysis
 
 ### cogpy/ad-res-j7
-- **Components Found**: 11855
-- **Node Types**: sso, identity, directory, security, api_auth, authentication, token, authorization
+- **Components Found**: 11903
+- **Node Types**: authentication, directory, identity, sso, token, authorization, api_auth, security
 
 **Top Files with AD Components:**
-- `ad-hypergraph-mapping/ad_hypergraph_visualization.md`: 1112 components
-- `ad-hypergraph-mapping/ad_hypergraph.json`: 662 components
+- `ad-hypergraph-mapping/ad_hypergraph_visualization.md`: 1136 components
+- `ad-hypergraph-mapping/ad_hypergraph.json`: 682 components
 - `jax-response/analysis-output/comprehensive_reference_index.json`: 295 components
 - `docs/models/hypergnn/case-hypergraph.js`: 222 components
 - `jax-response/AD/2-High-Priority/STAFF_ADMINISTRATOR_DATA_PROTECTION_CLARIFICATIONS.md`: 205 components
