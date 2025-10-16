@@ -25,8 +25,24 @@ This comprehensive timeline analysis documents the strategic coordination and ba
 
 | Date | Event | Significance | Evidence Reference |
 |------|-------|--------------|-------------------|
-| **2023** | Kayla Pretorius murdered | Account access complications, law enforcement investigation, family trauma | Police reports, estate documentation |
-| **January 2025** | Chantal drops letter mentioning Kayla estate finalization | Ongoing exploitation of deceased victim's estate | Estate documentation |
+| **2017** | Shopify started by Dan & Kayla | Foundation of legitimate business operations under Dan and Kayla's control | Richard emails, business documentation |
+| **2020-04-01** | Worldwide starts Shopify during lockdowns | Business expansion during COVID-19, establishing international operations | Shopify records, business registration |
+| **2022-02-28** | Kachan distribution ends & Dan automates | Distribution automation reduces manual overhead, improves efficiency | Distribution records, automation logs |
+| **2022-11-30** | Krenance distribution ends & Dan automates | Further automation consolidation, reducing external dependencies | Distribution agreements, system records |
+| **2023-01-10** | Krenance Staff at RegimA HO (Liezel & Nikita) | External staff integration creates internal access vulnerabilities | HR records, access logs |
+| **2023-02-28** | R1,035,000+ overdue invoices RST for ReZ | Massive debt accumulation to ReZonance, financial manipulation begins | Invoice records, payment history |
+| **2023-04-30** | Peak of massive thefts in office (Moffat arrest) | Internal security breaches, criminal activity in workplace | Police reports, arrest records |
+| **2023-05-05** | Liezel reports violation of staff bodily autonomy | Workplace harassment complaints, hostile work environment | HR complaints, witness statements |
+| **2023-05-10** | Peter plants drugs in Liezel's desk to discredit | Evidence tampering, witness intimidation, criminal conduct | Security footage, witness testimony |
+| **2023-05-15** | Liezel complains about sabotage & resigns | Witness elimination through constructive dismissal | Resignation letter, exit documentation |
+| **2023-06-30** | Nikita recruits Team members then Resigns | Staff turnover after recruitment, potential information extraction | Employee records, resignation letters |
+| **2023-07-13** | Kayla Pretorius murdered (Kelly dismissed) | Account access complications, law enforcement investigation, family trauma | Police reports, estate documentation |
+| **2023-07-30** | All cards expire & put on Worldwide "temp" | Financial control centralization, operational dependency creation | Bank records, card status changes |
+| **2023-09-30** | RegimA EU distribution ends & Dan automates | European operations consolidation under automated systems | EU distribution records, system logs |
+| **2024-02-14** | Pete, Rynette, Bantjies tell Dan to wind up ReZ | Coordinated pressure to eliminate creditor claims, debt evasion | Meeting minutes, correspondence |
+| **2024-07** | Bantjies appointed Trustee of FFT by Rynette | Fiduciary position secured, conflicted representation begins | Trust documentation, appointment letters |
+| **2024-10-28** | Bantjies added to trust Authority register | Official authority powers registered, enhanced control position | Authority register, legal documentation |
+| **January 2025** | Chantal drops letter mentioning Kayla estate finalization | Ongoing exploitation of deceased victim's estate, timing correlates with final phase preparation | Estate documentation |
 | **February 25, 2025** | SLG Stock Missing (R5.2M) & Large Invoice (R5.2M SLG→RST) | Systematic asset stripping begins | Financial records |
 | **March 30, 2025** | Rynette reveals 2 years unprocessed RWW transactions | Creates artificial urgency, blames Dan | Email correspondence |
 | **April 14, 2025** | Rynette sends email to all clients - new payment account | Revenue hijacking preparation | Client correspondence |

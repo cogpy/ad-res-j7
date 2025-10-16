@@ -77,6 +77,9 @@ class TestRunner {
       passed: apiTest.testResults.filter(t => t.passed).length,
       failed: apiTest.testResults.filter(t => !t.passed).length,
       errors: apiTest.errors
+    };
+  }
+
   async runComprehensiveTests() {
     console.log('\n📋 Running Comprehensive Workflow Tests...\n');
     
