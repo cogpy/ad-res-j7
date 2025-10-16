@@ -29,7 +29,7 @@ The repository has grown significantly:
 8. Create comparison document highlighting all changes between JF5 draft and final
 9. Obtain Daniel's witness statement regarding "Has anything changed?" exchange
 10. Gather UK tax residency documentation
-11. Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
+11. ✅ **COMPLETED** - Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
 12. Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)
 
 ### Should-Do (Phase 2) - High Priority Evidence
@@ -82,7 +82,7 @@ The repository has grown significantly:
 2. Verify all seven strategic arguments are fully supported with evidence
 3. Complete all critical evidence annexures (JF-RP1, JF-DLA1-3, JF-PA1-4, JF-BS1)
 4. Ensure settlement agreement fraud evidence is complete (JF5 draft vs final)
-5. Verify Chesno fraud documentation is comprehensive (JF-CHESNO1-4)
+5. ✅ **COMPLETED** - Verify Chesno fraud documentation is comprehensive (JF-CHESNO1-4)
 
 ### Should-Do (Phase 2) - Legal Review Preparation
 
