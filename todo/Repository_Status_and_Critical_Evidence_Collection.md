@@ -54,7 +54,7 @@ The repository has grown significantly:
 
 1. Review and consolidate jax-response and jax-dan-response directories to eliminate duplication
 2. Archive affidavit versions v1-v2 to backups/affidavits directory
-3. Update all README files to reflect current repository state
+3. Update all README.md files to reflect current repository state
 4. Clean up temporary test files and artifacts from root directory
 5. Verify all annexure references in affidavit v3 are correct and complete
 
@@ -136,7 +136,7 @@ The repository has grown significantly:
 1. Run comprehensive workflow validation tests on all todo files
 2. Verify all GitHub issue generation workflows function correctly
 3. Test evidence cross-referencing system for accuracy
-4. Validate all file paths and references in documentation
+4. ✅ **COMPLETED** - Validate all file paths and references in documentation - **FILE PATH VALIDATION SYSTEM IMPLEMENTED**
 5. Ensure all JSON files are properly formatted and parseable
 
 ### Should-Do (Phase 2) - Quality Checks
