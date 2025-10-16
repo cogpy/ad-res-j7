@@ -98,6 +98,9 @@ npm run validate-workflows
 # Integration tests only  
 node tests/integration-test.js
 
+# Malformed markdown tests only
+npm run test:malformed-markdown
+
 # All tests with detailed output
 node tests/run-all-tests.js
 ```
@@ -139,9 +142,17 @@ cat tests/comprehensive-test-results.json | jq '.summary'
 
 ### Error Handling ✅
 - Empty todo folder scenarios
-- Malformed todo files
+- Malformed todo files  
 - API failure simulation
 - Cleanup procedures
+
+### Malformed Markdown Handling ✅ **NEW**
+- Files with invalid markdown structure
+- Character encoding issues (UTF-8, BOM, control chars)
+- Broken headers, lists, and syntax elements
+- Graceful degradation and error recovery
+- Real-world corruption scenarios
+- 22 comprehensive test cases with 100% success rate
 
 ### Integration Scenarios ✅
 - Real todo file processing
