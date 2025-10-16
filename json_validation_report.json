@@ -1,0 +1,1230 @@
+{
+  "timestamp": "2025-10-16T17:28:14.567213",
+  "total_files": 174,
+  "valid_files": 174,
+  "invalid_files": 0,
+  "errors": [],
+  "warnings": [],
+  "file_details": [
+    {
+      "file": ".idx/mcp.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [
+        "Root level is empty object/array"
+      ],
+      "size_bytes": 2
+    },
+    {
+      "file": "ANNEXURES/JF08/evidence_package_20251012/regima_uk_extraction.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 79756
+    },
+    {
+      "file": "ANNEXURES/JF08/evidence_package_20251012/structured_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 12064
+    },
+    {
+      "file": "EVIDENCE_MAPPING.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6757
+    },
+    {
+      "file": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF08/evidence_package_20251012/regima_uk_extraction.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 79756
+    },
+    {
+      "file": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF08/evidence_package_20251012/structured_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 12064
+    },
+    {
+      "file": "HYPERGRAPH_CASE_STRUCTURE.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 35268
+    },
+    {
+      "file": "HYPERGRAPH_CASE_STRUCTURE_UPDATED.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 47450
+    },
+    {
+      "file": "README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2646
+    },
+    {
+      "file": "REPOSITORY_STRUCTURE.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 9689
+    },
+    {
+      "file": "SIMULATION_RESULTS/affidavit_case_simulation_results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 241932
+    },
+    {
+      "file": "STRATEGIC_DYNAMICS_ANALYSIS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 25458
+    },
+    {
+      "file": "WORKFLOW_DOCUMENTATION.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7115
+    },
+    {
+      "file": "ad-hypergraph-mapping/ad_hypergraph.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 243245
+    },
+    {
+      "file": "ad-hypergraph-mapping/agent_models.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2370
+    },
+    {
+      "file": "ad-hypergraph-mapping/attention_matrix.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2641
+    },
+    {
+      "file": "ad-hypergraph-mapping/bantjies_hypergraph_analysis_report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4481
+    },
+    {
+      "file": "ad-hypergraph-mapping/node_mappings.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 761
+    },
+    {
+      "file": "ad-hypergraph-mapping/parallel_narratives.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2858
+    },
+    {
+      "file": "affidavit_case_simulation_results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 241932
+    },
+    {
+      "file": "affidavit_work/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 745
+    },
+    {
+      "file": "backups/affidavits/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 46067
+    },
+    {
+      "file": "backups/affidavits/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 47035
+    },
+    {
+      "file": "case_2025_137857/02_evidence/evidence_package_20251012/regima_uk_extraction.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 79756
+    },
+    {
+      "file": "case_2025_137857/02_evidence/evidence_package_20251012/structured_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 12064
+    },
+    {
+      "file": "case_2025_137857/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 801
+    },
+    {
+      "file": "case_hypergraph_summary.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1806
+    },
+    {
+      "file": "date_validation_report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8201
+    },
+    {
+      "file": "docs/CASE_SUMMARY.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11173
+    },
+    {
+      "file": "docs/models/hypergnn/case-2025-137857-hypergraph.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11627
+    },
+    {
+      "file": "evidence-collection-workflow.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 10988
+    },
+    {
+      "file": "evidence-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 9306
+    },
+    {
+      "file": "evidence/IT_EXPENSES_BREAKDOWN.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 15490
+    },
+    {
+      "file": "evidence/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 562
+    },
+    {
+      "file": "evidence/computer-expenses/tsconfig.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 128
+    },
+    {
+      "file": "hypergraph-evidence-integration-report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2266
+    },
+    {
+      "file": "integrated-workflow-status.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 3022
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_7-7_8_DAN_PAYMENT_DETAILS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 663
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 694
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 734
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 675
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_8-8_3_DAN_DISCOVERY.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 669
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_8_4_DAN_CONFRONTATION.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 595
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_10-10_3_DAN_FINANCIAL_DETAILS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 594
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_10_4_DAN_SPECIFIC_TRANSACTIONS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 554
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_11_6-11_9_DAN_BUSINESS_OPERATIONS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 566
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12-12_1_DAN_CORPORATE_GOVERNANCE.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 558
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12_2_DAN_INVESTIGATION_CLAIMS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 541
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12_3_DAN_SETTLEMENT_TIMING.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 561
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_13_2-13_2_2_DAN_CONFIRMATORY_AFFIDAVITS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 608
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_13_3_DAN_ADDITIONAL_FINANCIAL_CLAIMS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 582
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_14-14_2_DAN_BACKGROUND_CONTEXT.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 630
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_16-16_5_DAN_MISCELLANEOUS_ALLEGATIONS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 562
+    },
+    {
+      "file": "jax-dan-response/AD/4-Low-Priority/PARA_1-1_3_DAN_INTRODUCTION.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 414
+    },
+    {
+      "file": "jax-dan-response/AD/5-Meaningless/PARA_15_DAN_MEANINGLESS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 429
+    },
+    {
+      "file": "jax-dan-response/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 862
+    },
+    {
+      "file": "jax-response/AD/1-Critical/PARA_10_5-10_10_23.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1979
+    },
+    {
+      "file": "jax-response/AD/1-Critical/PARA_7_2-7_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5038
+    },
+    {
+      "file": "jax-response/AD/1-Critical/PARA_7_6.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1930
+    },
+    {
+      "file": "jax-response/AD/1-Critical/PARA_7_7-7_8.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1954
+    },
+    {
+      "file": "jax-response/AD/1-Critical/PARA_7_9-7_11.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1953
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_11-11_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1911
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_13-13_1.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1883
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_3-3_10.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2174
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_3_11-3_13.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2212
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_7_12-7_13.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1960
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_7_14-7_15.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1963
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_8-8_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1950
+    },
+    {
+      "file": "jax-response/AD/2-High-Priority/PARA_8_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1924
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_10-10_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1960
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_10_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1938
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_11_6-11_9.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1965
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12-12_1.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1892
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12_2.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1937
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1928
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_13_2-13_2_2.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1979
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_13_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1929
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_14-14_2.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1881
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_16-16_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1878
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7-7_1.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1890
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7_16-7_17.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1972
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7_18-7_20.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1973
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1934
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_6.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1943
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_7.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1939
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_8-8_10.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1957
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_9-9_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1944
+    },
+    {
+      "file": "jax-response/AD/3-Medium-Priority/PARA_9_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1937
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_1-1_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1936
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_11.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1936
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_12.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1933
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_13.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1931
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_12_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1943
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1934
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1930
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_6-13_7.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1947
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1936
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1930
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1924
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_16_6.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1922
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_16_7.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1928
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_2-2_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1882
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1924
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1918
+    },
+    {
+      "file": "jax-response/AD/4-Low-Priority/PARA_6-6_5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1955
+    },
+    {
+      "file": "jax-response/AD/5-Meaningless/PARA_15.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1911
+    },
+    {
+      "file": "jax-response/AD/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7277
+    },
+    {
+      "file": "jax-response/FORENSIC_EVIDENCE_INDEX.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 12157
+    },
+    {
+      "file": "jax-response/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 13141
+    },
+    {
+      "file": "jax-response/analysis-output/Affidavit_Amendment_Recommendations.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28296
+    },
+    {
+      "file": "jax-response/analysis-output/FINAL_SUMMARY_v3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8382
+    },
+    {
+      "file": "jax-response/analysis-output/Faucitt_Interdict_Analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 18496
+    },
+    {
+      "file": "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 47035
+    },
+    {
+      "file": "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v4.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 56234
+    },
+    {
+      "file": "jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 67626
+    },
+    {
+      "file": "jax-response/analysis-output/SUMMARY_OF_CHANGES.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6349
+    },
+    {
+      "file": "jax-response/analysis-output/Section_13B_Strengthening_Recommendations.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11129
+    },
+    {
+      "file": "jax-response/analysis-output/V4_CHANGES_SUMMARY.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7266
+    },
+    {
+      "file": "jax-response/analysis-output/V5_CHANGES_SUMMARY.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8255
+    },
+    {
+      "file": "jax-response/analysis-output/amendment_recommendations.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 31216
+    },
+    {
+      "file": "jax-response/analysis-output/comprehensive_legal_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 15525
+    },
+    {
+      "file": "jax-response/analysis-output/comprehensive_reference_index.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 133848
+    },
+    {
+      "file": "jax-response/analysis-output/critical_corrections_48_129.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7656
+    },
+    {
+      "file": "jax-response/analysis-output/paragraph_129_correction.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6416
+    },
+    {
+      "file": "jax-response/analysis-output/reference_index_summary.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 3310
+    },
+    {
+      "file": "jax-response/analysis-output/response_matrix.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5244
+    },
+    {
+      "file": "jax-response/analysis-output/strategic_contradictions_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5754
+    },
+    {
+      "file": "jax-response/analysis-output/updated_paragraph_48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8921
+    },
+    {
+      "file": "jax-response/family-trust/02-may-beneficiary-changes/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4132
+    },
+    {
+      "file": "jax-response/family-trust/10-aug-trust-breach-evidence/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4882
+    },
+    {
+      "file": "jax-response/family-trust/15-mar-trust-establishment/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 3706
+    },
+    {
+      "file": "jax-response/family-trust/18-june-trust-violation/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4126
+    },
+    {
+      "file": "jax-response/family-trust/25-july-asset-misappropriation/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4532
+    },
+    {
+      "file": "jax-response/family-trust/FORENSIC_EVIDENCE_INDEX.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8213
+    },
+    {
+      "file": "jax-response/family-trust/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8171
+    },
+    {
+      "file": "jax-response/financial-flows/01-apr-payment-redirection/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4973
+    },
+    {
+      "file": "jax-response/financial-flows/12-july-account-manipulations/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5917
+    },
+    {
+      "file": "jax-response/financial-flows/15-may-unauthorized-transfers/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5126
+    },
+    {
+      "file": "jax-response/financial-flows/20-aug-financial-concealment/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6065
+    },
+    {
+      "file": "jax-response/financial-flows/30-june-fund-diversions/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5929
+    },
+    {
+      "file": "jax-response/financial-flows/FORENSIC_EVIDENCE_INDEX.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 10679
+    },
+    {
+      "file": "jax-response/financial-flows/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 9494
+    },
+    {
+      "file": "jax-response/peter-interdict/court_order_2025_137857.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 15353
+    },
+    {
+      "file": "jax-response/peter-interdict/peter-faucitt-interdict-2025-09-30.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 63305
+    },
+    {
+      "file": "jax-response/peter-interdict/peter-faucitt-interdict-combined.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 63136
+    },
+    {
+      "file": "jax-response/peter-interdict/peter-faucitt-interdict-complete.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 62157
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 9712
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/email_compliance_directive_2025-07-08.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6316
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/APR-SEP-2025.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22992
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 3447
+    },
+    {
+      "file": "jax-response/revenue-theft/20-june-gee-gayane-email/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7191
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5920
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/audit_trail_hijacking_timeline.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8662
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/may_22_2025_audit_trail_hijacking_analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8576
+    },
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7163
+    },
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/REVENUE_HIJACKING_CRIMINAL_ANALYSIS.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 24794
+    },
+    {
+      "file": "jax-response/revenue-theft/EVIDENCE_CROSS_REFERENCE.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 10303
+    },
+    {
+      "file": "jax-response/revenue-theft/FORENSIC_ANALYSIS_COMPLETION_SUMMARY.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11665
+    },
+    {
+      "file": "jax-response/revenue-theft/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11603
+    },
+    {
+      "file": "json_validation_report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 31121
+    },
+    {
+      "file": "legal-hypergraphql/evaluation-reports/case-2025-137857-evaluation.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 16373
+    },
+    {
+      "file": "lex-inference-engine/output/lex_inference_integration_summary.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 313
+    },
+    {
+      "file": "lex-inference-engine/output/lex_inference_optimization_results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 6004
+    },
+    {
+      "file": "lex-inference-engine/output/universal_guilt_mathematical_proof.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 851
+    },
+    {
+      "file": "package.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1913
+    },
+    {
+      "file": "reports/comprehensive-status-report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 10712
+    },
+    {
+      "file": "reports/executive-summary.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 787
+    },
+    {
+      "file": "reports/progress-dashboard.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 2681
+    },
+    {
+      "file": "strategy-implementation-workflow.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1561
+    },
+    {
+      "file": "tests/json-validation-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 350
+    },
+    {
+      "file": "todo/Executive Summary_ Jax-Dan Response Improvements.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 7497
+    },
+    {
+      "file": "todo/Improvements for Jax-Dan Response Based on AD Elements.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 44103
+    },
+    {
+      "file": "todo/README.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 367
+    },
+    {
+      "file": "todo/Repository_Status_and_Critical_Evidence_Collection.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 3745
+    }
+  ]
+}
