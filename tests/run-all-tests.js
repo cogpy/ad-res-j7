@@ -10,6 +10,7 @@ const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const FilePathValidationTest = require('./file-path-validation.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -23,6 +24,7 @@ class TestRunner {
       security: null,
       endToEnd: null,
       malformedMarkdown: null,
+      filePathValidation: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -155,6 +157,23 @@ class TestRunner {
     return success;
   }
 
+  async runFilePathValidationTests() {
+    console.log('\n📋 Running File Path Validation Tests...\n');
+    
+    const filePathTest = new FilePathValidationTest();
+    const success = await filePathTest.runAllTests();
+    
+    this.results.filePathValidation = {
+      success: success,
+      total: filePathTest.testResults.length,
+      passed: filePathTest.testResults.filter(t => t.passed).length,
+      failed: filePathTest.testResults.filter(t => !t.passed).length,
+      errors: filePathTest.errors
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
@@ -162,7 +181,8 @@ class TestRunner {
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
                                        this.results.endToEnd.total +
-                                       this.results.malformedMarkdown.total;
+                                       this.results.malformedMarkdown.total +
+                                       this.results.filePathValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
@@ -170,7 +190,8 @@ class TestRunner {
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed +
-                                        this.results.malformedMarkdown.passed;
+                                        this.results.malformedMarkdown.passed +
+                                        this.results.filePathValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
@@ -178,7 +199,8 @@ class TestRunner {
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed +
-                                        this.results.malformedMarkdown.failed;
+                                        this.results.malformedMarkdown.failed +
+                                        this.results.filePathValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -314,7 +336,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'file-path-validation']
       },
       summary: this.results.overall
     });
@@ -335,6 +357,7 @@ class TestRunner {
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const filePathValidationSuccess = await this.runFilePathValidationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -346,7 +369,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
