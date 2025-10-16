@@ -268,7 +268,7 @@ class LabelHandlingTest {
       // Test individual label extraction with jq-like behavior
       labelArray.forEach(label => {
         // Simulate what jq -r '.[]' does
-        const escaped = label.replace(/"/g, '\\"');
+        const escaped = label.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
         this.assert(
           escaped === label || label.includes('"'),
           `Label "${label}" can be safely extracted from JSON array`
