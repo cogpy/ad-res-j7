@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-11_6-11_9-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Business Operations",
+  "claim": "Peter makes a number of claims about the company's business operations.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Architecture Diagrams", "Process Flow Diagrams", "Monitoring Dashboards"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_11_6-11_9.md"
+  ],
+  "danPerspective": "Provide a technical overview of the systems and processes that support our business operations."
+}

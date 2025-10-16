@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-3_11-3_13-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 2,
+  "topic": "Jax's Role in Companies",
+  "claim": "Peter downplays the significance of Jax's role and her designation as the 'Responsible Person.'",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Architecture Diagrams", "Access Control Policies", "Regulatory Compliance Documentation"
+  ],
+  "crossReferences": [
+    "jax-response/AD/2-High-Priority/PARA_3_11-3_13.md"
+  ],
+  "danPerspective": "From a technical standpoint, explain the critical importance of Jax's role as the 'Responsible Person' by detailing the system architecture and regulatory requirements that depend on her specific access and authorization."
+}
