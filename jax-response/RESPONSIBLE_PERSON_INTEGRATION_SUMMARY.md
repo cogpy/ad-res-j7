@@ -75,8 +75,8 @@
 
 ### Primary Integration Points:
 1. **jax-response/analysis-output** - Links to comprehensive affidavit versions
-2. **jax-dan-response/evidence-attachments** - Technical infrastructure affidavits
-3. **jax-dan-response/AD** - Structured paragraph responses
+2. **jax-response/evidence-attachments** - Technical infrastructure affidavits
+3. **jax-response/AD** - Structured paragraph responses
 4. **Cross-references** - Evidence requirements and legal framework
 
 ### Evidence Framework Established:

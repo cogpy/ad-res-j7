@@ -176,7 +176,7 @@ jobs:
 
 ## Integration with Repository Structure
 
-The issue optimization aligns with the broader repository improvements, particularly the enhancement of the `jax-dan-response` directory:
+The issue optimization aligns with the broader repository improvements, particularly the enhancement of the `jax-response` directory:
 
 ### Synergy with AD Paragraph Framework
 
@@ -198,9 +198,9 @@ The issues should be tagged with AD paragraph references to create direct links 
 - `/evidence/IT_EXPENSES_BREAKDOWN.md`
 ```
 
-### Alignment with jax-dan-response Improvements
+### Alignment with jax-response Improvements
 
-As the `jax-dan-response` directory is enhanced with the AD paragraph structure, corresponding issues should be created to track:
+As the `jax-response` directory is enhanced with the AD paragraph structure, corresponding issues should be created to track:
 
 1. Creation of AD paragraph rebuttals for Dan's response
 2. Development of cross-reference documentation

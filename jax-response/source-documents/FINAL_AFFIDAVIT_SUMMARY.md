@@ -97,7 +97,7 @@ Daniel's Technical Infrastructure Affidavit remains as a **separate annexure** (
 - Technical competence demonstrations
 
 This follows the repository structure where Daniel's affidavit is in:
-- `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md`
+- `jax-response/evidence-attachments/DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md`
 
 ## All AD Headers Have Corresponding Responses
 

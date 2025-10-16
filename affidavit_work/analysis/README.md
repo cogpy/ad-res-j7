@@ -255,7 +255,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 **Implementation Guides:**
 - `/attached_assets/` - Implementation plans and guidance
-- `/jax-dan-response/` - Draft response documents
+- `/jax-response/` - Draft response documents
 
 ### External References
 

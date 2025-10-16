@@ -263,7 +263,7 @@ FINAL.docx (528 paragraphs)
 - `jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx` (template)
 - `jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md` (corrections source)
 - `jax-response/analysis-output/critical_corrections_48_129.md` (correction details)
-- `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md` (Daniel's content)
+- `jax-response/evidence-attachments/DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md` (Daniel's content)
 
 ---
 

@@ -604,7 +604,7 @@ Create the following analysis documents recommended in the improvement suggestio
 - System Access and Security Architecture
 - Timeline of Peter's Disruptive Actions
 
-**3. Implement AD Structure in jax-dan-response**
+**3. Implement AD Structure in jax-response**
 
 - Create parallel AD paragraph structure
 - Develop Dan-specific rebuttals for relevant paragraphs
@@ -732,7 +732,7 @@ Use the strength of the defense to:
 
 - All 13 critical and high priority rebuttals completed
 - Supporting analysis documents created
-- AD structure implemented in jax-dan-response
+- AD structure implemented in jax-response
 - Evidence coverage increased to >50% for priority 1-2 paragraphs
 
 **Medium-Term Success Indicators (30 days):**
@@ -788,5 +788,5 @@ By following the phased implementation approach outlined in this assessment, the
 - `EVIDENCE_MAPPING.json` - Evidence-to-paragraph mapping
 - `HYPERGRAPH_CASE_STRUCTURE.json` - Network structure representation
 - `ISSUE_OPTIMIZATION_REPORT.md` - GitHub issue management analysis
-- `jax-dan-response/IMPROVEMENT_SUGGESTIONS.md` - Implementation recommendations
+- `jax-response/IMPROVEMENT_SUGGESTIONS.md` - Implementation recommendations
 

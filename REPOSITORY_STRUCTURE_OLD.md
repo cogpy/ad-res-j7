@@ -62,7 +62,7 @@ This directory contains raw evidence collected for Case 2025-137857. It is organ
 - **`invoices/`**: Contains invoices for various business expenses.
 - **`correspondence/`**: Contains email and other correspondence relevant to the case.
 
-### `jax-dan-response/`
+### `jax-response/`
 
 This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:
 

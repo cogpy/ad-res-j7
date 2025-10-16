@@ -56,7 +56,7 @@ Set aside the interdict granted ex parte on August 19, 2025, on multiple indepen
 - **Estimated Time:** 2-4 hours for attorney integration
 
 **2. Daniel Faucitt's Witness Statement**
-- **Location:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
+- **Location:** `jax-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Status:** ✅ Ready (needs Commissioner of Oaths certification)
 - **Action Required:** Get certified by Commissioner of Oaths (1 hour)
 - **Purpose:** "Has anything changed?" exchange, bad faith evidence

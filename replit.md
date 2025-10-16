@@ -13,7 +13,7 @@ This is a Node.js-based testing and validation tool for GitHub Actions workflows
 - **`case_2025_137857/`** - Court case documents and evidence
 - **`affidavit_work/`** - Affidavit analysis and drafts
 - **`evidence/`** - Bank records, invoices, Shopify reports
-- **`jax-dan-response/`** - Response documents and analysis
+- **`jax-response/`** - Response documents and analysis
 - **`jax-response/`** - Detailed paragraph-by-paragraph responses organized by priority
 - **`docs/`** - Technical and legal documentation
 - **`scripts/`** - Utility scripts for issue management

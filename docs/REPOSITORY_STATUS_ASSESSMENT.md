@@ -13,7 +13,7 @@ The **cogpy/ad-res-j7** repository has undergone **significant expansion and dev
 
 ### Key Developments
 
-1. **New `jax-response/` Directory** - A comprehensive parallel structure to `jax-dan-response/` with extensive forensic analysis
+1. **New `jax-response/` Directory** - A comprehensive parallel structure to `jax-response/` with extensive forensic analysis
 2. **Forensic Evidence Framework** - Three major categories: Revenue Theft, Family Trust, and Financial Flows
 3. **Multiple Affidavit Versions** - Five versions (v1-v5) with tracked changes and strategic amendments
 4. **Extensive Documentation** - Over 200 files including JSON and Markdown formats
@@ -37,7 +37,7 @@ The **cogpy/ad-res-j7** repository has undergone **significant expansion and dev
 | Directory | Purpose | Files | Status |
 |-----------|---------|-------|--------|
 | `jax-response/` | Comprehensive legal response | 223 | ✅ Active |
-| `jax-dan-response/` | Original response structure | ~15 | ✅ Maintained |
+| `jax-response/` | Original response structure | ~15 | ✅ Maintained |
 | `case_2025_137857/` | Court documents | ~10 | ✅ Stable |
 | `evidence/` | Raw evidence | ~15 | ✅ Expanded |
 | `affidavit_work/` | Affidavit analysis | ~10 | ✅ Stable |
@@ -51,7 +51,7 @@ The **cogpy/ad-res-j7** repository has undergone **significant expansion and dev
 
 ### 1. New `jax-response/` Directory
 
-A comprehensive new directory structure has been created parallel to the original `jax-dan-response/` directory. This represents a **major expansion** of the repository's capabilities.
+A comprehensive new directory structure has been created parallel to the original `jax-response/` directory. This represents a **major expansion** of the repository's capabilities.
 
 **Key Subdirectories:**
 
@@ -391,7 +391,7 @@ Based on the jax-response README, the following critical evidence is still neede
 
 ### Repository Maintenance
 
-1. **Consolidate Directories** - Consider merging `jax-response/` and `jax-dan-response/`
+1. **Consolidate Directories** - Consider merging `jax-response/` and `jax-response/`
 2. **Archive Old Versions** - Move v1-v2 to archive directory
 3. **Update Documentation** - Ensure all README files reflect current state
 4. **Clean Up Temporary Files** - Remove test artifacts and temporary files
@@ -444,7 +444,7 @@ The **cogpy/ad-res-j7** repository has evolved from a basic case management stru
 ### Areas for Improvement
 
 1. **Evidence Gaps** - Critical evidence still needs to be gathered
-2. **Directory Consolidation** - Potential duplication between jax-response and jax-dan-response
+2. **Directory Consolidation** - Potential duplication between jax-response and jax-response
 3. **File Organization** - Some temporary files and artifacts need cleanup
 4. **Documentation Updates** - Some README files may be outdated
 5. **Annexure Preparation** - Evidence needs to be formatted for court submission

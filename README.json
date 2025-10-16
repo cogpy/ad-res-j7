@@ -10,12 +10,12 @@
         {
           "heading": "Repository Structure",
           "level": 2,
-          "content": "The repository is organized into the following key directories:\n\n- **`case_2025_137857/`**: Contains all documents directly related to the court case, including court filings, evidence, and legal analysis.\n- **`affidavit_work/`**: Contains the analysis and drafts of the affidavits.\n- **`evidence/`**: Contains raw evidence, such as bank records, Shopify reports, and invoices.\n- **`jax-dan-response/`**: Contains the specific response of Jacqueline and Daniel Faucitt, including their analysis and evidence.\n- **`docs/`**: Contains additional documentation, including technical and legal analysis.\n- **`tools/`**: Contains scripts and tools used for analysis.\n- **`config/`**: Contains configuration files for the tools."
+          "content": "The repository is organized into the following key directories:\n\n- **`case_2025_137857/`**: Contains all documents directly related to the court case, including court filings, evidence, and legal analysis.\n- **`affidavit_work/`**: Contains the analysis and drafts of the affidavits.\n- **`evidence/`**: Contains raw evidence, such as bank records, Shopify reports, and invoices.\n- **`jax-response/`**: Contains the specific response of Jacqueline and Daniel Faucitt, including their analysis and evidence.\n- **`docs/`**: Contains additional documentation, including technical and legal analysis.\n- **`tools/`**: Contains scripts and tools used for analysis.\n- **`config/`**: Contains configuration files for the tools."
         },
         {
           "heading": "Getting Started",
           "level": 2,
-          "content": "To understand the case, it is recommended to start with the following documents:\n\n1.  **Court Application:** `case_2025_137857/01_court_documents/KF0019-SecondApplication-03.10.2025.pdf`\n2.  **Draft Response:** `jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`\n3.  **Affidavit Analysis Summary:** `affidavit_work/analysis/Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx`\n\nThis repository is an ongoing project and will be updated as more information becomes available."
+          "content": "To understand the case, it is recommended to start with the following documents:\n\n1.  **Court Application:** `case_2025_137857/01_court_documents/KF0019-SecondApplication-03.10.2025.pdf`\n2.  **Draft Response:** `jax-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`\n3.  **Affidavit Analysis Summary:** `affidavit_work/analysis/Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx`\n\nThis repository is an ongoing project and will be updated as more information becomes available."
         }
       ]
     }
