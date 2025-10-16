@@ -364,7 +364,7 @@ Based on the jax-response README, the following critical evidence is still neede
 - ☐ Regulatory risk analysis - JF-RP2
 - ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 - ☐ Peter's own withdrawals (minimum 4 examples) - JF-PA1 through JF-PA4
-- ☐ R500K payment bank statement (16 July 2025) - JF-BS1
+- ☑ R500K payment bank statement (16 July 2025) - JF-BS1 ✅ OBTAINED (PDF on file)
 - ☐ JF5 draft agreement (initial version reviewed)
 - ☐ JF5 final agreement (signed version with changes)
 - ☐ Comparison document highlighting all changes
