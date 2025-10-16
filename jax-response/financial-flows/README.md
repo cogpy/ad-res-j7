@@ -78,13 +78,31 @@ This directory contains forensic evidence and analysis for the systematic financ
 - **Transaction history manipulation** concealing unauthorized activities
 - **Systematic cover-up operations** demonstrating consciousness of guilt
 
-## Financial Flow Analysis
+## Legal Framework for R4.276M+ Financial Diversions
 
-### Incoming Revenue Streams
-- **RegimA Business Operations** - Monthly revenue: R1,200,000+
-- **Trust Income Distributions** - Quarterly distributions: R400,000+
-- **Investment Returns** - Annual returns: R180,000+
-- **Client Payment Streams** - Variable client payments: R300,000+ monthly
+### Statutory Basis for Financial Crime Prosecution
+
+#### **Financial Crime Recovery Framework** 
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 37**: Forfeiture of proceeds of unlawful financial activities
+  - **Section 38**: Preservation of assets during financial crime investigation
+  - **Chapter 6**: Civil recovery procedures for unlawfully obtained assets
+  - **Application**: Full recovery of R4,276,832.85+ in diverted financial assets
+
+#### **Banking Law Enforcement**
+- **Banks Act 94 of 1990**
+  - **Section 78**: Recovery of funds obtained through banking violations
+  - **Section 91**: Regulatory enforcement for banking agreement violations
+- **Financial Intelligence Centre Act 38 of 2001**
+  - **Section 34**: Investigation and prosecution of financial intelligence offenses
+  - **Section 45**: Asset freezing and forfeiture for money laundering offenses
+
+#### **Criminal Prosecution Framework for Financial Diversions**
+The documented R4.276M+ financial diversions support:
+- **Major fraud prosecution** (systematic scheme exceeding statutory thresholds)
+- **Money laundering charges** (complex transaction structuring to conceal proceeds)
+- **Organized financial crime** (coordinated multi-account operations)
+- **Banking fraud prosecution** (unauthorized access and control of financial systems)
 
 ### Unauthorized Outgoing Diversions
 - **Redirected Customer Payments** - R2,100,000+ diverted to unauthorized accounts
@@ -135,14 +153,24 @@ This directory contains forensic evidence and analysis for the systematic financ
   - **Section 6**: Acquisition, possession or use of proceeds of unlawful activities
   - **Penalty**: Up to 30 years imprisonment
 
-### Banking Law Violations
+#### **Banking Law Violations**
 
 #### **Unauthorized Access**
 - **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
   - **Section 86(1)**: Unauthorized access to banking systems and financial data
+  - **Section 86(2)**: Unauthorized modification or impairment of financial data
   - **Section 87**: Unauthorized access to banking computer systems
 - **Banks Act 94 of 1990**: Violation of banking agreements and authorization limits
+  - **Section 60**: Conducting business of a bank without authorization
+  - **Section 62**: Misleading statements in relation to banks
   - **Penalty**: Up to 12 months imprisonment or fine (ECTA) + Banking regulatory penalties
+
+#### **Financial Intelligence and Reporting Violations**
+- **Financial Intelligence Centre Act 38 of 2001**
+  - **Section 28**: Failure to report suspicious and unusual transactions
+  - **Section 29**: Failure to report cash transactions above prescribed limit
+  - **Section 45**: Offenses and penalties
+  - **Penalty**: Up to R10 million fine or 15 years imprisonment
 
 #### **Fiduciary Duty Breach**
 - **Companies Act 71 of 2008**
@@ -168,12 +196,25 @@ This directory contains forensic evidence and analysis for the systematic financ
 - **Common Law Fraud**: Misuse of corporate authority
   - **Penalty**: Personal liability, disqualification, up to 15 years imprisonment
 
-#### **Shareholder Rights Violations**
-- **Companies Act 71 of 2008**
-  - **Section 76**: Director duties - Unauthorized use of company financial assets
-  - **Section 218**: Fraudulent conduct of business
-- **Securities Services Act**: Market manipulation through unauthorized asset use
-  - **Penalty**: Personal liability, disqualification, criminal charges
+#### **Securities and Financial Markets Violations**
+- **Securities Services Act 36 of 2004**
+  - **Section 75**: Market manipulation through unauthorized asset use
+  - **Section 78**: Insider trading and unauthorized use of price-sensitive information  
+  - **Penalty**: Up to R50 million fine or 15 years imprisonment
+
+#### **Tax and Revenue Violations**
+- **Tax Administration Act 28 of 2011**
+  - **Section 234**: Tax evasion through undeclared income and asset concealment
+  - **Section 235**: Failure to submit returns or furnish information
+  - **Penalty**: Up to R800,000 fine or 5 years imprisonment
+
+### Procedural Law Applications
+
+#### **Criminal Procedure and Evidence**
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 37**: Arrest without warrant for ongoing financial crimes
+  - **Section 205**: Subpoena for banking and financial records
+  - **Section 252A**: Forfeiture of instrumentalities of crime
 
 ## Chain of Custody Documentation
 
