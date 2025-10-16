@@ -20,6 +20,7 @@
     "test:hypergraph": "node tests/hypergraphql.test.js",
     "test:ad-hypergraph": "node tests/ad-hypergraph-test.js",
     "test:date-validation": "node tests/date-validation-test.js",
+    "test:empty-todo-validation": "node tests/empty-todo-file-validation.test.js",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
