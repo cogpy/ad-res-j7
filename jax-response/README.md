@@ -1,6 +1,8 @@
-# Jax Response - Case 2025-137857
+# Jax Response - Case 2025-137857 (Consolidated)
 
-Complete collection of documents, evidence, and analysis for Jacqueline Faucitt's answering affidavit in response to Peter Faucitt's interdict application.
+Complete collection of documents, evidence, and analysis for Jacqueline and Daniel Faucitt's answering affidavit in response to Peter Faucitt's interdict application.
+
+**📝 Note:** This directory has been consolidated to eliminate duplication. It now contains the complete response materials from both Jacqueline and Daniel Faucitt, previously split across jax-response and jax-dan-response directories.
 
 ---
 
@@ -23,18 +25,35 @@ Comprehensive forensic analysis of the coordinated revenue hijacking scheme targ
 - **`FORENSIC_EVIDENCE_INDEX.md`** - Comprehensive evidence catalog and prosecution framework
 
 ### 📁 `/source-documents/`
-Original affidavit drafts and source materials provided by Jax:
+Original affidavit drafts and source materials (consolidated from both Jacqueline and Daniel):
 
+#### Jacqueline's Source Materials:
 - **1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx** - Enhanced answering affidavit with AD PARAGRAPH structure
 - **ANSWERING_AFFIDAVIT_-_JACQUELINE_FAUCITT_(FINAL_DRAFT_FOR_REVIEW_BYJAX).docx** - Final draft for Jax's review
 - **FINAL_ASSESSMENT_Jacqui_Affidavit_(Reconstructed_Version).docx** - Reconstructed version with assessments
+- **FINAL_AFFIDAVIT_CHANGES_LOG.md** - Change log for affidavit versions
+- **FINAL_AFFIDAVIT_SUMMARY.md** - Summary of final affidavit
+
+#### Daniel's Response Materials (consolidated from jax-dan-response):
+- **DRAFTOFMAINPOINTS-RESPONSE.docx** - Draft response to main points raised
 
 ### 📁 `/evidence-attachments/`
-Supporting evidence and analysis documents:
+Supporting evidence and analysis documents (consolidated from both Jacqueline and Daniel's response materials):
 
+#### Original Jax Evidence:
 - **Updated_Corrections_-_Reflecting_Actual_Business_Practices.docx** - Corrections reflecting actual business operations
 - **Evidence-Based_Inference_Framework(1).docx** - Framework for evidence-based arguments
 - **Executive_Summary_Fact-Based_Analysis_of_Case_2025-137857.docx** - Executive summary of case analysis
+
+#### Daniel's Technical & Legal Analysis (consolidated from jax-dan-response):
+- **DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md** - Comprehensive technical infrastructure affidavit
+- **Dan_Technical_Infrastructure_Affidavit.md** - Technical infrastructure documentation
+- **DIRECTOR_LOAN_PRACTICE_ANALYSIS.md** - Analysis of director loan account practices
+- **RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md** - Critical regulatory compliance analysis
+- **COMPREHENSIVE_FINANCIAL_ANALYSIS.md** - Complete financial analysis and rebuttals
+- **IT_SPEND_INDUSTRY_COMPARATIVE_ANALYSIS.md** - Industry benchmarking for IT expenses
+- **POINT_BY_POINT_REBUTTAL_MATRIX.md** - Systematic rebuttal framework
+- **PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md** - Bad faith conduct timeline analysis
 
 ### 📁 `/peter-interdict/`
 Peter Faucitt's interdict application and court order:
@@ -262,6 +281,15 @@ All changes in the revised affidavit are highlighted:
 - 13 August 2025: Interdict application filed (2 days after settlement)
 - 19 August 2025: Ex parte interdict granted
 - May 2026: Investment payout due (9 months after interdict)
+
+---
+
+## Additional Consolidated Documentation
+
+The following files were moved from the former jax-dan-response directory during consolidation:
+
+- **RESPONSIBLE_PERSON_INTEGRATION_SUMMARY.md** - Summary of Responsible Person regulatory integration requirements
+- **IMPROVEMENT_SUGGESTIONS.md** - Suggestions for improving the response strategy
 
 ---
 
