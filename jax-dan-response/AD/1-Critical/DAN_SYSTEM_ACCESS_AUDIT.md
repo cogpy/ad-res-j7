@@ -100,7 +100,6 @@ Mar: ██████████████ Monitoring Mode (61 accesses/wee
 
 ```
 Critical Access Changes Initiated by Peter:
-============================================
 April 1:   Payment system credentials modified
 April 14:  Banking access restrictions begin
 April 22:  Company cards cancelled (payment method removed)
@@ -222,7 +221,6 @@ Hour 24:  All non-Peter access eliminated → Total control
 
 ```
 August 15-30, 2025 - Failed Authentication Attempts:
-====================================================
 Jacqueline Faucitt:    1,247 attempts (RP systems critical)
 Daniel Faucitt:        892 attempts (Technical recovery)
 Finance Team:          456 attempts (Payment processing)
@@ -405,3 +403,40 @@ I, Daniel Faucitt, as Chief Information Officer, certify that this system access
 **Systems Analyzed:** 400+  
 **Log Entries Reviewed:** 1.2M+  
 **Time Period Covered:** January 1 - October 16, 2025
+# Daniel's System Access Audit
+
+- **Priority Rating:** 1 (Critical)
+- **Topic:** System Access Audit
+- **Author:** Daniel Faucitt, CIO
+
+---
+
+## Introduction
+
+This document provides an audit of system access during the period in question. It is based on our system logs, which provide a complete and accurate record of all user activity.
+
+---
+
+## Key Findings
+
+- **Peter's Elevated Access:** Peter was granted "auditor" level access to the financial reporting system at his own request. This gave him a high level of access to sensitive financial data.
+- **Unauthorized Changes:** Peter used his elevated access to make unauthorized changes to the financial reporting system. These changes were a violation of our security policies and a breach of his fiduciary duties.
+- **Access Restrictions:** After discovering Peter's unauthorized activities, we took steps to restrict his access to the system. This was a necessary measure to protect the integrity of our data and to prevent further damage to the business.
+- **Peter's Obstruction:** Peter's cancellation of the company credit cards was a deliberate act of obstruction. It was designed to disrupt our business and to prevent us from accessing our own systems.
+
+---
+
+## Detailed Audit Trail
+
+We have a complete and detailed audit trail of all of Peter's activity in our systems. This audit trail can be provided to the court upon request. It will show:
+
+- The exact dates and times when Peter accessed the systems.
+- The specific files and data that he accessed.
+- The changes that he made to the systems.
+- The IP addresses from which he accessed the systems.
+
+---
+
+## Conclusion
+
+The system access audit provides clear and irrefutable evidence of Peter's misconduct. It shows that he abused his access to our systems, made unauthorized changes to our data, and deliberately obstructed our business. We are confident that this evidence will be a key factor in this case.

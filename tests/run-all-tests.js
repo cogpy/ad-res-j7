@@ -231,6 +231,11 @@ class TestRunner {
       if (this.results.api.errors.length > 0) {
         console.log('   API Integration Test Failures:');
         this.results.api.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
       if (this.results.comprehensive.errors.length > 0) {
         console.log('   Comprehensive Test Failures:');
         this.results.comprehensive.errors.forEach(error => {
@@ -305,8 +310,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess;
-      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
