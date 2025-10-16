@@ -1,0 +1,379 @@
+{
+  "name": "Evidence Collection Optimization Workflow",
+  "version": "1.0",
+  "generated": "2025-10-16T04:24:49.725Z",
+  "phases": {
+    "phase1_critical": {
+      "name": "Critical Evidence Collection",
+      "items": [
+        {
+          "code": "JF-RP1",
+          "description": "Responsible Person documentation for 37 jurisdictions",
+          "priority": 1,
+          "estimatedHours": 8,
+          "dependencies": []
+        },
+        {
+          "code": "JF-RP2",
+          "description": "Regulatory risk analysis documentation",
+          "priority": 1,
+          "estimatedHours": 8,
+          "dependencies": [
+            "JF-RP1"
+          ]
+        },
+        {
+          "code": "JF-DLA1",
+          "description": "Director loan account statements - Director 1",
+          "priority": 1,
+          "estimatedHours": 4,
+          "dependencies": []
+        },
+        {
+          "code": "JF-DLA2",
+          "description": "Director loan account statements - Director 2",
+          "priority": 1,
+          "estimatedHours": 4,
+          "dependencies": []
+        },
+        {
+          "code": "JF-DLA3",
+          "description": "Director loan account statements - Director 3",
+          "priority": 1,
+          "estimatedHours": 4,
+          "dependencies": []
+        },
+        {
+          "code": "JF-PA1",
+          "description": "Peter's withdrawal example 1",
+          "priority": 1,
+          "estimatedHours": 2,
+          "dependencies": []
+        },
+        {
+          "code": "JF-PA2",
+          "description": "Peter's withdrawal example 2",
+          "priority": 1,
+          "estimatedHours": 2,
+          "dependencies": []
+        },
+        {
+          "code": "JF-PA3",
+          "description": "Peter's withdrawal example 3",
+          "priority": 1,
+          "estimatedHours": 2,
+          "dependencies": []
+        },
+        {
+          "code": "JF-PA4",
+          "description": "Peter's withdrawal example 4",
+          "priority": 1,
+          "estimatedHours": 2,
+          "dependencies": []
+        },
+        {
+          "code": "JF-BS1",
+          "description": "R500K payment bank statement dated 16 July 2025",
+          "priority": 1,
+          "estimatedHours": 3,
+          "dependencies": []
+        },
+        {
+          "code": "JF5-DRAFT",
+          "description": "JF5 draft agreement initial version",
+          "priority": 1,
+          "estimatedHours": 6,
+          "dependencies": []
+        },
+        {
+          "code": "JF5-FINAL",
+          "description": "JF5 final agreement signed version with changes",
+          "priority": 1,
+          "estimatedHours": 6,
+          "dependencies": []
+        },
+        {
+          "code": "JF5-COMPARISON",
+          "description": "JF5 draft vs final comparison document",
+          "priority": 1,
+          "estimatedHours": 6,
+          "dependencies": [
+            "JF5-DRAFT",
+            "JF5-FINAL"
+          ]
+        },
+        {
+          "code": "JF-DANIEL-STATEMENT",
+          "description": "Daniel witness statement - \"Has anything changed?\" exchange",
+          "priority": 1,
+          "estimatedHours": 4,
+          "dependencies": [
+            "JF5-COMPARISON"
+          ]
+        },
+        {
+          "code": "JF-UK-TAX",
+          "description": "UK tax residency documentation",
+          "priority": 1,
+          "estimatedHours": 5,
+          "dependencies": []
+        },
+        {
+          "code": "JF-RESTORE1",
+          "description": "Daniel's 8-year restoration evidence 1",
+          "priority": 1,
+          "estimatedHours": 3,
+          "dependencies": []
+        },
+        {
+          "code": "JF-RESTORE2",
+          "description": "Daniel's 8-year restoration evidence 2",
+          "priority": 1,
+          "estimatedHours": 3,
+          "dependencies": []
+        },
+        {
+          "code": "JF-RESTORE3",
+          "description": "Daniel's 8-year restoration evidence 3",
+          "priority": 1,
+          "estimatedHours": 3,
+          "dependencies": []
+        },
+        {
+          "code": "JF-RESTORE4",
+          "description": "Daniel's 8-year restoration evidence 4",
+          "priority": 1,
+          "estimatedHours": 3,
+          "dependencies": []
+        }
+      ],
+      "estimated_hours": 78,
+      "parallel_streams": {
+        "financial_evidence": [
+          {
+            "code": "JF-DLA1",
+            "description": "Director loan account statements - Director 1",
+            "priority": 1,
+            "estimatedHours": 4,
+            "dependencies": []
+          },
+          {
+            "code": "JF-DLA2",
+            "description": "Director loan account statements - Director 2",
+            "priority": 1,
+            "estimatedHours": 4,
+            "dependencies": []
+          },
+          {
+            "code": "JF-DLA3",
+            "description": "Director loan account statements - Director 3",
+            "priority": 1,
+            "estimatedHours": 4,
+            "dependencies": []
+          },
+          {
+            "code": "JF-PA1",
+            "description": "Peter's withdrawal example 1",
+            "priority": 1,
+            "estimatedHours": 2,
+            "dependencies": []
+          },
+          {
+            "code": "JF-PA2",
+            "description": "Peter's withdrawal example 2",
+            "priority": 1,
+            "estimatedHours": 2,
+            "dependencies": []
+          },
+          {
+            "code": "JF-PA3",
+            "description": "Peter's withdrawal example 3",
+            "priority": 1,
+            "estimatedHours": 2,
+            "dependencies": []
+          },
+          {
+            "code": "JF-PA4",
+            "description": "Peter's withdrawal example 4",
+            "priority": 1,
+            "estimatedHours": 2,
+            "dependencies": []
+          },
+          {
+            "code": "JF-BS1",
+            "description": "R500K payment bank statement dated 16 July 2025",
+            "priority": 1,
+            "estimatedHours": 3,
+            "dependencies": []
+          },
+          {
+            "code": "JF5-COMPARISON",
+            "description": "JF5 draft vs final comparison document",
+            "priority": 1,
+            "estimatedHours": 6,
+            "dependencies": [
+              "JF5-DRAFT",
+              "JF5-FINAL"
+            ]
+          }
+        ],
+        "regulatory_evidence": [
+          {
+            "code": "JF-RP1",
+            "description": "Responsible Person documentation for 37 jurisdictions",
+            "priority": 1,
+            "estimatedHours": 8,
+            "dependencies": []
+          },
+          {
+            "code": "JF-RP2",
+            "description": "Regulatory risk analysis documentation",
+            "priority": 1,
+            "estimatedHours": 8,
+            "dependencies": [
+              "JF-RP1"
+            ]
+          },
+          {
+            "code": "JF-UK-TAX",
+            "description": "UK tax residency documentation",
+            "priority": 1,
+            "estimatedHours": 5,
+            "dependencies": []
+          }
+        ],
+        "technical_evidence": [],
+        "witness_evidence": [
+          {
+            "code": "JF5-DRAFT",
+            "description": "JF5 draft agreement initial version",
+            "priority": 1,
+            "estimatedHours": 6,
+            "dependencies": []
+          },
+          {
+            "code": "JF5-FINAL",
+            "description": "JF5 final agreement signed version with changes",
+            "priority": 1,
+            "estimatedHours": 6,
+            "dependencies": []
+          },
+          {
+            "code": "JF-DANIEL-STATEMENT",
+            "description": "Daniel witness statement - \"Has anything changed?\" exchange",
+            "priority": 1,
+            "estimatedHours": 4,
+            "dependencies": [
+              "JF5-COMPARISON"
+            ]
+          },
+          {
+            "code": "JF-RESTORE1",
+            "description": "Daniel's 8-year restoration evidence 1",
+            "priority": 1,
+            "estimatedHours": 3,
+            "dependencies": []
+          },
+          {
+            "code": "JF-RESTORE2",
+            "description": "Daniel's 8-year restoration evidence 2",
+            "priority": 1,
+            "estimatedHours": 3,
+            "dependencies": []
+          },
+          {
+            "code": "JF-RESTORE3",
+            "description": "Daniel's 8-year restoration evidence 3",
+            "priority": 1,
+            "estimatedHours": 3,
+            "dependencies": []
+          },
+          {
+            "code": "JF-RESTORE4",
+            "description": "Daniel's 8-year restoration evidence 4",
+            "priority": 1,
+            "estimatedHours": 3,
+            "dependencies": []
+          }
+        ]
+      }
+    },
+    "phase2_quick_wins": {
+      "name": "Quick Wins",
+      "items": [
+        {
+          "code": "JF-PA1",
+          "description": "Peter's withdrawal example 1",
+          "priority": 1
+        },
+        {
+          "code": "JF-PA2",
+          "description": "Peter's withdrawal example 2",
+          "priority": 1
+        },
+        {
+          "code": "JF-PA3",
+          "description": "Peter's withdrawal example 3",
+          "priority": 1
+        },
+        {
+          "code": "JF-PA4",
+          "description": "Peter's withdrawal example 4",
+          "priority": 1
+        },
+        {
+          "code": "JF-BS1",
+          "description": "R500K payment bank statement dated 16 July 2025",
+          "priority": 1
+        }
+      ],
+      "estimated_hours": 11
+    },
+    "phase3_bottlenecks": {
+      "name": "Complex Evidence Resolution",
+      "items": [
+        {
+          "code": "JF-DANIEL-STATEMENT",
+          "description": "Daniel witness statement - \"Has anything changed?\" exchange",
+          "priority": 1
+        },
+        {
+          "code": "JF5-DRAFT",
+          "description": "JF5 draft agreement initial version",
+          "priority": 1
+        },
+        {
+          "code": "JF5-FINAL",
+          "description": "JF5 final agreement signed version with changes",
+          "priority": 1
+        },
+        {
+          "code": "JF5-COMPARISON",
+          "description": "JF5 draft vs final comparison document",
+          "priority": 1
+        },
+        {
+          "code": "JF-RP1",
+          "description": "Responsible Person documentation for 37 jurisdictions",
+          "priority": 1
+        },
+        {
+          "code": "JF-RP2",
+          "description": "Regulatory risk analysis documentation",
+          "priority": 1
+        }
+      ],
+      "estimated_hours": 38,
+      "special_requirements": [
+        "Legal expertise required",
+        "Detailed document analysis",
+        "Expert testimony preparation"
+      ]
+    }
+  },
+  "automation_hooks": {
+    "progress_tracking": "./evidence-progress-tracker.js",
+    "hypergraph_integration": "./hypergraph_resolver.py",
+    "status_reporting": "./generate-evidence-report.js"
+  }
+}

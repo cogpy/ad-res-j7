@@ -1,0 +1,86 @@
+{
+  "integration_summary": {
+    "status": "SUCCESS",
+    "timestamp": "2025-10-16T04:24:49.787Z",
+    "evidence_completion_improvement": "6.8% (vs 4.0% baseline)",
+    "paragraph_coverage_improvement": "4.0% (vs 4.0% baseline)",
+    "bottlenecks_resolved": 0,
+    "optimization_impact": {
+      "hours_reduced": 51,
+      "percentage_improvement": "27.6%",
+      "days_saved": 7
+    }
+  },
+  "updated_statistics": {
+    "total_nodes": 121,
+    "total_edges": 76,
+    "nodes_by_type": {
+      "actor": 5,
+      "category": 7,
+      "paragraph": 50,
+      "evidence": 59
+    },
+    "edges_by_type": {
+      "categorization": 74,
+      "strategic_cluster": 2
+    },
+    "evidence_statistics": {
+      "total_evidence_items": 59,
+      "completed_evidence": 4,
+      "evidence_completion_rate": "6.8%",
+      "paragraph_coverage_rate": "4.0%"
+    },
+    "critical_path_updated": {
+      "bottlenecks_resolved": 0,
+      "remaining_critical_gaps": 13,
+      "optimization_impact": {
+        "hours_reduced": 51,
+        "percentage_improvement": "27.6%",
+        "days_saved": 7
+      }
+    }
+  },
+  "evidence_status": {
+    "total_required": 37,
+    "completed": 23,
+    "missing": 33,
+    "completion_rate": "62.2%"
+  },
+  "next_priority_actions": [
+    {
+      "code": "JF-PA1",
+      "description": "Peter's withdrawal example 1",
+      "priority": 1,
+      "estimated_hours": 2
+    },
+    {
+      "code": "JF-PA2",
+      "description": "Peter's withdrawal example 2",
+      "priority": 1,
+      "estimated_hours": 2
+    },
+    {
+      "code": "JF-PA3",
+      "description": "Peter's withdrawal example 3",
+      "priority": 1,
+      "estimated_hours": 2
+    },
+    {
+      "code": "JF-PA4",
+      "description": "Peter's withdrawal example 4",
+      "priority": 1,
+      "estimated_hours": 2
+    },
+    {
+      "code": "JF-BS1",
+      "description": "R500K payment bank statement dated 16 July 2025",
+      "priority": 1,
+      "estimated_hours": 3
+    }
+  ],
+  "recommendations": [
+    "URGENT: 19 critical evidence items missing. Focus on Priority 1 items first.",
+    "OPPORTUNITY: 5 quick wins available (≤3 hours each). Start with these for momentum.",
+    "PLANNING: 6 bottleneck items identified. Allocate dedicated time blocks for complex evidence."
+  ]
+}
