@@ -49,7 +49,8 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Purpose:** Bank statement showing R500,000 payment with clear reference demonstrating routine business transaction
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 457, Section 7.8.5.2, Lines 491, 497
-- **Status:** ⚠️ **Template** - Requires actual bank statement
+- **Status:** ✅ **OBTAINED** - Bank statement PDF on file (`evidence/bank_records/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`)
+- **Completion Status:** See `JF-BS1_COMPLETION_STATUS.md` for details
 
 ### Peter's Withdrawal Examples
 
@@ -185,11 +186,14 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 ## Document Status Legend:
 
 - ✅ **Complete:** Actual evidence inserted, ready for filing
+- ✅ **OBTAINED:** Source evidence obtained, template ready for data insertion
 - ⚠️ **Template:** Structure complete, requires actual evidence insertion
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status:** All annexures are ⚠️ **Template** status - critical evidence collection required.
+**Current Status Summary:**
+- ✅ **OBTAINED** (1): JF-BS1 (bank statement PDF on file)
+- ⚠️ **Template** (8): JF-RP1, JF-DLA1, JF-DLA2, JF-DLA3, JF-PA1, JF-PA2, JF-PA3, JF-PA4
 
 ---
 
