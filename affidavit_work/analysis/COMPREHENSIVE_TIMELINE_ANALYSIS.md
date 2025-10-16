@@ -64,7 +64,7 @@ This comprehensive timeline analysis documents the strategic coordination and ba
 | **19 August 2025** | Ex parte interdict granted | Based on false and incomplete information | Court order |
 | **25 August 2025** | Second Sage screenshot | Confirms ongoing Rynette control of Pete@regima.com | JF3A: Updated Sage screenshot |
 | **29 August 2025** | ENS Africa acknowledges criminal matters | "Received, thanks Daniel" - then suppresses information from Court | Email evidence |
-| **[Date TBD]** | Investment payout due | **9 months from interdict** - underlying financial motive | Family trust documentation |
+| **~May 2026** | Investment payout due (estimated) | **~9 months from interdict** - underlying financial motive | Family trust documentation |
 
 ---
 

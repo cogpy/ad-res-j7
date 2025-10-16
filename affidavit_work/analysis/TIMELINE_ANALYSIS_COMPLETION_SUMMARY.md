@@ -281,7 +281,7 @@ Peter → Court: "Documentation inadequate"
 
 **Evidence:**
 - Interdict granted: August 19, 2025
-- Investment payout: ~May 2026 (TBD - needs confirmation)
+- Investment payout: ~May 2026 (estimated - needs confirmation from trust documentation)
 - Gap: 9 months
 
 **Argument:** "Control seized for financial positioning, not business protection"
