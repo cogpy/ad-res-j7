@@ -81,6 +81,21 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
+### Settlement Agreement Evidence
+
+#### JF5-COMPARISON: Settlement Agreement Draft vs Final Comparison
+- **File:** `JF5_COMPARISON_DRAFT_VS_FINAL.md`
+- **Purpose:** Comprehensive comparison document highlighting all material changes made between JF5 draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48 (sub-paragraphs 48.1-48.10), Updated Paragraph 48
+- **Status:** ✅ **Complete** - Framework document ready; requires actual JF5 draft and final agreements to verify
+- **Key Evidence Points:**
+  - Documents the "Has anything changed?" dialogue and attorney misrepresentation
+  - Identifies 4 categories of material changes (control, oversight, scope, jurisdictional)
+  - Establishes fraud in the inducement grounds
+  - Connects to strategic litigation pattern (2 days between settlement and interdict)
+  - Cross-references Daniel's witness statement (JF-DAN-WITNESS)
+
 ---
 
 ## Strategic Framework
@@ -102,6 +117,11 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 4. **International Operations Legitimacy** (Section 3.3)
    - **JF-RP1:** Prove formal regulatory compliance across 37 jurisdictions
 
+5. **Settlement Agreement Manipulation** (Paragraph 48)
+   - **JF5-COMPARISON:** Documents fraud in the inducement through material undisclosed changes
+   - **Cross-references:** Daniel's witness statement establishing attorney misrepresentation
+   - **Strategic Pattern:** Connects settlement manipulation to broader litigation abuse (2 days to interdict filing)
+
 ### Evidence Integration Pattern:
 
 **Primary Evidence Chain:**
@@ -109,6 +129,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
 3. **JF-BS1** → Shows 16 July 2025 transaction details
 4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+5. **JF5-COMPARISON** → Establishes settlement agreement fraud in the inducement
 
 **Cross-Reference Network:**
 - All annexures cross-reference each other for consistency
