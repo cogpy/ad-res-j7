@@ -73,7 +73,7 @@ class HypergraphEvidenceIntegrator {
     
     this.hypergraphData.nodes.forEach(node => {
       if (node.type === 'paragraph') {
-        const paragraphId = node.id.replace('PARA_', '').replace('_', '_');
+        const paragraphId = node.id.replace('PARA_', '').replace(/_/g, '');
         const mapping = evidenceMapping[node.id] || evidenceMapping[paragraphId] || evidenceMapping[`PARA_${paragraphId}`];
         
         if (mapping && mapping.evidence_references) {
