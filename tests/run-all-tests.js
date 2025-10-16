@@ -9,6 +9,8 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const QualityFilterComprehensiveTest = require('./quality-filter-comprehensive-test.js');
+const ErrorScenariosComprehensiveTest = require('./error-scenarios-comprehensive-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -21,6 +23,8 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      qualityFilter: null,
+      errorScenarios: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -136,6 +140,43 @@ class TestRunner {
     return success;
   }
 
+  async runQualityFilterTests() {
+    console.log('\n📋 Running Quality Filter Comprehensive Tests...\n');
+    
+    const qualityFilterTest = new QualityFilterComprehensiveTest();
+    const success = qualityFilterTest.runAllTests();
+    
+    this.results.qualityFilter = {
+      success: success,
+      total: qualityFilterTest.testResults.length,
+      passed: qualityFilterTest.testResults.filter(t => t.passed).length,
+      failed: qualityFilterTest.testResults.filter(t => !t.passed).length,
+      errors: qualityFilterTest.errors,
+      filter_test_cases: qualityFilterTest.filterTestCases.length,
+      performance_metrics: qualityFilterTest.performanceMetrics
+    };
+    
+    return success;
+  }
+
+  async runErrorScenariosTests() {
+    console.log('\n📋 Running Error Scenarios Comprehensive Tests...\n');
+    
+    const errorScenariosTest = new ErrorScenariosComprehensiveTest();
+    const success = errorScenariosTest.runAllTests();
+    
+    this.results.errorScenarios = {
+      success: success,
+      total: errorScenariosTest.testResults.length,
+      passed: errorScenariosTest.testResults.filter(t => t.passed).length,
+      failed: errorScenariosTest.testResults.filter(t => !t.passed).length,
+      errors: errorScenariosTest.errors,
+      test_files_created: errorScenariosTest.testFileCleanup.length
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
     this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
@@ -144,19 +185,25 @@ class TestRunner {
                                        this.results.integration.total + 
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total;
+                                       this.results.endToEnd.total +
+                                       this.results.qualityFilter.total +
+                                       this.results.errorScenarios.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed;
+                                        this.results.endToEnd.passed +
+                                        this.results.qualityFilter.passed +
+                                        this.results.errorScenarios.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed;
+                                        this.results.endToEnd.failed +
+                                        this.results.qualityFilter.failed +
+                                        this.results.errorScenarios.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -197,6 +244,18 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
+    
+    console.log('\n🔍 Quality Filter Tests:');
+    console.log(`   ✅ Passed: ${this.results.qualityFilter.passed}/${this.results.qualityFilter.total}`);
+    console.log(`   ❌ Failed: ${this.results.qualityFilter.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.qualityFilter.passed / this.results.qualityFilter.total) * 100)}%`);
+    console.log(`   🧪 Test Cases: ${this.results.qualityFilter.filter_test_cases}`);
+    
+    console.log('\n⚠️  Error Scenarios Tests:');
+    console.log(`   ✅ Passed: ${this.results.errorScenarios.passed}/${this.results.errorScenarios.total}`);
+    console.log(`   ❌ Failed: ${this.results.errorScenarios.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.errorScenarios.passed / this.results.errorScenarios.total) * 100)}%`);
+    console.log(`   📁 Test Files: ${this.results.errorScenarios.test_files_created}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -259,6 +318,22 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.qualityFilter.errors.length > 0) {
+        console.log('   Quality Filter Test Failures:');
+        this.results.qualityFilter.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.errorScenarios.errors.length > 0) {
+        console.log('   Error Scenarios Test Failures:');
+        this.results.errorScenarios.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -279,7 +354,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'quality-filter', 'error-scenarios']
       },
       summary: this.results.overall
     });
@@ -299,6 +374,8 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const qualityFilterSuccess = await this.runQualityFilterTests();
+      const errorScenariosSuccess = await this.runErrorScenariosTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -310,7 +387,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && qualityFilterSuccess && errorScenariosSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
