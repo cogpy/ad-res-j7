@@ -6,6 +6,7 @@
     "test": "node tests/run-all-tests.js",
     "test:validation": "node tests/workflow-validation.test.js",
     "test:integration": "node tests/integration-test.js",
+    "test:api": "node tests/api-integration-tests.js",
     "test:comprehensive": "node tests/comprehensive-workflow-test.js",
     "test:security": "node tests/security-validation-test.js",
     "test:end-to-end": "node tests/end-to-end-workflow-test.js",

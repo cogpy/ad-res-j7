@@ -87,6 +87,7 @@ This document provides explicit cross-references and navigation between all anal
 ### Financial Analysis Integration  
 - **Primary:** `jax-response/financial-flows/` → Transaction analysis
 - **Supporting:** `evidence/bank_records/` → Raw bank data
+- **Cross-Reference:** `jax-response/analysis-output/FORENSIC_BANK_RECORDS_CROSS_REFERENCE.md` → 15 forensic events to bank records correlation
 - **Analysis:** `jax-response/analysis-output/FINAL_SUMMARY_v3.md` → Comprehensive summary
 
 ### Trust and Family Structure
@@ -113,8 +114,9 @@ This document provides explicit cross-references and navigation between all anal
 ### For Evidence Validation
 1. Matrix: `response_matrix.md` → Evidence trail for each allegation
 2. Forensic: `EVIDENCE_CROSS_REFERENCE.md` → Criminal evidence correlation  
-3. Financial: `jax-response/financial-flows/` → Transaction documentation
-4. Timeline: `jax-response/revenue-theft/FORENSIC_EVIDENCE_INDEX.md` → Event sequencing
+3. **Bank Records:** `FORENSIC_BANK_RECORDS_CROSS_REFERENCE.md` → 15 forensic events to bank records correlation
+4. Financial: `jax-response/financial-flows/` → Transaction documentation
+5. Timeline: `jax-response/revenue-theft/FORENSIC_EVIDENCE_INDEX.md` → Event sequencing
 
 ---
 

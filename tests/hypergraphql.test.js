@@ -289,7 +289,7 @@ class HypergraphQLTest {
     this.assert(events.length === 5, 'Case has 5 event entities');
     
     const evidence = hg.queryEntitiesByType('Evidence');
-    this.assert(evidence.length === 3, 'Case has 3 evidence entities');
+    this.assert(evidence.length === 7, 'Case has 7 evidence entities');
     
     // Test specific entities exist
     this.assert(hg.entities.has('peter-faucitt'), 'Peter Faucitt entity exists');
@@ -316,6 +316,65 @@ class HypergraphQLTest {
     this.assert(stats.totalRelations >= 10, 'Case has 10+ relation types');
   }
 
+  // Test AD Paragraph entities
+  testADParagraphs() {
+    console.log('\n🧪 Testing AD Paragraph Entities...');
+    
+    const hg = buildCase2025137857Hypergraph();
+    
+    // Test AD Paragraph entity type
+    const adParas = hg.queryEntitiesByType('ADParagraph');
+    this.assert(adParas.length === 50, 'Case has 50 AD paragraph entities');
+    
+    // Test AD Section entity type
+    const adSections = hg.queryEntitiesByType('AffidavitSection');
+    this.assert(adSections.length === 9, 'Case has 9 affidavit section entities');
+    
+    // Test critical AD paragraphs exist
+    this.assert(hg.entities.has('ad-para-7_2-7_5'), 'AD PARA 7.2-7.5 exists');
+    this.assert(hg.entities.has('ad-para-7_6'), 'AD PARA 7.6 exists');
+    this.assert(hg.entities.has('ad-para-10_5-10_10_23'), 'AD PARA 10.5-10.10.23 exists');
+    
+    // Test priority levels
+    const priority1Paras = adParas.filter(p => p.priority === 1);
+    this.assert(priority1Paras.length === 5, 'Case has 5 priority 1 paragraphs');
+    
+    const priority2Paras = adParas.filter(p => p.priority === 2);
+    this.assert(priority2Paras.length === 8, 'Case has 8 priority 2 paragraphs');
+    
+    const priority3Paras = adParas.filter(p => p.priority === 3);
+    this.assert(priority3Paras.length === 19, 'Case has 19 priority 3 paragraphs');
+    
+    const priority4Paras = adParas.filter(p => p.priority === 4);
+    this.assert(priority4Paras.length === 17, 'Case has 17 priority 4 paragraphs');
+    
+    const priority5Paras = adParas.filter(p => p.priority === 5);
+    this.assert(priority5Paras.length === 1, 'Case has 1 priority 5 paragraph');
+    
+    // Test AD paragraph relationships
+    const allegesLinks = hg.queryLinksByRelation('alleges-against');
+    this.assert(allegesLinks.length >= 5, 'AD paragraphs have allegations');
+    
+    const supportedByLinks = hg.queryLinksByRelation('supported-by');
+    this.assert(supportedByLinks.length >= 3, 'AD paragraphs reference evidence');
+    
+    const containedInLinks = hg.queryLinksByRelation('contained-in');
+    this.assert(containedInLinks.length >= 8, 'AD paragraphs contained in sections');
+    
+    // Test specific AD paragraph properties
+    const para725 = hg.entities.get('ad-para-7_2-7_5');
+    this.assert(para725.priority === 1, 'AD PARA 7.2-7.5 is priority 1');
+    this.assert(para725.topic === 'IT Expense Discrepancies', 'AD PARA 7.2-7.5 has correct topic');
+    
+    // Test Peter as author of sections
+    const authoredLinks = hg.queryLinksByRelation('authored');
+    this.assert(authoredLinks.length >= 3, 'Peter authored affidavit sections');
+    
+    // Test priority grouping
+    const priorityGroupLinks = hg.queryLinksByRelation('priority-group');
+    this.assert(priorityGroupLinks.length >= 4, 'Critical paragraphs are grouped');
+  }
+
   // Run all tests
   runAll() {
     console.log('═══════════════════════════════════════════════════════');
@@ -331,6 +390,7 @@ class HypergraphQLTest {
     this.testJSONOperations();
     this.testStatistics();
     this.testCase2025137857();
+    this.testADParagraphs();
 
     // Print summary
     console.log('\n═══════════════════════════════════════════════════════');

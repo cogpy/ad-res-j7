@@ -1,0 +1,107 @@
+[
+  {
+    "id": "bantjies_financial_control",
+    "name": "Bantjies Financial Control Architecture",
+    "description": "Hidden narrative: Bantjies systematically positions himself to control financial oversight and extraction mechanisms",
+    "timeline": [
+      [
+        "2024-07-01T00:00:00",
+        "Trustee appointment - Access to financial controls"
+      ],
+      [
+        "2024-10-01T00:00:00",
+        "Authority appointment - Investigation suppression powers"
+      ],
+      [
+        "2025-06-10T00:00:00",
+        "R10M identification - Threat confirmation"
+      ],
+      [
+        "2025-06-10T00:00:00",
+        "Holiday dismissal - Strategic abandonment"
+      ],
+      [
+        "2026-05-01T00:00:00",
+        "R18M payout target - Extraction objective"
+      ]
+    ],
+    "hidden_connections": [
+      "trustee_powers",
+      "extraction_preparation",
+      "oversight_suppression"
+    ],
+    "centrality_impacts": {
+      "bantjies": 0.3,
+      "daniel": -0.2
+    }
+  },
+  {
+    "id": "whistleblower_neutralization",
+    "name": "Systematic Whistleblower Neutralization",
+    "description": "Hidden narrative: Daniel's proper fraud reporting triggers coordinated legal punishment rather than investigation",
+    "timeline": [
+      [
+        "2025-06-06T00:00:00",
+        "Daniel reports fraud to proper authority (Bantjies)"
+      ],
+      [
+        "2025-06-07T00:00:00",
+        "Immediate coordination signal (card cancellations)"
+      ],
+      [
+        "2025-06-10T00:00:00",
+        "Strategic abandonment (holiday response)"
+      ],
+      [
+        "2025-08-13T00:00:00",
+        "Legal weaponization (ex parte interdict)"
+      ]
+    ],
+    "hidden_connections": [
+      "coordination_signals",
+      "process_weaponization",
+      "threat_elimination"
+    ],
+    "centrality_impacts": {
+      "daniel": -0.4,
+      "peter": -0.1,
+      "bantjies": 0.2
+    }
+  },
+  {
+    "id": "dual_layer_operation",
+    "name": "Dual-Layer Operation Architecture",
+    "description": "Hidden narrative: Public performance layer conceals private orchestration layer",
+    "timeline": [
+      [
+        "2025-06-07T00:00:00",
+        "PUBLIC: Peter cancels cards (appears independent)"
+      ],
+      [
+        "2025-06-07T00:00:00",
+        "PRIVATE: Coordination signal from Bantjies (hidden)"
+      ],
+      [
+        "2025-08-11T00:00:00",
+        "PUBLIC: Main trustee appointment (appears routine)"
+      ],
+      [
+        "2025-08-13T00:00:00",
+        "PUBLIC: Ex parte interdict (appears protective)"
+      ],
+      [
+        "2025-08-13T00:00:00",
+        "PRIVATE: Bantjies orchestration concealed (hidden)"
+      ]
+    ],
+    "hidden_connections": [
+      "dual_operation",
+      "concealment_architecture",
+      "public_private_split"
+    ],
+    "centrality_impacts": {
+      "bantjies": 0.25,
+      "peter": -0.15
+    }
+  }
+]

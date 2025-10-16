@@ -459,9 +459,21 @@ Ongoing system administration tasks:
 
 - **User access management**: Managing employee and contractor access to systems
 - **System monitoring**: Ensuring health and performance of all infrastructure
-- **Security updates**: Applying patches and security fixes
+- **Security updates and patches**: Critical security patches must be applied within 24-48 hours of release for production systems. This includes operating system updates, application framework patches, database security fixes, and third-party library updates. Emergency zero-day vulnerability patches require immediate deployment to prevent exploitation of e-commerce infrastructure and customer data breaches.
 - **Data backup**: Verifying successful backups and testing restoration procedures
 - **Vendor relationship management**: Negotiating contracts and managing service providers
+
+**4.3.4 Critical Security Update Process**
+
+The business operates in a high-threat environment requiring continuous security vigilance:
+
+- **Threat monitoring**: Daily monitoring of security advisories from Microsoft, Google, Shopify, Stripe, and other critical vendors
+- **Vulnerability assessment**: Weekly automated scans of all internet-facing systems and quarterly penetration testing
+- **Patch testing**: All security patches must be tested in staging environment before production deployment
+- **Emergency procedures**: Zero-day vulnerability response protocol requires system access within 2 hours of notification
+- **Compliance reporting**: Monthly security posture reports required for PCI-DSS and GDPR compliance audits
+
+**Business Impact**: Any delay in security updates creates immediate liability exposure. E-commerce systems processing customer payment data cannot remain unpatched without violating multiple compliance frameworks and exposing the business to potential data breach lawsuits.
 
 ---
 
@@ -625,7 +637,7 @@ The interdict prevents:
 - **Quarterly vulnerability scans**: Required every 90 days for PCI-DSS compliance
 - **Security monitoring**: Real-time threat detection and incident response
 - **Access control management**: Regular review and updates of system permissions
-- **Security patch application**: Critical updates to prevent vulnerabilities
+- **Security patch application**: Critical security patches must be deployed within PCI-DSS mandated timeframes (high-risk vulnerabilities within 30 days, critical vulnerabilities immediately). This includes server OS patches, payment processing system updates, SSL certificate renewals, and web application firewall rule updates. Failure to maintain current security patches results in automatic PCI-DSS compliance violations and potential loss of payment processing authorization.
 
 **Legal Consequence**: **Loss of authorization to process credit card payments**, effectively shutting down e-commerce operations.
 

@@ -1,0 +1,1010 @@
+{
+  "summary": {
+    "total_paragraphs": 50,
+    "by_priority": {
+      "critical": 5,
+      "high": 8,
+      "medium": 19,
+      "low": 17,
+      "meaningless": 1
+    },
+    "completion": {
+      "completed": 2,
+      "pending": 48
+    },
+    "evidence_coverage": {
+      "with_evidence": 2,
+      "without_evidence": 48
+    }
+  },
+  "paragraphs": [
+    {
+      "paragraph": "PARA_10_5-10_10_23",
+      "priority": {
+        "level": 1,
+        "name": "Critical",
+        "weight": 5
+      },
+      "topic": "Detailed Financial Allegations",
+      "claim": "Systematic financial misconduct",
+      "categories": [
+        "material_non_disclosure",
+        "peter_hypocrisy",
+        "financial_misconduct",
+        "disproportionate_harm"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/1-Critical/PARA_10_5-10_10_23.md"
+    },
+    {
+      "paragraph": "PARA_7_2-7_5",
+      "priority": {
+        "level": 1,
+        "name": "Critical",
+        "weight": 5
+      },
+      "topic": "IT Expense Discrepancies",
+      "claim": "Unexplained IT expenses",
+      "categories": [
+        "material_non_disclosure",
+        "peter_hypocrisy",
+        "responsible_person",
+        "business_disruption",
+        "financial_misconduct"
+      ],
+      "evidence_count": 21,
+      "evidence_refs": [
+        "JF1",
+        "JF3",
+        "JF5C",
+        "JF5",
+        "JF6D",
+        "JF5F",
+        "JF5A",
+        "JF5H",
+        "JF4A",
+        "JF4",
+        "JF5B",
+        "PF9",
+        "JF6",
+        "JF5E",
+        "JF5D",
+        "JF5G",
+        "JF5I",
+        "JF6C",
+        "PF10",
+        "JF6A",
+        "JF6B"
+      ],
+      "completed": true,
+      "file": "jax-response/AD/1-Critical/PARA_7_2-7_5.md"
+    },
+    {
+      "paragraph": "PARA_7_6",
+      "priority": {
+        "level": 1,
+        "name": "Critical",
+        "weight": 5
+      },
+      "topic": "R500K Payment",
+      "claim": "Unauthorized R500,000 payment to Jax",
+      "categories": [
+        "material_non_disclosure",
+        "financial_misconduct"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/1-Critical/PARA_7_6.md"
+    },
+    {
+      "paragraph": "PARA_7_7-7_8",
+      "priority": {
+        "level": 1,
+        "name": "Critical",
+        "weight": 5
+      },
+      "topic": "R500K Payment Details",
+      "claim": "Payment made without authorization",
+      "categories": [
+        "material_non_disclosure",
+        "peter_hypocrisy",
+        "disproportionate_harm",
+        "timing_suspicious",
+        "financial_misconduct"
+      ],
+      "evidence_count": 1,
+      "evidence_refs": [
+        "JF"
+      ],
+      "completed": false,
+      "file": "jax-response/AD/1-Critical/PARA_7_7-7_8.md"
+    },
+    {
+      "paragraph": "PARA_7_9-7_11",
+      "priority": {
+        "level": 1,
+        "name": "Critical",
+        "weight": 5
+      },
+      "topic": "Payment Justification",
+      "claim": "No legitimate business purpose",
+      "categories": [
+        "material_non_disclosure",
+        "peter_hypocrisy",
+        "financial_misconduct",
+        "responsible_person"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/1-Critical/PARA_7_9-7_11.md"
+    },
+    {
+      "paragraph": "PARA_11-11_5",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Urgency",
+      "claim": "Urgent need for interdict",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_11-11_5.md"
+    },
+    {
+      "paragraph": "PARA_13-13_1",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Interim Relief",
+      "claim": "Interim relief necessary",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_13-13_1.md"
+    },
+    {
+      "paragraph": "PARA_3-3_10",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Respondent Identification",
+      "claim": "Identification of parties",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_3-3_10.md"
+    },
+    {
+      "paragraph": "PARA_3_11-3_13",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Jax's Role",
+      "claim": "Jax's position in companies",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_3_11-3_13.md"
+    },
+    {
+      "paragraph": "PARA_7_12-7_13",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Accountant Concerns",
+      "claim": "Accountant raised concerns",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_7_12-7_13.md"
+    },
+    {
+      "paragraph": "PARA_7_14-7_15",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Documentation Requests",
+      "claim": "Documentation not provided / Daniel \"obstructing staff\"",
+      "categories": [
+        "material_non_disclosure",
+        "responsible_person",
+        "timing_suspicious",
+        "business_disruption",
+        "financial_misconduct"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": true,
+      "file": "jax-response/AD/2-High-Priority/PARA_7_14-7_15.md"
+    },
+    {
+      "paragraph": "PARA_8-8_3",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Peter's Discovery",
+      "claim": "Peter discovered irregularities",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_8-8_3.md"
+    },
+    {
+      "paragraph": "PARA_8_4",
+      "priority": {
+        "level": 2,
+        "name": "High Priority",
+        "weight": 4
+      },
+      "topic": "Confrontation",
+      "claim": "Peter confronted Jax",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/2-High-Priority/PARA_8_4.md"
+    },
+    {
+      "paragraph": "PARA_10-10_3",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Relief Sought Introduction",
+      "claim": "Introduction to relief",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_10-10_3.md"
+    },
+    {
+      "paragraph": "PARA_10_4",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Specific Relief",
+      "claim": "Specific relief requested",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_10_4.md"
+    },
+    {
+      "paragraph": "PARA_11_6-11_9",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Urgency Details",
+      "claim": "Details of urgent circumstances",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_11_6-11_9.md"
+    },
+    {
+      "paragraph": "PARA_12-12_1",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Balance of Convenience",
+      "claim": "Balance favors Peter",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12-12_1.md"
+    },
+    {
+      "paragraph": "PARA_12_2",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Harm to Peter",
+      "claim": "Harm if relief not granted",
+      "categories": [
+        "material_non_disclosure",
+        "disproportionate_harm"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12_2.md"
+    },
+    {
+      "paragraph": "PARA_12_3",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Harm to Jax",
+      "claim": "Minimal harm to Jax",
+      "categories": [
+        "material_non_disclosure",
+        "disproportionate_harm"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_12_3.md"
+    },
+    {
+      "paragraph": "PARA_13_2-13_2_2",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Interim Relief Details",
+      "claim": "Details of interim measures",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_13_2-13_2_2.md"
+    },
+    {
+      "paragraph": "PARA_13_3",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Final Relief",
+      "claim": "Final relief sought",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_13_3.md"
+    },
+    {
+      "paragraph": "PARA_14-14_2",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Costs",
+      "claim": "Costs should follow result",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_14-14_2.md"
+    },
+    {
+      "paragraph": "PARA_16-16_5",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Service",
+      "claim": "Service arrangements",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_16-16_5.md"
+    },
+    {
+      "paragraph": "PARA_7-7_1",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Accountant Attendance",
+      "claim": "Accountant attended office",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7-7_1.md"
+    },
+    {
+      "paragraph": "PARA_7_16-7_17",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Further Irregularities",
+      "claim": "Additional irregularities found",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7_16-7_17.md"
+    },
+    {
+      "paragraph": "PARA_7_18-7_20",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Pattern of Conduct",
+      "claim": "Pattern of unauthorized transactions",
+      "categories": [
+        "material_non_disclosure",
+        "financial_misconduct"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_7_18-7_20.md"
+    },
+    {
+      "paragraph": "PARA_8_5",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Jax's Response",
+      "claim": "Jax's inadequate response",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_5.md"
+    },
+    {
+      "paragraph": "PARA_8_6",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Continued Concerns",
+      "claim": "Ongoing concerns about conduct",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_6.md"
+    },
+    {
+      "paragraph": "PARA_8_7",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Business Impact",
+      "claim": "Impact on business operations",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_7.md"
+    },
+    {
+      "paragraph": "PARA_8_8-8_10",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Financial Harm",
+      "claim": "Financial harm to companies",
+      "categories": [
+        "material_non_disclosure",
+        "financial_misconduct",
+        "disproportionate_harm"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_8_8-8_10.md"
+    },
+    {
+      "paragraph": "PARA_9-9_3",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Legal Basis",
+      "claim": "Legal basis for relief",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_9-9_3.md"
+    },
+    {
+      "paragraph": "PARA_9_4",
+      "priority": {
+        "level": 3,
+        "name": "Medium Priority",
+        "weight": 3
+      },
+      "topic": "Statutory Authority",
+      "claim": "Companies Act authority",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/3-Medium-Priority/PARA_9_4.md"
+    },
+    {
+      "paragraph": "PARA_1-1_3",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Introduction",
+      "claim": "Peter's introduction",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_1-1_3.md"
+    },
+    {
+      "paragraph": "PARA_10_11",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Additional Relief",
+      "claim": "Additional orders sought",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_11.md"
+    },
+    {
+      "paragraph": "PARA_10_12",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Further Relief",
+      "claim": "Further relief if needed",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_12.md"
+    },
+    {
+      "paragraph": "PARA_10_13",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Alternative Relief",
+      "claim": "Alternative relief",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_10_13.md"
+    },
+    {
+      "paragraph": "PARA_12_4",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Balance Conclusion",
+      "claim": "Balance of convenience conclusion",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_12_4.md"
+    },
+    {
+      "paragraph": "PARA_13_4",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Interim Measures",
+      "claim": "Interim measures justified",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_4.md"
+    },
+    {
+      "paragraph": "PARA_13_5",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Urgency Justification",
+      "claim": "Urgency justified",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_5.md"
+    },
+    {
+      "paragraph": "PARA_13_6-13_7",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Final Orders",
+      "claim": "Final orders requested",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_13_6-13_7.md"
+    },
+    {
+      "paragraph": "PARA_14_3",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Costs on Scale",
+      "claim": "Costs on attorney-client scale",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_3.md"
+    },
+    {
+      "paragraph": "PARA_14_4",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Punitive Costs",
+      "claim": "Punitive costs justified",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_4.md"
+    },
+    {
+      "paragraph": "PARA_14_5",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Costs Conclusion",
+      "claim": "Costs conclusion",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_14_5.md"
+    },
+    {
+      "paragraph": "PARA_16_6",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Service Details",
+      "claim": "Service details",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_16_6.md"
+    },
+    {
+      "paragraph": "PARA_16_7",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Service Conclusion",
+      "claim": "Service conclusion",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_16_7.md"
+    },
+    {
+      "paragraph": "PARA_2-2_4",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Capacity",
+      "claim": "Peter's capacity to bring application",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_2-2_4.md"
+    },
+    {
+      "paragraph": "PARA_4",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Jurisdiction",
+      "claim": "Court has jurisdiction",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_4.md"
+    },
+    {
+      "paragraph": "PARA_5",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Locus Standi",
+      "claim": "Peter has standing",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_5.md"
+    },
+    {
+      "paragraph": "PARA_6-6_5",
+      "priority": {
+        "level": 4,
+        "name": "Low Priority",
+        "weight": 2
+      },
+      "topic": "Corporate Structure",
+      "claim": "Description of companies",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/4-Low-Priority/PARA_6-6_5.md"
+    },
+    {
+      "paragraph": "PARA_15",
+      "priority": {
+        "level": 5,
+        "name": "Meaningless",
+        "weight": 1
+      },
+      "topic": "Conclusion",
+      "claim": "Formal conclusion",
+      "categories": [
+        "material_non_disclosure"
+      ],
+      "evidence_count": 0,
+      "evidence_refs": [],
+      "completed": false,
+      "file": "jax-response/AD/5-Meaningless/PARA_15.md"
+    }
+  ],
+  "by_category": {
+    "material_non_disclosure": [
+      "PARA_10_5-10_10_23",
+      "PARA_7_2-7_5",
+      "PARA_7_6",
+      "PARA_7_7-7_8",
+      "PARA_7_9-7_11",
+      "PARA_11-11_5",
+      "PARA_13-13_1",
+      "PARA_3-3_10",
+      "PARA_3_11-3_13",
+      "PARA_7_12-7_13",
+      "PARA_7_14-7_15",
+      "PARA_8-8_3",
+      "PARA_8_4",
+      "PARA_10-10_3",
+      "PARA_10_4",
+      "PARA_11_6-11_9",
+      "PARA_12-12_1",
+      "PARA_12_2",
+      "PARA_12_3",
+      "PARA_13_2-13_2_2",
+      "PARA_13_3",
+      "PARA_14-14_2",
+      "PARA_16-16_5",
+      "PARA_7-7_1",
+      "PARA_7_16-7_17",
+      "PARA_7_18-7_20",
+      "PARA_8_5",
+      "PARA_8_6",
+      "PARA_8_7",
+      "PARA_8_8-8_10",
+      "PARA_9-9_3",
+      "PARA_9_4",
+      "PARA_1-1_3",
+      "PARA_10_11",
+      "PARA_10_12",
+      "PARA_10_13",
+      "PARA_12_4",
+      "PARA_13_4",
+      "PARA_13_5",
+      "PARA_13_6-13_7",
+      "PARA_14_3",
+      "PARA_14_4",
+      "PARA_14_5",
+      "PARA_16_6",
+      "PARA_16_7",
+      "PARA_2-2_4",
+      "PARA_4",
+      "PARA_5",
+      "PARA_6-6_5",
+      "PARA_15"
+    ],
+    "peter_hypocrisy": [
+      "PARA_10_5-10_10_23",
+      "PARA_7_2-7_5",
+      "PARA_7_7-7_8",
+      "PARA_7_9-7_11"
+    ],
+    "financial_misconduct": [
+      "PARA_10_5-10_10_23",
+      "PARA_7_2-7_5",
+      "PARA_7_6",
+      "PARA_7_7-7_8",
+      "PARA_7_9-7_11",
+      "PARA_7_14-7_15",
+      "PARA_7_18-7_20",
+      "PARA_8_8-8_10"
+    ],
+    "disproportionate_harm": [
+      "PARA_10_5-10_10_23",
+      "PARA_7_7-7_8",
+      "PARA_12_2",
+      "PARA_12_3",
+      "PARA_8_8-8_10"
+    ],
+    "responsible_person": [
+      "PARA_7_2-7_5",
+      "PARA_7_9-7_11",
+      "PARA_7_14-7_15"
+    ],
+    "business_disruption": [
+      "PARA_7_2-7_5",
+      "PARA_7_14-7_15"
+    ],
+    "timing_suspicious": [
+      "PARA_7_7-7_8",
+      "PARA_7_14-7_15"
+    ]
+  }
+}
