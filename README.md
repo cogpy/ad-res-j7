@@ -20,7 +20,7 @@ The repository is organized into the following key directories:
 - **`case_2025_137857/`**: Contains all documents directly related to the court case, including court filings, evidence, and legal analysis.
 - **`affidavit_work/`**: Contains the analysis and drafts of the affidavits.
 - **`evidence/`**: Contains raw evidence, such as bank records, Shopify reports, and invoices.
-- **`jax-dan-response/`**: Contains the specific response of Jacqueline and Daniel Faucitt, including their analysis and evidence.
+- **`jax-response/`**: Contains the consolidated response of Jacqueline and Daniel Faucitt, including their comprehensive analysis and evidence (previously split across jax-response and jax-dan-response directories).
 - **`docs/`**: Contains additional documentation, including technical and legal analysis.
 - **`tools/`**: Contains scripts and tools used for analysis.
 - **`config/`**: Contains configuration files for the tools.
@@ -30,7 +30,7 @@ The repository is organized into the following key directories:
 To understand the case, it is recommended to start with the following documents:
 
 1.  **Court Application:** `case_2025_137857/01_court_documents/KF0019-SecondApplication-03.10.2025.pdf`
-2.  **Draft Response:** `jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`
+2.  **Draft Response:** `jax-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx`
 3.  **Affidavit Analysis Summary:** `affidavit_work/analysis/Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx`
 4.  **NEW: Comprehensive Timeline Analysis:** `affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Demonstrates Peter's bad faith through strategic coordination
 

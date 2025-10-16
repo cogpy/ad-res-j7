@@ -48,9 +48,9 @@
           "content": "This directory contains raw evidence collected for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`bank_records/`**: Contains personal and business bank records.\n- **`shopify_reports/`**: Contains sales and financial reports from Shopify.\n- **`invoices/`**: Contains invoices for various business expenses.\n- **`correspondence/`**: Contains email and other correspondence relevant to the case."
         },
         {
-          "heading": "`jax-dan-response/`",
+          "heading": "~~`jax-dan-response/`~~ (CONSOLIDATED)",
           "level": 3,
-          "content": "This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:\n\n- **`AD/`**: Contains documents related to the \"AD Response J7\" project.\n- **`analysis-output/`**: Contains output from the analysis of the case.\n- **`evidence-attachments/`**: Contains evidence attached to the responding affidavit.\n- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit.\n- **`financial-analysis/`**: Contains detailed financial analysis to refute the applicant's claims."
+          "content": "**DIRECTORY CONSOLIDATED:** This directory has been merged with `jax-response/` to eliminate duplication. All unique content has been moved to the consolidated `jax-response/` directory which now contains the complete response materials from both Jacqueline and Daniel Faucitt."
         },
         {
           "heading": "`tools/`",
