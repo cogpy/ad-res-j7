@@ -81,6 +81,16 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
+### UK Tax Residency Documentation
+
+#### JF-UKTAX1: UK Tax Residency Documentation
+- **File:** `JF-UKTAX1_UK_TAX_RESIDENCY_DOCUMENTATION.md`
+- **Purpose:** UK tax residency documentation supporting Daniel's management of RegimA UK Ltd operations and cross-border business structure
+- **Priority:** CRITICAL 
+- **Affidavit References:** Paragraph 129 (UK operations section)
+- **Status:** ⚠️ **Template** - Requires actual UK tax documentation
+- **Added:** 2025-10-16
+
 ---
 
 ## Strategic Framework
