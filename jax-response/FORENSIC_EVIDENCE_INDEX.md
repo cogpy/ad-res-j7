@@ -207,12 +207,14 @@ POPI VIOLATIONS:
 | May 29, 2025 | Domain registration | B | Network analysis | ⚠️ REQUIRES SUBPOENA |
 | June 20, 2025 | Instruction evidence | B | Witness testimony | ⚠️ REQUIRES LOCATION |
 | July 8, 2025 | POPI violations | A | Compliance directive | ✅ VALIDATED |
+| **HISTORICAL** | **Chesno fraud pattern** | **A** | **Professional/Legal docs** | ⚠️ **REQUIRES COLLECTION** |
 
 ### Cross-Evidence Validation
 - **Financial correlation:** Bank statements validate Shopify performance data
 - **Timeline correlation:** All events fit coordinated conspiracy pattern
 - **Witness correlation:** Administrative personnel involved across multiple events
 - **Technical correlation:** IT systems targeted systematically
+- **Historical pattern correlation:** Chesno fraud evidence establishes Peter's modus operandi pattern
 
 ---
 
@@ -378,14 +380,51 @@ TOTAL REGULATORY EXPOSURE: R 50,000,000.00+
 **Retention Period:** Per criminal case requirements  
 **Destruction Schedule:** Post-prosecution completion + appeals period
 
-**Last Updated:** October 13, 2025  
-**Version:** 1.0  
+---
+
+## 📁 HISTORICAL PATTERN EVIDENCE - CHESNO FRAUD PRECEDENT
+
+### CATEGORY 6: CHESNO FRAUD DOCUMENTATION
+**Folder:** `evidence/annexures/`  
+**Timeline:** [Historical - dates to be determined]  
+**Evidence Quality:** Grade A (Professional forensic and legal documentation required)
+
+**Key Evidence Files:**
+- `JF-CHESNO1_FORENSIC_ACCOUNTING_REPORTS.md` - Professional forensic analysis of fraud
+- `JF-CHESNO2_BANK_STATEMENTS_UNAUTHORIZED_TRANSFERS.md` - Banking evidence of unauthorized activities
+- `JF-CHESNO3_POLICE_REPORTS_FRAUD_INVESTIGATION.md` - Official law enforcement documentation
+- `JF-CHESNO4_INSOLVENCY_ASSESSMENT_PRE_DANIEL.md` - Professional insolvency assessment
+
+**Historical Pattern Elements:**
+- Peter's unconditional contract with unsuitable party (Chesno)
+- Criminal fraud targeting business operations
+- Peter's abandonment when crisis emerged
+- Daniel's business rescue intervention
+- **IDENTICAL PATTERN TO CURRENT CASE**
+
+**Legal Significance - Historical Precedent:**
+- Establishes Peter's modus operandi of poor decisions and abandonment
+- Demonstrates Daniel's consistent role as business rescuer, not wrongdoer
+- Refutes Peter's characterization of Daniel's involvement as "arising from wrongdoing"
+- Supports Clean Hands Doctrine - Peter created problems he now complains about
+- Pattern evidence for estoppel and bad faith arguments
+
+**Cross-References:**
+- Current case revenue hijacking analysis (Categories 1-5)
+- Paragraph 129 affidavit corrections
+- Section 11.1.1 directorship characterization
+- Strategic defense arguments throughout case
+
+---
+
+**Last Updated:** October 16, 2025  
+**Version:** 1.1 - Added Chesno Fraud Historical Pattern Evidence  
 **Next Review:** Upon evidence collection completion  
 
 ---
 
 **CASE CONTACT INFORMATION:**  
 **Case Number:** 2025-137857  
-**Investigation Type:** Criminal Conspiracy - Revenue Hijacking  
+**Investigation Type:** Criminal Conspiracy - Revenue Hijacking + Historical Pattern Analysis  
 **Lead Agency:** [To be determined based on jurisdictional analysis]  
 **Supporting Agencies:** Hawks (DPCI), Information Regulator, NPA
