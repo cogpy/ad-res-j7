@@ -1,130 +1,170 @@
-# JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
-## Evidence Reference: JF5-DRAFT
-## Date: 11 August 2025 (Initial Draft)
+# JF5-DRAFT: Settlement Agreement - Reconstructed Pre-Final-Changes Version
+## Evidence Reference: JF5-DRAFT (RECONSTRUCTED)
+## Date: 11 August 2025 (Before Clauses 2.6 and 3 Added)
 ## Case: 2025-137857
 
 ---
 
-## Document Classification
-- **Evidence Type:** Primary Legal Document - Draft Version
-- **Authentication Status:** Verified Original Draft
-- **Chain of Custody:** Secured Legal Documentation
-- **Relevance:** Critical - Demonstrates Original Agreement Terms
+## ⚠️ CRITICAL EVIDENTIARY LIMITATION
+
+**MEDIATION AGREEMENT RESTRICTION:**
+- All mediation discussions were "off-the-record"
+- Parties instructed: draft copies NOT admissible as evidence
+- Parties instructed: mediation discussions NOT admissible
+- **This document is a RECONSTRUCTION based on inference from final agreement**
+
+**WHAT WE KNOW:**
+- Clauses 2.6 and Section 3 were added in the **last 5 minutes** before signing
+- Final agreement has incoherent terminology and duplicate clauses
+- Agreement signed same day as mediation (11 August 2025)
+- Daniel asked if anything had changed (timing unclear - during or after mediation)
+
+**WHAT WE CAN INFER:**
+The version read before the last-minute additions likely:
+- Did NOT have Clause 2.6 (cost provision)
+- Did NOT have Section 3 (duplicate cost provision)
+- Possibly had more coherent terminology (before hasty edits)
 
 ---
 
-## Settlement Agreement - Initial Draft Version
+## Reconstructed Agreement - Version Before Last-Minute Changes
 ### Between Peter Faucitt and Jacqueline Faucitt & Daniel Faucitt
 
-**Date:** 11 August 2025  
-**Matter:** Family Dispute Resolution - Case 2025-137857  
+**Date:** 11 August 2025 (before final 5-minute additions)
+**Context:** Off-the-record mediation, this is reconstructed version
 
 ---
 
-### CLAUSE 1: PSYCHIATRIC EVALUATIONS AND DRUG SCREENING
+## CLAUSES THAT LIKELY EXISTED IN PRE-FINAL VERSION
 
-#### 1.1 Scope of Evaluations
-The **parties** agree to undergo psychiatric evaluations and drug screening as follows:
+### CLAUSE 2: MEDICAL ASSESSMENTS AND TREATMENTS
 
-1. Both Jax and Daniel will submit to a once-off psychiatric evaluation
-2. Such evaluation to be conducted by a qualified psychiatrist
-3. Both parties will undergo drug screening as part of the evaluation process
-4. The evaluation scope is limited to current mental health status assessment
+#### 2.1 Initial Assessments
+[Full text of initial psychiatric evaluations and drug screening requirements]
 
-#### 1.2 Professional Selection Process
-1. The **parties** shall jointly select the qualified psychiatrist
-2. In the event of disagreement on selection, the **Gauteng Family Law Forum** shall provide a neutral recommendation
-3. The selected professional must be:
-   - Registered with the Health Professions Council of South Africa (HPCSA)
-   - Independent and impartial
-   - Experienced in family law related evaluations
+#### 2.2 Ongoing Treatments Clause
+**"The parties agree to undergo any further tests/assessments and/or treatments that may be directed by the psychiatric professional."**
 
-#### 1.3 Process and Timeline
-1. Evaluations to be completed within 30 days of agreement signing
-2. **Parties** to schedule appointments directly with selected professional
-3. Results to be provided to all **parties** simultaneously
-4. Each **party** responsible for their own evaluation costs (estimated R3,000-R5,000 per person)
+**NOTE:** This clause appears in final - likely in earlier version but may have had different wording
 
-#### 1.4 Use of Results
-1. Results are for family resolution purposes only
-2. No party may use results for punitive measures
-3. Results cannot be used to restrict parental rights without court order
-4. Professional's opinion is advisory only, not binding
+#### 2.3 Professional Selection by Attorneys
+**"The service providers and/or medical professionals to conduct the tests set out in clause 2.1 above will be jointly agreed to by the parties' attorneys."**
 
-#### 1.5 Jurisdictional Considerations
-1. This agreement accommodates the fact that Jax and Daniel are UK tax residents
-2. Their legal capacity in South Africa is limited to economic agreements and taxation matters
-3. This private agreement is specifically designed to work within these limitations
-4. **Parties** retain control over the process as private individuals
+**PROBLEMS:**
+- Already shows attorney control, not party control
+- Inconsistent with "parties agree" language in 2.2
+- Only addresses 2.1, not 2.2 ongoing treatments
 
-#### 1.6 Failsafe Mechanisms
-1. **Gauteng Family Law Forum** serves as neutral arbiter for disputes
-2. Either **party** may withdraw from the agreement with 7 days written notice
-3. No ongoing obligations beyond the specified once-off evaluations
-4. Clear cost and scope limitations as specified above
+#### 2.4 Gauteng Family Law Forum Fallback
+**"By failure of such agreement, the attorneys' for the parties shall request the appointment of such expert by the Gauteng Family Law Forum, and shall be bound to the appointment made in terms thereof."**
+
+#### 2.5 Reports to Attorneys
+**"The reports prepared by the medical professionals will be provided to the parties' attorneys."**
+
+**END OF PRE-FINAL VERSION** (Before 2.6 and Section 3 added)
 
 ---
 
-### CLAUSE 2: GENERAL PROVISIONS
+## CLAUSES ADDED IN LAST 5 MINUTES
 
-#### 2.1 Voluntary Nature
-This agreement is entered into voluntarily by all **parties** without coercion or undue influence.
+### ⚠️ CLAUSE 2.6 (ADDED IN FINAL 5 MINUTES)
+**"The costs of these medical assessments shall be borne by each party individually."**
 
-#### 2.2 Good Faith
-All **parties** agree to act in good faith in implementing this agreement.
+**EVIDENCE OF LAST-MINUTE ADDITION:**
+- Not present when parties reviewed agreement
+- Added in rushed final 5 minutes
+- First mention of individual cost responsibility
+- No cost caps or limitations
+- Vague "these medical assessments" - scope unclear
 
-#### 2.3 Entire Agreement
-This document represents the entire agreement between the **parties** regarding psychiatric evaluations and drug screening.
+### ⚠️ SECTION 3: COSTS (ADDED IN FINAL 5 MINUTES)
+**"Save for the costs referred to in paragraph 2.6 above, each party will bear their own costs."**
 
-#### 2.4 Governing Law
-This agreement is governed by South African law, subject to the jurisdictional limitations noted above.
-
----
-
-### SIGNATURES
-
-**Peter Faucitt**  
-Date: ________________  
-Signature: ________________  
-
-**Jacqueline Faucitt**  
-Date: ________________  
-Signature: ________________  
-
-**Daniel Faucitt**  
-Date: ________________  
-Signature: ________________  
+**EVIDENCE OF LAST-MINUTE ADDITION:**
+- Entire section added in final 5 minutes
+- Duplicates 2.6 (proves rushed addition)
+- Circular logic: "save for 2.6" then repeats 2.6
+- Both 2.6 and 3 added together in final rush
 
 ---
 
-## Evidence Authentication Notes
+## WHAT THIS RECONSTRUCTION DEMONSTRATES
 
-### Verification Details
-- **Document Status:** Original draft version as reviewed by parties
-- **Modification History:** No modifications - original terms as agreed
-- **Review Date:** 11 August 2025
-- **Final Review Status:** Approved by all parties before attorney modifications
+### Even WITHOUT Admissible Drafts, We Can Prove:
 
-### Key Original Terms (Critical Evidence)
-1. **Party Control:** All references to "parties" - direct party involvement
-2. **Neutral Arbiter:** Gauteng Family Law Forum as failsafe mechanism  
-3. **Limited Scope:** Once-off evaluation only, no ongoing treatments
-4. **Cost Limitations:** Clear financial boundaries (R3,000-R5,000 per person)
-5. **Voluntary Participation:** Either party could withdraw with notice
-6. **Jurisdictional Accommodation:** Specifically designed for UK tax residents
+#### 1. Last-Minute Changes (Provable)
+- Clauses 2.6 and Section 3 added in final 5 minutes
+- No time for proper review of additions
+- Duplicate clauses prove rushed, incoherent drafting
 
-### Legal Significance
-This draft version demonstrates the original intention of all parties to maintain:
-- Direct party control over the process
-- Limited, once-off scope
-- Clear cost boundaries
-- Neutral arbitration mechanism
-- Accommodation for UK tax residency status
+#### 2. Incoherent Terminology (Provable)
+- "Psychiatric professional" (2.2) vs "service providers and/or medical professionals" (2.3)
+- "Medical professionals" (2.5) vs "expert" (2.4)
+- Shifting terms prove multiple hasty edits without coherence check
 
-These terms were materially altered in the final version without proper disclosure to the signing parties.
+#### 3. Missing Procedures (Provable)
+- Clause 2.2 creates ongoing treatment obligation
+- No selection procedure for 2.2 professionals
+- Clause 2.3 only addresses 2.1, ignoring 2.2
+
+#### 4. Same-Day Rush (Provable)
+- Mediation and signing same day (11 August 2025)
+- No cooling-off period
+- Pressure to sign immediately after mediation
+
+#### 5. Unlimited Scope (Provable)
+- "Any further tests/assessments and/or treatments"
+- No caps on cost despite individual payment
+- Open-ended obligations
 
 ---
 
-**Chain of Evidence:** Secured → Legal Review → Affidavit Annexure JF5-DRAFT  
-**Cross-Reference:** See JF5-FINAL for fraudulent final version, JF5-COMPARISON for detailed analysis  
-**Related Evidence:** Daniel's witness statement, UK tax residency documentation, attorney correspondence
+## LEGAL STRATEGY WITHOUT INADMISSIBLE EVIDENCE
+
+### Focus on What IS Admissible:
+
+#### A. The Final Agreement Itself
+- Shows incoherent drafting
+- Shows duplicate clauses
+- Shows missing procedures
+- Shows unlimited scope
+
+#### B. The Last-Minute Additions
+- Testimony that 2.6 and 3 were added in final 5 minutes
+- No review time for these additions
+- Duplicate nature proves rush
+
+#### C. Unconscionability (Not Fraud)
+Given evidentiary limitations, argue:
+- **Procedural Unconscionability:** Same-day rush, last-minute changes, no review
+- **Substantive Unconscionability:** Unlimited scope, incoherent terms, attorney control
+
+#### D. Lack of Meeting of Minds
+- Terminology confusion prevents clear agreement
+- Missing procedures show incomplete agreement
+- Duplicate clauses show no final coherent version
+
+---
+
+## EVIDENTIARY LIMITATIONS ACKNOWLEDGED
+
+**CANNOT Use:**
+- ❌ Draft copies from mediation
+- ❌ Discussions during mediation
+- ❌ What was originally agreed during off-the-record talks
+- ❌ Changes made during mediation process
+
+**CAN Use:**
+- ✅ Final signed agreement
+- ✅ Incoherent terms in final agreement
+- ✅ Duplicate clauses in final agreement
+- ✅ Testimony about last-minute additions (if after mediation concluded)
+- ✅ Same-day timeline
+- ✅ Missing procedures and definitions
+- ✅ Unlimited scope and costs
+
+---
+
+**Chain of Evidence:** Reconstructed from Final Agreement → Analysis of Provable Issues  
+**Cross-Reference:** See JF5-FINAL for actual signed version, JF5-COMPARISON for what can be proven  
+**Legal Strategy:** Focus on unconscionability and incoherence, not fraud (given evidentiary limits)
