@@ -204,8 +204,8 @@ class OptimalStrategyImplementation {
       category: 'disproportionate_harm',
       name: 'Quantified Harm Analysis',
       priority: 1,
-      status: 'pending',
-      file: null,
+      status: 'completed',
+      file: 'jax-dan-response/quantified_harm_analysis.md',
       impact: 'Demonstrate 36:1 harm ratio',
       estimatedHours: 12,
       dependencies: ['STRAT-001', 'STRAT-004', 'STRAT-005']
@@ -216,8 +216,8 @@ class OptimalStrategyImplementation {
       category: 'material_non_disclosure',
       name: 'Comprehensive Material Non-Disclosure Summary',
       priority: 1,
-      status: 'pending',
-      file: null,
+      status: 'completed',
+      file: 'jax-dan-response/comprehensive_material_non_disclosure.md',
       impact: 'Consolidated evidence for setting aside interdict',
       estimatedHours: 16,
       dependencies: ['STRAT-001', 'STRAT-002', 'STRAT-003', 'STRAT-006']

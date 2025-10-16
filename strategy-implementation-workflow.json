@@ -2,44 +2,12 @@
   "name": "Optimal Strategy Implementation Workflow",
   "version": "1.0",
   "case": "Case 2025-137857",
-  "generated": "2025-10-16T13:03:10.632Z",
+  "generated": "2025-10-16T13:08:51.500Z",
   "phases": {
     "phase1_critical": {
       "name": "Critical Strategy Implementation",
-      "strategies": [
-        {
-          "id": "STRAT-006",
-          "category": "disproportionate_harm",
-          "name": "Quantified Harm Analysis",
-          "priority": 1,
-          "status": "pending",
-          "file": null,
-          "impact": "Demonstrate 36:1 harm ratio",
-          "estimatedHours": 12,
-          "dependencies": [
-            "STRAT-001",
-            "STRAT-004",
-            "STRAT-005"
-          ]
-        },
-        {
-          "id": "STRAT-007",
-          "category": "material_non_disclosure",
-          "name": "Comprehensive Material Non-Disclosure Summary",
-          "priority": 1,
-          "status": "pending",
-          "file": null,
-          "impact": "Consolidated evidence for setting aside interdict",
-          "estimatedHours": 16,
-          "dependencies": [
-            "STRAT-001",
-            "STRAT-002",
-            "STRAT-003",
-            "STRAT-006"
-          ]
-        }
-      ],
-      "estimatedHours": 28
+      "strategies": [],
+      "estimatedHours": 0
     },
     "phase2_quick_wins": {
       "name": "Quick Win Strategies",
@@ -64,37 +32,6 @@
       "name": "Complex Strategy Resolution",
       "strategies": [
         {
-          "id": "STRAT-006",
-          "category": "disproportionate_harm",
-          "name": "Quantified Harm Analysis",
-          "priority": 1,
-          "status": "pending",
-          "file": null,
-          "impact": "Demonstrate 36:1 harm ratio",
-          "estimatedHours": 12,
-          "dependencies": [
-            "STRAT-001",
-            "STRAT-004",
-            "STRAT-005"
-          ]
-        },
-        {
-          "id": "STRAT-007",
-          "category": "material_non_disclosure",
-          "name": "Comprehensive Material Non-Disclosure Summary",
-          "priority": 1,
-          "status": "pending",
-          "file": null,
-          "impact": "Consolidated evidence for setting aside interdict",
-          "estimatedHours": 16,
-          "dependencies": [
-            "STRAT-001",
-            "STRAT-002",
-            "STRAT-003",
-            "STRAT-006"
-          ]
-        },
-        {
           "id": "STRAT-009",
           "category": "responsible_person",
           "name": "Multi-Jurisdiction Compliance Matrix",
@@ -108,7 +45,7 @@
           ]
         }
       ],
-      "estimatedHours": 48
+      "estimatedHours": 20
     }
   },
   "integration": {

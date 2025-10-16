@@ -6,8 +6,8 @@
       "quick_wins": 5
     },
     "strategy": {
-      "completion_rate": "50.0%",
-      "critical_path_items": 2,
+      "completion_rate": "70.0%",
+      "critical_path_items": 0,
       "quick_wins": 1
     }
   },
@@ -16,13 +16,10 @@
     "[Evidence] OPPORTUNITY: 5 quick wins available (≤3 hours each). Start with these for momentum.",
     "[Evidence] PLANNING: 6 bottleneck items identified. Allocate dedicated time blocks for complex evidence.",
     "[Strategy] ✅ Good progress! Over 50% of strategies implemented. Focus on completing critical path items.",
-    "[Strategy] 🔥 CRITICAL: 2 critical strategy items pending. These have the highest impact on case outcome.",
     "[Strategy] 💡 OPPORTUNITY: 1 quick wins available (≤6 hours each). Build momentum with these.",
-    "[Strategy] ⚙️  PLANNING: 3 complex strategies identified (≥12 hours or multiple dependencies). Allocate dedicated time blocks.",
-    "[Strategy] 📊 TIMELINE: Estimated 62 hours (8 days, 2 weeks) to complete all pending strategies.",
-    "[Strategy] 🎯 Material Non-Disclosure: 1 pending strategies. Priority 1 category.",
-    "[Strategy] 🎯 Responsible Person Duties: 1 pending strategies. Priority 1 category.",
-    "[Strategy] 🎯 Disproportionate Harm: 1 pending strategies. Priority 1 category."
+    "[Strategy] ⚙️  PLANNING: 1 complex strategies identified (≥12 hours or multiple dependencies). Allocate dedicated time blocks.",
+    "[Strategy] 📊 TIMELINE: Estimated 34 hours (5 days, 1 weeks) to complete all pending strategies.",
+    "[Strategy] 🎯 Responsible Person Duties: 1 pending strategies. Priority 1 category."
   ],
   "synchronized_workflow": {
     "evidence_collection": [
@@ -58,33 +55,6 @@
       }
     ],
     "strategy_implementation": [
-      {
-        "id": "STRAT-006",
-        "name": "Quantified Harm Analysis",
-        "category": "Disproportionate Harm",
-        "priority": 1,
-        "impact": "Demonstrate 36:1 harm ratio",
-        "estimatedHours": 12,
-        "dependencies": [
-          "STRAT-001",
-          "STRAT-004",
-          "STRAT-005"
-        ]
-      },
-      {
-        "id": "STRAT-007",
-        "name": "Comprehensive Material Non-Disclosure Summary",
-        "category": "Material Non-Disclosure",
-        "priority": 1,
-        "impact": "Consolidated evidence for setting aside interdict",
-        "estimatedHours": 16,
-        "dependencies": [
-          "STRAT-001",
-          "STRAT-002",
-          "STRAT-003",
-          "STRAT-006"
-        ]
-      },
       {
         "id": "STRAT-010",
         "name": "System Access Restriction Timeline",
