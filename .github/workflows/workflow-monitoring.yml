@@ -6,7 +6,7 @@ name: Workflow Monitoring and Alerting
 on:
   # Run after any workflow completes to monitor for failures
   workflow_run:
-    workflows: ["Todo to Issues Generator", "File Representations and Conversions", "Automated Testing Pipeline"]
+    workflows: ["Todo to Issues Generator", "File Representations and Conversions", "Automated Testing Pipeline", "Duplicate Issues Cleanup", "File Representation Validator", "Update Hypergraph", "Create Issues from Repository Items"]
     types: [completed]
   
   # Run on schedule for periodic health checks
@@ -53,7 +53,11 @@ jobs:
             const monitoredWorkflows = [
               'todo-to-issues.yml',
               'file-representations.yml', 
-              'test-workflows.yml'
+              'test-workflows.yml',
+              'duplicate-issues-cleanup.yml',
+              'blank.yml',
+              'hypergraph-update.yml',
+              'create-issues-from-repository-items.yml'
             ];
             
             const workflowHealth = {};
