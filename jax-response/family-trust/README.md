@@ -108,9 +108,35 @@ This directory contains forensic evidence and analysis for the systematic family
 - **Duty of Accounting** - Failure to provide proper trust financial reporting
 
 ### Criminal Law Applications
-- **Theft by Conversion** - Misappropriation of trust assets for unauthorized use
-- **Fraud** - Intentional misrepresentation of trust obligations and rights
-- **Breach of Trust** - Systematic violation of fiduciary duties and trust law
+
+#### **Theft by Conversion**
+- **Common Law Crime**: Misappropriation of trust assets for unauthorized use
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+#### **Fraud**
+- **Common Law Crime**: Intentional misrepresentation of trust obligations and rights
+  - **Elements**: Misrepresentation, unlawfulness, intention, prejudice (actual/potential)
+  - **Penalty**: Up to 15 years imprisonment
+
+#### **Breach of Trust (Professional/Fiduciary)**
+- **Trust Property Control Act 57 of 1988**
+  - **Section 20**: Trustee duties and liabilities - Systematic violation of fiduciary duties
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties and breach of fiduciary obligations
+- **Common Law**: Breach of fiduciary duty
+  - **Penalty**: Personal liability, disqualification, criminal charges for serious breaches
+
+#### **Money Laundering** (Trust Asset Concealment)
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 4**: Money laundering offense - Concealment of misappropriated trust assets
+  - **Section 6**: Acquisition, possession or use of proceeds of unlawful activities
+  - **Penalty**: Up to 30 years imprisonment
+
+#### **Criminal Conspiracy** (Trust Manipulation Scheme)
+- **Common Law Crime**: Coordinated trust manipulation involving multiple parties
+  - **Elements**: Agreement between parties, unlawful objective (trust asset misappropriation), intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
 
 ## Chain of Custody Documentation
 

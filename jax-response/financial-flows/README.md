@@ -118,19 +118,62 @@ This directory contains forensic evidence and analysis for the systematic financ
 ## Legal Framework Analysis
 
 ### Financial Crime Violations
-- **Theft by Conversion** - Systematic misappropriation of legitimate financial assets
-- **Fraud** - Intentional misrepresentation of financial authority and purposes
-- **Money Laundering** - Complex transaction structuring to conceal criminal proceeds
+
+#### **Theft by Conversion**
+- **Common Law Crime**: Systematic misappropriation of legitimate financial assets
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+#### **Fraud**
+- **Common Law Crime**: Intentional misrepresentation of financial authority and purposes
+  - **Elements**: Misrepresentation, unlawfulness, intention, prejudice (actual/potential)
+  - **Penalty**: Up to 15 years imprisonment
+
+#### **Money Laundering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 4**: Money laundering offense - Complex transaction structuring to conceal criminal proceeds
+  - **Section 6**: Acquisition, possession or use of proceeds of unlawful activities
+  - **Penalty**: Up to 30 years imprisonment
 
 ### Banking Law Violations
-- **Unauthorized Access** - Violation of banking agreements and authorization limits
-- **Fiduciary Duty Breach** - Misuse of financial authority and signatory privileges
-- **Financial Institution Fraud** - Deception of banking institutions regarding transaction purposes
+
+#### **Unauthorized Access**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access to banking systems and financial data
+  - **Section 87**: Unauthorized access to banking computer systems
+- **Banks Act 94 of 1990**: Violation of banking agreements and authorization limits
+  - **Penalty**: Up to 12 months imprisonment or fine (ECTA) + Banking regulatory penalties
+
+#### **Fiduciary Duty Breach**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Misuse of financial authority and signatory privileges
+- **Common Law**: Breach of fiduciary duty
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### **Financial Institution Fraud**
+- **Common Law Fraud**: Deception of banking institutions regarding transaction purposes
+  - **Elements**: Misrepresentation to financial institutions, unlawfulness, intention, prejudice
+  - **Penalty**: Up to 15 years imprisonment
 
 ### Commercial Law Breaches
-- **Breach of Contract** - Violation of business agreements and financial obligations
-- **Corporate Fraud** - Misuse of corporate financial resources and authority
-- **Shareholder Rights Violations** - Unauthorized use of company financial assets
+
+#### **Breach of Contract**
+- **Common Law**: Violation of business agreements and financial obligations
+  - **Remedies**: Damages, specific performance, criminal charges for fraudulent breach
+
+#### **Corporate Fraud**
+- **Companies Act 71 of 2008**
+  - **Section 214**: Financial record keeping requirements - Misuse of corporate financial resources
+  - **Section 76**: Director duties violations
+- **Common Law Fraud**: Misuse of corporate authority
+  - **Penalty**: Personal liability, disqualification, up to 15 years imprisonment
+
+#### **Shareholder Rights Violations**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Unauthorized use of company financial assets
+  - **Section 218**: Fraudulent conduct of business
+- **Securities Services Act**: Market manipulation through unauthorized asset use
+  - **Penalty**: Personal liability, disqualification, criminal charges
 
 ## Chain of Custody Documentation
 

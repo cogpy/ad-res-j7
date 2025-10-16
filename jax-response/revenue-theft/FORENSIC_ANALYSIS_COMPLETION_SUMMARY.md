@@ -101,19 +101,48 @@ TOTAL REGULATORY RISK: R 50,000,000.00+
 ## ⚖️ LEGAL FRAMEWORK INTEGRATION
 
 ### Criminal Charges Available (Prosecution Ready)
-1. ✅ **Organized Crime/Racketeering** - Pattern of coordinated criminal activity
-2. ✅ **Computer Fraud** - Shopify audit trail destruction
-3. ⚠️ **Identity Fraud** - Domain registration (subpoena pending)
-4. ✅ **Theft by Conversion** - Bank account redirection  
-5. ✅ **Business Sabotage** - Systematic operational destruction
-6. ✅ **POPI Violations** - Unauthorized customer data processing
-7. ✅ **Criminal Conspiracy** - Multi-party coordinated scheme
+
+#### 1. ✅ **Organized Crime/Racketeering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 2**: Racketeering activities - Pattern of coordinated criminal activity
+  - **Penalty**: Up to 30 years imprisonment
+
+#### 2. ✅ **Computer Fraud**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(2)**: Unauthorized modification of data (Shopify audit trail destruction)
+  - **Penalty**: Up to 12 months imprisonment or fine
+
+#### 3. ⚠️ **Identity Fraud** (subpoena pending)
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 87**: Identity-related computer crimes (Domain registration)
+- **Common Law Fraud**: Identity misrepresentation elements
+  - **Penalty**: Up to 15 years imprisonment
+
+#### 4. ✅ **Theft by Conversion**
+- **Common Law Crime**: Bank account redirection and revenue appropriation
+  - **Elements**: Appropriation, movable property, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+#### 5. ✅ **Business Sabotage**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director breach of fiduciary duty (systematic operational destruction)
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### 6. ✅ **POPI Violations**
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Unauthorized customer data processing offenses
+  - **Section 108**: Penalties - Up to R10M+ fine per violation or 10 years imprisonment
+
+#### 7. ✅ **Criminal Conspiracy**
+- **Common Law Crime**: Multi-party coordinated criminal scheme
+  - **Elements**: Agreement between parties, unlawful objective, intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
 
 ### Regulatory Violations Documented
-- **Protection of Personal Information Act (POPI)** - R10M+ per violation
-- **Competition Act** - Unfair business practices
-- **Electronic Communications Act** - Unauthorized system access
-- **Consumer Protection Act** - Fraudulent business representation
+- **Protection of Personal Information Act (POPIA) 4 of 2013** - R10M+ per violation
+- **Competition Act 89 of 1998** - Unfair business practices
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002** - Unauthorized system access
+- **Consumer Protection Act 68 of 2008** - Fraudulent business representation
 
 ---
 
