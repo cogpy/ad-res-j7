@@ -102,11 +102,17 @@ npm install
 npm test
 
 # Run specific test suites
-npm run test:validation    # Workflow structure tests
-npm run test:integration   # Functional tests
+npm run test:validation      # Workflow structure tests
+npm run test:integration     # Functional tests
+npm run test:label-handling  # Label handling validation
+npm run test:label-creation  # Manual label creation test
 ```
 
 For detailed information about the automated testing pipeline, see [Automated Testing Pipeline Documentation](docs/AUTOMATED_TESTING_PIPELINE.md).
+
+#### Label Handling
+
+This repository properly handles complex multi-word labels (e.g., `"priority: critical"`) in GitHub Actions workflows and scripts. See [Label Handling Guide](docs/LABEL_HANDLING_GUIDE.md) for implementation details.
 
 ## Cross-Repository Integration
 
