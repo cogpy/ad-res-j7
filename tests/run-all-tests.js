@@ -10,6 +10,7 @@ const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -23,6 +24,7 @@ class TestRunner {
       security: null,
       endToEnd: null,
       malformedMarkdown: null,
+      todoValidation: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -138,6 +140,24 @@ class TestRunner {
     return success;
   }
 
+  async runTodoValidationTests() {
+    console.log('\n📋 Running Comprehensive Todo File Validation Tests...\n');
+    
+    const todoValidator = new ComprehensiveTodoFileValidation();
+    const success = todoValidator.runComprehensiveValidation();
+    
+    this.results.todoValidation = {
+      success: success,
+      total: todoValidator.testResults.length,
+      passed: todoValidator.testResults.filter(t => t.passed).length,
+      failed: todoValidator.testResults.filter(t => !t.passed).length,
+      errors: todoValidator.errors,
+      validationMetrics: todoValidator.validationMetrics
+    };
+    
+    return success;
+  }
+
   async runMalformedMarkdownTests() {
     console.log('\n📋 Running Malformed Markdown Tests...\n');
     
@@ -162,7 +182,8 @@ class TestRunner {
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
                                        this.results.endToEnd.total +
-                                       this.results.malformedMarkdown.total;
+                                       this.results.malformedMarkdown.total +
+                                       this.results.todoValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
@@ -170,7 +191,8 @@ class TestRunner {
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed +
-                                        this.results.malformedMarkdown.passed;
+                                        this.results.malformedMarkdown.passed +
+                                        this.results.todoValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
@@ -178,7 +200,8 @@ class TestRunner {
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed +
-                                        this.results.malformedMarkdown.failed;
+                                        this.results.malformedMarkdown.failed +
+                                        this.results.todoValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -224,6 +247,14 @@ class TestRunner {
     console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
     console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    
+    console.log('\n📋 Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.todoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
+    console.log(`   📁 Files Validated: ${this.results.todoValidation.validationMetrics.totalFiles}`);
+    console.log(`   📋 Tasks Found: ${this.results.todoValidation.validationMetrics.totalTasks}`);
+    console.log(`   🔥 Critical Tasks: ${this.results.todoValidation.validationMetrics.criticalTasks}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -294,6 +325,14 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.todoValidation.errors.length > 0) {
+        console.log('   Todo Validation Test Failures:');
+        this.results.todoValidation.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -314,7 +353,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'todo-validation']
       },
       summary: this.results.overall
     });
@@ -335,6 +374,7 @@ class TestRunner {
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const todoValidationSuccess = await this.runTodoValidationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -346,7 +386,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && todoValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
