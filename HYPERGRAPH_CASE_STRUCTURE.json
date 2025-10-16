@@ -1,0 +1,1730 @@
+{
+  "nodes": [
+    {
+      "id": "actor_0",
+      "type": "actor",
+      "name": "Peter Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_1",
+      "type": "actor",
+      "name": "Jacqueline Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_2",
+      "type": "actor",
+      "name": "Daniel Faucitt",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_3",
+      "type": "actor",
+      "name": "RegimA Worldwide Distribution",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "actor_4",
+      "type": "actor",
+      "name": "RegimA Skin Treatments",
+      "properties": {
+        "role": "party"
+      }
+    },
+    {
+      "id": "category_5",
+      "type": "category",
+      "name": "material_non_disclosure",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_6",
+      "type": "category",
+      "name": "peter_hypocrisy",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_7",
+      "type": "category",
+      "name": "financial_misconduct",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_8",
+      "type": "category",
+      "name": "disproportionate_harm",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_9",
+      "type": "category",
+      "name": "responsible_person",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_10",
+      "type": "category",
+      "name": "business_disruption",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "category_11",
+      "type": "category",
+      "name": "timing_suspicious",
+      "properties": {
+        "type": "strategic_theme"
+      }
+    },
+    {
+      "id": "paragraph_12",
+      "type": "paragraph",
+      "name": "PARA_10_5-10_10_23",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "Detailed Financial Allegations",
+        "claim": "Systematic financial misconduct",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_13",
+      "type": "paragraph",
+      "name": "PARA_7_2-7_5",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "IT Expense Discrepancies",
+        "claim": "Unexplained IT expenses",
+        "completed": true,
+        "evidence_count": 21
+      }
+    },
+    {
+      "id": "evidence_14",
+      "type": "evidence",
+      "name": "JF1",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_15",
+      "type": "evidence",
+      "name": "JF3",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_16",
+      "type": "evidence",
+      "name": "JF5C",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_17",
+      "type": "evidence",
+      "name": "JF5",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_18",
+      "type": "evidence",
+      "name": "JF6D",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_19",
+      "type": "evidence",
+      "name": "JF5F",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_20",
+      "type": "evidence",
+      "name": "JF5A",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_21",
+      "type": "evidence",
+      "name": "JF5H",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_22",
+      "type": "evidence",
+      "name": "JF4A",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_23",
+      "type": "evidence",
+      "name": "JF4",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_24",
+      "type": "evidence",
+      "name": "JF5B",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_25",
+      "type": "evidence",
+      "name": "PF9",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_26",
+      "type": "evidence",
+      "name": "JF6",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_27",
+      "type": "evidence",
+      "name": "JF5E",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_28",
+      "type": "evidence",
+      "name": "JF5D",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_29",
+      "type": "evidence",
+      "name": "JF5G",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_30",
+      "type": "evidence",
+      "name": "JF5I",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_31",
+      "type": "evidence",
+      "name": "JF6C",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_32",
+      "type": "evidence",
+      "name": "PF10",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_33",
+      "type": "evidence",
+      "name": "JF6A",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "evidence_34",
+      "type": "evidence",
+      "name": "JF6B",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "paragraph_35",
+      "type": "paragraph",
+      "name": "PARA_7_6",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "R500K Payment",
+        "claim": "Unauthorized R500,000 payment to Jax",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_36",
+      "type": "paragraph",
+      "name": "PARA_7_7-7_8",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "R500K Payment Details",
+        "claim": "Payment made without authorization",
+        "completed": false,
+        "evidence_count": 1
+      }
+    },
+    {
+      "id": "evidence_37",
+      "type": "evidence",
+      "name": "JF",
+      "properties": {
+        "type": "annexure"
+      }
+    },
+    {
+      "id": "paragraph_38",
+      "type": "paragraph",
+      "name": "PARA_7_9-7_11",
+      "properties": {
+        "priority": "Critical",
+        "priority_level": 1,
+        "topic": "Payment Justification",
+        "claim": "No legitimate business purpose",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_39",
+      "type": "paragraph",
+      "name": "PARA_11-11_5",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Urgency",
+        "claim": "Urgent need for interdict",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_40",
+      "type": "paragraph",
+      "name": "PARA_13-13_1",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Interim Relief",
+        "claim": "Interim relief necessary",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_41",
+      "type": "paragraph",
+      "name": "PARA_3-3_10",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Respondent Identification",
+        "claim": "Identification of parties",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_42",
+      "type": "paragraph",
+      "name": "PARA_3_11-3_13",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Jax's Role",
+        "claim": "Jax's position in companies",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_43",
+      "type": "paragraph",
+      "name": "PARA_7_12-7_13",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Accountant Concerns",
+        "claim": "Accountant raised concerns",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_44",
+      "type": "paragraph",
+      "name": "PARA_7_14-7_15",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Documentation Requests",
+        "claim": "Documentation not provided / Daniel \"obstructing staff\"",
+        "completed": true,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_45",
+      "type": "paragraph",
+      "name": "PARA_8-8_3",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Peter's Discovery",
+        "claim": "Peter discovered irregularities",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_46",
+      "type": "paragraph",
+      "name": "PARA_8_4",
+      "properties": {
+        "priority": "High Priority",
+        "priority_level": 2,
+        "topic": "Confrontation",
+        "claim": "Peter confronted Jax",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_47",
+      "type": "paragraph",
+      "name": "PARA_10-10_3",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Relief Sought Introduction",
+        "claim": "Introduction to relief",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_48",
+      "type": "paragraph",
+      "name": "PARA_10_4",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Specific Relief",
+        "claim": "Specific relief requested",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_49",
+      "type": "paragraph",
+      "name": "PARA_11_6-11_9",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Urgency Details",
+        "claim": "Details of urgent circumstances",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_50",
+      "type": "paragraph",
+      "name": "PARA_12-12_1",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Balance of Convenience",
+        "claim": "Balance favors Peter",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_51",
+      "type": "paragraph",
+      "name": "PARA_12_2",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Harm to Peter",
+        "claim": "Harm if relief not granted",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_52",
+      "type": "paragraph",
+      "name": "PARA_12_3",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Harm to Jax",
+        "claim": "Minimal harm to Jax",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_53",
+      "type": "paragraph",
+      "name": "PARA_13_2-13_2_2",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Interim Relief Details",
+        "claim": "Details of interim measures",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_54",
+      "type": "paragraph",
+      "name": "PARA_13_3",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Final Relief",
+        "claim": "Final relief sought",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_55",
+      "type": "paragraph",
+      "name": "PARA_14-14_2",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Costs",
+        "claim": "Costs should follow result",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_56",
+      "type": "paragraph",
+      "name": "PARA_16-16_5",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Service",
+        "claim": "Service arrangements",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_57",
+      "type": "paragraph",
+      "name": "PARA_7-7_1",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Accountant Attendance",
+        "claim": "Accountant attended office",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_58",
+      "type": "paragraph",
+      "name": "PARA_7_16-7_17",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Further Irregularities",
+        "claim": "Additional irregularities found",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_59",
+      "type": "paragraph",
+      "name": "PARA_7_18-7_20",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Pattern of Conduct",
+        "claim": "Pattern of unauthorized transactions",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_60",
+      "type": "paragraph",
+      "name": "PARA_8_5",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Jax's Response",
+        "claim": "Jax's inadequate response",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_61",
+      "type": "paragraph",
+      "name": "PARA_8_6",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Continued Concerns",
+        "claim": "Ongoing concerns about conduct",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_62",
+      "type": "paragraph",
+      "name": "PARA_8_7",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Business Impact",
+        "claim": "Impact on business operations",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_63",
+      "type": "paragraph",
+      "name": "PARA_8_8-8_10",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Financial Harm",
+        "claim": "Financial harm to companies",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_64",
+      "type": "paragraph",
+      "name": "PARA_9-9_3",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Legal Basis",
+        "claim": "Legal basis for relief",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_65",
+      "type": "paragraph",
+      "name": "PARA_9_4",
+      "properties": {
+        "priority": "Medium Priority",
+        "priority_level": 3,
+        "topic": "Statutory Authority",
+        "claim": "Companies Act authority",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_66",
+      "type": "paragraph",
+      "name": "PARA_1-1_3",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Introduction",
+        "claim": "Peter's introduction",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_67",
+      "type": "paragraph",
+      "name": "PARA_10_11",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Additional Relief",
+        "claim": "Additional orders sought",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_68",
+      "type": "paragraph",
+      "name": "PARA_10_12",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Further Relief",
+        "claim": "Further relief if needed",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_69",
+      "type": "paragraph",
+      "name": "PARA_10_13",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Alternative Relief",
+        "claim": "Alternative relief",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_70",
+      "type": "paragraph",
+      "name": "PARA_12_4",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Balance Conclusion",
+        "claim": "Balance of convenience conclusion",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_71",
+      "type": "paragraph",
+      "name": "PARA_13_4",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Interim Measures",
+        "claim": "Interim measures justified",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_72",
+      "type": "paragraph",
+      "name": "PARA_13_5",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Urgency Justification",
+        "claim": "Urgency justified",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_73",
+      "type": "paragraph",
+      "name": "PARA_13_6-13_7",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Final Orders",
+        "claim": "Final orders requested",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_74",
+      "type": "paragraph",
+      "name": "PARA_14_3",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Costs on Scale",
+        "claim": "Costs on attorney-client scale",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_75",
+      "type": "paragraph",
+      "name": "PARA_14_4",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Punitive Costs",
+        "claim": "Punitive costs justified",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_76",
+      "type": "paragraph",
+      "name": "PARA_14_5",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Costs Conclusion",
+        "claim": "Costs conclusion",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_77",
+      "type": "paragraph",
+      "name": "PARA_16_6",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Service Details",
+        "claim": "Service details",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_78",
+      "type": "paragraph",
+      "name": "PARA_16_7",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Service Conclusion",
+        "claim": "Service conclusion",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_79",
+      "type": "paragraph",
+      "name": "PARA_2-2_4",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Capacity",
+        "claim": "Peter's capacity to bring application",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_80",
+      "type": "paragraph",
+      "name": "PARA_4",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Jurisdiction",
+        "claim": "Court has jurisdiction",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_81",
+      "type": "paragraph",
+      "name": "PARA_5",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Locus Standi",
+        "claim": "Peter has standing",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_82",
+      "type": "paragraph",
+      "name": "PARA_6-6_5",
+      "properties": {
+        "priority": "Low Priority",
+        "priority_level": 4,
+        "topic": "Corporate Structure",
+        "claim": "Description of companies",
+        "completed": false,
+        "evidence_count": 0
+      }
+    },
+    {
+      "id": "paragraph_83",
+      "type": "paragraph",
+      "name": "PARA_15",
+      "properties": {
+        "priority": "Meaningless",
+        "priority_level": 5,
+        "topic": "Conclusion",
+        "claim": "Formal conclusion",
+        "completed": false,
+        "evidence_count": 0
+      }
+    }
+  ],
+  "hyperedges": [
+    {
+      "nodes": [
+        "paragraph_12",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_12",
+        "category_6"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_12",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_12",
+        "category_8"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "category_6"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "category_9"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "category_10"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_14"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_15"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_16"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_17"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_18"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_19"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_20"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_21"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_22"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_23"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_24"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_25"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_26"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_27"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_28"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_29"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_30"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_31"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_32"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_33"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_13",
+        "evidence_34"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_35",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_35",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "category_6"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "category_8"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "category_11"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_36",
+        "evidence_37"
+      ],
+      "type": "supports",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_38",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_38",
+        "category_6"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_38",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_38",
+        "category_9"
+      ],
+      "type": "categorization",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_39",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_40",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_41",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_42",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_43",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_44",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_44",
+        "category_9"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_44",
+        "category_11"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_44",
+        "category_10"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_44",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_45",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_46",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 4
+    },
+    {
+      "nodes": [
+        "paragraph_47",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_48",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_49",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_50",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_51",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_51",
+        "category_8"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_52",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_52",
+        "category_8"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_53",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_54",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_55",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_56",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_57",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_58",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_59",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_59",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_60",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_61",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_62",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_63",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_63",
+        "category_7"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_63",
+        "category_8"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_64",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_65",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 3
+    },
+    {
+      "nodes": [
+        "paragraph_66",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_67",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_68",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_69",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_70",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_71",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_72",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_73",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_74",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_75",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_76",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_77",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_78",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_79",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_80",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_81",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_82",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 2
+    },
+    {
+      "nodes": [
+        "paragraph_83",
+        "category_5"
+      ],
+      "type": "categorization",
+      "weight": 1
+    },
+    {
+      "nodes": [
+        "paragraph_12",
+        "paragraph_13",
+        "paragraph_35",
+        "paragraph_36",
+        "paragraph_38"
+      ],
+      "type": "strategic_cluster",
+      "name": "Critical Financial Misconduct Allegations",
+      "weight": 5
+    },
+    {
+      "nodes": [
+        "paragraph_12",
+        "paragraph_13",
+        "paragraph_35",
+        "paragraph_36",
+        "paragraph_38",
+        "paragraph_39",
+        "paragraph_40",
+        "paragraph_41",
+        "paragraph_42",
+        "paragraph_43"
+      ],
+      "type": "strategic_cluster",
+      "name": "Material Non-Disclosure Pattern",
+      "weight": 4
+    }
+  ],
+  "metadata": {
+    "case_number": "2025-137857",
+    "repository": "cogpy/ad-res-j7",
+    "total_paragraphs": 50
+  }
+}

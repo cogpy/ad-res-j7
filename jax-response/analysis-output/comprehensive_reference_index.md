@@ -641,7 +641,7 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 11 TO 11.5",
     "responds_to_founding_paras": "11 TO 11.5",
-    "current_response_preview": "The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd, which operates as the United Kingdom head office. It is further admitted that the said entity oversees and operates through its subsidiary and associated companies, namely RegimA @ Dr H Ltd, RegimA Zone Ltd, RegimA Zone Academy Ltd, and RegimA Medic Ltd.\nIt is also noted and admitted, as correctly stated by the Applicant himself, that his involvement in the day-to",
+    "current_response_preview": "The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd. It is clarified that RegimA UK Ltd is not currently operating as a Head Office. The entity has been a dormant holding company since 2015 following the fraud perpetrated by Isaac Chesno. The company and its subsidiaries hold accumulated tax losses exceeding GBP 650,000, making it worthwhile to maintain and eventually restore them to trading status in the long term.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
