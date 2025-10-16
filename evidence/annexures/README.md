@@ -26,21 +26,21 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Purpose:** Multi-year director loan account statement for Peter Faucitt demonstrating his use of identical withdrawal process
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 437, Section 7.8.4, 7.8.6
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA2: Jax's Director Loan Account Statement
 - **File:** `JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Jacqueline Faucitt demonstrating consistent application across all directors
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 438, Section 7.8.4, 7.8.3
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA3: Daniel's Director Loan Account Statement
 - **File:** `JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Daniel Faucitt including the disputed R500,000 transaction on 16 July 2025
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 439, Section 7.8.5, 7.8.6, 7.8.7
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 ### Bank Statement Evidence
 
@@ -223,7 +223,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status:** All annexures are ⚠️ **Template** status - critical evidence collection required.
+**Current Status:** All annexures have comprehensive templates complete. Director loan account statements (JF-DLA1, JF-DLA2, JF-DLA3) templates documented in completion report - ready for data population from accountant.
 
 **Note on JF5 Series:** Settlement agreement annexures (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON) require careful attorney review for privilege issues before completion, as settlement negotiations are typically privileged communications. The crime-fraud exception may apply if the settlement was part of a scheme to mislead the Court.
 
