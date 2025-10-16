@@ -166,8 +166,6 @@
 8. **Settlement and Timing** - JF10A-C series ✅  
 
 ### 🔄 Evidence Categories (Partial)
-9. **Confirmatory Affidavit Contamination** - JF11A-B (some gaps)  
-10. **Professional Misconduct** - JF12A-C (implementation varies)
 
 ---
 
