@@ -10,6 +10,7 @@ const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const MarkdownFormattingValidationTest = require('./markdown-formatting-validation-test.js');
 const JSONValidationTest = require('./json-validation-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
@@ -24,6 +25,7 @@ class TestRunner {
       security: null,
       endToEnd: null,
       malformedMarkdown: null,
+      markdownFormatting: null,
       jsonValidation: null,
       overall: {
         total_tests: 0,
@@ -157,6 +159,23 @@ class TestRunner {
     return success;
   }
 
+  async runMarkdownFormattingValidationTests() {
+    console.log('\n📋 Running Markdown Formatting Validation Tests...\n');
+    
+    const formattingTest = new MarkdownFormattingValidationTest();
+    const success = await formattingTest.run();
+    
+    this.results.markdownFormatting = {
+      success: success,
+      total: formattingTest.testResults.length,
+      passed: formattingTest.testResults.filter(t => t.passed).length,
+      failed: formattingTest.testResults.filter(t => !t.passed).length,
+      errors: formattingTest.errors
+    };
+    
+    return success;
+  }
+
   async runJSONValidationTests() {
     console.log('\n📋 Running JSON Validation Tests...\n');
     
@@ -182,6 +201,7 @@ class TestRunner {
                                        this.results.security.total + 
                                        this.results.endToEnd.total +
                                        this.results.malformedMarkdown.total +
+                                       this.results.markdownFormatting.total +
                                        this.results.jsonValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
@@ -191,6 +211,7 @@ class TestRunner {
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed +
                                         this.results.malformedMarkdown.passed +
+                                        this.results.markdownFormatting.passed +
                                         this.results.jsonValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
@@ -200,6 +221,7 @@ class TestRunner {
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed +
                                         this.results.malformedMarkdown.failed +
+                                        this.results.markdownFormatting.failed +
                                         this.results.jsonValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
@@ -246,6 +268,11 @@ class TestRunner {
     console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
     console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    
+    console.log('\n📝 Markdown Formatting Tests:');
+    console.log(`   ✅ Passed: ${this.results.markdownFormatting.passed}/${this.results.markdownFormatting.total}`);
+    console.log(`   ❌ Failed: ${this.results.markdownFormatting.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.markdownFormatting.passed / this.results.markdownFormatting.total) * 100)}%`);
     
     console.log('\n📄 JSON Validation Tests:');
     console.log(`   ✅ Passed: ${this.results.jsonValidation.passed}/${this.results.jsonValidation.total}`);
@@ -321,6 +348,13 @@ class TestRunner {
           failureIndex++;
         });
       }
+      if (this.results.markdownFormatting.errors.length > 0) {
+        console.log('   Markdown Formatting Test Failures:');
+        this.results.markdownFormatting.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
       
       if (this.results.jsonValidation.errors.length > 0) {
         console.log('   JSON Validation Test Failures:');
@@ -370,6 +404,7 @@ class TestRunner {
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const markdownFormattingSuccess = await this.runMarkdownFormattingValidationTests();
       const jsonValidationSuccess = await this.runJSONValidationTests();
       
       this.calculateOverallResults();
@@ -382,7 +417,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && jsonValidationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && markdownFormattingSuccess && jsonValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
