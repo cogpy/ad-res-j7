@@ -1427,7 +1427,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 350
+      "size_bytes": 11258
     },
     {
       "file": "tests/malformed-markdown-test-results.json",
