@@ -1,0 +1,196 @@
+{
+  "burden_of_proof_standards": {
+    "civil_requirements": [
+      {
+        "element": "actus_reus",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "mens_rea",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "causation",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "foreseeability",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "duty_of_care",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "breach_of_duty",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "damages",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "factual_causation",
+        "threshold": 0.51,
+        "standard": "civil"
+      },
+      {
+        "element": "legal_causation",
+        "threshold": 0.51,
+        "standard": "civil"
+      }
+    ],
+    "criminal_requirements": [
+      {
+        "element": "actus_reus",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "mens_rea",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "causation",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "foreseeability",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "duty_of_care",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "breach_of_duty",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "damages",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "factual_causation",
+        "threshold": 0.95,
+        "standard": "criminal"
+      },
+      {
+        "element": "legal_causation",
+        "threshold": 0.95,
+        "standard": "criminal"
+      }
+    ],
+    "mathematical_requirements": [
+      {
+        "element": "actus_reus",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "mens_rea",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "causation",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "foreseeability",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "duty_of_care",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "breach_of_duty",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "damages",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "factual_causation",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      },
+      {
+        "element": "legal_causation",
+        "threshold": 1.0,
+        "standard": "mathematical"
+      }
+    ],
+    "passed": true
+  },
+  "dan_jax_strategies": {
+    "target_agents": [
+      "Peter",
+      "Rynette",
+      "Bantjies"
+    ],
+    "elements_covered": [
+      "actus_reus",
+      "mens_rea",
+      "causation",
+      "foreseeability",
+      "duty_of_care",
+      "breach_of_duty",
+      "damages",
+      "factual_causation",
+      "legal_causation"
+    ],
+    "standards_covered": [
+      "civil",
+      "criminal",
+      "mathematical"
+    ],
+    "strategy_count": 81,
+    "passed": true
+  },
+  "evidence_requirements": {
+    "civil_threshold": 0.51,
+    "criminal_threshold": 0.95,
+    "mathematical_threshold": 1.0,
+    "evidence_type_counts": {
+      "civil": 3,
+      "criminal": 4,
+      "mathematical": 3
+    },
+    "passed": true
+  },
+  "comprehensive_report": {
+    "report_length": 49914,
+    "line_count": 1709,
+    "contains_all_standards": true,
+    "contains_all_targets": true,
+    "passed": true
+  },
+  "attention_integration": {
+    "events_processed": 9,
+    "agents_analyzed": 4,
+    "guilt_scores_generated": 4,
+    "strategies_generated": 3,
+    "passed": true
+  }
+}
