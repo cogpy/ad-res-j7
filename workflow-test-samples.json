@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-17T04:30:25.664Z",
+    "purpose": "Sample tasks testing workflow with burden of proof elements"
+  },
+  "sample_tasks": [
+    {
+      "id": "PROOF-001",
+      "title": "Establish Peter's Fiduciary Duty Breach - Civil Standard",
+      "priority": "Must-Do (Critical Priority)",
+      "standard": "civil",
+      "target": "Peter",
+      "description": "Gather evidence proving Peter breached fiduciary duties on balance of probabilities",
+      "required_evidence": [
+        "Board resolutions establishing fiduciary relationship",
+        "Financial records showing unauthorized transactions",
+        "Expert testimony on fiduciary duty standards",
+        "Damage calculations from breach"
+      ],
+      "success_criteria": "Evidence package supporting >50% probability of breach"
+    },
+    {
+      "id": "PROOF-002",
+      "title": "Document Rynette's Criminal Conspiracy - Criminal Standard",
+      "priority": "Must-Do (Critical Priority)",
+      "standard": "criminal",
+      "target": "Rynette",
+      "description": "Compile evidence proving Rynette's criminal conspiracy beyond reasonable doubt",
+      "required_evidence": [
+        "Communications showing agreement to commit crimes",
+        "Evidence of overt acts in furtherance of conspiracy",
+        "Witness testimony to conspiracy discussions",
+        "Financial records showing benefit from criminal acts"
+      ],
+      "success_criteria": "Evidence excluding reasonable doubt of criminal conspiracy"
+    },
+    {
+      "id": "PROOF-003",
+      "title": "Prove Bantjies' Professional Misconduct - Mathematical Standard",
+      "priority": "Should-Do (High Priority)",
+      "standard": "mathematical",
+      "target": "Bantjies",
+      "description": "Create logical proof that Bantjies' conduct was necessarily improper",
+      "required_evidence": [
+        "Complete professional service records",
+        "All communications with clients",
+        "Expert analysis of professional standards",
+        "Logical elimination of all innocent explanations"
+      ],
+      "success_criteria": "Logical proof admitting no alternative interpretation"
+    },
+    {
+      "id": "PROOF-004",
+      "title": "Test Multi-Party Civil Liability Framework",
+      "priority": "Should-Do (High Priority)",
+      "standard": "civil",
+      "target": "Multiple",
+      "description": "Test workflow's ability to handle multiple defendants in civil context",
+      "required_evidence": [
+        "Joint and several liability evidence",
+        "Contribution and indemnification issues",
+        "Comparative fault analysis",
+        "Damages apportionment methodology"
+      ],
+      "success_criteria": "Workflow correctly processes multi-party civil liability"
+    },
+    {
+      "id": "PROOF-005",
+      "title": "Validate Evidence Chain Integration",
+      "priority": "Nice-to-Have (Low Priority)",
+      "standard": "all",
+      "target": "System",
+      "description": "Test integration between burden of proof framework and evidence collection",
+      "required_evidence": [
+        "Cross-referenced evidence database",
+        "Automated proof standard checking",
+        "Evidence sufficiency analysis",
+        "Gap identification and prioritization"
+      ],
+      "success_criteria": "Seamless integration between proof standards and evidence collection"
+    }
+  ]
+}

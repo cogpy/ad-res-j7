@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-17T04:30:25.663Z",
+    "case_context": "Dan & Jax v. Peter, Rynette, Bantjies et al.",
+    "purpose": "Define proof requirements for each legal standard"
+  },
+  "standards": {
+    "civil": {
+      "standard": {
+        "name": "Balance of Probabilities",
+        "threshold": "50.1%",
+        "description": "More likely than not that the allegation is true",
+        "requirement": "Preponderance of evidence"
+      },
+      "requirements": {
+        "evidence_threshold": "More likely than not (>50%)",
+        "evidence_quality": "Credible and reliable evidence",
+        "corroboration": "Supporting evidence preferred but not required",
+        "burden_shifting": "Prima facie case shifts burden to defendant",
+        "necessary_elements": [
+          "Factual allegations supported by evidence",
+          "Causal connection between actions and harm",
+          "Damages or harm clearly established",
+          "Alternative explanations less probable"
+        ],
+        "evidence_requirements": {
+          "primary": "Direct evidence of misconduct OR strong circumstantial evidence",
+          "supporting": "Corroborating documentation, witness statements",
+          "expert": "Expert testimony for technical/financial matters",
+          "pattern": "Evidence of systematic behavior (if applicable)"
+        },
+        "what_dan_jax_must_prove": [
+          "Specific acts of misconduct by each accused party",
+          "Intent or negligence in committing alleged acts",
+          "Harm resulted from the accused parties' actions",
+          "Quantifiable damages or losses"
+        ]
+      }
+    },
+    "criminal": {
+      "standard": {
+        "name": "Beyond Reasonable Doubt",
+        "threshold": "95%+",
+        "description": "Certainty that eliminates reasonable doubt",
+        "requirement": "Evidence that excludes alternative explanations"
+      },
+      "requirements": {
+        "evidence_threshold": "Beyond reasonable doubt (95%+ certainty)",
+        "evidence_quality": "Evidence that excludes reasonable alternative explanations",
+        "corroboration": "Multiple independent sources strongly preferred",
+        "burden_shifting": "Prosecution must prove all elements; no burden on defense",
+        "necessary_elements": [
+          "All elements of the offense proven beyond reasonable doubt",
+          "Intent (mens rea) established for intentional crimes",
+          "Actus reus (criminal act) definitively proven",
+          "Causal connection between act and harm established",
+          "Exclusion of reasonable alternative explanations"
+        ],
+        "evidence_requirements": {
+          "primary": "Direct evidence of criminal conduct strongly preferred",
+          "supporting": "Multiple independent corroborating sources",
+          "expert": "Expert testimony for complex evidence interpretation",
+          "chain_of_custody": "Unbroken chain of custody for all physical evidence",
+          "witness_credibility": "Credible witnesses with no motive to lie"
+        },
+        "what_dan_jax_must_prove": [
+          "Specific criminal acts committed by each accused party",
+          "Criminal intent (unless strict liability offense)",
+          "All elements of each alleged crime",
+          "Exclusion of lawful justification or excuse",
+          "Absence of reasonable alternative explanations"
+        ]
+      }
+    },
+    "mathematical": {
+      "standard": {
+        "name": "Invariant of All Conditions",
+        "threshold": "100%",
+        "description": "Truth that holds under all possible conditions",
+        "requirement": "Logical proof with no possible counterexamples"
+      },
+      "requirements": {
+        "evidence_threshold": "Logical certainty (100%)",
+        "evidence_quality": "Evidence that creates logical proof",
+        "corroboration": "Logical consistency across all evidence",
+        "burden_shifting": "Absolute proof required; no burden shifting possible",
+        "necessary_elements": [
+          "Logical axioms or established facts as foundation",
+          "Valid logical reasoning from premises to conclusion",
+          "Elimination of all possible counterexamples",
+          "Consistency across all relevant conditions",
+          "No logical contradictions in the proof structure"
+        ],
+        "evidence_requirements": {
+          "primary": "Undeniable documentary evidence or logical premises",
+          "supporting": "Logically consistent supporting evidence",
+          "expert": "Expert analysis confirming logical validity",
+          "mathematical": "Quantitative proof where applicable",
+          "exhaustive": "Consideration of all possible alternative explanations"
+        },
+        "what_dan_jax_must_prove": [
+          "Logically necessary connection between evidence and conclusion",
+          "Impossibility of innocent explanation for accused parties' actions",
+          "Mathematical or logical certainty of guilt",
+          "Evidence that admits no reasonable interpretation other than guilt",
+          "Proof structure that remains valid under all possible conditions"
+        ]
+      }
+    }
+  }
+}
