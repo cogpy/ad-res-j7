@@ -85,10 +85,8 @@ Based on the simulation results showing **100% success rate**, this action plan 
 - [ ] **JF8**: Evidence Packages (May-Oct 2025) - 5.8 MB, 5 packages
 - [ ] **JF9**: Timeline Analysis - 128 KB, 5 files
 - [ ] **JF10**: Director Loan Account Records - 36 KB, 3 files
-- [ ] **JF11**: Medical Records (Jacqueline) - 16 KB, 1 file
-- [ ] **JF12**: Legal Research and Frameworks - 16 KB, 2 files
 
-**Total**: 139 files, ~40 MB
+**Total**: 137 files, ~40 MB
 
 **Verification Process**:
 1. Check each annexure folder contains correct files
@@ -137,7 +135,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
   - Single-sided for court copy
   - Double-sided acceptable for other copies
   - Color printing for screenshots (JF7) if possible
-  - High quality for critical evidence (JF1, JF11)
+  - High quality for critical evidence (JF1)
 
 **Organization**:
 1. Print each annexure separately
@@ -200,7 +198,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 3. Supporting Affidavit (Daniel James Faucitt) - certified original
 4. Annexures Index
 5. Annexure JF1 (Shopify Email) - **CRITICAL**
-6. Annexure JF2 through JF12
+6. Annexure JF2 through JF10
 
 **Number of Packages**:
 - **1x Court Copy**: Original certified affidavits, high-quality annexures
@@ -237,7 +235,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 - [ ] Files in correct annexure folders
 - [ ] Page numbering correct
 - [ ] Legible printing quality
-- [ ] Critical evidence (JF1, JF11) high quality
+- [ ] Critical evidence (JF1) high quality
 
 **Cross-References**:
 - [ ] Every annexure cited in affidavits is present
@@ -264,7 +262,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 1. Notice of Intention to Oppose (if not already filed)
 2. Answering Affidavit (Jacqueline Faucitt) - original
 3. Supporting Affidavit (Daniel James Faucitt) - original
-4. Complete annexure bundle (JF1-JF12)
+4. Complete annexure bundle (JF1-JF10)
 
 **Filing Requirements**:
 - Check court rules for number of copies required
@@ -313,7 +311,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 1. Cover letter from attorneys
 2. Answering Affidavit (Jacqueline) - certified copy
 3. Supporting Affidavit (Daniel) - certified copy
-4. Complete annexure bundle (JF1-JF12)
+4. Complete annexure bundle (JF1-JF10)
 
 **Cover Letter Should Include**:
 - Case number and parties
@@ -484,11 +482,10 @@ Based on the simulation results showing **100% success rate**, this action plan 
 
 2. **Section B**: Critical Evidence (Quick Reference)
    - JF1: Shopify Email (26 July 2017) - **TAB 1**
-   - JF11: Medical Records - **TAB 2**
-   - JF9: Timeline (Evidence Destruction) - **TAB 3**
+   - JF9: Timeline (Evidence Destruction) - **TAB 2**
 
 3. **Section C**: Supporting Evidence
-   - JF2-JF8, JF10, JF12
+   - JF2-JF8, JF10
 
 4. **Section D**: Legal Authorities
    - Case law on evidence destruction
@@ -522,10 +519,10 @@ Based on the simulation results showing **100% success rate**, this action plan 
   - Proves independent operations
   - Demolishes Applicant's claims
 
-**3. The Gaslighting Exposed** (3 minutes)
-- **JF11** (Medical Records) refutes dementia claim
-- **JF1** validates Daniel's account, refutes delusion claim
-- Demonstrates Applicant's bad faith
+**3. Timeline and Evidence Destruction** (3 minutes)
+- **JF9** highlights evidence destruction timing
+- **JF1** validates Daniel's account
+- Demonstrates Applicant's consciousness of guilt
 
 **4. The Evidence Destruction** (3 minutes)
 - **JF9** (Timeline) shows destruction on 22 May 2025
@@ -564,7 +561,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 - Practice direct examination
 - Practice cross-examination (anticipate attacks on credibility)
 - Prepare for dementia allegations (remain calm, demonstrate competence)
-- Familiarize with key evidence (JF1, JF11)
+- Familiarize with key evidence (JF1)
 
 **Time Required**: 4-6 hours preparation
 
@@ -654,7 +651,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 
 **Documents**:
 - [ ] Court bundles (3-4 copies)
-- [ ] Extra copies of critical evidence (JF1, JF11, JF9)
+- [ ] Extra copies of critical evidence (JF1, JF9)
 - [ ] Legal authorities and case law
 - [ ] Notes and speaking points
 - [ ] Witness preparation notes
@@ -667,7 +664,7 @@ Based on the simulation results showing **100% success rate**, this action plan 
 - [ ] Charge phone/laptop for notes
 
 **Mental Preparation**:
-- [ ] Review key evidence (JF1, JF11, JF9)
+- [ ] Review key evidence (JF1, JF9)
 - [ ] Review opening statement
 - [ ] Review key legal arguments
 - [ ] Get good rest
@@ -687,7 +684,6 @@ Based on the simulation results showing **100% success rate**, this action plan 
 **1. Opening Statement** (15-20 minutes)
 - Deliver prepared opening
 - **Lead with JF1** (Shopify Email) - emphasize irrefutability
-- Show JF11 (Medical Records) - expose gaslighting
 - Highlight JF9 (Evidence Destruction) - consciousness of guilt
 - Remain calm, professional, factual
 
@@ -711,7 +707,6 @@ Based on the simulation results showing **100% success rate**, this action plan 
 **5. Closing Argument** (10-15 minutes)
 - Summarize key evidence
 - Reiterate: JF1 is irrefutable
-- Emphasize: Gaslighting exposed by JF11
 - Highlight: Evidence destruction (JF9) proves guilt
 - Request: Dismissal with costs, criminal referral
 
@@ -1054,10 +1049,9 @@ This action plan provides a comprehensive roadmap to:
 
 **Key Success Factors**:
 1. **JF1 (Shopify Email)**: Lead with this irrefutable evidence
-2. **JF11 (Medical Records)**: Immediately expose gaslighting
-3. **JF9 (Timeline)**: Highlight evidence destruction and consciousness of guilt
-4. **Professional Execution**: Follow this plan systematically
-5. **Patience and Persistence**: Trust the process and the evidence
+2. **JF9 (Timeline)**: Highlight evidence destruction and consciousness of guilt
+3. **Professional Execution**: Follow this plan systematically
+4. **Patience and Persistence**: Trust the process and the evidence
 
 **Final Recommendation**: **Proceed immediately with Phase 1. The time for action is now.**
 

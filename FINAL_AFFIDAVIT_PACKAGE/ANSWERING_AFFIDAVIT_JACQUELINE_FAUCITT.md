@@ -75,7 +75,7 @@ do hereby make oath and state:
 - **Part F**: Correspondence and cooperation
 - **Part G**: Relief sought
 
-1.3.2 I rely on **twelve (12) annexures** marked "**JF1**" through "**JF12**", which contain comprehensive documentary evidence supporting my case.
+1.3.2 I rely on **ten (10) annexures** marked "**JF1**" through "**JF10**", which contain comprehensive documentary evidence supporting my case.
 
 ---
 
@@ -108,7 +108,6 @@ do hereby make oath and state:
 - **Court documents**: Complete procedural history - **Annexure JF6**
 - **Visual evidence**: Screenshots and documentation - **Annexure JF7**
 - **Timeline analysis**: Chronological reconstruction - **Annexure JF9**
-- **Medical records**: Refuting dementia claims - **Annexure JF11**
 
 ---
 
@@ -325,13 +324,11 @@ do hereby make oath and state:
 
 #### 8.2 My Cognitive Capacity is Proven
 
-8.2.1 I have attached medical records as **Annexure JF11** that demonstrate I do not suffer from dementia or any cognitive impairment.
+8.2.1 My testimony in this affidavit is detailed, coherent, and **perfectly aligned with the documentary evidence** (particularly the Shopify Email).
 
-8.2.2 My testimony in this affidavit is detailed, coherent, and **perfectly aligned with the documentary evidence** (particularly the Shopify Email).
+8.2.2 The fact that my account matches the objective historical record (the Shopify Email) proves my cognitive reliability.
 
-8.2.3 The fact that my account matches the objective historical record (the Shopify Email) proves my cognitive reliability.
-
-8.2.4 If I had dementia, my testimony would be inconsistent and contradictory. Instead, it is perfectly consistent with contemporaneous documentary evidence from 2017.
+8.2.3 If I had dementia, my testimony would be inconsistent and contradictory. Instead, it is perfectly consistent with contemporaneous documentary evidence from 2017.
 
 #### 8.3 Why the Applicant Attacks My Credibility
 
@@ -531,17 +528,6 @@ do hereby make oath and state:
 
 ---
 
-### 16. LEGAL RESEARCH AND FRAMEWORKS
-
-16.1 I attach as **Annexure JF12** legal research and frameworks relevant to this matter.
-
-16.2 This includes:
-- Criminal matter safety considerations;
-- Legal frameworks for fraud and identity theft;
-- Relevant case law and statutory provisions.
-
-16.3 The legal research supports our position and demonstrates the criminal nature of the Applicant's conduct.
-
 ---
 
 ## PART F: LEGAL GROUNDS FOR OPPOSITION
@@ -695,8 +681,6 @@ _______________________________
 | **JF8** | Evidence Packages (May-October 2025) | `case_2025_137857/02_evidence/evidence_package_*/` |
 | **JF9** | Timeline Analysis | `case_2025_137857/03_analysis/timeline_analysis/` |
 | **JF10** | Director Loan Account Records | `evidence/director_loan_accounts/` |
-| **JF11** | Medical Records | `case_2025_137857/05_medical_records/` |
-| **JF12** | Legal Research and Frameworks | `case_2025_137857/07_legal_research/` |
 
 ---
 
@@ -709,7 +693,7 @@ _______________________________
 - **Deponent**: Jacqueline Faucitt (First Respondent)
 - **Date Prepared**: October 2025
 - **Pages**: [To be numbered upon finalization]
-- **Annexures**: 12 (JF1 through JF12)
+- **Annexures**: 10 (JF1 through JF10)
 - **Total Evidence Files**: 208+ files
 
 ---

@@ -315,17 +315,6 @@ This differentiation helps counter Peter's attempt to conflate their roles and r
 - **JF10B**: Investment payout documentation (9-month timeline)
 - **JF10C**: Evidence of months-long delay contradicting urgency
 
-**Category 9: Confirmatory Affidavit Contamination**
-- **JF11**: Daniel Bantjies knowledge of criminal matters (10 June 2025)
-- **JF11A**: Evidence of Bantjies' perjury in confirmatory affidavit
-- **JF11B**: Timeline showing knowledge preceded affidavit
-
-**Category 10: Professional Misconduct**
-- **JF12**: ENS Africa correspondence showing knowledge suppression
-- **JF12A**: "Received, thanks Daniel" acknowledgment (29 August 2025)
-- **JF12B**: Evidence of fraud upon the Court
-- **JF12C**: Documentation for Legal Practice Council complaint
-
 ---
 
 ### 4. Strengthen Counter-Narrative Strategy
@@ -781,7 +770,7 @@ The interdict must be immediately set aside to prevent:
     - 14.5 Professional Misconduct Referrals (Legal Practice Council)
 
 15. **Annexures and Supporting Evidence**
-    - Comprehensive annexure list (JF1-JF12+)
+    - Comprehensive annexure list (JF1-JF10+)
     - Cross-reference matrix
     - Evidence trail documentation
 
