@@ -1,0 +1,2351 @@
+{
+  "title": "Burden of Proof Strategy Implementation Report",
+  "generated": "2025-10-17T04:38:34.320Z",
+  "caseReference": "2025-137857",
+  "summary": {
+    "totalElements": 4,
+    "totalDefendants": 3,
+    "totalStandards": 3,
+    "strategiesGenerated": 0
+  },
+  "detailedAnalysis": {
+    "Peter": {
+      "material_non_disclosure": {
+        "civil": {
+          "element": "Material Non-Disclosure to Court",
+          "defendant": "Peter",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Material Non-Disclosure to Court",
+          "defendant": "Peter",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Material Non-Disclosure to Court",
+          "defendant": "Peter",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      },
+      "financial_misconduct": {
+        "civil": {
+          "element": "Financial Misconduct Allegations",
+          "defendant": "Peter",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Financial Misconduct Allegations",
+          "defendant": "Peter",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Financial Misconduct Allegations",
+          "defendant": "Peter",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      },
+      "business_interference": {
+        "civil": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Peter",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Peter",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Peter",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      },
+      "strategic_litigation": {
+        "civil": {
+          "element": "Abuse of Court Process",
+          "defendant": "Peter",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Abuse of Court Process",
+          "defendant": "Peter",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Abuse of Court Process",
+          "defendant": "Peter",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      }
+    },
+    "Rynette": {
+      "business_interference": {
+        "civil": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Rynette",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Rynette",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Rynette",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      }
+    },
+    "Bantjies": {
+      "business_interference": {
+        "civil": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Bantjies",
+          "standard": "Balance of Probabilities (Civil)",
+          "threshold": 0.51,
+          "necessaryConditions": {
+            "evidenceThreshold": "More likely than not (>50% probability)",
+            "keyRequirements": [
+              "Establish prima facie case for each element",
+              "Provide credible evidence supporting allegations",
+              "Address defendant's counter-arguments",
+              "Demonstrate causal connection between actions and harm",
+              "Show materiality of non-disclosed facts"
+            ],
+            "strategicFocus": [
+              "Document trail establishment",
+              "Timeline correlation analysis",
+              "Expert witness credibility",
+              "Third-party validation",
+              "Comparative behavior analysis"
+            ],
+            "burdenShifting": [
+              "Once prima facie case established, burden shifts to defendant",
+              "Defendant must provide credible alternative explanation",
+              "Failure to respond adequately supports plaintiff's case"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "criminal": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Bantjies",
+          "standard": "Beyond Reasonable Doubt (Criminal)",
+          "threshold": 0.95,
+          "necessaryConditions": {
+            "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+            "keyRequirements": [
+              "Establish each element with very high certainty",
+              "Exclude all reasonable alternative explanations",
+              "Provide corroborating evidence from multiple sources",
+              "Demonstrate clear intent or knowledge",
+              "Establish chain of causation beyond doubt"
+            ],
+            "strategicFocus": [
+              "Multiple independent evidence sources",
+              "Expert testimony consistency",
+              "Documentary evidence authentication",
+              "Witness credibility establishment",
+              "Alternative theory elimination"
+            ],
+            "heightenedStandards": [
+              "Evidence must be clear and unambiguous",
+              "Circumstantial evidence requires strong corroboration",
+              "Any reasonable doubt favors defendant",
+              "Prosecution bears full burden throughout"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        },
+        "mathematical": {
+          "element": "Unlawful Business Interference",
+          "defendant": "Bantjies",
+          "standard": "Mathematical Invariant (Universal)",
+          "threshold": 1,
+          "necessaryConditions": {
+            "evidenceThreshold": "Logical certainty under all conditions (100%)",
+            "keyRequirements": [
+              "Establish logical necessity of guilt",
+              "Demonstrate that innocence leads to contradiction",
+              "Prove guilt independent of specific circumstances",
+              "Show invariant properties across all scenarios",
+              "Establish mathematical proof structure"
+            ],
+            "strategicFocus": [
+              "Logical contradiction analysis",
+              "Universal quantification over scenarios",
+              "Axiomatic evidence structure",
+              "Proof by contradiction methodology",
+              "Invariant property identification"
+            ],
+            "mathematicalFramework": [
+              "Define universe of possible explanations",
+              "Eliminate each alternative through logical contradiction",
+              "Demonstrate that only guilt remains logically consistent",
+              "Prove invariance across all parameter variations"
+            ]
+          },
+          "evidenceRequirements": [],
+          "strategicApproach": [],
+          "riskFactors": []
+        }
+      }
+    }
+  },
+  "optimalStrategies": {
+    "Peter": {
+      "material_non_disclosure": {
+        "civil": {
+          "target": "Peter",
+          "element": "Material Non-Disclosure to Court",
+          "standard": "civil",
+          "analysis": {
+            "element": "Material Non-Disclosure to Court",
+            "defendant": "Peter",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Peter",
+          "element": "Material Non-Disclosure to Court",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Material Non-Disclosure to Court",
+            "defendant": "Peter",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Peter",
+          "element": "Material Non-Disclosure to Court",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Material Non-Disclosure to Court",
+            "defendant": "Peter",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      },
+      "financial_misconduct": {
+        "civil": {
+          "target": "Peter",
+          "element": "Financial Misconduct Allegations",
+          "standard": "civil",
+          "analysis": {
+            "element": "Financial Misconduct Allegations",
+            "defendant": "Peter",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Peter",
+          "element": "Financial Misconduct Allegations",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Financial Misconduct Allegations",
+            "defendant": "Peter",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Peter",
+          "element": "Financial Misconduct Allegations",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Financial Misconduct Allegations",
+            "defendant": "Peter",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      },
+      "business_interference": {
+        "civil": {
+          "target": "Peter",
+          "element": "Unlawful Business Interference",
+          "standard": "civil",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Peter",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Peter",
+          "element": "Unlawful Business Interference",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Peter",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Peter",
+          "element": "Unlawful Business Interference",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Peter",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      },
+      "strategic_litigation": {
+        "civil": {
+          "target": "Peter",
+          "element": "Abuse of Court Process",
+          "standard": "civil",
+          "analysis": {
+            "element": "Abuse of Court Process",
+            "defendant": "Peter",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Peter",
+          "element": "Abuse of Court Process",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Abuse of Court Process",
+            "defendant": "Peter",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Peter",
+          "element": "Abuse of Court Process",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Abuse of Court Process",
+            "defendant": "Peter",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      }
+    },
+    "Rynette": {
+      "business_interference": {
+        "civil": {
+          "target": "Rynette",
+          "element": "Unlawful Business Interference",
+          "standard": "civil",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Rynette",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Rynette",
+          "element": "Unlawful Business Interference",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Rynette",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Rynette",
+          "element": "Unlawful Business Interference",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Rynette",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      }
+    },
+    "Bantjies": {
+      "business_interference": {
+        "civil": {
+          "target": "Bantjies",
+          "element": "Unlawful Business Interference",
+          "standard": "civil",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Bantjies",
+            "standard": "Balance of Probabilities (Civil)",
+            "threshold": 0.51,
+            "necessaryConditions": {
+              "evidenceThreshold": "More likely than not (>50% probability)",
+              "keyRequirements": [
+                "Establish prima facie case for each element",
+                "Provide credible evidence supporting allegations",
+                "Address defendant's counter-arguments",
+                "Demonstrate causal connection between actions and harm",
+                "Show materiality of non-disclosed facts"
+              ],
+              "strategicFocus": [
+                "Document trail establishment",
+                "Timeline correlation analysis",
+                "Expert witness credibility",
+                "Third-party validation",
+                "Comparative behavior analysis"
+              ],
+              "burdenShifting": [
+                "Once prima facie case established, burden shifts to defendant",
+                "Defendant must provide credible alternative explanation",
+                "Failure to respond adequately supports plaintiff's case"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.20400000000000001,
+              "witness_testimony": 0.1275,
+              "expert_evidence": 0.10200000000000001,
+              "circumstantial": 0.0765
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "criminal": {
+          "target": "Bantjies",
+          "element": "Unlawful Business Interference",
+          "standard": "criminal",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Bantjies",
+            "standard": "Beyond Reasonable Doubt (Criminal)",
+            "threshold": 0.95,
+            "necessaryConditions": {
+              "evidenceThreshold": "Eliminate reasonable doubt (>95% certainty)",
+              "keyRequirements": [
+                "Establish each element with very high certainty",
+                "Exclude all reasonable alternative explanations",
+                "Provide corroborating evidence from multiple sources",
+                "Demonstrate clear intent or knowledge",
+                "Establish chain of causation beyond doubt"
+              ],
+              "strategicFocus": [
+                "Multiple independent evidence sources",
+                "Expert testimony consistency",
+                "Documentary evidence authentication",
+                "Witness credibility establishment",
+                "Alternative theory elimination"
+              ],
+              "heightenedStandards": [
+                "Evidence must be clear and unambiguous",
+                "Circumstantial evidence requires strong corroboration",
+                "Any reasonable doubt favors defendant",
+                "Prosecution bears full burden throughout"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.38,
+              "witness_testimony": 0.2375,
+              "expert_evidence": 0.19,
+              "circumstantial": 0.1425
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        },
+        "mathematical": {
+          "target": "Bantjies",
+          "element": "Unlawful Business Interference",
+          "standard": "mathematical",
+          "analysis": {
+            "element": "Unlawful Business Interference",
+            "defendant": "Bantjies",
+            "standard": "Mathematical Invariant (Universal)",
+            "threshold": 1,
+            "necessaryConditions": {
+              "evidenceThreshold": "Logical certainty under all conditions (100%)",
+              "keyRequirements": [
+                "Establish logical necessity of guilt",
+                "Demonstrate that innocence leads to contradiction",
+                "Prove guilt independent of specific circumstances",
+                "Show invariant properties across all scenarios",
+                "Establish mathematical proof structure"
+              ],
+              "strategicFocus": [
+                "Logical contradiction analysis",
+                "Universal quantification over scenarios",
+                "Axiomatic evidence structure",
+                "Proof by contradiction methodology",
+                "Invariant property identification"
+              ],
+              "mathematicalFramework": [
+                "Define universe of possible explanations",
+                "Eliminate each alternative through logical contradiction",
+                "Demonstrate that only guilt remains logically consistent",
+                "Prove invariance across all parameter variations"
+              ]
+            },
+            "evidenceRequirements": [],
+            "strategicApproach": [],
+            "riskFactors": []
+          },
+          "optimalApproach": "General approach: Establish facts, demonstrate causation, address defenses",
+          "evidencePlan": {
+            "primaryEvidence": [
+              "Documentary evidence",
+              "Witness testimony",
+              "Expert analysis"
+            ],
+            "corroboratingEvidence": [
+              "Third-party documents",
+              "Independent witnesses",
+              "Pattern evidence"
+            ],
+            "expertWitnesses": [
+              "Forensic accountant",
+              "Legal expert",
+              "Industry specialist"
+            ],
+            "documentaryProof": [
+              "Contracts",
+              "Communications",
+              "Financial records",
+              "Corporate documents"
+            ],
+            "witnessTestimony": [
+              "Fact witnesses",
+              "Character witnesses",
+              "Expert witnesses"
+            ],
+            "evidenceWeighting": {
+              "documentary": 0.4,
+              "witness_testimony": 0.25,
+              "expert_evidence": 0.2,
+              "circumstantial": 0.15
+            },
+            "sequencing": [
+              "Foundation evidence",
+              "Primary proof",
+              "Corroboration",
+              "Defense addressing"
+            ]
+          },
+          "executionSequence": {
+            "phase1": "Establish foundation facts and timeline",
+            "phase2": "Present primary evidence of misconduct",
+            "phase3": "Provide corroborating evidence and expert analysis",
+            "phase4": "Address defenses and alternative explanations",
+            "phase5": "Demonstrate satisfaction of burden of proof",
+            "contingencies": [
+              "Alternative evidence sources",
+              "Backup witness strategies",
+              "Procedural alternatives"
+            ]
+          },
+          "riskMitigation": [
+            "Evidence challenges",
+            "Procedural risks",
+            "Strategic countermeasures"
+          ]
+        }
+      }
+    }
+  },
+  "recommendations": {
+    "priorityOrder": [
+      "Focus on Peter for material non-disclosure (strongest case)",
+      "Establish business interference coordination between all defendants",
+      "Use civil standard as foundation, build toward criminal standard",
+      "Develop mathematical framework for logical inevitability"
+    ],
+    "evidenceCollection": [
+      "Secure all settlement agreement documentation",
+      "Obtain complete email communication records",
+      "Engage forensic accountant for financial analysis",
+      "Document all timeline correlations"
+    ],
+    "strategicApproach": [
+      "Build case incrementally from civil to criminal standards",
+      "Use burden shifting effectively in civil proceedings",
+      "Establish patterns of coordination between defendants",
+      "Focus on documentary evidence as primary foundation"
+    ],
+    "riskMitigation": [
+      "Prepare for alternative explanation defenses",
+      "Anticipate credibility challenges",
+      "Develop contingency evidence sources",
+      "Plan for procedural challenges"
+    ]
+  }
+}

@@ -16,6 +16,7 @@
     "test:duplicate-cleanup": "node tests/duplicate-cleanup-test.js",
     "test:label-handling": "node tests/label-handling-test.js",
     "test:label-creation": "node tests/manual-test-label-creation.js",
+    "test:burden-of-proof": "node tests/burden-of-proof-strategy-tests.js",
     "test:verbose": "node tests/run-all-tests.js --verbose",
     "test:hypergraph": "node tests/hypergraphql.test.js",
     "test:ad-hypergraph": "node tests/ad-hypergraph-test.js",
