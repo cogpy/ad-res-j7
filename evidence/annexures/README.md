@@ -83,13 +83,14 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 ### UK Tax Residency Documentation
 
-#### JF-UKTAX1: UK Tax Residency Documentation
+#### JF-UKTAX1: Tax Residency Documentation
 - **File:** `JF-UKTAX1_UK_TAX_RESIDENCY_DOCUMENTATION.md`
-- **Purpose:** UK tax residency documentation supporting Daniel's management of RegimA UK Ltd operations and cross-border business structure
+- **Purpose:** Tax residency documentation for British citizens (Peter, Jacqui, Daniel) with South African tax residency, supporting cross-border business operations and UK business management
 - **Priority:** CRITICAL 
 - **Affidavit References:** Paragraph 129 (UK operations section)
-- **Status:** ⚠️ **Template** - Requires actual UK tax documentation
+- **Status:** ⚠️ **Template** - Requires actual SA tax documentation
 - **Added:** 2025-10-16
+- **Updated:** 2025-10-17 (Corrected focus to SA tax residency)
 
 ---
 
