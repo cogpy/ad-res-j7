@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-16T17:30:21.396221",
-  "total_files": 175,
-  "valid_files": 175,
+  "timestamp": "2025-10-17T04:27:26.785083",
+  "total_files": 196,
+  "valid_files": 196,
   "invalid_files": 0,
   "errors": [],
   "warnings": [],
@@ -769,7 +769,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 13141
+      "size_bytes": 13150
     },
     {
       "file": "jax-response/analysis-output/Affidavit_Amendment_Recommendations.json",
@@ -888,7 +888,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 5244
+      "size_bytes": 5240
     },
     {
       "file": "jax-response/analysis-output/strategic_contradictions_analysis.json",
@@ -1136,6 +1136,20 @@
       "size_bytes": 16373
     },
     {
+      "file": "lex-inference-engine/output/criminal_case_cross_reference.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 526
+    },
+    {
+      "file": "lex-inference-engine/output/final_prosecution_soundness_assessment.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1510
+    },
+    {
       "file": "lex-inference-engine/output/lex_inference_integration_summary.json",
       "status": "valid",
       "error": null,
@@ -1148,6 +1162,20 @@
       "error": null,
       "warnings": [],
       "size_bytes": 6004
+    },
+    {
+      "file": "lex-inference-engine/output/prosecution_legal_soundness_report.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4353
+    },
+    {
+      "file": "lex-inference-engine/output/prosecution_recommendations_validation.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 34525
     },
     {
       "file": "lex-inference-engine/output/universal_guilt_mathematical_proof.json",
@@ -1199,11 +1227,130 @@
       "size_bytes": 1561
     },
     {
-      "file": "tests/json-validation-test-results.json",
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-27-26.json",
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 350
+      "size_bytes": 22946
+    },
+    {
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-27-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 165202
+    },
+    {
+      "file": "test-data/archives/integration-test-results_2025-10-17_04-27-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8677
+    },
+    {
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-27-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4506
+    },
+    {
+      "file": "test-data/archives/security-validation-results_2025-10-17_04-27-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73931
+    },
+    {
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-27-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11814
+    },
+    {
+      "file": "test-data/latest/comprehensive-workflow-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22750
+    },
+    {
+      "file": "test-data/latest/end-to-end-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 165018
+    },
+    {
+      "file": "test-data/latest/integration-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8483
+    },
+    {
+      "file": "test-data/latest/malformed-markdown-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4310
+    },
+    {
+      "file": "test-data/latest/security-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73738
+    },
+    {
+      "file": "test-data/latest/workflow-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11617
+    },
+    {
+      "file": "tests/comprehensive-workflow-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22361
+    },
+    {
+      "file": "tests/end-to-end-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 164676
+    },
+    {
+      "file": "tests/integration-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8168
+    },
+    {
+      "file": "tests/malformed-markdown-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4051
+    },
+    {
+      "file": "tests/security-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73384
+    },
+    {
+      "file": "tests/workflow-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11258
     },
     {
       "file": "todo/Executive Summary_ Jax-Dan Response Improvements.json",
@@ -1217,7 +1364,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 44103
+      "size_bytes": 43544
     },
     {
       "file": "todo/README.json",
