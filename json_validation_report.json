@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-17T04:27:06.771305",
-  "total_files": 196,
-  "valid_files": 196,
+  "timestamp": "2025-10-17T04:32:52.817846",
+  "total_files": 211,
+  "valid_files": 211,
   "invalid_files": 0,
   "errors": [],
   "warnings": [],
@@ -1126,7 +1126,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 31263
+      "size_bytes": 35063
     },
     {
       "file": "legal-hypergraphql/evaluation-reports/case-2025-137857-evaluation.json",
@@ -1196,7 +1196,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 1913
+      "size_bytes": 1995
     },
     {
       "file": "reports/comprehensive-status-report.json",
@@ -1227,6 +1227,13 @@
       "size_bytes": 1561
     },
     {
+      "file": "test-data/archives/comprehensive-test-results_2025-10-17_04-27-06.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4680
+    },
+    {
       "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-27-06.json",
       "status": "valid",
       "error": null,
@@ -1234,7 +1241,42 @@
       "size_bytes": 22949
     },
     {
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-32-52.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22949
+    },
+    {
+      "file": "test-data/archives/edge-case-comprehensive-results_2025-10-17_04-31-26.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28919
+    },
+    {
+      "file": "test-data/archives/edge-case-comprehensive-results_2025-10-17_04-32-18.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28665
+    },
+    {
+      "file": "test-data/archives/edge-case-comprehensive-results_2025-10-17_04-32-52.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28321
+    },
+    {
       "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-27-06.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 165205
+    },
+    {
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-32-52.json",
       "status": "valid",
       "error": null,
       "warnings": [],
@@ -1248,7 +1290,21 @@
       "size_bytes": 8680
     },
     {
+      "file": "test-data/archives/integration-test-results_2025-10-17_04-32-52.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8680
+    },
+    {
       "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-27-06.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4509
+    },
+    {
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-32-52.json",
       "status": "valid",
       "error": null,
       "warnings": [],
@@ -1262,6 +1318,13 @@
       "size_bytes": 73934
     },
     {
+      "file": "test-data/archives/security-validation-results_2025-10-17_04-32-52.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73934
+    },
+    {
       "file": "test-data/archives/workflow-validation-results_2025-10-17_04-27-06.json",
       "status": "valid",
       "error": null,
@@ -1269,11 +1332,32 @@
       "size_bytes": 11817
     },
     {
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-32-52.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11817
+    },
+    {
+      "file": "test-data/latest/comprehensive-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4482
+    },
+    {
       "file": "test-data/latest/comprehensive-workflow-results.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 22753
+    },
+    {
+      "file": "test-data/latest/edge-case-comprehensive-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28118
     },
     {
       "file": "test-data/latest/end-to-end-test-results.json",
@@ -1311,11 +1395,25 @@
       "size_bytes": 11620
     },
     {
+      "file": "tests/comprehensive-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4019
+    },
+    {
       "file": "tests/comprehensive-workflow-results.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 22361
+    },
+    {
+      "file": "tests/edge-case-comprehensive-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 27592
     },
     {
       "file": "tests/end-to-end-test-results.json",
@@ -1330,6 +1428,13 @@
       "error": null,
       "warnings": [],
       "size_bytes": 8168
+    },
+    {
+      "file": "tests/json-validation-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 350
     },
     {
       "file": "tests/malformed-markdown-test-results.json",
