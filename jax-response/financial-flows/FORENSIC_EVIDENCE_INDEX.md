@@ -154,28 +154,107 @@
 ### Criminal Charges Supported by Evidence:
 
 #### **Primary Financial Crime Charges:**
-- **Grand Theft** - R4,276,832.85+ in systematic financial asset misappropriation
-- **Wire Fraud** - Electronic transfer manipulation for unauthorized benefit
-- **Money Laundering** - Complex transaction processing to conceal criminal proceeds
-- **Organized Racketeering** - Coordinated criminal enterprise conducting systematic financial fraud
+
+##### **Grand Theft**
+- **Common Law Crime**: R4,276,832.85+ in systematic financial asset misappropriation
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+##### **Wire Fraud** (Electronic Transfer Manipulation)
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access to electronic transfer systems
+  - **Section 86(2)**: Unauthorized modification of electronic transfer data
+- **Common Law Fraud**: Electronic transfer manipulation for unauthorized benefit
+  - **Penalty**: Up to 15 years imprisonment
+
+##### **Money Laundering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 4**: Money laundering offense - Complex transaction processing to conceal criminal proceeds
+  - **Section 6**: Acquisition, possession or use of proceeds of unlawful activities
+  - **Penalty**: Up to 30 years imprisonment
+
+##### **Organized Racketeering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 2**: Racketeering activities - Coordinated criminal enterprise conducting systematic financial fraud
+  - **Section 3**: Criminal enterprise activities
+  - **Penalty**: Up to 30 years imprisonment
 
 #### **Computer and Technology Crime Charges:**
-- **Computer Fraud** - Unauthorized access and manipulation of banking systems
-- **System Intrusion** - Illegal penetration of secure financial networks
-- **Identity Theft** - Unauthorized use of legitimate credentials for financial access
-- **Electronic Privacy Violations** - Unauthorized access to confidential financial information
+
+##### **Computer Fraud**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access and manipulation of banking systems
+  - **Section 87**: Unauthorized access to computer programs and systems
+  - **Penalty**: Up to 12 months imprisonment or fine
+
+##### **System Intrusion**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Illegal penetration of secure financial networks
+  - **Penalty**: Up to 12 months imprisonment or fine
+
+##### **Identity Theft**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 87**: Unauthorized use of legitimate credentials for financial access
+- **Common Law Fraud**: Identity misrepresentation for financial gain
+  - **Penalty**: Up to 15 years imprisonment
+
+##### **Electronic Privacy Violations**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access to confidential financial information
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Unlawful processing of personal financial information
+  - **Penalty**: Up to R10 million fine or 10 years imprisonment
 
 #### **Professional and Institutional Crime Charges:**
-- **Banking Fraud** - Systematic deception of financial institutions
-- **Fiduciary Duty Breach** - Misuse of financial authority for criminal purposes
-- **Professional License Violations** - Abuse of professional position for criminal benefit
-- **Regulatory Compliance Violations** - Systematic breach of financial reporting requirements
+
+##### **Banking Fraud**
+- **Common Law Fraud**: Systematic deception of financial institutions
+  - **Elements**: Misrepresentation to banks, unlawfulness, intention, prejudice
+- **Banks Act 94 of 1990**: Violation of banking regulations
+  - **Penalty**: Up to 15 years imprisonment + banking regulatory penalties
+
+##### **Fiduciary Duty Breach**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Misuse of financial authority for criminal purposes
+- **Common Law**: Breach of fiduciary duty
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+##### **Professional License Violations**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Abuse of professional position for criminal benefit
+- **Legal Practice Act 28 of 2014** (if applicable)
+  - **Professional conduct rules**: Misuse of professional financial authority
+  - **Penalty**: Professional disqualification, criminal referral
+
+##### **Regulatory Compliance Violations**
+- **Companies Act 71 of 2008**
+  - **Section 214**: Financial record keeping - Systematic breach of financial reporting requirements
+- **Banks Act 94 of 1990**: Banking compliance violations
+  - **Penalty**: Regulatory fines, criminal charges, license revocation
 
 #### **Obstruction and Concealment Charges:**
-- **Obstruction of Justice** - Systematic interference with criminal investigations
-- **Evidence Tampering** - Unauthorized destruction and manipulation of criminal evidence
-- **Witness Intimidation** - Efforts to prevent cooperation with investigations
-- **Criminal Conspiracy** - Coordinated multi-party evidence destruction and concealment
+
+##### **Obstruction of Justice**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 18**: Obstruction of justice - Systematic interference with criminal investigations
+  - **Penalty**: Up to 30 years imprisonment
+
+##### **Evidence Tampering**
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 319**: Interference with evidence - Unauthorized destruction and manipulation of criminal evidence
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 18**: Evidence destruction as obstruction of justice
+  - **Penalty**: Up to 30 years imprisonment
+
+##### **Witness Intimidation**
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 319**: Interference with witnesses - Efforts to prevent cooperation with investigations
+  - **Penalty**: Up to 10 years imprisonment
+
+##### **Criminal Conspiracy**
+- **Common Law Crime**: Coordinated multi-party evidence destruction and concealment
+  - **Elements**: Agreement between parties, unlawful objective, intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
 
 ### **Aggravating Circumstances:**
 - **Sophisticated Criminal Network** - Professional-level coordination and technical capability

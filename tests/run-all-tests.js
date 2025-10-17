@@ -9,6 +9,8 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const JSONValidationTest = require('./json-validation-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -21,6 +23,8 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      malformedMarkdown: null,
+      jsonValidation: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -77,6 +81,9 @@ class TestRunner {
       passed: apiTest.testResults.filter(t => t.passed).length,
       failed: apiTest.testResults.filter(t => !t.passed).length,
       errors: apiTest.errors
+    };
+  }
+
   async runComprehensiveTests() {
     console.log('\n📋 Running Comprehensive Workflow Tests...\n');
     
@@ -133,27 +140,67 @@ class TestRunner {
     return success;
   }
 
+  async runMalformedMarkdownTests() {
+    console.log('\n📋 Running Malformed Markdown Tests...\n');
+    
+    const malformedTest = new MalformedMarkdownTest();
+    const success = await malformedTest.run();
+    
+    this.results.malformedMarkdown = {
+      success: success,
+      total: malformedTest.testResults.length,
+      passed: malformedTest.testResults.filter(t => t.passed).length,
+      failed: malformedTest.testResults.filter(t => !t.passed).length,
+      errors: malformedTest.errors
+    };
+    
+    return success;
+  }
+
+  async runJSONValidationTests() {
+    console.log('\n📋 Running JSON Validation Tests...\n');
+    
+    const jsonTest = new JSONValidationTest();
+    const success = await jsonTest.runTests();
+    
+    this.results.jsonValidation = {
+      success: success,
+      total: jsonTest.results.passed + jsonTest.results.failed,
+      passed: jsonTest.results.passed,
+      failed: jsonTest.results.failed,
+      errors: jsonTest.results.errors
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
-    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
-    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
-    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed + this.results.api.failed;
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
+                                       this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total;
+                                       this.results.endToEnd.total +
+                                       this.results.malformedMarkdown.total +
+                                       this.results.jsonValidation.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
+                                        this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed;
+                                        this.results.endToEnd.passed +
+                                        this.results.malformedMarkdown.passed +
+                                        this.results.jsonValidation.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
+                                        this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed;
+                                        this.results.endToEnd.failed +
+                                        this.results.malformedMarkdown.failed +
+                                        this.results.jsonValidation.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -195,6 +242,16 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
+    console.log('\n🔧 Malformed Markdown Tests:');
+    console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
+    console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    
+    console.log('\n📄 JSON Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.jsonValidation.passed}/${this.results.jsonValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.jsonValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.jsonValidation.passed / this.results.jsonValidation.total) * 100)}%`);
+    
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
     console.log(`   ✅ Passed: ${this.results.overall.passed_tests}`);
@@ -228,6 +285,11 @@ class TestRunner {
       if (this.results.api.errors.length > 0) {
         console.log('   API Integration Test Failures:');
         this.results.api.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
       if (this.results.comprehensive.errors.length > 0) {
         console.log('   Comprehensive Test Failures:');
         this.results.comprehensive.errors.forEach(error => {
@@ -247,6 +309,22 @@ class TestRunner {
       if (this.results.endToEnd.errors.length > 0) {
         console.log('   End-to-End Test Failures:');
         this.results.endToEnd.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.malformedMarkdown.errors.length > 0) {
+        console.log('   Malformed Markdown Test Failures:');
+        this.results.malformedMarkdown.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.jsonValidation.errors.length > 0) {
+        console.log('   JSON Validation Test Failures:');
+        this.results.jsonValidation.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
@@ -271,7 +349,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown']
       },
       summary: this.results.overall
     });
@@ -291,6 +369,8 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const jsonValidationSuccess = await this.runJSONValidationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -302,8 +382,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess;
-      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && jsonValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {

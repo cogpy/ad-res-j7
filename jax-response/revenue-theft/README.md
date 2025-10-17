@@ -111,19 +111,95 @@ This directory contains forensic evidence and analysis for the systematic revenu
 ## Legal Framework Classification
 
 ### Criminal Charges Available
-1. **Organized Crime/Racketeering** - Pattern of coordinated criminal activity
-2. **Computer Fraud** - Shopify audit trail destruction 
-3. **Identity Fraud** - Domain registration using son's name
-4. **Theft by Conversion** - Bank account redirection
-5. **Business Sabotage** - Systematic operational destruction
-6. **POPI Violations** - Unauthorized customer data processing
-7. **Criminal Conspiracy** - Coordinated multi-party criminal scheme
+
+#### 1. **Organized Crime/Racketeering**
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 2**: Racketeering activities - Pattern of coordinated criminal activity
+  - **Section 3**: Criminal enterprise activities
+  - **Penalty**: Up to 30 years imprisonment
+
+#### 2. **Computer Fraud** 
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 86(1)**: Unauthorized access to, interception of, or interference with data
+  - **Section 86(2)**: Unauthorized modification or impairment of data (Shopify audit trail destruction)
+  - **Section 87**: Unauthorized access to computer program or system
+  - **Penalty**: Up to 12 months imprisonment or fine (ECTA), up to R1 million fine
+
+#### 3. **Identity Fraud**
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Section 87**: Identity-related computer crimes (Domain registration using son's name)
+  - **Section 88**: Cyber-identity fraud and impersonation
+- **Common Law Fraud**: Identity misrepresentation elements
+  - **Elements**: Misrepresentation, unlawfulness, intention, prejudice
+  - **Penalty**: Up to 15 years imprisonment
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
+  - **Additional Penalty**: Up to R1 million fine for electronic identity crimes
+
+#### 4. **Theft by Conversion**
+- **Common Law Crime**: Bank account redirection and revenue diversion
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+#### 5. **Business Sabotage**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director breach of fiduciary duty through systematic operational destruction
+- **Common Law**: Malicious damage to property
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### 6. **POPI Violations**
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Offenses related to unauthorized customer data processing
+  - **Section 108**: Penalties
+  - **Penalty**: Up to R10 million fine or 10 years imprisonment per violation
+
+#### 7. **Criminal Conspiracy**
+- **Common Law Crime**: Coordinated multi-party criminal scheme
+  - **Elements**: Agreement between parties, unlawful objective, intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 18**: Conspiracy to commit any offense
+  - **Penalty**: Same punishment as if the offense had been committed
+
+#### 8. **Perjury** (Related to False Court Statements)
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 319**: Perjury and false statements under oath
+  - **Elements**: False statement, material fact, under oath, willful intent
+  - **Penalty**: Up to 15 years imprisonment
+
+#### 9. **Tax Fraud**
+- **Tax Administration Act 28 of 2011**
+  - **Section 234**: Tax offenses - Willful attempt to evade tax
+  - **Section 235**: Additional tax offenses
+  - **Penalty**: Up to R800,000 fine or 5 years imprisonment
+- **Income Tax Act 58 of 1962**
+  - **Section 104**: False statements and returns
+  - **Penalty**: 200% of tax evaded plus criminal charges
+
+#### 10. **Obstruction of Justice**
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 39**: Defeating or obstructing the course of justice
+  - **Elements**: Act calculated to defeat/obstruct justice, willful intent
+  - **Penalty**: Up to 15 years imprisonment
 
 ### Regulatory Violations
-1. **Protection of Personal Information Act (POPI)** - R10M+ fines per violation
-2. **Competition Act** - Unfair business practices
-3. **Consumer Protection Act** - Fraudulent business representation
-4. **Electronic Communications Act** - Unauthorized system access
+1. **Protection of Personal Information Act (POPIA) 4 of 2013** 
+   - **Section 107**: Processing personal information unlawfully - R10M+ fines per violation
+   - **Section 108**: Interference with Information Regulator - Additional penalties
+2. **Competition Act 89 of 1998** 
+   - **Section 4**: Restrictive horizontal practices - Unfair business practices
+   - **Section 5**: Restrictive vertical practices
+3. **Consumer Protection Act 68 of 2008** 
+   - **Section 40**: False, misleading or deceptive representations - Fraudulent business representation
+   - **Section 41**: Unconscionable conduct
+4. **Electronic Communications Act 36 of 2005** 
+   - **Section 17**: Unauthorized system access and interference
+   - **Section 80**: Penalties for electronic communications contraventions
+5. **Financial Intelligence Centre Act 38 of 2001**
+   - **Section 2**: Money laundering control measures
+   - **Section 24**: Suspicious transaction reporting obligations
+6. **Banks Act 94 of 1990**
+   - **Section 78**: Conducting unauthorized banking business
+   - **Section 91**: False information to registrar
 
 ## Evidence Quality Assessment
 
