@@ -1,0 +1,256 @@
+{
+  "name": "Burden of Proof Implementation Workflow",
+  "version": "1.0",
+  "case": "Case 2025-137857",
+  "generated": "2025-10-17T04:32:26.426Z",
+  "proof_standards": {
+    "civil": {
+      "name": "Balance of Probabilities",
+      "threshold": 0.51,
+      "description": "More likely than not",
+      "application": [
+        "Civil court proceedings",
+        "Interdict applications",
+        "Damages claims"
+      ],
+      "evidence_level": "Preponderance of evidence",
+      "practical_threshold": 0.65,
+      "south_african_law": "Civil Procedure Act, common law standard"
+    },
+    "criminal": {
+      "name": "Beyond Reasonable Doubt",
+      "threshold": 0.9,
+      "description": "No reasonable doubt remains",
+      "application": [
+        "Criminal prosecution",
+        "Imprisonment",
+        "Criminal records"
+      ],
+      "evidence_level": "Comprehensive proof excluding reasonable alternatives",
+      "practical_threshold": 0.85,
+      "south_african_law": "Criminal Procedure Act 51 of 1977"
+    },
+    "invariant": {
+      "name": "Mathematical/Logical Certainty",
+      "threshold": 1,
+      "description": "Invariant under all conditions",
+      "application": [
+        "Irrefutable arguments",
+        "Strategic positioning",
+        "Academic analysis"
+      ],
+      "evidence_level": "Logical necessity, mathematical proof",
+      "practical_threshold": 1,
+      "south_african_law": "Logical and mathematical principles"
+    }
+  },
+  "strategies": [
+    {
+      "id": "BOP-001",
+      "name": "Civil Material Non-Disclosure Strategy",
+      "target_agent": "peter",
+      "proof_standard": "civil",
+      "priority": 1,
+      "status": "ready_to_execute",
+      "success_probability": 0.95,
+      "required_evidence": [
+        "material_non_disclosure_categories",
+        "settlement_agreement_existence"
+      ],
+      "current_evidence_strength": 0.95,
+      "implementation_file": "jax-dan-response/comprehensive_material_non_disclosure.md"
+    },
+    {
+      "id": "BOP-002",
+      "name": "Civil Disproportionate Harm Strategy",
+      "target_agent": "peter",
+      "proof_standard": "civil",
+      "priority": 1,
+      "status": "ready_to_execute",
+      "success_probability": 0.92,
+      "required_evidence": [
+        "disproportionate_harm_calculation",
+        "quantified_harm_analysis"
+      ],
+      "current_evidence_strength": 0.92,
+      "implementation_file": "jax-dan-response/quantified_harm_analysis.md"
+    },
+    {
+      "id": "BOP-003",
+      "name": "Civil Perjury Strategy (Peter)",
+      "target_agent": "peter",
+      "proof_standard": "civil",
+      "priority": 1,
+      "status": "ready_to_execute",
+      "success_probability": 0.9,
+      "required_evidence": [
+        "founding_affidavit_contradictions",
+        "settlement_agreement_existence"
+      ],
+      "current_evidence_strength": 0.9,
+      "implementation_file": "jax-dan-response/comprehensive_material_non_disclosure.md"
+    },
+    {
+      "id": "BOP-004",
+      "name": "Civil Email Impersonation Strategy (Rynette)",
+      "target_agent": "rynette",
+      "proof_standard": "civil",
+      "priority": 2,
+      "status": "partial_evidence",
+      "success_probability": 0.85,
+      "required_evidence": [
+        "domain_registration_records",
+        "email_impersonation_pattern"
+      ],
+      "current_evidence_strength": 0.7,
+      "evidence_gaps": [
+        "Technical email forensics",
+        "System access logs"
+      ]
+    },
+    {
+      "id": "BOP-005",
+      "name": "Civil Fiduciary Breach Strategy (Bantjies)",
+      "target_agent": "bantjies",
+      "proof_standard": "civil",
+      "priority": 2,
+      "status": "ready_to_execute",
+      "success_probability": 0.82,
+      "required_evidence": [
+        "confirmatory_affidavit_problems",
+        "trustee_duty_violations"
+      ],
+      "current_evidence_strength": 0.82,
+      "implementation_file": null
+    },
+    {
+      "id": "BOP-006",
+      "name": "Criminal Perjury Strategy (Peter)",
+      "target_agent": "peter",
+      "proof_standard": "criminal",
+      "priority": 3,
+      "status": "awaiting_evidence",
+      "success_probability": 0.85,
+      "required_evidence": [
+        "complete_email_archives",
+        "founding_affidavit_contradictions"
+      ],
+      "current_evidence_strength": 0.65,
+      "evidence_gaps": [
+        "Complete email discovery",
+        "Financial records access"
+      ]
+    },
+    {
+      "id": "BOP-007",
+      "name": "Criminal Computer Fraud Strategy (Rynette)",
+      "target_agent": "rynette",
+      "proof_standard": "criminal",
+      "priority": 4,
+      "status": "awaiting_evidence",
+      "success_probability": 0.7,
+      "required_evidence": [
+        "system_access_logs",
+        "network_forensics_data"
+      ],
+      "current_evidence_strength": 0.4,
+      "evidence_gaps": [
+        "System forensics",
+        "Technical expert analysis"
+      ]
+    },
+    {
+      "id": "BOP-008",
+      "name": "Mathematical Invariant Strategy",
+      "target_agent": "all",
+      "proof_standard": "invariant",
+      "priority": 1,
+      "status": "complete",
+      "success_probability": 1,
+      "required_evidence": [
+        "temporal_facts",
+        "mathematical_relationships"
+      ],
+      "current_evidence_strength": 1,
+      "implementation_file": "BURDEN_OF_PROOF_FRAMEWORK.md"
+    }
+  ],
+  "current_position": {
+    "civil_readiness": {
+      "total_strategies": 5,
+      "ready_strategies": 4,
+      "readiness_percentage": 0.8,
+      "average_success_probability": 0.8880000000000001,
+      "status": "ready",
+      "recommendation": "Proceed with civil litigation"
+    },
+    "criminal_potential": {
+      "total_strategies": 2,
+      "evidence_blocked": 2,
+      "evidence_available_percentage": 0,
+      "average_potential_success": 0.7749999999999999,
+      "status": "evidence_critical",
+      "recommendation": "Await civil interdict setting aside for evidence access"
+    },
+    "invariant_strength": {
+      "mathematical_certainty": 1,
+      "temporal_facts_established": true,
+      "financial_ratios_calculated": true,
+      "logical_contradictions_documented": true,
+      "status": "complete",
+      "strategic_value": "maximum",
+      "recommendation": "Leverage invariants in all proceedings"
+    },
+    "overall_strategic_position": {
+      "overall_score": 0.8765000000000001,
+      "civil_strength": 0.8880000000000001,
+      "criminal_potential": 0.7749999999999999,
+      "invariant_certainty": 1,
+      "strategic_advantage": "strong",
+      "primary_recommendation": "Execute civil litigation immediately to restore evidence access for criminal prosecution"
+    }
+  },
+  "implementation_phases": {
+    "phase_1": {
+      "name": "Civil Foundation",
+      "duration": "30 days",
+      "objective": "Establish civil liability and restore evidence access",
+      "strategies": [
+        "BOP-001",
+        "BOP-002",
+        "BOP-003"
+      ],
+      "success_criteria": "Interdict set aside, evidence access restored"
+    },
+    "phase_2": {
+      "name": "Evidence Gathering",
+      "duration": "60 days post-interdict",
+      "objective": "Collect comprehensive evidence for criminal prosecution",
+      "strategies": [
+        "Evidence collection",
+        "Forensic analysis"
+      ],
+      "success_criteria": "Criminal prosecution threshold evidence obtained"
+    },
+    "phase_3": {
+      "name": "Criminal Prosecution",
+      "duration": "90-180 days post-evidence",
+      "objective": "Achieve criminal convictions",
+      "strategies": [
+        "BOP-006",
+        "BOP-007"
+      ],
+      "success_criteria": "Criminal convictions and asset recovery"
+    }
+  },
+  "success_metrics": {
+    "civil_threshold": 0.65,
+    "criminal_threshold": 0.85,
+    "invariant_threshold": 1
+  },
+  "integration": {
+    "optimal_strategy_system": "./optimal-strategy-implementation.js",
+    "burden_of_proof_framework": "./BURDEN_OF_PROOF_FRAMEWORK.md",
+    "evidence_collector": "./optimal-evidence-collector.js"
+  }
+}
