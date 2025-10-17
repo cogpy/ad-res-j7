@@ -21,6 +21,7 @@
     "test:ad-hypergraph": "node tests/ad-hypergraph-test.js",
     "test:date-validation": "node tests/date-validation-test.js",
     "test:malformed-markdown": "node tests/malformed-markdown-test.js",
+    "test:edge-case-comprehensive": "node tests/edge-case-comprehensive.test.js",
     "test:json-validation": "python3 scripts/validate_json_files.py",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "validate-json": "python3 scripts/validate_json_files.py",
