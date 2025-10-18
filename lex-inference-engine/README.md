@@ -38,6 +38,35 @@ This system proves that **"regardless of any actions taken by any agent, if all 
    - Creates cartesian product of possibility spaces
    - Tracks configuration metadata and relationships
 
+5. **Legal Attention Transform** 🚀 *NEW*
+   - Transformer-style attention mechanism for legal inference
+   - Multi-head attention with different legal lenses
+   - Self-attention over event space for emergent guilt determination
+   - Cross-attention for counterfactual reasoning
+
+### Legal Attention Transform Details
+
+**Core Formula**: `Attention(Q,K,V) = softmax(QK^T/√d)V`
+
+Where:
+- **Q (Queries)**: The guilt hypotheses being evaluated
+- **K (Keys)**: All facts, actions, and agent states in the possibility space  
+- **V (Values)**: The legal/causal significance of each element
+
+**Multi-Head Legal Attention**:
+- **Causal Head**: Attends to cause-effect chains
+- **Intentionality Head**: Focuses on mental states and knowledge
+- **Temporal Head**: Weighs sequence and timing
+- **Normative Head**: Attends to rule violations
+- **Counterfactual Head**: Cross-attention for "what if" scenarios
+- **Necessity Head**: Necessity and sufficiency analysis
+- **Proportionality Head**: Proportionality assessment
+
+**Key Features**:
+- **Self-Attention**: Creates all-to-all comparison matrix over event space
+- **Positional Encodings**: Legal context (temporal, causal, epistemic, deontic)
+- **Invariant Patterns**: Discovers "guilty party is always guilty" attractors
+
 ## Mathematical Foundation
 
 ### Formal Statement
@@ -81,37 +110,70 @@ The engine seamlessly integrates with existing hypergraph attention analysis:
 ### Quick Start
 
 ```bash
-# Run the full demonstration
+# Run the Legal Attention Transform demonstration
+cd lex-inference-engine
+python legal_attention_transform.py
+
+# Run the original JavaScript implementation
 cd lex-inference-engine/demo
 node LexInferenceDemo.js
 
 # Run tests
-cd lex-inference-engine/tests  
+cd tests
+python legal_attention_transform_test.py
 node lex-inference-test.js
-
-# Use programmatically
-const LexInferenceEngine = require('./core/LexInferenceEngine');
-const engine = new LexInferenceEngine();
-const result = await engine.optimizeUniversalGuiltResolution(caseData);
 ```
 
-### API Example
+### Legal Attention Transform API
+
+```python
+from legal_attention_transform import LegalInferenceEngine, LegalElement, GuiltHypothesis
+
+# Create engine
+engine = LegalInferenceEngine(model_dim=64, num_heads=7)
+
+# Add legal elements
+element = LegalElement(
+    id="fraudulent_action",
+    element_type="action",
+    content="Defendant misappropriated funds",
+    agent="defendant",
+    legal_significance=0.9,
+    causal_depth=1
+)
+engine.add_legal_element(element)
+
+# Add guilt hypothesis
+hypothesis = GuiltHypothesis(
+    id="fraud_charge",
+    agent="defendant", 
+    charge="fraud",
+    evidence=["fraudulent_action"]
+)
+engine.add_guilt_hypothesis(hypothesis)
+
+# Run inference
+result = engine.run_inference()
+print("Guilt Scores:", result['guilt_scores'])
+```
+
+### Original JavaScript API
 
 ```javascript
 const engine = new LexInferenceEngine();
 await engine.initialize();
 
-// Load your case data
+/ Load your case data
 const caseData = {
   agents: [...],
   timeline: {...},
   evidence: [...]
 };
 
-// Run universal optimization
+/ Run universal optimization
 const result = await engine.optimizeUniversalGuiltResolution(caseData);
 
-// Validate universal coverage
+/ Validate universal coverage
 console.log(`Completeness: ${result.validation.completeness * 100}%`);
 console.log(`Proof: ${result.validation.proof.proof.qed}`);
 ```
@@ -170,16 +232,20 @@ The Lex Inference Engine provides:
 ```
 lex-inference-engine/
 ├── core/
-│   └── LexInferenceEngine.js      # Core optimization framework
+│   └── LexInferenceEngine.js           # Core optimization framework
 ├── demo/
-│   └── LexInferenceDemo.js        # Comprehensive demonstration
+│   └── LexInferenceDemo.js            # Comprehensive demonstration
 ├── tests/
-│   └── lex-inference-test.js      # Test suite
+│   ├── lex-inference-test.js          # JavaScript test suite
+│   └── legal_attention_transform_test.py  # Python test suite
 ├── output/
 │   ├── lex_inference_optimization_results.json
 │   ├── universal_guilt_mathematical_proof.json
-│   └── lex_inference_integration_summary.json
-└── README.md                      # This file
+│   ├── lex_inference_integration_summary.json
+│   └── legal_attention_results.json   # NEW: Attention transform results
+├── legal_attention_transform.py        # NEW: Legal Attention Transform
+├── universal-guilt-determination.py    # Universal guilt determination system
+└── README.md                          # This file
 ```
 
 ## License

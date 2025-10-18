@@ -49,15 +49,15 @@
 **Legal Framework Phase:** Investigation Phase → Prosecution Phase
 
 ### Critical Evidence Points:
-1. **February 25, 2025:** SLG Stock Missing (5.2M) & Large Invoice - systematic asset stripping
-2. **April 22, 2025:** Pete orders Cloud IT systems removal - infrastructure control
-3. **April 30, 2025:** Server missing from office - evidence tampering begins
-4. **May 15, 2025:** Query to Rynette about Rezonance payments regarding Kayla
-5. **May 22, 2025:** Revenue streams hijacked via Shopify, Sage, QuickBooks
-6. **May 29, 2025:** Domain creation in Rynette's son's name - identity fraud
-7. **June 7, 2025:** Worldwide cards cancelled - financial control seizure
-8. **June 8, 2025:** Shopify orders stopped & audit trail missing - business sabotage
-9. **June 10, 2025:** Financial fraud discovered + Murder reported to Bantjies
+1. **2025-02-25:** SLG Stock Missing (5.2M) & Large Invoice - systematic asset stripping
+2. **2025-04-22:** Pete orders Cloud IT systems removal - infrastructure control
+3. **2025-04-30:** Server missing from office - evidence tampering begins
+4. **2025-05-15:** Query to Rynette about Rezonance payments regarding Kayla
+5. **2025-05-22:** Revenue streams hijacked via Shopify, Sage, QuickBooks
+6. **2025-05-29:** Domain creation in Rynette's son's name - identity fraud
+7. **2025-06-07:** Worldwide cards cancelled - financial control seizure
+8. **2025-06-08:** Shopify orders stopped & audit trail missing - business sabotage
+9. **2025-06-10:** Financial fraud discovered + Murder reported to Bantjies
 10. **August 14/19, 2025:** Perjury committed in court filings
 11. **September 2025:** Coerced settlement despite known crimes
 
@@ -79,7 +79,7 @@
 - **Legal Significance:** Continued exploitation of deceased victim's estate, potential fraud
 - **Framework Phase:** Pre-Investigation (estate manipulation setup)
 
-### **FEBRUARY 25, 2025**
+### **2025-02-25**
 **SLG Stock Missing (5.2M) & Large Invoice (5.2M SLG->RST):**
 - Substantial stock valued at R5.2 million reported missing from SLG
 - Corresponding large invoice of R5.2 million from SLG to RST
@@ -87,7 +87,7 @@
 - **Legal Significance:** Asset theft, fraudulent invoicing, money laundering
 - **Framework Phase:** Pre-Investigation (systematic asset stripping)
 
-### **MARCH 30, 2025**
+### **2025-03-30**
 **Rynette Reveals 2 Years Unprocessed Transactions on RWW:**
 - Disclosure of 2 years of unprocessed transactions on RWW accounts
 - Blames Dan for the backlog situation
@@ -96,7 +96,7 @@
 - **Legal Significance:** Evidence of systematic financial mismanagement, potential setup
 - **Framework Phase:** Pre-Investigation (creating false urgency and blame)
 
-### **APRIL 14, 2025**
+### **2025-04-14**
 **Rynette Sends Email to All Clients - New Payment Account:**
 - Mass communication to all clients
 - Instructs clients to pay into a different account
@@ -105,7 +105,7 @@
 - **Legal Significance:** Fraudulent redirection of funds, theft by conversion
 - **Framework Phase:** Pre-Investigation (revenue stream hijacking preparation)
 
-### **APRIL 22, 2025**
+### **2025-04-22**
 **Pete Tells Dan All Cloud IT Systems Must Go:**
 - ⚠️ **REVISED ANALYSIS**: Peter's instruction likely based on 3rd party technical advice (not direct computer knowledge)
 - **Information Source**: Unknown technical intermediary or Rynette's technical guidance
@@ -116,7 +116,7 @@
 - **Framework Phase:** Pre-Investigation (infrastructure control via intermediary advice)
 - **Deception Potential**: HIGH - Peter may not understand full technical implications of his instructions
 
-### **APRIL 30, 2025**
+### **2025-04-30**
 **Server Missing from Office:**
 - ⚠️ **REVISED ANALYSIS**: Peter likely unaware of specific technical details - action executed by intermediaries
 - **Information Source**: Technical personnel acting on Peter's general instructions or Rynette's coordination
@@ -127,7 +127,7 @@
 - **Framework Phase:** Pre-Investigation (crime preparation via intermediary execution)
 - **Deception Potential**: MEDIUM - Peter may not know specific evidence destroyed
 
-### **MAY 15, 2025**
+### **2025-05-15**
 **Query to Rynette About Rezonance Payments Re Kayla:**
 - Communication regarding payment structures involving deceased victim
 - Suggests ongoing exploitation of Kayla's identity/accounts posthumously
@@ -135,7 +135,7 @@
 - **Legal Significance:** Identity fraud, exploitation of deceased victim's accounts
 - **Framework Phase:** Pre-Investigation (ongoing criminal activity)
 
-### **MAY 22, 2025**
+### **2025-05-22**
 **Revenue Streams Hijacked - Shopify, Sage, QuickBooks:**
 - Multiple financial platforms compromised simultaneously
 - Systematic takeover of business revenue channels
@@ -143,7 +143,7 @@
 - **Legal Significance:** Computer fraud, theft, business interference
 - **Framework Phase:** Pre-Investigation (systematic financial crime escalation)
 
-### **MAY 29, 2025**
+### **2025-05-29**
 **Domain Creation in Rynette Son's Name:**
 - Digital identity created using family member's credentials
 - Establishes false digital presence for fraudulent activities
@@ -151,7 +151,7 @@
 - **Legal Significance:** Identity fraud, conspiracy involving family members
 - **Framework Phase:** Pre-Investigation (infrastructure for larger fraud)
 
-### **JUNE 6, 2025**
+### **2025-06-06**
 **Dan Email to Bantjies with Listing of Companies & Shopify Stores & Prelim Reports:**
 - Dan sends comprehensive documentation to Bantjies
 - Includes listing of all companies under management
@@ -160,7 +160,7 @@
 - **Legal Significance:** Evidence of full disclosure and transparency by Dan
 - **Framework Phase:** Pre-Investigation (documentation and transparency before discovery)
 
-### **JUNE 7, 2025**
+### **2025-06-07**
 **Worldwide Cards Cancelled:**
 - Mass cancellation of financial access cards
 - Systematic cutting off of financial resources
@@ -172,7 +172,7 @@
 
 ## **PHASE 1: DISCOVERY OF CRIMES (JUNE 2025)**
 
-### **JUNE 10, 2025 - MORNING**
+### **2025-06-10 - MORNING**
 **Bantjies Identifies Financial Fraud:**
 - Documents R10 million missing from bank accounts
 - Notes "substantial trading loss" - first in company history
@@ -180,7 +180,7 @@
 - Raises concerns about SARS investigation
 - Sends email to Peter, Jacqui, and Daniel
 
-### **JUNE 10, 2025 - SAME DAY**
+### **2025-06-10 - SAME DAY**
 **Daniel Reports Murder and Theft to Bantjies:**
 - Informs Bantjies about Kayla's murder (August 2023)
 - Reports Peter stealing funds after murder
@@ -195,7 +195,7 @@
 - Bantjies deliberately avoids investigation
 - Conspiracy begins to form
 
-### **JUNE 8, 2025**
+### **2025-06-08**
 **Dan Nearly Completed Reports & Discovers Shopify Issues:**
 - Dan nearly completed comprehensive reports
 - Checks Shopify platform and discovers all orders stopped on May 22
@@ -205,7 +205,7 @@
 - **Legal Significance:** Evidence of systematic business sabotage, POPIA violations
 - **Framework Phase:** Pre-Investigation (discovery of systematic sabotage)
 
-### **JUNE 11, 2025**
+### **2025-06-11**
 **Letter Sent to Clients - Email Domain Change:**
 - Letter sent to all clients instructing them not to use regima.zone email
 - Clients instructed to use regimaskin.co.za email from now on
@@ -214,7 +214,7 @@
 - **Legal Significance:** Business interference, systematic isolation tactics
 - **Framework Phase:** Pre-Investigation (communication control and isolation)
 
-### **JULY 16, 2025**
+### **2025-07-16**
 **Director Loan Draw Due to Card Cancellations:**
 - Due to card cancellations 6 weeks earlier, Dan has been paying all RWW creditors from personal account
 - Dan draws R500,000 Director Loan from SLG to maintain creditor payments
@@ -250,7 +250,7 @@
 - Conspiracy to conceal murder evidence
 - **NEW**: Information manipulation and legal advice fraud
 
-### **AUGUST 29, 2025**
+### **2025-08-29**
 **Daniel Sends Complete Evidence to ENS Africa:**
 - Entire June 10 email chain included
 - Shows Bantjies knew about crimes
@@ -455,7 +455,7 @@ EVERYTHING = NULL AND VOID
 
 ## **IMMEDIATE ACTION STATEMENT FOR HAWKS**
 
-**"This timeline proves a criminal conspiracy starting June 10, 2025, when accountant Bantjies identified R10 million missing but refused to investigate after learning about Kayla's 2023 murder. He then gave a perjured affidavit supporting the thief. ENS Africa received proof on August 29 but concealed it, forcing us into a fraudulent settlement in September while telling us to 'be quiet' about murder and death threats. Every document is void due to fraud. We need immediate protection."**
+**"This timeline proves a criminal conspiracy starting 2025-06-10, when accountant Bantjies identified R10 million missing but refused to investigate after learning about Kayla's 2023 murder. He then gave a perjured affidavit supporting the thief. ENS Africa received proof on August 29 but concealed it, forcing us into a fraudulent settlement in September while telling us to 'be quiet' about murder and death threats. Every document is void due to fraud. We need immediate protection."**
 
 ---
 
@@ -495,22 +495,22 @@ You have documentary proof of every element. This is organized crime operating t
 | Date | Event Category | Legal Significance | Framework Phase |
 |------|---------------|-------------------|-----------------|
 | January [Date], 2025 | Estate Exploitation | Chantal letter re Kayla Estate finalization | Pre-Investigation |
-| February 25, 2025 | Asset Theft | SLG Stock Missing (5.2M) & Large Invoice | Pre-Investigation |
-| March 30, 2025 | Financial Mismanagement Setup | Rynette reveals 2 years unprocessed transactions | Pre-Investigation |
-| April 14, 2025 | Revenue Diversion | Rynette instructs clients to pay different account | Pre-Investigation |
-| April 22, 2025 | IT Infrastructure Control | Pete orders all Cloud IT systems removal | Pre-Investigation |
-| April 30, 2025 | Evidence Tampering | Server missing - potential obstruction | Pre-Investigation |
-| May 15, 2025 | Identity Exploitation | Query about deceased victim's accounts | Pre-Investigation |
-| May 22, 2025 | Financial Platform Hijacking | Revenue streams compromised | Pre-Investigation |
-| May 29, 2025 | Identity Fraud | Domain creation using family member | Pre-Investigation |
-| June 6, 2025 | Documentation & Transparency | Dan emails comprehensive reports to Bantjies | Pre-Investigation |
-| June 7, 2025 | Financial Control Seizure | Cards cancelled systematically | Pre-Investigation |
-| June 8, 2025 | Business Sabotage Discovery | Shopify orders stopped, audit trail missing | Pre-Investigation |
-| June 10, 2025 | Crime Discovery | Initial evidence of conspiracy | Pre-Investigation |
-| June 11, 2025 | Communication Control | Email domain redirection from clients | Pre-Investigation |
-| July 16, 2025 | Financial Strain Management | Director loan draw to maintain operations | Investigation |
+| 2025-02-25 | Asset Theft | SLG Stock Missing (5.2M) & Large Invoice | Pre-Investigation |
+| 2025-03-30 | Financial Mismanagement Setup | Rynette reveals 2 years unprocessed transactions | Pre-Investigation |
+| 2025-04-14 | Revenue Diversion | Rynette instructs clients to pay different account | Pre-Investigation |
+| 2025-04-22 | IT Infrastructure Control | Pete orders all Cloud IT systems removal | Pre-Investigation |
+| 2025-04-30 | Evidence Tampering | Server missing - potential obstruction | Pre-Investigation |
+| 2025-05-15 | Identity Exploitation | Query about deceased victim's accounts | Pre-Investigation |
+| 2025-05-22 | Financial Platform Hijacking | Revenue streams compromised | Pre-Investigation |
+| 2025-05-29 | Identity Fraud | Domain creation using family member | Pre-Investigation |
+| 2025-06-06 | Documentation & Transparency | Dan emails comprehensive reports to Bantjies | Pre-Investigation |
+| 2025-06-07 | Financial Control Seizure | Cards cancelled systematically | Pre-Investigation |
+| 2025-06-08 | Business Sabotage Discovery | Shopify orders stopped, audit trail missing | Pre-Investigation |
+| 2025-06-10 | Crime Discovery | Initial evidence of conspiracy | Pre-Investigation |
+| 2025-06-11 | Communication Control | Email domain redirection from clients | Pre-Investigation |
+| 2025-07-16 | Financial Strain Management | Director loan draw to maintain operations | Investigation |
 | August 14/19, 2025 | Perjury/Fraud | Material misrepresentation to court | Investigation |
-| August 29, 2025 | Legal Suppression | Attorney knowledge and concealment | Investigation |
+| 2025-08-29 | Legal Suppression | Attorney knowledge and concealment | Investigation |
 | September 2025 | Coerced Settlement | Fraud on legal system | Prosecution |
 
 ### Evidence Chain Summary

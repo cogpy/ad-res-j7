@@ -82,7 +82,7 @@ Files in this repository follow consistent naming conventions to ensure clarity 
 
 - **Court Documents**: Use the official case reference number and date (e.g., `KF0019-SecondApplication-03.10.2025.pdf`).
 - **Evidence Files**: Use descriptive names that indicate the content and date (e.g., `D_FAUCITT_PERSONAL_BANK_RECORDS_20250604.pdf`).
-- **Analysis Documents**: Use descriptive names that indicate the type of analysis and classification (e.g., `Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx`).
+- **Analysis Documents**: Use descriptive names that indicate the type of analysis and classification (e.g., `affidavit_work/analysis/Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx`).
 - **README Files**: Each major directory contains a `README.md` file that explains the purpose and contents of that directory.
 
 ## Workflow

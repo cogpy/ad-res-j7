@@ -24,7 +24,7 @@ This comprehensive analysis documents the complete scope of identity theft perpe
 
 #### Systematic Impersonation Timeline
 ```
-Period: June 20, 2025 - August 29, 2025 (Minimum 70+ days)
+Period: 2025-06-20 - 2025-08-29 (Minimum 70+ days)
 Identity Stolen: Peter Faucitt (pete@regima.com)
 Identity Thief: Rynette Farrar
 Method: Complete email account control + impersonated communications
@@ -173,17 +173,17 @@ Victim Categories: Business partners, family members, legal counsel, administrat
 ### Transaction Timeline Correlation
 **Email Impersonation Supporting Criminal Activity:**
 ```
-June 20, 2025: Email impersonation begins (JF1 control confirmation)
+2025-06-20: Email impersonation begins (JF1 control confirmation)
 ├── Business instructions via impersonated pete@regima.com
 ├── Revenue diversion coordination through stolen identity
 └── Administrative directive delivery via email fraud
 
-August 25, 2025: Continued email control (JF2 validation)
+2025-08-25: Continued email control (JF2 validation)
 ├── Sustained identity theft over 65+ day period
 ├── Multiple victim categories affected by impersonation
 └── Financial losses accumulating through email-enabled fraud
 
-August 29, 2025: Legal communications impersonation (JF3)
+2025-08-29: Legal communications impersonation (JF3)
 ├── Attorney-client communications via stolen identity
 ├── Legal strategy coordination through compromised email
 └── Professional relationship exploitation via identity theft

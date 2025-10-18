@@ -1,0 +1,274 @@
+{
+  "timestamp": "2025-10-16T17:22:33.934Z",
+  "fixesGenerated": 35,
+  "fixes": [
+    {
+      "type": "PATH_CORRECTION",
+      "file": "REPOSITORY_STRUCTURE_OLD.md",
+      "lineNumber": 85,
+      "oldPath": "Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx",
+      "newPath": "affidavit_work/analysis/Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx",
+      "context": "- **Analysis Documents**: Use descriptive names that indicate the type of analysis and classification (e.g., `Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx`)."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "PHASE_1_PR_DETAILS.md",
+      "lineNumber": 21,
+      "oldPath": "todo-to-issues.yml",
+      "newPath": ".github/workflows/todo-to-issues.yml",
+      "context": "The TODO files in the `todo/` directory contained action items for Phase 1 tasks that had already been implemented, but the TODO files had not been updated to mark these items as complete. The GitHub Actions workflow (`todo-to-issues.yml`) scans these TODO files and generates issues from unmarked tasks."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "LABEL_HANDLING_FIX.md",
+      "lineNumber": 186,
+      "oldPath": "todo-to-issues.yml",
+      "newPath": ".github/workflows/todo-to-issues.yml",
+      "context": "1. **`todo-to-issues.yml`**"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "LABEL_HANDLING_FIX.md",
+      "lineNumber": 190,
+      "oldPath": "test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "2. **`test-workflows.yml`**"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "LABEL_HANDLING_FIX.md",
+      "lineNumber": 194,
+      "oldPath": "workflow-monitoring.yml",
+      "newPath": ".github/workflows/workflow-monitoring.yml",
+      "context": "3. **`workflow-monitoring.yml`**"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "todo/Improvements for Jax-Dan Response Based on AD Elements.md",
+      "lineNumber": 5,
+      "oldPath": "jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx",
+      "newPath": "jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx",
+      "context": "This document provides comprehensive recommendations for improving the **jax-dan-response** based on the structured **AD (Answering/Defending) elements** framework established in the `jax-response/AD/` directory. The current draft response in `jax-dan-response/source-documents/DRAFTOFMAINPOINTS-RESPONSE.docx` addresses key allegations but lacks the systematic, priority-driven structure and comprehensive evidence mapping present in the AD framework."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "tests/README.md",
+      "lineNumber": 3,
+      "oldPath": "todo-to-issues.yml",
+      "newPath": ".github/workflows/todo-to-issues.yml",
+      "context": "This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `todo-to-issues.yml` and `file-representations.yml` workflows."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "tests/README.md",
+      "lineNumber": 3,
+      "oldPath": "file-representations.yml",
+      "newPath": ".github/workflows/file-representations.yml",
+      "context": "This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `todo-to-issues.yml` and `file-representations.yml` workflows."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "tests/IMPLEMENTATION_SUMMARY.md",
+      "lineNumber": 108,
+      "oldPath": "test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "- GitHub Actions integration via `test-workflows.yml`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "jax-dan-response/README.md",
+      "lineNumber": 148,
+      "oldPath": "AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx",
+      "newPath": "jax-dan-response/evidence-attachments/AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx",
+      "context": "- **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "jax-dan-response/README.md",
+      "lineNumber": 149,
+      "oldPath": "AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx",
+      "newPath": "jax-dan-response/evidence-attachments/AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx",
+      "context": "- **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "implementation/phase1_workflow_testing.md",
+      "lineNumber": 148,
+      "oldPath": ".github/workflows/test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "Create `.github/workflows/test-workflows.yml`:"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/label-verification-guide.md",
+      "lineNumber": 138,
+      "oldPath": ".github/workflows/todo-to-issues.yml",
+      "newPath": ".github/workflows/todo-to-issues.yml",
+      "context": "**2025-10-15**: Updated documentation to reflect the secure array-based label handling implementation in the workflow (lines 789-800 of `.github/workflows/todo-to-issues.yml`). The workflow no longer uses `eval` for command construction, providing better security and reliability."
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/create-issues-from-repository-items.md",
+      "lineNumber": 11,
+      "oldPath": ".github/workflows/create-issues-from-repository-items.yml",
+      "newPath": ".github/workflows/create-issues-from-repository-items.yml",
+      "context": "3. **GitHub Action** (`.github/workflows/create-issues-from-repository-items.yml`) - Automated workflow integration"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/comprehensive-test-suite.md",
+      "lineNumber": 172,
+      "oldPath": "test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "The test suite is integrated with GitHub Actions via the `test-workflows.yml` pipeline:"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/AUTOMATED_TESTING_PIPELINE.md",
+      "lineNumber": 18,
+      "oldPath": ".github/workflows/test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "- **Workflow**: `.github/workflows/test-workflows.yml`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/AUTOMATED_TESTING_PIPELINE.md",
+      "lineNumber": 301,
+      "oldPath": ".github/workflows/test-workflows.yml",
+      "newPath": ".github/workflows/test-workflows.yml",
+      "context": "- **CI/CD Workflow**: `.github/workflows/test-workflows.yml`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "jax-response/source-documents/FINAL_AFFIDAVIT_SUMMARY.md",
+      "lineNumber": 157,
+      "oldPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx",
+      "newPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx",
+      "context": "- **Source:** `jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "jax-response/source-documents/FINAL_AFFIDAVIT_SUMMARY.md",
+      "lineNumber": 158,
+      "oldPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-FINAL.docx",
+      "newPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-FINAL.docx",
+      "context": "- **Final:** `jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-FINAL.docx` ✅"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "jax-response/source-documents/FINAL_AFFIDAVIT_CHANGES_LOG.md",
+      "lineNumber": 263,
+      "oldPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx",
+      "newPath": "jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx",
+      "context": "- `jax-response/source-documents/1.2.MAT4719-AnsweringAffidavit-ENHANCED.docx` (template)"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/detailed_report.md",
+      "lineNumber": 170,
+      "oldPath": "/home/ubuntu/transaction_analysis/validated_transactions.csv",
+      "newPath": "evidence/computer-expenses/validated_transactions.csv",
+      "context": "4. Validated Transactions: `/home/ubuntu/transaction_analysis/validated_transactions.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/detailed_report.md",
+      "lineNumber": 171,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/category_summary.csv",
+      "newPath": "evidence/computer-expenses/category_summary.csv",
+      "context": "5. Category Summary: `/home/ubuntu/transaction_analysis/summaries/category_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/detailed_report.md",
+      "lineNumber": 172,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/period_summary.csv",
+      "newPath": "evidence/computer-expenses/period_summary.csv",
+      "context": "6. Period Summary: `/home/ubuntu/transaction_analysis/summaries/period_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report.md",
+      "lineNumber": 170,
+      "oldPath": "/home/ubuntu/transaction_analysis/validated_transactions.csv",
+      "newPath": "evidence/computer-expenses/validated_transactions.csv",
+      "context": "4. Validated Transactions: `/home/ubuntu/transaction_analysis/validated_transactions.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report.md",
+      "lineNumber": 171,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/category_summary.csv",
+      "newPath": "evidence/computer-expenses/category_summary.csv",
+      "context": "5. Category Summary: `/home/ubuntu/transaction_analysis/summaries/category_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report.md",
+      "lineNumber": 172,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/period_summary.csv",
+      "newPath": "evidence/computer-expenses/period_summary.csv",
+      "context": "6. Period Summary: `/home/ubuntu/transaction_analysis/summaries/period_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report (Corrected).md",
+      "lineNumber": 176,
+      "oldPath": "/home/ubuntu/transaction_analysis/validated_transactions.csv",
+      "newPath": "evidence/computer-expenses/validated_transactions.csv",
+      "context": "4. Validated Transactions: `/home/ubuntu/transaction_analysis/validated_transactions.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report (Corrected).md",
+      "lineNumber": 177,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/category_summary.csv",
+      "newPath": "evidence/computer-expenses/category_summary.csv",
+      "context": "5. Category Summary: `/home/ubuntu/transaction_analysis/summaries/category_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report (Corrected).md",
+      "lineNumber": 178,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/period_summary.csv",
+      "newPath": "evidence/computer-expenses/period_summary.csv",
+      "context": "6. Period Summary: `/home/ubuntu/transaction_analysis/summaries/period_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "evidence/computer-expenses/Computer Expenses Categorization Report (Corrected).md",
+      "lineNumber": 179,
+      "oldPath": "/home/ubuntu/transaction_analysis/summaries/corrected_yearly_summary.csv",
+      "newPath": "evidence/computer-expenses/corrected_yearly_summary.csv",
+      "context": "7. Corrected Yearly Summary: `/home/ubuntu/transaction_analysis/summaries/corrected_yearly_summary.csv`"
+    },
+    {
+      "type": "PATH_CORRECTION",
+      "file": "docs/models/hypergnn/INTEGRATION.md",
+      "lineNumber": 429,
+      "oldPath": ".github/workflows/hypergraph-update.yml",
+      "newPath": ".github/workflows/hypergraph-update.yml",
+      "context": "Add to `.github/workflows/hypergraph-update.yml`:"
+    },
+    {
+      "type": "CREATE_PLACEHOLDER_DIR",
+      "path": "evidence_package_20251012",
+      "description": "Missing evidence package directory"
+    },
+    {
+      "type": "CREATE_PLACEHOLDER_DIR",
+      "path": "case_2025_137857/02_evidence/evidence_package_20251012",
+      "description": "Missing evidence package directory"
+    },
+    {
+      "type": "CREATE_PLACEHOLDER_DIR",
+      "path": "evidence_package_20250523",
+      "description": "Missing evidence package directory"
+    },
+    {
+      "type": "CREATE_PLACEHOLDER_DIR",
+      "path": "evidence_package_20250811",
+      "description": "Missing evidence package directory"
+    }
+  ]
+}

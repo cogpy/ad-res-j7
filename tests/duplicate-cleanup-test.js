@@ -320,9 +320,9 @@ class DuplicateCleanupTester {
       return workflowContent.includes('GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}');
     });
 
-    this.test('Uses server-side authentication approach', () => {
-      return workflowContent.includes('gh auth setup-git') &&
-             workflowContent.includes('Authenticate GitHub CLI (server-side)');
+    this.test('Uses proper GitHub CLI authentication', () => {
+      return workflowContent.includes('gh auth status') &&
+             workflowContent.includes('Authenticate GitHub CLI');
     });
   }
 
