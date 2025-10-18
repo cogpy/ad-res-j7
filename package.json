@@ -15,6 +15,7 @@
     "test:timeline": "node tests/timeline-integration-test.js",
     "test:duplicate-cleanup": "node tests/duplicate-cleanup-test.js",
     "test:label-handling": "node tests/label-handling-test.js",
+    "test:burden-of-proof": "node tests/burden-of-proof-workflow-test.js",
     "test:label-creation": "node tests/manual-test-label-creation.js",
     "test:legal-verification": "node tests/legal-verification-test.js",
     "test:verbose": "node tests/run-all-tests.js --verbose",
