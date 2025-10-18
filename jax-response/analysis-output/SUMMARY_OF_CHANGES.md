@@ -79,9 +79,9 @@ This new section has been inserted between Section 13 (Response to Urgency) and 
 ## Evidence Requirements for Section 13A:
 
 ### Critical Evidence Needed:
-☐ JF5 draft agreement (initial version reviewed)
-☐ JF5 final agreement (signed version with changes)
-☐ Comparison document highlighting all changes
+☑ JF5 draft agreement (initial version reviewed) - **COMPLETE: JF5-DRAFT**
+☑ JF5 final agreement (signed version with changes) - **COMPLETE: JF5-FINAL**
+☑ Comparison document highlighting all changes - **COMPLETE: JF5-COMPARISON**
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
 ☐ Legal opinion on jurisdictional limitations
@@ -125,14 +125,25 @@ This addition is **CRITICAL** because it:
 
 ## Document Versions:
 
-1. **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md** (Original revised version)
+**Active Versions:**
+
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md** - Current version with critical corrections (paragraphs 48 and 129)
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v4.md** - Enhanced version with additional strategic elements
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md** - Latest version with comprehensive updates
+
+**Archived Versions:**
+
+1. **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md** (v1 - Archived)
    - Contains all strategic amendments from recommendations
    - Does not include Section 13A
+   - **Location**: `backups/affidavits/`
 
-2. **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.md** (Current version)
+2. **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.md** (v2 - Archived)
    - Includes all content from v1
    - **PLUS** new Section 13A on settlement agreement manipulation
-   - **This is the version to use going forward**
+   - **Location**: `backups/affidavits/`
+
+**Note:** Versions v1 and v2 have been archived to `backups/affidavits/` as they have been superseded by v3, v4, and v5 with critical corrections and enhancements.
 
 ---
 

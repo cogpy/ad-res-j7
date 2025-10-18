@@ -81,24 +81,24 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 - Police reports and fraud investigation records (Annexure **JF-CHESNO3**);
 - Insolvency assessment as of [date] (Annexure **JF-CHESNO4**).
 
-// <<<<<<< copilot/restore-regima-uk-ltd-status
+/ <<<<<<< copilot/restore-regima-uk-ltd-status
 129.3 **Daniel's Ongoing Restoration Effort:**
 
 129.3.1 Following the Chesno fraud, the Second Respondent (Daniel) was appointed as managing director of RegimA UK Ltd specifically to **rescue the company from insolvency** and manage its financial viability.
-//=======
+/=======
 129.3 **The Reality: Daniel's Rescue of an Abandoned Business:**
 
 129.3.1 The characterization that Daniel was "appointed as managing director" fundamentally mischaracterises what actually occurred. The reality is:
-//>>>>>>> main
+/>>>>>>> main
 
 129.3.2 **Peter's Pattern of Business Conduct:**
 
-//<<<<<<< copilot/restore-regima-uk-ltd-status
+/<<<<<<< copilot/restore-regima-uk-ltd-status
 129.3.3 The Second Respondent undertook an **ongoing restoration effort** to:
 - Manage the company's transition to dormant status while preserving its legal structure;
 - Gradually repay creditors of RegimA UK Ltd and its subsidiaries using profits from new business ventures;
 - Preserve the accumulated tax losses (exceeding GBP 650,000) which make restoration to trading status worthwhile in the long term;
-//=======
+/=======
 129.3.2.1 The Applicant (Peter) had entered into an unconditional multi-decade contract with Isaac Chesno regarding the UK operations.
 
 129.3.2.2 When Chesno committed fraud and the business faced insolvency, the Applicant **abandoned the struggling UK business** at the first sign of serious trouble.
@@ -119,11 +119,11 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 - Repay the debts created by Chesno's fraud;
 - Rebuild customer and supplier relationships damaged by the fraud;
 - Restore the company's reputation in UK markets;
-//>>>>>>> main
+/>>>>>>> main
 - Implement proper financial controls to prevent future fraud;
 - Maintain the company structure for eventual return to trading operations when financially viable.
 
-//<<<<<<< copilot/restore-regima-uk-ltd-status
+/<<<<<<< copilot/restore-regima-uk-ltd-status
 129.3.4 The Second Respondent established RegimA UK Ltd as a **dormant holding company since 2015**, protecting the substantial accumulated tax losses (exceeding GBP 650,000) which provide significant value for future restoration to trading status. Daniel started several new companies and is **gradually using the profits from these new ventures to pay creditors** of RegimA UK Ltd and its subsidiaries as often as possible.
 
 129.3.5 Documentary evidence of this restoration effort includes:
@@ -131,7 +131,7 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 - Documentation of accumulated tax losses exceeding GBP 650,000 (Annexure **JF-RESTORE2**);
 - Correspondence with creditors showing periodic debt repayment from Daniel's new venture profits (Annexure **JF-RESTORE3**);
 - Evidence of Daniel's new business ventures established to generate funds for creditor repayment (Annexure **JF-RESTORE4**).
-//=======
+/=======
 129.3.4.2 As of [date], the Second Respondent successfully restored RegimA UK Ltd to **break-even operations**, a remarkable achievement given the magnitude of the fraud and debt he inherited after the Applicant's abandonment.
 
 129.3.5 **The Pattern Across Multiple Businesses:**
@@ -149,7 +149,7 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 - Management accounts demonstrating return to break-even (Annexure **JF-RESTORE2**);
 - Correspondence with creditors showing debt repayment (Annexure **JF-RESTORE3**);
 - Customer testimonials regarding restored service levels (Annexure **JF-RESTORE4**).
-//>>>>>>> main
+/>>>>>>> main
 
 129.4 **The Applicant's Misleading Characterization:**
 
@@ -159,21 +159,21 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 129.4.3 The reality is that Daniel's involvement arose **because of someone else's wrongdoing** (Chesno's fraud) **combined with the Applicant's abandonment** of the failing business, not from any wrongdoing by Daniel.
 
-//<<<<<<< copilot/restore-regima-uk-ltd-status
+/<<<<<<< copilot/restore-regima-uk-ltd-status
 129.4.3 The Second Respondent's appointment was based on:
 - **Crisis management capability** - ability to navigate a company through fraud-induced insolvency;
 - **Financial acumen** - ability to structure dormant status to preserve tax losses and manage gradual creditor repayment;
 - **Entrepreneurial skill** - ability to start new ventures generating profits for creditor repayment;
 - **Integrity and trustworthiness** - precisely the qualities lacking in his predecessor;
 - **Proven track record** - successfully preserving GBP 650,000+ tax losses while establishing new businesses to fund gradual debt recovery.
-//=======
+/=======
 129.4.4 The characterization as a formal "appointment" obscures the true nature of the situation:
 - **Crisis management capability** - ability to rescue an insolvent company;
 - **Financial acumen** - ability to manage debt repayment over 8 years;
 - **Operational expertise** - ability to restore business operations;
 - **Integrity and trustworthiness** - precisely the qualities lacking in his predecessor;
 - **Proven track record** - successfully achieving break-even after inheriting £500K+ fraud debt that resulted from the Applicant's abandoned business decisions.
-//>>>>>>> main
+/>>>>>>> main
 
 129.5 **Relevance to Current Proceedings:**
 
@@ -181,9 +181,9 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 **(a) Daniel's Competence:** The strategic management of RegimA UK Ltd as a dormant holding company to preserve substantial tax losses, combined with establishing new ventures to generate profits for gradual creditor repayment, demonstrates Daniel's business competence and contradicts the Applicant's allegations of financial mismanagement.
 
-//<<<<<<< copilot/restore-regima-uk-ltd-status
+/<<<<<<< copilot/restore-regima-uk-ltd-status
 **(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company; instead, he has maintained it as a dormant holding company since 2015, started new business ventures, and is gradually using profits from those ventures to repay creditors, demonstrating long-term commitment to the RegimA businesses and their stakeholders.
-//=======
+/=======
 **(b) Daniel's Integrity:** Daniel could have walked away from the fraud-damaged UK company that the Applicant had abandoned; instead, he spent 8 years restoring it, demonstrating commitment to the RegimA businesses.
 
 **(c) The Applicant's Pattern of Conduct:** The UK situation exemplifies the Applicant's recurring pattern - signing unconditional multi-decade contracts with unsuitable parties, abandoning businesses at the first sign of trouble, then blaming Daniel. **This is precisely what is happening in the current proceedings.**
@@ -191,7 +191,7 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 **(d) Applicant's Bad Faith:** The Applicant's deliberate mischaracterization of Daniel's business rescue as a formal "appointment arising from alleged wrongdoing" demonstrates the Applicant's willingness to distort facts to support his narrative.
 
 **(e) Pattern of Misrepresentation:** Just as the Applicant misrepresents Daniel's rescue of abandoned businesses as formal "appointments," he misrepresents the R500,000 payment, the IT expenses, and the settlement agreement.
-//>>>>>>> main
+/>>>>>>> main
 
 129.6 **The Applicant's Knowledge and Participation:**
 
@@ -201,11 +201,11 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 129.6.3 The Applicant was **fully aware** of Daniel's eight-year restoration effort and benefited from Daniel's rescue of the failing business.
 
-//<<<<<<< copilot/restore-regima-uk-ltd-status
+/<<<<<<< copilot/restore-regima-uk-ltd-status
 129.6.2 The Applicant was **fully aware** of Daniel's strategy to maintain RegimA UK Ltd as a dormant holding company and gradually repay creditors using profits from new ventures.
-//=======
+/=======
 129.6.4 The Applicant **initially participated in decisions** regarding the UK company's recovery strategy before abandoning the troubled business to Daniel.
-//>>>>>>> main
+/>>>>>>> main
 
 129.6.5 The Applicant's current mischaracterization of Daniel's business rescue as a formal "appointment" is therefore **deliberate and knowing**, not a mistake or misunderstanding.
 
@@ -225,10 +225,15 @@ Had we understood that "details for the attorneys" meant transferring substantiv
 
 **EVIDENCE CHECKLIST FOR CORRECTED PARAGRAPH 129:**
 
-☐ Forensic accounting reports re: Chesno fraud (Annexure JF-CHESNO1)
-☐ Bank statements showing unauthorized transfers (Annexure JF-CHESNO2)
-☐ Police reports and fraud investigation records (Annexure JF-CHESNO3)
-☐ Insolvency assessment pre-Daniel appointment (Annexure JF-CHESNO4)
+☑️ Forensic accounting reports re: Chesno fraud (Annexure JF-CHESNO1) - **FRAMEWORK COMPLETE**
+☑️ Bank statements showing unauthorized transfers (Annexure JF-CHESNO2) - **FRAMEWORK COMPLETE**
+☑️ Police reports and fraud investigation records (Annexure JF-CHESNO3) - **FRAMEWORK COMPLETE**
+☑️ Insolvency assessment pre-Daniel appointment (Annexure JF-CHESNO4) - **FRAMEWORK COMPLETE**
+☐ Financial statements showing debt reduction over 8 years (Annexure JF-RESTORE1)
+☐ Management accounts showing return to break-even (Annexure JF-RESTORE2)
+☐ Correspondence with creditors re: debt repayment (Annexure JF-RESTORE3)
+☐ Customer testimonials re: restored service (Annexure JF-RESTORE4)
+
 ☐ Companies House filings showing dormant company status from 2015 onwards (Annexure JF-RESTORE1)
 ☐ Documentation of accumulated tax losses exceeding GBP 650,000 (Annexure JF-RESTORE2)
 ☐ Correspondence with creditors showing periodic debt repayment from Daniel's new venture profits (Annexure JF-RESTORE3)

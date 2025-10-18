@@ -11,6 +11,10 @@ This directory contains raw evidence collected for Case 2025-137857.
 - **`correspondence/`**: Email and correspondence evidence, including JF8A comprehensive documentation log.
 - **`director_loan_accounts/`**: Accounting records and documentation for director loan accounts, including proper allocation of the R500,000 payment (JF-AR1/JF7D).
 
+## Recent Additions (2025-10-16)
+
+- **`UK_tax_residency/`**: UK tax residency documentation (JF-UKTAX1) - Critical evidence for Phase 1 collection supporting Paragraph 129 UK operations section.
+
 ## Key Documents
 
 - **`IT_EXPENSES_SUMMARY.md`**: Quick reference summary of IT expenses with key facts and industry comparisons.

@@ -112,7 +112,7 @@ The archiver can clean old archives (keeping most recent 50 by default):
 ```javascript
 const TestResultArchiver = require('./test-result-archiver');
 const archiver = new TestResultArchiver();
-archiver.cleanOldArchives(50); // Keep only 50 most recent
+archiver.cleanOldArchives(50); / Keep only 50 most recent
 ```
 
 ## Developer Guide
