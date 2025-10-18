@@ -9,6 +9,11 @@ on:
 jobs:
   update-hypergraph:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Required for auto-commit
+      issues: write    # Required for failure reporting
+    
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -20,3 +25,96 @@ jobs:
         with:
           commit_message: "chore: update hypergraph data"
           file_pattern: "docs/models/hypergnn/*.json"
+      
+      - name: Report workflow failures
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Create failure report
+            const failureContext = {
+              workflow: 'hypergraph-update',
+              trigger: context.eventName,
+              runId: context.runId,
+              runUrl: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              timestamp: new Date().toISOString(),
+              repository: `${context.repo.owner}/${context.repo.repo}`,
+              paths: context.payload.commits?.map(c => c.added.concat(c.modified, c.removed)).flat() || []
+            };
+            
+            // Check for existing failure issues to prevent spam
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'hypergraph-update'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24; // Only check last 24 hours
+            });
+            
+            const issueBody = `## 🚨 Hypergraph Update Workflow Failure
+            
+            The hypergraph update workflow has failed and requires attention.
+            
+            ### Failure Details
+            - **Workflow**: ${failureContext.workflow}
+            - **Trigger**: ${failureContext.trigger}
+            - **Run ID**: [${failureContext.runId}](${failureContext.runUrl})
+            - **Timestamp**: ${failureContext.timestamp}
+            - **Changed Files**: ${failureContext.paths.length > 0 ? failureContext.paths.join(', ') : 'N/A'}
+            
+            ### Impact Assessment
+            - ⚠️ **Data Consistency**: Hypergraph data may be out of sync with evidence files
+            - ⚠️ **Analysis Quality**: Legal analysis may be working with stale hypergraph data
+            - ⚠️ **Case Structure**: Cross-references and relationships may not be current
+            
+            ### Immediate Actions Required
+            1. 🔍 **Investigate**: Check the [workflow run logs](${failureContext.runUrl})
+            2. 🔧 **Fix**: Address any script errors, dependency issues, or data problems
+            3. 🧪 **Test**: Run the rebuild script manually to verify it works
+            4. 📋 **Verify**: Check that hypergraph data files are correctly updated
+            
+            ### Troubleshooting Steps
+            1. Check if \`scripts/rebuild-hypergraph.js\` exists and is executable
+            2. Verify evidence and jax-response files are valid and parseable
+            3. Ensure Node.js dependencies are correctly installed
+            4. Check file permissions for hypergraph output directory
+            
+            ---
+            
+            *This issue was created automatically by the workflow monitoring system.*`;
+            
+            if (!recentFailure) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Hypergraph Update Workflow Failure - ${failureContext.timestamp.split('T')[0]}`,
+                body: issueBody,
+                labels: ['workflow-failure', 'hypergraph-update', 'bug', 'priority: high']
+              });
+              
+              console.log('Created failure alert issue');
+            } else {
+              // Add comment to existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: `## 🔄 Additional Failure - ${failureContext.timestamp}
+                
+                Another failure occurred in the hypergraph update workflow.
+                
+                **Run**: [${failureContext.runId}](${failureContext.runUrl})
+                **Trigger**: ${failureContext.trigger}
+                **Changed Files**: ${failureContext.paths.join(', ') || 'N/A'}
+                
+                Please investigate this recurring failure pattern.`
+              });
+              
+              console.log('Added comment to existing failure issue');
+            }
