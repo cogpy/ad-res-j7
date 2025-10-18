@@ -24,7 +24,6 @@ All requirements from Section 5 "Implement Systematic Cross-Referencing" have be
 | 7.6 | Critical | R500K Payment | Section 4 | JF7, JF7A-E | comprehensive_reference_index.json AD PARA 7.6 |
 | 3-3.10 | High | Jax's Role | **NEW SECTION** | JF9, JF9A-E | REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md §13B |
 | 7.12-7.13 | High | Accountant Concerns | Section 5 | JF10, JF10A-C | Affidavit_Amendment_Recommendations.md Amendment 2 |
-| 8-8.3 | High | Peter's Discovery | Section 6 | JF11, JF11A-D | Faucitt_Interdict_Analysis.md p.30-45 |
 
 ### ✅ B. Link to Comprehensive Analysis Documents  
 

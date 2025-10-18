@@ -158,7 +158,7 @@ This annexure is **CRITICAL** because it:
    - Professional certificate files
    - Regulatory correspondence archives
 3. Organize collected evidence into appropriate subdirectories
-4. Update progress in this README as evidence is collected
+4. Update progress in this README.md as evidence is collected
 
 ---
 

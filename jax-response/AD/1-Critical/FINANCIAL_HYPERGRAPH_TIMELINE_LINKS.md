@@ -31,7 +31,7 @@ This document maps the financial aspects of key timeline events, establishing co
 
 **Hypergraph Connections:**
 ```javascript
-// Financial entities to add
+/ Financial entities to add
 {
   id: 'kayla-estate',
   type: 'FinancialEntity',

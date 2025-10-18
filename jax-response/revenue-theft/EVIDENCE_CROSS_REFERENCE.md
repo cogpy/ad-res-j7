@@ -1,7 +1,7 @@
 # Evidence Cross-Reference Matrix
 ## Revenue Hijacking Criminal Scheme - Case 2025-137857
 
-**Analysis Date:** October 13, 2025  
+**Analysis Date:** 2025-10-13  
 **Cross-Reference Type:** Forensic Evidence Correlation  
 **Purpose:** Establish evidence interconnections for prosecution
 
@@ -100,7 +100,7 @@ Tertiary: Customer hijacking communications using son's domain
 
 ### **CORRELATION 2B: Email Impersonation Pattern (JF3A)**
 **Events:** Domain Registration → Email Impersonation → Attorney Communications  
-**Timeline:** May 29 - August 29, 2025 (92 days)  
+**Timeline:** May 29 - 2025-08-29 (92 days)  
 **Relationship:** Systematic identity theft through email control enabling broader conspiracy
 
 **Evidence Links:**
@@ -173,7 +173,7 @@ Tertiary: Employee witness testimony of conflicting directives
 
 **Supporting Evidence:**
 ```
-Primary: Email compliance directive dated July 8, 2025 (Grade A evidence)
+Primary: Email compliance directive dated 2025-07-08 (Grade A evidence)
 Secondary: Employee witness statements of receiving conflicting instructions
 Tertiary: POPI regulatory framework documentation
 ```
@@ -326,6 +326,6 @@ ANALYSIS INTEGRATION:
 
 **Document Control:**  
 **Classification:** Law Enforcement Sensitive  
-**Last Updated:** October 13, 2025  
+**Last Updated:** 2025-10-13  
 **Next Review:** Upon evidence collection completion  
 **Distribution:** Authorized Investigation Personnel Only

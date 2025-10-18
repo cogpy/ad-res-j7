@@ -157,11 +157,9 @@ class TestRunner {
   }
 
   calculateOverallResults() {
-    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
-    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
-    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed + this.results.api.failed;
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
+                                       this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
                                        this.results.endToEnd.total +
@@ -169,6 +167,7 @@ class TestRunner {
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
+                                        this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed +
@@ -176,6 +175,7 @@ class TestRunner {
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
+                                        this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed +

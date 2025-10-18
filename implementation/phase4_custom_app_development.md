@@ -48,7 +48,7 @@ stores:
 
 #### Store Synchronization Logic
 ```javascript
-// Custom app for multi-store inventory synchronization
+/ Custom app for multi-store inventory synchronization
 class MultiStoreManager {
   constructor(storeConfigs) {
     this.stores = storeConfigs;
@@ -92,7 +92,7 @@ class MultiStoreManager {
 
 #### Responsible Person Compliance App
 ```javascript
-// Custom Shopify app for EU Responsible Person compliance
+/ Custom Shopify app for EU Responsible Person compliance
 class ResponsiblePersonApp {
   constructor() {
     this.jurisdictions = [
@@ -147,7 +147,7 @@ class ResponsiblePersonApp {
 
 #### Automated Tax Calculation App
 ```javascript
-// Custom app for multi-jurisdiction tax calculation
+/ Custom app for multi-jurisdiction tax calculation
 class TaxCalculationEngine {
   constructor() {
     this.taxRates = {
@@ -172,7 +172,7 @@ class TaxCalculationEngine {
     const taxConfig = this.taxRates[country];
     let totalTax = 0;
     
-    // Handle different tax systems
+    / Handle different tax systems
     switch (country) {
       case 'US':
         totalTax = await this.calculateUSTax(shippingAddress, orderValue);
@@ -194,7 +194,7 @@ class TaxCalculationEngine {
   }
 
   async calculateUSTax(address, orderValue) {
-    // Integration with external tax service for US state/local taxes
+    / Integration with external tax service for US state/local taxes
     const taxService = await this.getUSStateTaxService();
     return taxService.calculate(address, orderValue);
   }
@@ -207,7 +207,7 @@ class TaxCalculationEngine {
 
 #### Stripe Integration
 ```javascript
-// Stripe payment processing with multi-currency support
+/ Stripe payment processing with multi-currency support
 class StripePaymentProcessor {
   constructor() {
     this.stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
@@ -223,7 +223,7 @@ class StripePaymentProcessor {
 
     try {
       const paymentIntent = await this.stripe.paymentIntents.create({
-        amount: Math.round(amount * 100), // Convert to cents
+        amount: Math.round(amount * 100), / Convert to cents
         currency: currency.toLowerCase(),
         customer: customer.stripeId,
         metadata: {
@@ -261,14 +261,14 @@ class StripePaymentProcessor {
   }
 
   async handleSuccessfulPayment(paymentIntent) {
-    // Update order status in Shopify
+    / Update order status in Shopify
     const orderId = paymentIntent.metadata.orderId;
     await this.updateShopifyOrder(orderId, {
       financial_status: 'paid',
       fulfillment_status: 'pending'
     });
     
-    // Trigger inventory update
+    / Trigger inventory update
     await this.updateInventory(paymentIntent.metadata);
   }
 }
@@ -276,7 +276,7 @@ class StripePaymentProcessor {
 
 #### PayPal Integration
 ```javascript
-// PayPal payment processing for international markets
+/ PayPal payment processing for international markets
 class PayPalPaymentProcessor {
   constructor() {
     this.paypal = require('@paypal/checkout-server-sdk');
@@ -338,7 +338,7 @@ class PayPalPaymentProcessor {
 
 #### Peach Payments Integration (South Africa)
 ```javascript
-// Peach Payments integration for South African market
+/ Peach Payments integration for South African market
 class PeachPaymentProcessor {
   constructor() {
     this.baseUrl = process.env.PEACH_BASE_URL;
@@ -373,7 +373,7 @@ class PeachPaymentProcessor {
 
       const result = await response.json();
       
-      if (result.result.code.match(/^(000\.000\.|000\.100\.1|000\.200)/)) {
+      if (result.result.code.match(/^(000/.000\.|000/.100\.1|000/.200)/)) {
         return {
           checkoutId: result.id,
           redirectUrl: `${process.env.BASE_URL}/payments/peach/${result.id}`,
@@ -412,8 +412,8 @@ class PeachPaymentProcessor {
   }
 
   mapPeachStatus(code) {
-    if (code.match(/^(000\.000\.|000\.100\.1|000\.200)/)) return 'success';
-    if (code.match(/^(800\.400\.5|100\.400\.500)/)) return 'pending';
+    if (code.match(/^(000/.000\.|000/.100\.1|000/.200)/)) return 'success';
+    if (code.match(/^(800/.400\.5|100/.400\.500)/)) return 'pending';
     return 'failed';
   }
 }
@@ -423,7 +423,7 @@ class PeachPaymentProcessor {
 
 #### CloudFlare Integration
 ```javascript
-// CloudFlare CDN management for global content delivery
+/ CloudFlare CDN management for global content delivery
 class CloudFlareManager {
   constructor() {
     this.cloudflare = require('cloudflare')({
@@ -436,12 +436,12 @@ class CloudFlareManager {
   async purgeCache(urls = []) {
     try {
       if (urls.length === 0) {
-        // Purge everything
+        / Purge everything
         await this.cloudflare.zones.purgeCache(this.zoneId, {
           purge_everything: true
         });
       } else {
-        // Purge specific URLs
+        / Purge specific URLs
         await this.cloudflare.zones.purgeCache(this.zoneId, {
           files: urls
         });
@@ -458,7 +458,7 @@ class CloudFlareManager {
   async updateSecuritySettings(settings) {
     const updates = [];
     
-    // Update security level
+    / Update security level
     if (settings.securityLevel) {
       updates.push(
         this.cloudflare.zones.settings.securityLevel.edit(this.zoneId, {
@@ -467,7 +467,7 @@ class CloudFlareManager {
       );
     }
 
-    // Update SSL mode
+    / Update SSL mode
     if (settings.sslMode) {
       updates.push(
         this.cloudflare.zones.settings.ssl.edit(this.zoneId, {
@@ -476,7 +476,7 @@ class CloudFlareManager {
       );
     }
 
-    // Update firewall rules for international traffic
+    / Update firewall rules for international traffic
     if (settings.firewallRules) {
       updates.push(this.updateFirewallRules(settings.firewallRules));
     }
@@ -486,7 +486,7 @@ class CloudFlareManager {
   }
 
   async updateFirewallRules(rules) {
-    // Allow traffic from all 37 jurisdictions
+    / Allow traffic from all 37 jurisdictions
     const allowedCountries = [
       'ZA', 'US', 'CA', 'GB', 'DE', 'FR', 'IT', 'ES', 'NL', 'BE',
       'AT', 'CH', 'SE', 'NO', 'DK', 'FI', 'AU', 'NZ', 'JP', 'SG',
@@ -509,7 +509,7 @@ class CloudFlareManager {
 
 #### Multi-Database Architecture
 ```javascript
-// Database integration for global data management
+/ Database integration for global data management
 class DatabaseManager {
   constructor() {
     this.databases = {
@@ -589,7 +589,7 @@ class DatabaseManager {
       await this.databases.cache.setex(key, ttl, JSON.stringify(data));
     } catch (error) {
       console.error('Failed to cache product data:', error);
-      // Don't throw - caching failures shouldn't break the app
+      / Don't throw - caching failures shouldn't break the app
     }
   }
 }
@@ -599,7 +599,7 @@ class DatabaseManager {
 
 ### Order Management Integration
 ```javascript
-// Automated order management and fulfillment
+/ Automated order management and fulfillment
 class OrderManagementSystem {
   constructor() {
     this.shopifyAPI = new ShopifyAPI();
@@ -612,29 +612,29 @@ class OrderManagementSystem {
     try {
       const order = await this.shopifyAPI.getOrder(orderId);
       
-      // Validate order and inventory
+      / Validate order and inventory
       const validation = await this.validateOrder(order);
       if (!validation.valid) {
         throw new Error(`Order validation failed: ${validation.errors.join(', ')}`);
       }
 
-      // Route to appropriate warehouse based on shipping address
+      / Route to appropriate warehouse based on shipping address
       const warehouse = this.selectWarehouse(order.shipping_address);
       
-      // Create fulfillment request
+      / Create fulfillment request
       const fulfillment = await this.createFulfillmentRequest(order, warehouse);
       
-      // Generate shipping labels
+      / Generate shipping labels
       const shipping = await this.createShippingLabels(order, warehouse);
       
-      // Update order status
+      / Update order status
       await this.updateOrderStatus(orderId, 'processing', {
         warehouse: warehouse.id,
         fulfillmentId: fulfillment.id,
         trackingNumbers: shipping.trackingNumbers
       });
 
-      // Send confirmation email
+      / Send confirmation email
       await this.notificationService.sendOrderConfirmation(order);
 
       return {
@@ -659,21 +659,21 @@ class OrderManagementSystem {
       'AU': { id: 'SYD001', name: 'Sydney', country: 'AU' }
     };
 
-    // Determine region based on country code
+    / Determine region based on country code
     const country = shippingAddress.country_code;
     if (country === 'ZA') return warehouses.ZA;
     if (['US', 'CA', 'MX'].includes(country)) return warehouses.US;
     if (['GB'].includes(country)) return warehouses.UK;
     if (['AU', 'NZ'].includes(country)) return warehouses.AU;
     
-    // Default to EU warehouse for European countries
+    / Default to EU warehouse for European countries
     return warehouses.EU;
   }
 
   async validateOrder(order) {
     const errors = [];
     
-    // Check inventory availability
+    / Check inventory availability
     for (const item of order.line_items) {
       const inventory = await this.checkInventory(item.variant_id, item.quantity);
       if (!inventory.available) {
@@ -681,13 +681,13 @@ class OrderManagementSystem {
       }
     }
 
-    // Validate shipping address
+    / Validate shipping address
     const addressValidation = await this.validateShippingAddress(order.shipping_address);
     if (!addressValidation.valid) {
       errors.push(`Invalid shipping address: ${addressValidation.error}`);
     }
 
-    // Check compliance for destination country
+    / Check compliance for destination country
     const compliance = await this.checkComplianceRequirements(order);
     if (!compliance.compliant) {
       errors.push(`Compliance requirements not met: ${compliance.requirements.join(', ')}`);
@@ -703,7 +703,7 @@ class OrderManagementSystem {
 
 ### Customer Service Integration
 ```javascript
-// Automated customer service and CRM integration
+/ Automated customer service and CRM integration
 class CustomerServicePlatform {
   constructor() {
     this.zendesk = require('node-zendesk')({
@@ -718,13 +718,13 @@ class CustomerServicePlatform {
     const { customerEmail, subject, message, orderId, priority } = inquiry;
     
     try {
-      // Get customer data from Shopify
+      / Get customer data from Shopify
       const customer = await this.shopifyAPI.getCustomerByEmail(customerEmail);
       
-      // Get order history
+      / Get order history
       const orders = await this.shopifyAPI.getCustomerOrders(customer.id);
       
-      // Create Zendesk ticket
+      / Create Zendesk ticket
       const ticket = await this.createZendeskTicket({
         requester: {
           email: customerEmail,
@@ -743,7 +743,7 @@ class CustomerServicePlatform {
         ]
       });
 
-      // Auto-respond for common issues
+      / Auto-respond for common issues
       const autoResponse = await this.checkAutoResponse(message, orderId);
       if (autoResponse) {
         await this.addTicketComment(ticket.id, autoResponse.message, true);
@@ -764,7 +764,7 @@ class CustomerServicePlatform {
   }
 
   enrichMessageWithContext(message, customer, orders, orderId) {
-    let enrichedMessage = message + '\n\n--- Customer Context ---\n';
+    let enrichedMessage = message + '\n/n--- Customer Context ---/n';
     enrichedMessage += `Customer ID: ${customer.id}\n`;
     enrichedMessage += `Total Orders: ${orders.length}\n`;
     enrichedMessage += `Customer Since: ${customer.created_at}\n`;
@@ -773,7 +773,7 @@ class CustomerServicePlatform {
     if (orderId) {
       const order = orders.find(o => o.id.toString() === orderId.toString());
       if (order) {
-        enrichedMessage += `\n--- Order Details ---\n`;
+        enrichedMessage += `\n--- Order Details ---/n`;
         enrichedMessage += `Order ID: ${order.id}\n`;
         enrichedMessage += `Order Date: ${order.created_at}\n`;
         enrichedMessage += `Order Total: ${order.currency} ${order.total_price}\n`;
@@ -788,7 +788,7 @@ class CustomerServicePlatform {
   async checkAutoResponse(message, orderId) {
     const lowerMessage = message.toLowerCase();
     
-    // Order status inquiries
+    / Order status inquiries
     if (lowerMessage.includes('order status') || lowerMessage.includes('tracking')) {
       if (orderId) {
         const order = await this.shopifyAPI.getOrder(orderId);
@@ -802,7 +802,7 @@ class CustomerServicePlatform {
       }
     }
     
-    // Return/refund inquiries
+    / Return/refund inquiries
     if (lowerMessage.includes('return') || lowerMessage.includes('refund')) {
       return {
         message: `Thank you for your inquiry about returns/refunds. Our customer service team will review your request and respond within 24 hours. Please note our 30-day return policy for unused products.`,
@@ -810,7 +810,7 @@ class CustomerServicePlatform {
       };
     }
     
-    // Product questions
+    / Product questions
     if (lowerMessage.includes('ingredient') || lowerMessage.includes('allerg')) {
       return {
         message: `For detailed ingredient information and allergy concerns, please refer to the product page or attached product information files. Our team will also provide personalized advice within 24 hours.`,
@@ -827,7 +827,7 @@ class CustomerServicePlatform {
 
 ### Cybersecurity Framework
 ```javascript
-// Comprehensive cybersecurity and risk management
+/ Comprehensive cybersecurity and risk management
 class SecurityManager {
   constructor() {
     this.firewall = new FirewallManager();
@@ -846,27 +846,27 @@ class SecurityManager {
     };
 
     try {
-      // Scan for common vulnerabilities
+      / Scan for common vulnerabilities
       const vulnScan = await this.scanVulnerabilities();
       scanResults.vulnerabilities = vulnScan;
 
-      // Check access controls
+      / Check access controls
       const accessReview = await this.reviewAccessControls();
       scanResults.accessControls = accessReview;
 
-      // Validate encryption
+      / Validate encryption
       const encryptionCheck = await this.validateEncryption();
       scanResults.encryption = encryptionCheck;
 
-      // Check for suspicious activity
+      / Check for suspicious activity
       const suspiciousActivity = await this.detectSuspiciousActivity();
       scanResults.suspiciousActivity = suspiciousActivity;
 
-      // Generate risk assessment
+      / Generate risk assessment
       const riskAssessment = this.calculateRiskScore(scanResults);
       scanResults.riskScore = riskAssessment;
 
-      // Log scan results
+      / Log scan results
       await this.audit.logSecurityScan(scanResults);
 
       return scanResults;
@@ -892,12 +892,12 @@ class SecurityManager {
   }
 
   async checkDataEncryption() {
-    // Verify customer data encryption at rest
+    / Verify customer data encryption at rest
     const encryptionStatus = {
-      customerData: true, // PII encrypted with AES-256
-      paymentData: true,  // PCI-DSS compliant encryption
-      complianceData: true, // Regulatory data encrypted
-      backups: true       // Backup encryption enabled
+      customerData: true, / PII encrypted with AES-256
+      paymentData: true,  / PCI-DSS compliant encryption
+      complianceData: true, / Regulatory data encrypted
+      backups: true       / Backup encryption enabled
     };
 
     return {
@@ -919,25 +919,25 @@ class SecurityManager {
 
   async implementGDPRControls() {
     return {
-      dataMapping: true,          // Data inventory complete
-      consentManagement: true,    // Consent tracking implemented
-      rightToErasure: true,      // Data deletion process
-      dataPortability: true,     // Export functionality
-      breachNotification: true,   // 72-hour notification process
-      dpo: 'Jacqueline Faucitt', // Data Protection Officer
-      privacyByDesign: true      // Privacy controls in development
+      dataMapping: true,          / Data inventory complete
+      consentManagement: true,    / Consent tracking implemented
+      rightToErasure: true,      / Data deletion process
+      dataPortability: true,     / Export functionality
+      breachNotification: true,   / 72-hour notification process
+      dpo: 'Jacqueline Faucitt', / Data Protection Officer
+      privacyByDesign: true      / Privacy controls in development
     };
   }
 
   async implementPOPIAControls() {
     return {
-      informationOfficer: 'Daniel Faucitt', // Information Officer
-      dataSubjectRights: true,              // Rights management
-      consentRecords: true,                 // Consent documentation  
-      dataRetention: true,                  // Retention policies
-      securityMeasures: true,              // Technical safeguards
-      crossBorderTransfer: true,           // Transfer agreements
-      incidentResponse: true               // Breach response plan
+      informationOfficer: 'Daniel Faucitt', / Information Officer
+      dataSubjectRights: true,              / Rights management
+      consentRecords: true,                 / Consent documentation  
+      dataRetention: true,                  / Retention policies
+      securityMeasures: true,              / Technical safeguards
+      crossBorderTransfer: true,           / Transfer agreements
+      incidentResponse: true               / Breach response plan
     };
   }
 }
@@ -947,14 +947,14 @@ class SecurityManager {
 
 ### Infrastructure Cost Analysis
 ```javascript
-// Comprehensive cost justification framework
+/ Comprehensive cost justification framework
 class CostJustificationEngine {
   constructor() {
     this.industryBenchmarks = {
-      ecommerce_it_spend_percentage: 0.08, // 8% of revenue industry standard
-      automation_roi_factor: 3.2,          // 3.2x ROI on automation
-      compliance_cost_avoidance: 0.15,     // 15% of revenue in penalties avoided
-      security_incident_cost: 2.86         // $2.86M average data breach cost
+      ecommerce_it_spend_percentage: 0.08, / 8% of revenue industry standard
+      automation_roi_factor: 3.2,          / 3.2x ROI on automation
+      compliance_cost_avoidance: 0.15,     / 15% of revenue in penalties avoided
+      security_incident_cost: 2.86         / $2.86M average data breach cost
     };
   }
 
@@ -969,16 +969,16 @@ class CostJustificationEngine {
       recommendations: []
     };
 
-    // Calculate ROI for each major system
+    / Calculate ROI for each major system
     analysis.roi = await this.calculateSystemROI(annualRevenue);
     
-    // Calculate compliance cost avoidance
+    / Calculate compliance cost avoidance
     analysis.compliance = await this.calculateComplianceSavings(annualRevenue);
     
-    // Calculate security investment value
+    / Calculate security investment value
     analysis.security = await this.calculateSecurityValue(annualRevenue);
     
-    // Generate recommendations
+    / Generate recommendations
     analysis.recommendations = this.generateRecommendations(analysis);
     
     return analysis;
@@ -987,43 +987,43 @@ class CostJustificationEngine {
   async calculateSystemROI(annualRevenue) {
     return {
       shopifyPlus: {
-        annualCost: 24000,        // $2,000/month
-        benefitRevenue: 480000,   // 20x cost in additional revenue
+        annualCost: 24000,        / $2,000/month
+        benefitRevenue: 480000,   / 20x cost in additional revenue
         roi: 20.0,
         justification: 'Multi-store management, advanced features, scalability'
       },
       
       paymentGateways: {
-        annualCost: 45600,        // ~2.4% of processed payments
-        benefitRevenue: 1900000,  // Revenue from payment processing
+        annualCost: 45600,        / ~2.4% of processed payments
+        benefitRevenue: 1900000,  / Revenue from payment processing
         roi: 41.7,
         justification: 'Global payment acceptance, reduced cart abandonment'
       },
       
       cdnServices: {
-        annualCost: 36000,        // CloudFlare Pro + bandwidth
-        benefitRevenue: 190000,   // 1% conversion improvement
+        annualCost: 36000,        / CloudFlare Pro + bandwidth
+        benefitRevenue: 190000,   / 1% conversion improvement
         roi: 5.3,
         justification: 'Page speed optimization, global availability'
       },
       
       automationPlatform: {
-        annualCost: 180000,       // Custom development + maintenance
-        benefitSavings: 576000,   // 3.2x ROI from process automation
+        annualCost: 180000,       / Custom development + maintenance
+        benefitSavings: 576000,   / 3.2x ROI from process automation
         roi: 3.2,
         justification: 'Labor savings, error reduction, scalability'
       },
       
       complianceSystem: {
-        annualCost: 120000,       // Compliance management platform
-        benefitAvoidance: 2850000, // 15% of revenue in penalties avoided
+        annualCost: 120000,       / Compliance management platform
+        benefitAvoidance: 2850000, / 15% of revenue in penalties avoided
         roi: 23.75,
         justification: 'Regulatory compliance across 37 jurisdictions'
       },
       
       securityInfrastructure: {
-        annualCost: 84000,        // Security tools and monitoring
-        benefitAvoidance: 2860000, // Average data breach cost avoided
+        annualCost: 84000,        / Security tools and monitoring
+        benefitAvoidance: 2860000, / Average data breach cost avoided
         roi: 34.0,
         justification: 'Data protection, customer trust, regulatory compliance'
       }
@@ -1032,12 +1032,12 @@ class CostJustificationEngine {
 
   async calculateComplianceSavings(annualRevenue) {
     const jurisdictionPenalties = {
-      'EU': { maxPenalty: 20000000, probability: 0.05 }, // €20M or 4% of revenue
-      'US': { maxPenalty: 5000000, probability: 0.03 },  // $5M FDA penalties
-      'UK': { maxPenalty: 18000000, probability: 0.04 }, // £17.5M ICO penalties
-      'AU': { maxPenalty: 2100000, probability: 0.02 },  // $2.1M privacy penalties
-      'CA': { maxPenalty: 100000, probability: 0.06 },   // $100k per violation
-      'ZA': { maxPenalty: 10000000, probability: 0.03 }  // R10M POPIA penalties
+      'EU': { maxPenalty: 20000000, probability: 0.05 }, / €20M or 4% of revenue
+      'US': { maxPenalty: 5000000, probability: 0.03 },  / $5M FDA penalties
+      'UK': { maxPenalty: 18000000, probability: 0.04 }, / £17.5M ICO penalties
+      'AU': { maxPenalty: 2100000, probability: 0.02 },  / $2.1M privacy penalties
+      'CA': { maxPenalty: 100000, probability: 0.06 },   / $100k per violation
+      'ZA': { maxPenalty: 10000000, probability: 0.03 }  / R10M POPIA penalties
     };
 
     let totalRisk = 0;
@@ -1049,7 +1049,7 @@ class CostJustificationEngine {
       savings[jurisdiction] = {
         maxPenalty: penalty.maxPenalty,
         expectedAnnualCost: expectedCost,
-        riskReduction: 0.95 // 95% risk reduction with compliance system
+        riskReduction: 0.95 / 95% risk reduction with compliance system
       };
     }
 
@@ -1079,7 +1079,7 @@ class CostJustificationEngine {
         totalITInvestment: 509600,
         totalBenefits: 8856000,
         overallROI: 17.4,
-        paybackPeriod: 4.2, // months
+        paybackPeriod: 4.2, / months
         industryComparison: 'Below industry average (8% vs 5.3% of revenue)'
       },
       

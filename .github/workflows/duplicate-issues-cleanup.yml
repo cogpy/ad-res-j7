@@ -75,14 +75,13 @@ jobs:
           gh --version
           echo "✅ GitHub CLI installed and ready"
 
-      - name: Authenticate GitHub CLI (server-side)
+      - name: Authenticate GitHub CLI
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔐 Setting up GitHub CLI authentication (server-side)..."
-          gh auth status || true
-          gh auth setup-git
-          echo "✅ GitHub CLI ready for server-side operations"
+          echo "🔐 Configuring GitHub CLI authentication..."
+          gh auth status
+          echo "✅ GitHub CLI authenticated"
 
       - name: Determine execution parameters
         id: params
@@ -128,6 +127,7 @@ jobs:
         id: analysis
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "🔍 Running duplicate issue analysis..."
           

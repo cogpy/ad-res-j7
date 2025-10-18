@@ -205,13 +205,13 @@ const { buildCase2025137857Hypergraph } = require('./docs/models/hypergnn/case-h
 
 const hg = buildCase2025137857Hypergraph();
 
-// Find all events
+/ Find all events
 const events = hg.queryEntitiesByType('Event');
 
-// Find Peter's connections
+/ Find Peter's connections
 const peterLinks = hg.findConnected('peter-faucitt');
 
-// Find path between entities
+/ Find path between entities
 const path = hg.findPath('peter-faucitt', 'regima');
 ```
 
