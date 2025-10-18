@@ -26,21 +26,21 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Purpose:** Multi-year director loan account statement for Peter Faucitt demonstrating his use of identical withdrawal process
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 437, Section 7.8.4, 7.8.6
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA2: Jax's Director Loan Account Statement
 - **File:** `JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Jacqueline Faucitt demonstrating consistent application across all directors
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 438, Section 7.8.4, 7.8.3
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA3: Daniel's Director Loan Account Statement
 - **File:** `JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Daniel Faucitt including the disputed R500,000 transaction on 16 July 2025
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 439, Section 7.8.5, 7.8.6, 7.8.7
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 ### Bank Statement Evidence
 
@@ -106,6 +106,51 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
+
+### Settlement Agreement Evidence
+
+#### JF5-COMPARISON: Settlement Agreement Draft vs Final Comparison
+- **File:** `JF5_COMPARISON_DRAFT_VS_FINAL.md`
+- **Purpose:** Comprehensive comparison document highlighting all material changes made between JF5 draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48 (sub-paragraphs 48.1-48.10), Updated Paragraph 48
+- **Status:** ✅ **Complete** - Framework document ready; requires actual JF5 draft and final agreements to verify
+- **Key Evidence Points:**
+  - Documents the "Has anything changed?" dialogue and attorney misrepresentation
+  - Identifies 4 categories of material changes (control, oversight, scope, jurisdictional)
+  - Establishes fraud in the inducement grounds
+  - Connects to strategic litigation pattern (2 days between settlement and interdict)
+  - Cross-references Daniel's witness statement (JF-DAN-WITNESS)
+### Witness Statements
+
+#### JF-WS1: Daniel's Witness Statement - "Has Anything Changed?" Exchange
+- **File:** `JF-WS1_DANIEL_WITNESS_STATEMENT_HAS_ANYTHING_CHANGED.md`
+- **Purpose:** Direct witness testimony documenting the fraudulent "Has anything changed?" - "No, just details for attorneys" exchange
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, Section on Fraud in the Inducement
+- **Status:** ⚠️ **Template** - Requires completion of personal details and Commissioner of Oaths attestation
+### Settlement Agreement Documentation
+
+#### JF5-DRAFT: Settlement Agreement Draft Version
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md`
+- **Purpose:** Initial draft version of settlement agreement reviewed before final signing, establishing baseline for comparison
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 13B (Manufactured Crisis), Urgency Challenge sections
+- **Status:** ⚠️ **Template** - Requires actual draft settlement agreement document
+
+#### JF5-FINAL: Settlement Agreement Final Signed Version
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md`
+- **Purpose:** Final signed settlement agreement executed approximately 8 days before interdict filing, demonstrating strategic timing
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 13B, Strategic Timing sections, Urgency Challenge
+- **Status:** ⚠️ **Template** - Requires actual signed settlement agreement document
+
+#### JF5-COMPARISON: Settlement Agreement Changes Analysis
+- **File:** `JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md`
+- **Purpose:** Comprehensive comparison document highlighting all changes between draft and final versions, revealing negotiation priorities
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 13B, "Has Anything Changed?" analysis, Strategic Timing sections
+- **Status:** ⚠️ **Template** - Requires completion after obtaining both draft and final versions
 
 ---
 
@@ -183,6 +228,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - [ ] Legal admissibility requirements satisfied
 - [ ] Authentication and certification completed
 - [ ] Attorney review and approval obtained
+- [ ] Settlement agreement privilege issues reviewed and addressed (JF5 series)
 - [ ] Court filing format requirements met
 
 ---
@@ -214,7 +260,9 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 ### Related Analysis Documents:
 - **`../../jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md`:** Current affidavit referencing these annexures
-- **`../../todo/Repository_Status_and_Critical_Evidence_Collection.md`:** Original requirements (Line 83)
+- **`../../jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`:** Daniel's witness statement re: "Has anything changed?" exchange (relates to JF5 series)
+- **`../../todo/Repository_Status_and_Critical_Evidence_Collection.md`:** Original requirements (Lines 27-29: JF5 settlement agreement requirements)
+- **`../../affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md`:** Timeline analysis showing 8-day gap between settlement and interdict
 - **`../../docs/REPOSITORY_STATUS_ASSESSMENT.md`:** Critical evidence gaps analysis
 
 ---
@@ -226,7 +274,9 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status:** All annexures are ⚠️ **Template** status - critical evidence collection required.
+**Current Status:** All annexures have comprehensive templates complete. Director loan account statements (JF-DLA1, JF-DLA2, JF-DLA3) templates documented in completion report - ready for data population from accountant.
+
+**Note on JF5 Series:** Settlement agreement annexures (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON) require careful attorney review for privilege issues before completion, as settlement negotiations are typically privileged communications. The crime-fraud exception may apply if the settlement was part of a scheme to mislead the Court.
 
 **Latest Updates:**
 - ✅ JF5-DRAFT template created (Settlement agreement initial version)

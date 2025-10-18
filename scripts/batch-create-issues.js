@@ -9,7 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 
 class BatchIssueCreator {
   constructor() {
@@ -226,14 +226,14 @@ class BatchIssueCreator {
     
     const body = this.generateIssueBody(item, categoryInfo);
     
-    // Build command
+    // Build command arguments array
     const args = [
       'issue', 'create',
       '--title', item.title,
       '--body', body
     ];
     
-    // Add labels
+    // Add labels - properly handle labels with spaces and special characters
     const allLabels = [...categoryInfo.labels, 'batch-created'];
     allLabels.forEach(label => {
       args.push('--label', label);
@@ -241,10 +241,23 @@ class BatchIssueCreator {
     
     try {
       console.log(`📝 Creating: ${item.title}`);
-      const command = `gh ${args.map(arg => JSON.stringify(arg)).join(' ')}`;
-      const output = execSync(command, { encoding: 'utf8' });
       
-      const issueUrl = output.trim();
+      // Use spawnSync with array of arguments for proper handling of labels with spaces
+      // This is more secure and reliable than building a shell command string
+      const result = spawnSync('gh', args, { 
+        encoding: 'utf8',
+        env: process.env
+      });
+      
+      if (result.error) {
+        throw result.error;
+      }
+      
+      if (result.status !== 0) {
+        throw new Error(result.stderr || 'GitHub CLI command failed');
+      }
+      
+      const issueUrl = result.stdout.trim();
       this.createdIssues.push({ ...item, url: issueUrl });
       console.log(`✅ Created: ${issueUrl}`);
       

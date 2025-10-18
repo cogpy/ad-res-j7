@@ -116,16 +116,35 @@ Consistent with case analysis showing **Peter Faucitt does not use a computer** 
 - Customer data processing violation evidence
 
 ## Legal Framework Classification
-- **Phase:** Investigation Phase (documented criminal instructions)
-- **Crime Type:** Business sabotage, POPI violations, employee endangerment
-- **Impact:** Complete operational shutdown and regulatory violations
+
+### Criminal Charges Available
+#### **Business Sabotage**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director breach of fiduciary duty through systematic operational destruction
+- **Common Law**: Malicious damage to property and business operations
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### **POPI Violations**
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Unauthorized customer data processing offenses
+  - **Section 108**: Penalties
+  - **Penalty**: Up to R10 million fine or 10 years imprisonment per violation
+
+#### **Employee Endangerment**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Endangering employees through illegal instructions
+- **Labour Relations Act 66 of 1995**: Unfair labor practices
+  - **Penalty**: Personal liability for director misconduct
+
+### **Phase:** Investigation Phase (documented criminal instructions)
+### **Impact:** Complete operational shutdown and regulatory violations
 
 ## Regulatory Implications
-### POPI Act Enforcement
-- **Information Regulator jurisdiction** over data processing violations
-- **Criminal prosecution potential** for data protection breaches
-- **R10 million fine exposure** per violation
-- **Individual employee liability** under POPI framework
+### POPI Act Enforcement - Protection of Personal Information Act (POPIA) 4 of 2013
+- **Information Regulator jurisdiction** over data processing violations (Section 39)
+- **Criminal prosecution potential** for data protection breaches (Section 107)
+- **R10 million fine exposure** per violation (Section 108)
+- **Individual employee liability** under POPI framework (Section 107)
 
 ### Business License Implications
 - **Operating license violations** through unauthorized data processing

@@ -1,8 +1,12 @@
-# TECHNICAL INFRASTRUCTURE AFFIDAVIT
-
+# CONSOLIDATED TECHNICAL INFRASTRUCTURE AFFIDAVIT
 ## DANIEL FAUCITT - CHIEF INFORMATION OFFICER
 
 ### RegimA Worldwide Distribution Technical Architecture and Infrastructure Requirements
+
+**Case No:** 2025-137857  
+**Status:** CONSOLIDATED AUTHORITATIVE VERSION  
+**Replaces:** DANIEL_FAUCITT_TECHNICAL_AFFIDAVIT.md, DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md  
+**Purpose:** Refutes allegations of "unexplained IT expenses" with comprehensive technical justification
 
 ---
 

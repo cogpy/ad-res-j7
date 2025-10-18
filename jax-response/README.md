@@ -60,9 +60,11 @@ Comprehensive analysis and revised affidavit versions:
 - **bantjies_trustee_contradictions_analysis.md** - Comprehensive analysis of Bantjies' trustee role contradictions
 
 #### Revised Affidavit Versions:
-- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md** (v1) - Initial strategic amendments
-- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.md** (v2) - Added Section 13A (Settlement Agreement)
 - **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md** (v3) - **CURRENT VERSION** with critical corrections
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v4.md** (v4) - Enhanced version with additional strategic elements
+- **REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md** (v5) - Latest version with comprehensive updates
+
+**Note:** Versions v1 and v2 have been archived to `backups/affidavits/` directory. See `backups/affidavits/README.md` for archived version details.
 
 #### Critical Corrections:
 - **critical_corrections_48_129.md** - Detailed explanation of corrections to paragraphs 48 & 129
@@ -202,7 +204,7 @@ Peter failed to disclose in his ex parte application:
 ☐ Comparison document highlighting all changes - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
-☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
+☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
 
 ### High Priority:
