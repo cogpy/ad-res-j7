@@ -1,14 +1,14 @@
-# 8 July 2025 - Pete Stopping Warehouse Shopify & POPI Letters
+# 2025-07-08 - Pete Stopping Warehouse Shopify & POPI Letters
 
 ## Event Summary
-**Date:** July 8, 2025  
+**Date:** 2025-07-08  
 **Author:** Daniel Faucitt  
 **Action:** Mandatory compliance directive regarding Pete's illegal instructions  
 **Content:** Pete stopping warehouse Shopify operations & POPI violations  
 **Legal Significance:** Evidence of systematic business sabotage and regulatory violations  
 
 ## Evidence Description
-On July 8, 2025, Daniel Faucitt sent an urgent mandatory compliance directive documenting that employees had been instructed by Pete to stop using Shopify for customer orders and use unauthorized domains, constituting serious POPI (Protection of Personal Information Act) violations and business sabotage.
+On 2025-07-08, Daniel Faucitt sent an urgent mandatory compliance directive documenting that employees had been instructed by Pete to stop using Shopify for customer orders and use unauthorized domains, constituting serious POPI (Protection of Personal Information Act) violations and business sabotage.
 
 ## Primary Evidence Document
 **Document:** `evidence/email_compliance_directive_2025-07-08.md`  
@@ -116,16 +116,35 @@ Consistent with case analysis showing **Peter Faucitt does not use a computer** 
 - Customer data processing violation evidence
 
 ## Legal Framework Classification
-- **Phase:** Investigation Phase (documented criminal instructions)
-- **Crime Type:** Business sabotage, POPI violations, employee endangerment
-- **Impact:** Complete operational shutdown and regulatory violations
+
+### Criminal Charges Available
+#### **Business Sabotage**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director breach of fiduciary duty through systematic operational destruction
+- **Common Law**: Malicious damage to property and business operations
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### **POPI Violations**
+- **Protection of Personal Information Act (POPIA) 4 of 2013**
+  - **Section 107**: Unauthorized customer data processing offenses
+  - **Section 108**: Penalties
+  - **Penalty**: Up to R10 million fine or 10 years imprisonment per violation
+
+#### **Employee Endangerment**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Endangering employees through illegal instructions
+- **Labour Relations Act 66 of 1995**: Unfair labor practices
+  - **Penalty**: Personal liability for director misconduct
+
+### **Phase:** Investigation Phase (documented criminal instructions)
+### **Impact:** Complete operational shutdown and regulatory violations
 
 ## Regulatory Implications
-### POPI Act Enforcement
-- **Information Regulator jurisdiction** over data processing violations
-- **Criminal prosecution potential** for data protection breaches
-- **R10 million fine exposure** per violation
-- **Individual employee liability** under POPI framework
+### POPI Act Enforcement - Protection of Personal Information Act (POPIA) 4 of 2013
+- **Information Regulator jurisdiction** over data processing violations (Section 39)
+- **Criminal prosecution potential** for data protection breaches (Section 107)
+- **R10 million fine exposure** per violation (Section 108)
+- **Individual employee liability** under POPI framework (Section 107)
 
 ### Business License Implications
 - **Operating license violations** through unauthorized data processing
@@ -147,9 +166,9 @@ Consistent with case analysis showing **Peter Faucitt does not use a computer** 
 - **Domain registrars** - Unauthorized domain usage evidence
 
 ## Related Events
-- **June 20, 2025:** Gayane email about Pete's instructions (coordination evidence)
-- **May 22, 2025:** Shopify audit destruction (systematic sabotage pattern)
-- **April 14, 2025:** Bank account hijacking (coordinated fraud sequence)
+- **2025-06-20:** Gayane email about Pete's instructions (coordination evidence)
+- **2025-05-22:** Shopify audit destruction (systematic sabotage pattern)
+- **2025-04-14:** Bank account hijacking (coordinated fraud sequence)
 - **Ongoing:** Customer data processing violations (regulatory breaches)
 
 ## Criminal Conspiracy Integration
@@ -194,7 +213,7 @@ This event demonstrates:
 ```
 
 ## Chain of Custody Notes
-- **Primary source:** Official compliance directive email dated July 8, 2025
+- **Primary source:** Official compliance directive email dated 2025-07-08
 - **Author authentication:** Daniel Faucitt (authorized compliance officer)
 - **Recipient verification:** kent@regima.zone (documented employee)
 - **Legal framework compliance:** POPI Act regulatory requirements

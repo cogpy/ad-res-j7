@@ -1,8 +1,8 @@
-# Trust Structure Establishment Documentation - March 15, 2025
+# Trust Structure Establishment Documentation - 2025-03-15
 
 ## Event Summary
 **Event:** Trust Structure Establishment Documentation  
-**Date:** March 15, 2025  
+**Date:** 2025-03-15  
 **Time:** 14:30 - 16:45 SAST  
 **Location:** Legal Offices, Cape Town  
 **Primary Perpetrator:** Peter Faucitt (as Trustee)  

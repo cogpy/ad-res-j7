@@ -1,4 +1,4 @@
-# Audit Trail Hijacking Timeline: May 22, 2025
+# Audit Trail Hijacking Timeline: 2025-05-22
 
 ## Visual Timeline of Criminal Evidence Destruction
 
@@ -38,7 +38,7 @@
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║                    MAY 22, 2025                               ║
+║                    2025-05-22                               ║
 ║          SYSTEMATIC AUDIT TRAIL DESTRUCTION                   ║
 ║                                                               ║
 ║  • Shopify records systematically deleted or concealed        ║
@@ -70,7 +70,7 @@
 
 **Significance**: Continued operations prove RegimA SA's zero activity is **artificial manipulation**, not platform failure
 
-## Comparative Analysis: Before vs. After May 22, 2025
+## Comparative Analysis: Before vs. After 2025-05-22
 
 ### RegimA SA - The Smoking Gun
 
@@ -79,7 +79,7 @@
 - Orders: 276.2 orders/month
 - Net Sales: R 871,761.91
 
-**Performance After May 22, 2025 (Jun-Aug 2025)**:
+**Performance After 2025-05-22 (Jun-Aug 2025)**:
 - Sales: R 0.00 (100% decline)
 - Orders: 0 (100% decline)
 - Net Sales: R 0.00 (100% decline)
@@ -93,7 +93,7 @@
 - Sales: R 2,319,624.89
 - Orders: 455.4 orders/month
 
-**Performance After May 22, 2025 (Jun-Aug 2025)**:
+**Performance After 2025-05-22 (Jun-Aug 2025)**:
 - Sales: R 729,031.11 (68.6% decline)
 - Orders: 110 orders/month (75.8% decline)
 
@@ -104,7 +104,7 @@
 ### Complete Criminal Conspiracy Timeline
 
 **Phase 1: Foundation (2017)**
-- **July 26, 2017**: Shopify Plus onboarding - Dan and Kay establish legitimate operations
+- **2017-07-26**: Shopify Plus onboarding - Dan and Kay establish legitimate operations
 - **2017-2023**: Continuous growth from ZAR 2M to 19.8M peak
 
 **Phase 2: Initial Sabotage (2023)**
@@ -112,13 +112,13 @@
 - **Result**: Revenue decline from R 19.8M to R 18.7M, expense inflation to R 8.27M
 
 **Phase 3: Systematic Evidence Destruction (May 2025)**
-- **May 22, 2025**: Shopify audit trail destruction
+- **2025-05-22**: Shopify audit trail destruction
   - RegimA SA: Complete erasure
   - RegimA Zone: Partial preservation
   - **Motive**: Eliminate proof of legitimate operations
 
 **Phase 4: Financial Sabotage (June 2025)**
-- **June 7, 2025**: Peter secretly cancels worldwide cards
+- **2025-06-07**: Peter secretly cancels worldwide cards
   - RegimA SA Card 5191: Cancelled
   - RegimA Zone Card 5225: Cancelled
   - **Result**: Operations forced onto personal payment methods
@@ -157,7 +157,7 @@
 - Direct customer service and order management
 - **Complete contradiction of gaslighting claims**
 
-### Why May 22, 2025?
+### Why 2025-05-22?
 
 **Strategic Timing**:
 1. **After Peak Performance Documentation**: Allowed 2023 peak (R 19.8M) to be recorded, then destroyed ongoing evidence
@@ -243,8 +243,8 @@
 ### Enhanced Charges
 
 **Evidence Destruction as POCA Racketeering Predicate**:
-- May 22, 2025 audit trail destruction
-- June 7, 2025 card cancellation conspiracy
+- 2025-05-22 audit trail destruction
+- 2025-06-07 card cancellation conspiracy
 - Ongoing revenue stream appropriation
 - **Pattern of criminal activity supporting 30-year sentences**
 
@@ -258,13 +258,13 @@
 
 ## Conclusion
 
-The May 22, 2025 audit trail hijacking represents **the most critical piece of evidence** in the entire criminal conspiracy case. The systematic destruction of RegimA SA audit trails, combined with selective preservation of RegimA Zone records, provides:
+The 2025-05-22 audit trail hijacking represents **the most critical piece of evidence** in the entire criminal conspiracy case. The systematic destruction of RegimA SA audit trails, combined with selective preservation of RegimA Zone records, provides:
 
 1. **Irrefutable Proof of Intentional Manipulation**: Statistical impossibility of legitimate R 1M+ monthly business declining to exactly R 0.00 with "None" designation
 
 2. **Clear Criminal Motive**: Elimination of evidence proving Dan and Kay's legitimate business ownership and contradicting Peter/Rynette's false narratives
 
-3. **Timeline Correlation**: Perfect alignment with June 7, 2025 card cancellation and ongoing revenue appropriation scheme
+3. **Timeline Correlation**: Perfect alignment with 2025-06-07 card cancellation and ongoing revenue appropriation scheme
 
 4. **Consciousness of Guilt**: Selective targeting and coordinated timing demonstrate awareness of criminal conduct
 

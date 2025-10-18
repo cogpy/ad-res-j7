@@ -1,8 +1,8 @@
-# May 22, 2025 Shopify Audit Trail Hijacking Analysis
+# 2025-05-22 Shopify Audit Trail Hijacking Analysis
 
 ## Executive Summary
 
-The Shopify historical performance reports for RegimA Zone and RegimA SA provide **irrefutable evidence** of systematic audit trail hijacking executed on or around **May 22, 2025**. This analysis exposes a sophisticated evidence destruction conspiracy designed to conceal legitimate business operations and facilitate the appropriation of revenue streams.
+The Shopify historical performance reports for RegimA Zone and RegimA SA provide **irrefutable evidence** of systematic audit trail hijacking executed on or around **2025-05-22**. This analysis exposes a sophisticated evidence destruction conspiracy designed to conceal legitimate business operations and facilitate the appropriation of revenue streams.
 
 ## Critical Evidence: The Audit Trail Destruction
 
@@ -74,7 +74,7 @@ The Shopify historical performance reports for RegimA Zone and RegimA SA provide
 
 ### 1. Systematic Evidence Destruction
 
-**May 22, 2025 Shopify Record Destruction**: Previously documented evidence destruction event now confirmed by audit trail analysis showing complete cessation of RegimA SA recorded activity immediately following this date.
+**2025-05-22 Shopify Record Destruction**: Previously documented evidence destruction event now confirmed by audit trail analysis showing complete cessation of RegimA SA recorded activity immediately following this date.
 
 **Method**: Systematic deletion or concealment of historical sales data, order records, and store performance metrics to eliminate proof of:
 - Legitimate business operations under Dan and Kay's management
@@ -107,11 +107,11 @@ The Shopify historical performance reports for RegimA Zone and RegimA SA provide
 
 ### Timeline Integration
 
-1. **July 26, 2017**: Shopify Plus onboarding email proving Dan and Kay's legitimate business operations
+1. **2017-07-26**: Shopify Plus onboarding email proving Dan and Kay's legitimate business operations
 2. **2017-2025**: Continuous Shopify platform operations generating R 34.9M+ in revenue
 3. **2023**: Peter's Sage system seizure during peak performance
-4. **May 22, 2025**: Systematic Shopify audit trail destruction
-5. **June 7, 2025**: Peter's secret cancellation of worldwide cards
+4. **2025-05-22**: Systematic Shopify audit trail destruction
+5. **2025-06-07**: Peter's secret cancellation of worldwide cards
 6. **June-August 2025**: RegimA SA shows "None" - complete audit trail erasure
 
 ### Payment Evidence Correlation
@@ -121,7 +121,7 @@ The Shopify historical performance reports for RegimA Zone and RegimA SA provide
 - RegimA Zone: 5 invoices showing card changes and sabotage
 - RegimA SA: 5 invoices showing corporate sabotage
 
-**Audit Trail Destruction Motive**: The May 22, 2025 destruction was designed to eliminate proof that:
+**Audit Trail Destruction Motive**: The 2025-05-22 destruction was designed to eliminate proof that:
 - UK company funded SA operations (contradicting debt claims)
 - Dan and Kay managed all platforms (contradicting "head office" narrative)
 - Multiple stores operated under their control (proving business ecosystem ownership)
@@ -182,7 +182,7 @@ The Shopify historical performance reports for RegimA Zone and RegimA SA provide
 
 **Unassailable Documentary Proof**:
 - Shopify platform reports showing systematic audit trail destruction
-- Clear timeline correlation with May 22, 2025 evidence destruction event
+- Clear timeline correlation with 2025-05-22 evidence destruction event
 - Control dataset (RegimA Zone) proving targeted manipulation
 - Historical performance data proving legitimate operations
 
@@ -201,7 +201,7 @@ The Shopify historical performance reports for RegimA Zone and RegimA SA provide
 
 ## Conclusion
 
-The May 22, 2025 Shopify audit trail hijacking represents the **centerpiece of a comprehensive criminal conspiracy** to appropriate Dan and Kay's legitimate business operations. The systematic destruction of RegimA SA audit trails, combined with selective preservation of RegimA Zone records, provides irrefutable proof of:
+The 2025-05-22 Shopify audit trail hijacking represents the **centerpiece of a comprehensive criminal conspiracy** to appropriate Dan and Kay's legitimate business operations. The systematic destruction of RegimA SA audit trails, combined with selective preservation of RegimA Zone records, provides irrefutable proof of:
 
 1. **Intentional Evidence Destruction**: Targeted manipulation proving consciousness of guilt
 2. **Revenue Stream Appropriation**: R 34.9M+ annual revenue subject to false ownership claims

@@ -1,0 +1,23 @@
+{
+  "frameworkAlignment": {
+    "score": 0.9,
+    "aligned": true,
+    "notes": "Framework well-aligned"
+  },
+  "chargeConsistency": {
+    "consistent": true,
+    "notes": "Charges consistent with framework"
+  },
+  "evidenceRequirementAlignment": {
+    "aligned": true,
+    "notes": "Evidence requirements align"
+  },
+  "proceduraReadiness": {
+    "ready": true,
+    "notes": "Procedures properly followed"
+  },
+  "recommendationConsistency": {
+    "consistent": true,
+    "notes": "Recommendations align with framework"
+  }
+}
