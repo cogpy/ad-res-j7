@@ -27,346 +27,106 @@
       "type": "Person",
       "name": "Rynette Farrar",
       "role": "Coordinator",
-      "description": "Primary orchestrator in revenue hijacking scheme",
-      "centralityScore": 0.78
+      "description": "Primary orchestrator in revenue hijacking scheme"
     },
     {
-      "id": "son-addarory",
+      "id": "chantal",
       "type": "Person",
-      "name": "Addarory (Son)",
-      "role": "Technical Facilitator",
-      "description": "Technical facilitator for domain registration",
-      "centralityScore": 0.65
+      "name": "Chantal",
+      "role": "Associate",
+      "description": "Individual involved in the estate discussions"
     },
     {
-      "id": "gayane-williams",
+      "id": "daniel-bantjies",
       "type": "Person",
-      "name": "Gayane Williams",
-      "role": "Witness",
-      "description": "Key witness with direct knowledge of instructions"
+      "name": "Daniel Bantjies",
+      "role": "Accountant",
+      "description": "Accountant for Peter Faucitt"
     },
     {
-      "id": "regima",
-      "type": "Company",
-      "name": "RegimA",
-      "description": "Business operations targeted in revenue hijacking"
+      "id": "kayla-pretorius",
+      "type": "Person",
+      "name": "Kayla Pretorius",
+      "role": "Deceased",
+      "description": "Deceased individual whose estate is a subject of conflict"
     },
     {
-      "id": "event-2025-04-14-bank-letter",
-      "type": "Event",
-      "name": "Bank Account Change Fraud",
-      "date": "2025-04-14",
-      "description": "Fraudulent redirection of client payments",
-      "category": "Revenue Diversion Setup",
-      "severity": "Critical"
+      "id": "allegation-r500k-payment",
+      "type": "Allegation",
+      "name": "Allegation of R500K Misappropriation",
+      "description": "Allegation concerning a payment of R500,000 made to the First Respondent."
     },
     {
-      "id": "event-2025-05-22-shopify-audit",
-      "type": "Event",
-      "name": "Shopify Audit Trail Destruction",
-      "date": "2025-05-22",
-      "description": "Systematic audit trail destruction",
-      "category": "Evidence Destruction",
-      "severity": "Critical",
-      "financialImpact": 3141647.7
+      "id": "allegation-it-expenses",
+      "type": "Allegation",
+      "name": "Allegation of Inflated IT Expenses",
+      "description": "Allegation that IT expenses were improperly inflated for personal gain."
     },
-    {
-      "id": "event-2025-05-29-domain-registration",
-      "type": "Event",
-      "name": "Domain Registration by Son",
-      "date": "2025-05-29",
-      "description": "Identity fraud using son's name for customer hijacking",
-      "category": "Family Conspiracy",
-      "severity": "High"
-    },
-    {
-      "id": "event-2025-06-20-gee-gayane-email",
-      "type": "Event",
-      "name": "Administrative Instruction Coordination",
-      "date": "2025-06-20",
-      "description": "Coordination evidence between Pete and administrative personnel",
-      "category": "Instruction Coordination",
-      "severity": "Medium"
-    },
-    {
-      "id": "event-2025-07-08-warehouse-popi",
-      "type": "Event",
-      "name": "Business Sabotage and POPI Violations",
-      "date": "2025-07-08",
-      "description": "Warehouse access issues and data protection violations",
-      "category": "Business Sabotage",
-      "severity": "High"
-    },
-    {
-      "id": "evidence-jf8a",
-      "type": "Evidence",
-      "name": "JF8A Documentation Log",
-      "evidenceType": "correspondence",
-      "reference": "JF8A",
-      "priority": "Critical",
-      "description": "IT expenses and R500K payment documentation"
-    },
-    {
-      "id": "evidence-forensic-index",
-      "type": "Evidence",
-      "name": "Forensic Evidence Index",
-      "evidenceType": "analysis",
-      "reference": "FORENSIC_EVIDENCE_INDEX",
-      "priority": "Critical",
-      "description": "Complete forensic analysis of revenue hijacking scheme"
-    },
-    {
-      "id": "evidence-shopify-reports",
-      "type": "Evidence",
-      "name": "Shopify Historical Performance Reports",
-      "evidenceType": "financial",
-      "reference": "shopify_reports",
-      "priority": "Critical",
-      "description": "Pre and post-hijacking revenue data"
-    },
-    {
-      "id": "date-2025-04-14",
-      "type": "Date",
-      "date": "2025-04-14",
-      "description": "Start of revenue hijacking scheme"
-    },
-    {
-      "id": "date-2025-07-08",
-      "type": "Date",
-      "date": "2025-07-08",
-      "description": "End of 85-day criminal scheme period"
-    }
+    { "id": "evidence-jf1", "type": "Evidence", "name": "First Respondent's Founding Affidavit", "reference": "JF1"},
+    { "id": "evidence-jf2", "type": "Evidence", "name": "Second Respondent's Founding Affidavit", "reference": "JF2"},
+    { "id": "evidence-jf3", "type": "Evidence", "name": "Confirmatory Affidavit of Rynette Farrar", "reference": "JF3"},
+    { "id": "evidence-jf3a", "type": "Evidence", "name": "Updated Sage Screenshot", "reference": "JF3A"},
+    { "id": "evidence-jf4a", "type": "Evidence", "name": "Company Financials (Profitability)", "reference": "JF4A"},
+    { "id": "evidence-jf5", "type": "Evidence", "name": "IT Expense Invoices and Contracts", "reference": "JF5"},
+    { "id": "evidence-jf6", "type": "Evidence", "name": "Bank Statements & Director Loan Records", "reference": "JF6"},
+    { "id": "evidence-jf-dan-tech", "type": "Evidence", "name": "Daniel Faucitt Technical Infrastructure Affidavit", "reference": "JF-DAN-TECH"},
+    { "id": "evidence-jf-dla3", "type": "Evidence", "name": "Director Loan Account Records (Applicant)", "reference": "JF-DLA3"},
+    { "id": "evidence-jf8b", "type": "Evidence", "name": "Email Chains Demonstrating Cooperation", "reference": "JF8B"},
+    { "id": "evidence-jf10", "type": "Evidence", "name": "Signed Settlement Agreement", "reference": "JF10"},
+    { "id": "evidence-jf-forensic-report", "type": "Evidence", "name": "Independent Forensic Investigator Report", "reference": "JF-FORENSIC-REPORT"},
+    { "id": "event-2023-kayla-murder", "type": "Event", "name": "Kayla Pretorius murdered", "date": "2023-01-01", "significance": "Account access complications, law enforcement investigation, family trauma" },
+    { "id": "event-2025-01-chantal-letter", "type": "Event", "name": "Chantal delivers letter mentioning Kayla's estate", "date": "2025-01-01", "significance": "Ongoing exploitation of deceased victim's estate" },
+    { "id": "event-2025-02-25-slg-stock-missing", "type": "Event", "name": "SLG Stock Missing (R5.2M) & Large Invoice", "date": "2025-02-25", "significance": "Systematic asset stripping begins" },
+    { "id": "event-2025-03-30-rynette-rww-unprocessed", "type": "Event", "name": "Rynette reveals unprocessed RWW transactions", "date": "2025-03-30", "significance": "Creates artificial urgency, blames Dan" },
+    { "id": "event-2025-04-14-rynette-client-email", "type": "Event", "name": "Rynette sends email to all clients with new payment account", "date": "2025-04-14", "significance": "Revenue hijacking preparation" },
+    { "id": "event-2025-04-22-pete-removes-it", "type": "Event", "name": "Pete orders Cloud IT systems removal", "date": "2025-04-22", "significance": "Infrastructure control seizure" },
+    { "id": "event-2025-04-30-server-missing", "type": "Event", "name": "Server missing from office", "date": "2025-04-30", "significance": "Evidence tampering begins" },
+    { "id": "event-2025-05-15-rezonance-query", "type": "Event", "name": "Query to Rynette about Rezonance payments for Kayla", "date": "2025-05-15", "significance": "Links to ongoing estate exploitation" },
+    { "id": "event-2025-05-22-revenue-hijacked", "type": "Event", "name": "Revenue streams hijacked", "date": "2025-05-22", "significance": "Business sabotage, audit trail manipulation" },
+    { "id": "event-2025-05-29-domain-creation", "type": "Event", "name": "Domain creation in Rynette's son's name", "date": "2025-05-29", "significance": "Identity fraud infrastructure" },
+    { "id": "event-2025-06-07-cards-cancelled", "type": "Event", "name": "Worldwide cards cancelled by Peter", "date": "2025-06-07", "significance": "Financial control seizure, creates documentation crisis" },
+    { "id": "event-2025-06-08-shopify-stopped", "type": "Event", "name": "Shopify orders stopped & audit trail missing", "date": "2025-06-08", "significance": "Business disruption, evidence destruction" },
+    { "id": "event-2025-06-10-bantjies-knowledge", "type": "Event", "name": "Daniel Bantjies learns of criminal matters", "date": "2025-06-10", "significance": "Knowledge acquired before confirmatory affidavit = perjury" },
+    { "id": "event-2025-06-20-sage-screenshot-1", "type": "Event", "name": "First Sage screenshot shows Rynette controls Pete@regima.com", "date": "2025-06-20", "significance": "Email hijacking evidence documented" },
+    { "id": "event-2025-06-mid-reports-to-bantjies", "type": "Event", "name": "Daniel provides all reports to Bantjies", "date": "2025-06-15", "significance": "Peter has access to all documentation through accountant" },
+    { "id": "event-2025-06-mid-cards-cancelled-again", "type": "Event", "name": "Peter cancels payment cards", "date": "2025-06-16", "significance": "Manufactures crisis to justify later interdict" },
+    { "id": "event-2025-07-16-r500k-payment-dan", "type": "Event", "name": "R500K payment to Dan", "date": "2025-07-16", "significance": "Legitimate director loan, later mischaracterized as 'gift'" },
+    { "id": "event-tbd-settlement-signed", "type": "Event", "name": "Settlement agreement signed", "date": "2025-08-06", "significance": "8 days before interdict - strategic timing" },
+    { "id": "event-2025-08-14-founding-affidavit", "type": "Event", "name": "Peter files founding affidavit", "date": "2025-08-14", "significance": "Material non-disclosures, perjury regarding email control" },
+    { "id": "event-2025-08-19-ex-parte-interdict", "type": "Event", "name": "Ex parte interdict granted", "date": "2025-08-19", "significance": "Based on false and incomplete information" },
+    { "id": "event-2025-08-25-sage-screenshot-2", "type": "Event", "name": "Second Sage screenshot", "date": "2025-08-25", "significance": "Confirms ongoing Rynette control of Pete@regima.com" },
+    { "id": "event-2025-08-29-ens-africa-acknowledges", "type": "Event", "name": "ENS Africa acknowledges criminal matters", "date": "2025-08-29", "significance": "'Received, thanks Daniel' - then suppresses information from Court" },
+    { "id": "event-tbd-investment-payout", "type": "Event", "name": "Investment payout due", "date": "2026-05-19", "significance": "9 months from interdict - underlying financial motive" }
   ],
   "linkTuples": [
-    {
-      "source": "peter-faucitt",
-      "relation": "involved-in",
-      "target": "event-2025-04-14-bank-letter",
-      "metadata": {
-        "role": "alleged-perpetrator",
-        "evidence": [
-          "timeline-documents",
-          "bank-statements"
-        ]
-      }
-    },
-    {
-      "source": "rynette-farrar",
-      "relation": "orchestrated",
-      "target": "event-2025-04-14-bank-letter",
-      "metadata": {
-        "role": "primary-orchestrator",
-        "centralityIncrease": 0.06
-      }
-    },
-    {
-      "source": "peter-faucitt",
-      "relation": "involved-in",
-      "target": "event-2025-05-22-shopify-audit",
-      "metadata": {
-        "role": "alleged-perpetrator",
-        "evidence": [
-          "audit-trail-analysis"
-        ],
-        "timing": "after-confrontation",
-        "consciousnessOfGuilt": true
-      }
-    },
-    {
-      "source": "son-addarory",
-      "relation": "facilitated",
-      "target": "event-2025-05-29-domain-registration",
-      "metadata": {
-        "role": "technical-facilitator",
-        "centralityIncrease": 0.3
-      }
-    },
-    {
-      "source": "rynette-farrar",
-      "relation": "coordinated",
-      "target": "event-2025-05-29-domain-registration",
-      "metadata": {
-        "role": "coordinator",
-        "familyConspiracy": true
-      }
-    },
-    {
-      "source": "gayane-williams",
-      "relation": "witnessed",
-      "target": "event-2025-06-20-gee-gayane-email",
-      "metadata": {
-        "role": "key-witness",
-        "testimony": "direct-knowledge"
-      }
-    },
-    {
-      "source": "peter-faucitt",
-      "relation": "coordinated-with",
-      "target": "gayane-williams",
-      "metadata": {
-        "via": "event-2025-06-20-gee-gayane-email",
-        "nature": "administrative-instructions"
-      }
-    },
-    {
-      "source": "jacqueline-faucitt",
-      "relation": "respondent-with",
-      "target": "daniel-faucitt",
-      "metadata": {
-        "relationship": "co-respondents",
-        "case": "2025-137857"
-      }
-    },
-    {
-      "source": "peter-faucitt",
-      "relation": "applicant-against",
-      "target": "jacqueline-faucitt",
-      "metadata": {
-        "relationship": "legal-dispute",
-        "case": "2025-137857"
-      }
-    },
-    {
-      "source": "peter-faucitt",
-      "relation": "applicant-against",
-      "target": "daniel-faucitt",
-      "metadata": {
-        "relationship": "legal-dispute",
-        "case": "2025-137857"
-      }
-    },
-    {
-      "source": "rynette-farrar",
-      "relation": "family-of",
-      "target": "son-addarory",
-      "metadata": {
-        "relationship": "mother-son",
-        "conspiracyRole": "coordinated"
-      }
-    },
-    {
-      "source": "jacqueline-faucitt",
-      "relation": "owns",
-      "target": "regima",
-      "metadata": {
-        "role": "business-owner",
-        "with": "daniel-faucitt"
-      }
-    },
-    {
-      "source": "daniel-faucitt",
-      "relation": "owns",
-      "target": "regima",
-      "metadata": {
-        "role": "business-owner",
-        "with": "jacqueline-faucitt"
-      }
-    },
-    {
-      "source": "event-2025-04-14-bank-letter",
-      "relation": "documented-in",
-      "target": "evidence-forensic-index",
-      "metadata": {
-        "category": "Revenue Diversion Setup",
-        "evidenceGrade": "A"
-      }
-    },
-    {
-      "source": "event-2025-05-22-shopify-audit",
-      "relation": "documented-in",
-      "target": "evidence-shopify-reports",
-      "metadata": {
-        "category": "Evidence Destruction",
-        "evidenceGrade": "A",
-        "financialImpact": 3141647.7
-      }
-    },
-    {
-      "source": "event-2025-05-22-shopify-audit",
-      "relation": "documented-in",
-      "target": "evidence-forensic-index",
-      "metadata": {
-        "category": "Evidence Destruction",
-        "evidenceGrade": "A"
-      }
-    },
-    {
-      "source": "event-2025-06-20-gee-gayane-email",
-      "relation": "referenced-in",
-      "target": "evidence-jf8a",
-      "metadata": {
-        "category": "Instruction Coordination",
-        "witnessEvidence": true
-      }
-    },
-    {
-      "source": "event-2025-04-14-bank-letter",
-      "relation": "occurred-on",
-      "target": "date-2025-04-14",
-      "metadata": {
-        "timeline": "scheme-start"
-      }
-    },
-    {
-      "source": "event-2025-07-08-warehouse-popi",
-      "relation": "occurred-on",
-      "target": "date-2025-07-08",
-      "metadata": {
-        "timeline": "scheme-end",
-        "duration": "85-days"
-      }
-    },
-    {
-      "source": "event-2025-04-14-bank-letter",
-      "relation": "precedes",
-      "target": "event-2025-05-22-shopify-audit",
-      "metadata": {
-        "daysBetween": 38,
-        "escalationPattern": true
-      }
-    },
-    {
-      "source": "event-2025-05-22-shopify-audit",
-      "relation": "precedes",
-      "target": "event-2025-05-29-domain-registration",
-      "metadata": {
-        "daysBetween": 7,
-        "escalationPattern": true
-      }
-    },
-    {
-      "source": "event-2025-05-29-domain-registration",
-      "relation": "precedes",
-      "target": "event-2025-06-20-gee-gayane-email",
-      "metadata": {
-        "daysBetween": 22
-      }
-    },
-    {
-      "source": "event-2025-06-20-gee-gayane-email",
-      "relation": "precedes",
-      "target": "event-2025-07-08-warehouse-popi",
-      "metadata": {
-        "daysBetween": 18
-      }
-    },
-    {
-      "source": "regima",
-      "relation": "targeted-by",
-      "target": "event-2025-04-14-bank-letter",
-      "metadata": {
-        "impact": "revenue-diversion"
-      }
-    },
-    {
-      "source": "regima",
-      "relation": "targeted-by",
-      "target": "event-2025-05-22-shopify-audit",
-      "metadata": {
-        "impact": "business-shutdown",
-        "financialLoss": 3141647.7
-      }
-    }
+    { "source": "peter-faucitt", "relation": "applicant-against", "target": "jacqueline-faucitt", "metadata": {"case": "2025-137857"} },
+    { "source": "peter-faucitt", "relation": "applicant-against", "target": "daniel-faucitt", "metadata": {"case": "2025-137857"} },
+    { "source": "allegation-r500k-payment", "relation": "rebutted-by", "target": "evidence-jf-dla3" },
+    { "source": "allegation-it-expenses", "relation": "rebutted-by", "target": "evidence-jf5" },
+    { "source": "event-2023-kayla-murder", "relation": "related-to", "target": "kayla-pretorius" },
+    { "source": "event-2025-01-chantal-letter", "relation": "involves", "target": "chantal" },
+    { "source": "event-2025-01-chantal-letter", "relation": "related-to", "target": "kayla-pretorius" },
+    { "source": "event-2025-02-25-slg-stock-missing", "relation": "perpetrated-by", "target": "rynette-farrar" },
+    { "source": "event-2025-03-30-rynette-rww-unprocessed", "relation": "perpetrated-by", "target": "rynette-farrar" },
+    { "source": "event-2025-04-14-rynette-client-email", "relation": "perpetrated-by", "target": "rynette-farrar" },
+    { "source": "event-2025-04-22-pete-removes-it", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-04-30-server-missing", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-05-22-revenue-hijacked", "relation": "perpetrated-by", "target": "rynette-farrar" },
+    { "source": "event-2025-05-29-domain-creation", "relation": "perpetrated-by", "target": "rynette-farrar" },
+    { "source": "event-2025-06-07-cards-cancelled", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-06-08-shopify-stopped", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-06-10-bantjies-knowledge", "relation": "involves", "target": "daniel-bantjies" },
+    { "source": "event-2025-06-20-sage-screenshot-1", "relation": "documented-in", "target": "evidence-jf3" },
+    { "source": "event-2025-06-mid-reports-to-bantjies", "relation": "involves", "target": "daniel-faucitt" },
+    { "source": "event-2025-06-mid-reports-to-bantjies", "relation": "involves", "target": "daniel-bantjies" },
+    { "source": "event-2025-06-mid-cards-cancelled-again", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-07-16-r500k-payment-dan", "relation": "involves", "target": "daniel-faucitt" },
+    { "source": "event-2025-07-16-r500k-payment-dan", "relation": "documented-in", "target": "evidence-jf6" },
+    { "source": "event-tbd-settlement-signed", "relation": "documented-in", "target": "evidence-jf10" },
+    { "source": "event-2025-08-14-founding-affidavit", "relation": "perpetrated-by", "target": "peter-faucitt" },
+    { "source": "event-2025-08-19-ex-parte-interdict", "relation": "involves", "target": "peter-faucitt" },
+    { "source": "event-2025-08-25-sage-screenshot-2", "relation": "documented-in", "target": "evidence-jf3a" },
+    { "source": "event-2025-08-29-ens-africa-acknowledges", "relation": "involves", "target": "daniel-bantjies" }
   ],
   "relations": [
     "involved-in",
@@ -383,6 +143,14 @@
     "referenced-in",
     "occurred-on",
     "precedes",
-    "targeted-by"
+    "targeted-by",
+    "rebutted-by",
+    "targets",
+    "cooperated-as-shown-in",
+    "negotiated-settlement",
+    "investigated-by",
+    "related-to",
+    "involves",
+    "perpetrated-by"
   ]
 }

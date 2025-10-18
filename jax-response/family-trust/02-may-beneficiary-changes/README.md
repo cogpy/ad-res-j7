@@ -1,8 +1,8 @@
-# Unauthorized Beneficiary Modifications - May 2, 2025
+# Unauthorized Beneficiary Modifications - 2025-05-02
 
 ## Event Summary
 **Event:** Unauthorized Beneficiary Modifications  
-**Date:** May 2, 2025  
+**Date:** 2025-05-02  
 **Time:** 09:15 - 11:30 SAST  
 **Location:** Trust Administration Offices  
 **Primary Perpetrator:** Peter Faucitt, Rynette Farrar (coordination)  

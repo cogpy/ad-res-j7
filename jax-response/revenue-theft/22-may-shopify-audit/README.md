@@ -1,13 +1,13 @@
-# 22 May 2025 - Shopify Audit Trail Hijacking
+# 2025-05-22 - Shopify Audit Trail Hijacking
 
 ## Event Summary
-**Date:** May 22, 2025  
+**Date:** 2025-05-22  
 **Perpetrators:** Unknown (coordinated action)  
 **Action:** Systematic destruction/concealment of Shopify audit trails  
 **Legal Significance:** Evidence destruction, computer fraud, obstruction of justice  
 
 ## Evidence Description
-On May 22, 2025, the Shopify audit trails for RegimA SA were systematically deleted or concealed, while RegimA Zone audit trails were partially preserved. This represents a deliberate evidence destruction event occurring 7 days after Jax's confrontation with Rynette on May 15, 2025.
+On 2025-05-22, the Shopify audit trails for RegimA SA were systematically deleted or concealed, while RegimA Zone audit trails were partially preserved. This represents a deliberate evidence destruction event occurring 7 days after Jax's confrontation with Rynette on 2025-05-15.
 
 ## Criminal Elements
 - **Systematic evidence destruction**
@@ -17,7 +17,7 @@ On May 22, 2025, the Shopify audit trails for RegimA SA were systematically dele
 - **Consciousness of guilt (timing after confrontation)**
 
 ## Timeline Context
-- **7 days after** Jax confronted Rynette (May 15, 2025)
+- **7 days after** Jax confronted Rynette (2025-05-15)
 - **77 days after** April 14 bank letter setup
 - **Strategic timing** to eliminate evidence of legitimate operations
 
@@ -44,7 +44,7 @@ On May 22, 2025, the Shopify audit trails for RegimA SA were systematically dele
 ## The Hijacking Event Visual
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║                    MAY 22, 2025                               ║
+║                    2025-05-22                               ║
 ║          SYSTEMATIC AUDIT TRAIL DESTRUCTION                   ║
 ║                                                               ║
 ║  • Shopify records systematically deleted or concealed        ║
@@ -82,9 +82,9 @@ On May 22, 2025, the Shopify audit trails for RegimA SA were systematically dele
 **CRITICAL** - Central evidence destruction event proving consciousness of guilt
 
 ## Related Events
-- **May 15, 2025:** Jax confronts Rynette (trigger event)
-- **April 14, 2025:** Bank account hijacking (setup)
-- **May 29, 2025:** Domain registration (cover-up escalation)
+- **2025-05-15:** Jax confronts Rynette (trigger event)
+- **2025-04-14:** Bank account hijacking (setup)
+- **2025-05-29:** Domain registration (cover-up escalation)
 - **June 2025:** Complete business shutdown
 
 ## Evidence Source Files

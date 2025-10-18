@@ -1,8 +1,8 @@
-# Large-Scale Unauthorized Financial Transfers - May 15, 2025
+# Large-Scale Unauthorized Financial Transfers - 2025-05-15
 
 ## Event Summary
 **Event:** Large-Scale Unauthorized Financial Transfers  
-**Date:** May 15, 2025  
+**Date:** 2025-05-15  
 **Time:** 10:15 - 14:30 SAST  
 **Location:** Multiple Financial Institutions  
 **Primary Perpetrator:** Peter Faucitt (as authorized signatory)  

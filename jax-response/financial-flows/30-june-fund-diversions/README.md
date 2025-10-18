@@ -1,8 +1,8 @@
-# Coordinated Fund Diversion Operations - June 30, 2025
+# Coordinated Fund Diversion Operations - 2025-06-30
 
 ## Event Summary
 **Event:** Coordinated Fund Diversion Operations  
-**Date:** June 30, 2025  
+**Date:** 2025-06-30  
 **Time:** 08:00 - 18:00 SAST  
 **Location:** Multiple Financial Networks  
 **Primary Perpetrator:** Coordinated network (Peter Faucitt, Rynette Farrar, Associates)  

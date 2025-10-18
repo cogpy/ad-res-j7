@@ -109,8 +109,8 @@ All tasks automatically receive `todo` and `enhancement` labels.
 
 ### Repository Growth
 
-- **Directories:** 72+ (from initial 33) - **+118% growth**
-- **Files:** 275+ (from initial 30) - **+817% growth**
+- **Directories:** 100+ (from initial 33) - **+200%+ growth**
+- **Files:** 1000+ (from initial 30) - **+3200%+ growth**
 - **Documented Losses:** R10.227+ million across three forensic categories
 - **Affidavit Versions:** 5 versions (current: v3)
 - **Strategic Arguments:** 7 key arguments established
@@ -119,11 +119,16 @@ All tasks automatically receive `todo` and `enhancement` labels.
 
 The following critical evidence items are still needed:
 
+1. Responsible Person documentation (37 jurisdictions) - JF-RP1 ⚠️ Template ready
+2. Director loan account statements (3 directors) - JF-DLA1-3 ⚠️ Templates ready
+3. Peter's withdrawal examples (4+) - JF-PA1-4 ⚠️ Templates ready
+4. JF5 settlement agreement (draft vs final comparison) ⚠️ Templates ready (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON)
+5. Chesno fraud documentation - JF-CHESNO1-4
 1. Responsible Person documentation (37 jurisdictions) - JF-RP1
 2. Director loan account statements (3 directors) - JF-DLA1-3
 3. Peter's withdrawal examples (4+) - JF-PA1-4
 4. JF5 settlement agreement (draft vs final comparison)
-5. Chesno fraud documentation - JF-CHESNO1-4
+5. ✅ **COMPLETED** - Chesno fraud documentation - JF-CHESNO1-4
 6. Daniel's 8-year restoration evidence - JF-RESTORE1-4
 
 ## Usage Guidelines

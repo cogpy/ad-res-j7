@@ -132,21 +132,60 @@
 ### Criminal Charges Supported by Evidence:
 
 #### **Primary Charges:**
-- **Grand Theft** - R2,851,247.35+ in systematic trust asset misappropriation
-- **Organized Fraud** - Coordinated multi-party trust violation conspiracy  
-- **Breach of Trust** - Systematic violation of fiduciary duties and trust obligations
-- **Embezzlement** - Misappropriation of entrusted trust assets for personal benefit
+
+##### **Grand Theft**
+- **Common Law Crime**: R2,851,247.35+ in systematic trust asset misappropriation
+  - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
+  - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+
+##### **Organized Fraud**
+- **Common Law Crime**: Coordinated multi-party trust violation conspiracy
+  - **Elements**: Misrepresentation, unlawfulness, intention, prejudice (actual/potential)
+- **Prevention of Organised Crime Act (POCA) 121 of 1998**
+  - **Section 2**: Racketeering activities - Pattern of coordinated criminal activity
+  - **Penalty**: Up to 30 years imprisonment
+
+##### **Breach of Trust**
+- **Trust Property Control Act 57 of 1988**
+  - **Section 20**: Trustee duties and liabilities - Systematic violation of fiduciary duties and trust obligations
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties and breach of fiduciary obligations
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+##### **Embezzlement**
+- **Common Law Crime**: Misappropriation of entrusted trust assets for personal benefit
+  - **Elements**: Conversion of property by person in position of trust, intent to defraud
+  - **Penalty**: Up to 15 years imprisonment
 
 #### **Professional Misconduct Charges:**
-- **Trustee License Violations** - Systematic breach of professional conduct standards
-- **Fiduciary Duty Breaches** - Multiple violations of core professional obligations
-- **Legal Professional Violations** - Abuse of legal position for criminal purposes
+
+##### **Trustee License Violations**
+- **Trust Property Control Act 57 of 1988**
+  - **Section 20**: Systematic breach of professional conduct standards
+- **Legal Practice Act 28 of 2014** (if applicable to legal professional trustees)
+  - **Professional conduct rules**: Abuse of fiduciary position
+  - **Penalty**: Professional disqualification, criminal referral
+
+##### **Fiduciary Duty Breaches**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Multiple violations of core professional obligations
+- **Common Law**: Breach of fiduciary duty
+  - **Penalty**: Personal liability, disgorgement of profits, criminal charges
+
+##### **Legal Professional Violations**
+- **Legal Practice Act 28 of 2014**: Abuse of legal position for criminal purposes
+- **Attorneys Act 53 of 1979** (transitional provisions)
+  - **Professional conduct rules**: Misuse of professional position
+  - **Penalty**: Professional deregistration, criminal charges
 
 #### **Aggravating Circumstances:**
-- **Position of Trust Abuse** - Misuse of fiduciary position for criminal benefit
-- **Vulnerable Victim Exploitation** - Harm to legitimate trust beneficiaries
-- **Sophisticated Criminal Methods** - Professional-level criminal planning and execution
+- **Position of Trust Abuse** - Misuse of fiduciary position for criminal benefit (enhanced sentences)
+- **Vulnerable Victim Exploitation** - Harm to legitimate trust beneficiaries (victim impact consideration)
+- **Sophisticated Criminal Methods** - Professional-level criminal planning and execution (premeditation)
 - **Obstruction of Justice** - Evidence destruction and investigation interference
+  - **Prevention of Organised Crime Act (POCA) 121 of 1998**
+    - **Section 18**: Obstruction of justice
+    - **Penalty**: Up to 30 years imprisonment
 
 ### **Total Quantified Criminal Impact: R2,851,247.35+**
 

@@ -32,6 +32,18 @@ type Query {
   """Get all paragraphs supported by evidence"""
   paragraphsForEvidence(evidenceId: ID!): [ParagraphNode!]!
   
+  """Get timeline events by date range"""
+  timelineEventsByDateRange(startDate: String!, endDate: String!): [TimelineEventNode!]!
+  
+  """Get timeline events by phase"""
+  timelineEventsByPhase(phase: String!): [TimelineEventNode!]!
+  
+  """Get timeline events by actor"""
+  timelineEventsByActor(actorId: ID!): [TimelineEventNode!]!
+  
+  """Get complete chronological timeline"""
+  completeTimeline: [TimelineEventNode!]!
+  
   """Get strategic clusters"""
   strategicClusters: [StrategyCluster!]!
   
@@ -67,6 +79,7 @@ enum NodeType {
   CATEGORY
   PARAGRAPH
   EVIDENCE
+  TIMELINE_EVENT
 }
 
 """
@@ -158,6 +171,32 @@ type EvidenceNode implements Node {
 }
 
 """
+Timeline Event node (key events in the case chronology)
+"""
+type TimelineEventNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  
+  # Timeline-specific fields
+  eventDate: String!
+  eventType: String!
+  significance: String!
+  phase: String!
+  actors: [ActorNode!]!
+  relatedParagraphs: [ParagraphNode!]!
+  evidenceReferences: [EvidenceNode!]!
+  
+  # Criminal enterprise analysis
+  criminalPhase: String
+  escalationLevel: String
+  coordinationIndicators: [String!]!
+}
+
+"""
 Node properties (flexible key-value store)
 """
 type NodeProperties {
@@ -169,6 +208,14 @@ type NodeProperties {
   evidenceCount: Int
   role: String
   type: String
+  
+  # Timeline-specific properties
+  eventDate: String
+  eventType: String
+  significance: String
+  phase: String
+  criminalPhase: String
+  escalationLevel: String
 }
 
 """
