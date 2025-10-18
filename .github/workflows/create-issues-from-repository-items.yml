@@ -265,3 +265,104 @@ jobs:
         run: |
           echo "🧹 Cleaning up temporary files..."
           rm -f temp-items.txt manual-items.txt batch-issue-creation-summary.json
+
+      - name: Report workflow failures
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Create failure report
+            const failureContext = {
+              workflow: 'create-issues-from-repository-items',
+              trigger: context.eventName,
+              runId: context.runId,
+              runUrl: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              timestamp: new Date().toISOString(),
+              repository: `${context.repo.owner}/${context.repo.repo}`,
+              parameters: {
+                dry_run: '${{ github.event.inputs.dry_run }}',
+                source_type: '${{ github.event.inputs.source_type }}',
+                items_list: '${{ github.event.inputs.items_list }}'
+              }
+            };
+            
+            // Check for existing failure issues to prevent spam
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['workflow-failure', 'issue-creation'],
+              per_page: 5
+            });
+            
+            const recentFailure = existingIssues.data.find(issue => {
+              const issueDate = new Date(issue.created_at);
+              const hoursSinceIssue = (new Date() - issueDate) / (1000 * 60 * 60);
+              return hoursSinceIssue < 24; // Only check last 24 hours
+            });
+            
+            const issueBody = `## 🚨 Issue Creation Workflow Failure
+            
+            The batch issue creation workflow has failed and requires attention.
+            
+            ### Failure Details
+            - **Workflow**: ${failureContext.workflow}
+            - **Trigger**: ${failureContext.trigger}
+            - **Run ID**: [${failureContext.runId}](${failureContext.runUrl})
+            - **Timestamp**: ${failureContext.timestamp}
+            - **Parameters**: 
+              - Dry Run: ${failureContext.parameters.dry_run}
+              - Source Type: ${failureContext.parameters.source_type}
+              - Items Count: ${failureContext.parameters.items_list ? failureContext.parameters.items_list.split('\\n').length : 'N/A'}
+            
+            ### Impact Assessment
+            - ⚠️ **Issue Management**: Repository items may not be converted to issues
+            - ⚠️ **Workflow Automation**: Batch issue creation process is broken
+            - ⚠️ **User Experience**: Manual issue creation may be required
+            
+            ### Immediate Actions Required
+            1. 🔍 **Investigate**: Check the [workflow run logs](${failureContext.runUrl})
+            2. 🔧 **Fix**: Address script errors, permission issues, or API problems
+            3. 🧪 **Test**: Run workflow manually with a small test set
+            4. 📋 **Verify**: Check GitHub API limits and authentication
+            
+            ### Common Issues
+            - GitHub API rate limiting
+            - Authentication or permission problems
+            - Malformed input data or parameters
+            - Script dependency issues
+            - Issue template or label problems
+            
+            ---
+            
+            *This issue was created automatically by the workflow monitoring system.*`;
+            
+            if (!recentFailure) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Issue Creation Workflow Failure - ${failureContext.timestamp.split('T')[0]}`,
+                body: issueBody,
+                labels: ['workflow-failure', 'issue-creation', 'bug', 'priority: high']
+              });
+              
+              console.log('Created failure alert issue');
+            } else {
+              // Add comment to existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: recentFailure.number,
+                body: `## 🔄 Additional Failure - ${failureContext.timestamp}
+                
+                Another failure occurred in the issue creation workflow.
+                
+                **Run**: [${failureContext.runId}](${failureContext.runUrl})
+                **Trigger**: ${failureContext.trigger}
+                **Source Type**: ${failureContext.parameters.source_type}
+                
+                Please investigate this recurring failure pattern.`
+              });
+              
+              console.log('Added comment to existing failure issue');
+            }

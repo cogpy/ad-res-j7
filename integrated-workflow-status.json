@@ -1,12 +1,12 @@
 {
   "integrated_status": {
     "evidence": {
-      "completion_rate": "143.2%",
+      "completion_rate": "145.9%",
       "critical_gaps": 19,
       "quick_wins": 5
     },
     "strategy": {
-      "completion_rate": "70.0%",
+      "completion_rate": "72.7%",
       "critical_path_items": 0,
       "quick_wins": 1
     }

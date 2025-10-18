@@ -1,8 +1,8 @@
-# Systematic Trust Obligation Breaches - June 18, 2025
+# Systematic Trust Obligation Breaches - 2025-06-18
 
 ## Event Summary
 **Event:** Systematic Trust Obligation Breaches  
-**Date:** June 18, 2025  
+**Date:** 2025-06-18  
 **Time:** 10:00 - 15:30 SAST  
 **Location:** Multiple Trust Asset Locations  
 **Primary Perpetrator:** Peter Faucitt (as Trustee)  

@@ -155,7 +155,7 @@ With Phase 1 complete, the next priorities are:
 ### Repository Maintenance
 1. Review and consolidate directories
 2. Archive old affidavit versions
-3. Update README files
+3. Update README.md files
 4. Clean up temporary files
 5. Verify annexure references
 
