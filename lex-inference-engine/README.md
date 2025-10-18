@@ -163,17 +163,17 @@ print("Guilt Scores:", result['guilt_scores'])
 const engine = new LexInferenceEngine();
 await engine.initialize();
 
-// Load your case data
+/ Load your case data
 const caseData = {
   agents: [...],
   timeline: {...},
   evidence: [...]
 };
 
-// Run universal optimization
+/ Run universal optimization
 const result = await engine.optimizeUniversalGuiltResolution(caseData);
 
-// Validate universal coverage
+/ Validate universal coverage
 console.log(`Completeness: ${result.validation.completeness * 100}%`);
 console.log(`Proof: ${result.validation.proof.proof.qed}`);
 ```

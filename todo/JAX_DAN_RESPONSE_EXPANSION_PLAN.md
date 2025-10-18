@@ -324,7 +324,7 @@ The **jax-dan-response** directory currently contains only **2 AD paragraph file
 
 ### 13. Update jax-dan-response/README.md
 
-**Action**: Comprehensively update main README to reflect expanded structure.
+**Action**: Comprehensively update main README.md to reflect expanded structure.
 
 **Content Requirements**:
 - Updated subdirectory descriptions
@@ -531,10 +531,10 @@ The **jax-dan-response** directory currently contains only **2 AD paragraph file
 
 | Phase | Week | Focus | Estimated Effort | Priority |
 |-------|------|-------|-----------------|----------|
-| Phase 1 | Week 1 | Critical Priority 1 files (5 files + README) | 15-20 hours | CRITICAL |
-| Phase 2 | Week 2 | High Priority 2 files (4 files + README update) | 10-15 hours | HIGH |
+| Phase 1 | Week 1 | Critical Priority 1 files (5 files + README.md) | 15-20 hours | CRITICAL |
+| Phase 2 | Week 2 | High Priority 2 files (4 files + README.md update) | 10-15 hours | HIGH |
 | Phase 3 | Week 3 | Evidence integration and cross-referencing | 8-12 hours | HIGH |
-| Phase 4 | Week 4 | Medium Priority 3 files (5-8 files + README) | 10-15 hours | MEDIUM |
+| Phase 4 | Week 4 | Medium Priority 3 files (5-8 files + README.md) | 10-15 hours | MEDIUM |
 | Phase 5 | Week 5 | Finalization and quality assurance | 5-8 hours | MEDIUM |
 | **TOTAL** | **5 weeks** | **Complete expansion** | **48-70 hours** | **CRITICAL** |
 

@@ -51,10 +51,10 @@ Link tuples represent relationships between entities. Each tuple contains:
 ```javascript
 const HypergraphQL = require('./hypergraphql');
 
-// Create a new hypergraph
+/ Create a new hypergraph
 const hg = new HypergraphQL();
 
-// Add entities
+/ Add entities
 hg.addEntity('peter-faucitt', 'Person', {
   name: 'Peter Andrew Faucitt',
   role: 'Applicant'
@@ -66,13 +66,13 @@ hg.addEntity('event-2025-04-14', 'Event', {
   severity: 'Critical'
 });
 
-// Add link tuple
+/ Add link tuple
 hg.addLinkTuple('peter-faucitt', 'involved-in', 'event-2025-04-14', {
   role: 'alleged-perpetrator',
   evidence: ['bank-statements']
 });
 
-// Query
+/ Query
 const events = hg.queryEntitiesByType('Event');
 const connections = hg.findConnected('peter-faucitt');
 ```
@@ -84,19 +84,19 @@ The `case-hypergraph.js` file provides a complete implementation for Case 2025-1
 ```javascript
 const { buildCase2025137857Hypergraph } = require('./case-hypergraph');
 
-// Build the case hypergraph
+/ Build the case hypergraph
 const hg = buildCase2025137857Hypergraph();
 
-// Query all events
+/ Query all events
 const events = hg.queryEntitiesByType('Event');
 
-// Find connections
+/ Find connections
 const peterConnections = hg.findConnected('peter-faucitt');
 
-// Find path between entities
+/ Find path between entities
 const path = hg.findPath('peter-faucitt', 'regima');
 
-// Get statistics
+/ Get statistics
 const stats = hg.getStats();
 ```
 
@@ -281,7 +281,7 @@ The case-specific implementation includes:
 {
   id: "entity-id",
   type: "Person|Event|Evidence|Company|Date",
-  // type-specific properties
+  / type-specific properties
   name: "Entity Name",
   description: "Description",
   ...
@@ -295,7 +295,7 @@ The case-specific implementation includes:
   relation: "relationship-type",
   target: "target-entity-id",
   metadata: {
-    // context-specific data
+    / context-specific data
     role: "role-in-relationship",
     evidence: ["evidence-references"],
     date: "2025-04-14",
@@ -316,10 +316,10 @@ Link tuples connect to existing evidence files:
 Export hypergraph data for integration with other tools:
 ```javascript
 const json = hg.toJSON();
-// Save to file or send to API
+/ Save to file or send to API
 fs.writeFileSync('case-hypergraph.json', JSON.stringify(json, null, 2));
 
-// Import from saved data
+/ Import from saved data
 const newHg = new HypergraphQL().fromJSON(json);
 ```
 

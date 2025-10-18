@@ -81,6 +81,28 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
+### Settlement Agreement Evidence
+
+#### JF5-COMPARISON: Settlement Agreement Draft vs Final Comparison
+- **File:** `JF5_COMPARISON_DRAFT_VS_FINAL.md`
+- **Purpose:** Comprehensive comparison document highlighting all material changes made between JF5 draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48 (sub-paragraphs 48.1-48.10), Updated Paragraph 48
+- **Status:** ✅ **Complete** - Framework document ready; requires actual JF5 draft and final agreements to verify
+- **Key Evidence Points:**
+  - Documents the "Has anything changed?" dialogue and attorney misrepresentation
+  - Identifies 4 categories of material changes (control, oversight, scope, jurisdictional)
+  - Establishes fraud in the inducement grounds
+  - Connects to strategic litigation pattern (2 days between settlement and interdict)
+  - Cross-references Daniel's witness statement (JF-DAN-WITNESS)
+### Witness Statements
+
+#### JF-WS1: Daniel's Witness Statement - "Has Anything Changed?" Exchange
+- **File:** `JF-WS1_DANIEL_WITNESS_STATEMENT_HAS_ANYTHING_CHANGED.md`
+- **Purpose:** Direct witness testimony documenting the fraudulent "Has anything changed?" - "No, just details for attorneys" exchange
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, Section on Fraud in the Inducement
+- **Status:** ⚠️ **Template** - Requires completion of personal details and Commissioner of Oaths attestation
 ### Settlement Agreement Documentation
 
 #### JF5-DRAFT: Settlement Agreement Draft Version
@@ -125,6 +147,12 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 4. **International Operations Legitimacy** (Section 3.3)
    - **JF-RP1:** Prove formal regulatory compliance across 37 jurisdictions
 
+5. **Settlement Agreement Manipulation** (Paragraph 48)
+   - **JF5-COMPARISON:** Documents fraud in the inducement through material undisclosed changes
+   - **Cross-references:** Daniel's witness statement establishing attorney misrepresentation
+   - **Strategic Pattern:** Connects settlement manipulation to broader litigation abuse (2 days to interdict filing)
+5. **Fraud in the Inducement** (Section 48)
+   - **JF-WS1:** Direct witness testimony of fraudulent misrepresentation during agreement signing
 5. **Strategic Timing and No Genuine Urgency** (Section 13B and Urgency Challenge)
    - **JF5-DRAFT, JF5-FINAL, JF5-COMPARISON:** Demonstrate settlement negotiations during alleged "urgent crisis"
    - **8-Day Gap:** Settlement signed → Interdict filed shows strategic coordination
@@ -137,6 +165,8 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
 3. **JF-BS1** → Shows 16 July 2025 transaction details
 4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+5. **JF5-COMPARISON** → Establishes settlement agreement fraud in the inducement
+5. **JF-WS1** → Direct evidence of fraud in the inducement undermining interdict foundation
 5. **JF5-DRAFT/FINAL/COMPARISON** → Demonstrates strategic timing and no genuine urgency
 
 **Cross-Reference Network:**
