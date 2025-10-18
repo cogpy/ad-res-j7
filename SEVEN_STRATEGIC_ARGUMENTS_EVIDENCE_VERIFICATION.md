@@ -417,9 +417,11 @@ This document provides comprehensive verification that **all seven strategic arg
 
 **Evidence Files:**
 - Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
+- **Comprehensive Verification:** `CHESNO_FRAUD_DOCUMENTATION_VERIFICATION_REPORT.md`
+- Legal Attention Transform mechanism implementation
 - `APPOINTMENT_LANGUAGE_CORRECTION_SUMMARY.md`
 - UK business restoration evidence (JF-RESTORE1 through JF-RESTORE4)
-- TODO file line 85 marks this as COMPLETED
+- TODO file line 85 marks this as COMPLETED with formal verification
 - Paragraph 129 correction documented
 
 **Key Evidence:**
@@ -447,6 +449,7 @@ This document provides comprehensive verification that **all seven strategic arg
 **Evidence Files:**
 - Business restoration evidence (JF-RESTORE1 through JF-RESTORE4)
 - Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
+- **Comprehensive Verification:** `CHESNO_FRAUD_DOCUMENTATION_VERIFICATION_REPORT.md`
 - `APPOINTMENT_LANGUAGE_CORRECTION_SUMMARY.md`
 - UK operations documentation
 - Paragraph 129 correction
