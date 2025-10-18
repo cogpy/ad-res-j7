@@ -339,7 +339,7 @@ Peter → Court: "Documentation inadequate"
 
 ### For Evidence Organization
 
-**Step 1:** Review evidence cross-reference table in README
+**Step 1:** Review evidence cross-reference table in README.md
 - Identify what evidence you have
 - Note evidence gaps
 
@@ -571,11 +571,11 @@ affidavit_work/analysis/
 - Review comprehensive analysis document first
 - Check quick reference for specific facts
 - Consult integration guide for usage questions
-- Review README for evidence organization
+- Review README.md for evidence organization
 
 **Technical Issues:**
 - Mermaid diagrams not rendering: Use mermaid.live for export
-- Missing evidence: See evidence gaps table in README
+- Missing evidence: See evidence gaps table in README.md
 - Integration questions: Follow step-by-step guide
 - Court preparation: Use quick reference emergency card
 

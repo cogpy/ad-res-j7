@@ -211,7 +211,7 @@ TOTAL REGULATORY RISK: R 50,000,000.00+
 1. **`FORENSIC_EVIDENCE_INDEX.md`** - Comprehensive evidence catalog (13,041 characters)
 2. **`EVIDENCE_CROSS_REFERENCE.md`** - Criminal correlation matrix (11,690 characters)  
 3. **`README.md` (main)** - Complete forensic analysis overview (11,302 characters)
-4. **5 Individual event README files** - Detailed analysis for each criminal event
+4. **5 Individual event README.md files** - Detailed analysis for each criminal event
 
 ### Supporting Evidence Files:
 - **Primary source documents** copied to appropriate folders
