@@ -32,15 +32,15 @@ Link tuples connect to existing evidence:
 const HypergraphQL = require('./docs/models/hypergnn/hypergraphql');
 const fs = require('fs');
 
-// Load evidence data
+/ Load evidence data
 const forensicIndex = JSON.parse(
   fs.readFileSync('jax-response/FORENSIC_EVIDENCE_INDEX.json', 'utf8')
 );
 
-// Create hypergraph
+/ Create hypergraph
 const hg = new HypergraphQL();
 
-// Add evidence entities from index
+/ Add evidence entities from index
 forensicIndex.sections.forEach(section => {
   if (section.heading.includes('CATEGORY')) {
     hg.addEntity(`evidence-${section.heading}`, 'Evidence', {
@@ -56,7 +56,7 @@ forensicIndex.sections.forEach(section => {
 Connect with timeline documents:
 
 ```javascript
-// Parse timeline data
+/ Parse timeline data
 const timelineData = parseTimelineDocument('jax-response/revenue-theft/14-apr-bank-letter/APR-SEP-2025.md');
 
 timelineData.events.forEach(event => {
@@ -66,7 +66,7 @@ timelineData.events.forEach(event => {
     description: event.description
   });
 
-  // Add temporal links
+  / Add temporal links
   if (event.previousEvent) {
     hg.addLinkTuple(event.previousEvent, 'precedes', event.id, {
       daysBetween: calculateDaysBetween(event.previousDate, event.date)
@@ -80,10 +80,10 @@ timelineData.events.forEach(event => {
 Integrate with network centrality analysis:
 
 ```javascript
-// Load network analysis data
+/ Load network analysis data
 const networkData = loadNetworkAnalysis('jax-response/revenue-theft/29-may-domain-registration/');
 
-// Add to hypergraph with centrality scores
+/ Add to hypergraph with centrality scores
 Object.entries(networkData.nodes).forEach(([id, node]) => {
   hg.addEntity(id, 'Person', {
     name: node.name,
@@ -92,7 +92,7 @@ Object.entries(networkData.nodes).forEach(([id, node]) => {
   });
 });
 
-// Add network connections
+/ Add network connections
 networkData.edges.forEach(edge => {
   hg.addLinkTuple(edge.from, edge.relation, edge.to, {
     weight: edge.weight,
@@ -106,7 +106,7 @@ networkData.edges.forEach(edge => {
 Link financial evidence to events:
 
 ```javascript
-// Load financial data
+/ Load financial data
 const financialData = loadFinancialEvidence('evidence/shopify_reports/');
 
 financialData.transactions.forEach(tx => {
@@ -116,7 +116,7 @@ financialData.transactions.forEach(tx => {
     description: tx.description
   });
 
-  // Link to relevant events
+  / Link to relevant events
   if (tx.relatedEvent) {
     hg.addLinkTuple(tx.relatedEvent, 'resulted-in', tx.id, {
       financialImpact: tx.amount,
@@ -133,7 +133,7 @@ financialData.transactions.forEach(tx => {
 Use HypergraphQL to answer specific legal questions:
 
 ```javascript
-// Question: "What events is Peter Faucitt allegedly involved in?"
+/ Question: "What events is Peter Faucitt allegedly involved in?"
 function findPeterInvolvement(hg) {
   const peterLinks = hg.queryLinksBySource('peter-faucitt');
   const events = peterLinks
@@ -148,7 +148,7 @@ function findPeterInvolvement(hg) {
   }));
 }
 
-// Question: "What evidence supports Event X?"
+/ Question: "What evidence supports Event X?"
 function findEventEvidence(hg, eventId) {
   const links = hg.queryLinksBySource(eventId);
   const evidenceLinks = links.filter(l => 
@@ -166,7 +166,7 @@ function findEventEvidence(hg, eventId) {
   });
 }
 
-// Question: "How are these two people connected?"
+/ Question: "How are these two people connected?"
 function explainConnection(hg, person1Id, person2Id) {
   const path = hg.findPath(person1Id, person2Id);
   if (!path) return 'No connection found';
@@ -196,7 +196,7 @@ function generateConnectionReport(hg, personId) {
     timeline: []
   };
   
-  // Group by entity type
+  / Group by entity type
   connections.forEach(({ entity, link }) => {
     const type = entity.type;
     if (!report.byType[type]) {
@@ -209,7 +209,7 @@ function generateConnectionReport(hg, personId) {
     });
   });
   
-  // Create timeline
+  / Create timeline
   const events = connections
     .filter(c => c.entity.type === 'Event')
     .sort((a, b) => new Date(a.entity.date) - new Date(b.entity.date));
@@ -223,7 +223,7 @@ function generateConnectionReport(hg, personId) {
   return report;
 }
 
-// Generate and save report
+/ Generate and save report
 const report = generateConnectionReport(hg, 'peter-faucitt');
 fs.writeFileSync(
   'reports/peter-faucitt-connections.json',
@@ -244,31 +244,31 @@ const { buildCase2025137857Hypergraph } = require('./docs/models/hypergnn/case-h
 const app = express();
 const hg = buildCase2025137857Hypergraph();
 
-// Get all entities by type
+/ Get all entities by type
 app.get('/api/entities/:type', (req, res) => {
   const entities = hg.queryEntitiesByType(req.params.type);
   res.json(entities);
 });
 
-// Get entity connections
+/ Get entity connections
 app.get('/api/entities/:id/connections', (req, res) => {
   const connections = hg.findConnected(req.params.id);
   res.json(connections);
 });
 
-// Find path between entities
+/ Find path between entities
 app.get('/api/path/:from/:to', (req, res) => {
   const path = hg.findPath(req.params.from, req.params.to);
   res.json(path || { message: 'No path found' });
 });
 
-// Query with filters
+/ Query with filters
 app.post('/api/query', (req, res) => {
   const results = hg.query(req.body);
   res.json(results);
 });
 
-// Get statistics
+/ Get statistics
 app.get('/api/stats', (req, res) => {
   res.json(hg.getStats());
 });
@@ -366,7 +366,7 @@ function generateMermaidDiagram(hg, entityId, depth = 2) {
   return lines.join('\n');
 }
 
-// Generate diagram
+/ Generate diagram
 const diagram = generateMermaidDiagram(hg, 'peter-faucitt', 2);
 console.log(diagram);
 ```
@@ -394,7 +394,7 @@ function exportForD3(hg) {
   return { nodes, links };
 }
 
-// Export for visualization
+/ Export for visualization
 const graphData = exportForD3(hg);
 fs.writeFileSync('visualization/graph-data.json', JSON.stringify(graphData, null, 2));
 ```
@@ -406,16 +406,16 @@ fs.writeFileSync('visualization/graph-data.json', JSON.stringify(graphData, null
 ```javascript
 const chokidar = require('chokidar');
 
-// Watch evidence directory for changes
+/ Watch evidence directory for changes
 const watcher = chokidar.watch('evidence/**/*.md', {
   persistent: true
 });
 
 watcher.on('change', (path) => {
   console.log(`Evidence updated: ${path}`);
-  // Rebuild hypergraph with new evidence
+  / Rebuild hypergraph with new evidence
   const hg = rebuildHypergraph();
-  // Save updated version
+  / Save updated version
   fs.writeFileSync(
     'docs/models/hypergnn/case-2025-137857-hypergraph.json',
     JSON.stringify(hg.toJSON(), null, 2)
@@ -478,7 +478,7 @@ class OptimizedHypergraphQL extends HypergraphQL {
   
   addEntity(id, type, properties) {
     super.addEntity(id, type, properties);
-    // Update indexes
+    / Update indexes
     if (!this.indexes.byType.has(type)) {
       this.indexes.byType.set(type, []);
     }
@@ -524,7 +524,7 @@ class OptimizedHypergraphQL extends HypergraphQL {
 ## Support
 
 For questions or issues:
-1. Check the [README](./README.md) for basic usage
+1. Check the [README.md](./README.md) for basic usage
 2. Review [EXAMPLES](./EXAMPLES.md) for code samples
 3. Run tests: `npm run test:hypergraph`
 4. Check test output for debugging information

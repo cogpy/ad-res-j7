@@ -9,42 +9,109 @@
 
 ```mermaid
 gantt
-    title Peter's Strategic Litigation Timeline - April to September 2025
+    title Complete Criminal Enterprise Timeline - 2017 to 2025
     dateFormat  YYYY-MM-DD
     
-    section Infrastructure Control
-    Cloud IT removal ordered          :2025-04-22, 1d
-    Server missing from office        :2025-04-30, 1d
+    section Foundation Phase (2017-2020)
+    Shopify started by Dan & Kayla    :milestone, 2017-01-01, 0d
+    Worldwide starts Shopify COVID   :milestone, 2020-04-01, 0d
     
-    section Information Manipulation
-    Revenue hijacking (Shopify/Sage)  :2025-05-22, 1d
-    Domain creation (Rynette's son)   :2025-05-29, 1d
-    Rynette email control confirmed   :2025-06-20, 1d
+    section Automation Phase (2022)
+    Kachan distribution ends          :2022-02-28, 1d
+    Krenance distribution ends        :2022-11-30, 1d
     
-    section Crisis Manufacturing
-    Worldwide cards cancelled         :2025-06-07, 1d
-    Shopify orders stopped            :2025-06-08, 1d
+    section Infiltration & Violence (2023)
+    Krenance Staff at RegimA HO       :2023-01-10, 1d
+    R1M+ overdue invoices RST         :crit, 2023-02-28, 1d
+    Peak office thefts (Moffat)       :crit, 2023-04-30, 1d
+    Liezel bodily autonomy violation   :crit, 2023-05-05, 1d
+    Peter plants drugs in desk        :crit, 2023-05-10, 1d
+    Liezel sabotage complaint         :crit, 2023-05-15, 1d
+    Nikita recruitment then resign    :2023-06-30, 1d
+    Kayla Pretorius murdered          :crit, 2023-07-13, 1d
+    All cards expire Worldwide temp   :2023-07-30, 1d
+    RegimA EU distribution ends       :2023-09-30, 1d
+    
+    section Authority Positioning (2024)
+    WindUp ReZ pressure campaign      :crit, 2024-02-14, 1d
+    Bantjies appointed FFT Trustee    :crit, 2024-07-01, 1d
+    Bantjies Authority register       :crit, 2024-10-28, 1d
+    
+    section Cover-up & Legal War (2025)
+    Revenue hijacking (Shopify/Sage)  :crit, 2025-05-22, 1d
+    Worldwide cards cancelled         :crit, 2025-06-07, 1d
     Reports provided to Bantjies      :crit, 2025-06-15, 1d
     Cards cancelled next day          :crit, 2025-06-16, 1d
-    IT expense questions raised       :2025-06-20, 20d
-    
-    section Financial Events
-    R500K payment to Dan              :2025-07-16, 1d
     Settlement agreement signed       :crit, 2025-08-06, 1d
-    Investment payout due             :milestone, 2025-05-15, 0d
-    
-    section Legal Actions
     Peter files founding affidavit    :crit, 2025-08-14, 1d
     Ex parte interdict granted        :crit, 2025-08-19, 1d
-    Second Sage screenshot            :2025-08-25, 1d
-    
-    section Perjury Timeline
-    Bantjies learns of crimes         :crit, 2025-06-10, 1d
-    Bantjies confirmatory affidavit   :crit, 2025-08-14, 1d
-    ENS acknowledges crimes           :crit, 2025-08-29, 1d
 ```
 
 ---
+
+## Criminal Enterprise Evolution (2017-2025)
+
+```mermaid
+graph TB
+    subgraph "Phase 1: Legitimate Foundation (2017-2020)"
+        F1[2017: Shopify by Dan & Kayla]
+        F2[2020: COVID Worldwide expansion]
+        F1 --> F2
+        style F1 fill:#90EE90
+        style F2 fill:#90EE90
+    end
+    
+    subgraph "Phase 2: Automation & Control (2022)"
+        A1[Feb 28: Kachan distribution ends]
+        A2[Nov 30: Krenance distribution ends]
+        A1 --> A2
+        style A1 fill:#FFD700
+        style A2 fill:#FFD700
+    end
+    
+    subgraph "Phase 3: Infiltration & Violence (2023)"
+        V1[Jan 10: Staff infiltration]
+        V2[Feb 28: R1M+ debt accumulation]
+        V3[Apr 30: Office theft peak]
+        V4[May 5-15: Witness intimidation]
+        V5[Jul 13: Kayla murdered]
+        V6[Jul 30: Card control]
+        V1 --> V2 --> V3 --> V4 --> V5 --> V6
+        style V1 fill:#FFA500
+        style V2 fill:#FF6347
+        style V3 fill:#FF6347
+        style V4 fill:#FF0000
+        style V5 fill:#8B0000
+        style V6 fill:#FF6347
+    end
+    
+    subgraph "Phase 4: Authority Positioning (2024)"
+        P1[Feb 14: ReZ windUp pressure]
+        P2[Jul: Bantjies Trustee]
+        P3[Oct 28: Authority register]
+        P1 --> P2 --> P3
+        style P1 fill:#FF6347
+        style P2 fill:#FF0000
+        style P3 fill:#FF0000
+    end
+    
+    subgraph "Phase 5: Cover-up & Legal War (2025)"
+        C1[May 22: Evidence destruction]
+        C2[Jun 7: Card cancellation]
+        C3[Aug 6: Settlement]
+        C4[Aug 14: Interdict]
+        C1 --> C2 --> C3 --> C4
+        style C1 fill:#8B0000
+        style C2 fill:#FF0000
+        style C3 fill:#FF6347
+        style C4 fill:#FF0000
+    end
+    
+    F2 --> A1
+    A2 --> V1
+    V6 --> P1
+    P3 --> C1
+```
 
 ## Strategic Coordination Flow
 

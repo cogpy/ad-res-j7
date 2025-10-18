@@ -227,7 +227,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 1. Update `COMPREHENSIVE_TIMELINE_ANALYSIS.md` first (master document)
 2. Update `TIMELINE_VISUAL_DIAGRAM.md` second (add to Mermaid diagrams)
 3. Update `TIMELINE_QUICK_REFERENCE.md` third (quick facts and dates)
-4. Update this README with changes log
+4. Update this README.md with changes log
 
 ### Changes Log
 
@@ -235,7 +235,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 - ✅ Created comprehensive timeline analysis
 - ✅ Created visual timeline diagrams
 - ✅ Created quick reference guide
-- ✅ Created README for analysis directory
+- ✅ Created README.md for analysis directory
 
 ---
 
@@ -329,7 +329,7 @@ For questions about timeline analysis or these documents:
 **Comprehensive Timeline Analysis:** ✅ Complete  
 **Visual Timeline Diagrams:** ✅ Complete  
 **Quick Reference Guide:** ✅ Complete  
-**README Documentation:** ✅ Complete  
+**README.md Documentation:** ✅ Complete  
 
 **Integration Status:**
 - [ ] Timeline referenced in draft affidavit

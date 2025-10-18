@@ -92,7 +92,9 @@ This evidence package now contains the complete forensic analysis of email imper
 ## Criminal Elements of Email Impersonation
 
 ### 1. Identity Theft (Criminal)
-**Legal Framework:** Common law fraud, identity-related offences
+**Legal Framework:** 
+- **Common Law Fraud**: Identity misrepresentation elements
+- **Electronic Communications and Transactions Act (ECTA) 25 of 2002 - Section 87**: Identity-related computer crimes
 
 **Evidence of Identity Theft:**
 - Unauthorized use of Peter Faucitt's digital identity
@@ -105,8 +107,15 @@ This evidence package now contains the complete forensic analysis of email imper
 - **Peter Faucitt:** Potential knowledge and facilitation
 - **Conspiracy participants:** Knowing reliance on impersonated communications
 
+**Penalties:** Up to 15 years imprisonment (fraud) + ECTA penalties
+
 ### 2. Email Hijacking (Computer Fraud)
-**Legal Framework:** Electronic Communications and Transactions Act (ECTA)
+**Legal Framework:** Electronic Communications and Transactions Act (ECTA) 25 of 2002
+
+**Statutory Violations:**
+- **Section 86(1)**: Unauthorized access to, interception of, or interference with data
+- **Section 86(2)**: Unauthorized modification or impairment of data
+- **Section 87**: Unauthorized access to computer program or system
 
 **Technical Elements:**
 - Unauthorized access to email account
@@ -115,7 +124,7 @@ This evidence package now contains the complete forensic analysis of email imper
 - Manipulation of electronic records
 
 **Criminal Penalties:**
-- Up to 12 months imprisonment or fine
+- Up to 12 months imprisonment or fine (ECTA)
 - Each unauthorized access = separate offense
 - Aggravated by financial fraud context
 
@@ -135,13 +144,17 @@ This evidence package now contains the complete forensic analysis of email imper
 - R3.1M+ in documented losses facilitated by email control
 
 ### 4. Information Manipulation (Conspiracy)
-**Legal Framework:** Criminal conspiracy, obstruction of justice
+**Legal Framework:** 
+- **Common Law Criminal Conspiracy**: Agreement between parties, unlawful objective, intention
+- **Prevention of Organised Crime Act (POCA) 121 of 1998 - Section 18**: Obstruction of justice
 
 **Systematic Information Control:**
 - Control over business communications flow
 - Selective information disclosure to family members
 - Suppression of evidence through email control
 - Coordination of false narrative through controlled communications
+
+**Penalties:** Same as substantive offense (conspiracy) + up to 30 years imprisonment (obstruction)
 
 ---
 
