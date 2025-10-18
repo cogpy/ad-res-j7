@@ -161,15 +161,36 @@ class TestRunner {
   async runMalformedMarkdownTests() {
     console.log('\n📋 Running Malformed Markdown Tests...\n');
     
-    const malformedTest = new MalformedMarkdownTest();
-    const success = await malformedTest.run();
+    const noActionableTasksTest = new NoActionableTasksValidator();
+    const success = noActionableTasksTest.runAllTests();
     
-    this.results.malformedMarkdown = {
+    this.results.noActionableTasks = {
       success: success,
-      total: malformedTest.testResults.length,
-      passed: malformedTest.testResults.filter(t => t.passed).length,
-      failed: malformedTest.testResults.filter(t => !t.passed).length,
-      errors: malformedTest.errors
+      total: noActionableTasksTest.testResults.length,
+      passed: noActionableTasksTest.testResults.filter(t => t.passed).length,
+      failed: noActionableTasksTest.testResults.filter(t => !t.passed).length,
+      errors: noActionableTasksTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
+    };
+    
+    return success;
+  }
+
+  async runTodoValidationTests() {
+    console.log('\n📋 Running Comprehensive Todo Validation Tests...\n');
+    
+    const todoValidationTest = new ComprehensiveTodoValidationTest();
+    const success = todoValidationTest.runAllTests();
+    
+    this.results.todoValidation = {
+      success: success,
+      total: todoValidationTest.testResults.length,
+      passed: todoValidationTest.testResults.filter(t => t.passed).length,
+      failed: todoValidationTest.testResults.filter(t => !t.passed).length,
+      errors: todoValidationTest.errors,
+      todo_files_tested: todoValidationTest.todoFiles.length,
+      workflow_results: todoValidationTest.workflowResults,
+      cross_reference_results: todoValidationTest.crossReferenceResults
     };
     
     return success;
@@ -243,10 +264,17 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
-    console.log('\n🔧 Malformed Markdown Tests:');
-    console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
-    console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    console.log('\n🚫 No Actionable Tasks Tests:');
+    console.log(`   ✅ Passed: ${this.results.noActionableTasks.passed}/${this.results.noActionableTasks.total}`);
+    console.log(`   ❌ Failed: ${this.results.noActionableTasks.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.noActionableTasks.passed / this.results.noActionableTasks.total) * 100)}%`);
+    console.log(`   🔍 Scenarios Tested: ${this.results.noActionableTasks.scenarios_tested}`);
+    
+    console.log('\n📋 Todo Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.todoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
+    console.log(`   📋 Todo Files Tested: ${this.results.todoValidation.todo_files_tested}`);
     
     console.log('\n📋 Todo File Validation Tests:');
     console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
@@ -318,9 +346,17 @@ class TestRunner {
         });
       }
       
-      if (this.results.malformedMarkdown.errors.length > 0) {
-        console.log('   Malformed Markdown Test Failures:');
-        this.results.malformedMarkdown.errors.forEach(error => {
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.todoValidation.errors.length > 0) {
+        console.log('   Todo Validation Test Failures:');
+        this.results.todoValidation.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });

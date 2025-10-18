@@ -178,7 +178,7 @@ The **cogpy/ad-res-j7** repository demonstrates excellent systematic organizatio
 **Actions**:
 - Create jax-dan-response/AD/1-Critical/ directory
 - Develop 5 critical Priority 1 files
-- Create directory README
+- Create directory README.md
 - Begin evidence collection (JF-DAN-IT, JF-DAN-SYSTEM series)
 
 **Deliverables**: 6 new files, evidence collection initiated
@@ -192,7 +192,7 @@ The **cogpy/ad-res-j7** repository demonstrates excellent systematic organizatio
 
 **Actions**:
 - Expand jax-dan-response/AD/2-High-Priority/ with 4 files
-- Update directory README
+- Update directory README.md
 - Continue evidence collection (JF-DAN-DOC series)
 - Begin cross-referencing enhancement planning
 
@@ -366,7 +366,7 @@ The **cogpy/ad-res-j7** repository demonstrates excellent systematic organizatio
 - **Risk register** - Track identified risks and mitigation effectiveness
 
 ### Evaluation Checkpoints
-- **End of Week 1**: Review Phase 1 deliverables (5 critical files + README)
+- **End of Week 1**: Review Phase 1 deliverables (5 critical files + README.md)
 - **End of Week 2**: Review Phase 2 deliverables (4 high-priority files + evidence progress)
 - **End of Week 3**: Review Phase 3 deliverables (evidence mapping + cross-referencing)
 - **End of Week 4**: Review Phase 4 deliverables (medium-priority files + evidence series)

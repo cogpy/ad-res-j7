@@ -14,7 +14,7 @@ From `todo/workflow-test.md`:
    - ✅ Confirmed proper `jq -r '.[]'` usage and `eval` execution
    
 2. **Add documentation for label format requirements**
-   - ✅ Documented in test framework and README
+   - ✅ Documented in test framework and README.md
 
 ### Should-Do (High Priority) - ✅ IMPLEMENTED  
 1. **Test the workflow with sample tasks**
@@ -105,7 +105,7 @@ npm run validate-workflows
 
 ### Continuous Integration
 - Tests run automatically on workflow changes
-- GitHub Actions integration via `test-workflows.yml`
+- GitHub Actions integration via `.github/workflows/test-workflows.yml`
 - Test artifacts uploaded for review
 - 90%+ pass rate required for success
 
@@ -113,7 +113,7 @@ npm run validate-workflows
 
 1. **Validation Confidence**: 93% test coverage ensures workflow reliability
 2. **Change Detection**: Tests catch breaking changes before deployment  
-3. **Documentation**: Comprehensive README and inline documentation
+3. **Documentation**: Comprehensive README.md and inline documentation
 4. **CI Integration**: Automated testing in GitHub Actions pipeline
 5. **Debugging Support**: Detailed JSON reports for troubleshooting
 6. **Quality Assurance**: Mock data testing validates real-world scenarios

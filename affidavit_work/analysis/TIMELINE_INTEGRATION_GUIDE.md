@@ -35,13 +35,13 @@ After introducing the parties and nature of the application, add:
 > 
 > 1. A **2-month delay** between alleged discovery of issues (June 2025) and filing of this interdict (August 2025), contradicting claims of urgent need for Court intervention;
 > 
-> 2. **Strategic timing** with the settlement agreement signed just 8 days before the interdict was filed, demonstrating use of litigation as negotiating leverage;
+> 2. **Strategic timing** with the settlement agreement signed just 2 days before the interdict was filed, demonstrating use of litigation as negotiating leverage;
 > 
 > 3. A **self-created crisis** where the Applicant's own unilateral actions (cancelling all business cards immediately after receiving comprehensive reports) created the documentation problems he later complained about;
 > 
 > 4. **Information manipulation** through Rynette Farrar's proven control of Pete@regima.com, making the Applicant's sworn statements about direct email receipt perjurious;
 > 
-> 5. **Coordinated perjury** with Daniel Bantjies providing a confirmatory affidavit despite knowing of criminal matters for 65 days beforehand; and
+> 5. **Coordinated perjury** with Daniel Bantjies providing a confirmatory affidavit despite knowing of criminal matters for 64 days beforehand; and
 > 
 > 6. **Financial positioning** with the interdict timed to give control 9 months before a significant investment payout.
 > 
@@ -210,7 +210,7 @@ Peter → Court: "Documentation inadequate"
 > 
 > **Timeline Insight:**
 > 
-> The R500K payment occurred **29 days before the interdict was filed**. The Applicant had this information for nearly a month but took no action until strategically incorporating it into the interdict application filed 8 days after the settlement agreement was signed.
+> The R500K payment occurred **31 days before the interdict was filed**. The Applicant had this information for nearly a month but took no action until strategically incorporating it into the interdict application filed 2 days after the settlement agreement was signed.
 > 
 > This timeline demonstrates:
 > - The payment was not cause for immediate concern (29-day gap)
@@ -232,13 +232,13 @@ Peter → Court: "Documentation inadequate"
 > 
 > | Date | Event | Days Between |
 > |------|-------|-------------|
-> | ~August 6, 2025 | Settlement agreement signed | - |
-> | August 14, 2025 | Interdict application filed | **8 days** |
-> | August 19, 2025 | Ex parte interdict granted | 5 days |
+> | 11 August 2025 | Settlement agreement signed | - |
+> | 13 August 2025 | Interdict application filed | **2 days** |
+> | 19 August 2025 | Ex parte interdict granted | 6 days |
 > 
 > ### This Timing is Not Coincidental
 > 
-> **Question for the Court:** Why would the Applicant sign a settlement agreement and then, just 8 days later, file an urgent interdict application?
+> **Question for the Court:** Why would the Applicant sign a settlement agreement and then, just 2 days later, file an urgent interdict application?
 > 
 > **Answer:** The interdict serves as a negotiating tool in settlement discussions, not genuine business protection.
 > 
@@ -270,7 +270,7 @@ Peter → Court: "Documentation inadequate"
 > 
 > The Applicant's founding affidavit fails to disclose:
 > - The existence of the settlement agreement
-> - The signing date (8 days before interdict)
+> - The signing date (2 days before interdict)
 > - The ongoing settlement negotiations
 > - The strategic use of interdict as leverage
 > 
@@ -372,14 +372,14 @@ Include timeline chart showing:
 > |------|-------|-------------------|
 > | June 10, 2025 | Bantjies learns of criminal matters | Knowledge acquired (murder, fraud, theft) |
 > | Mid-June 2025 | Provides accountancy services | Continues advising despite knowledge |
-> | August 14, 2025 | Provides confirmatory affidavit | **Perjury:** False oath despite knowledge |
+> | 13 August 2025 | Provides confirmatory affidavit | **Perjury:** False oath despite knowledge |
 > | August 29, 2025 | ENS Africa: "Received, thanks Daniel" | Acknowledgment of criminal matters disclosure |
 > 
-> ### Sixty-Five Days of Knowing Concealment
+> ### Sixty-Four Days of Knowing Concealment
 > 
-> **The Gap:** From June 10 (knowledge acquired) to August 14 (false affidavit) = **65 days**
+> **The Gap:** From June 10 (knowledge acquired) to August 13 (false affidavit) = **64 days**
 > 
-> **During These 65 Days:**
+> **During These 64 Days:**
 > - Bantjies knew of criminal matters (murder, fraud, theft)
 > - Bantjies continued acting as accountant and advisor
 > - Bantjies knew information material to any court proceeding
@@ -397,7 +397,7 @@ Include timeline chart showing:
 > 
 > **The Timeline Proves Each Element:**
 > 
-> 1. **Sworn Statement:** Confirmatory affidavit dated August 14, 2025
+> 1. **Sworn Statement:** Confirmatory affidavit dated 13 August 2025
 > 2. **Judicial Proceeding:** Interdict application in High Court
 > 3. **Material to Issue:** Criminal matters highly relevant to interdict justification
 > 4. **Known to be False:** 65 days of knowledge before signing
@@ -433,11 +433,11 @@ Include timeline chart showing:
 > ```
 > June 10, 2025: Bantjies learns of crimes
 >       ↓
->    [65 days of knowledge]
+>    [64 days of knowledge]
 >       ↓
-> August 14, 2025: False confirmatory affidavit
+> August 13, 2025: False confirmatory affidavit
 >       ↓
->    [15 days]
+>    [16 days]
 >       ↓
 > August 29, 2025: ENS acknowledges receipt
 >       ↓
@@ -488,10 +488,10 @@ Create a comprehensive section titled: **"TIMELINE ANALYSIS: PATTERN OF BAD FAIT
 > The timeline establishes six critical findings:
 > 
 > 1. **Two-Month Delay:** Contradicts claims of urgent need
-> 2. **Eight-Day Gap:** Strategic timing with settlement
+> 2. **Two-Day Gap:** Strategic timing with settlement
 > 3. **Self-Created Crisis:** Manufacturing of pretext
 > 4. **Information Manipulation:** Systematic filtering through intermediaries
-> 5. **Coordinated Perjury:** 65-day Bantjies concealment
+> 5. **Coordinated Perjury:** 64-day Bantjies concealment
 > 6. **Financial Motive:** 9-month positioning for investment payout
 > 
 > Each finding is supported by documentary evidence and demonstrates the Applicant's bad faith.
@@ -570,7 +570,7 @@ Create a comprehensive section titled: **"TIMELINE ANALYSIS: PATTERN OF BAD FAIT
 ### Court Preparation Phase
 - [ ] Print emergency reference card
 - [ ] Prepare visual aids for presentation
-- [ ] Memorize key timeline facts (2 months, 8 days, 65 days, 9 months)
+- [ ] Memorize key timeline facts (2 months, 2 days, 64 days, 9 months)
 - [ ] Practice explaining timeline to Court
 - [ ] Prepare responses to anticipated counter-arguments
 
@@ -582,9 +582,9 @@ Create a comprehensive section titled: **"TIMELINE ANALYSIS: PATTERN OF BAD FAIT
 
 Use these exact phrases throughout:
 - "The very next day" (for card cancellation)
-- "Just 8 days" (for settlement gap)
+- "Just 2 days" (for settlement gap)
 - "Over 2 months" (for delay)
-- "65 days of knowledge" (for Bantjies)
+- "64 days of knowledge" (for Bantjies)
 - "9 months" (for investment payout)
 
 ### 2. Visual References

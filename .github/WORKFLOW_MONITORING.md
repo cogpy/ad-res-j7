@@ -21,6 +21,26 @@ This repository includes comprehensive monitoring and alerting for all GitHub Ac
 - **Monitoring**: Test failure rates and pattern detection
 - **Alerts**: `automated-test-failure`, `workflow-reliability-alert` labels
 
+### 🚨 Duplicate Issues Cleanup (`duplicate-issues-cleanup.yml`)
+- **Purpose**: Automatically groups and merges duplicate GitHub issues
+- **Monitoring**: Cleanup process failures and efficiency tracking
+- **Alerts**: `workflow-failure`, `duplicate-cleanup` labels
+
+### 📋 File Representation Validator (`blank.yml`)
+- **Purpose**: Ensures every file has both markdown and JSON representations
+- **Monitoring**: File conversion failures and validation errors
+- **Alerts**: `workflow-failure`, `file-representations` labels
+
+### 🔄 Hypergraph Update (`hypergraph-update.yml`)
+- **Purpose**: Updates hypergraph data when evidence files change
+- **Monitoring**: Data synchronization failures and build errors
+- **Alerts**: `workflow-failure`, `hypergraph-update` labels
+
+### 📝 Issue Creation (`create-issues-from-repository-items.yml`)
+- **Purpose**: Batch creation of issues from repository items
+- **Monitoring**: Issue creation failures and API errors
+- **Alerts**: `workflow-failure`, `issue-creation` labels
+
 ### 📊 Workflow Monitoring (`workflow-monitoring.yml`)
 - **Purpose**: Centralized monitoring and alerting system
 - **Monitoring**: Cross-workflow health analysis

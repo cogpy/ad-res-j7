@@ -1,7 +1,7 @@
-# 20 June 2025 - Gee/Gayane Email to Jax About Pete's Instructions
+# 2025-06-20 - Gee/Gayane Email to Jax About Pete's Instructions
 
 ## Event Summary
-**Date:** June 20, 2025 (referenced date)  
+**Date:** 2025-06-20 (referenced date)  
 **Source:** Gee/Gayane Williams  
 **Recipient:** Jax (Jacqueline Faucitt)  
 **Content:** Informing Jax that Pete told her to email all clients  
@@ -33,7 +33,7 @@ Based on evidence analysis:
 
 ### Communication Pattern
 Evidence shows Gayane Williams was actively involved in email communications:
-- **July 11, 2025 Timeline:**
+- **2025-07-11 Timeline:**
   - 12:43 - Daniel Faucitt sends compliance guide
   - 13:00 - Gayane Williams requests clarification
   - 13:09 - Daniel Faucitt requests formatting and printing
@@ -107,10 +107,10 @@ This communication fits into the broader pattern of:
 **MEDIUM-HIGH** - Crucial witness testimony and instruction chain evidence
 
 ## Related Events
-- **April 14, 2025:** Rynette's bank letter (instruction precedent)
-- **May 22, 2025:** Shopify audit destruction (coordinated timing)
-- **July 8, 2025:** Warehouse POPI directive (continued coordination)
-- **July 11, 2025:** Documented Gayane communications (pattern confirmation)
+- **2025-04-14:** Rynette's bank letter (instruction precedent)
+- **2025-05-22:** Shopify audit destruction (coordinated timing)
+- **2025-07-08:** Warehouse POPI directive (continued coordination)
+- **2025-07-11:** Documented Gayane communications (pattern confirmation)
 
 ## Legal Exposure Assessment
 ### For Pete (Peter Faucitt)
@@ -153,7 +153,7 @@ Gee 8@rZ0.i0 permissio
 
 ## Status: EVIDENCE LOCATION REQUIRED
 **Next Steps:**
-1. Search Jax's email records for Gayane communications around June 20, 2025
+1. Search Jax's email records for Gayane communications around 2025-06-20
 2. Interview Gayane Williams regarding Pete's instructions
 3. Locate administrative records from relevant time period
 4. Cross-reference with client communication evidence

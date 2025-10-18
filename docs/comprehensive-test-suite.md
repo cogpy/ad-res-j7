@@ -169,7 +169,7 @@ As of the latest run:
 
 ## Continuous Integration
 
-The test suite is integrated with GitHub Actions via the `test-workflows.yml` pipeline:
+The test suite is integrated with GitHub Actions via the `.github/workflows/test-workflows.yml` pipeline:
 
 - **Automatic Execution**: Tests run on every push and pull request
 - **Scheduled Testing**: Daily validation runs for continuous monitoring
