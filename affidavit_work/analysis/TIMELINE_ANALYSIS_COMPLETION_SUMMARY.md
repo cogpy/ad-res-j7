@@ -104,16 +104,16 @@ Peter → Court: "Documentation inadequate"
 
 **Key Memorization Facts:**
 - 2 months delay (June → August)
-- 8 days gap (Settlement → Interdict)
+- 2 days gap (Settlement → Interdict)
 - Next day crisis (Reports → Cards cancelled)
-- 65 days perjury (Crimes known → False affidavit)
+- 64 days perjury (Crimes known → False affidavit)
 - 9 months target (Interdict → Investment payout)
 
 **Soundbites for Affidavit:**
 1. "The very next day"
-2. "Just 8 days"
+2. "Just 2 days"
 3. "Over 2 months"
-4. "65 days later"
+4. "64 days later"
 5. "Approximately 9 months"
 6. "Manufacturing a pretext"
 7. "Strategic litigation for control"
@@ -211,16 +211,16 @@ Peter → Court: "Documentation inadequate"
 
 ---
 
-### 2. Eight-Day Gap (Settlement → Interdict)
+### 2. Two-Day Gap (Settlement → Interdict)
 
-**Finding:** Settlement agreement signed ~August 6, interdict filed August 14
+**Finding:** Settlement agreement signed August 11, interdict filed August 13
 
 **Significance:** Strategic litigation for settlement leverage
 
 **Evidence:**
-- Settlement agreement date: TBD (approximately August 6)
-- Interdict filing: August 14, 2025
-- Gap: 8 days
+- Settlement agreement date: 11 August 2025
+- Interdict filing: 13 August 2025
+- Gap: 2 days
 
 **Argument:** "Interdict is negotiating tool, not business protection"
 
@@ -257,17 +257,17 @@ Peter → Court: "Documentation inadequate"
 
 ---
 
-### 5. Sixty-Five Day Perjury (Bantjies Timeline)
+### 5. Sixty-Four Day Perjury (Bantjies Timeline)
 
-**Finding:** Bantjies knew of crimes June 10, provided false affidavit August 14
+**Finding:** Bantjies knew of crimes June 10, provided false affidavit August 13
 
 **Significance:** Confirmatory affidavit constitutes perjury
 
 **Evidence:**
 - Knowledge acquired: June 10, 2025
-- False affidavit: August 14, 2025
+- False affidavit: 13 August 2025
 - ENS acknowledgment: August 29, 2025 ("Received, thanks Daniel")
-- Gap: 65 days
+- Gap: 64 days
 
 **Argument:** "Knowledge + false affidavit = perjury under oath"
 
@@ -281,7 +281,7 @@ Peter → Court: "Documentation inadequate"
 
 **Evidence:**
 - Interdict granted: August 19, 2025
-- Investment payout: ~May 2026 (TBD - needs confirmation)
+- Investment payout: ~May 2026 (estimated - needs confirmation from trust documentation)
 - Gap: 9 months
 
 **Argument:** "Control seized for financial positioning, not business protection"
@@ -317,7 +317,7 @@ Peter → Court: "Documentation inadequate"
 ### For Court Preparation
 
 **Step 1:** Memorize key facts from Quick Reference
-- 2 months, 8 days, 65 days, 9 months
+- 2 months, 2 days, 64 days, 9 months
 - 11 key dates
 - 5 key arguments
 
