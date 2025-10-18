@@ -233,14 +233,14 @@ node optimal-strategy-implementation.js
 const OptimalStrategyImplementation = require('./optimal-strategy-implementation.js');
 const strategy = new OptimalStrategyImplementation();
 
-// Get integrated status
+/ Get integrated status
 const integration = strategy.integrateWithEvidenceCollector();
 
-// Shows:
-// - Evidence completion rate
-// - Strategy completion rate
-// - Coordinated recommendations
-// - Synchronized workflow
+/ Shows:
+/ - Evidence completion rate
+/ - Strategy completion rate
+/ - Coordinated recommendations
+/ - Synchronized workflow
 ```
 
 ### Exported Files
@@ -361,9 +361,9 @@ This means:
 The strategy system integrates with `optimal-evidence-collector.js`:
 
 ```javascript
-// Strategy system tracks WHAT arguments to make
-// Evidence system tracks WHAT evidence is needed
-// Integration ensures coordination
+/ Strategy system tracks WHAT arguments to make
+/ Evidence system tracks WHAT evidence is needed
+/ Integration ensures coordination
 
 Evidence Needed → Strategy Implementation → Evidence Collection
      ↓                      ↓                        ↓

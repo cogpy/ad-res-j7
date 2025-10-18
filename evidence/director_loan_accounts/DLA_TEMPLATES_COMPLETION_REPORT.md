@@ -117,7 +117,7 @@ Successfully documented and organized comprehensive director loan account statem
 
 ## Supporting Documentation Already in Place
 
-### Directory README
+### Directory README.md
 **File:** `README.md` (140 lines)  
 **Status:** ✅ Complete
 
@@ -143,7 +143,7 @@ Provides:
 - Legal and regulatory compliance documentation
 - Cross-references to the three director statements
 
-### Annexures Directory README
+### Annexures Directory README.md
 **File:** `../annexures/README.md`  
 **Status:** ✅ Complete
 
@@ -287,7 +287,7 @@ The three director loan account statements are integrated with the following sup
 ### Repository Integration:
 ✅ Files located in correct directory (`evidence/annexures/`)  
 ✅ Consistent naming convention (JF-DLA1, JF-DLA2, JF-DLA3)  
-✅ Cross-referenced in directory READMEs  
+✅ Cross-referenced in directory README.mds  
 ✅ Documented in evidence index  
 ✅ Linked to affidavit sections  
 ✅ Part of comprehensive evidence collection strategy  
