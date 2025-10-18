@@ -1,4 +1,7 @@
 {
+  "timestamp": "2025-10-17T16:37:48.197832",
+  "total_files": 210,
+  "valid_files": 210,
   "timestamp": "2025-10-17T07:59:40.532293",
   "total_files": 204,
   "valid_files": 204,
@@ -1220,6 +1223,116 @@
       "size_bytes": 2681
     },
     {
+      "file": "strategy-implementation-workflow.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 1561
+    },
+    {
+      "file": "test-data/archives/comprehensive-test-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4863
+    },
+    {
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22947
+    },
+    {
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22947
+    },
+    {
+      "file": "test-data/archives/edge-case-comprehensive-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28318
+    },
+    {
+      "file": "test-data/archives/edge-case-comprehensive-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 28318
+    },
+    {
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 165203
+    },
+    {
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 165203
+    },
+    {
+      "file": "test-data/archives/integration-test-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8678
+    },
+    {
+      "file": "test-data/archives/integration-test-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8678
+    },
+    {
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4507
+    },
+    {
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4507
+    },
+    {
+      "file": "test-data/archives/security-validation-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73932
+    },
+    {
+      "file": "test-data/archives/security-validation-results_2025-10-17_16-37-48.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73932
+    },
+    {
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_16-33-42.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11815
+    },
+    {
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_16-37-47.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11815
       "file": "revenue-stream-hijacking-rynette/revenue-stream-configuration.json",
       "status": "valid",
       "error": null,
@@ -1294,6 +1407,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 4665
       "size_bytes": 4667
     },
     {
@@ -1301,6 +1415,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 22751
       "size_bytes": 22753
     },
     {
@@ -1308,6 +1423,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 28115
       "size_bytes": 28118
     },
     {
@@ -1315,6 +1431,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 165019
       "size_bytes": 165021
     },
     {
@@ -1322,6 +1439,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 8484
       "size_bytes": 8486
     },
     {
@@ -1329,6 +1447,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 4311
       "size_bytes": 4313
     },
     {
@@ -1336,6 +1455,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 73739
       "size_bytes": 73741
     },
     {
@@ -1343,6 +1463,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
+      "size_bytes": 11618
       "size_bytes": 11620
     },
     {
@@ -1364,7 +1485,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 27592
+      "size_bytes": 27591
     },
     {
       "file": "tests/end-to-end-test-results.json",
