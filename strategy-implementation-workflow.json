@@ -1,0 +1,56 @@
+{
+  "name": "Optimal Strategy Implementation Workflow",
+  "version": "1.0",
+  "case": "Case 2025-137857",
+  "generated": "2025-10-17T04:36:40.655Z",
+  "phases": {
+    "phase1_critical": {
+      "name": "Critical Strategy Implementation",
+      "strategies": [],
+      "estimatedHours": 0
+    },
+    "phase2_quick_wins": {
+      "name": "Quick Win Strategies",
+      "strategies": [
+        {
+          "id": "STRAT-010",
+          "category": "business_disruption",
+          "name": "System Access Restriction Timeline",
+          "priority": 2,
+          "status": "pending",
+          "file": null,
+          "impact": "Prove Peter's systematic exclusion of directors",
+          "estimatedHours": 6,
+          "dependencies": [
+            "STRAT-003"
+          ]
+        }
+      ],
+      "estimatedHours": 6
+    },
+    "phase3_complex": {
+      "name": "Complex Strategy Resolution",
+      "strategies": [
+        {
+          "id": "STRAT-009",
+          "category": "responsible_person",
+          "name": "Multi-Jurisdiction Compliance Matrix",
+          "priority": 2,
+          "status": "pending",
+          "file": null,
+          "impact": "Detail regulatory requirements across 37 jurisdictions",
+          "estimatedHours": 20,
+          "dependencies": [
+            "STRAT-001"
+          ]
+        }
+      ],
+      "estimatedHours": 20
+    }
+  },
+  "integration": {
+    "evidence_collector": "./optimal-evidence-collector.js",
+    "hypergraph": "./hypergraph_resolver.py",
+    "strategic_analysis": "./STRATEGIC_ASSESSMENT_CONSOLIDATED.md"
+  }
+}

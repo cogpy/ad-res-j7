@@ -24,7 +24,7 @@ This technical forensic analysis provides the system-level evidence proving Ryne
 
 #### Account Control Timeline
 ```
-Date Range: June 20, 2025 - August 29, 2025
+Date Range: 2025-06-20 - 2025-08-29
 Primary Controller: Rynette Farrar
 Legitimate Owner: Peter Faucitt (No Access Detected)
 Control Method: Administrative privileges + password control
@@ -79,13 +79,13 @@ Control Method: Administrative privileges + password control
 
 ### Critical Configuration Events
 
-#### June 20, 2025 - Initial Control Establishment
+#### 2025-06-20 - Initial Control Establishment
 **Technical Evidence:**
 - Sage Account screenshot (JF1) confirms administrative control
 - Account permissions structured to maintain Rynette's access
 - Email routing configuration under Rynette's management
 
-#### August 25, 2025 - Control Structure Validation
+#### 2025-08-25 - Control Structure Validation
 **Technical Evidence:**
 - Sage Account screenshot (JF2) confirms continued control
 - No configuration changes suggesting Peter's independent access
@@ -116,12 +116,12 @@ Control Method: Administrative privileges + password control
 
 #### Email Sending Pattern
 ```
-June 20, 2025: Instructions to Gayane Williams (via pete@regima.com)
+2025-06-20: Instructions to Gayane Williams (via pete@regima.com)
 ├── Sage System Access: Confirmed (JF1)
 ├── Email System Access: Rynette Farrar control
 └── Instruction Delivery: Gayane confirms receipt
 
-August 29, 2025: Attorney Communications (JF3)
+2025-08-29: Attorney Communications (JF3)
 ├── Sage System Access: Confirmed (JF2)  
 ├── Email System Access: Continued Rynette control
 └── Legal Communication: Sent from controlled account

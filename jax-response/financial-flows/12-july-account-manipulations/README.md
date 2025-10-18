@@ -1,8 +1,8 @@
-# Bank Account Manipulation and Control Seizure - July 12, 2025
+# Bank Account Manipulation and Control Seizure - 2025-07-12
 
 ## Event Summary
 **Event:** Bank Account Manipulation and Control Seizure  
-**Date:** July 12, 2025  
+**Date:** 2025-07-12  
 **Time:** 09:30 - 17:15 SAST  
 **Location:** Multiple Banking Networks  
 **Source:** Banking Transaction Records  
