@@ -10,7 +10,7 @@ const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
-const ComprehensiveTodoValidationTest = require('./comprehensive-todo-validation.test.js');
+const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -140,8 +140,26 @@ class TestRunner {
     return success;
   }
 
-  async runNoActionableTasksTests() {
-    console.log('\n📋 Running No Actionable Tasks Validation Tests...\n');
+  async runTodoValidationTests() {
+    console.log('\n📋 Running Comprehensive Todo File Validation Tests...\n');
+    
+    const todoValidator = new ComprehensiveTodoFileValidation();
+    const success = todoValidator.runComprehensiveValidation();
+    
+    this.results.todoValidation = {
+      success: success,
+      total: todoValidator.testResults.length,
+      passed: todoValidator.testResults.filter(t => t.passed).length,
+      failed: todoValidator.testResults.filter(t => !t.passed).length,
+      errors: todoValidator.errors,
+      validationMetrics: todoValidator.validationMetrics
+    };
+    
+    return success;
+  }
+
+  async runMalformedMarkdownTests() {
+    console.log('\n📋 Running Malformed Markdown Tests...\n');
     
     const noActionableTasksTest = new NoActionableTasksValidator();
     const success = noActionableTasksTest.runAllTests();
@@ -258,6 +276,14 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
     console.log(`   📋 Todo Files Tested: ${this.results.todoValidation.todo_files_tested}`);
     
+    console.log('\n📋 Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.todoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
+    console.log(`   📁 Files Validated: ${this.results.todoValidation.validationMetrics.totalFiles}`);
+    console.log(`   📋 Tasks Found: ${this.results.todoValidation.validationMetrics.totalTasks}`);
+    console.log(`   🔥 Critical Tasks: ${this.results.todoValidation.validationMetrics.criticalTasks}`);
+    
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
     console.log(`   ✅ Passed: ${this.results.overall.passed_tests}`);
@@ -323,6 +349,14 @@ class TestRunner {
       if (this.results.noActionableTasks.errors.length > 0) {
         console.log('   No Actionable Tasks Test Failures:');
         this.results.noActionableTasks.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.todoValidation.errors.length > 0) {
+        console.log('   Todo Validation Test Failures:');
+        this.results.todoValidation.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
