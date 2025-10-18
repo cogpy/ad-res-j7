@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-8-8_3-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 2,
+  "topic": "Peter's Discovery",
+  "claim": "Peter presents his 'discovery' of financial issues as a recent event.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Access Logs", "Email Correspondence", "Settlement Negotiation Timeline"
+  ],
+  "crossReferences": [
+    "jax-response/AD/2-High-Priority/PARA_8-8_3.md"
+  ],
+  "danPerspective": "Use system logs and other technical evidence to establish a timeline of when Peter accessed specific information, demonstrating that his 'discovery' was not recent and was coordinated with settlement negotiations."
+}

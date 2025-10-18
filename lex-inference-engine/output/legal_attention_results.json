@@ -1,0 +1,161 @@
+{
+  "guilt_scores": {
+    "bantjies_breach_of_fiduciary_duty": 1.0,
+    "bantjies_conspiracy_to_defraud": 0.9979104998173453,
+    "peter_abuse_of_process": 0.981531035382453,
+    "daniel_whistleblower_protection": 0.9972248588132583
+  },
+  "attention_analysis": {
+    "attention_hotspots": {
+      "CAUSAL": {
+        "query": "peter_abuse_of_process",
+        "element": "fiduciary_duty_norm",
+        "weight": 0.1525670737888324,
+        "interpretation": "Strong causal link between peter_abuse_of_process and fiduciary_duty_norm (weight: 0.153)"
+      },
+      "INTENTIONALITY": {
+        "query": "peter_abuse_of_process",
+        "element": "fraud_investigation_norm",
+        "weight": 0.13966824842042982,
+        "interpretation": "High intentionality focus on fraud_investigation_norm for peter_abuse_of_process (weight: 0.140)"
+      },
+      "TEMPORAL": {
+        "query": "daniel_whistleblower_protection",
+        "element": "r18m_future_payout",
+        "weight": 0.1366900989505795,
+        "interpretation": "Critical temporal relationship between daniel_whistleblower_protection and r18m_future_payout (weight: 0.137)"
+      },
+      "NORMATIVE": {
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "fraud_investigation_norm",
+        "weight": 0.13901120566031688,
+        "interpretation": "Significant rule violation connection: bantjies_breach_of_fiduciary_duty \u2192 fraud_investigation_norm (weight: 0.139)"
+      },
+      "COUNTERFACTUAL": {
+        "query": "bantjies_conspiracy_to_defraud",
+        "element": "fraud_investigation_norm",
+        "weight": 0.14999407129860162,
+        "interpretation": "Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.150)"
+      },
+      "NECESSITY": {
+        "query": "daniel_whistleblower_protection",
+        "element": "peter_card_cancellation",
+        "weight": 0.1395528459594629,
+        "interpretation": "High necessity/sufficiency for daniel_whistleblower_protection through peter_card_cancellation (weight: 0.140)"
+      },
+      "PROPORTIONALITY": {
+        "query": "bantjies_breach_of_fiduciary_duty",
+        "element": "fiduciary_duty_norm",
+        "weight": 0.1477912397190557,
+        "interpretation": "Proportionality concern: bantjies_breach_of_fiduciary_duty vs fiduciary_duty_norm (weight: 0.148)"
+      }
+    },
+    "causal_chains": [],
+    "evidence_importance": {},
+    "agent_focus": {}
+  },
+  "self_attention_matrix": [
+    [
+      0.1052324016798219,
+      0.04495897749644763,
+      0.05412109642211982,
+      0.052575396366366114,
+      0.19488771061126145,
+      0.15187657111973266,
+      0.21018865418164034,
+      0.18615919212260995
+    ],
+    [
+      0.10132333678603775,
+      0.045927986758522346,
+      0.055168670337615584,
+      0.0529149728923026,
+      0.18879426790848175,
+      0.1344469358548307,
+      0.22567793636481834,
+      0.1957458930973909
+    ],
+    [
+      0.11353369440618848,
+      0.049763989882711294,
+      0.04898510308022097,
+      0.06675978167412581,
+      0.20137562298003442,
+      0.12659707480269483,
+      0.2181115362748459,
+      0.17487319689917835
+    ],
+    [
+      0.09524370603667691,
+      0.037457282863662275,
+      0.05146968444059636,
+      0.04678157019272849,
+      0.18809478420102527,
+      0.16476619869644044,
+      0.2185880353420882,
+      0.1975987382267822
+    ],
+    [
+      0.09895996967387585,
+      0.03826885438331054,
+      0.036689087154979226,
+      0.05192203636233075,
+      0.16109085558711297,
+      0.13089411608522222,
+      0.2628786818177659,
+      0.21929639893540245
+    ],
+    [
+      0.11445360644537654,
+      0.049379673057582264,
+      0.05837104079688317,
+      0.052911523637724577,
+      0.19354457438595862,
+      0.14000999923001342,
+      0.21462016288917576,
+      0.17670941955728553
+    ],
+    [
+      0.09569169663274096,
+      0.05231415190780347,
+      0.08541097928717398,
+      0.0418230170154317,
+      0.17506853844370734,
+      0.19132897508438781,
+      0.17508954966620388,
+      0.18327309196255073
+    ],
+    [
+      0.09568472083689142,
+      0.051001113643425064,
+      0.08874533380158343,
+      0.043005595038337126,
+      0.19076202374309328,
+      0.21606534370509847,
+      0.15542496980747852,
+      0.15931089942409274
+    ]
+  ],
+  "legal_reasoning": [
+    "STRONG EVIDENCE: bantjies_breach_of_fiduciary_duty (confidence: 1.000)",
+    "STRONG EVIDENCE: bantjies_conspiracy_to_defraud (confidence: 0.998)",
+    "STRONG EVIDENCE: daniel_whistleblower_protection (confidence: 0.997)",
+    "STRONG EVIDENCE: peter_abuse_of_process (confidence: 0.982)",
+    "ATTENTION INSIGHT [CAUSAL]: Strong causal link between peter_abuse_of_process and fiduciary_duty_norm (weight: 0.153)",
+    "ATTENTION INSIGHT [INTENTIONALITY]: High intentionality focus on fraud_investigation_norm for peter_abuse_of_process (weight: 0.140)",
+    "ATTENTION INSIGHT [TEMPORAL]: Critical temporal relationship between daniel_whistleblower_protection and r18m_future_payout (weight: 0.137)",
+    "ATTENTION INSIGHT [NORMATIVE]: Significant rule violation connection: bantjies_breach_of_fiduciary_duty \u2192 fraud_investigation_norm (weight: 0.139)",
+    "ATTENTION INSIGHT [COUNTERFACTUAL]: Important counterfactual dependency: bantjies_conspiracy_to_defraud \u2194 fraud_investigation_norm (weight: 0.150)",
+    "ATTENTION INSIGHT [NECESSITY]: High necessity/sufficiency for daniel_whistleblower_protection through peter_card_cancellation (weight: 0.140)",
+    "ATTENTION INSIGHT [PROPORTIONALITY]: Proportionality concern: bantjies_breach_of_fiduciary_duty vs fiduciary_duty_norm (weight: 0.148)"
+  ],
+  "confidence_metrics": {
+    "max_attention": 7.165419955579494,
+    "mean_attention": 0.37183298501182993,
+    "std_attention": 3.2214637494005918,
+    "attention_concentration": 19.270532878211963
+  },
+  "invariant_patterns": [
+    "DOMINANT ATTRACTOR: daniel_fraud_report (element type: action)"
+  ]
+}

@@ -26,21 +26,21 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Purpose:** Multi-year director loan account statement for Peter Faucitt demonstrating his use of identical withdrawal process
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 437, Section 7.8.4, 7.8.6
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA2: Jax's Director Loan Account Statement
 - **File:** `JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Jacqueline Faucitt demonstrating consistent application across all directors
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 438, Section 7.8.4, 7.8.3
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 #### JF-DLA3: Daniel's Director Loan Account Statement
 - **File:** `JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md`
 - **Purpose:** Multi-year director loan account statement for Daniel Faucitt including the disputed R500,000 transaction on 16 July 2025
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 439, Section 7.8.5, 7.8.6, 7.8.7
-- **Status:** ⚠️ **Template** - Requires actual accounting records
+- **Status:** ⚠️ **Template Complete** - Ready for data population (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
 
 ### Bank Statement Evidence
 
@@ -50,6 +50,32 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Priority:** CRITICAL
 - **Affidavit References:** Line 457, Section 7.8.5.2, Lines 491, 497
 - **Status:** ⚠️ **Template** - Requires actual bank statement
+
+### Settlement Agreement Evidence
+
+#### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.4, 48.5, 48.10
+- **Status:** ⚠️ **Template** - Requires actual draft agreement document
+- **Date:** Approximately 8-10 August 2025 (reviewed version)
+
+#### JF5-FINAL: Settlement Agreement - Signed Version with Changes
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, 48.6, 48.10
+- **Status:** ⚠️ **Template** - Requires actual signed agreement document
+- **Date:** 11 August 2025 (signed date)
+
+#### JF5-COMPARISON: Settlement Agreement Comparison
+- **File:** `JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
+- **Purpose:** Detailed side-by-side comparison highlighting all changes between draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5.5, 48.6, 48.10.1
+- **Status:** ⚠️ **Template** - Requires completion after obtaining both agreement versions
+- **Date:** [To be completed during analysis]
 
 ### Peter's Withdrawal Examples
 
@@ -110,6 +136,16 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Priority:** CRITICAL
 - **Affidavit References:** Section 129.3.4, 129.3.5, 129.4.3
 - **Status:** ⚠️ **Template** - Requires actual business registration and financial records
+### UK Tax Residency Documentation
+
+#### JF-UKTAX1: Tax Residency Documentation
+- **File:** `JF-UKTAX1_UK_TAX_RESIDENCY_DOCUMENTATION.md`
+- **Purpose:** Tax residency documentation for British citizens (Peter, Jacqui, Daniel) with South African tax residency, supporting cross-border business operations and UK business management
+- **Priority:** CRITICAL 
+- **Affidavit References:** Paragraph 129 (UK operations section)
+- **Status:** ⚠️ **Template** - Requires actual SA tax documentation
+- **Added:** 2025-10-16
+- **Updated:** 2025-10-17 (Corrected focus to SA tax residency)
 
 ---
 
@@ -137,6 +173,11 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - **JF-RESTORE2:** £650,000+ tax loss preservation demonstrating financial acumen
    - **JF-RESTORE3:** Systematic creditor repayment over 8 years
    - **JF-RESTORE4:** Entrepreneurial new ventures funding restoration efforts
+5. **Settlement Agreement Manipulation** (Paragraph 48)
+   - **JF5-DRAFT:** Original terms reviewed and agreed to by respondents
+   - **JF5-FINAL:** Signed version with undisclosed material changes
+   - **JF5-COMPARISON:** Detailed analysis proving fraud in the inducement
+   - **Demonstrates:** Pattern of attorney manipulation and misrepresentation
 
 ### Evidence Integration Pattern:
 
@@ -146,11 +187,13 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 3. **JF-BS1** → Shows 16 July 2025 transaction details
 4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
 5. **JF-RESTORE1-RESTORE4** → Establishes Daniel's 8-year restoration competence and legitimacy
+5. **JF5-DRAFT, JF5-FINAL, JF5-COMPARISON** → Establishes settlement agreement fraud in the inducement
 
 **Cross-Reference Network:**
 - All annexures cross-reference each other for consistency
 - Each annexure supports multiple affidavit sections
 - Pattern evidence builds cumulatively across all documents
+- JF5 evidence connects to broader pattern of manipulation (JF1-JF3, JF12)
 
 ---
 
@@ -166,6 +209,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - **HMRC tax documentation** for JF-RESTORE2 (£650,000+ tax losses)
    - **Creditor correspondence** for JF-RESTORE3 (8-year repayment program)
    - **New venture records** for JF-RESTORE4 (business establishment and performance)
+   - **Settlement agreements** for JF5-DRAFT and JF5-FINAL (from ENS Africa correspondence)
    - **Professional certifications** and supporting documentation
 
 2. **Replace All Placeholders:**
@@ -178,6 +222,8 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - Authentication/apostille of international documents (JF-RP1)
    - Bank certification of statements (JF-BS1, JF-PA1-PA4)
    - Accountant certification of records (JF-DLA1-DLA3)
+   - Document authentication for settlement agreements (JF5-DRAFT, JF5-FINAL)
+   - Preparation of witness statements (Daniel and Jax) for "Has anything changed?" exchange
 
 ### Quality Assurance Checklist:
 
@@ -187,6 +233,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - [ ] Legal admissibility requirements satisfied
 - [ ] Authentication and certification completed
 - [ ] Attorney review and approval obtained
+- [ ] Settlement agreement privilege issues reviewed and addressed (JF5 series)
 - [ ] Court filing format requirements met
 
 ---
@@ -218,7 +265,9 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 ### Related Analysis Documents:
 - **`../../jax-response/analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md`:** Current affidavit referencing these annexures
-- **`../../todo/Repository_Status_and_Critical_Evidence_Collection.md`:** Original requirements (Line 83)
+- **`../../jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`:** Daniel's witness statement re: "Has anything changed?" exchange (relates to JF5 series)
+- **`../../todo/Repository_Status_and_Critical_Evidence_Collection.md`:** Original requirements (Lines 27-29: JF5 settlement agreement requirements)
+- **`../../affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md`:** Timeline analysis showing 8-day gap between settlement and interdict
 - **`../../docs/REPOSITORY_STATUS_ASSESSMENT.md`:** Critical evidence gaps analysis
 
 ---
@@ -230,7 +279,15 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status:** All annexures are ⚠️ **Template** status - critical evidence collection required.
+**Current Status:** All annexures have comprehensive templates complete. Director loan account statements (JF-DLA1, JF-DLA2, JF-DLA3) templates documented in completion report - ready for data population from accountant.
+
+**Note on JF5 Series:** Settlement agreement annexures (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON) require careful attorney review for privilege issues before completion, as settlement negotiations are typically privileged communications. The crime-fraud exception may apply if the settlement was part of a scheme to mislead the Court.
+
+**Latest Updates:**
+- ✅ JF5-DRAFT template created (Settlement agreement initial version)
+- ✅ JF5-FINAL template created (Settlement agreement signed version)
+- ✅ JF5-COMPARISON template created (Detailed comparison document)
+- ⚠️ All three JF5 documents require actual agreement documents and completion
 
 ---
 

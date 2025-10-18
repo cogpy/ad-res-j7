@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-8_4-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 2,
+  "topic": "Confrontation",
+  "claim": "Peter describes a confrontation where he presented his 'discoveries.'",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "Email Correspondence", "System Access Requests", "Witness Statements"
+  ],
+  "crossReferences": [
+    "jax-response/AD/2-High-Priority/PARA_8_4.md"
+  ],
+  "danPerspective": "Provide a witness account of the confrontation from a technical perspective, focusing on the discussions around system access and Peter's coercive behavior."
+}

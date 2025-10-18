@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-10-10_3-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Financial Details",
+  "claim": "Peter raises questions about various financial details and transactions.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Documentation", "Data Integrity Policies", "Transaction Workflow Diagrams"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_10-10_3.md"
+  ],
+  "danPerspective": "From a technical perspective, explain how the financial systems are designed to ensure the accuracy and integrity of the data."
+}

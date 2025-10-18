@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-7_14-7_15-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 2,
+  "topic": "Documentation Requests",
+  "claim": "Peter alleges that we failed to provide necessary documentation to the accountant.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "Cloud Storage Logs", "Accounting Software Logs", "Email Correspondence", "System Disruption Alerts"
+  ],
+  "crossReferences": [
+    "jax-response/AD/2-High-Priority/PARA_7_14-7_15.md"
+  ],
+  "danPerspective": "Detail the technical systems used to store and provide documentation, and explain how Peter's own actions (e.g., canceling credit cards) obstructed access to these systems."
+}
