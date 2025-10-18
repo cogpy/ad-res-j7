@@ -183,15 +183,15 @@ The fix has been validated with the following label formats:
 
 The following workflows use complex labels and will benefit from this fix:
 
-1. **`todo-to-issues.yml`**
+1. **`.github/workflows/todo-to-issues.yml`**
    - Uses: `priority: critical`, `priority: high`, `priority: medium`, `priority: low`
    - Also uses bash array handling (already correct)
 
-2. **`test-workflows.yml`**
+2. **`.github/workflows/test-workflows.yml`**
    - Uses: `priority: critical`, `workflow-reliability-alert`
    - Uses GitHub Actions script (already correct)
 
-3. **`workflow-monitoring.yml`**
+3. **`.github/workflows/workflow-monitoring.yml`**
    - Uses: `priority: critical`, `workflow-critical-failure`
    - Uses GitHub Actions script (already correct)
 

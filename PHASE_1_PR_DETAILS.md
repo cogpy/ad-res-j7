@@ -18,7 +18,7 @@ The repository's automated todo-to-issues workflow was generating duplicate GitH
 
 ## Root Cause
 
-The TODO files in the `todo/` directory contained action items for Phase 1 tasks that had already been implemented, but the TODO files had not been updated to mark these items as complete. The GitHub Actions workflow (`todo-to-issues.yml`) scans these TODO files and generates issues from unmarked tasks.
+The TODO files in the `todo/` directory contained action items for Phase 1 tasks that had already been implemented, but the TODO files had not been updated to mark these items as complete. The GitHub Actions workflow (`.github/workflows/todo-to-issues.yml`) scans these TODO files and generates issues from unmarked tasks.
 
 ## Solution Implemented
 
