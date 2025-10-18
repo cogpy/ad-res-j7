@@ -263,13 +263,7 @@ This report tracks the implementation of comprehensive improvements to the **jax
 **⏳ Category 12: Settlement Timing** (Planned)
 - JF10-10C: Settlement agreement and timing analysis
 
-**⏳ Category 13: Confirmatory Affidavit** (Planned)
-- JF11-11B: Accountant perjury evidence
-
-**⏳ Category 14: Professional Misconduct** (Planned)
-- JF12-12C: ENS Africa knowledge suppression
-
-**Total Evidence Documents Specified**: 64+ across 10 completed categories
+**Total Evidence Documents Specified**: 64+ across 8 completed categories
 
 ---
 

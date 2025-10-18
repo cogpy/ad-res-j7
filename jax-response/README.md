@@ -199,6 +199,10 @@ Peter failed to disclose in his ex parte application:
 ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 ☐ Peter's own withdrawals (minimum 4 examples) - JF-PA1 through JF-PA4
 ☐ R500K payment bank statement (16 July 2025) - JF-BS1
+☐ JF5 draft agreement (initial version reviewed)
+☐ JF5 final agreement (signed version with changes)
+☐ Comparison document highlighting all changes
+✅ Daniel's witness statement re: "Has anything changed?" exchange - JF-WS1
 ☑ JF5 draft agreement (initial version reviewed) - **COMPLETE: JF5-DRAFT**
 ☑ JF5 final agreement (signed version with changes) - **COMPLETE: JF5-FINAL**
 ☑ Comparison document highlighting all changes - **COMPLETE: JF5-COMPARISON**
