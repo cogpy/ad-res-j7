@@ -233,10 +233,10 @@ The workflow performs the following validation checks:
 The workflow handles label conversion as follows:
 
 ```javascript
-// Internal JSON format
+/ Internal JSON format
 labels = ["todo", "enhancement", "priority: critical", "bug"]
 
-// Converted to CLI arguments using jq and bash array
+/ Converted to CLI arguments using jq and bash array
 --label "todo" --label "enhancement" --label "priority: critical" --label "bug"
 ```
 

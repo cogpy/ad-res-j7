@@ -23,6 +23,13 @@ Director loan accounts are standard accounting mechanisms that track amounts owe
   - Historical transaction patterns showing established practice
   - Compliance with accounting standards and legal requirements
 
+### Director Loan Account Statement Templates (JF-DLA1, JF-DLA2, JF-DLA3)
+
+- **Template Location:** `../annexures/JF-DLA1_PETER_DIRECTOR_LOAN_ACCOUNT.md`, `JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md`, `JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md`
+- **Purpose:** Comprehensive templates for multi-year director loan account statements for all three directors
+- **Status:** ✅ Templates complete and ready for data population (see `DLA_TEMPLATES_COMPLETION_REPORT.md`)
+- **Next Step:** Data collection from accountant to populate templates with actual account information
+
 ## Evidence Category: Category 5
 
 This evidence falls under **Category 5: Director Loan Accounts and Financial Legitimacy** as outlined in the case improvement recommendations.
@@ -62,12 +69,12 @@ This evidence is **CRITICAL** because it:
 
 From Affidavit Amendment Recommendations (Section 7.8.7):
 
-- ☐ Director loan account statements for all three directors showing credit balances (JF-DLA1, JF-DLA2, JF-DLA3)
-- ☐ Bank statement for 16 July 2025 showing R500K payment with clear reference (JF-BS1)
-- ✅ Accounting records showing allocation to director loan account (JF-AR1) - **THIS DOCUMENT**
-- ☐ Bank statements showing Peter's own similar withdrawals (minimum 4 examples: JF-PA1 through JF-PA4)
-- ☐ Historical transaction records demonstrating established practice
-- ☐ Timeline documentation (payment date, attorney consultation date, filing date)
+- ⚠️ Director loan account statements for all three directors showing credit balances (JF-DLA1, JF-DLA2, JF-DLA3) - **TEMPLATES COMPLETE** - Awaiting data from accountant
+- ☐ Bank statement for 16 July 2025 showing R500K payment with clear reference (JF-BS1) - Template available in ../annexures/
+- ✅ Accounting records showing allocation to director loan account (JF-AR1) - **COMPLETED**
+- ☐ Bank statements showing Peter's own similar withdrawals (minimum 4 examples: JF-PA1 through JF-PA4) - Templates available in ../annexures/
+- ☐ Historical transaction records demonstrating established practice - Will be extracted from DLA data
+- ☐ Timeline documentation (payment date, attorney consultation date, filing date) - To be compiled
 
 ## Required Actions
 

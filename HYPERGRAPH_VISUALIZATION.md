@@ -700,6 +700,13 @@ query {
 
 ---
 
+## Related Visualizations
+
+- **[Centrality Score Graph Visualization](CENTRALITY_SCORE_GRAPH_VISUALIZATION.md)** - Agent network analysis with centrality scores and attention weights showing orchestration patterns
+- **[Complete Hypergraph Analysis](ad-hypergraph-mapping/BANTJIES_COMPLETE_HYPERGRAPH_VISUALIZATION.md)** - Detailed analysis of agent centrality and network dynamics
+
+---
+
 **Document Version:** 1.0  
 **Last Updated:** October 15, 2025  
 **GraphQL Schema Version:** 1.0

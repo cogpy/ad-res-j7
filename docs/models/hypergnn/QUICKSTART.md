@@ -41,22 +41,22 @@ Create a file `my-query.js`:
 ```javascript
 const { buildCase2025137857Hypergraph } = require('./docs/models/hypergnn/case-hypergraph');
 
-// Build the hypergraph
+/ Build the hypergraph
 const hg = buildCase2025137857Hypergraph();
 
-// Query 1: Find all people
+/ Query 1: Find all people
 const people = hg.queryEntitiesByType('Person');
 console.log('People in the case:');
 people.forEach(p => console.log(`  - ${p.name} (${p.role})`));
 
-// Query 2: Find Peter's involvement
+/ Query 2: Find Peter's involvement
 const peterEvents = hg.findConnected('peter-faucitt', 'involved-in');
 console.log('\nPeter is involved in:');
 peterEvents.forEach(({ entity }) => {
   console.log(`  - ${entity.name} (${entity.date})`);
 });
 
-// Query 3: Find path between entities
+/ Query 3: Find path between entities
 const path = hg.findPath('peter-faucitt', 'regima');
 console.log('\nConnection path:');
 path.forEach(step => {
@@ -110,10 +110,10 @@ Link tuples connect entities with relationships:
 
 ```javascript
 hg.addLinkTuple(
-  'peter-faucitt',           // source entity
-  'involved-in',             // relation type
-  'event-2025-04-14',        // target entity
-  {                          // metadata
+  'peter-faucitt',           / source entity
+  'involved-in',             / relation type
+  'event-2025-04-14',        / target entity
+  {                          / metadata
     role: 'alleged-perpetrator',
     evidence: ['bank-statements']
   }

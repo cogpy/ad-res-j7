@@ -86,7 +86,7 @@ do hereby make oath and state:
 - The evidence destruction on 22 May 2025;
 - The gaslighting tactics employed by the Applicant.
 
-1.3.3 I adopt and incorporate by reference all twelve (12) annexures attached to the First Respondent's affidavit (**JF1** through **JF12**).
+1.3.3 I adopt and incorporate by reference all ten (10) annexures attached to the First Respondent's affidavit (**JF1** through **JF10**).
 
 1.3.4 In this affidavit, I provide my personal perspective and additional details to supplement the First Respondent's account.
 
@@ -424,9 +424,7 @@ do hereby make oath and state:
 
 9.2.1 My mother does **not** have dementia. She is cognitively sharp, articulate, and her memory is excellent.
 
-9.2.2 The medical records (**Annexure JF11**) prove that she does not suffer from any cognitive impairment.
-
-9.2.3 More importantly, my mother's testimony is **perfectly aligned with the documentary evidence**:
+9.2.2 More importantly, my mother's testimony is **perfectly aligned with the documentary evidence**:
 - Her account of the 2016 separation matches the timeline;
 - Her description of my independent business building is corroborated by the Shopify Email;
 - Her testimony is consistent with all objective evidence.
@@ -663,8 +661,6 @@ This affidavit adopts and incorporates by reference all twelve (12) annexures at
 | **JF8** | Evidence Packages (May-October 2025) |
 | **JF9** | Timeline Analysis |
 | **JF10** | Director Loan Account Records |
-| **JF11** | Medical Records (Jacqueline Faucitt) |
-| **JF12** | Legal Research and Frameworks |
 
 ---
 

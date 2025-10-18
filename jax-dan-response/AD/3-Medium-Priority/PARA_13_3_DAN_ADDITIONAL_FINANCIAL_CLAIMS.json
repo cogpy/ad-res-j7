@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-13_3-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Additional Financial Claims",
+  "claim": "Peter makes additional financial claims against the company.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "Financial System Data", "System-Generated Reports", "Expert Financial Analysis"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_13_3.md"
+  ],
+  "danPerspective": "From a technical perspective, explain how these claims can be verified or refuted using the data from our financial systems."
+}
