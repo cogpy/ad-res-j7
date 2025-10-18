@@ -107,6 +107,35 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
+### Daniel's 8-Year Restoration Evidence
+
+#### JF-RESTORE1: Companies House Dormant Status from 2015
+- **File:** `JF-RESTORE1_COMPANIES_HOUSE_DORMANT_STATUS.md`
+- **Purpose:** Companies House filings showing dormant company status from 2015 onwards, preserving GBP 650,000+ tax losses
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 129.3.4, 129.3.5, 129.4.3
+- **Status:** ⚠️ **Template** - Requires actual Companies House documentation
+
+#### JF-RESTORE2: Tax Losses Documentation exceeding GBP 650,000
+- **File:** `JF-RESTORE2_TAX_LOSSES_DOCUMENTATION.md`
+- **Purpose:** Documentation of accumulated tax losses exceeding GBP 650,000 preserved through strategic dormant company management
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 129.3.4, 129.3.5, 129.4.3
+- **Status:** ⚠️ **Template** - Requires actual HMRC and accountant records
+
+#### JF-RESTORE3: Creditor Repayment Correspondence
+- **File:** `JF-RESTORE3_CREDITOR_REPAYMENT_CORRESPONDENCE.md`
+- **Purpose:** Correspondence with creditors showing periodic debt repayment from Daniel's new venture profits over 8-year period
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 129.3.4, 129.3.5, 129.5.1
+- **Status:** ⚠️ **Template** - Requires actual creditor correspondence and payment records
+
+#### JF-RESTORE4: New Venture Establishment for Funding
+- **File:** `JF-RESTORE4_NEW_VENTURE_ESTABLISHMENT.md`
+- **Purpose:** Evidence of Daniel's new business ventures established to generate funds for creditor repayment, demonstrating entrepreneurial restoration strategy
+- **Priority:** CRITICAL
+- **Affidavit References:** Section 129.3.4, 129.3.5, 129.4.3
+- **Status:** ⚠️ **Template** - Requires actual business registration and financial records
 ### UK Tax Residency Documentation
 
 #### JF-UKTAX1: Tax Residency Documentation
@@ -139,6 +168,11 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 4. **International Operations Legitimacy** (Section 3.3)
    - **JF-RP1:** Prove formal regulatory compliance across 37 jurisdictions
 
+5. **Daniel's Business Rescue and Restoration** (Section 129.3-129.6)
+   - **JF-RESTORE1:** Strategic dormant status and tax loss preservation
+   - **JF-RESTORE2:** £650,000+ tax loss preservation demonstrating financial acumen
+   - **JF-RESTORE3:** Systematic creditor repayment over 8 years
+   - **JF-RESTORE4:** Entrepreneurial new ventures funding restoration efforts
 5. **Settlement Agreement Manipulation** (Paragraph 48)
    - **JF5-DRAFT:** Original terms reviewed and agreed to by respondents
    - **JF5-FINAL:** Signed version with undisclosed material changes
@@ -152,6 +186,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
 3. **JF-BS1** → Shows 16 July 2025 transaction details
 4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+5. **JF-RESTORE1-RESTORE4** → Establishes Daniel's 8-year restoration competence and legitimacy
 5. **JF5-DRAFT, JF5-FINAL, JF5-COMPARISON** → Establishes settlement agreement fraud in the inducement
 
 **Cross-Reference Network:**
@@ -170,6 +205,10 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - **Regulatory documents** for JF-RP1 (37 jurisdictions)
    - **Accounting records** for JF-DLA1, JF-DLA2, JF-DLA3
    - **Bank statements** for JF-BS1 and JF-PA1-PA4
+   - **Companies House filings** for JF-RESTORE1 (2015-2025 dormant status)
+   - **HMRC tax documentation** for JF-RESTORE2 (£650,000+ tax losses)
+   - **Creditor correspondence** for JF-RESTORE3 (8-year repayment program)
+   - **New venture records** for JF-RESTORE4 (business establishment and performance)
    - **Settlement agreements** for JF5-DRAFT and JF5-FINAL (from ENS Africa correspondence)
    - **Professional certifications** and supporting documentation
 
