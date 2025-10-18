@@ -199,16 +199,9 @@ Peter failed to disclose in his ex parte application:
 ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 ☐ Peter's own withdrawals (minimum 4 examples) - JF-PA1 through JF-PA4
 ☐ R500K payment bank statement (16 July 2025) - JF-BS1
-☐ JF5 draft agreement (initial version reviewed)
-☐ JF5 final agreement (signed version with changes)
-☐ Comparison document highlighting all changes
-✅ Daniel's witness statement re: "Has anything changed?" exchange - JF-WS1
-☑ JF5 draft agreement (initial version reviewed) - **COMPLETE: JF5-DRAFT**
-☑ JF5 final agreement (signed version with changes) - **COMPLETE: JF5-FINAL**
-☑ Comparison document highlighting all changes - **COMPLETE: JF5-COMPARISON**
-☐ JF5 draft agreement (initial version reviewed) - Template: evidence/annexures/JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md
-☐ JF5 final agreement (signed version with changes) - Template: evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md
-☐ Comparison document highlighting all changes - Template: evidence/annexures/JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md
+☐ JF5 draft agreement (initial version reviewed) - **Template created**: `evidence/annexures/JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+☐ JF5 final agreement (signed version with changes) - **Template created**: `evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+☐ Comparison document highlighting all changes - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
 ☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
