@@ -330,7 +330,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status:** All annexures have comprehensive templates complete. Director loan account statements (JF-DLA1, JF-DLA2, JF-DLA3) templates documented in completion report - ready for data population from accountant.
+**Current Status:** All annexure frameworks are ✅ **COMPLETE** - comprehensive templates ready for evidence insertion. Critical evidence collection phase initiated.
 
 **Note on JF5 Series:** Settlement agreement annexures (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON) require careful attorney review for privilege issues before completion, as settlement negotiations are typically privileged communications. The crime-fraud exception may apply if the settlement was part of a scheme to mislead the Court.
 
@@ -352,10 +352,15 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 ---
 
-**Last Updated:** [Current Date]  
-**Directory Status:** Template Framework Complete - Evidence Collection Required  
+**Last Updated:** October 16, 2025  
+**Directory Status:** ✅ Framework Complete - Evidence Collection Phase Active  
 **Next Milestone:** Complete evidence insertion for all annexures  
-**Deadline:** Before legal review and court filing
+**Deadline:** Before legal review and court filing  
+
+**New Resources Available:**
+- `EVIDENCE_COLLECTION_MASTER_CHECKLIST.md` - Comprehensive evidence gathering guide
+- `ANNEXURE_INTEGRATION_GUIDE.md` - Affidavit cross-reference mapping
+- `COMPLETION_STATUS_REPORT.md` - Current status and roadmap
 
 ---
 
