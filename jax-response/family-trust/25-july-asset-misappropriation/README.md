@@ -1,8 +1,8 @@
-# Trust Asset Misappropriation Scheme - July 25, 2025
+# Trust Asset Misappropriation Scheme - 2025-07-25
 
 ## Event Summary
 **Event:** Trust Asset Misappropriation Scheme  
-**Date:** July 25, 2025  
+**Date:** 2025-07-25  
 **Time:** 08:45 - 17:00 SAST  
 **Location:** Multiple Financial Institutions  
 **Source:** Trust Asset Documentation  

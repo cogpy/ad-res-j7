@@ -1,0 +1,102 @@
+{
+  "dashboard_title": "Evidence Collection Progress Dashboard",
+  "last_updated": "2025-10-16T04:28:30.426Z",
+  "key_metrics": {
+    "evidence_completion": "62.2%",
+    "validation_success": "85.7%",
+    "days_to_completion": "134 hours (17 days)",
+    "overall_status": "GOOD"
+  },
+  "progress_indicators": {
+    "evidence_collection": {
+      "current": 23,
+      "total": 37,
+      "percentage": "62.2%"
+    },
+    "critical_priorities": {
+      "resolved": 23,
+      "remaining": 19
+    },
+    "quality_assurance": {
+      "passed_validations": 6,
+      "total_validations": 7
+    }
+  },
+  "quick_actions": [
+    {
+      "priority": "CRITICAL",
+      "order": 1,
+      "type": "EVIDENCE_COLLECTION",
+      "code": "JF-PA1",
+      "description": "Peter's withdrawal example 1",
+      "estimated_effort": "2 hours",
+      "impact": "HIGH",
+      "automation_potential": "HIGH"
+    },
+    {
+      "priority": "CRITICAL",
+      "order": 2,
+      "type": "EVIDENCE_COLLECTION",
+      "code": "JF-PA2",
+      "description": "Peter's withdrawal example 2",
+      "estimated_effort": "2 hours",
+      "impact": "HIGH",
+      "automation_potential": "HIGH"
+    },
+    {
+      "priority": "CRITICAL",
+      "order": 3,
+      "type": "EVIDENCE_COLLECTION",
+      "code": "JF-PA3",
+      "description": "Peter's withdrawal example 3",
+      "estimated_effort": "2 hours",
+      "impact": "HIGH",
+      "automation_potential": "HIGH"
+    },
+    {
+      "priority": "HIGH",
+      "type": "QUALITY_IMPROVEMENT",
+      "estimated_effort": "TBD",
+      "impact": "MEDIUM"
+    },
+    {
+      "priority": "HIGH",
+      "type": "QUALITY_IMPROVEMENT",
+      "estimated_effort": "TBD",
+      "impact": "MEDIUM"
+    }
+  ],
+  "risk_alerts": [
+    {
+      "type": "COMPLETION_RISK",
+      "severity": "MEDIUM",
+      "description": "Evidence completion below 70% threshold",
+      "impact": "May delay legal review readiness",
+      "mitigation": "Focus on quick wins and parallel workstreams"
+    },
+    {
+      "type": "CRITICAL_GAPS",
+      "severity": "HIGH",
+      "description": "19 critical evidence items missing",
+      "impact": "Could affect case strength",
+      "mitigation": "Prioritize critical evidence collection"
+    }
+  ],
+  "next_milestones": [
+    {
+      "description": "Complete top 3 quick wins",
+      "estimated_date": "2025-10-19",
+      "impact": "Momentum building"
+    },
+    {
+      "description": "Reach 80% evidence completion",
+      "estimated_date": "2025-10-28",
+      "impact": "Ready for legal review"
+    },
+    {
+      "description": "Complete all evidence collection",
+      "estimated_date": "2025-11-02",
+      "impact": "Court submission ready"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "summary": {
+    "errors": 0,
+    "warnings": 2,
+    "info": 38,
+    "status": "PASS"
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/REVENUE_HIJACKING_CRIMINAL_ANALYSIS.md",
+      "folder": "29-may-domain-registration",
+      "issue": "No dates in file match folder name date (expected day=29, month=5)"
+    },
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/REVENUE_HIJACKING_CRIMINAL_ANALYSIS.json",
+      "folder": "29-may-domain-registration",
+      "issue": "No dates in file match folder name date (expected day=29, month=5)"
+    }
+  ],
+  "info": [
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/README.json",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/README.md",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/audit_trail_hijacking_timeline.md",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 8 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/audit_trail_hijacking_timeline.json",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 5 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/may_22_2025_audit_trail_hijacking_analysis.md",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 7 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/22-may-shopify-audit/may_22_2025_audit_trail_hijacking_analysis.json",
+      "folder": "22-may-shopify-audit",
+      "message": "Found 6 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/20-june-gee-gayane-email/README.json",
+      "folder": "20-june-gee-gayane-email",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/20-june-gee-gayane-email/README.md",
+      "folder": "20-june-gee-gayane-email",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/README.json",
+      "folder": "14-apr-bank-letter",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/APR-SEP-2025.md",
+      "folder": "14-apr-bank-letter",
+      "message": "Found 1 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/README.md",
+      "folder": "14-apr-bank-letter",
+      "message": "Found 3 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/14-apr-bank-letter/APR-SEP-2025.json",
+      "folder": "14-apr-bank-letter",
+      "message": "Found 1 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/README.json",
+      "folder": "29-may-domain-registration",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/29-may-domain-registration/README.md",
+      "folder": "29-may-domain-registration",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/README.json",
+      "folder": "08-july-warehouse-popi",
+      "message": "Found 4 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/README.md",
+      "folder": "08-july-warehouse-popi",
+      "message": "Found 4 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/email_compliance_directive_2025-07-08.json",
+      "folder": "08-july-warehouse-popi",
+      "message": "Found 1 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/revenue-theft/08-july-warehouse-popi/email_compliance_directive_2025-07-08.md",
+      "folder": "08-july-warehouse-popi",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/25-july-asset-misappropriation/README.json",
+      "folder": "25-july-asset-misappropriation",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/25-july-asset-misappropriation/README.md",
+      "folder": "25-july-asset-misappropriation",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/10-aug-trust-breach-evidence/README.json",
+      "folder": "10-aug-trust-breach-evidence",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/10-aug-trust-breach-evidence/README.md",
+      "folder": "10-aug-trust-breach-evidence",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/18-june-trust-violation/README.json",
+      "folder": "18-june-trust-violation",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/18-june-trust-violation/README.md",
+      "folder": "18-june-trust-violation",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/15-mar-trust-establishment/README.json",
+      "folder": "15-mar-trust-establishment",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/15-mar-trust-establishment/README.md",
+      "folder": "15-mar-trust-establishment",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/02-may-beneficiary-changes/README.json",
+      "folder": "02-may-beneficiary-changes",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/family-trust/02-may-beneficiary-changes/README.md",
+      "folder": "02-may-beneficiary-changes",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/01-apr-payment-redirection/README.json",
+      "folder": "01-apr-payment-redirection",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/01-apr-payment-redirection/README.md",
+      "folder": "01-apr-payment-redirection",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/20-aug-financial-concealment/README.json",
+      "folder": "20-aug-financial-concealment",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/20-aug-financial-concealment/README.md",
+      "folder": "20-aug-financial-concealment",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/15-may-unauthorized-transfers/README.json",
+      "folder": "15-may-unauthorized-transfers",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/15-may-unauthorized-transfers/README.md",
+      "folder": "15-may-unauthorized-transfers",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/12-july-account-manipulations/README.json",
+      "folder": "12-july-account-manipulations",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/12-july-account-manipulations/README.md",
+      "folder": "12-july-account-manipulations",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/30-june-fund-diversions/README.json",
+      "folder": "30-june-fund-diversions",
+      "message": "Found 2 date(s) matching folder date"
+    },
+    {
+      "file": "jax-response/financial-flows/30-june-fund-diversions/README.md",
+      "folder": "30-june-fund-diversions",
+      "message": "Found 2 date(s) matching folder date"
+    }
+  ]
+}

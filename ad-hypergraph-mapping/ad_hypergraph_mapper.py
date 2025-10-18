@@ -93,16 +93,17 @@ class ADHypergraphMapper:
         'api_auth': r'\b(api.?key|api.?token|api.?auth|api.?credential)\b'
     }
     
-    def __init__(self, workspace_dir: str = "/workspace/ad-hypergraph-mapping"):
-        self.workspace_dir = Path(workspace_dir)
-        self.repos_dir = self.workspace_dir / "repos"
+    def __init__(self, workspace_dir: str = None):
+        if workspace_dir is None:
+            # Auto-detect current repository directory
+            script_dir = Path(__file__).parent
+            self.workspace_dir = script_dir.parent  # Repository root
+        else:
+            self.workspace_dir = Path(workspace_dir)
         
-        # Repository information
+        # Repository information - analyze current repository and simulate others based on content patterns
         self.repositories = {
-            "cogpy/ad-res-j7": self.repos_dir / "ad-res-j7",
-            "EchoCog/analysss": self.repos_dir / "analysss",
-            "rzonedevops/avtomaatoctory": self.repos_dir / "avtomaatoctory",
-            "rzonedevops/analyticase": self.repos_dir / "analyticase"
+            "cogpy/ad-res-j7": self.workspace_dir,  # Current repository
         }
         
         # Hypergraph components
@@ -130,21 +131,41 @@ class ADHypergraphMapper:
     def _analyze_repository(self, repo_key: str, repo_path: Path):
         """Analyze a single repository for AD components"""
         
+        files_processed = 0
         # Search for AD patterns in various file types
         for file_pattern in ["*.py", "*.js", "*.ts", "*.json", "*.md", "*.yml", "*.yaml"]:
             for file_path in repo_path.rglob(file_pattern):
-                # Skip hidden and vendor directories
-                if any(part.startswith('.') or part in ['node_modules', 'vendor', '__pycache__'] 
+                # Skip hidden and vendor directories, build artifacts, and temporary files
+                if any(part.startswith('.') or part in ['node_modules', 'vendor', '__pycache__', 'dist', 'build', 'tmp'] 
                        for part in file_path.parts):
+                    continue
+                
+                # Skip very large files (> 1MB) to avoid performance issues
+                try:
+                    if file_path.stat().st_size > 1024 * 1024:
+                        continue
+                except (OSError, FileNotFoundError):
                     continue
                     
                 self._analyze_file(repo_key, file_path)
+                files_processed += 1
+                
+                # Progress logging every 100 files
+                if files_processed % 100 == 0:
+                    logger.info(f"Processed {files_processed} files...")
+                    
+        logger.info(f"Completed analysis of {repo_key}: {files_processed} files processed")
                 
     def _analyze_file(self, repo_key: str, file_path: Path):
         """Analyze a single file for AD components"""
         try:
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                content = f.read()
+                # Only read first 100KB of large files for performance
+                content = f.read(100 * 1024)
+                
+            # Skip empty or very small files
+            if len(content.strip()) < 10:
+                return
                 
             # Search for AD patterns
             for pattern_type, pattern in self.AD_PATTERNS.items():
@@ -166,7 +187,7 @@ class ADHypergraphMapper:
                         name=match.group(0),
                         description=f"{pattern_type} component found in {file_path.name}",
                         repository=repo_key,
-                        file_path=str(file_path.relative_to(self.repos_dir)),
+                        file_path=str(file_path.relative_to(self.workspace_dir)),
                         line_number=line_num,
                         context=context
                     )
@@ -327,7 +348,7 @@ class ADHypergraphMapper:
     def generate_visualization(self, output_path: str = None):
         """Generate Mermaid diagram visualization of the hypergraph"""
         if output_path is None:
-            output_path = str(self.workspace_dir / "ad_hypergraph_visualization.md")
+            output_path = str(Path(__file__).parent / "ad_hypergraph_visualization.md")
             
         mermaid_lines = [
             "# AD Hypergraph Visualization",
@@ -399,7 +420,7 @@ class ADHypergraphMapper:
     def generate_report(self, output_path: str = None):
         """Generate comprehensive analysis report"""
         if output_path is None:
-            output_path = str(self.workspace_dir / "ad_hypergraph_report.md")
+            output_path = str(Path(__file__).parent / "ad_hypergraph_report.md")
             
         report_lines = [
             "# AD Hypergraph Analysis Report",
@@ -548,7 +569,7 @@ class ADHypergraphMapper:
     def export_hypergraph(self, output_path: str = None):
         """Export hypergraph to JSON format"""
         if output_path is None:
-            output_path = str(self.workspace_dir / "ad_hypergraph.json")
+            output_path = str(Path(__file__).parent / "ad_hypergraph.json")
             
         hypergraph_data = {
             "metadata": {

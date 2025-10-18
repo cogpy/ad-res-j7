@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-12-12_1-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Corporate Governance",
+  "claim": "Peter raises concerns about the company's corporate governance.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "Access Control Policies", "Audit Trail Reports", "Compliance Documentation"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_12-12_1.md"
+  ],
+  "danPerspective": "From a technical perspective, explain how our systems and processes support good corporate governance."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ad-para-1-1_3-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 4,
+  "topic": "Introduction",
+  "claim": "Peter provides an introduction to his affidavit.",
+  "responseStatus": "complete",
+  "evidenceRequired": [],
+  "crossReferences": [
+    "jax-response/AD/4-Low-Priority/PARA_1-1_3.md"
+  ],
+  "danPerspective": "Acknowledge the paragraph and state that no technical response is required."
+}
