@@ -19,20 +19,20 @@ When creating GitHub issues programmatically with labels that contain spaces and
 ```javascript
 const { spawnSync } = require('child_process');
 
-// Build arguments as an array
+/ Build arguments as an array
 const args = [
   'issue', 'create',
   '--title', 'Issue Title',
   '--body', 'Issue body'
 ];
 
-// Add labels to the array
+/ Add labels to the array
 const labels = ['bug', 'priority: critical', 'enhancement'];
 labels.forEach(label => {
   args.push('--label', label);
 });
 
-// Use spawnSync with array of arguments
+/ Use spawnSync with array of arguments
 const result = spawnSync('gh', args, { 
   encoding: 'utf8',
   env: process.env
@@ -54,11 +54,11 @@ if (result.status === 0) {
 ### ❌ Problematic Approach (Avoid)
 
 ```javascript
-// DON'T DO THIS - Has potential issues
+/ DON'T DO THIS - Has potential issues
 const command = `gh issue create --title "Title" --label "priority: critical"`;
 execSync(command);
 
-// OR THIS - Relies on shell parsing
+/ OR THIS - Relies on shell parsing
 const command = `gh ${args.map(arg => JSON.stringify(arg)).join(' ')}`;
 execSync(command);
 ```
@@ -89,13 +89,13 @@ The following label formats are fully supported:
 async createGitHubIssue(item, categoryInfo) {
   const args = ['issue', 'create', '--title', item.title, '--body', body];
   
-  // Add labels - works with any label format
+  / Add labels - works with any label format
   const allLabels = [...categoryInfo.labels, 'batch-created'];
   allLabels.forEach(label => {
     args.push('--label', label);
   });
   
-  // Execute with spawnSync
+  / Execute with spawnSync
   const result = spawnSync('gh', args, { 
     encoding: 'utf8',
     env: process.env
@@ -203,13 +203,13 @@ To manually test label creation:
 
 **Problem:**
 ```javascript
-// Wrong - shell interprets spaces
+/ Wrong - shell interprets spaces
 execSync(`gh issue create --label priority: critical`);
 ```
 
 **Solution:**
 ```javascript
-// Correct - use array args
+/ Correct - use array args
 spawnSync('gh', ['issue', 'create', '--label', 'priority: critical']);
 ```
 
@@ -235,13 +235,13 @@ gh "${gh_args[@]}"
 
 **Problem:**
 ```javascript
-// Wrong - labels not properly quoted in JSON
-const labels = [priority: critical]; // Syntax error
+/ Wrong - labels not properly quoted in JSON
+const labels = [priority: critical]; / Syntax error
 ```
 
 **Solution:**
 ```javascript
-// Correct - proper JSON array with quoted strings
+/ Correct - proper JSON array with quoted strings
 const labels = ['priority: critical', 'bug'];
 const labelsJson = JSON.stringify(labels);
 ```
@@ -262,14 +262,14 @@ const labelsJson = JSON.stringify(labels);
 
 **Vulnerable code:**
 ```javascript
-// NEVER DO THIS - vulnerable to injection
+/ NEVER DO THIS - vulnerable to injection
 const label = getUserInput();
 execSync(`gh issue create --label ${label}`);
 ```
 
 **Safe code:**
 ```javascript
-// Safe - array args prevent injection
+/ Safe - array args prevent injection
 const label = getUserInput();
 spawnSync('gh', ['issue', 'create', '--label', label]);
 ```
@@ -280,13 +280,13 @@ Always validate label inputs:
 
 ```javascript
 function isValidLabel(label) {
-  // Check for problematic characters
+  / Check for problematic characters
   const hasProblematicChars = /[`$\\;]/.test(label);
   if (hasProblematicChars) {
     throw new Error(`Invalid characters in label: ${label}`);
   }
   
-  // Check length
+  / Check length
   if (label.length > 100) {
     throw new Error('Label too long');
   }

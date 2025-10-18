@@ -1,13 +1,13 @@
-# 14 April 2025 - Bank Account Change Letter
+# 2025-04-14 - Bank Account Change Letter
 
 ## Event Summary
-**Date:** April 14, 2025  
+**Date:** 2025-04-14  
 **Perpetrator:** Rynette Farrar  
 **Action:** Mass email to all clients instructing payment to different account  
 **Legal Significance:** Fraudulent redirection of funds, theft by conversion  
 
 ## Evidence Description
-On April 14, 2025, Rynette Farrar sent a mass communication to all clients of RegimA companies, instructing them to redirect their payments to a different bank account. This constitutes the first major event in the coordinated revenue hijacking scheme.
+On 2025-04-14, Rynette Farrar sent a mass communication to all clients of RegimA companies, instructing them to redirect their payments to a different bank account. This constitutes the first major event in the coordinated revenue hijacking scheme.
 
 ## Criminal Elements
 - **Fraudulent redirection of funds**
@@ -16,7 +16,7 @@ On April 14, 2025, Rynette Farrar sent a mass communication to all clients of Re
 - **Revenue stream hijacking preparation**
 
 ## Timeline Context
-- **37 days before** May 22, 2025 Shopify audit trail destruction
+- **37 days before** 2025-05-22 Shopify audit trail destruction
 - **Part of coordinated setup** for systematic business appropriation
 - **Following March 30** artificial urgency creation by Rynette
 
@@ -39,8 +39,8 @@ On April 14, 2025, Rynette Farrar sent a mass communication to all clients of Re
 **HIGH** - First documented act of systematic revenue diversion
 
 ## Related Events
-- **May 22, 2025:** Shopify audit trail destruction (cover-up)
-- **May 29, 2025:** Domain registration by son (identity fraud escalation)
+- **2025-05-22:** Shopify audit trail destruction (cover-up)
+- **2025-05-29:** Domain registration by son (identity fraud escalation)
 - **June-July 2025:** Business sabotage escalation
 
 ## Evidence Source Files

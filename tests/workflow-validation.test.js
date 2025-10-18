@@ -335,6 +335,36 @@ class WorkflowValidator {
     }
   }
 
+  // Test 9: Validate no actionable tasks handling
+  testNoActionableTasksHandling() {
+    console.log('\n🧪 Testing no actionable tasks scenario handling...');
+    
+    try {
+      const workflowContent = fs.readFileSync('.github/workflows/todo-to-issues.yml', 'utf8');
+      
+      // Test for no actionable tasks exit logic
+      this.assert(workflowContent.includes('if (output.summary.total_issues === 0)'), 'Has check for zero total issues');
+      this.assert(workflowContent.includes('No actionable tasks found'), 'Has no actionable tasks message');
+      this.assert(workflowContent.includes('process.exit(0)'), 'Exits gracefully when no actionable tasks found');
+      
+      // Test for diagnostic messages
+      this.assert(workflowContent.includes('Todo files don\\\'t contain recognizable task patterns'), 'Provides diagnostic message about task patterns');
+      this.assert(workflowContent.includes('Tasks don\\\'t meet quality filtering criteria'), 'Provides diagnostic message about quality filtering');
+      this.assert(workflowContent.includes('empty or contain only non-actionable content'), 'Provides diagnostic message about content');
+      
+      // Test for empty todo directory handling
+      this.assert(workflowContent.includes('if (todoFiles.length === 0)'), 'Handles empty todo directory');
+      this.assert(workflowContent.includes('No todo files found to process'), 'Has message for no todo files');
+      
+      // Test for empty files handling
+      this.assert(workflowContent.includes('if (!content || content.trim() === \'\')'), 'Handles empty todo files');
+      this.assert(workflowContent.includes('Skipping empty file'), 'Has message for empty files');
+      
+    } catch (error) {
+      this.assert(false, `Error testing no actionable tasks handling: ${error.message}`);
+    }
+  }
+
   // Run all tests
   runAllTests() {
     console.log('🚀 Starting workflow validation tests...');
@@ -348,6 +378,7 @@ class WorkflowValidator {
     this.testTodoFileStructure();
     this.testErrorHandling();
     this.testIssueCreationWithSampleData();
+    this.testNoActionableTasksHandling();
     
     console.log('\n' + '=' .repeat(60));
     console.log(`📊 Test Summary: ${this.testResults.length} tests run`);

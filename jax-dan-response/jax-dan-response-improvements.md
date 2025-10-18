@@ -883,7 +883,7 @@ Daniel's technical perspective provides:
 - [ ] **Bidirectional linking** between jax-response and jax-dan-response
 - [ ] **Evidence mapping matrix** complete and accurate
 - [ ] **Summary document** provides clear overview
-- [ ] **README files** updated in all directories
+- [ ] **README.md files** updated in all directories
 - [ ] **Consistent naming conventions** throughout
 - [ ] **No orphaned files** (all files referenced somewhere)
 

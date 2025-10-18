@@ -12,10 +12,10 @@
 - **Interdict filed:** August 2025
 - **Contradiction:** Urgency claim vs. 2-month wait
 
-### 2. The Eight-Day Gap
-- **Settlement signed:** [Date TBD]
-- **Interdict filed:** August 14, 2025
-- **Gap:** 8 days
+### 2. The Two-Day Gap
+- **Settlement signed:** 11 August 2025
+- **Interdict filed:** 13 August 2025
+- **Gap:** 2 days
 - **Conclusion:** Strategic litigation for settlement leverage
 
 ### 3. The Next-Day Crisis
@@ -31,8 +31,8 @@
 
 ### 5. The Perjury Timeline
 - **Bantjies learns of crimes:** June 10, 2025
-- **Bantjies false affidavit:** August 14, 2025
-- **Gap:** 65 days
+- **Bantjies false affidavit:** 13 August 2025
+- **Gap:** 64 days
 - **Conclusion:** Knowledge + false statement = perjury
 
 ---
@@ -49,7 +49,7 @@
 
 ### When Addressing Settlement Timing
 
-> "The interdict was filed just **8 days** after the settlement agreement was signed. This strategic timing demonstrates the interdict serves as a negotiating tool for settlement discussions, not genuine business protection. This is strategic litigation, not a legitimate response to alleged misconduct."
+> "The interdict was filed just **2 days** after the settlement agreement was signed. This strategic timing demonstrates the interdict serves as a negotiating tool for settlement discussions, not genuine business protection. This is strategic litigation, not a legitimate response to alleged misconduct."
 
 ### When Addressing Information Manipulation
 
@@ -57,7 +57,7 @@
 
 ### When Addressing Bantjies Perjury
 
-> "Mr. Bantjies learned of criminal matters on **June 10, 2025** (murder, fraud, theft). **65 days later**, on August 14, 2025, he provided a confirmatory affidavit in support of the Applicant's interdict. He failed to disclose the criminal matters to the Court. Knowledge of material facts + false affidavit = perjury under oath. Moreover, as trustee, his affidavit against beneficiary Daniel constitutes breach of fiduciary duty."
+> "Mr. Bantjies learned of criminal matters on **June 10, 2025** (murder, fraud, theft). **64 days later**, on 13 August 2025, he provided a confirmatory affidavit in support of the Applicant's interdict. He failed to disclose the criminal matters to the Court. Knowledge of material facts + false affidavit = perjury under oath. Moreover, as trustee, his affidavit against beneficiary Daniel constitutes breach of fiduciary duty."
 
 ### When Addressing Financial Motive
 
@@ -98,7 +98,7 @@
 
 ### Opening Statement
 1. Start with timeline overview
-2. Highlight the three critical gaps: 2 months, 8 days, 9 months
+2. Highlight the three critical gaps: 2 months, 2 days, 9 months
 3. Introduce "self-created crisis" concept
 4. Frame as strategic litigation, not emergency response
 
@@ -125,7 +125,7 @@
 **Response:** "If investigation was needed, why claim urgent need for immediate interdict? The delay proves there was no urgent threat requiring ex parte relief."
 
 ### "The settlement is irrelevant"
-**Response:** "Filing interdict 8 days after settlement is signed creates negotiating leverage. The timing correlation is probative of motive and demonstrates strategic litigation."
+**Response:** "Filing interdict 2 days after settlement is signed creates negotiating leverage. The timing correlation is probative of motive and demonstrates strategic litigation."
 
 ### "Peter acted in good faith"
 **Response:** "Good faith requires disclosure. Peter's affidavit contains multiple material non-disclosures: email control, self-created crisis, settlement timing, Bantjies' knowledge of crimes. These omissions negate any claim of good faith."
@@ -174,9 +174,9 @@
 | June 15-16, 2025 | Cards cancelled next day | Self-created crisis |
 | June 20, 2025 | First Sage screenshot | Rynette email control proved |
 | July 16, 2025 | R500K payment | Legitimate director loan |
-| ~August 6, 2025 | Settlement signed | Strategic timing begins |
-| August 14, 2025 | Interdict filed | 8 days after settlement |
-| August 19, 2025 | Interdict granted | Based on false information |
+| 11 August 2025 | Settlement signed | Strategic timing begins |
+| 13 August 2025 | Interdict filed | 2 days after settlement |
+| 19 August 2025 | Interdict granted | Based on false information |
 | August 25, 2025 | Second Sage screenshot | Ongoing email control |
 | August 29, 2025 | ENS acknowledges crimes | Suppression of material evidence |
 | ~May 2026 | Investment payout | 9-month financial target |
@@ -188,10 +188,10 @@
 Use these exact phrases in key sections:
 
 1. **"The very next day"** - for card cancellation timing
-2. **"Just 8 days"** - for settlement to interdict gap
+2. **"Just 2 days"** - for settlement to interdict gap
 3. **"Over 2 months"** - for delay before filing
 4. **"Approximately 9 months"** - for investment payout timing
-5. **"65 days later"** - for Bantjies knowledge to false affidavit
+5. **"64 days later"** - for Bantjies knowledge to false affidavit
 6. **"Manufacturing a pretext"** - for Peter's conduct characterization
 7. **"Strategic litigation for control"** - for case characterization
 8. **"Self-created crisis"** - for documentation problems

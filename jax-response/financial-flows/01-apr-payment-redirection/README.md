@@ -1,8 +1,8 @@
-# Systematic Payment Redirection Scheme - April 1, 2025
+# Systematic Payment Redirection Scheme - 2025-04-01
 
 ## Event Summary
 **Event:** Systematic Payment Redirection Scheme  
-**Date:** April 1, 2025  
+**Date:** 2025-04-01  
 **Time:** 07:30 - 16:45 SAST  
 **Location:** Multiple Banking Institutions  
 **Primary Perpetrator:** Rynette Farrar, Peter Faucitt (coordination)  

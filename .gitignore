@@ -63,3 +63,4 @@ build/
 # Auto-generated workflow scripts (temporary exclusion)
 file-converter.js
 ocr-file-converter.js.merge-marker
+__pycache__/

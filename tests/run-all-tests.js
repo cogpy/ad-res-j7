@@ -9,6 +9,7 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -21,6 +22,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      noActionableTasks: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -136,27 +138,48 @@ class TestRunner {
     return success;
   }
 
+  async runNoActionableTasksTests() {
+    console.log('\n📋 Running No Actionable Tasks Validation Tests...\n');
+    
+    const noActionableTasksTest = new NoActionableTasksValidator();
+    const success = noActionableTasksTest.runAllTests();
+    
+    this.results.noActionableTasks = {
+      success: success,
+      total: noActionableTasksTest.testResults.length,
+      passed: noActionableTasksTest.testResults.filter(t => t.passed).length,
+      failed: noActionableTasksTest.testResults.filter(t => !t.passed).length,
+      errors: noActionableTasksTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
-    this.results.overall.total_tests = this.results.validation.total + this.results.integration.total + this.results.api.total;
-    this.results.overall.passed_tests = this.results.validation.passed + this.results.integration.passed + this.results.api.passed;
-    this.results.overall.failed_tests = this.results.validation.failed + this.results.integration.failed + this.results.api.failed;
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
+                                       this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total;
+                                       this.results.endToEnd.total +
+                                       this.results.noActionableTasks.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
+                                        this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed;
+                                        this.results.endToEnd.passed +
+                                        this.results.noActionableTasks.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
+                                        this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed;
+                                        this.results.endToEnd.failed +
+                                        this.results.noActionableTasks.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -197,6 +220,12 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
+    
+    console.log('\n🚫 No Actionable Tasks Tests:');
+    console.log(`   ✅ Passed: ${this.results.noActionableTasks.passed}/${this.results.noActionableTasks.total}`);
+    console.log(`   ❌ Failed: ${this.results.noActionableTasks.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.noActionableTasks.passed / this.results.noActionableTasks.total) * 100)}%`);
+    console.log(`   🔍 Scenarios Tested: ${this.results.noActionableTasks.scenarios_tested}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -259,6 +288,14 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -279,7 +316,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'no-actionable-tasks']
       },
       summary: this.results.overall
     });
@@ -299,6 +336,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const noActionableTasksSuccess = await this.runNoActionableTasksTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -310,7 +348,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && noActionableTasksSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
