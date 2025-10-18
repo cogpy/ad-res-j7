@@ -140,18 +140,19 @@ class TestRunner {
     return success;
   }
 
-  async runMalformedMarkdownTests() {
-    console.log('\n📋 Running Malformed Markdown Tests...\n');
+  async runNoActionableTasksTests() {
+    console.log('\n📋 Running No Actionable Tasks Validation Tests...\n');
     
-    const malformedTest = new MalformedMarkdownTest();
-    const success = await malformedTest.run();
+    const noActionableTasksTest = new NoActionableTasksValidator();
+    const success = noActionableTasksTest.runAllTests();
     
-    this.results.malformedMarkdown = {
+    this.results.noActionableTasks = {
       success: success,
-      total: malformedTest.testResults.length,
-      passed: malformedTest.testResults.filter(t => t.passed).length,
-      failed: malformedTest.testResults.filter(t => !t.passed).length,
-      errors: malformedTest.errors
+      total: noActionableTasksTest.testResults.length,
+      passed: noActionableTasksTest.testResults.filter(t => t.passed).length,
+      failed: noActionableTasksTest.testResults.filter(t => !t.passed).length,
+      errors: noActionableTasksTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
     };
     
     return success;
@@ -245,10 +246,11 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
-    console.log('\n🔧 Malformed Markdown Tests:');
-    console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
-    console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    console.log('\n🚫 No Actionable Tasks Tests:');
+    console.log(`   ✅ Passed: ${this.results.noActionableTasks.passed}/${this.results.noActionableTasks.total}`);
+    console.log(`   ❌ Failed: ${this.results.noActionableTasks.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.noActionableTasks.passed / this.results.noActionableTasks.total) * 100)}%`);
+    console.log(`   🔍 Scenarios Tested: ${this.results.noActionableTasks.scenarios_tested}`);
     
     console.log('\n📋 Todo Validation Tests:');
     console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
@@ -318,9 +320,9 @@ class TestRunner {
         });
       }
       
-      if (this.results.malformedMarkdown.errors.length > 0) {
-        console.log('   Malformed Markdown Test Failures:');
-        this.results.malformedMarkdown.errors.forEach(error => {
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });

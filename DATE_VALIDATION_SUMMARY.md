@@ -53,7 +53,7 @@ Two minor warnings were identified:
 1. **File:** `jax-response/revenue-theft/29-may-domain-registration/REVENUE_HIJACKING_CRIMINAL_ANALYSIS.md`
    - **Issue:** Analysis document contains analysis date (October 12, 2025) but not the event date
    - **Resolution:** Event date (May 29, 2025) is correctly documented in the folder's README.md
-   - **Impact:** None - folder README contains the authoritative event date
+   - **Impact:** None - folder README.md contains the authoritative event date
 
 2. **File:** `jax-response/revenue-theft/29-may-domain-registration/REVENUE_HIJACKING_CRIMINAL_ANALYSIS.json`
    - **Issue:** Same as above
@@ -65,7 +65,7 @@ These warnings are acceptable because:
 - Each event folder contains a README.md with the canonical event date
 - Secondary analysis documents may reference different dates (e.g., analysis completion dates)
 - The folder naming convention (e.g., `29-may-domain-registration`) provides primary date reference
-- All event dates are properly documented in their respective README files
+- All event dates are properly documented in their respective README.md files
 
 ## Folder-to-Date Matching
 
@@ -162,7 +162,7 @@ This validation fulfills the requirement from `todo/Repository_Status_and_Critic
 1. **Ongoing Validation:** Run the validation script before major milestones (e.g., legal review, court submission)
 2. **Date Format Standard:** Continue using consistent date formats across all documents
 3. **Folder Naming:** Maintain the DD-MMM-event-name convention for event folders
-4. **README Requirements:** Ensure all event folders have README.md with canonical event date
+4. **README.md Requirements:** Ensure all event folders have README.md with canonical event date
 5. **Analysis Dating:** Clearly distinguish between event dates and analysis/completion dates
 
 ## Conclusion

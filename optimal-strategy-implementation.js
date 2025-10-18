@@ -128,6 +128,21 @@ class OptimalStrategyImplementation {
           'Sudden characterization shift',
           'Self-created crisis documentation'
         ]
+      },
+      burden_of_proof: {
+        name: 'Burden of Proof Analysis',
+        priority: 1,
+        impact: 'critical',
+        description: 'Optimal strategies for proving guilt across all legal standards',
+        paragraphs: 'comprehensive',
+        keyElements: [
+          'Civil standard: balance of probabilities (51%+)',
+          'Criminal standard: beyond reasonable doubt (95%+)',
+          'Mathematical standard: invariant conditions (100%)',
+          'Evidence requirements for each element',
+          'Strategic implementation phases',
+          'Success probability assessments'
+        ]
       }
     };
   }
@@ -258,6 +273,18 @@ class OptimalStrategyImplementation {
       impact: 'Prove Peter\'s systematic exclusion of directors',
       estimatedHours: 6,
       dependencies: ['STRAT-003']
+    });
+
+    strategies.push({
+      id: 'STRAT-011',
+      category: 'burden_of_proof',
+      name: 'Comprehensive Burden of Proof Analysis',
+      priority: 1,
+      status: 'completed',
+      file: 'jax-dan-response/burden_of_proof_analysis.md',
+      impact: 'Optimal strategies for proving guilt across civil, criminal, and mathematical standards',
+      estimatedHours: 16,
+      dependencies: ['STRAT-001', 'STRAT-002', 'STRAT-003', 'STRAT-006', 'STRAT-007']
     });
 
     return strategies;

@@ -519,7 +519,7 @@ mkdir -p lex/tests
 - Add integration tests
 
 ### Step 5: Documentation
-- Update README files
+- Update README.md files
 - Add usage examples
 - Create integration guides
 

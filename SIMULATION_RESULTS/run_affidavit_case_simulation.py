@@ -31,14 +31,6 @@ class LegalCaseSimulation:
                 "supports": "respondents",
                 "refutes": ["head_office_control", "no_independent_operations", "delusional_claim"]
             },
-            "JF11_medical_records": {
-                "type": "medical_documentary",
-                "source": "Medical professionals",
-                "weight": 0.90,
-                "credibility": 0.95,
-                "supports": "respondents",
-                "refutes": ["dementia_claim"]
-            },
             "JF9_timeline_evidence_destruction": {
                 "type": "chronological_analysis",
                 "date": "2025-05-22",
@@ -113,12 +105,6 @@ class LegalCaseSimulation:
                 "strength_without_rebuttal": 0.25,
                 "strength_with_rebuttal": 0.02
             },
-            "dementia_claim": {
-                "description": "Jacqui has dementia and testimony unreliable",
-                "evidence_against": ["JF11_medical_records"],
-                "strength_without_rebuttal": 0.20,
-                "strength_with_rebuttal": 0.01
-            },
             "financial_misconduct": {
                 "description": "Financial misconduct and misappropriation",
                 "evidence_against": ["JF4_bank_records", "JF3_financial_analysis", "JF10_director_loans"],
@@ -144,11 +130,6 @@ class LegalCaseSimulation:
                 "evidence_for": ["JF9_timeline_evidence_destruction"],
                 "strength": 0.80,
                 "criminal_significance": True
-            },
-            "gaslighting_exposed": {
-                "description": "Dementia and delusion claims are false gaslighting",
-                "evidence_for": ["JF11_medical_records", "JF1_shopify_email"],
-                "strength": 0.88
             },
             "good_faith_cooperation": {
                 "description": "Respondents attempted good faith cooperation",
@@ -371,8 +352,6 @@ class LegalCaseSimulation:
         print(f"JF1 (Shopify Email) Weight: {self.evidence['JF1_shopify_email']['weight']:.3f}")
         print(f"JF1 (Shopify Email) Credibility: {self.evidence['JF1_shopify_email']['credibility']:.3f}")
         print(f"JF1 (Shopify Email) Impact: IRREFUTABLE - Demolishes applicant's central claims")
-        print(f"\nJF11 (Medical Records) Weight: {self.evidence['JF11_medical_records']['weight']:.3f}")
-        print(f"JF11 (Medical Records) Impact: Refutes dementia gaslighting claim")
         print(f"\nJF9 (Evidence Destruction) Weight: {self.evidence['JF9_timeline_evidence_destruction']['weight']:.3f}")
         print(f"JF9 (Evidence Destruction) Impact: Demonstrates consciousness of guilt")
         
