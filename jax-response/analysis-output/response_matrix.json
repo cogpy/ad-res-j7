@@ -108,7 +108,7 @@
     "priority": "High",
     "topic": "Peter's Discovery and Timing",
     "draft_section": "Section 6",
-    "annexures": ["JF11", "JF11A-D"],
+    "annexures": ["JF9", "JF9A-E"],
     "cross_refs": [
       {
         "document": "Faucitt_Interdict_Analysis.md", 
@@ -124,7 +124,7 @@
     "evidence_trail": {
       "peters_claim": "Recent discovery of financial irregularities requiring urgent relief",
       "factual_rebuttal": "Strategic timing post-settlement, pre-payout with no genuine urgency",
-      "counter_evidence": ["JF11: Timeline documentation", "JF11A-D: Settlement timing analysis"],
+      "counter_evidence": ["JF9: Timeline documentation", "JF9A-E: Settlement timing analysis"],
       "strategic_implications": "Demonstrates lack of genuine urgency and strategic manipulation",
       "supporting_analysis": "REVISED_Answering_Affidavit_Jax_v5.md §8-8.3"
     }

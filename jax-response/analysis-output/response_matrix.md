@@ -16,7 +16,7 @@ This document provides a comprehensive matrix mapping each AD paragraph to draft
 | 7.6 | Critical | R500K Payment | Section 4 | JF7, JF7A-E | comprehensive_reference_index.json AD PARA 7.6 |
 | 3-3.10 | High | Jax's Role | **NEW SECTION** | JF9, JF9A-E | REVISED_Answering_Affidavit_Jax_v5.md §13B |
 | 7.12-7.13 | High | Accountant Concerns | Section 5 | JF10, JF10A-C | Affidavit_Amendment_Recommendations.md Amendment 2 |
-| 8-8.3 | High | Peter's Discovery | Section 6 | JF11, JF11A-D | Faucitt_Interdict_Analysis.md p.30-45 |
+| 8-8.3 | High | Peter's Discovery | Section 6 | JF9, JF9A-E | Faucitt_Interdict_Analysis.md p.30-45 |
 
 ---
 
@@ -106,7 +106,7 @@ This document provides a comprehensive matrix mapping each AD paragraph to draft
 - **Priority:** High
 - **Topic:** Peter's "Discovery" and Timing Claims
 - **Draft Section:** Section 6
-- **Supporting Annexures:** JF11 (Timeline documentation), JF11A-D (Settlement timing analysis)
+- **Supporting Annexures:** JF9 (Timeline documentation), JF9A-E (Settlement timing analysis)
 
 **Cross-References:**
 - `Faucitt_Interdict_Analysis.md` p.30-45: Timing analysis and urgency assessment
