@@ -107,50 +107,16 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Affidavit References:** Line 473, Lines 493, Section 7.8.6
 - **Status:** ⚠️ **Template** - Requires actual bank records
 
-### Settlement Agreement Evidence
+### UK Tax Residency Documentation
 
-#### JF5-COMPARISON: Settlement Agreement Draft vs Final Comparison
-- **File:** `JF5_COMPARISON_DRAFT_VS_FINAL.md`
-- **Purpose:** Comprehensive comparison document highlighting all material changes made between JF5 draft and final versions
-- **Priority:** CRITICAL
-- **Affidavit References:** Paragraph 48 (sub-paragraphs 48.1-48.10), Updated Paragraph 48
-- **Status:** ✅ **Complete** - Framework document ready; requires actual JF5 draft and final agreements to verify
-- **Key Evidence Points:**
-  - Documents the "Has anything changed?" dialogue and attorney misrepresentation
-  - Identifies 4 categories of material changes (control, oversight, scope, jurisdictional)
-  - Establishes fraud in the inducement grounds
-  - Connects to strategic litigation pattern (2 days between settlement and interdict)
-  - Cross-references Daniel's witness statement (JF-DAN-WITNESS)
-### Witness Statements
-
-#### JF-WS1: Daniel's Witness Statement - "Has Anything Changed?" Exchange
-- **File:** `JF-WS1_DANIEL_WITNESS_STATEMENT_HAS_ANYTHING_CHANGED.md`
-- **Purpose:** Direct witness testimony documenting the fraudulent "Has anything changed?" - "No, just details for attorneys" exchange
-- **Priority:** CRITICAL
-- **Affidavit References:** Paragraph 48.5, Section on Fraud in the Inducement
-- **Status:** ⚠️ **Template** - Requires completion of personal details and Commissioner of Oaths attestation
-### Settlement Agreement Documentation
-
-#### JF5-DRAFT: Settlement Agreement Draft Version
-- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md`
-- **Purpose:** Initial draft version of settlement agreement reviewed before final signing, establishing baseline for comparison
-- **Priority:** CRITICAL
-- **Affidavit References:** Section 13B (Manufactured Crisis), Urgency Challenge sections
-- **Status:** ⚠️ **Template** - Requires actual draft settlement agreement document
-
-#### JF5-FINAL: Settlement Agreement Final Signed Version
-- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md`
-- **Purpose:** Final signed settlement agreement executed approximately 8 days before interdict filing, demonstrating strategic timing
-- **Priority:** CRITICAL
-- **Affidavit References:** Section 13B, Strategic Timing sections, Urgency Challenge
-- **Status:** ⚠️ **Template** - Requires actual signed settlement agreement document
-
-#### JF5-COMPARISON: Settlement Agreement Changes Analysis
-- **File:** `JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md`
-- **Purpose:** Comprehensive comparison document highlighting all changes between draft and final versions, revealing negotiation priorities
-- **Priority:** CRITICAL
-- **Affidavit References:** Section 13B, "Has Anything Changed?" analysis, Strategic Timing sections
-- **Status:** ⚠️ **Template** - Requires completion after obtaining both draft and final versions
+#### JF-UKTAX1: Tax Residency Documentation
+- **File:** `JF-UKTAX1_UK_TAX_RESIDENCY_DOCUMENTATION.md`
+- **Purpose:** Tax residency documentation for British citizens (Peter, Jacqui, Daniel) with South African tax residency, supporting cross-border business operations and UK business management
+- **Priority:** CRITICAL 
+- **Affidavit References:** Paragraph 129 (UK operations section)
+- **Status:** ⚠️ **Template** - Requires actual SA tax documentation
+- **Added:** 2025-10-16
+- **Updated:** 2025-10-17 (Corrected focus to SA tax residency)
 
 ---
 

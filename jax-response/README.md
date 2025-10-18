@@ -203,8 +203,8 @@ Peter failed to disclose in his ex parte application:
 ☐ JF5 final agreement (signed version with changes) - **Template created**: `evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
 ☐ Comparison document highlighting all changes - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
-☐ UK tax residency documentation
-☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
+☐ UK tax residency documentation - **JF-UKTAX1** ✅ Template Created (Corrected: SA tax residency for British citizens)
+☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
 
 ### High Priority:

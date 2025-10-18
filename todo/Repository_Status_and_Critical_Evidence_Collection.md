@@ -28,8 +28,8 @@ The repository has grown significantly:
 7. Secure JF5 final agreement signed version with changes - **Template created**: `evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md` - Requires actual signed document
 8. Create comparison document highlighting all changes between JF5 draft and final - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md` - Requires completion after obtaining both agreements
 9. Obtain Daniel's witness statement regarding "Has anything changed?" exchange
-10. Gather UK tax residency documentation
-11. ✅ **COMPLETED** - Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
+10. Gather UK tax residency documentation ✅ **Structure Created (JF-UKTAX1)**
+11. Collect Chesno fraud documentation (JF-CHESNO1 through JF-CHESNO4)
 12. Document Daniel's 8-year restoration evidence (JF-RESTORE1 through JF-RESTORE4)
 
 ### Should-Do (Phase 2) - High Priority Evidence
