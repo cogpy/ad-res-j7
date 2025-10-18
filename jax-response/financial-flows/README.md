@@ -137,25 +137,43 @@ The documented R4.276M+ financial diversions support:
 
 ### Financial Crime Violations
 
-#### **Theft by Conversion**
+#### 1. **Theft by Conversion**
 - **Common Law Crime**: Systematic misappropriation of legitimate financial assets
   - **Elements**: Appropriation, movable property, belonging to another, intention to deprive, unlawfulness
   - **Penalty**: Up to 15 years imprisonment (for theft over R500,000)
+- **Criminal Law Amendment Act 1 of 1988**
+  - **Enhanced penalties**: For theft involving large amounts (over R4.2M documented)
 
-#### **Fraud**
+#### 2. **Fraud**
 - **Common Law Crime**: Intentional misrepresentation of financial authority and purposes
   - **Elements**: Misrepresentation, unlawfulness, intention, prejudice (actual/potential)
   - **Penalty**: Up to 15 years imprisonment
+- **Prevention and Combating of Corrupt Activities Act 12 of 2004**
+  - **Section 4**: Corrupt activities relating to financial misconduct
+  - **Penalty**: Up to 18 years imprisonment
 
-#### **Money Laundering**
+#### 3. **Money Laundering**
 - **Prevention of Organised Crime Act (POCA) 121 of 1998**
   - **Section 4**: Money laundering offense - Complex transaction structuring to conceal criminal proceeds
   - **Section 6**: Acquisition, possession or use of proceeds of unlawful activities
+  - **Section 7**: Failure to report suspicious transactions
   - **Penalty**: Up to 30 years imprisonment
+- **Financial Intelligence Centre Act 38 of 2001**
+  - **Section 24**: Suspicious transaction reporting requirements
+  - **Section 25**: Record keeping requirements
+  - **Section 28**: Penalties for non-compliance (Up to R10 million fine)
+
+#### 4. **Criminal Conspiracy** (Financial Crime Network)
+- **Common Law Crime**: Coordinated financial fraud involving multiple parties
+  - **Elements**: Agreement between parties, unlawful objective, intention
+  - **Penalty**: Same as substantive offense (up to 30 years for associated crimes)
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 18**: Conspiracy to commit any offense
+  - **Penalty**: Same punishment as if the offense had been committed
 
 #### **Banking Law Violations**
 
-#### **Unauthorized Access**
+#### 1. **Unauthorized Access**
 - **Electronic Communications and Transactions Act (ECTA) 25 of 2002**
   - **Section 86(1)**: Unauthorized access to banking systems and financial data
   - **Section 86(2)**: Unauthorized modification or impairment of financial data
@@ -173,26 +191,44 @@ The documented R4.276M+ financial diversions support:
   - **Penalty**: Up to R10 million fine or 15 years imprisonment
 
 #### **Fiduciary Duty Breach**
+  - **Penalty**: Up to 12 months imprisonment or R1 million fine (ECTA)
+- **Banks Act 94 of 1990**
+  - **Section 78**: Conducting unauthorized banking business
+  - **Section 91**: False information to registrar
+  - **Penalty**: Banking regulatory penalties plus criminal charges
+
+#### 2. **Fiduciary Duty Breach**
 - **Companies Act 71 of 2008**
   - **Section 76**: Director duties - Misuse of financial authority and signatory privileges
+  - **Section 77**: Standards of directors' conduct
+  - **Section 218**: Fraudulent conduct of business
 - **Common Law**: Breach of fiduciary duty
   - **Penalty**: Personal liability, disqualification, criminal charges
 
-#### **Financial Institution Fraud**
+#### 3. **Financial Institution Fraud**
 - **Common Law Fraud**: Deception of banking institutions regarding transaction purposes
   - **Elements**: Misrepresentation to financial institutions, unlawfulness, intention, prejudice
   - **Penalty**: Up to 15 years imprisonment
+- **Banks Act 94 of 1990**
+  - **Section 82**: False statements to banks
+  - **Penalty**: Up to 10 years imprisonment
 
 ### Commercial Law Breaches
 
-#### **Breach of Contract**
+#### 1. **Breach of Contract**
 - **Common Law**: Violation of business agreements and financial obligations
+  - **Elements**: Valid contract, breach, causation, damages
   - **Remedies**: Damages, specific performance, criminal charges for fraudulent breach
+- **Consumer Protection Act 68 of 2008**
+  - **Section 40**: False, misleading or deceptive representations
+  - **Section 41**: Unconscionable conduct
 
-#### **Corporate Fraud**
+#### 2. **Corporate Fraud**
 - **Companies Act 71 of 2008**
   - **Section 214**: Financial record keeping requirements - Misuse of corporate financial resources
   - **Section 76**: Director duties violations
+  - **Section 218**: Fraudulent conduct of business
+  - **Section 424**: Reckless or fraudulent trading
 - **Common Law Fraud**: Misuse of corporate authority
   - **Penalty**: Personal liability, disqualification, up to 15 years imprisonment
 
@@ -215,6 +251,37 @@ The documented R4.276M+ financial diversions support:
   - **Section 37**: Arrest without warrant for ongoing financial crimes
   - **Section 205**: Subpoena for banking and financial records
   - **Section 252A**: Forfeiture of instrumentalities of crime
+#### 3. **Shareholder Rights Violations**
+- **Companies Act 71 of 2008**
+  - **Section 76**: Director duties - Unauthorized use of company financial assets
+  - **Section 218**: Fraudulent conduct of business
+  - **Section 22**: Fundamental transactions requiring approval
+- **Securities Services Act 36 of 2004**
+  - **Section 78**: Market manipulation through unauthorized asset use
+  - **Section 79**: Insider trading and related activities
+  - **Penalty**: Personal liability, disqualification, criminal charges
+
+#### 4. **Tax Fraud** (Financial Flows)
+- **Tax Administration Act 28 of 2011**
+  - **Section 234**: Tax offenses - Willful attempt to evade tax through financial manipulation
+  - **Section 235**: Additional tax offenses including income diversion
+  - **Penalty**: Up to R800,000 fine or 5 years imprisonment
+- **Income Tax Act 58 of 1962**
+  - **Section 104**: False statements and returns
+  - **Section 9C**: Transfer pricing provisions for financial flows
+  - **Penalty**: 200% of tax evaded plus criminal charges
+
+#### 5. **Perjury** (Financial Court Statements)
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 319**: Perjury and false statements under oath
+  - **Elements**: False statement, material financial fact, under oath, willful intent
+  - **Penalty**: Up to 15 years imprisonment
+
+#### 6. **Obstruction of Justice** (Financial Evidence)
+- **Criminal Procedure Act 51 of 1977**
+  - **Section 39**: Defeating or obstructing the course of justice
+  - **Elements**: Act calculated to defeat/obstruct justice, willful intent
+  - **Penalty**: Up to 15 years imprisonment
 
 ## Chain of Custody Documentation
 

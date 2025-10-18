@@ -56,11 +56,11 @@ const fs = require('fs');
 const path = require('path');
 const { glob } = require('glob');
 
-// Validation functions
+/ Validation functions
 function validateWorkflowStructure(workflow, filePath) {
     const errors = [];
     
-    // Check required fields
+    / Check required fields
     if (!workflow.name) {
         errors.push(`Missing 'name' field in ${filePath}`);
     }
@@ -76,7 +76,7 @@ function validateWorkflowStructure(workflow, filePath) {
     return errors;
 }
 
-// Main test runner
+/ Main test runner
 async function runTests() {
     console.log('🔍 Validating GitHub Actions workflows...\n');
     
@@ -85,7 +85,7 @@ async function runTests() {
     
     for (const file of workflowFiles) {
         const content = fs.readFileSync(file, 'utf8');
-        // Basic YAML parsing (you might want to use a proper YAML parser)
+        / Basic YAML parsing (you might want to use a proper YAML parser)
         const errors = validateWorkflowStructure({}, file);
         
         if (errors.length > 0) {
@@ -101,7 +101,7 @@ async function runTests() {
     return totalErrors === 0;
 }
 
-// Run tests
+/ Run tests
 runTests().then(success => {
     process.exit(success ? 0 : 1);
 });

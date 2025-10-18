@@ -122,19 +122,19 @@ Successfully integrated 21 key timeline events into the AD and Financial hypergr
 The integration enables new queries:
 
 ```javascript
-// Find all events orchestrated by Peter
+/ Find all events orchestrated by Peter
 const peterEvents = hg.queryBySource('peter-faucitt')
   .filter(r => r.relation === 'orchestrated');
 
-// Find critical timeline events
+/ Find critical timeline events
 const criticalEvents = hg.queryEntitiesByType('Event')
   .filter(e => e.severity === 'Critical');
 
-// Find events with financial impact
+/ Find events with financial impact
 const financialEvents = hg.queryEntitiesByType('Event')
   .filter(e => e.financialImpact || e.monthlyServiceCost);
 
-// Trace causal chains
+/ Trace causal chains
 const causalChain = hg.queryByRelation('caused')
   .map(r => ({from: r.source, to: r.target}));
 ```

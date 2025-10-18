@@ -139,8 +139,8 @@ To make this document court-ready, the following data must be inserted:
 
 ### Repository Integration:
 ✅ New directory created: `evidence/director_loan_accounts/`  
-✅ Main evidence README updated  
-✅ Directory README created with full context  
+✅ Main evidence README.md updated  
+✅ Directory README.md created with full context  
 ✅ Git commit completed  
 ✅ Changes pushed to branch  
 

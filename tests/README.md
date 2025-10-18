@@ -186,7 +186,7 @@ Add new test methods to `WorkflowValidator` class in `workflow-validation.test.j
 testNewFeature() {
   console.log('\n🧪 Testing new feature...');
   
-  // Your test logic here
+  / Your test logic here
   this.assert(condition, 'Test description');
 }
 ```
@@ -198,7 +198,7 @@ Add new test methods to `WorkflowIntegrationTest` class in `integration-test.js`
 testNewIntegration() {
   console.log('\n🧪 Testing new integration...');
   
-  // Your integration test logic here
+  / Your integration test logic here
   this.assert(condition, 'Integration test description');  
 }
 ```
