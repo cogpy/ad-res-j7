@@ -353,11 +353,11 @@ node optimal-strategy-implementation.js
 const OptimalStrategyImplementation = require('./optimal-strategy-implementation.js');
 const strategy = new OptimalStrategyImplementation();
 
-// Get status report
+/ Get status report
 const report = strategy.generateStatusReport();
 console.log(`Strategy Completion: ${report.summary.completionRate}`);
 
-// Get integrated status with evidence collector
+/ Get integrated status with evidence collector
 const integration = strategy.integrateWithEvidenceCollector();
 console.log(`Evidence: ${integration.integrated_status.evidence.completion_rate}`);
 console.log(`Strategy: ${integration.integrated_status.strategy.completion_rate}`);

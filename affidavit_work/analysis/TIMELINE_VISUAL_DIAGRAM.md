@@ -136,9 +136,9 @@ graph TB
     
     subgraph "Phase 3: Strategic Timing (July-August)"
         C1[July 16: R500K Payment]
-        C2[August 6: Settlement Agreement]
-        C3[August 14: Interdict Filed]
-        C4[8 Days Gap]
+        C2[August 11: Settlement Agreement]
+        C3[August 13: Interdict Filed]
+        C4[2 Days Gap]
         C1 --> C2
         C2 --> C4
         C4 --> C3
@@ -146,7 +146,7 @@ graph TB
     
     subgraph "Phase 4: Perjury & Concealment (August)"
         D1[June 10: Bantjies Knows Crimes]
-        D2[August 14: Bantjies False Affidavit]
+        D2[August 13: Bantjies False Affidavit]
         D3[August 19: Interdict Granted]
         D4[August 29: ENS Acknowledges]
         D1 -.->|Knowledge Suppressed| D2
@@ -197,7 +197,7 @@ sequenceDiagram
     Peter->>Peter: Uses chaos to justify interdict
     
     Note over Peter: 2 months later...
-    Peter->>Court: Files urgent interdict (August 14)
+    Peter->>Court: Files urgent interdict (August 13)
     Note over Court: Based on self-created crisis
 ```
 
@@ -266,11 +266,11 @@ timeline
                      : Inconsistent with urgency
     
     section August 2025
-        Settlement Agreement : Signed August 6
+        Settlement Agreement : Signed August 11
         
-        8 DAYS GAP : Strategic coordination period
+        2 DAYS GAP : Strategic coordination period
         
-        Interdict Filed : August 14
+        Interdict Filed : August 13
                        : Creates leverage
         
         Interdict Granted : August 19
@@ -374,7 +374,7 @@ mindmap
   root((Strategic<br/>Litigation))
     Timing Issues
       2 month delay
-      8 days to settlement
+      2 days to settlement
       9 months to payout
       Next day card cancellation
     Self-Created Crisis
