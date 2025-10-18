@@ -159,11 +159,11 @@ DJF.md has been cross-checked against:
 
 ✅ **Link Tuples:**
 ```javascript
-// Peter alleges against Jax and Daniel
+/ Peter alleges against Jax and Daniel
 hg.addLinkTuple('ad-para-7_2-7_5', 'alleges-against', 'jacqueline-faucitt', {...})
 hg.addLinkTuple('ad-para-7_2-7_5', 'alleges-against', 'daniel-faucitt', {...})
 
-// Evidence refutes Peter's claims
+/ Evidence refutes Peter's claims
 hg.addLinkTuple('ad-para-7_2-7_5', 'refuted-by', 'evidence-it-expenses-breakdown', {...})
 hg.addLinkTuple('ad-para-7_2-7_5', 'supported-by', 'evidence-jf8a', {...})
 ```

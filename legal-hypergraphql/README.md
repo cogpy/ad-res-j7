@@ -40,10 +40,10 @@ A comprehensive hypergraph-based system for planning, generating, and evaluating
 ```javascript
 const LegalDocumentSystem = require('./legal-hypergraphql');
 
-// Initialize the system
+/ Initialize the system
 const system = new LegalDocumentSystem();
 
-// Define case requirements
+/ Define case requirements
 const requirements = {
   documentType: 'answering-affidavit',
   purpose: 'Respond to urgent application',
@@ -59,13 +59,13 @@ const requirements = {
   strategy: 'defensive'
 };
 
-// Generate plan
+/ Generate plan
 const plan = await system.generateAffidavitPlan(requirements);
 
-// Generate affidavit from plan
+/ Generate affidavit from plan
 const affidavit = await system.generateAffidavitFromPlan(plan.id, content);
 
-// Evaluate the affidavit
+/ Evaluate the affidavit
 const evaluation = await system.evaluateAffidavit(affidavit.id);
 
 console.log(`Score: ${evaluation.overallScore}/100`);

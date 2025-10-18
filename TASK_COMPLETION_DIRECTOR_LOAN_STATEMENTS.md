@@ -51,7 +51,7 @@ Created comprehensive completion report documenting the templates:
 - File inventory and status summary
 
 ### 3. Updated Repository Documentation
-Updated multiple README files to reflect completion status:
+Updated multiple README.md files to reflect completion status:
 
 **Updated Files:**
 - `evidence/director_loan_accounts/README.md`
@@ -208,7 +208,7 @@ evidence/annexures/
 ### Repository Consistency:
 - ✅ File naming conventions followed (JF-DLA1, JF-DLA2, JF-DLA3)
 - ✅ Directory structure maintained properly
-- ✅ README files updated consistently
+- ✅ README.md files updated consistently
 - ✅ Cross-references between documents verified
 - ✅ Status indicators updated appropriately
 - ✅ No temporary or build files committed
@@ -218,7 +218,7 @@ evidence/annexures/
 - ✅ Only added documentation and status updates
 - ✅ No changes to unrelated files
 - ✅ Focused on documenting completion status
-- ✅ Updates limited to README files and completion report
+- ✅ Updates limited to README.md files and completion report
 
 ---
 
@@ -231,7 +231,7 @@ evidence/annexures/
    - Created comprehensive DLA_TEMPLATES_COMPLETION_REPORT.md
    - 421 lines documenting all three templates
 
-3. **Update READMEs with director loan account template completion status** (6d23251)
+3. **Update README.mds with director loan account template completion status** (6d23251)
    - Updated evidence/director_loan_accounts/README.md
    - Updated evidence/annexures/README.md
    - Reflected template completion status
