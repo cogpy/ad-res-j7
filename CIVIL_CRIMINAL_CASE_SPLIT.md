@@ -639,7 +639,7 @@ ad-res-j7/
 - Create request templates
 - Add timeline notes
 
-**Action 4: Update Repository README**
+**Action 4: Update Repository README.md**
 - Explain new structure
 - Clarify civil vs. criminal split
 - Provide quick navigation guide

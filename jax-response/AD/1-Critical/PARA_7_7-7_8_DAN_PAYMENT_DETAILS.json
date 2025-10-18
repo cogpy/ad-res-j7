@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-7_7-7_8-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 1,
+  "topic": "R500K Payment Details",
+  "claim": "Peter alleges irregularities and lack of proper authorization for the R500K payment.",
+  "responseStatus": "complete",
+  "evidenceRequired": [
+    "System Logs", "Workflow Documentation", "Access Control Policies"
+  ],
+  "crossReferences": [
+    "jax-dan-response/AD/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md"
+  ],
+  "danPerspective": "Provide a technical explanation of the payment processing systems, authorization workflows, and system logs to demonstrate that the payment followed established and verifiable procedures."
+}

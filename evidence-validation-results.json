@@ -1,0 +1,318 @@
+{
+  "workflow_name": "Evidence Validation Workflow",
+  "version": "1.0",
+  "executed": "2025-10-16T04:26:45.100Z",
+  "validation_results": {
+    "passed": [
+      {
+        "code": "JF-RP1",
+        "type": "regulatory",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-RP1_RESPONSIBLE_PERSON_DOCUMENTATION.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-RP1_RESPONSIBLE_PERSON_DOCUMENTATION.md": {
+            "file": "evidence/annexures/JF-RP1_RESPONSIBLE_PERSON_DOCUMENTATION.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 6603,
+              "content_length": 6599,
+              "content_matches": 3
+            }
+          }
+        },
+        "quality_score": 100
+      },
+      {
+        "code": "JF-DLA1",
+        "type": "financial",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-DLA1_PETER_DIRECTOR_LOAN_ACCOUNT.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-DLA1_PETER_DIRECTOR_LOAN_ACCOUNT.md": {
+            "file": "evidence/annexures/JF-DLA1_PETER_DIRECTOR_LOAN_ACCOUNT.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 9666,
+              "content_length": 9662,
+              "content_matches": 3
+            }
+          }
+        },
+        "quality_score": 100
+      },
+      {
+        "code": "JF-DLA2",
+        "type": "financial",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md": {
+            "file": "evidence/annexures/JF-DLA2_JAX_DIRECTOR_LOAN_ACCOUNT.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 10898,
+              "content_length": 10892,
+              "content_matches": 3
+            }
+          }
+        },
+        "quality_score": 100
+      },
+      {
+        "code": "JF-DLA3",
+        "type": "financial",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md": {
+            "file": "evidence/annexures/JF-DLA3_DANIEL_DIRECTOR_LOAN_ACCOUNT.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 12302,
+              "content_length": 12286,
+              "content_matches": 3
+            }
+          }
+        },
+        "quality_score": 100
+      },
+      {
+        "code": "JF-PA1",
+        "type": "transaction",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-PA1_PETER_WITHDRAWAL_EXAMPLE_1.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-PA1_PETER_WITHDRAWAL_EXAMPLE_1.md": {
+            "file": "evidence/annexures/JF-PA1_PETER_WITHDRAWAL_EXAMPLE_1.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 10764,
+              "content_length": 10742,
+              "content_matches": 4
+            }
+          }
+        },
+        "quality_score": 100
+      },
+      {
+        "code": "JF-BS1",
+        "type": "financial",
+        "passed": true,
+        "reason": "1/1 files valid",
+        "files_found": [
+          "evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md"
+        ],
+        "content_validation": {
+          "evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md": {
+            "file": "evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md",
+            "passed": true,
+            "quality_score": 100,
+            "checks": {
+              "file_exists": true,
+              "file_size_adequate": true,
+              "content_present": true,
+              "metadata_complete": false
+            },
+            "details": {
+              "file_size": 11786,
+              "content_length": 11774,
+              "content_matches": 3
+            }
+          }
+        },
+        "quality_score": 100
+      }
+    ],
+    "failed": [
+      {
+        "code": "JF5-DRAFT",
+        "type": "legal",
+        "passed": false,
+        "reason": "No evidence files found",
+        "files_found": [],
+        "content_validation": {},
+        "quality_score": 0
+      }
+    ],
+    "warnings": [],
+    "completeness": {
+      "overall_completion": 0.622,
+      "required_overall": 0.7,
+      "meets_overall_requirement": false,
+      "phase1_critical": {
+        "completed": 23,
+        "total": 37,
+        "rate": 0.622,
+        "required": 0.8,
+        "meets_requirement": false
+      },
+      "gaps_analysis": {
+        "critical_gaps": 19,
+        "quick_wins": 5,
+        "estimated_days_to_compliance": 2
+      }
+    },
+    "quality": {
+      "average_quality_score": 100,
+      "quality_threshold": 75,
+      "meets_quality_requirement": true,
+      "high_quality_items": 6,
+      "low_quality_items": 0
+    },
+    "todo_cross_reference": {
+      "completed_todo_items": 2,
+      "total_todo_items": 82,
+      "todo_completion_rate": "2.4%",
+      "alignment_with_evidence": {
+        "evidence_codes_in_todo": 8,
+        "total_evidence_codes": 10,
+        "alignment_rate": "80.0%"
+      }
+    }
+  },
+  "report": {
+    "validation_summary": {
+      "timestamp": "2025-10-16T04:26:45.100Z",
+      "total_validations": 7,
+      "passed_validations": 6,
+      "failed_validations": 1,
+      "success_rate": "85.7%"
+    },
+    "completeness_analysis": {
+      "overall_completion": 0.622,
+      "required_overall": 0.7,
+      "meets_overall_requirement": false,
+      "phase1_critical": {
+        "completed": 23,
+        "total": 37,
+        "rate": 0.622,
+        "required": 0.8,
+        "meets_requirement": false
+      },
+      "gaps_analysis": {
+        "critical_gaps": 19,
+        "quick_wins": 5,
+        "estimated_days_to_compliance": 2
+      }
+    },
+    "quality_analysis": {
+      "average_quality_score": 100,
+      "quality_threshold": 75,
+      "meets_quality_requirement": true,
+      "high_quality_items": 6,
+      "low_quality_items": 0
+    },
+    "todo_alignment": {
+      "completed_todo_items": 2,
+      "total_todo_items": 82,
+      "todo_completion_rate": "2.4%",
+      "alignment_with_evidence": {
+        "evidence_codes_in_todo": 8,
+        "total_evidence_codes": 10,
+        "alignment_rate": "80.0%"
+      }
+    },
+    "failed_items": [
+      {
+        "code": "JF5-DRAFT",
+        "type": "legal",
+        "reason": "No evidence files found",
+        "priority": "HIGH"
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "COMPLETENESS",
+        "priority": "HIGH",
+        "action": "Increase evidence completion from 62.2% to 70.0%",
+        "estimated_effort": "2 days"
+      },
+      {
+        "type": "MISSING_EVIDENCE",
+        "priority": "HIGH",
+        "code": "JF5-DRAFT",
+        "action": "Collect missing evidence: JF5-DRAFT",
+        "reason": "No evidence files found"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "QUICK_WIN",
+      "priority": "HIGH",
+      "code": "JF-PA1",
+      "description": "Peter's withdrawal example 1",
+      "estimated_hours": 2,
+      "automation_potential": "HIGH",
+      "suggested_approach": "Extract from existing financial records or bank statements"
+    },
+    {
+      "type": "QUICK_WIN",
+      "priority": "HIGH",
+      "code": "JF-PA2",
+      "description": "Peter's withdrawal example 2",
+      "estimated_hours": 2,
+      "automation_potential": "HIGH",
+      "suggested_approach": "Extract from existing financial records or bank statements"
+    },
+    {
+      "type": "QUICK_WIN",
+      "priority": "HIGH",
+      "code": "JF-PA3",
+      "description": "Peter's withdrawal example 3",
+      "estimated_hours": 2,
+      "automation_potential": "HIGH",
+      "suggested_approach": "Extract from existing financial records or bank statements"
+    }
+  ]
+}
