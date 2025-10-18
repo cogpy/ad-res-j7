@@ -126,38 +126,38 @@ Added 6 new relationship types to link AD paragraphs with existing case entities
 
 ### 1. Priority-Based Analysis
 ```javascript
-// Get all critical allegations
+/ Get all critical allegations
 const critical = hg.queryEntitiesByType('ADParagraph')
   .filter(p => p.priority === 1);
-// Returns: 5 critical paragraphs
+/ Returns: 5 critical paragraphs
 ```
 
 ### 2. Evidence Mapping
 ```javascript
-// Find evidence for IT expense claims
+/ Find evidence for IT expense claims
 const evidence = findSupportingEvidence('ad-para-7_2-7_5');
-// Returns: JF8A Documentation Log
+/ Returns: JF8A Documentation Log
 ```
 
 ### 3. Allegation Tracking
 ```javascript
-// Find all allegations against Jax
+/ Find all allegations against Jax
 const allegations = findCriticalAllegations('jacqueline-faucitt');
-// Returns: 3 critical allegations with details
+/ Returns: 3 critical allegations with details
 ```
 
 ### 4. Section Navigation
 ```javascript
-// Get section structure
+/ Get section structure
 const sections = getSectionStructure();
-// Returns: 9 sections with contained paragraphs
+/ Returns: 9 sections with contained paragraphs
 ```
 
 ### 5. Financial Analysis
 ```javascript
-// Find financial allegations with amounts
+/ Find financial allegations with amounts
 const financial = findFinancialAllegations();
-// Returns: R500K payment allegation
+/ Returns: R500K payment allegation
 ```
 
 ## Use Cases Enabled

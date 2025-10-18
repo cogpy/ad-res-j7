@@ -6,6 +6,7 @@
  */
 
 const HypergraphQL = require('./hypergraphql');
+const { addTimelineEvents } = require('./timeline-events-integration');
 
 /**
  * Build Case 2025-137857 Hypergraph
@@ -1079,6 +1080,11 @@ function buildCase2025137857Hypergraph() {
     priorityLevel: 1,
     category: 'critical-financial-allegations'
   });
+
+  // Add Timeline Events Integration
+  // These events demonstrate the strategic coordination and bad faith
+  const timelineResult = addTimelineEvents(hg);
+  console.log(`Added ${timelineResult.eventsAdded} timeline events with ${timelineResult.relationshipsAdded} relationships`);
 
   return hg;
 }

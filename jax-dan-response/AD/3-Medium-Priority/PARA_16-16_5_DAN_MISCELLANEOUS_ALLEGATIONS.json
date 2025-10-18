@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-16-16_5-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Miscellaneous Allegations",
+  "claim": "Peter makes a number of miscellaneous allegations.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Logs", "Technical Documentation", "Expert Analysis"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_16-16_5.md"
+  ],
+  "danPerspective": "From a technical perspective, address any of the miscellaneous allegations that can be verified or refuted with technical evidence."
+}

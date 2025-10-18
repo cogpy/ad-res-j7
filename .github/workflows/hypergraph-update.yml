@@ -1,0 +1,22 @@
+name: Update Hypergraph
+
+on:
+  push:
+    paths:
+      - 'evidence/**'
+      - 'jax-response/**'
+
+jobs:
+  update-hypergraph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: node scripts/rebuild-hypergraph.js
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: update hypergraph data"
+          file_pattern: "docs/models/hypergnn/*.json"

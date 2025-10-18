@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-12_2-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Investigation Claims",
+  "claim": "Peter makes claims about his 'investigation' into the company's finances.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Access Logs", "Data Dictionaries", "Expert Reports"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_12_2.md"
+  ],
+  "danPerspective": "From a technical perspective, explain the limitations and inaccuracies of Peter's 'investigation.'"
+}

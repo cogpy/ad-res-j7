@@ -137,6 +137,36 @@
 
 ## Key Dates to Memorize
 
+### Historical Foundation Events
+| Date | Event | One-Line Significance |
+|------|-------|----------------------|
+| 2017 | Shopify started by Dan & Kayla | Legitimate business foundation |
+| 2020-04-01 | Worldwide starts Shopify during lockdowns | International expansion |
+| 2022-02-28 | Kachan distribution ends & Dan automates | Automation phase begins |
+| 2022-11-30 | Krenance distribution ends & Dan automates | Distribution consolidation |
+
+### Critical 2023 Escalation Events
+| Date | Event | One-Line Significance |
+|------|-------|----------------------|
+| 2023-01-10 | Krenance Staff at RegimA HO (Liezel & Nikita) | Workplace infiltration |
+| 2023-02-28 | R1,035,000+ overdue invoices RST for ReZ | Massive debt accumulation |
+| 2023-04-30 | Peak of massive thefts in office (Moffat arrest) | Criminal activity peak |
+| 2023-05-05 | Liezel reports violation of staff bodily autonomy | Witness intimidation begins |
+| 2023-05-10 | Peter plants drugs in Liezel's desk to discredit | Evidence tampering |
+| 2023-05-15 | Liezel complains about sabotage & resigns | Successful witness elimination |
+| 2023-06-30 | Nikita recruits Team members then Resigns | Staff turnover pattern |
+| 2023-07-13 | Kayla Pretorius murdered (Kelly dismissed) | Key partner eliminated |
+| 2023-07-30 | All cards expire & put on Worldwide "temp" | Financial control centralization |
+| 2023-09-30 | RegimA EU distribution ends & Dan automates | EU operations consolidation |
+
+### 2024 Strategic Positioning
+| Date | Event | One-Line Significance |
+|------|-------|----------------------|
+| 2024-02-14 | Pete, Rynette, Bantjies tell Dan to wind up ReZ | Creditor elimination pressure |
+| 2024-07 | Bantjies appointed Trustee of FFT by Rynette | Conflicted fiduciary position |
+| 2024-10-28 | Bantjies added to trust Authority register | Official authority powers |
+
+### 2025 Cover-up and Legal Warfare
 | Date | Event | One-Line Significance |
 |------|-------|----------------------|
 | June 10, 2025 | Bantjies learns of crimes | Knowledge before false affidavit |
@@ -232,6 +262,14 @@ Before Filing Affidavit:
 ```
 TIMELINE QUICK FACTS:
 
+FOUNDATION (2017): Dan & Kayla start Shopify
+EXPANSION (2020): Worldwide COVID expansion
+INFILTRATION (2023): Staff placement, debt accumulation
+VIOLENCE (2023): Theft peak, witness intimidation, murder
+POSITIONING (2024): Trustee appointment, authority capture
+COVER-UP (2025): Evidence destruction, legal warfare
+
+CRITICAL 2025 GAPS:
 2 MONTHS: June → August (delay)
 8 DAYS: Settlement → Interdict  
 NEXT DAY: Reports → Cards cancelled
@@ -247,8 +285,8 @@ Aug 25: Sage screenshot #2
 Aug 29: ENS acknowledges crimes
 
 CORE ARGUMENT:
-Strategic litigation for control,
-not emergency response to misconduct.
+8-year criminal enterprise evolution,
+2025 cover-up through strategic litigation.
 ```
 
 ---

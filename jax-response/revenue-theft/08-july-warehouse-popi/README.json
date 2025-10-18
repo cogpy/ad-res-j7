@@ -19,7 +19,7 @@
     {
       "heading": "Primary Evidence Document",
       "level": 2,
-      "content": "**Document:** `evidence/email_compliance_directive_2025-07-08.md`  \n**From:** Daniel Faucitt <dan@regima.com>  \n**To:** kent@regima.zone  \n**Subject:** URGENT: MANDATORY COMPLIANCE DIRECTIVE - PERSONAL CRIMINAL LIABILITY WARNING",
+      "content": "**Document:** `email_compliance_directive_2025-07-08.md`  \n**From:** Daniel Faucitt <dan@regima.com>  \n**To:** kent@regima.zone  \n**Subject:** URGENT: MANDATORY COMPLIANCE DIRECTIVE - PERSONAL CRIMINAL LIABILITY WARNING",
       "subsections": []
     },
     {
@@ -96,7 +96,7 @@
         {
           "heading": "Primary Evidence",
           "level": 3,
-          "content": "- `evidence/email_compliance_directive_2025-07-08.md` - Full compliance directive\n- Employee reports of conflicting instructions\n- Documentation of POPI violations"
+          "content": "- `email_compliance_directive_2025-07-08.md` - Full compliance directive\n- Employee reports of conflicting instructions\n- Documentation of POPI violations"
         }
       ]
     },
@@ -175,7 +175,7 @@
     {
       "heading": "Evidence Source Files",
       "level": 2,
-      "content": "```\n./evidence/email_compliance_directive_2025-07-08.md (Primary evidence)\n./entities/08_july_2025.md\n./entities/july_08_2025.md\n./docs/APR-SEP-2025.md (Timeline context)\n./evidence/sa_ai_legislation_compliance/SA_AI_Legislation_Compliance_Guide.md\n```",
+      "content": "```\n./email_compliance_directive_2025-07-08.md (Primary evidence)\n./entities/08_july_2025.md\n./entities/july_08_2025.md\n./docs/APR-SEP-2025.md (Timeline context)\n./evidence/sa_ai_legislation_compliance/SA_AI_Legislation_Compliance_Guide.md\n```",
       "subsections": []
     },
     {

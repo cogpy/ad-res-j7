@@ -1,0 +1,13 @@
+{
+  "id": "ad-para-15-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 5,
+  "topic": "Meaningless Allegations",
+  "claim": "Peter makes a number of meaningless allegations.",
+  "responseStatus": "complete",
+  "evidenceRequired": [],
+  "crossReferences": [
+    "jax-response/AD/5-Meaningless/PARA_15.md"
+  ],
+  "danPerspective": "Formally acknowledge the paragraph and state that no substantive response is required."
+}
