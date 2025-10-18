@@ -79,9 +79,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔐 Configuring GitHub CLI authentication..."
+          echo "🔐 Setting up GitHub CLI authentication..."
           gh auth status
-          echo "✅ GitHub CLI authenticated"
+          echo "✅ GitHub CLI authenticated and ready"
 
       - name: Determine execution parameters
         id: params
