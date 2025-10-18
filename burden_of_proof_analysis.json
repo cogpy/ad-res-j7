@@ -1,0 +1,589 @@
+{
+  "phase": "Phase 2 Secondary Task",
+  "title": "Burden of Proof Strategies for Dan & Jax",
+  "description": "Optimal strategies to prove guilt of other agents across three legal standards",
+  "agents": {
+    "peter": {
+      "name": "Peter Andrew Faucitt",
+      "role": "Applicant, Company Director",
+      "alleged_crimes": [
+        "Perjury",
+        "Fraud",
+        "Theft",
+        "Obstruction of Justice",
+        "Bad Faith Litigation",
+        "Material Non-Disclosure",
+        "Business Disruption",
+        "Regulatory Violation"
+      ],
+      "guilt_indicators": [
+        "Card cancellations to create documentation gap",
+        "System restrictions to prevent record retrieval",
+        "False statements in founding affidavit",
+        "Material non-disclosure to court",
+        "Created problems then complained about them",
+        "Settlement timing (2 days before interdict)",
+        "Revenue diversion involvement"
+      ]
+    },
+    "rynette": {
+      "name": "Rynette Farrar",
+      "role": "Peter's Partner, Email Controller",
+      "alleged_crimes": [
+        "Email Impersonation",
+        "Fraud",
+        "Information Manipulation",
+        "Tax Fraud",
+        "Conspiracy",
+        "Identity Theft"
+      ],
+      "guilt_indicators": [
+        "Control of Pete@regima.com email address",
+        "Filtering and suppressing information",
+        "Creating false appearance of direct communication",
+        "Supporting Peter's false allegations",
+        "Revenue hijacking involvement",
+        "Tax underreporting participation"
+      ]
+    },
+    "bantjies": {
+      "name": "Daniel Jacobus Bantjies",
+      "role": "Accountant, Family Trust Trustee",
+      "alleged_crimes": [
+        "Perjury",
+        "Breach of Fiduciary Duty",
+        "Professional Misconduct",
+        "Conspiracy",
+        "False Attestation",
+        "Ethics Violation"
+      ],
+      "guilt_indicators": [
+        "False statements in confirmatory affidavit",
+        "Refused to investigate fraud allegations",
+        "Conflict of interest as trustee",
+        "Professional ethics breach",
+        "Coordinated support for false allegations",
+        "Breach of fiduciary duty to trust beneficiaries"
+      ]
+    }
+  },
+  "legal_standards": {
+    "civil": {
+      "name": "Balance of Probabilities",
+      "threshold": "51%+ likelihood",
+      "description": "More likely than not that agent is guilty"
+    },
+    "criminal": {
+      "name": "Beyond Reasonable Doubt",
+      "threshold": "95%+ certainty",
+      "description": "No reasonable doubt of guilt with clear intent"
+    },
+    "mathematical": {
+      "name": "Invariant Conditions",
+      "threshold": "100% logical necessity",
+      "description": "Guilt follows necessarily from logical conditions"
+    }
+  },
+  "evidence_collection_plans": {
+    "peter": {
+      "balance_of_probabilities": {
+        "agent": "Peter Andrew Faucitt",
+        "standard": "balance_of_probabilities",
+        "threshold": "51.0% certainty required",
+        "primary_approach": "Pattern of deliberate obstruction creating the problems complained about",
+        "evidence_requirements": [
+          {
+            "type": "documentary",
+            "description": "Timeline showing Peter's card cancellations preceded documentation gaps",
+            "necessity": "necessary",
+            "threshold": 0.51,
+            "sources": [
+              "Bank records",
+              "System logs",
+              "Service suspension notices"
+            ],
+            "verification": "Timestamp analysis and causation mapping"
+          },
+          {
+            "type": "documentary",
+            "description": "Court affidavit contradicted by email evidence",
+            "necessity": "sufficient",
+            "threshold": 0.51,
+            "sources": [
+              "Founding affidavit",
+              "Email archives",
+              "System records"
+            ],
+            "verification": "Direct contradiction identification"
+          },
+          {
+            "type": "financial",
+            "description": "Disproportionate harm ratio (36:1 minimum)",
+            "necessity": "supporting",
+            "threshold": 0.51,
+            "sources": [
+              "Financial records",
+              "Revenue analysis",
+              "Loss calculations"
+            ],
+            "verification": "Quantitative harm assessment"
+          },
+          {
+            "type": "circumstantial",
+            "description": "Settlement timing pattern (2 days before interdict)",
+            "necessity": "supporting",
+            "threshold": 0.51,
+            "sources": [
+              "Settlement agreement",
+              "Interdict application",
+              "Court records"
+            ],
+            "verification": "Temporal analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Establish timeline of Peter's actions",
+          "2. Show causation between actions and documentation gaps",
+          "3. Demonstrate affidavit contradictions",
+          "4. Quantify disproportionate harm",
+          "5. Prove bad faith pattern"
+        ],
+        "burden_satisfaction": "Preponderance of evidence showing more likely than not guilty",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim actions were necessary business decisions",
+            "Deny intent to obstruct or deceive",
+            "Blame technical issues for documentation gaps",
+            "Argue good faith reliance on advisors"
+          ],
+          "counter_strategies": [
+            "Document pattern showing deliberate, not accidental actions",
+            "Prove knowledge through email evidence and system access",
+            "Show technical issues were created, not encountered",
+            "Demonstrate advisors were misled or complicit"
+          ]
+        }
+      },
+      "beyond_reasonable_doubt": {
+        "agent": "Peter Andrew Faucitt",
+        "standard": "beyond_reasonable_doubt",
+        "threshold": "95.0% certainty required",
+        "primary_approach": "Intentional fraud and perjury with clear mens rea",
+        "evidence_requirements": [
+          {
+            "type": "direct",
+            "description": "Intentional obstruction pattern with clear mens rea",
+            "necessity": "necessary",
+            "threshold": 0.95,
+            "sources": [
+              "System logs",
+              "Card cancellation records",
+              "Email communications"
+            ],
+            "verification": "Intent analysis through action sequence"
+          },
+          {
+            "type": "documentary",
+            "description": "Perjury evidence with willful false statements",
+            "necessity": "necessary",
+            "threshold": 0.95,
+            "sources": [
+              "Court affidavit",
+              "Contradictory evidence",
+              "Email records"
+            ],
+            "verification": "False statement materiality analysis"
+          },
+          {
+            "type": "financial",
+            "description": "Fraud pattern with quantified damages",
+            "necessity": "supporting",
+            "threshold": 0.95,
+            "sources": [
+              "Transaction records",
+              "Revenue analysis",
+              "Bank statements"
+            ],
+            "verification": "Forensic accounting"
+          }
+        ],
+        "collection_sequence": [
+          "1. Establish intent through action pattern",
+          "2. Prove willful false statements (perjury)",
+          "3. Document fraud scheme elements",
+          "4. Show obstruction of justice",
+          "5. Demonstrate pattern of criminal conduct"
+        ],
+        "burden_satisfaction": "Evidence beyond reasonable doubt with clear intent and mens rea",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim actions were necessary business decisions",
+            "Deny intent to obstruct or deceive",
+            "Blame technical issues for documentation gaps",
+            "Argue good faith reliance on advisors"
+          ],
+          "counter_strategies": [
+            "Document pattern showing deliberate, not accidental actions",
+            "Prove knowledge through email evidence and system access",
+            "Show technical issues were created, not encountered",
+            "Demonstrate advisors were misled or complicit"
+          ]
+        }
+      },
+      "invariant_conditions": {
+        "agent": "Peter Andrew Faucitt",
+        "standard": "invariant_conditions",
+        "threshold": "100.0% certainty required",
+        "primary_approach": "Logical necessity of causation and contradiction invariants",
+        "evidence_requirements": [
+          {
+            "type": "documentary",
+            "description": "Logical invariant: Peter's actions necessarily caused documentation gap",
+            "necessity": "necessary",
+            "threshold": 1.0,
+            "sources": [
+              "Temporal sequences",
+              "Causal chains",
+              "System dependencies"
+            ],
+            "verification": "Logical necessity proof"
+          },
+          {
+            "type": "documentary",
+            "description": "Contradiction invariant: Affidavit statements logically incompatible with evidence",
+            "necessity": "sufficient",
+            "threshold": 1.0,
+            "sources": [
+              "Affidavit text",
+              "Contradictory evidence",
+              "Logical analysis"
+            ],
+            "verification": "Logical contradiction proof"
+          }
+        ],
+        "collection_sequence": [
+          "1. Prove logical necessity of causation",
+          "2. Demonstrate contradiction invariants",
+          "3. Show system dependencies",
+          "4. Establish logical impossibility of alternative explanations"
+        ],
+        "burden_satisfaction": "Logical proof of necessary conditions and invariant relationships",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim actions were necessary business decisions",
+            "Deny intent to obstruct or deceive",
+            "Blame technical issues for documentation gaps",
+            "Argue good faith reliance on advisors"
+          ],
+          "counter_strategies": [
+            "Document pattern showing deliberate, not accidental actions",
+            "Prove knowledge through email evidence and system access",
+            "Show technical issues were created, not encountered",
+            "Demonstrate advisors were misled or complicit"
+          ]
+        }
+      }
+    },
+    "rynette": {
+      "balance_of_probabilities": {
+        "agent": "Rynette Farrar",
+        "standard": "balance_of_probabilities",
+        "threshold": "51.0% certainty required",
+        "primary_approach": "Systematic email control and information manipulation",
+        "evidence_requirements": [
+          {
+            "type": "electronic",
+            "description": "Email system control and filtering evidence",
+            "necessity": "necessary",
+            "threshold": 0.51,
+            "sources": [
+              "Email server logs",
+              "Pete@regima.com access records",
+              "Message filtering rules"
+            ],
+            "verification": "Digital forensics analysis"
+          },
+          {
+            "type": "documentary",
+            "description": "Impersonation evidence comparing sent vs received emails",
+            "necessity": "sufficient",
+            "threshold": 0.51,
+            "sources": [
+              "Email archives",
+              "Communication logs",
+              "Recipient confirmations"
+            ],
+            "verification": "Message flow analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Establish email system control",
+          "2. Document filtering and suppression",
+          "3. Show impersonation pattern",
+          "4. Prove information manipulation"
+        ],
+        "burden_satisfaction": "Preponderance of evidence showing more likely than not guilty",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Deny knowledge of impersonation consequences",
+            "Claim technical ignorance",
+            "Argue legitimate email management",
+            "Blame others for fraud scheme"
+          ],
+          "counter_strategies": [
+            "Prove technical knowledge through system control evidence",
+            "Show systematic pattern inconsistent with ignorance",
+            "Document active participation in scheme",
+            "Establish direct knowledge of consequences"
+          ]
+        }
+      },
+      "beyond_reasonable_doubt": {
+        "agent": "Rynette Farrar",
+        "standard": "beyond_reasonable_doubt",
+        "threshold": "95.0% certainty required",
+        "primary_approach": "Criminal impersonation and conspiracy in fraud scheme",
+        "evidence_requirements": [
+          {
+            "type": "electronic",
+            "description": "Systematic email impersonation with intent to deceive",
+            "necessity": "necessary",
+            "threshold": 0.95,
+            "sources": [
+              "Email server logs",
+              "Message headers",
+              "Filtering rules"
+            ],
+            "verification": "Digital forensics with intent analysis"
+          },
+          {
+            "type": "financial",
+            "description": "Conspiracy in revenue diversion scheme",
+            "necessity": "supporting",
+            "threshold": 0.95,
+            "sources": [
+              "Banking records",
+              "Transaction patterns",
+              "Communication evidence"
+            ],
+            "verification": "Conspiracy pattern analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Prove intentional impersonation",
+          "2. Document conspiracy elements",
+          "3. Show criminal fraud participation",
+          "4. Establish intent to deceive"
+        ],
+        "burden_satisfaction": "Evidence beyond reasonable doubt with clear intent and mens rea",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Deny knowledge of impersonation consequences",
+            "Claim technical ignorance",
+            "Argue legitimate email management",
+            "Blame others for fraud scheme"
+          ],
+          "counter_strategies": [
+            "Prove technical knowledge through system control evidence",
+            "Show systematic pattern inconsistent with ignorance",
+            "Document active participation in scheme",
+            "Establish direct knowledge of consequences"
+          ]
+        }
+      },
+      "invariant_conditions": {
+        "agent": "Rynette Farrar",
+        "standard": "invariant_conditions",
+        "threshold": "100.0% certainty required",
+        "primary_approach": "System architecture necessitating impersonation capability",
+        "evidence_requirements": [
+          {
+            "type": "electronic",
+            "description": "System invariant: Email control necessarily enables impersonation",
+            "necessity": "necessary",
+            "threshold": 1.0,
+            "sources": [
+              "Email system architecture",
+              "Access controls",
+              "Message routing"
+            ],
+            "verification": "System architecture analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Prove system control necessity",
+          "2. Show architectural impersonation capability",
+          "3. Demonstrate logical inevitability"
+        ],
+        "burden_satisfaction": "Logical proof of necessary conditions and invariant relationships",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Deny knowledge of impersonation consequences",
+            "Claim technical ignorance",
+            "Argue legitimate email management",
+            "Blame others for fraud scheme"
+          ],
+          "counter_strategies": [
+            "Prove technical knowledge through system control evidence",
+            "Show systematic pattern inconsistent with ignorance",
+            "Document active participation in scheme",
+            "Establish direct knowledge of consequences"
+          ]
+        }
+      }
+    },
+    "bantjies": {
+      "balance_of_probabilities": {
+        "agent": "Daniel Jacobus Bantjies",
+        "standard": "balance_of_probabilities",
+        "threshold": "51.0% certainty required",
+        "primary_approach": "Professional misconduct and false attestation",
+        "evidence_requirements": [
+          {
+            "type": "documentary",
+            "description": "Confirmatory affidavit contradicted by own records",
+            "necessity": "sufficient",
+            "threshold": 0.51,
+            "sources": [
+              "Confirmatory affidavit",
+              "Accounting records",
+              "Trust documents"
+            ],
+            "verification": "Record contradiction analysis"
+          },
+          {
+            "type": "expert",
+            "description": "Professional ethics violation assessment",
+            "necessity": "supporting",
+            "threshold": 0.51,
+            "sources": [
+              "SAICA guidelines",
+              "Professional conduct rules",
+              "Expert opinion"
+            ],
+            "verification": "Professional standards comparison"
+          }
+        ],
+        "collection_sequence": [
+          "1. Show contradictions in attestation",
+          "2. Prove professional ethics breach",
+          "3. Document fiduciary duty violation",
+          "4. Establish bias and conflict of interest"
+        ],
+        "burden_satisfaction": "Preponderance of evidence showing more likely than not guilty",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim reliance on Peter's representations",
+            "Argue professional judgment within standards",
+            "Deny knowledge of material facts",
+            "Claim conflict was not apparent"
+          ],
+          "counter_strategies": [
+            "Show access to contradictory information",
+            "Prove professional standards required investigation",
+            "Document actual knowledge of material facts",
+            "Establish clear conflict of interest"
+          ]
+        }
+      },
+      "beyond_reasonable_doubt": {
+        "agent": "Daniel Jacobus Bantjies",
+        "standard": "beyond_reasonable_doubt",
+        "threshold": "95.0% certainty required",
+        "primary_approach": "Willful perjury and breach of fiduciary duty",
+        "evidence_requirements": [
+          {
+            "type": "documentary",
+            "description": "Willful perjury in sworn affidavit",
+            "necessity": "necessary",
+            "threshold": 0.95,
+            "sources": [
+              "Confirmatory affidavit",
+              "Contradictory records",
+              "Knowledge evidence"
+            ],
+            "verification": "Willfulness determination"
+          },
+          {
+            "type": "expert",
+            "description": "Deliberate breach of professional fiduciary duties",
+            "necessity": "supporting",
+            "threshold": 0.95,
+            "sources": [
+              "Trust documents",
+              "Professional standards",
+              "Action evidence"
+            ],
+            "verification": "Professional misconduct analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Prove willful false attestation",
+          "2. Show criminal breach of duty",
+          "3. Document conspiracy participation",
+          "4. Establish criminal intent"
+        ],
+        "burden_satisfaction": "Evidence beyond reasonable doubt with clear intent and mens rea",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim reliance on Peter's representations",
+            "Argue professional judgment within standards",
+            "Deny knowledge of material facts",
+            "Claim conflict was not apparent"
+          ],
+          "counter_strategies": [
+            "Show access to contradictory information",
+            "Prove professional standards required investigation",
+            "Document actual knowledge of material facts",
+            "Establish clear conflict of interest"
+          ]
+        }
+      },
+      "invariant_conditions": {
+        "agent": "Daniel Jacobus Bantjies",
+        "standard": "invariant_conditions",
+        "threshold": "100.0% certainty required",
+        "primary_approach": "Logical incompatibility of fiduciary duty with biased attestation",
+        "evidence_requirements": [
+          {
+            "type": "documentary",
+            "description": "Logical invariant: Trustee's duty incompatible with biased attestation",
+            "necessity": "necessary",
+            "threshold": 1.0,
+            "sources": [
+              "Trust documents",
+              "Fiduciary duties",
+              "Attestation content"
+            ],
+            "verification": "Duty conflict analysis"
+          }
+        ],
+        "collection_sequence": [
+          "1. Prove logical incompatibility of duties",
+          "2. Show necessary conflict of interest",
+          "3. Demonstrate logical contradiction"
+        ],
+        "burden_satisfaction": "Logical proof of necessary conditions and invariant relationships",
+        "risks_and_mitigation": {
+          "anticipated_defenses": [
+            "Claim reliance on Peter's representations",
+            "Argue professional judgment within standards",
+            "Deny knowledge of material facts",
+            "Claim conflict was not apparent"
+          ],
+          "counter_strategies": [
+            "Show access to contradictory information",
+            "Prove professional standards required investigation",
+            "Document actual knowledge of material facts",
+            "Establish clear conflict of interest"
+          ]
+        }
+      }
+    }
+  },
+  "integration": {
+    "legal_attention_engine": "burden_of_proof_strategies.py extends existing legal attention framework",
+    "existing_strategies": "Builds on 70% complete strategy implementation system",
+    "case_context": "Case 2025-137857 - Peter Andrew Faucitt v. Jacqueline Faucitt et al."
+  }
+}
