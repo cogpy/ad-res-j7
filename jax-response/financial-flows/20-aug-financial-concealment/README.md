@@ -1,8 +1,8 @@
-# Financial Evidence Concealment and Destruction - August 20, 2025
+# Financial Evidence Concealment and Destruction - 2025-08-20
 
 ## Event Summary
 **Event:** Financial Evidence Concealment and Destruction  
-**Date:** August 20, 2025  
+**Date:** 2025-08-20  
 **Time:** 06:00 - 20:30 SAST  
 **Location:** Multiple Evidence Storage and Financial Locations  
 **Documented by:** Financial Investigation Team  

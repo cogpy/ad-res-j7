@@ -1,6 +1,6 @@
 # URGENT: MANDATORY COMPLIANCE DIRECTIVE - PERSONAL CRIMINAL LIABILITY WARNING
 
-**Date:** Tuesday, 08 July 2025 10:03  
+**Date:** Tuesday, 2025-07-08 10:03  
 **From:** Daniel Faucitt <dan@regima.com>  
 **To:** kent@regima.zone <kent@regima.zone>  
 **Subject:** URGENT: MANDATORY COMPLIANCE DIRECTIVE - PERSONAL CRIMINAL LIABILITY WARNING
@@ -135,7 +135,7 @@ CIO
 - **Protection of Personal Information Act (POPI)** - South African data protection law
 
 ### Key Dates
-- **Tuesday, 08 July 2025 10:03** - Email sent date
+- **Tuesday, 2025-07-08 10:03** - Email sent date
 - **Effective Immediately** - Directive implementation date
 
 ### Compliance Issues

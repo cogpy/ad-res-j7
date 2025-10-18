@@ -378,12 +378,12 @@ mkdir -p crim/frameworks/{criminal_law,international,evidence_processing}
 - Maintain original locations for context
 
 ### Step 4: Update Navigation
-- Update main README to reference crim/ folder
+- Update main README.md to reference crim/ folder
 - Add links between civil and criminal documentation
 - Create cross-reference index
 
 ### Step 5: Validate Structure
-- Ensure all folders have README files
+- Ensure all folders have README.md files
 - Check all links work correctly
 - Verify evidence is properly categorized
 
