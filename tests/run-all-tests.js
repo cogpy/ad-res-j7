@@ -9,11 +9,9 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
-const DateValidationTest = require('./date-validation.test.js');
-const MalformedMarkdownTest = require('./malformed-markdown-test.js');
-const FilePathValidator = require('./file-path-validation.test.js');
-const EdgeCaseComprehensiveTest = require('./edge-case-comprehensive.test.js');
-const JSONValidationTest = require('./json-validation-test.js');
+const QualityFilterComprehensiveTest = require('./quality-filter-comprehensive-test.js');
+const ErrorScenariosComprehensiveTest = require('./error-scenarios-comprehensive-test.js');
+const FinalIntegrationComprehensiveTest = require('./final-integration-comprehensive-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -26,11 +24,9 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
-      dateValidation: null,
-      malformedMarkdown: null,
-      filePathValidation: null,
-      edgeCaseComprehensive: null,
-      jsonValidation: null,
+      qualityFilter: null,
+      errorScenarios: null,
+      finalIntegration: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -146,81 +142,56 @@ class TestRunner {
     return success;
   }
 
-  async runDateValidationTests() {
-    console.log('\n📋 Running Date Validation Tests...\n');
+  async runQualityFilterTests() {
+    console.log('\n📋 Running Quality Filter Comprehensive Tests...\n');
     
-    const dateValidationTest = new DateValidationTest();
-    const success = dateValidationTest.runAllTests();
+    const qualityFilterTest = new QualityFilterComprehensiveTest();
+    const success = qualityFilterTest.runAllTests();
     
-    this.results.dateValidation = {
+    this.results.qualityFilter = {
       success: success,
-      total: dateValidationTest.testResults.length,
-      passed: dateValidationTest.testResults.filter(t => t.passed).length,
-      failed: dateValidationTest.testResults.filter(t => !t.passed).length,
-      errors: dateValidationTest.errors
-  async runMalformedMarkdownTests() {
-    console.log('\n📋 Running Malformed Markdown Tests...\n');
-    
-    const malformedTest = new MalformedMarkdownTest();
-    const success = await malformedTest.run();
-    
-    this.results.malformedMarkdown = {
-      success: success,
-      total: malformedTest.testResults.length,
-      passed: malformedTest.testResults.filter(t => t.passed).length,
-      failed: malformedTest.testResults.filter(t => !t.passed).length,
-      errors: malformedTest.errors
+      total: qualityFilterTest.testResults.length,
+      passed: qualityFilterTest.testResults.filter(t => t.passed).length,
+      failed: qualityFilterTest.testResults.filter(t => !t.passed).length,
+      errors: qualityFilterTest.errors,
+      filter_test_cases: qualityFilterTest.filterTestCases.length,
+      performance_metrics: qualityFilterTest.performanceMetrics
     };
     
     return success;
   }
 
-  async runFilePathValidationTests() {
-    console.log('\n🔗 Running File Path Validation Tests...\n');
+  async runErrorScenariosTests() {
+    console.log('\n📋 Running Error Scenarios Comprehensive Tests...\n');
     
-    const validator = new FilePathValidator();
-    const success = await validator.validate();
+    const errorScenariosTest = new ErrorScenariosComprehensiveTest();
+    const success = errorScenariosTest.runAllTests();
     
-    this.results.filePathValidation = {
+    this.results.errorScenarios = {
       success: success,
-      total: validator.results.totalReferences,
-      passed: validator.results.validReferences,
-      failed: validator.results.invalidReferences,
-      errors: validator.results.errors.map(e => e.message || e),
-      filesProcessed: validator.results.totalFiles,
-      successRate: validator.results.totalReferences > 0 
-        ? ((validator.results.validReferences / validator.results.totalReferences) * 100).toFixed(1)
-        : 100
-  async runEdgeCaseComprehensiveTests() {
-    console.log('\n📋 Running Edge Case Comprehensive Tests...\n');
-    
-    const edgeCaseTest = new EdgeCaseComprehensiveTest();
-    const success = await edgeCaseTest.run();
-    
-    this.results.edgeCaseComprehensive = {
-      success: success,
-      total: edgeCaseTest.testResults.length,
-      passed: edgeCaseTest.testResults.filter(t => t.passed).length,
-      failed: edgeCaseTest.testResults.filter(t => !t.passed).length,
-      errors: edgeCaseTest.errors,
-      execution_time: Date.now() - edgeCaseTest.startTime
+      total: errorScenariosTest.testResults.length,
+      passed: errorScenariosTest.testResults.filter(t => t.passed).length,
+      failed: errorScenariosTest.testResults.filter(t => !t.passed).length,
+      errors: errorScenariosTest.errors,
+      test_files_created: errorScenariosTest.testFileCleanup.length
     };
     
     return success;
   }
 
-  async runJSONValidationTests() {
-    console.log('\n📋 Running JSON Validation Tests...\n');
+  async runFinalIntegrationTests() {
+    console.log('\n📋 Running Final Integration Comprehensive Tests...\n');
     
-    const jsonTest = new JSONValidationTest();
-    const success = await jsonTest.runTests();
+    const finalIntegrationTest = new FinalIntegrationComprehensiveTest();
+    const success = finalIntegrationTest.runAllTests();
     
-    this.results.jsonValidation = {
+    this.results.finalIntegration = {
       success: success,
-      total: jsonTest.results.passed + jsonTest.results.failed,
-      passed: jsonTest.results.passed,
-      failed: jsonTest.results.failed,
-      errors: jsonTest.results.errors
+      total: finalIntegrationTest.testResults.length,
+      passed: finalIntegrationTest.testResults.filter(t => t.passed).length,
+      failed: finalIntegrationTest.testResults.filter(t => !t.passed).length,
+      errors: finalIntegrationTest.errors,
+      workflow_metrics: finalIntegrationTest.workflowMetrics
     };
     
     return success;
@@ -232,39 +203,30 @@ class TestRunner {
                                        this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
-                                       this.results.endToEnd.total + 
-                                       this.results.dateValidation.total;
                                        this.results.endToEnd.total +
-                                       this.results.malformedMarkdown.total +
-                                       this.results.filePathValidation.total;
-                                       this.results.edgeCaseComprehensive.total +
-                                       this.results.jsonValidation.total;
+                                       this.results.qualityFilter.total +
+                                       this.results.errorScenarios.total +
+                                       this.results.finalIntegration.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
                                         this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
-                                        this.results.endToEnd.passed + 
-                                        this.results.dateValidation.passed;
                                         this.results.endToEnd.passed +
-                                        this.results.malformedMarkdown.passed +
-                                        this.results.filePathValidation.passed;
-                                        this.results.edgeCaseComprehensive.passed +
-                                        this.results.jsonValidation.passed;
+                                        this.results.qualityFilter.passed +
+                                        this.results.errorScenarios.passed +
+                                        this.results.finalIntegration.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
                                         this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
-                                        this.results.endToEnd.failed + 
-                                        this.results.dateValidation.failed;
                                         this.results.endToEnd.failed +
-                                        this.results.malformedMarkdown.failed +
-                                        this.results.filePathValidation.failed;
-                                        this.results.edgeCaseComprehensive.failed +
-                                        this.results.jsonValidation.failed;
+                                        this.results.qualityFilter.failed +
+                                        this.results.errorScenarios.failed +
+                                        this.results.finalIntegration.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -306,26 +268,23 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
-    console.log('\n🔧 Malformed Markdown Tests:');
-    console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
-    console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    console.log('\n🔍 Quality Filter Tests:');
+    console.log(`   ✅ Passed: ${this.results.qualityFilter.passed}/${this.results.qualityFilter.total}`);
+    console.log(`   ❌ Failed: ${this.results.qualityFilter.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.qualityFilter.passed / this.results.qualityFilter.total) * 100)}%`);
+    console.log(`   🧪 Test Cases: ${this.results.qualityFilter.filter_test_cases}`);
     
-    console.log('\n🔗 File Path Validation Tests:');
-    console.log(`   ✅ Valid References: ${this.results.filePathValidation.passed}/${this.results.filePathValidation.total}`);
-    console.log(`   ❌ Invalid References: ${this.results.filePathValidation.failed}`);
-    console.log(`   📈 Success Rate: ${this.results.filePathValidation.successRate}%`);
-    console.log(`   📄 Files Processed: ${this.results.filePathValidation.filesProcessed}`);
-    console.log('\n⚡ Edge Case Comprehensive Tests:');
-    console.log(`   ✅ Passed: ${this.results.edgeCaseComprehensive.passed}/${this.results.edgeCaseComprehensive.total}`);
-    console.log(`   ❌ Failed: ${this.results.edgeCaseComprehensive.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.edgeCaseComprehensive.passed / this.results.edgeCaseComprehensive.total) * 100)}%`);
-    console.log(`   ⏱️  Execution Time: ${this.results.edgeCaseComprehensive.execution_time}ms`);
+    console.log('\n⚠️  Error Scenarios Tests:');
+    console.log(`   ✅ Passed: ${this.results.errorScenarios.passed}/${this.results.errorScenarios.total}`);
+    console.log(`   ❌ Failed: ${this.results.errorScenarios.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.errorScenarios.passed / this.results.errorScenarios.total) * 100)}%`);
+    console.log(`   📁 Test Files: ${this.results.errorScenarios.test_files_created}`);
     
-    console.log('\n📄 JSON Validation Tests:');
-    console.log(`   ✅ Passed: ${this.results.jsonValidation.passed}/${this.results.jsonValidation.total}`);
-    console.log(`   ❌ Failed: ${this.results.jsonValidation.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.jsonValidation.passed / this.results.jsonValidation.total) * 100)}%`);
+    console.log('\n🎯 Final Integration Tests:');
+    console.log(`   ✅ Passed: ${this.results.finalIntegration.passed}/${this.results.finalIntegration.total}`);
+    console.log(`   ❌ Failed: ${this.results.finalIntegration.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.finalIntegration.passed / this.results.finalIntegration.total) * 100)}%`);
+    console.log(`   🔗 Coverage: Complete workflow lifecycle`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -389,38 +348,25 @@ class TestRunner {
         });
       }
       
-      if (this.results.dateValidation.errors.length > 0) {
-        console.log('   Date Validation Test Failures:');
-        this.results.dateValidation.errors.forEach(error => {
-      if (this.results.malformedMarkdown.errors.length > 0) {
-        console.log('   Malformed Markdown Test Failures:');
-        this.results.malformedMarkdown.errors.forEach(error => {
+      if (this.results.qualityFilter.errors.length > 0) {
+        console.log('   Quality Filter Test Failures:');
+        this.results.qualityFilter.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
       }
       
-      if (this.results.filePathValidation.errors.length > 0) {
-        console.log('   File Path Validation Failures:');
-        // Limit to first 10 errors to avoid overwhelming output
-        this.results.filePathValidation.errors.slice(0, 10).forEach(error => {
-          console.log(`   ${failureIndex}. ${error}`);
-          failureIndex++;
-        });
-        if (this.results.filePathValidation.errors.length > 10) {
-          console.log(`   ... and ${this.results.filePathValidation.errors.length - 10} more file path errors`);
-        }
-      if (this.results.edgeCaseComprehensive.errors.length > 0) {
-        console.log('   Edge Case Comprehensive Test Failures:');
-        this.results.edgeCaseComprehensive.errors.forEach(error => {
+      if (this.results.errorScenarios.errors.length > 0) {
+        console.log('   Error Scenarios Test Failures:');
+        this.results.errorScenarios.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
       }
       
-      if (this.results.jsonValidation.errors.length > 0) {
-        console.log('   JSON Validation Test Failures:');
-        this.results.jsonValidation.errors.forEach(error => {
+      if (this.results.finalIntegration.errors.length > 0) {
+        console.log('   Final Integration Test Failures:');
+        this.results.finalIntegration.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
@@ -445,8 +391,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'date-validation']
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'edge-case-comprehensive']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'quality-filter', 'error-scenarios', 'final-integration']
       },
       summary: this.results.overall
     });
@@ -466,11 +411,9 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
-      const dateValidationSuccess = await this.runDateValidationTests();
-      const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
-      const filePathValidationSuccess = await this.runFilePathValidationTests();
-      const edgeCaseComprehensiveSuccess = await this.runEdgeCaseComprehensiveTests();
-      const jsonValidationSuccess = await this.runJSONValidationTests();
+      const qualityFilterSuccess = await this.runQualityFilterTests();
+      const errorScenariosSuccess = await this.runErrorScenariosTests();
+      const finalIntegrationSuccess = await this.runFinalIntegrationTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -482,9 +425,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && dateValidationSuccess;
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && edgeCaseComprehensiveSuccess && jsonValidationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && qualityFilterSuccess && errorScenariosSuccess && finalIntegrationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
