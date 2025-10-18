@@ -219,13 +219,17 @@ Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, F
 **Other Jurisdictions (10):**
 United Kingdom, Norway, Switzerland, Iceland, [list remaining 6 jurisdictions]
 
-3.6.4 **Potential Consequences (Annexure JF-RP2 - Regulatory Risk Analysis):**
-- Immediate suspension of sales in non-compliant jurisdictions;
-- Regulatory penalties and fines (up to €[amount] per violation under EU law);
-- Product recalls mandated by regulatory authorities;
-- Loss of market access potentially affecting **R[amount] in annual revenue**;
-- Reputational damage in international markets;
-- **Criminal liability** for continued sales without proper Responsible Person designation.
+3.6.4 **Immediate and Severe Consequences (Annexure JF-RP2 - Regulatory Risk Analysis):**
+
+The inability to fulfill Responsible Person duties creates immediate and severe consequences:
+
+1. **Market Access Loss**: Products may be removed from sale in all 37 jurisdictions;
+2. **Regulatory Penalties**: Fines ranging from €10,000 to €1,000,000 per jurisdiction per violation under EU law;
+3. **Personal Criminal and Civil Liability**: I face personal criminal prosecution and civil liability;
+4. **Business Destruction**: Loss of international sales potentially affecting **R[amount] in annual revenue**;
+5. **Reputational Harm**: Regulatory non-compliance damages brand reputation irreparably;
+6. **Consumer Safety Risks**: Inability to respond to safety inquiries or implement recalls endangers consumers;
+7. **Product Recalls**: Regulatory authorities may mandate immediate product recalls.
 
 3.6.5 **Timeline for Compliance Restoration:**
 
@@ -238,13 +242,38 @@ If the interdict remains in place and a new Responsible Person must be designate
 
 ### 3.7 Material Non-Disclosure by Applicant
 
-3.7.1 The Applicant **failed to disclose any of the above facts** in his ex parte application.
+3.7.1 The Applicant **knew or ought to have known** of my Responsible Person role, as:
+- This role has been held for [X years];
+- It is documented in company records accessible to the Applicant;
+- It is a fundamental aspect of the international business operations;
+- The regulatory requirements are well-established and publicly available.
 
-3.7.2 Had this Honourable Court been aware that the interdict would create **immediate regulatory non-compliance in 37 international jurisdictions** and expose the businesses to substantial penalties and loss of market access, the Court would likely have:
+3.7.2 The Applicant **failed to disclose any of the above critical facts** in his ex parte application.
+
+3.7.3 The failure to disclose this critical information to the Court in the ex parte application constitutes:
+- **Material non-disclosure** requiring setting aside of the interdict;
+- Possible **fraud upon the Court**;
+- **Abuse of ex parte procedure**;
+- **Bad faith** in seeking relief without full disclosure.
+
+3.7.4 Had this Honourable Court been aware that the interdict would create **immediate regulatory non-compliance in 37 international jurisdictions** and expose the businesses to substantial penalties and loss of market access, the Court would likely have:
 - **(a) Refused to grant the interdict;** or
 - **(b) Crafted different relief** that preserved my ability to perform non-delegable legal duties.
 
-3.7.3 This material non-disclosure undermines the foundation of the ex parte interdict.
+3.7.5 This material non-disclosure undermines the foundation of the ex parte interdict and renders it **void ab initio**.
+
+### 3.8 Relief Required to Prevent Irreparable Harm
+
+3.8.1 The interdict must be **immediately set aside** to prevent:
+- **Irreparable regulatory harm** in 37 international jurisdictions;
+- **Personal criminal liability** for continued regulatory violations;
+- **Business destruction** through loss of international market access;
+- **Consumer safety risks** due to inability to implement recalls or corrective actions;
+- **International regulatory violations** that could result in criminal prosecution.
+
+3.8.2 The regulatory framework **does not provide for temporary suspension** of Responsible Person duties, and the obligations are **continuous and immediate**.
+
+3.8.3 Every day the interdict remains in place increases the regulatory violations and potential penalties exponentially.
 
 ---
 

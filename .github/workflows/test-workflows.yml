@@ -12,9 +12,10 @@ on:
   pull_request:
     branches: [ "main", "develop" ]
   
-  # Run on schedule for continuous monitoring (daily at 2 AM UTC)
+  # Run on schedule for continuous monitoring (every 4 hours for enhanced coverage)
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 */4 * * *'  # Every 4 hours for continuous validation
+    - cron: '0 2 * * *'     # Daily comprehensive analysis at 2 AM UTC
   
   # Allow manual trigger for on-demand validation
   workflow_dispatch:
@@ -24,6 +25,17 @@ on:
         required: false
         default: 'false'
         type: boolean
+      test_suite:
+        description: 'Test suite to run (all, validation, integration, security)'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - validation
+          - integration
+          - security
+          - comprehensive
 
 jobs:
   validate-workflows:
@@ -53,20 +65,47 @@ jobs:
       - name: Run workflow validation tests
         id: run_tests
         run: |
-          echo "🚀 Running automated testing pipeline..."
+          echo "🚀 Running automated testing pipeline for continuous validation..."
           echo "trigger=${{ github.event_name }}" >> $GITHUB_OUTPUT
           echo "verbose=${{ inputs.verbose || 'false' }}" >> $GITHUB_OUTPUT
+          echo "test_suite=${{ inputs.test_suite || 'all' }}" >> $GITHUB_OUTPUT
+          echo "is_scheduled=${{ github.event_name == 'schedule' }}" >> $GITHUB_OUTPUT
           
-          if [ "${{ inputs.verbose }}" == "true" ]; then
-            npm run test:verbose || echo "test_failed=true" >> $GITHUB_OUTPUT
-          else
-            npm test || echo "test_failed=true" >> $GITHUB_OUTPUT
-          fi
+          # Enhanced test execution with selective test suites for continuous validation
+          test_suite="${{ inputs.test_suite || 'all' }}"
+          verbose="${{ inputs.verbose || 'false' }}"
           
-      - name: Check test results
+          case "$test_suite" in
+            "validation")
+              echo "📋 Running validation tests only..."
+              npm run test:validation || echo "test_failed=true" >> $GITHUB_OUTPUT
+              ;;
+            "integration")
+              echo "🧪 Running integration tests only..."
+              npm run test:integration || echo "test_failed=true" >> $GITHUB_OUTPUT
+              ;;
+            "security")
+              echo "🔒 Running security tests only..."
+              npm run test:security || echo "test_failed=true" >> $GITHUB_OUTPUT
+              ;;
+            "comprehensive")
+              echo "📊 Running comprehensive tests only..."
+              npm run test:comprehensive || echo "test_failed=true" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "🎯 Running full test suite for continuous validation..."
+              if [ "$verbose" == "true" ]; then
+                npm run test:verbose || echo "test_failed=true" >> $GITHUB_OUTPUT
+              else
+                npm test || echo "test_failed=true" >> $GITHUB_OUTPUT
+              fi
+              ;;
+          esac
+          
+      - name: Check test results and enforce quality gates
         run: |
           if [ -f "tests/comprehensive-test-results.json" ]; then
-            echo "=== Test Results Summary ===" >> $GITHUB_STEP_SUMMARY
+            echo "=== Continuous Validation Results ===" >> $GITHUB_STEP_SUMMARY
             
             # Extract key metrics using jq
             total_tests=$(jq -r '.overall.total_tests' tests/comprehensive-test-results.json)
@@ -74,12 +113,34 @@ jobs:
             failed_tests=$(jq -r '.overall.failed_tests' tests/comprehensive-test-results.json)
             success_rate=$(jq -r '.overall.success_rate' tests/comprehensive-test-results.json)
             
-            echo "📊 **Test Metrics:**" >> $GITHUB_STEP_SUMMARY
+            echo "📊 **Continuous Validation Metrics:**" >> $GITHUB_STEP_SUMMARY
             echo "- Total Tests: $total_tests" >> $GITHUB_STEP_SUMMARY
             echo "- Passed: $passed_tests" >> $GITHUB_STEP_SUMMARY
             echo "- Failed: $failed_tests" >> $GITHUB_STEP_SUMMARY
             echo "- Success Rate: ${success_rate}%" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
+            
+            # Quality Gate Enforcement for Continuous Validation
+            echo "🚪 **Quality Gates:**" >> $GITHUB_STEP_SUMMARY
+            
+            # Critical security tests must pass (100% for critical security issues)
+            security_critical=$(jq -r '.security.critical_findings // 0' tests/comprehensive-test-results.json)
+            if [ "$security_critical" -gt 0 ]; then
+              echo "❌ **GATE FAILED**: Critical security findings detected ($security_critical)" >> $GITHUB_STEP_SUMMARY
+              echo "::error::Critical security issues block continuous validation"
+              exit 1
+            else
+              echo "✅ **Security Gate**: No critical security findings" >> $GITHUB_STEP_SUMMARY
+            fi
+            
+            # Overall success rate must be >= 85% for continuous validation
+            if [ "$success_rate" -ge 85 ]; then
+              echo "✅ **Quality Gate**: Success rate meets continuous validation threshold (${success_rate}% >= 85%)" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ **GATE FAILED**: Success rate below continuous validation threshold (${success_rate}% < 85%)" >> $GITHUB_STEP_SUMMARY
+              echo "::error::Test quality below acceptable threshold for continuous validation"
+              exit 1
+            fi
             
             # Check individual test suite results
             validation_passed=$(jq -r '.validation.passed' tests/comprehensive-test-results.json)
@@ -87,15 +148,17 @@ jobs:
             integration_passed=$(jq -r '.integration.passed' tests/comprehensive-test-results.json)
             integration_total=$(jq -r '.integration.total' tests/comprehensive-test-results.json)
             
-            echo "📋 **Validation Tests:** $validation_passed/$validation_total passed" >> $GITHUB_STEP_SUMMARY
-            echo "🧪 **Integration Tests:** $integration_passed/$integration_total passed" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
+            echo "📋 **Test Suite Results:**" >> $GITHUB_STEP_SUMMARY
+            echo "- **Validation Tests:** $validation_passed/$validation_total passed" >> $GITHUB_STEP_SUMMARY
+            echo "- **Integration Tests:** $integration_passed/$integration_total passed" >> $GITHUB_STEP_SUMMARY
             
             # Show any failures
             validation_errors=$(jq -r '.validation.errors | length' tests/comprehensive-test-results.json)
             integration_errors=$(jq -r '.integration.errors | length' tests/comprehensive-test-results.json)
             
             if [ "$validation_errors" -gt 0 ] || [ "$integration_errors" -gt 0 ]; then
+              echo "" >> $GITHUB_STEP_SUMMARY
               echo "⚠️ **Failed Tests:**" >> $GITHUB_STEP_SUMMARY
               
               if [ "$validation_errors" -gt 0 ]; then
@@ -112,31 +175,99 @@ jobs:
                 done
               fi
             else
-              echo "🎉 **All tests passed!**" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "🎉 **All quality gates passed for continuous validation!**" >> $GITHUB_STEP_SUMMARY
             fi
             
-            # Determine overall status
-            if [ "$success_rate" -ge 90 ]; then
-              echo "✅ Workflow validation successful (${success_rate}% pass rate)" >> $GITHUB_STEP_SUMMARY
-            else
-              echo "❌ Workflow validation needs attention (${success_rate}% pass rate)" >> $GITHUB_STEP_SUMMARY
-              exit 1
-            fi
           else
             echo "❌ Test results file not found" >> $GITHUB_STEP_SUMMARY
+            echo "::error::Continuous validation requires test results"
             exit 1
           fi
 
-      - name: Upload test artifacts
+      # New step for continuous validation trend analysis
+      - name: Analyze test trends for continuous validation
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          echo "📈 Analyzing test trends for continuous validation..."
+          
+          # Create test trend analysis
+          mkdir -p .github/test-trends
+          
+          # Store current test results with timestamp
+          timestamp=$(date -u +"%Y-%m-%d_%H-%M-%S")
+          if [ -f "tests/comprehensive-test-results.json" ]; then
+            # Extract key metrics for trend analysis
+            success_rate=$(jq -r '.overall.success_rate' tests/comprehensive-test-results.json)
+            total_tests=$(jq -r '.overall.total_tests' tests/comprehensive-test-results.json)
+            failed_tests=$(jq -r '.overall.failed_tests' tests/comprehensive-test-results.json)
+            security_findings=$(jq -r '.security.security_findings // 0' tests/comprehensive-test-results.json)
+            
+            # Create trend data point
+            cat > .github/test-trends/trend-${timestamp}.json << EOF
+          {
+            "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+            "success_rate": $success_rate,
+            "total_tests": $total_tests,
+            "failed_tests": $failed_tests,
+            "security_findings": $security_findings,
+            "trigger": "${{ github.event_name }}",
+            "branch": "${{ github.ref }}",
+            "commit": "${{ github.sha }}"
+          }
+          EOF
+            
+            echo "📊 Current validation metrics recorded for trend analysis"
+            echo "- Success Rate: ${success_rate}%"
+            echo "- Total Tests: $total_tests"
+            echo "- Failed Tests: $failed_tests"
+            echo "- Security Findings: $security_findings"
+            
+            # Analyze recent trends if we have historical data
+            if ls .github/test-trends/trend-*.json >/dev/null 2>&1; then
+              # Get last 5 trend data points
+              recent_files=$(ls -t .github/test-trends/trend-*.json | head -5)
+              recent_success_rates=$(for file in $recent_files; do jq -r '.success_rate' "$file" 2>/dev/null || echo "0"; done)
+              
+              # Calculate trend direction
+              rates_array=($recent_success_rates)
+              if [ ${#rates_array[@]} -ge 2 ]; then
+                current_rate=${rates_array[0]}
+                previous_rate=${rates_array[1]}
+                
+                if [ "$current_rate" -gt "$previous_rate" ]; then
+                  trend="📈 IMPROVING"
+                elif [ "$current_rate" -lt "$previous_rate" ]; then
+                  trend="📉 DECLINING"
+                else
+                  trend="➡️ STABLE"
+                fi
+                
+                echo "🔍 **Trend Analysis:**" >> $GITHUB_STEP_SUMMARY
+                echo "- **Current Success Rate**: ${current_rate}%" >> $GITHUB_STEP_SUMMARY
+                echo "- **Previous Success Rate**: ${previous_rate}%" >> $GITHUB_STEP_SUMMARY
+                echo "- **Trend**: $trend" >> $GITHUB_STEP_SUMMARY
+                
+                # Alert on declining trends
+                if [ "$current_rate" -lt "$previous_rate" ] && [ "$current_rate" -lt 90 ]; then
+                  echo "::warning::Test quality trend is declining - attention needed for continuous validation"
+                fi
+              fi
+            fi
+          fi
+
+      - name: Upload test artifacts for continuous validation
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: workflow-test-results
+          name: continuous-validation-results-${{ github.run_id }}
           path: |
             tests/workflow-validation-results.json
             tests/integration-test-results.json
             tests/comprehensive-test-results.json
-          retention-days: 30
+            .github/test-trends/
+            .github/workflow-health/
+          retention-days: 90  # Extended retention for trend analysis
 
       - name: Validate specific workflow requirements
         run: |
@@ -395,3 +526,140 @@ jobs:
             success_rate=$(jq -r '.overall.success_rate' tests/comprehensive-test-results.json)
             echo "  Test Success Rate: ${success_rate}%"
           fi
+
+  # New job for continuous validation monitoring
+  continuous-validation-monitor:
+    runs-on: ubuntu-latest
+    needs: validate-workflows
+    if: always() && github.event_name == 'schedule'
+    timeout-minutes: 10
+    
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Monitor continuous validation health
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Monitor the continuous validation pipeline health
+            const fs = require('fs');
+            
+            console.log('🔍 Monitoring continuous validation pipeline health...');
+            
+            // Get recent workflow runs for this workflow
+            const recentRuns = await github.rest.actions.listWorkflowRuns({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'test-workflows.yml',
+              per_page: 20,
+              status: 'completed'
+            });
+            
+            // Analyze failure patterns for continuous validation
+            const failures = recentRuns.data.workflow_runs.filter(run => 
+              run.conclusion === 'failure' || run.conclusion === 'cancelled'
+            );
+            
+            const successCount = recentRuns.data.workflow_runs.filter(run => 
+              run.conclusion === 'success'
+            ).length;
+            
+            const totalRuns = Math.min(recentRuns.data.workflow_runs.length, 20);
+            const failureRate = failures.length / totalRuns;
+            const successRate = (successCount / totalRuns) * 100;
+            
+            console.log(`📊 Continuous Validation Health Metrics:`);
+            console.log(`- Total Recent Runs: ${totalRuns}`);
+            console.log(`- Successful Runs: ${successCount}`);
+            console.log(`- Failed Runs: ${failures.length}`);
+            console.log(`- Success Rate: ${successRate.toFixed(1)}%`);
+            console.log(`- Failure Rate: ${(failureRate * 100).toFixed(1)}%`);
+            
+            // Critical health check: Alert if success rate drops below 70%
+            if (successRate < 70) {
+              const healthIssueTitle = `🚨 Continuous Validation Health Alert - Success Rate Critical`;
+              const healthIssueBody = `## 🚨 Critical: Continuous Validation Pipeline Health Degraded
+              
+              The automated testing pipeline for continuous validation has experienced significant reliability issues.
+              
+              ### Health Metrics
+              - **Success Rate**: ${successRate.toFixed(1)}% (Critical: <70%)
+              - **Total Recent Runs**: ${totalRuns}
+              - **Failed Runs**: ${failures.length}
+              - **Detection Time**: ${new Date().toISOString()}
+              
+              ### Impact Assessment
+              - 🔴 **CRITICAL**: Continuous validation reliability severely compromised
+              - 🔴 **QUALITY**: Code quality validation is unreliable
+              - 🔴 **CI/CD**: Development workflow is significantly impacted
+              - 🔴 **TRUST**: Team confidence in automation is eroded
+              
+              ### Recent Failed Runs
+              ${failures.slice(0, 5).map(run => 
+                \`- [Run \${run.run_number}](\${run.html_url}) - \${run.conclusion} (\${new Date(run.created_at).toLocaleDateString()})\`
+              ).join('\\n')}
+              
+              ### Immediate Actions Required
+              1. 🚨 **URGENT**: Investigate root cause of pipeline failures
+              2. 🔧 **FIX**: Address infrastructure or configuration issues
+              3. 🧪 **VALIDATE**: Run manual validation to confirm fixes
+              4. 📊 **MONITOR**: Track recovery over next several runs
+              5. 📝 **DOCUMENT**: Record lessons learned and prevention measures
+              
+              ### Escalation
+              This issue requires immediate engineering attention to restore continuous validation reliability.
+              
+              ---
+              
+              *Auto-generated by continuous validation health monitoring - CRITICAL ALERT*
+              `;
+              
+              // Check for existing critical health issues
+              const existingHealthIssues = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: ['continuous-validation-health', 'critical'],
+                per_page: 3
+              });
+              
+              if (existingHealthIssues.data.length === 0) {
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: healthIssueTitle,
+                  body: healthIssueBody,
+                  labels: ['continuous-validation-health', 'critical', 'bug', 'priority: critical']
+                });
+                
+                console.log('🚨 Created critical health alert due to low success rate');
+              } else {
+                console.log('Critical health alert already exists, monitoring continues...');
+              }
+            }
+            
+            // Create health report for scheduled runs
+            const healthReport = {
+              timestamp: new Date().toISOString(),
+              success_rate: successRate,
+              failure_rate: failureRate * 100,
+              total_runs: totalRuns,
+              failed_runs: failures.length,
+              health_status: successRate >= 90 ? 'healthy' : 
+                           successRate >= 70 ? 'degraded' : 'critical',
+              recent_failures: failures.slice(0, 3).map(run => ({
+                run_number: run.run_number,
+                conclusion: run.conclusion,
+                created_at: run.created_at,
+                html_url: run.html_url
+              }))
+            };
+            
+            console.log('📊 Health report generated for continuous validation monitoring');
+            console.log(JSON.stringify(healthReport, null, 2));

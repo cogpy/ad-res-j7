@@ -9,7 +9,7 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
-const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -22,7 +22,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
-      malformedMarkdown: null,
+      noActionableTasks: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -138,18 +138,19 @@ class TestRunner {
     return success;
   }
 
-  async runMalformedMarkdownTests() {
-    console.log('\n📋 Running Malformed Markdown Tests...\n');
+  async runNoActionableTasksTests() {
+    console.log('\n📋 Running No Actionable Tasks Validation Tests...\n');
     
-    const malformedTest = new MalformedMarkdownTest();
-    const success = await malformedTest.run();
+    const noActionableTasksTest = new NoActionableTasksValidator();
+    const success = noActionableTasksTest.runAllTests();
     
-    this.results.malformedMarkdown = {
+    this.results.noActionableTasks = {
       success: success,
-      total: malformedTest.testResults.length,
-      passed: malformedTest.testResults.filter(t => t.passed).length,
-      failed: malformedTest.testResults.filter(t => !t.passed).length,
-      errors: malformedTest.errors
+      total: noActionableTasksTest.testResults.length,
+      passed: noActionableTasksTest.testResults.filter(t => t.passed).length,
+      failed: noActionableTasksTest.testResults.filter(t => !t.passed).length,
+      errors: noActionableTasksTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
     };
     
     return success;
@@ -162,7 +163,7 @@ class TestRunner {
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
                                        this.results.endToEnd.total +
-                                       this.results.malformedMarkdown.total;
+                                       this.results.noActionableTasks.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
@@ -170,7 +171,7 @@ class TestRunner {
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
                                         this.results.endToEnd.passed +
-                                        this.results.malformedMarkdown.passed;
+                                        this.results.noActionableTasks.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
@@ -178,7 +179,7 @@ class TestRunner {
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
                                         this.results.endToEnd.failed +
-                                        this.results.malformedMarkdown.failed;
+                                        this.results.noActionableTasks.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -220,10 +221,11 @@ class TestRunner {
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
     
-    console.log('\n🔧 Malformed Markdown Tests:');
-    console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
-    console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
-    console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    console.log('\n🚫 No Actionable Tasks Tests:');
+    console.log(`   ✅ Passed: ${this.results.noActionableTasks.passed}/${this.results.noActionableTasks.total}`);
+    console.log(`   ❌ Failed: ${this.results.noActionableTasks.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.noActionableTasks.passed / this.results.noActionableTasks.total) * 100)}%`);
+    console.log(`   🔍 Scenarios Tested: ${this.results.noActionableTasks.scenarios_tested}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -287,9 +289,9 @@ class TestRunner {
         });
       }
       
-      if (this.results.malformedMarkdown.errors.length > 0) {
-        console.log('   Malformed Markdown Test Failures:');
-        this.results.malformedMarkdown.errors.forEach(error => {
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
           console.log(`   ${failureIndex}. ${error}`);
           failureIndex++;
         });
@@ -314,7 +316,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown']
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'no-actionable-tasks']
       },
       summary: this.results.overall
     });
@@ -334,7 +336,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
-      const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const noActionableTasksSuccess = await this.runNoActionableTasksTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -346,7 +348,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && noActionableTasksSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {

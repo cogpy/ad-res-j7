@@ -1,0 +1,164 @@
+{
+  "validationType": "PROSECUTION_RECOMMENDATIONS_LEGAL_SOUNDNESS",
+  "timestamp": "2025-10-16T17:39:52.178Z",
+  "validator": "Legal Attention Transform Mechanism",
+  "methodology": "Multi-Head Legal Attention with Transformer Architecture",
+  "summary": {
+    "totalChargesValidated": 12,
+    "overallAssessment": {
+      "totalCharges": 12,
+      "soundCharges": 0,
+      "soundnessPercentage": 0,
+      "averageConfidence": 0.8710000000000003,
+      "overallRating": "NEEDS_IMPROVEMENT"
+    },
+    "legalFrameworkCompliance": {},
+    "evidenceAdequacy": {},
+    "proceduralReadiness": {}
+  },
+  "detailedFindings": {
+    "prosecutionRecommendations": {
+      "proceedWithCharges": [],
+      "requireAdditionalEvidence": [
+        {
+          "charge": "peterFaucitt_PERJURY",
+          "requirements": []
+        },
+        {
+          "charge": "peterFaucitt_FRAUD",
+          "requirements": []
+        },
+        {
+          "charge": "peterFaucitt_THEFT",
+          "requirements": []
+        },
+        {
+          "charge": "peterFaucitt_OBSTRUCTION_OF_JUSTICE",
+          "requirements": []
+        },
+        {
+          "charge": "rynetteFarrar_EMAIL_IMPERSONATION",
+          "requirements": []
+        },
+        {
+          "charge": "rynetteFarrar_FRAUD",
+          "requirements": []
+        },
+        {
+          "charge": "rynetteFarrar_THEFT",
+          "requirements": []
+        },
+        {
+          "charge": "rynetteFarrar_TAX_FRAUD",
+          "requirements": []
+        },
+        {
+          "charge": "danielBantjes_PERJURY",
+          "requirements": []
+        },
+        {
+          "charge": "danielBantjes_BREACH_OF_FIDUCIARY_DUTY",
+          "requirements": []
+        },
+        {
+          "charge": "danielBantjes_PROFESSIONAL_MISCONDUCT",
+          "requirements": []
+        },
+        {
+          "charge": "danielBantjes_CONSPIRACY",
+          "requirements": []
+        }
+      ],
+      "considerAlternativeCharges": [],
+      "notRecommended": []
+    },
+    "riskAssessment": {},
+    "chargeByChargeAnalysis": {
+      "peterFaucitt": [
+        {
+          "charge": "PERJURY",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "FRAUD",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "THEFT",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "OBSTRUCTION_OF_JUSTICE",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        }
+      ],
+      "rynetteFarrar": [
+        {
+          "charge": "EMAIL_IMPERSONATION",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "FRAUD",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "THEFT",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "TAX_FRAUD",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        }
+      ],
+      "danielBantjes": [
+        {
+          "charge": "PERJURY",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "BREACH_OF_FIDUCIARY_DUTY",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "PROFESSIONAL_MISCONDUCT",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        },
+        {
+          "charge": "CONSPIRACY",
+          "confidence": 0.8710000000000001,
+          "soundness": 0.8710000000000001
+        }
+      ]
+    },
+    "legalAttentionWeights": {
+      "causal": 0.35,
+      "intentionality": 0.25,
+      "temporal": 0.2,
+      "normative": 0.2
+    },
+    "statutoryComplianceMatrix": {
+      "overall": "COMPLIANT",
+      "details": "All statutory requirements met"
+    }
+  },
+  "actionItems": [],
+  "recommendations": {
+    "proceedWithProsecution": true,
+    "requiredActions": [],
+    "riskMitigations": [
+      "Monitor evidence adequacy",
+      "Ensure procedural compliance"
+    ]
+  }
+}
