@@ -45,7 +45,7 @@ This evidence package now contains the complete forensic analysis of email imper
 
 ### Timeline of Email Control Evidence
 
-#### June 20, 2025 - Sage Account Control (JF1)
+#### 2025-06-20 - Sage Account Control (JF1)
 **Evidence Source:** Sage Account screenshot  
 **Control Confirmation:** Pete@regima.com controlled by Rynette Farrar
 
@@ -61,7 +61,7 @@ This evidence package now contains the complete forensic analysis of email imper
 - Decision-making authority exercised through email impersonation
 - Third-party coordination (e.g., Gayane Williams) receiving instructions from hijacked account
 
-#### August 25, 2025 - Control Structure Confirmation (JF2)
+#### 2025-08-25 - Control Structure Confirmation (JF2)
 **Evidence Source:** Sage Account screenshot  
 **Control Confirmation:** Continued control structure validation
 
@@ -77,7 +77,7 @@ This evidence package now contains the complete forensic analysis of email imper
 - Use of email control for operational directives
 - Coordination with broader revenue theft scheme
 
-#### August 29, 2025 - Attorney Communications (JF3)
+#### 2025-08-29 - Attorney Communications (JF3)
 **Evidence Source:** Email communication  
 **Legal Significance:** Attorney knowledge of criminal matters
 
@@ -162,7 +162,7 @@ This evidence package now contains the complete forensic analysis of email imper
 
 ### Connection to Category 4: Instruction Coordination
 **Evidence Folder:** `20-june-gee-gayane-email/`  
-**Timeline:** June 20, 2025
+**Timeline:** 2025-06-20
 
 **Impersonation Context:**
 - Gayane Williams received instructions "from Pete" to email all clients
@@ -175,7 +175,7 @@ Peter Faucitt does not use a computer and gets ALL his information from 3rd part
 
 ### Connection to Family Conspiracy Evidence
 **Evidence Folder:** `29-may-domain-registration/`  
-**Timeline:** May 29, 2025
+**Timeline:** 2025-05-29
 
 **Coordinated Impersonation:**
 - Son's domain registration for business impersonation
@@ -184,7 +184,7 @@ Peter Faucitt does not use a computer and gets ALL his information from 3rd part
 - Coordinated customer hijacking through multiple impersonation vectors
 
 ### Connection to Attorney Communications (JF3)
-**Timeline:** August 29, 2025
+**Timeline:** 2025-08-29
 
 **Legal Implications:**
 - Attorney received communications from compromised pete@regima.com
@@ -217,10 +217,10 @@ CONCLUSION: Pete@regima.com operated by intermediary (Rynette Farrar)
 
 #### Control Timeline Evidence
 ```
-June 20, 2025:  Sage Account screenshot confirms Rynette control
-June 20, 2025:  Gayane receives "Pete's" instructions (likely via controlled email)
-August 25, 2025: Sage Account control structure unchanged
-August 29, 2025: Attorney communications from pete@regima.com
+2025-06-20:  Sage Account screenshot confirms Rynette control
+2025-06-20:  Gayane receives "Pete's" instructions (likely via controlled email)
+2025-08-25: Sage Account control structure unchanged
+2025-08-29: Attorney communications from pete@regima.com
 September 2025: Pattern continues during legal proceedings
 
 PATTERN DURATION: 3+ months of sustained email impersonation
@@ -293,11 +293,11 @@ PATTERN DURATION: 3+ months of sustained email impersonation
 - Foundation for systematic impersonation established
 
 ### Phase 2: Active Impersonation Period (June-August 2025)
-- **June 20, 2025:** Sage Account control confirmed (JF1)
-- **June 20, 2025:** Instructions to Gayane Williams via impersonated email
-- **July 8, 2025:** POPI directive coordination (potential email involvement)
-- **August 25, 2025:** Control structure validation (JF2)
-- **August 29, 2025:** Attorney communications via compromised account (JF3)
+- **2025-06-20:** Sage Account control confirmed (JF1)
+- **2025-06-20:** Instructions to Gayane Williams via impersonated email
+- **2025-07-08:** POPI directive coordination (potential email involvement)
+- **2025-08-25:** Control structure validation (JF2)
+- **2025-08-29:** Attorney communications via compromised account (JF3)
 
 ### Phase 3: Legal Proceedings Impersonation (August-September 2025)
 - Continued use of pete@regima.com during interdict proceedings
@@ -475,9 +475,9 @@ PATTERN DURATION: 3+ months of sustained email impersonation
 
 ### Cross-Referenced Evidence
 ```
-JF1: Sage Account screenshot (20 June 2025) - Foundation evidence
-JF2: Sage Account screenshot (25 August 2025) - Control confirmation
-JF3: Email communication (29 August 2025) - Attorney knowledge
+JF1: Sage Account screenshot (2025-06-20) - Foundation evidence
+JF2: Sage Account screenshot (2025-08-25) - Control confirmation
+JF3: Email communication (2025-08-29) - Attorney knowledge
 JF3B: System access logs (COMPLETED) - Technical forensics with Grade A evidence
 JF3C: Identity theft evidence (COMPLETED) - Complete documentation with victim analysis
 

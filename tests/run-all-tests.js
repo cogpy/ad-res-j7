@@ -9,6 +9,7 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const DateValidationTest = require('./date-validation.test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
 const FilePathValidator = require('./file-path-validation.test.js');
 const EdgeCaseComprehensiveTest = require('./edge-case-comprehensive.test.js');
@@ -25,6 +26,7 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      dateValidation: null,
       malformedMarkdown: null,
       filePathValidation: null,
       edgeCaseComprehensive: null,
@@ -144,6 +146,18 @@ class TestRunner {
     return success;
   }
 
+  async runDateValidationTests() {
+    console.log('\n📋 Running Date Validation Tests...\n');
+    
+    const dateValidationTest = new DateValidationTest();
+    const success = dateValidationTest.runAllTests();
+    
+    this.results.dateValidation = {
+      success: success,
+      total: dateValidationTest.testResults.length,
+      passed: dateValidationTest.testResults.filter(t => t.passed).length,
+      failed: dateValidationTest.testResults.filter(t => !t.passed).length,
+      errors: dateValidationTest.errors
   async runMalformedMarkdownTests() {
     console.log('\n📋 Running Malformed Markdown Tests...\n');
     
@@ -218,6 +232,8 @@ class TestRunner {
                                        this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
+                                       this.results.endToEnd.total + 
+                                       this.results.dateValidation.total;
                                        this.results.endToEnd.total +
                                        this.results.malformedMarkdown.total +
                                        this.results.filePathValidation.total;
@@ -229,6 +245,8 @@ class TestRunner {
                                         this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
+                                        this.results.endToEnd.passed + 
+                                        this.results.dateValidation.passed;
                                         this.results.endToEnd.passed +
                                         this.results.malformedMarkdown.passed +
                                         this.results.filePathValidation.passed;
@@ -240,6 +258,8 @@ class TestRunner {
                                         this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
+                                        this.results.endToEnd.failed + 
+                                        this.results.dateValidation.failed;
                                         this.results.endToEnd.failed +
                                         this.results.malformedMarkdown.failed +
                                         this.results.filePathValidation.failed;
@@ -369,6 +389,9 @@ class TestRunner {
         });
       }
       
+      if (this.results.dateValidation.errors.length > 0) {
+        console.log('   Date Validation Test Failures:');
+        this.results.dateValidation.errors.forEach(error => {
       if (this.results.malformedMarkdown.errors.length > 0) {
         console.log('   Malformed Markdown Test Failures:');
         this.results.malformedMarkdown.errors.forEach(error => {
@@ -422,6 +445,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
+        test_suites: ['validation', 'integration', 'comprehensive', 'security', 'end-to-end', 'date-validation']
         test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'edge-case-comprehensive']
       },
       summary: this.results.overall
@@ -442,6 +466,7 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const dateValidationSuccess = await this.runDateValidationTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
       const filePathValidationSuccess = await this.runFilePathValidationTests();
       const edgeCaseComprehensiveSuccess = await this.runEdgeCaseComprehensiveTests();
@@ -457,6 +482,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
+      const overallSuccess = validationSuccess && integrationSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && dateValidationSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && edgeCaseComprehensiveSuccess && jsonValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
