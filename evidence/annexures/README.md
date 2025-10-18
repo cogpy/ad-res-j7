@@ -161,6 +161,36 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Added:** 2025-10-16
 - **Updated:** 2025-10-17 (Corrected focus to SA tax residency)
 
+### Chesno Fraud Documentation
+
+#### JF-CHESNO1: Forensic Accounting Reports - Chesno Fraud
+- **File:** `JF-CHESNO1_FORENSIC_ACCOUNTING_REPORTS.md`
+- **Purpose:** Forensic accounting analysis documenting the Chesno fraud that necessitated Daniel's business rescue intervention
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 129, Section 11.1.1, Strategic Arguments
+- **Status:** ⚠️ **Template** - Requires professional forensic accounting reports
+
+#### JF-CHESNO2: Bank Statements - Unauthorized Transfers
+- **File:** `JF-CHESNO2_BANK_STATEMENTS_UNAUTHORIZED_TRANSFERS.md`
+- **Purpose:** Bank statement evidence documenting unauthorized transfers and financial irregularities during Chesno fraud period
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 129, Section 11.1.1, Pattern evidence
+- **Status:** ⚠️ **Template** - Requires actual banking records and forensic analysis
+
+#### JF-CHESNO3: Police Reports and Fraud Investigation Records
+- **File:** `JF-CHESNO3_POLICE_REPORTS_FRAUD_INVESTIGATION.md`
+- **Purpose:** Law enforcement documentation of Chesno fraud investigation and official recognition of criminal activity
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 129, Section 11.1.1, Official validation of Peter's abandonment
+- **Status:** ⚠️ **Template** - Requires police investigation records through legal channels
+
+#### JF-CHESNO4: Insolvency Assessment Pre-Daniel Involvement
+- **File:** `JF-CHESNO4_INSOLVENCY_ASSESSMENT_PRE_DANIEL.md`
+- **Purpose:** Professional insolvency assessment documenting business condition before Daniel's rescue intervention
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 129, Section 11.1.1, Necessity defense
+- **Status:** ⚠️ **Template** - Requires qualified insolvency practitioner assessment
+
 ---
 
 ## Strategic Framework
@@ -194,20 +224,23 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - **JF5-COMPARISON:** Detailed analysis proving fraud in the inducement
    - **Demonstrates:** Pattern of attorney manipulation and misrepresentation
 
+5. **Historical Pattern Evidence** (Paragraph 129, Section 11.1.1)
+   - **JF-CHESNO1-4:** Establish Peter's modus operandi of poor decisions, abandonment, and Daniel's rescue
+
 ### Evidence Integration Pattern:
 
 **Primary Evidence Chain:**
-1. **JF-RP1** → Establishes international operations legitimacy and Responsible Person role
-2. **JF-RP2** → Quantifies regulatory penalties, harm analysis, and material non-disclosure
-3. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
-4. **JF-BS1** → Shows 16 July 2025 transaction details
-5. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+1. **JF-RP1** → Establishes international operations legitimacy
+2. **JF-DLA1-DLA3** → Demonstrates consistent director loan account procedures  
+3. **JF-BS1** → Shows 16 July 2025 transaction details
+4. **JF-PA1-PA4** → Proves Peter's hypocrisy through his identical conduct
+5. **JF-CHESNO1-4** → Establishes historical pattern of Peter's abandonment and Daniel's rescue necessity
 
 **Cross-Reference Network:**
 - All annexures cross-reference each other for consistency
 - Each annexure supports multiple affidavit sections
 - Pattern evidence builds cumulatively across all documents
-- JF5 evidence connects to broader pattern of manipulation (JF1-JF3, JF12)
+- **Chesno evidence (JF-CHESNO1-4)** provides historical precedent supporting current defense strategy
 
 ---
 
@@ -226,6 +259,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
    - **New venture records** for JF-RESTORE4 (business establishment and performance)
    - **Settlement agreements** for JF5-DRAFT and JF5-FINAL (from ENS Africa correspondence)
    - **Professional certifications** and supporting documentation
+   - **Chesno fraud documentation** for JF-CHESNO1-4 (forensic reports, bank records, police reports, insolvency assessment)
 
 2. **Replace All Placeholders:**
    - All `[PLACEHOLDER]` markers must be replaced with actual data
@@ -268,6 +302,8 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Waiver:** Peter voluntarily relinquished right to object to informal procedures
 - **Course of Dealing:** Established pattern governs business relationships
 - **Good Faith:** Peter's selective objection violates good faith principles
+- **Clean Hands Doctrine:** Peter's historical pattern of creating crises and abandoning responsibility
+- **Pattern Evidence:** Chesno fraud demonstrates Peter's modus operandi of poor decisions and abandonment
 
 ---
 
