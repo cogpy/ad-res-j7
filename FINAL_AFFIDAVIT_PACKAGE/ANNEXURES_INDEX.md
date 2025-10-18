@@ -2,7 +2,7 @@
 ## Case 2025-137857: Jacqueline Faucitt and Daniel James Faucitt (Respondents)
 
 **Date**: October 2025  
-**Total Annexures**: 12 (JF1 through JF12)  
+**Total Annexures**: 10 (JF1 through JF10)  
 **Total Size**: ~40 MB
 
 ---
@@ -371,80 +371,12 @@ This annexure contains the **single most important piece of evidence** in the en
 
 ---
 
-## ANNEXURE JF11: MEDICAL RECORDS
-
-**Location**: `ANNEXURES/JF11/`  
-**Size**: 16 KB  
-**Priority**: **CRITICAL** (for refuting dementia claim)
-
-### Contents
-
-Medical records for **Jacqueline Faucitt** demonstrating:
-- No diagnosis of dementia
-- No cognitive impairment
-- Mental capacity and competence
-
-### Significance
-
-**Proves**:
-- ✅ Jacqueline Faucitt does NOT have dementia
-- ✅ Jacqueline is cognitively competent
-- ✅ Jacqueline's testimony is reliable
-- ✅ Jacqueline has mental capacity to testify
-
-**Refutes**:
-- ❌ Applicant's false claim that Jacqui has "dementia"
-- ❌ Applicant's attempt to discredit key witness
-- ❌ Applicant's gaslighting tactic
-
-**Legal Significance**:
-- Exposes Applicant's false and defamatory claims
-- Demonstrates elder abuse tactics
-- Proves consciousness of guilt (Applicant fears Jacqui's testimony)
-- Validates Jacqui's testimony as credible
-
----
-
-## ANNEXURE JF12: LEGAL RESEARCH AND FRAMEWORKS
-
-**Location**: `ANNEXURES/JF12/`  
-**Size**: 16 KB  
-**Priority**: **MEDIUM**
-
-### Contents
-
-1. **criminal_matter_safety_guide.md** (10,282 bytes)
-   - Safety considerations for criminal matters
-   - Guidance on handling criminal prosecution
-   - Risk assessment and mitigation
-
-2. **README.md** (6,426 bytes)
-   - Overview of legal frameworks
-   - Relevant legal principles
-   - Case law and statutory provisions
-
-### Significance
-
-**Provides**:
-- ✅ Legal framework for fraud and identity theft charges
-- ✅ Criminal matter safety considerations
-- ✅ Relevant case law and precedents
-- ✅ Statutory provisions applicable to this case
-
-**Supports**:
-- Criminal referral request
-- Legal arguments in affidavits
-- Safety concerns for Respondents
-
----
-
 ## SUMMARY OF ANNEXURES
 
 ### By Priority
 
 **CRITICAL (Irrefutable Proof)**:
 - **JF1**: Shopify Plus Email (26 July 2017) - 100 KB
-- **JF11**: Medical Records (refuting dementia claim) - 16 KB
 
 **HIGH (Strong Supporting Evidence)**:
 - **JF2**: Shopify Sales Reports - 3.3 MB
@@ -458,11 +390,10 @@ Medical records for **Jacqueline Faucitt** demonstrating:
 - **JF5**: Correspondence Evidence (JF8 Series) - 132 KB
 - **JF7**: Screenshots and Visual Evidence - 22 MB
 - **JF10**: Director Loan Account Records - 36 KB
-- **JF12**: Legal Research and Frameworks - 16 KB
 
 ### Total Evidence
 
-- **Total Annexures**: 12
+- **Total Annexures**: 10
 - **Total Size**: ~40 MB
 - **Total Files**: 208+ files
 - **Evidence Span**: 2017-2025 (8 years)
@@ -481,8 +412,6 @@ Medical records for **Jacqueline Faucitt** demonstrating:
 | JF8 | Evidence packages | **MEDIUM** | ⚠️ Possible |
 | JF9 | Timeline analysis | **STRONG** | ⚠️ Difficult |
 | JF10 | Accounting records | **STRONG** | ⚠️ Difficult |
-| JF11 | Medical records | **IRREFUTABLE** | ❌ No |
-| JF12 | Legal research | **SUPPORTING** | N/A |
 
 ---
 
@@ -498,38 +427,31 @@ Medical records for **Jacqueline Faucitt** demonstrating:
 
 ### For Legal Review
 
-1. **Priority Review**: Start with CRITICAL annexures (JF1, JF11)
+1. **Priority Review**: Start with CRITICAL annexures (JF1)
 2. **Supporting Evidence**: Review HIGH priority annexures (JF2-JF4, JF6, JF8-JF9)
-3. **Corroboration**: Review MEDIUM priority annexures (JF5, JF7, JF10, JF12)
+3. **Corroboration**: Review MEDIUM priority annexures (JF5, JF7, JF10)
 4. **Cross-Reference**: Verify all claims in affidavits are supported by annexures
 
 ### For Presentation in Court
 
 **Opening Statement Order**:
 1. Present **JF1** (Shopify Email) - establish irrefutable foundation
-2. Present **JF11** (Medical Records) - refute dementia claim immediately
-3. Present **JF9** (Timeline) - establish chronological narrative
-4. Present **JF3, JF4** (Financial) - demonstrate transparency
-5. Present **JF5** (Correspondence) - show good faith cooperation
-6. Present **JF2, JF6-JF8** (Supporting) - corroborate narrative
+2. Present **JF9** (Timeline) - establish chronological narrative
+3. Present **JF3, JF4** (Financial) - demonstrate transparency
+4. Present **JF5** (Correspondence) - show good faith cooperation
+5. Present **JF2, JF6-JF8** (Supporting) - corroborate narrative
 
 ---
 
 ## LEGAL STRATEGY NOTES
 
-### The "One-Two Punch"
+### The "One Punch"
 
 **Punch 1: JF1 (Shopify Email)**
 - Irrefutable third-party evidence
 - Completely demolishes Applicant's central claims
 - Cannot be disputed or explained away
 - Establishes foundation for entire case
-
-**Punch 2: JF11 (Medical Records)**
-- Immediately refutes dementia gaslighting
-- Exposes Applicant's bad faith tactics
-- Validates Jacqui as credible witness
-- Demonstrates consciousness of guilt
 
 ### Supporting Evidence Strategy
 
@@ -555,13 +477,12 @@ Medical records for **Jacqueline Faucitt** demonstrating:
 This annexure bundle provides **comprehensive, irrefutable evidence** that:
 
 1. ✅ Daniel and Kayla operated independent businesses (JF1 - Shopify Email)
-2. ✅ Jacqui does NOT have dementia (JF11 - Medical Records)
-3. ✅ Daniel is NOT delusional (JF1 validates his account)
-4. ✅ No "head office" control existed (JF1 shows independent operations)
-5. ✅ Financial transparency and proper management (JF3, JF4, JF10)
-6. ✅ Good faith cooperation attempts (JF5)
-7. ✅ Systematic appropriation after Kayla's death (JF9 - Timeline)
-8. ✅ Evidence destruction on 22 May 2025 (JF9 - Timeline)
+2. ✅ Daniel is NOT delusional (JF1 validates his account)
+3. ✅ No "head office" control existed (JF1 shows independent operations)
+4. ✅ Financial transparency and proper management (JF3, JF4, JF10)
+5. ✅ Good faith cooperation attempts (JF5)
+6. ✅ Systematic appropriation after Kayla's death (JF9 - Timeline)
+7. ✅ Evidence destruction on 22 May 2025 (JF9 - Timeline)
 
 **The evidence is overwhelming. The Applicant's claims are demolished. Justice should prevail.**
 
@@ -570,7 +491,7 @@ This annexure bundle provides **comprehensive, irrefutable evidence** that:
 **Document Prepared By**: Legal Team  
 **Date**: October 2025  
 **Case**: 2025-137857  
-**Total Annexures**: 12  
+**Total Annexures**: 10  
 **Total Evidence**: 208+ files, ~40 MB
 
 ---

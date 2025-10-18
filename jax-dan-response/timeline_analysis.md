@@ -12,12 +12,12 @@ This timeline demonstrates the strategic coordination of the Applicant's actions
 | June 2025     | Peter cancels payment cards                               | Creates documentation access problem he later complains about                |
 | June-July 2025| IT expense questions raised                               | Tax season - routine documentation requests                                  |
 | 16 July 2025  | R500K payment to Dan                                      | Legitimate director loan, later mischaracterized as "gift"                 |
-| **[Date]**    | Settlement agreement signed                             | 8 days before interdict - strategic timing                                   |
-| 14 August 2025| Peter files founding affidavit                            | Material non-disclosures, perjury regarding email control                    |
+| 11 August 2025| Settlement agreement signed                             | 2 days before interdict - strategic timing                                   |
+| 13 August 2025| Peter files founding affidavit                            | Material non-disclosures, perjury regarding email control                    |
 | 19 August 2025| Ex parte interdict granted                                | Based on false and incomplete information                                    |
 | 25 August 2025| Second Sage screenshot                                    | Confirms ongoing Rynette control                                             |
 | 29 August 2025| ENS Africa acknowledges criminal matters                  | "Received, thanks Daniel" - then suppresses information                    |
-| **[Date]**    | Investment payout due                                     | 9 months from interdict - underlying motive for control                      |
+| May 2026      | Investment payout due (estimated)                        | ~9 months from interdict - underlying motive for control                      |
 
 #### Timeline Analysis Insights
 
@@ -27,7 +27,7 @@ This timeline demonstrates the strategic coordination of the Applicant's actions
     -   No explanation for 2-month delay if genuinely urgent
 
 2.  **Strategic Coordination**
-    -   Settlement agreement signed 8 days before interdict
+    -   Settlement agreement signed 2 days before interdict
     -   Interdict provides leverage in settlement negotiations
     -   Timing suggests pretext rather than genuine concern
 

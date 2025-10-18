@@ -267,7 +267,7 @@ cat docs/LABEL_HANDLING_GUIDE.md
   - Modified `batch-create-issues.js` to use `spawnSync`
   - Added 72 automated tests
   - Created comprehensive documentation
-  - Updated package.json and README
+  - Updated package.json and README.md
   - All tests passing
 
 ---

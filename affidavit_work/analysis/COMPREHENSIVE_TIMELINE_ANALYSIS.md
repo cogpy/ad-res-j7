@@ -11,7 +11,7 @@
 This comprehensive timeline analysis documents the strategic coordination and bad faith conduct underlying Peter Faucitt's interdict application. The timeline reveals:
 
 1. **Months-long delay** between alleged discovery of issues (June 2025) and interdict filing (August 2025), contradicting claims of urgency
-2. **Strategic timing** with settlement agreement signed 8 days before interdict filing
+2. **Strategic timing** with settlement agreement signed 2 days before interdict filing
 3. **Self-created crisis** where Peter's unilateral actions (card cancellations) created the problems he later complained about
 4. **Information manipulation** through Rynette Farrar's control of Pete@regima.com email
 5. **Coordinated perjury** with Daniel Bantjies' confirmatory affidavit despite knowledge of criminal matters
@@ -59,12 +59,12 @@ This comprehensive timeline analysis documents the strategic coordination and ba
 | **Mid-June 2025** | Peter cancels payment cards (day after receiving reports) | Manufactures crisis to justify later interdict | Bank cancellation records |
 | **June-July 2025** | IT expense questions raised | Tax season - routine documentation requests used as pretext | Email correspondence |
 | **16 July 2025** | R500K payment to Dan | Legitimate director loan, later mischaracterized as "gift" | JF6: Bank statements, director loan records |
-| **[Date TBD]** | Settlement agreement signed | **8 days before interdict** - strategic timing | Settlement agreement |
-| **14 August 2025** | Peter files founding affidavit | Material non-disclosures, perjury regarding email control | Court filing |
+| **11 August 2025** | Settlement agreement signed | **2 days before interdict** - strategic timing | Settlement agreement |
+| **13 August 2025** | Peter files founding affidavit | Material non-disclosures, perjury regarding email control | Court filing |
 | **19 August 2025** | Ex parte interdict granted | Based on false and incomplete information | Court order |
 | **25 August 2025** | Second Sage screenshot | Confirms ongoing Rynette control of Pete@regima.com | JF3A: Updated Sage screenshot |
 | **29 August 2025** | ENS Africa acknowledges criminal matters | "Received, thanks Daniel" - then suppresses information from Court | Email evidence |
-| **[Date TBD]** | Investment payout due | **9 months from interdict** - underlying financial motive | Family trust documentation |
+| **~May 2026** | Investment payout due (estimated) | **~9 months from interdict** - underlying financial motive | Family trust documentation |
 
 ---
 
@@ -90,12 +90,12 @@ If Peter genuinely believed there was urgent misconduct requiring immediate Cour
 ### 2. Strategic Coordination: Settlement Agreement Timing
 
 **Timeline:**
-1. Settlement agreement signed: **[Date]**
-2. Interdict filed: **14 August 2025**
-3. **Gap: 8 days**
+1. Settlement agreement signed: **11 August 2025**
+2. Interdict filed: **13 August 2025**
+3. **Gap: 2 days**
 
 **Analysis:**
-The interdict was filed just 8 days after the settlement agreement was signed. This timing is not coincidental:
+The interdict was filed just 2 days after the settlement agreement was signed. This timing is not coincidental:
 
 - **Leverage Creation**: The interdict provides Peter with negotiating leverage in the settlement
 - **Timing Correlation**: Filing immediately after settlement suggests strategic coordination
@@ -167,7 +167,7 @@ Peter claims in his founding affidavit to have received emails and information d
 | Date | Event | Legal Significance |
 |------|-------|-------------------|
 | **10 June 2025** | Bantjies learns of criminal matters | Knowledge acquired |
-| **14 August 2025** | Bantjies provides confirmatory affidavit | Support for Peter's interdict |
+| **13 August 2025** | Bantjies provides confirmatory affidavit | Support for Peter's interdict |
 | **29 August 2025** | ENS Africa email: "Received, thanks Daniel" | Acknowledgment of criminal matters communication |
 | **Post-29 August** | No disclosure to Court | Suppression of material information |
 
@@ -175,7 +175,7 @@ Peter claims in his founding affidavit to have received emails and information d
 Daniel Jacobus Bantjies, as accountant and trustee, committed perjury:
 
 1. **Knew of criminal matters** as of 10 June 2025 (murder, fraud, theft)
-2. **Provided confirmatory affidavit** anyway on 14 August 2025
+2. **Provided confirmatory affidavit** anyway on 13 August 2025
 3. **Failed to disclose material information** to the Court
 4. **Knowledge + false affidavit = perjury** under oath
 
@@ -230,7 +230,7 @@ The timing suggests the interdict serves a financial purpose:
 
 4. **Strategic Timing** (August 2025)
    - Sign settlement agreement
-   - File interdict 8 days later
+   - File interdict 2 days later
    - Use interdict as leverage in settlement
 
 5. **Perjury and Concealment** (August 2025)
@@ -265,13 +265,13 @@ The timing suggests the interdict serves a financial purpose:
 
 **Bantjies Perjury:**
 - Email dated 29 August 2025: "Received, thanks Daniel"
-- Confirmatory affidavit dated 14 August 2025
+- Confirmatory affidavit dated 13 August 2025
 - Criminal matters disclosure received 10 June 2025
 
 **Settlement Timing:**
-- Settlement agreement (date to be confirmed)
-- Interdict filing (14 August 2025)
-- 8-day gap documentation
+- Settlement agreement (11 August 2025)
+- Interdict filing (13 August 2025)
+- 2-day gap documentation
 
 **Responsible Person Crisis:**
 - Regulatory appointment letters (37 jurisdictions)
@@ -304,7 +304,7 @@ Peter's founding affidavit failed to disclose:
 
 **Bantjies' Perjury:**
 - Knew of criminal matters (10 June 2025)
-- Provided confirmatory affidavit (14 August 2025)
+- Provided confirmatory affidavit (13 August 2025)
 - Failed to disclose material information
 - Knowledge + false affidavit = perjury
 
@@ -360,7 +360,7 @@ This comprehensive timeline analysis reveals the true nature of Peter Faucitt's 
 
 **The Timeline Proves:**
 1. ✅ Months of planning and delay (inconsistent with urgency)
-2. ✅ Strategic timing with settlement agreement (8 days)
+2. ✅ Strategic timing with settlement agreement (2 days)
 3. ✅ Self-created crisis (card cancellations after reports provided)
 4. ✅ Information manipulation (Rynette's email control)
 5. ✅ Coordinated perjury (Bantjies' knowledge + false affidavit)
@@ -385,7 +385,7 @@ This comprehensive timeline analysis reveals the true nature of Peter Faucitt's 
 - Suitable for Court review
 
 **JF-TIMELINE-3**: Strategic Coordination Analysis
-- Focus on settlement timing (8 days)
+- Focus on settlement timing (2 days)
 - Investment payout correlation (9 months)
 - Card cancellation timing (day after reports)
 

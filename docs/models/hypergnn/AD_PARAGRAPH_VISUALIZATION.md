@@ -190,7 +190,7 @@ Party Relationships:
 ### 1. Find Critical Allegations Against a Person
 
 ```javascript
-// Find all Priority 1 allegations against Jax
+/ Find all Priority 1 allegations against Jax
 const criticalAgainstJax = hg.queryLinksByRelation('alleges-against')
   .filter(link => 
     link.target === 'jacqueline-faucitt' && 
@@ -198,46 +198,46 @@ const criticalAgainstJax = hg.queryLinksByRelation('alleges-against')
   )
   .map(link => hg.entities.get(link.source));
 
-// Result: 5 critical paragraphs
+/ Result: 5 critical paragraphs
 ```
 
 ### 2. Find Evidence Supporting Claims
 
 ```javascript
-// Find all evidence supporting IT expense claims
+/ Find all evidence supporting IT expense claims
 const itEvidence = hg.queryLinksBySource('ad-para-7_2-7_5')
   .filter(link => link.relation === 'supported-by')
   .map(link => hg.entities.get(link.target));
 
-// Result: JF8A documentation
+/ Result: JF8A documentation
 ```
 
 ### 3. Navigate Section Structure
 
 ```javascript
-// Find all paragraphs in Background section
+/ Find all paragraphs in Background section
 const backgroundParas = hg.queryLinksByRelation('contained-in')
   .filter(link => link.target === 'ad-section-background')
   .map(link => hg.entities.get(link.source));
 
-// Result: Multiple financial allegation paragraphs
+/ Result: Multiple financial allegation paragraphs
 ```
 
 ### 4. Priority-Based Filtering
 
 ```javascript
-// Get all high-priority paragraphs
+/ Get all high-priority paragraphs
 const highPriority = hg.queryEntitiesByType('ADParagraph')
   .filter(p => p.priority <= 2)
   .sort((a, b) => a.priority - b.priority);
 
-// Result: 13 paragraphs (5 P1 + 8 P2)
+/ Result: 13 paragraphs (5 P1 + 8 P2)
 ```
 
 ### 5. Find Connected Allegations
 
 ```javascript
-// Find allegations in same priority group
+/ Find allegations in same priority group
 const relatedCritical = hg.queryLinksByRelation('priority-group')
   .filter(link => link.metadata.priorityLevel === 1)
   .map(link => ({
@@ -245,7 +245,7 @@ const relatedCritical = hg.queryLinksByRelation('priority-group')
     to: hg.entities.get(link.target)
   }));
 
-// Result: Chain of related critical financial allegations
+/ Result: Chain of related critical financial allegations
 ```
 
 ## Integration Points

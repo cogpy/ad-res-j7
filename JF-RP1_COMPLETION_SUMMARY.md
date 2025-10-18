@@ -128,16 +128,16 @@ evidence/annexures/JF-RP1/
     └── README.md (qualifications and compliance guide)
 ```
 
-### 6. Created Detailed README Files ✅
+### 6. Created Detailed README.md Files ✅
 
-Each subdirectory now has a comprehensive README including:
+Each subdirectory now has a comprehensive README.md including:
 - Purpose and scope
 - Required documents
 - File naming conventions
 - Organization guidelines
 - Collection status checklists
 
-**Total New Files Created:** 6 README files
+**Total New Files Created:** 6 README.md files
 
 ---
 

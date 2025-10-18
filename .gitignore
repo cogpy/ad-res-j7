@@ -35,6 +35,13 @@ Thumbs.db
 tests/*-results.json
 tests/sample-todos/
 
+# Temporary workflow testing files
+extracted-issue-generator.js
+todo-issues.json
+todo-issues-test.json
+validation-report.json
+json-parsing-validation-report.json
+
 # Test data archive directory (prevents merge conflicts)
 test-data/
 !test-data/.gitkeep
@@ -56,3 +63,4 @@ build/
 # Auto-generated workflow scripts (temporary exclusion)
 file-converter.js
 ocr-file-converter.js.merge-marker
+__pycache__/

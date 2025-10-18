@@ -68,7 +68,7 @@ For the target task "Verify proper issue creation with multiple labels":
 {
   "title": "Verify proper issue creation with multiple labels",
   "labels": ["todo", "enhancement", "priority: high"],
-  "body": "## Task Description\n\nVerify proper issue creation with multiple labels\n\n## Context\n\n**Source File:** `todo/workflow-test.md`\n**Section:** Should-Do (High Priority)\n**Priority:** high\n**Line:** 11..."
+  "body": "## Task Description/n\nVerify proper issue creation with multiple labels/n\n## Context/n\n**Source File:** `todo/workflow-test.md`\n**Section:** Should-Do (High Priority)\n**Priority:** high/n**Line:** 11..."
 }
 ```
 
@@ -82,10 +82,10 @@ gh issue create --title "Verify proper issue creation with multiple labels" --bo
 ### Workflow Label Logic
 
 ```javascript
-// Base labels for all issues
+/ Base labels for all issues
 const labels = ['todo', 'enhancement'];
 
-// Priority-specific labels
+/ Priority-specific labels
 if (task.priority === 'critical') {
   labels.push('priority: critical', 'bug');
 } else if (task.priority === 'high') {

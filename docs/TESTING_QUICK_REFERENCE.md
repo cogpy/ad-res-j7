@@ -128,7 +128,7 @@ node tests/integration-test.js
 ## Links
 
 - [Full Documentation](AUTOMATED_TESTING_PIPELINE.md)
-- [Test Framework README](../tests/README.md)
+- [Test Framework README.md](../tests/README.md)
 - [Implementation Summary](../tests/IMPLEMENTATION_SUMMARY.md)
 - [CI/CD Workflow](../.github/workflows/test-workflows.yml)
 
