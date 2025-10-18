@@ -4,11 +4,16 @@ This directory contains raw evidence collected for Case 2025-137857.
 
 ## Subdirectories
 
+- **`annexures/`**: **CRITICAL** - Complete framework for all critical evidence annexures (JF-RP1, JF-DLA1-3, JF-PA1-4, JF-BS1) referenced in the affidavit. **PRIORITY: Template completion with actual evidence required.**
 - **`bank_records/`**: Personal and business bank records.
 - **`shopify_reports/`**: Sales and financial reports from Shopify.
 - **`invoices/`**: Invoices for various business expenses.
 - **`correspondence/`**: Email and correspondence evidence, including JF8A comprehensive documentation log.
 - **`director_loan_accounts/`**: Accounting records and documentation for director loan accounts, including proper allocation of the R500,000 payment (JF-AR1/JF7D).
+
+## Recent Additions (2025-10-16)
+
+- **`UK_tax_residency/`**: UK tax residency documentation (JF-UKTAX1) - Critical evidence for Phase 1 collection supporting Paragraph 129 UK operations section.
 
 ## Key Documents
 

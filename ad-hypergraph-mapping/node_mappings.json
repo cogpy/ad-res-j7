@@ -1,0 +1,36 @@
+{
+  "all_nodes": [
+    "bantjies",
+    "peter",
+    "rynette",
+    "daniel",
+    "jacqui",
+    "trustee_appointment",
+    "authority_appointment",
+    "daniel_reports",
+    "card_cancellations",
+    "r10m_identification",
+    "holiday_dismissal",
+    "main_trustee_appointment",
+    "ex_parte_interdict",
+    "supporting_affidavit",
+    "r18m_payout"
+  ],
+  "node_index": {
+    "bantjies": 0,
+    "peter": 1,
+    "rynette": 2,
+    "daniel": 3,
+    "jacqui": 4,
+    "trustee_appointment": 5,
+    "authority_appointment": 6,
+    "daniel_reports": 7,
+    "card_cancellations": 8,
+    "r10m_identification": 9,
+    "holiday_dismissal": 10,
+    "main_trustee_appointment": 11,
+    "ex_parte_interdict": 12,
+    "supporting_affidavit": 13,
+    "r18m_payout": 14
+  }
+}

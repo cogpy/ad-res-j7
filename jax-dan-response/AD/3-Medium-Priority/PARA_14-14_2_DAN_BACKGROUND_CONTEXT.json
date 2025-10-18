@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-14-14_2-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Background and Context",
+  "claim": "Peter provides his version of the background and context of the dispute.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Logs", "Email Archives", "Chat Logs", "Change Management Records"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_14-14_2.md"
+  ],
+  "danPerspective": "From a technical perspective, provide a timeline of events and other data that can help to provide a more accurate and complete picture of the background and context."
+}

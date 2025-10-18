@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-13-13_1-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 2,
+  "topic": "Interim Relief",
+  "claim": "Peter seeks interim relief that would effectively hand him control of the company's operations.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "System Architecture Diagrams", "Regulatory Compliance Documentation", "Business Continuity Plan"
+  ],
+  "crossReferences": [
+    "jax-response/AD/2-High-Priority/PARA_13-13_1.md"
+  ],
+  "danPerspective": "Explain the technical impossibility of operating the business under the terms of the proposed interdict, focusing on the impact on system access, regulatory compliance, and business continuity."
+}

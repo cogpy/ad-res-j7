@@ -4,13 +4,38 @@ This directory contains the specific response of Jacqueline and Daniel Faucitt t
 
 ## Subdirectories
 
-- **`AD/`**: Documents related to the "AD Response J7" project.
-- **`analysis-output/`**: Output from the analysis of the case.
-- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit.
+- **`AD/`**: **NEW** - Structured response framework mirroring jax-response/AD with Daniel's technical perspective on allegations. Includes critical Responsible Person regulatory crisis analysis.
+- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit and **the critical Responsible Person Regulatory Crisis Section**.
 - **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
-- **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
 
 ## Key Evidence Documents
+
+### **🔥 CRITICAL: Responsible Person Regulatory Crisis Section**
+**Location**: `evidence-attachments/RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md`
+
+**⚠️ PRIORITY 1 (MUST-DO PHASE 1) - This is the most significant material non-disclosure in Peter's founding affidavit.**
+
+This critical section addresses the Applicant's failure to disclose that Jacqueline Faucitt holds the legally designated Responsible Person position under EU Regulation 1223/2009 for cosmetic products in **37 international jurisdictions**. This material non-disclosure may alone justify setting aside the interdict.
+
+**Key Components:**
+1. **Legal Framework** - EU Regulation 1223/2009 requirements across 37 jurisdictions
+2. **Non-Delegable Duties** - Personal legal liability and system access requirements
+3. **Immediate Crisis** - How interdict prevents fulfillment of regulatory obligations
+4. **Regulatory Consequences** - Potential penalties of R50M+ and business destruction
+5. **Material Non-Disclosure** - Evidence of Applicant's knowledge and failure to disclose
+
+**Critical Impact:**
+- Creates immediate regulatory compliance crisis across 37 jurisdictions
+- Exposes business to penalties of €10,000-€1,000,000 per jurisdiction per violation
+- Prevents response to regulatory inquiries within statutory timeframes (24-48 hours)
+- Blocks ability to implement safety recalls or corrective actions
+- May constitute fraud upon the Court through systematic material non-disclosure
+
+**Evidence Requirements:**
+- JF-RP1: Responsible Person designation documentation (37 jurisdictions)
+- JF-RP2: Regulatory risk analysis and penalty assessment
+- JF-RP3: System access requirements for compliance
+- JF-RP4: Evidence of immediate consequences post-interdict
 
 ### Dan's Technical Infrastructure Affidavit
 **Location**: `evidence-attachments/Dan_Technical_Infrastructure_Affidavit.md`
@@ -62,9 +87,30 @@ This comprehensive analysis addresses Peter Faucitt's allegations regarding the 
    - Absence of any previous objections to this established practice
 
 This analysis directly refutes the "unauthorized payment" allegation and demonstrates material non-disclosure through the Applicant's inconsistent application of standards.
-- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's technical infrastructure affidavit.
-- **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
-- **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
+### Complete Evidence Package (20+ Documents)
+
+**Evidence Attachments Directory** now contains a comprehensive evidence package including:
+
+**Technical & Infrastructure Analysis:**
+- `DANIEL_FAUCITT_TECHNICAL_INFRASTRUCTURE_AFFIDAVIT.md` - Comprehensive IT infrastructure analysis
+- `IT_SPEND_INDUSTRY_COMPARATIVE_ANALYSIS.md` - Industry benchmark analysis
+
+**Financial & Director Practices Analysis:**
+- `DIRECTOR_LOAN_PRACTICE_ANALYSIS.md` - Decades-long established practice documentation
+- `COMPREHENSIVE_FINANCIAL_ANALYSIS.md` - Complete financial analysis framework
+
+**Regulatory & Legal Crisis Analysis:**
+- `RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md` - **CRITICAL** 37-jurisdiction compliance crisis
+- `DISPROPORTIONATE_RELIEF_ANALYSIS.md` - Legal proportionality analysis
+
+**Timeline & Pattern Analysis:**
+- `PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md` - Strategic coordination evidence
+- `SECTION_12_1_COMPREHENSIVE_TIMELINE_ANALYSIS.md` - Complete timeline documentation
+- `comprehensive_fraud_timeline_2017_2025.md` - 8-year fraud pattern analysis
+
+**Evidence Cross-Reference:**
+- `SECTION_12_DOCUMENTARY_EVIDENCE_INDEX.md` - Complete evidence indexing
+- `POINT_BY_POINT_REBUTTAL_MATRIX.md` - Systematic rebuttal framework
 
 ## Key Documents
 
@@ -89,6 +135,15 @@ This analysis directly refutes the "unauthorized payment" allegation and demonst
   - Evidence that the payment followed established signatory authority and accounting procedures
   - Material non-disclosure analysis showing facts omitted from ex parte application
   - This directly refutes the "unauthorized payment" allegation by demonstrating the Applicant's sudden objection is inconsistent with his decades-long acceptance and use of the same practice
+
+- **`SECTION_4_SETTLEMENT_AND_TIMING.md`**: Section 4 of the new structured response addressing settlement agreement and strategic timing (NEW - High Priority). This section provides:
+  - Documentation that settlement agreement was signed 8 days before interdict filing
+  - Analysis of investment payout timeline (9 months) as ulterior motive
+  - Evidence of strategic litigation for settlement leverage rather than genuine urgency
+  - Demonstration of material non-disclosure in ex parte application regarding settlement context
+  - Timeline analysis showing 68+ day delay contradicting urgency claims
+  - Legal analysis of abuse of court process and ex parte procedure
+  - This directly refutes claims of urgency and exposes the strategic nature of the interdict application
 
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.

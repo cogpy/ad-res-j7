@@ -1,0 +1,15 @@
+{
+  "id": "ad-para-10_4-dan",
+  "type": "ADParagraphDanielResponse",
+  "priority": 3,
+  "topic": "Specific Transactions",
+  "claim": "Peter questions the legitimacy of specific transactions.",
+  "responseStatus": "in-progress",
+  "evidenceRequired": [
+    "Transaction Audit Logs", "Authorization Records", "Supporting Digital Documents"
+  ],
+  "crossReferences": [
+    "jax-response/AD/3-Medium-Priority/PARA_10_4.md"
+  ],
+  "danPerspective": "Provide technical details about how these specific transactions were processed and logged in our systems."
+}

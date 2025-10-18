@@ -317,7 +317,12 @@ class DuplicateCleanupTester {
     });
 
     this.test('Uses secure environment variable handling', () => {
-      return workflowContent.includes('GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}');
+      return workflowContent.includes('GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}');
+    });
+
+    this.test('Uses proper GitHub CLI authentication', () => {
+      return workflowContent.includes('gh auth status') &&
+             workflowContent.includes('Authenticate GitHub CLI');
     });
   }
 

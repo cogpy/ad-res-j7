@@ -111,7 +111,7 @@ The Applicant failed to disclose that directors maintain loan accounts with cred
 
 **(h) Quantified Disproportionate Harm from Interdict:**
 
-The Applicant failed to disclose that the interdict would cause quantifiable harm **at minimum 36 times greater** than the alleged misconduct: while alleging concerns of approximately R500,000, the interdict has caused documented losses of R18,141,647.70+, regulatory exposure of R50,000,000+ across 37 jurisdictions, and complete business destruction—demonstrating that the remedy creates exponentially more harm than the alleged disease.
+The Applicant failed to disclose that the interdict would cause quantifiable harm **at minimum 36 times greater** than the alleged misconduct: while alleging concerns of approximately R500,000, the interdict has caused documented losses of R18,141,647.70+, regulatory exposure of R50,000,000+ across 37 jurisdictions, and complete business destruction—demonstrating that the remedy creates exponentially more harm than the alleged disease. **Moreover, the business disruption the Applicant cites was caused by the Applicant's own actions as detailed in Section 15 below.**
 
 2.2.4 Had this Honourable Court been aware of these material facts, the Court would likely have:
 - Refused to grant the ex parte interdict; or
@@ -507,7 +507,7 @@ This international scope requires substantial IT infrastructure, including:
 
 8.1 The contents hereof are denied. When examining annexures PF9 and PF10, it is clear that the payments reflected therein relate to legitimate and bona fide business expenses incurred in the ordinary and lawful course of business.
 
-8.2 These expenses were duly authorized, properly recorded, and paid for operational requirements of an international business operating across 37 jurisdictions.
+8.2 These expenses were duly authorized, properly recorded, and paid for operational requirements of an international business operating across 37 jurisdictions. **Moreover, any alleged documentation gap is entirely the result of the Applicant's own conduct as detailed in Section 15 below.**
 
 8.2.1 **Critical Context - International Regulatory Compliance Requirements:**
 
@@ -656,7 +656,7 @@ The IT expenses cited by the Applicant must be understood in the context of my r
 
 11.1 The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd.
 
-11.2 It is further admitted that the said entity operates as the United Kingdom head office and oversees subsidiary and associated companies.
+11.2 It is clarified that RegimA UK Ltd is **not currently operating as a Head Office**. The entity has been a **dormant holding company since 2015** following the fraud perpetrated by Isaac Chesno. The company and its subsidiaries hold accumulated tax losses exceeding **GBP 650,000**, making it worthwhile to maintain and eventually restore them to trading status in the long term.
 
 ### AD PARAGRAPH 11.6 TO 11.9
 
@@ -747,6 +747,8 @@ The breakdown of the collaborative business model was caused by:
 - The Applicant's concurrent exclusion of directors from oversight;
 - The Applicant's characterization of director oversight as "interference";
 - The Applicant's replacement of collaborative decision-making with unilateral control.
+
+**The Applicant's allegations of lack of cooperation are contradicted by the evidence and, moreover, constitute a projection of his own conduct as detailed in Section 15 below.**
 
 12.2.7 **This interdict application represents the culmination of this systematic exclusion** - the Applicant now seeks to completely remove directors from the businesses while maintaining total control through Ms. Farrar.
 
@@ -990,29 +992,123 @@ The final agreement contains **two separate clauses** stating that parties "will
 
 ---
 
-## 15. CONCLUSION
+## 15. PETER'S CAUSATION - CLEAN HANDS DOCTRINE
 
-### AD PARAGRAPH 15
+### Alternative Defense: Peter's Own Conduct Created the Alleged Problems
 
-15.1 For the reasons set out above, the Applicant's allegations are denied.
+🔵 **NEW CONTENT:** This section establishes an independent causation-based defense demonstrating that the Applicant created the very problems he now complains about, violating the "clean hands" doctrine required for equitable relief.
 
-15.2 The ex parte interdict was obtained through material non-disclosure and should be set aside.
+15.1 I respectfully submit that the Applicant cannot rely on problems that he himself created through his own unilateral actions. This defense is grounded in the equitable doctrine of "clean hands" - a party seeking equitable relief must approach the court with clean hands.
 
-15.3 The Applicant's own conduct demonstrates that he is the party acting contrary to the interests of the businesses.
+15.2 The Applicant's founding affidavit alleges various deficiencies in documentation and transparency. However, a careful analysis of the timeline reveals that **the Applicant himself caused these alleged deficiencies** through deliberate obstruction and sabotage.
+
+15.3 I set out below four categories of problems the Applicant complains about, and demonstrate in each case that the Applicant's own conduct directly caused the problem.
+
+### Problem 1: Documentation Gap for IT Expenses
+
+15.4 The Applicant alleges that IT expenses totaling R6,738,007.47 (2024 tax year) and R2,116,159.47 (2025 tax year) are "unexplained" and lack adequate documentation.
+
+15.5 This allegation is demonstrably false. The documentation gap exists solely because of the Applicant's own actions, as follows:
+
+15.5.1 On or about **June 6, 2025**, the Second Respondent (Daniel Faucitt) provided comprehensive business reports to the accountant and trustee, Mr. Daniel Jacobus Bantjes, for tax season preparation. These reports included detailed financial summaries for all business entities, transaction records, and operational context.
+
+> **Evidence:** Annexure **JF-BANTJIES-REPORTS-06JUN** - Email from Daniel to Bantjes with comprehensive reports attached.
+
+15.5.2 On or about **June 7, 2025** (the day after receiving these comprehensive reports), the Applicant **secretly cancelled all business bank cards** without warning to the Second Respondent or other operational staff.
+
+> **Evidence:** Annexure **JF-CANCEL-DATE** - Documentation of card cancellation date and lack of prior notice.
+
+15.5.3 The immediate effect of this card cancellation was payment failures for critical cloud-based services including:
+- Cloud storage systems (AWS, Google Cloud) containing invoices and documentation
+- Accounting software (Sage) containing financial records
+- Email systems (Microsoft 365) containing correspondence and receipts
+- Domain and hosting services containing website and transaction records
+
+15.5.4 These payment failures resulted in service suspensions and loss of access to the very documentation systems that contained the IT expense records.
+
+15.5.5 During June-July 2025, the Applicant further **restricted the Second Respondent's system access**, preventing retrieval of historical records from the systems that remained accessible.
+
+> **Evidence:** Annexure **JF-SAL1** - System access restriction logs showing the Applicant excluded the Second Respondent from documentation systems.
+
+15.5.6 Having created this documentation gap through his own actions, the Applicant then demanded detailed IT expense documentation that his own conduct had made inaccessible.
+
+### Problem 2: System Access and Record Retrieval
+
+15.6 The Applicant alleges insufficient explanation and detail regarding business expenses and transactions.
+
+15.7 This alleged deficiency is entirely the result of the Applicant's deliberate restriction of system access. The Applicant's conduct constitutes entrapment: he blocked access to the information, then complained about the lack of information.
+
+> **Evidence:** Annexure **JF8** - Correspondence showing cooperation attempts and the Applicant's non-response.
+
+### Problem 3: Communication Breakdown and Lack of Cooperation
+
+15.8 The Applicant alleges a lack of transparency and cooperation from the Respondents.
+
+15.9 This allegation is contradicted by the documentary evidence and is, in fact, a projection of the Applicant's own conduct onto the Respondents.
+
+15.9.1 On **June 6, 2025**, the Second Respondent provided comprehensive reports to the accountant Mr. Bantjes, demonstrating full cooperation with legitimate oversight.
+
+15.9.2 Throughout June and July 2025, the Second Respondent attempted to engage with the Applicant and provide explanations, but the Applicant refused to respond to emails, avoided meetings and discussions, and proceeded unilaterally without engagement.
+
+### Problem 4: Business Disruption and Financial Harm
+
+15.10 The Applicant alleges business mismanagement and financial irregularities requiring urgent intervention.
+
+15.11 The irony is profound: the business disruption the Applicant now cites as justification for the interdict was **caused by the interdict itself** and the Applicant's preceding actions.
+
+15.11.1 Prior to the Applicant's June 2025 card cancellations and August 2025 interdict, the businesses were:
+- Profitable and growing (revenue: R2.1M (2022) → R12.3M (2023) → R19.1M (2024))
+- Compliant with all regulatory requirements
+- Operating successfully across 37 international jurisdictions
+- Fulfilling all obligations as Responsible Person under EU Regulation 1223/2009
+
+15.11.2 The Applicant's actions caused quantified financial losses of **R18,141,647.70+** and regulatory exposure exceeding **R50,000,000**.
+
+> **Evidence:** Annexure **JF-HARM-CALC** - Detailed harm calculation methodology.
+
+### Legal Principles: Clean Hands and Causation
+
+15.12 The equitable doctrine of "clean hands" provides that a party seeking equitable relief must approach the court with clean hands. The Applicant's conduct violates this fundamental principle in multiple respects:
+
+15.12.1 **Creating the Problem:** The Applicant created the documentation gaps and access issues he now complains about through his own deliberate actions.
+
+15.12.2 **Refusing Cooperation:** The Applicant refused to engage with explanations and cooperation offered, then complained about lack of cooperation.
+
+15.12.3 **Causing Disproportionate Harm:** The Applicant's actions caused harm 36+ times greater than any alleged misconduct.
+
+15.13 The causation principle provides that a party cannot rely on a problem they themselves created as justification for legal action. In each problem category, the Applicant's own conduct directly caused the problem he now cites as justification for the interdict.
+
+### Conclusion on Causation Defense
+
+15.14 I respectfully submit that the Applicant's interdict application fails on the independent ground of causation. The Applicant created the very problems he now complains about through his own deliberate, unilateral actions.
+
+15.15 Even if all the Applicant's allegations were true (which they are not), the interdict should be set aside on the independent ground that the Applicant's own conduct created the alleged problems and bars equitable relief.
 
 ---
 
-## 16. PRAYER
+## 16. CONCLUSION
+
+### AD PARAGRAPH 15
+
+16.1 For the reasons set out above, the Applicant's allegations are denied.
+
+16.2 The ex parte interdict was obtained through material non-disclosure and should be set aside.
+
+16.3 The Applicant's own conduct demonstrates that he is the party acting contrary to the interests of the businesses.
+
+---
+
+## 17. PRAYER
 
 ### AD PARAGRAPH 16 TO 16.5
 
-16.1 I respectfully request that this Honourable Court:
+17.1 I respectfully request that this Honourable Court:
 
-16.1.1 Set aside the ex parte interdict granted on 19 August 2025;
+17.1.1 Set aside the ex parte interdict granted on 19 August 2025;
 
-16.1.2 Dismiss the Applicant's application with costs on the scale as between attorney and client;
+17.1.2 Dismiss the Applicant's application with costs on the scale as between attorney and client;
 
-16.1.3 Grant such further and/or alternative relief as this Honourable Court deems fit.
+17.1.3 Grant such further and/or alternative relief as this Honourable Court deems fit.
 
 ---
 
@@ -1053,6 +1149,12 @@ The final agreement contains **two separate clauses** stating that parties "will
 - **JF-EX2:** Daniel's access restriction logs
 - **JF-EX3:** Email characterizing oversight as "interference"
 - **JF-EX4:** Email defending Rynette
+
+### Peter's Causation Defense Evidence
+- **JF-BANTJIES-REPORTS-06JUN:** Email from Daniel to Bantjes with comprehensive reports attached (June 6, 2025)
+- **JF-CANCEL-DATE:** Documentation of card cancellation date and lack of prior notice (June 7, 2025)
+- **JF8:** Correspondence showing cooperation attempts and the Applicant's non-response
+- **JF-HARM-CALC:** Detailed harm calculation methodology showing R18M+ losses and R50M+ regulatory exposure
 
 ---
 

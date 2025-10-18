@@ -1,0 +1,433 @@
+# HypergraphQL Schema for Case 2025-137857
+# Legal Case Structure and Strategic Analysis
+
+"""
+Root query type for accessing the case hypergraph
+"""
+type Query {
+  """Get case metadata"""
+  caseMetadata: CaseMetadata!
+  
+  """Get all nodes in the hypergraph"""
+  nodes(type: NodeType, limit: Int, offset: Int): [Node!]!
+  
+  """Get a specific node by ID"""
+  node(id: ID!): Node
+  
+  """Get all hyperedges"""
+  hyperedges(type: HyperedgeType, limit: Int, offset: Int): [Hyperedge!]!
+  
+  """Get nodes connected to a specific node"""
+  connectedNodes(nodeId: ID!, edgeType: HyperedgeType): [Node!]!
+  
+  """Get all paragraphs by priority level"""
+  paragraphsByPriority(level: Int!): [ParagraphNode!]!
+  
+  """Get all paragraphs in a strategic category"""
+  paragraphsByCategory(category: String!): [ParagraphNode!]!
+  
+  """Get all evidence supporting a paragraph"""
+  evidenceForParagraph(paragraphId: ID!): [EvidenceNode!]!
+  
+  """Get all paragraphs supported by evidence"""
+  paragraphsForEvidence(evidenceId: ID!): [ParagraphNode!]!
+  
+  """Get timeline events by date range"""
+  timelineEventsByDateRange(startDate: String!, endDate: String!): [TimelineEventNode!]!
+  
+  """Get timeline events by phase"""
+  timelineEventsByPhase(phase: String!): [TimelineEventNode!]!
+  
+  """Get timeline events by actor"""
+  timelineEventsByActor(actorId: ID!): [TimelineEventNode!]!
+  
+  """Get complete chronological timeline"""
+  completeTimeline: [TimelineEventNode!]!
+  
+  """Get strategic clusters"""
+  strategicClusters: [StrategyCluster!]!
+  
+  """Search nodes by name or properties"""
+  searchNodes(query: String!, type: NodeType): [Node!]!
+  
+  """Get network statistics"""
+  networkStats: NetworkStatistics!
+  
+  """Get critical path analysis"""
+  criticalPath: CriticalPathAnalysis!
+  
+  """Get evidence coverage analysis"""
+  evidenceCoverage: EvidenceCoverageAnalysis!
+}
+
+"""
+Case metadata
+"""
+type CaseMetadata {
+  caseNumber: String!
+  repository: String!
+  totalParagraphs: Int!
+  analysisDate: String!
+  version: String!
+}
+
+"""
+Node types in the hypergraph
+"""
+enum NodeType {
+  ACTOR
+  CATEGORY
+  PARAGRAPH
+  EVIDENCE
+  TIMELINE_EVENT
+}
+
+"""
+Base node interface
+"""
+interface Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+}
+
+"""
+Actor node (parties in the case)
+"""
+type ActorNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  role: String!
+  relatedParagraphs: [ParagraphNode!]!
+}
+
+"""
+Category node (strategic themes)
+"""
+type CategoryNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  themeType: String!
+  paragraphCount: Int!
+  paragraphs: [ParagraphNode!]!
+  strategicImportance: Float!
+}
+
+"""
+Paragraph node (AD paragraphs from affidavit)
+"""
+type ParagraphNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  
+  # Paragraph-specific fields
+  priority: String!
+  priorityLevel: Int!
+  priorityWeight: Int!
+  topic: String!
+  claim: String!
+  completed: Boolean!
+  evidenceCount: Int!
+  
+  # Relationships
+  categories: [CategoryNode!]!
+  evidence: [EvidenceNode!]!
+  relatedParagraphs: [ParagraphNode!]!
+  
+  # Analysis
+  completionStatus: CompletionStatus!
+  evidenceStatus: EvidenceStatus!
+  strategicImportance: Float!
+}
+
+"""
+Evidence node (annexures and supporting documents)
+"""
+type EvidenceNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  evidenceType: String!
+  supportedParagraphs: [ParagraphNode!]!
+  supportCount: Int!
+}
+
+"""
+Timeline Event node (key events in the case chronology)
+"""
+type TimelineEventNode implements Node {
+  id: ID!
+  type: NodeType!
+  name: String!
+  properties: NodeProperties!
+  connections: [Hyperedge!]!
+  degree: Int!
+  
+  # Timeline-specific fields
+  eventDate: String!
+  eventType: String!
+  significance: String!
+  phase: String!
+  actors: [ActorNode!]!
+  relatedParagraphs: [ParagraphNode!]!
+  evidenceReferences: [EvidenceNode!]!
+  
+  # Criminal enterprise analysis
+  criminalPhase: String
+  escalationLevel: String
+  coordinationIndicators: [String!]!
+}
+
+"""
+Node properties (flexible key-value store)
+"""
+type NodeProperties {
+  priority: String
+  priorityLevel: Int
+  topic: String
+  claim: String
+  completed: Boolean
+  evidenceCount: Int
+  role: String
+  type: String
+  
+  # Timeline-specific properties
+  eventDate: String
+  eventType: String
+  significance: String
+  phase: String
+  criminalPhase: String
+  escalationLevel: String
+}
+
+"""
+Hyperedge types
+"""
+enum HyperedgeType {
+  CATEGORIZATION
+  SUPPORTS
+  STRATEGIC_CLUSTER
+  RELATES_TO
+}
+
+"""
+Hyperedge connecting multiple nodes
+"""
+type Hyperedge {
+  nodes: [Node!]!
+  type: HyperedgeType!
+  weight: Float!
+  name: String
+  properties: HyperedgeProperties
+}
+
+"""
+Hyperedge properties
+"""
+type HyperedgeProperties {
+  description: String
+  strength: Float
+  bidirectional: Boolean
+}
+
+"""
+Strategic cluster grouping related paragraphs
+"""
+type StrategyCluster {
+  name: String!
+  paragraphs: [ParagraphNode!]!
+  weight: Float!
+  categories: [CategoryNode!]!
+  evidenceCoverage: Float!
+  completionRate: Float!
+  strategicObjective: String
+}
+
+"""
+Network statistics
+"""
+type NetworkStatistics {
+  totalNodes: Int!
+  totalEdges: Int!
+  nodesByType: NodeTypeDistribution!
+  edgesByType: EdgeTypeDistribution!
+  averageDegree: Float!
+  density: Float!
+  connectedComponents: Int!
+  clusteringCoefficient: Float!
+}
+
+"""
+Node type distribution
+"""
+type NodeTypeDistribution {
+  actors: Int!
+  categories: Int!
+  paragraphs: Int!
+  evidence: Int!
+}
+
+"""
+Edge type distribution
+"""
+type EdgeTypeDistribution {
+  categorization: Int!
+  supports: Int!
+  strategicCluster: Int!
+}
+
+"""
+Completion status
+"""
+enum CompletionStatus {
+  COMPLETED
+  IN_PROGRESS
+  PENDING
+  NOT_STARTED
+}
+
+"""
+Evidence status
+"""
+enum EvidenceStatus {
+  COMPREHENSIVE
+  PARTIAL
+  MINIMAL
+  NONE
+}
+
+"""
+Critical path analysis
+"""
+type CriticalPathAnalysis {
+  criticalParagraphs: [ParagraphNode!]!
+  highPriorityParagraphs: [ParagraphNode!]!
+  completionBottlenecks: [ParagraphNode!]!
+  evidenceGaps: [ParagraphNode!]!
+  recommendedSequence: [ParagraphNode!]!
+  estimatedEffort: EffortEstimate!
+}
+
+"""
+Effort estimate
+"""
+type EffortEstimate {
+  totalParagraphs: Int!
+  completedParagraphs: Int!
+  pendingParagraphs: Int!
+  estimatedHours: Float!
+  estimatedDays: Float!
+  priorityBreakdown: PriorityEffortBreakdown!
+}
+
+"""
+Priority effort breakdown
+"""
+type PriorityEffortBreakdown {
+  critical: Int!
+  high: Int!
+  medium: Int!
+  low: Int!
+}
+
+"""
+Evidence coverage analysis
+"""
+type EvidenceCoverageAnalysis {
+  overallCoverage: Float!
+  coverageByPriority: PriorityCoverage!
+  paragraphsWithEvidence: Int!
+  paragraphsWithoutEvidence: Int!
+  evidenceGaps: [EvidenceGap!]!
+  recommendations: [String!]!
+}
+
+"""
+Priority coverage
+"""
+type PriorityCoverage {
+  critical: Float!
+  high: Float!
+  medium: Float!
+  low: Float!
+}
+
+"""
+Evidence gap
+"""
+type EvidenceGap {
+  paragraph: ParagraphNode!
+  priority: String!
+  requiredEvidence: [String!]!
+  urgency: String!
+}
+
+"""
+Mutations for updating the hypergraph
+"""
+type Mutation {
+  """Add a new node"""
+  addNode(type: NodeType!, name: String!, properties: NodePropertiesInput): Node!
+  
+  """Update node properties"""
+  updateNode(id: ID!, properties: NodePropertiesInput!): Node!
+  
+  """Add a hyperedge"""
+  addHyperedge(nodeIds: [ID!]!, type: HyperedgeType!, weight: Float, name: String): Hyperedge!
+  
+  """Mark paragraph as completed"""
+  markParagraphCompleted(paragraphId: ID!): ParagraphNode!
+  
+  """Add evidence to paragraph"""
+  addEvidenceToParagraph(paragraphId: ID!, evidenceId: ID!): Hyperedge!
+  
+  """Update strategic cluster"""
+  updateStrategicCluster(name: String!, paragraphIds: [ID!]!): StrategyCluster!
+}
+
+"""
+Input type for node properties
+"""
+input NodePropertiesInput {
+  priority: String
+  priorityLevel: Int
+  topic: String
+  claim: String
+  completed: Boolean
+  evidenceCount: Int
+  role: String
+  type: String
+}
+
+"""
+Subscription for real-time updates
+"""
+type Subscription {
+  """Subscribe to node updates"""
+  nodeUpdated(nodeId: ID): Node!
+  
+  """Subscribe to paragraph completion"""
+  paragraphCompleted: ParagraphNode!
+  
+  """Subscribe to evidence additions"""
+  evidenceAdded: EvidenceNode!
+}
+

@@ -2,12 +2,12 @@
 
 ## Document Evolution
 
-### Version 1 (REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES.md)
+### Version 1 (ARCHIVED - backups/affidavits/)
 - Original strategic amendments based on analysis
 - Enhanced sections on Responsible Person role, IT expenses, R500K payment, Rynette's expanding access
 - Material non-disclosure framework
 
-### Version 2 (REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v2.md)
+### Version 2 (ARCHIVED - backups/affidavits/)
 - **Added Section 13A:** Settlement Agreement Manipulation (JF5)
 - Exposed last-minute changes to agreement
 - Documented "Has anything changed?" exchange
@@ -16,6 +16,8 @@
 - **Corrected Paragraph 48:** Clarified that Gauteng Family Law Forum was NOT in original draft
 - **Added evidence of copy-paste:** Duplicate "bear costs" clauses
 - **Paragraph 129 correction prepared:** Isaac Chesno fraud details (for insertion)
+
+**Note:** Versions 1 and 2 have been archived to `backups/affidavits/` directory. Current active versions are v3, v4, and v5.
 
 ---
 
@@ -46,14 +48,16 @@ Original paragraph 129 denied any fraud by Isaac Chesno and characterized it as 
 - Isaac Chesno committed massive fraud (over £500,000)
 - Chesno disappeared after the fraud
 - Left UK company in substantial debt
-- Daniel spent 8 YEARS restoring the company to break-even
+- RegimA UK Ltd is NOT operating as a Head Office - it's a dormant holding company since 2015
+- Company and subsidiaries hold accumulated tax losses exceeding GBP 650,000
+- Daniel started new ventures and is gradually using profits to repay creditors
 - Daniel's appointment was BECAUSE of Chesno's fraud, not "arising from wrongdoing"
 
 **Why This Matters:**
-- Demonstrates Daniel's competence (8-year crisis management success)
-- Shows Daniel's integrity (could have walked away, chose to restore)
+- Demonstrates Daniel's competence (strategic dormant company management preserving tax losses)
+- Shows Daniel's integrity (long-term commitment using new venture profits for creditor repayment)
 - Exposes Peter's deliberate misrepresentation
-- Proves Daniel's business acumen (£500K+ debt recovery)
+- Proves Daniel's business acumen (preserving GBP 650,000+ tax losses while funding gradual debt recovery)
 - Establishes pattern: Peter misrepresents facts to support his narrative
 
 ---
@@ -114,7 +118,9 @@ Establishes that Peter failed to disclose:
 ### 7. Isaac Chesno Fraud (Paragraph 129 - to be inserted)
 - Chesno committed £500K+ fraud
 - Daniel rescued insolvent company
-- 8-year restoration to break-even
+- RegimA UK Ltd established as dormant holding company since 2015
+- Preserving GBP 650,000+ tax losses for future restoration
+- Daniel's ongoing creditor repayment using new venture profits
 - Peter's factual mischaracterization reveals inconsistent conduct
 - Demonstrates pattern of misrepresentation
 
@@ -132,7 +138,7 @@ Establishes that Peter failed to disclose:
 ☐ JF5 final agreement (signed version)
 ☐ Daniel's witness statement re: "Has anything changed?" exchange
 ☐ UK tax residency documentation
-☐ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4
+☑️ Chesno fraud documentation - JF-CHESNO1 through JF-CHESNO4 - **COMPREHENSIVE FRAMEWORK ESTABLISHED**
 ☐ Daniel's 8-year restoration evidence - JF-RESTORE1 through JF-RESTORE4
 
 ### High Priority:

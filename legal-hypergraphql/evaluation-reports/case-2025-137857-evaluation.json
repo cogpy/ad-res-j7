@@ -1,0 +1,652 @@
+{
+  "id": "eval-1760531439945",
+  "affidavitId": "jax-answering-affidavit-v5",
+  "documentType": "answering-affidavit",
+  "timestamp": "2025-10-15T12:30:39.945Z",
+  "scores": {
+    "structural": {
+      "score": 78.5,
+      "rawScores": {
+        "organization": 100,
+        "completeness": 45,
+        "formatting": 90,
+        "clarity": 85
+      },
+      "issues": [
+        "Missing required section: admissions-denials",
+        "Missing required section: version",
+        "Missing required section: evidence",
+        "Too few paragraphs (3 < 15)"
+      ],
+      "strengths": [
+        "Chronologically consistent",
+        "Smooth topic transitions",
+        "Well formatted",
+        "Clear structure"
+      ],
+      "weight": 0.15
+    },
+    "evidential": {
+      "score": 88.75,
+      "rawScores": {
+        "relevance": 100,
+        "sufficiency": 80,
+        "credibility": 85,
+        "organization": 90
+      },
+      "issues": [],
+      "strengths": [
+        "Evidence highly relevant to claims",
+        "Adequate evidence",
+        "Credible sources",
+        "Well organized"
+      ],
+      "weight": 0.3
+    },
+    "legal": {
+      "score": 92,
+      "rawScores": {
+        "compliance": 95,
+        "admissibility": 90,
+        "procedure": 95,
+        "precedent": 85
+      },
+      "issues": [],
+      "strengths": [
+        "Fully compliant",
+        "Evidence admissible",
+        "Proper procedure",
+        "Aligns with precedent"
+      ],
+      "weight": 0.25
+    },
+    "persuasive": {
+      "score": 82.5,
+      "rawScores": {
+        "narrative": 80,
+        "logic": 85,
+        "emotion": 75,
+        "credibility": 90
+      },
+      "issues": [],
+      "strengths": [
+        "Compelling narrative",
+        "Sound logic",
+        "Appropriate tone",
+        "Credible deponent"
+      ],
+      "weight": 0.2
+    },
+    "technical": {
+      "score": 87,
+      "rawScores": {
+        "language": 85,
+        "consistency": 90,
+        "references": 85,
+        "terminology": 90
+      },
+      "issues": [],
+      "strengths": [
+        "Clear language",
+        "Internally consistent",
+        "Proper citations",
+        "Correct terminology"
+      ],
+      "weight": 0.1
+    }
+  },
+  "issues": [],
+  "strengths": [],
+  "recommendations": [],
+  "comparison": null,
+  "overallScore": 87,
+  "rating": {
+    "level": "Excellent",
+    "stars": 4.5
+  },
+  "patternAnalysis": [],
+  "detailedFindings": {
+    "criticalIssues": [],
+    "majorIssues": [],
+    "minorIssues": [
+      {
+        "area": "structural",
+        "score": 78.5,
+        "impact": "Room for improvement",
+        "issues": [
+          "Missing required section: admissions-denials",
+          "Missing required section: version",
+          "Missing required section: evidence",
+          "Too few paragraphs (3 < 15)"
+        ]
+      },
+      {
+        "area": "persuasive",
+        "score": 82.5,
+        "impact": "Room for improvement",
+        "issues": []
+      }
+    ],
+    "strengths": [
+      {
+        "area": "evidential",
+        "score": 88.75,
+        "strengths": [
+          "Evidence highly relevant to claims",
+          "Adequate evidence",
+          "Credible sources",
+          "Well organized"
+        ]
+      },
+      {
+        "area": "legal",
+        "score": 92,
+        "strengths": [
+          "Fully compliant",
+          "Evidence admissible",
+          "Proper procedure",
+          "Aligns with precedent"
+        ]
+      },
+      {
+        "area": "technical",
+        "score": 87,
+        "strengths": [
+          "Clear language",
+          "Internally consistent",
+          "Proper citations",
+          "Correct terminology"
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "area": "Content Development",
+        "suggestion": "Expand key sections to meet minimum requirements",
+        "potential": "Could improve completeness score by 10-15 points"
+      }
+    ]
+  },
+  "improvementRoadmap": {
+    "immediate": [],
+    "shortTerm": [],
+    "mediumTerm": [],
+    "strategic": [],
+    "timeline": {
+      "estimatedHours": 0,
+      "recommendedSchedule": {
+        "day1": [],
+        "day2": [],
+        "day3Plus": []
+      },
+      "criticalPath": []
+    }
+  },
+  "report": {
+    "executive": {
+      "title": "Evaluation Summary: Answering Affidavit of Jacqueline Faucitt",
+      "overallScore": 87,
+      "rating": {
+        "level": "Excellent",
+        "stars": 4.5
+      },
+      "keyStrengths": [
+        {
+          "area": "evidential",
+          "score": 88.75,
+          "strengths": [
+            "Evidence highly relevant to claims",
+            "Adequate evidence",
+            "Credible sources",
+            "Well organized"
+          ]
+        },
+        {
+          "area": "legal",
+          "score": 92,
+          "strengths": [
+            "Fully compliant",
+            "Evidence admissible",
+            "Proper procedure",
+            "Aligns with precedent"
+          ]
+        },
+        {
+          "area": "technical",
+          "score": 87,
+          "strengths": [
+            "Clear language",
+            "Internally consistent",
+            "Proper citations",
+            "Correct terminology"
+          ]
+        }
+      ],
+      "criticalIssues": [],
+      "recommendation": "Address identified issues before filing"
+    },
+    "detailed": {
+      "scoreBreakdown": {
+        "structural": {
+          "score": 78.5,
+          "rawScores": {
+            "organization": 100,
+            "completeness": 45,
+            "formatting": 90,
+            "clarity": 85
+          },
+          "issues": [
+            "Missing required section: admissions-denials",
+            "Missing required section: version",
+            "Missing required section: evidence",
+            "Too few paragraphs (3 < 15)"
+          ],
+          "strengths": [
+            "Chronologically consistent",
+            "Smooth topic transitions",
+            "Well formatted",
+            "Clear structure"
+          ],
+          "weight": 0.15
+        },
+        "evidential": {
+          "score": 88.75,
+          "rawScores": {
+            "relevance": 100,
+            "sufficiency": 80,
+            "credibility": 85,
+            "organization": 90
+          },
+          "issues": [],
+          "strengths": [
+            "Evidence highly relevant to claims",
+            "Adequate evidence",
+            "Credible sources",
+            "Well organized"
+          ],
+          "weight": 0.3
+        },
+        "legal": {
+          "score": 92,
+          "rawScores": {
+            "compliance": 95,
+            "admissibility": 90,
+            "procedure": 95,
+            "precedent": 85
+          },
+          "issues": [],
+          "strengths": [
+            "Fully compliant",
+            "Evidence admissible",
+            "Proper procedure",
+            "Aligns with precedent"
+          ],
+          "weight": 0.25
+        },
+        "persuasive": {
+          "score": 82.5,
+          "rawScores": {
+            "narrative": 80,
+            "logic": 85,
+            "emotion": 75,
+            "credibility": 90
+          },
+          "issues": [],
+          "strengths": [
+            "Compelling narrative",
+            "Sound logic",
+            "Appropriate tone",
+            "Credible deponent"
+          ],
+          "weight": 0.2
+        },
+        "technical": {
+          "score": 87,
+          "rawScores": {
+            "language": 85,
+            "consistency": 90,
+            "references": 85,
+            "terminology": 90
+          },
+          "issues": [],
+          "strengths": [
+            "Clear language",
+            "Internally consistent",
+            "Proper citations",
+            "Correct terminology"
+          ],
+          "weight": 0.1
+        }
+      },
+      "patternAnalysis": [],
+      "findings": {
+        "criticalIssues": [],
+        "majorIssues": [],
+        "minorIssues": [
+          {
+            "area": "structural",
+            "score": 78.5,
+            "impact": "Room for improvement",
+            "issues": [
+              "Missing required section: admissions-denials",
+              "Missing required section: version",
+              "Missing required section: evidence",
+              "Too few paragraphs (3 < 15)"
+            ]
+          },
+          {
+            "area": "persuasive",
+            "score": 82.5,
+            "impact": "Room for improvement",
+            "issues": []
+          }
+        ],
+        "strengths": [
+          {
+            "area": "evidential",
+            "score": 88.75,
+            "strengths": [
+              "Evidence highly relevant to claims",
+              "Adequate evidence",
+              "Credible sources",
+              "Well organized"
+            ]
+          },
+          {
+            "area": "legal",
+            "score": 92,
+            "strengths": [
+              "Fully compliant",
+              "Evidence admissible",
+              "Proper procedure",
+              "Aligns with precedent"
+            ]
+          },
+          {
+            "area": "technical",
+            "score": 87,
+            "strengths": [
+              "Clear language",
+              "Internally consistent",
+              "Proper citations",
+              "Correct terminology"
+            ]
+          }
+        ],
+        "opportunities": [
+          {
+            "area": "Content Development",
+            "suggestion": "Expand key sections to meet minimum requirements",
+            "potential": "Could improve completeness score by 10-15 points"
+          }
+        ]
+      },
+      "improvementRoadmap": {
+        "immediate": [],
+        "shortTerm": [],
+        "mediumTerm": [],
+        "strategic": [],
+        "timeline": {
+          "estimatedHours": 0,
+          "recommendedSchedule": {
+            "day1": [],
+            "day2": [],
+            "day3Plus": []
+          },
+          "criticalPath": []
+        }
+      }
+    },
+    "technical": {
+      "evaluationCriteria": [
+        [
+          "structural",
+          {
+            "weight": 0.15,
+            "subcriteria": {
+              "organization": {
+                "weight": 0.3,
+                "description": "Logical flow and structure"
+              },
+              "completeness": {
+                "weight": 0.3,
+                "description": "All required sections present"
+              },
+              "formatting": {
+                "weight": 0.2,
+                "description": "Proper formatting and numbering"
+              },
+              "clarity": {
+                "weight": 0.2,
+                "description": "Clear section demarcation"
+              }
+            }
+          }
+        ],
+        [
+          "evidential",
+          {
+            "weight": 0.3,
+            "subcriteria": {
+              "relevance": {
+                "weight": 0.25,
+                "description": "Evidence directly supports claims"
+              },
+              "sufficiency": {
+                "weight": 0.25,
+                "description": "Adequate evidence for each claim"
+              },
+              "credibility": {
+                "weight": 0.25,
+                "description": "Evidence from credible sources"
+              },
+              "organization": {
+                "weight": 0.25,
+                "description": "Evidence properly referenced"
+              }
+            }
+          }
+        ],
+        [
+          "legal",
+          {
+            "weight": 0.25,
+            "subcriteria": {
+              "compliance": {
+                "weight": 0.35,
+                "description": "Meets legal requirements"
+              },
+              "admissibility": {
+                "weight": 0.3,
+                "description": "Evidence is admissible"
+              },
+              "procedure": {
+                "weight": 0.2,
+                "description": "Follows procedural rules"
+              },
+              "precedent": {
+                "weight": 0.15,
+                "description": "Aligns with legal precedent"
+              }
+            }
+          }
+        ],
+        [
+          "persuasive",
+          {
+            "weight": 0.2,
+            "subcriteria": {
+              "narrative": {
+                "weight": 0.3,
+                "description": "Compelling narrative flow"
+              },
+              "logic": {
+                "weight": 0.3,
+                "description": "Sound logical reasoning"
+              },
+              "emotion": {
+                "weight": 0.2,
+                "description": "Appropriate emotional appeal"
+              },
+              "credibility": {
+                "weight": 0.2,
+                "description": "Deponent credibility"
+              }
+            }
+          }
+        ],
+        [
+          "technical",
+          {
+            "weight": 0.1,
+            "subcriteria": {
+              "language": {
+                "weight": 0.4,
+                "description": "Clear and precise language"
+              },
+              "consistency": {
+                "weight": 0.3,
+                "description": "Internal consistency"
+              },
+              "references": {
+                "weight": 0.2,
+                "description": "Proper citations and references"
+              },
+              "terminology": {
+                "weight": 0.1,
+                "description": "Correct legal terminology"
+              }
+            }
+          }
+        ]
+      ],
+      "benchmarksUsed": [
+        [
+          "founding-affidavit",
+          {
+            "minParagraphs": 20,
+            "maxParagraphs": 100,
+            "requiredSections": [
+              "identity",
+              "jurisdiction",
+              "facts",
+              "cause-of-action",
+              "relief"
+            ],
+            "evidenceRatio": 0.3,
+            "targetScore": 85
+          }
+        ],
+        [
+          "answering-affidavit",
+          {
+            "minParagraphs": 15,
+            "maxParagraphs": 150,
+            "requiredSections": [
+              "identity",
+              "admissions-denials",
+              "version",
+              "evidence"
+            ],
+            "evidenceRatio": 0.4,
+            "targetScore": 85
+          }
+        ],
+        [
+          "replying-affidavit",
+          {
+            "minParagraphs": 10,
+            "maxParagraphs": 50,
+            "requiredSections": [
+              "identity",
+              "new-matter",
+              "rebuttal"
+            ],
+            "evidenceRatio": 0.35,
+            "targetScore": 80
+          }
+        ],
+        [
+          "expert-affidavit",
+          {
+            "minParagraphs": 15,
+            "maxParagraphs": 80,
+            "requiredSections": [
+              "identity",
+              "qualifications",
+              "methodology",
+              "findings",
+              "opinion"
+            ],
+            "evidenceRatio": 0.5,
+            "targetScore": 90
+          }
+        ]
+      ],
+      "patternsAnalyzed": [
+        [
+          "hearsay",
+          {
+            "indicators": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {}
+            ],
+            "severity": "medium",
+            "remedy": "Qualify hearsay or remove unless exception applies"
+          }
+        ],
+        [
+          "speculation",
+          {
+            "indicators": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+              {}
+            ],
+            "severity": "medium",
+            "remedy": "Replace speculation with facts or remove"
+          }
+        ],
+        [
+          "argumentative",
+          {
+            "indicators": [
+              {},
+              {},
+              {},
+              {},
+              {}
+            ],
+            "severity": "low",
+            "remedy": "Save arguments for heads of argument"
+          }
+        ],
+        [
+          "vague",
+          {
+            "indicators": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {}
+            ],
+            "severity": "low",
+            "remedy": "Provide specific details where possible"
+          }
+        ]
+      ],
+      "methodology": "Multi-dimensional weighted scoring with pattern analysis"
+    },
+    "recommendations": []
+  }
+}

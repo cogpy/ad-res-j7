@@ -641,7 +641,7 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 11 TO 11.5",
     "responds_to_founding_paras": "11 TO 11.5",
-    "current_response_preview": "The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd, which operates as the United Kingdom head office. It is further admitted that the said entity oversees and operates through its subsidiary and associated companies, namely RegimA @ Dr H Ltd, RegimA Zone Ltd, RegimA Zone Academy Ltd, and RegimA Medic Ltd.\nIt is also noted and admitted, as correctly stated by the Applicant himself, that his involvement in the day-to",
+    "current_response_preview": "The contents hereof are admitted to the extent that the Applicant, myself, and our son are duly appointed directors of RegimA UK Ltd. It is clarified that RegimA UK Ltd is not currently operating as a Head Office. The entity has been a dormant holding company since 2015 following the fraud perpetrated by Isaac Chesno. The company and its subsidiaries hold accumulated tax losses exceeding GBP 650,000, making it worthwhile to maintain and eventually restore them to trading status in the long term.",
     "relevant_updated_content": [
       {
         "theme": "responsible_person_role",
@@ -905,7 +905,7 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 13.6 TO 13.7",
     "responds_to_founding_paras": "13.6 TO 13.7",
-    "current_response_preview": "The contents hereof are denied. The Applicant is not entitled to the relief sought under Part A of the notice of motion, whether on an interim or final basis. Be that as it may, the order that was granted, the Applicant has failed to satisfy any of the legal requirements for interdictory relief, namely (which will be discussed in further detail below):\nA clear right,\nIrreparable harm, and\nThe absence of an alternative remedy.\nThe application is therefore misconceived, devoid of merit, and should",
+    "current_response_preview": "The contents hereof are denied. The Applicant is not entitled to the relief sought under Part A of the notice of motion, whether on an interim or final basis. Be that as it may, the order that was granted, the Applicant has failed to satisfy any of the legal requirements for interdictory relief, namely (which will be discussed in further detail below):\nA clear right,\nIrreparable harm, and/nThe absence of an alternative remedy.\nThe application is therefore misconceived, devoid of merit, and should",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
     "priority": "MEDIUM"
@@ -1093,7 +1093,7 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 16.11",
     "responds_to_founding_paras": "16.11",
-    "current_response_preview": "CRITICAL CORRECTION: JF5 AGREEMENT MANIPULATION\nI must bring to this Honourable Court's urgent attention a critical matter regarding the JF5 settlement agreement referenced in paragraph 48 of my affidavit. Upon further investigation, I have discovered that material changes were made to this agreement after our final review and immediately before signing, without disclosure to myself and the Second Respondent.\n\nThe agreement initially reviewed by myself and the Second Respondent stated that asses",
+    "current_response_preview": "CRITICAL CORRECTION: JF5 AGREEMENT MANIPULATION/nI must bring to this Honourable Court's urgent attention a critical matter regarding the JF5 settlement agreement referenced in paragraph 48 of my affidavit. Upon further investigation, I have discovered that material changes were made to this agreement after our final review and immediately before signing, without disclosure to myself and the Second Respondent.\n/nThe agreement initially reviewed by myself and the Second Respondent stated that asses",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
     "priority": "MEDIUM"
@@ -1130,7 +1130,7 @@
   {
     "ad_paragraph_ref": "AD PARAGRAPH 18",
     "responds_to_founding_paras": "18",
-    "current_response_preview": "The contents herein are noted in so far as Part A of the Applicant’s Notice of Motion say that there will be no order to costs as same is not opposed.\nEVIDENCE ANALYSIS AND CLASSIFICATION\nIn addressing this matter comprehensively, I have categorised the available evidence into three classifications based on evidentiary strength:\n\nIRREFUTABLE PROOF (Documentary Evidence):\n- Trust creation documentation (December 5, 2013)\n- Asset transfer records (June 18, 2014) \n- Trustee appointment timeline dem",
+    "current_response_preview": "The contents herein are noted in so far as Part A of the Applicant’s Notice of Motion say that there will be no order to costs as same is not opposed.\nEVIDENCE ANALYSIS AND CLASSIFICATION/nIn addressing this matter comprehensively, I have categorised the available evidence into three classifications based on evidentiary strength:\n/nIRREFUTABLE PROOF (Documentary Evidence):\n- Trust creation documentation (December 5, 2013)\n- Asset transfer records (June 18, 2014) \n- Trustee appointment timeline dem",
     "relevant_updated_content": [],
     "action_required": "REVIEW CURRENT RESPONSE",
     "priority": "MEDIUM"
