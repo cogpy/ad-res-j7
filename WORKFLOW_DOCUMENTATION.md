@@ -149,7 +149,7 @@ find . -name "*.json" -not -path "./.git/*" -not -path "./node_modules/*" -not -
 
 **Node.js Layer Exclusions:**
 ```javascript
-// Glob patterns automatically exclude dependencies
+/ Glob patterns automatically exclude dependencies
 const mdFiles = glob.sync('**/*.md', { 
   ignore: ['node_modules/**', 'vendor/**', 'bower_components/**', 'build/**', 'dist/**', '.git/**', 'README.md'] 
 });

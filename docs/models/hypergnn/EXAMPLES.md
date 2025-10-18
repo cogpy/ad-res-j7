@@ -7,10 +7,10 @@ Practical examples of using HypergraphQL with link tuples for legal case analysi
 ```javascript
 const HypergraphQL = require('./hypergraphql');
 
-// Create a new hypergraph
+/ Create a new hypergraph
 const hg = new HypergraphQL();
 
-// Add entities
+/ Add entities
 hg.addEntity('peter-faucitt', 'Person', {
   name: 'Peter Andrew Faucitt',
   role: 'Applicant'
@@ -27,7 +27,7 @@ hg.addEntity('event-2025-04-14', 'Event', {
   severity: 'Critical'
 });
 
-// Add link tuples to represent relationships
+/ Add link tuples to represent relationships
 hg.addLinkTuple('peter-faucitt', 'involved-in', 'event-2025-04-14', {
   role: 'alleged-perpetrator',
   evidence: ['bank-statements', 'timeline-docs']
@@ -38,7 +38,7 @@ hg.addLinkTuple('peter-faucitt', 'applicant-against', 'jacqueline-faucitt', {
   court: 'High Court of South Africa'
 });
 
-// Query the graph
+/ Query the graph
 console.log('All events:', hg.queryEntitiesByType('Event'));
 console.log('Peter\'s connections:', hg.findConnected('peter-faucitt'));
 ```
@@ -48,17 +48,17 @@ console.log('Peter\'s connections:', hg.findConnected('peter-faucitt'));
 ```javascript
 const { buildCase2025137857Hypergraph } = require('./case-hypergraph');
 
-// Build the complete case hypergraph
+/ Build the complete case hypergraph
 const hg = buildCase2025137857Hypergraph();
 
-// Example 1: Find all criminal events
+/ Example 1: Find all criminal events
 const events = hg.queryEntitiesByType('Event');
 console.log('Criminal Events in Case:');
 events.forEach(event => {
   console.log(`- ${event.date}: ${event.name} (${event.severity})`);
 });
 
-// Example 2: Analyze Peter Faucitt's involvement
+/ Example 2: Analyze Peter Faucitt's involvement
 const peterLinks = hg.findConnected('peter-faucitt');
 console.log('\nPeter Faucitt\'s Connections:');
 peterLinks.forEach(({ entity, link }) => {
@@ -68,7 +68,7 @@ peterLinks.forEach(({ entity, link }) => {
   }
 });
 
-// Example 3: Trace the conspiracy network
+/ Example 3: Trace the conspiracy network
 const rynetteConnections = hg.findConnected('rynette-farrar');
 console.log('\nRynette Farrar\'s Network:');
 rynetteConnections.forEach(({ entity, link }) => {
@@ -78,7 +78,7 @@ rynetteConnections.forEach(({ entity, link }) => {
   }
 });
 
-// Example 4: Timeline analysis
+/ Example 4: Timeline analysis
 const temporalSequence = hg.queryLinksByRelation('precedes');
 console.log('\nCriminal Scheme Timeline:');
 temporalSequence.forEach(link => {
@@ -89,7 +89,7 @@ temporalSequence.forEach(link => {
   console.log(`${to.date}: ${to.name}\n`);
 });
 
-// Example 5: Evidence mapping
+/ Example 5: Evidence mapping
 const evidenceDocs = hg.queryEntitiesByType('Evidence');
 console.log('Evidence Documents:');
 evidenceDocs.forEach(evidence => {
@@ -272,7 +272,7 @@ Object.entries(stats.linksByRelation).forEach(([rel, count]) => {
 ### Subgraph Extraction
 
 ```javascript
-// Extract all entities and links related to a specific person
+/ Extract all entities and links related to a specific person
 function extractSubgraph(hg, entityId) {
   const subgraph = new HypergraphQL();
   const visited = new Set();
@@ -283,13 +283,13 @@ function extractSubgraph(hg, entityId) {
     if (visited.has(current)) continue;
     visited.add(current);
 
-    // Add entity
+    / Add entity
     const entity = hg.entities.get(current);
     if (entity) {
       subgraph.addEntity(entity.id, entity.type, entity);
     }
 
-    // Add connected links and entities
+    / Add connected links and entities
     const links = [
       ...hg.queryLinksBySource(current),
       ...hg.queryLinksByTarget(current)
@@ -313,7 +313,7 @@ function extractSubgraph(hg, entityId) {
   return subgraph;
 }
 
-// Extract Peter's subgraph
+/ Extract Peter's subgraph
 const peterSubgraph = extractSubgraph(hg, 'peter-faucitt');
 console.log('Peter Faucitt subgraph:');
 console.log(peterSubgraph.getStats());
@@ -322,7 +322,7 @@ console.log(peterSubgraph.getStats());
 ### Temporal Analysis
 
 ```javascript
-// Find all events in a date range
+/ Find all events in a date range
 function getEventsInRange(hg, startDate, endDate) {
   const events = hg.queryEntitiesByType('Event');
   return events.filter(event => {
@@ -338,7 +338,7 @@ console.log('Events in May 2025:', mayEvents.map(e => e.name));
 ### Shortest Path Analysis
 
 ```javascript
-// Find shortest path and analyze it
+/ Find shortest path and analyze it
 const path = hg.findPath('peter-faucitt', 'regima');
 if (path) {
   console.log('Shortest path from Peter to RegimA:');
@@ -375,5 +375,5 @@ To use in your own code:
 const HypergraphQL = require('./docs/models/hypergnn/hypergraphql');
 const { buildCase2025137857Hypergraph } = require('./docs/models/hypergnn/case-hypergraph');
 
-// Use the classes as shown in the examples above
+/ Use the classes as shown in the examples above
 ```

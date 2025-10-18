@@ -1,7 +1,7 @@
-# 29 May 2025 - Domain Registration by Rynette's Son (Addarory)
+# 2025-05-29 - Domain Registration by Rynette's Son (Addarory)
 
 ## Event Summary
-**Date:** May 29, 2025  
+**Date:** 2025-05-29  
 **Perpetrator:** Rynette Farrar (via son)  
 **Action:** Domain creation in Rynette's son's name for fraudulent business operations  
 **Legal Significance:** Identity fraud, criminal conspiracy involving family members  
@@ -92,9 +92,9 @@ This domain registration is part of a larger revenue hijacking scheme:
 **HIGH** - Family conspiracy involvement significantly elevates legal exposure
 
 ## Related Events
-- **May 22, 2025:** Shopify audit destruction (setup for this event)
+- **2025-05-22:** Shopify audit destruction (setup for this event)
 - **March-July 2025:** Customer hijacking emails (using this domain)
-- **April 14, 2025:** Bank account hijacking (coordinated fraud sequence)
+- **2025-04-14:** Bank account hijacking (coordinated fraud sequence)
 
 ## Evidence Requirements
 ### Critical Evidence Needed
